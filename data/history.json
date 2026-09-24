@@ -1,0 +1,654 @@
+{
+  "champions": [
+    {
+      "season": 2023,
+      "champion": "Douglas Sullivan",
+      "runner_up": "Deion"
+    },
+    {
+      "season": 2024,
+      "champion": "Douglas Sullivan",
+      "runner_up": "Paul Bacon"
+    },
+    {
+      "season": 2025,
+      "champion": "Vlad Barber",
+      "runner_up": "Matt Zacharias"
+    }
+  ],
+  "career": [
+    {
+      "owner": "Juan Rodriguez",
+      "seasons": 4,
+      "wins": 26,
+      "losses": 13,
+      "win_pct": 0.67,
+      "total_pf": 4921.9,
+      "championships": 0,
+      "playoff_appearances": 3
+    },
+    {
+      "owner": "Douglas Sullivan",
+      "seasons": 4,
+      "wins": 21,
+      "losses": 18,
+      "win_pct": 0.54,
+      "total_pf": 4527.24,
+      "championships": 2,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Matt Zacharias",
+      "seasons": 4,
+      "wins": 23,
+      "losses": 16,
+      "win_pct": 0.59,
+      "total_pf": 4484.08,
+      "championships": 0,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Elijah Bruette",
+      "seasons": 4,
+      "wins": 23,
+      "losses": 16,
+      "win_pct": 0.59,
+      "total_pf": 4463.72,
+      "championships": 0,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Vlad Barber",
+      "seasons": 4,
+      "wins": 19,
+      "losses": 20,
+      "win_pct": 0.49,
+      "total_pf": 4408.6,
+      "championships": 1,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Marc Caballero",
+      "seasons": 4,
+      "wins": 16,
+      "losses": 23,
+      "win_pct": 0.41,
+      "total_pf": 4326.26,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "Jake Prosser",
+      "seasons": 4,
+      "wins": 15,
+      "losses": 24,
+      "win_pct": 0.38,
+      "total_pf": 4173.72,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "Derek Bock",
+      "seasons": 3,
+      "wins": 14,
+      "losses": 12,
+      "win_pct": 0.54,
+      "total_pf": 2891.1,
+      "championships": 0,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Paul Bacon",
+      "seasons": 3,
+      "wins": 11,
+      "losses": 15,
+      "win_pct": 0.42,
+      "total_pf": 2845.06,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "Andrew Reed",
+      "seasons": 3,
+      "wins": 12,
+      "losses": 14,
+      "win_pct": 0.46,
+      "total_pf": 2651.66,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "Matt Atkinson",
+      "seasons": 3,
+      "wins": 14,
+      "losses": 12,
+      "win_pct": 0.54,
+      "total_pf": 2648.2,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "MichaelDewey99",
+      "seasons": 1,
+      "wins": 6,
+      "losses": 7,
+      "win_pct": 0.46,
+      "total_pf": 1553.6,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "Deion",
+      "seasons": 1,
+      "wins": 8,
+      "losses": 5,
+      "win_pct": 0.62,
+      "total_pf": 1465.16,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "Jakefitzy",
+      "seasons": 1,
+      "wins": 7,
+      "losses": 6,
+      "win_pct": 0.54,
+      "total_pf": 1460.62,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
+      "owner": "Brett Trana",
+      "seasons": 2,
+      "wins": 6,
+      "losses": 7,
+      "win_pct": 0.46,
+      "total_pf": 1427.88,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "Jared Messinger",
+      "seasons": 1,
+      "wins": 5,
+      "losses": 8,
+      "win_pct": 0.38,
+      "total_pf": 1388.72,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "Anupds23",
+      "seasons": 1,
+      "wins": 4,
+      "losses": 9,
+      "win_pct": 0.31,
+      "total_pf": 1374.22,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "MrPfizer",
+      "seasons": 1,
+      "wins": 4,
+      "losses": 9,
+      "win_pct": 0.31,
+      "total_pf": 1257.52,
+      "championships": 0,
+      "playoff_appearances": 0
+    }
+  ],
+  "all_time_high_scores": [
+    {
+      "season": 2024,
+      "week": 11,
+      "owner": "Douglas Sullivan",
+      "points": 202.08,
+      "opponent": "Elijah Bruette"
+    },
+    {
+      "season": 2024,
+      "week": 17,
+      "owner": "Juan Rodriguez",
+      "points": 199.68,
+      "opponent": "Vlad Barber"
+    },
+    {
+      "season": 2023,
+      "week": 4,
+      "owner": "Douglas Sullivan",
+      "points": 196.7,
+      "opponent": "Deion"
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "owner": "Vlad Barber",
+      "points": 191.9,
+      "opponent": "Juan Rodriguez"
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 188.1,
+      "opponent": "Paul Bacon"
+    },
+    {
+      "season": 2024,
+      "week": 12,
+      "owner": "Juan Rodriguez",
+      "points": 173.7,
+      "opponent": "Andrew Reed"
+    },
+    {
+      "season": 2023,
+      "week": 5,
+      "owner": "Deion",
+      "points": 168.68,
+      "opponent": "Vlad Barber"
+    },
+    {
+      "season": 2024,
+      "week": 12,
+      "owner": "Matt Zacharias",
+      "points": 167.72,
+      "opponent": "MrPfizer"
+    },
+    {
+      "season": 2024,
+      "week": 13,
+      "owner": "Juan Rodriguez",
+      "points": 166.84,
+      "opponent": "Marc Caballero"
+    },
+    {
+      "season": 2023,
+      "week": 3,
+      "owner": "Matt Zacharias",
+      "points": 165.0,
+      "opponent": "Juan Rodriguez"
+    },
+    {
+      "season": 2025,
+      "week": 8,
+      "owner": "Juan Rodriguez",
+      "points": 163.86,
+      "opponent": "Jake Prosser"
+    },
+    {
+      "season": 2023,
+      "week": 5,
+      "owner": "Douglas Sullivan",
+      "points": 163.44,
+      "opponent": "Jared Messinger"
+    },
+    {
+      "season": 2024,
+      "week": 9,
+      "owner": "Vlad Barber",
+      "points": 163.24,
+      "opponent": "MrPfizer"
+    },
+    {
+      "season": 2024,
+      "week": 8,
+      "owner": "Juan Rodriguez",
+      "points": 162.88,
+      "opponent": "Douglas Sullivan"
+    },
+    {
+      "season": 2024,
+      "week": 5,
+      "owner": "Vlad Barber",
+      "points": 162.58,
+      "opponent": "Derek Bock"
+    }
+  ],
+  "all_time_low_scores": [
+    {
+      "season": 2024,
+      "week": 7,
+      "owner": "Juan Rodriguez",
+      "points": 43.2,
+      "opponent": "Derek Bock"
+    },
+    {
+      "season": 2025,
+      "week": 16,
+      "owner": "Douglas Sullivan",
+      "points": 50.7,
+      "opponent": "Brett Trana"
+    },
+    {
+      "season": 2023,
+      "week": 10,
+      "owner": "Jake Prosser",
+      "points": 51.1,
+      "opponent": "Matt Zacharias"
+    },
+    {
+      "season": 2025,
+      "week": 11,
+      "owner": "Andrew Reed",
+      "points": 53.24,
+      "opponent": "Jake Prosser"
+    },
+    {
+      "season": 2023,
+      "week": 12,
+      "owner": "Vlad Barber",
+      "points": 56.8,
+      "opponent": "Jake Prosser"
+    },
+    {
+      "season": 2025,
+      "week": 17,
+      "owner": "Marc Caballero",
+      "points": 60.7,
+      "opponent": "Paul Bacon"
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "owner": "Paul Bacon",
+      "points": 63.86,
+      "opponent": "Brett Trana"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Jakefitzy",
+      "points": 64.32,
+      "opponent": "Marc Caballero"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Matt Zacharias",
+      "points": 66.58,
+      "opponent": "Jared Messinger"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Juan Rodriguez",
+      "points": 66.84,
+      "opponent": "Douglas Sullivan"
+    }
+  ],
+  "biggest_blowouts": [
+    {
+      "season": 2023,
+      "week": 4,
+      "owner": "Douglas Sullivan",
+      "points": 196.7,
+      "opponent": "Deion",
+      "opponent_points": 84.8,
+      "margin": 111.9
+    },
+    {
+      "season": 2024,
+      "week": 11,
+      "owner": "Douglas Sullivan",
+      "points": 202.08,
+      "opponent": "Elijah Bruette",
+      "opponent_points": 92.38,
+      "margin": 109.7
+    },
+    {
+      "season": 2024,
+      "week": 7,
+      "owner": "Derek Bock",
+      "points": 152.38,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 43.2,
+      "margin": 109.18
+    },
+    {
+      "season": 2024,
+      "week": 12,
+      "owner": "Matt Zacharias",
+      "points": 167.72,
+      "opponent": "MrPfizer",
+      "opponent_points": 71.46,
+      "margin": 96.26
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 188.1,
+      "opponent": "Paul Bacon",
+      "opponent_points": 100.76,
+      "margin": 87.34
+    },
+    {
+      "season": 2023,
+      "week": 5,
+      "owner": "Douglas Sullivan",
+      "points": 163.44,
+      "opponent": "Jared Messinger",
+      "opponent_points": 79.78,
+      "margin": 83.66
+    },
+    {
+      "season": 2025,
+      "week": 7,
+      "owner": "Juan Rodriguez",
+      "points": 160.16,
+      "opponent": "Paul Bacon",
+      "opponent_points": 82.36,
+      "margin": 77.8
+    },
+    {
+      "season": 2025,
+      "week": 16,
+      "owner": "Brett Trana",
+      "points": 124.2,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 50.7,
+      "margin": 73.5
+    },
+    {
+      "season": 2023,
+      "week": 4,
+      "owner": "Jake Prosser",
+      "points": 155.26,
+      "opponent": "Jared Messinger",
+      "opponent_points": 84.38,
+      "margin": 70.88
+    },
+    {
+      "season": 2023,
+      "week": 5,
+      "owner": "Deion",
+      "points": 168.68,
+      "opponent": "Vlad Barber",
+      "opponent_points": 100.54,
+      "margin": 68.14
+    },
+    {
+      "season": 2024,
+      "week": 12,
+      "owner": "Juan Rodriguez",
+      "points": 173.7,
+      "opponent": "Andrew Reed",
+      "opponent_points": 106.36,
+      "margin": 67.34
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "owner": "Marc Caballero",
+      "points": 142.56,
+      "opponent": "Andrew Reed",
+      "opponent_points": 75.46,
+      "margin": 67.1
+    },
+    {
+      "season": 2023,
+      "week": 13,
+      "owner": "Vlad Barber",
+      "points": 130.64,
+      "opponent": "Jared Messinger",
+      "opponent_points": 66.92,
+      "margin": 63.72
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "owner": "Brett Trana",
+      "points": 127.1,
+      "opponent": "Paul Bacon",
+      "opponent_points": 63.86,
+      "margin": 63.24
+    },
+    {
+      "season": 2024,
+      "week": 14,
+      "owner": "Jake Prosser",
+      "points": 162.3,
+      "opponent": "MrPfizer",
+      "opponent_points": 100.12,
+      "margin": 62.18
+    }
+  ],
+  "closest_games": [
+    {
+      "season": 2025,
+      "week": 13,
+      "owner": "Brett Trana",
+      "points": 108.52,
+      "opponent": "Jake Prosser",
+      "opponent_points": 108.44,
+      "margin": 0.08
+    },
+    {
+      "season": 2024,
+      "week": 16,
+      "owner": "MrPfizer",
+      "points": 86.04,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 85.86,
+      "margin": 0.18
+    },
+    {
+      "season": 2024,
+      "week": 10,
+      "owner": "Douglas Sullivan",
+      "points": 105.04,
+      "opponent": "Marc Caballero",
+      "opponent_points": 104.84,
+      "margin": 0.2
+    },
+    {
+      "season": 2023,
+      "week": 13,
+      "owner": "Juan Rodriguez",
+      "points": 113.18,
+      "opponent": "Anupds23",
+      "opponent_points": 112.9,
+      "margin": 0.28
+    },
+    {
+      "season": 2023,
+      "week": 12,
+      "owner": "Matt Zacharias",
+      "points": 144.46,
+      "opponent": "MichaelDewey99",
+      "opponent_points": 144.12,
+      "margin": 0.34
+    },
+    {
+      "season": 2024,
+      "week": 16,
+      "owner": "Paul Bacon",
+      "points": 137.68,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 136.74,
+      "margin": 0.94
+    },
+    {
+      "season": 2024,
+      "week": 2,
+      "owner": "Derek Bock",
+      "points": 111.86,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 110.9,
+      "margin": 0.96
+    },
+    {
+      "season": 2025,
+      "week": 10,
+      "owner": "Andrew Reed",
+      "points": 94.2,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 93.14,
+      "margin": 1.06
+    },
+    {
+      "season": 2024,
+      "week": 8,
+      "owner": "Elijah Bruette",
+      "points": 95.34,
+      "opponent": "Derek Bock",
+      "opponent_points": 94.18,
+      "margin": 1.16
+    },
+    {
+      "season": 2023,
+      "week": 14,
+      "owner": "Jared Messinger",
+      "points": 102.62,
+      "opponent": "MichaelDewey99",
+      "opponent_points": 101.22,
+      "margin": 1.4
+    },
+    {
+      "season": 2024,
+      "week": 8,
+      "owner": "MrPfizer",
+      "points": 103.24,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 101.72,
+      "margin": 1.52
+    },
+    {
+      "season": 2025,
+      "week": 2,
+      "owner": "Jake Prosser",
+      "points": 109.58,
+      "opponent": "Brett Trana",
+      "opponent_points": 107.84,
+      "margin": 1.74
+    },
+    {
+      "season": 2025,
+      "week": 2,
+      "owner": "Vlad Barber",
+      "points": 80.0,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 77.62,
+      "margin": 2.38
+    },
+    {
+      "season": 2023,
+      "week": 13,
+      "owner": "Jake Prosser",
+      "points": 97.6,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 95.08,
+      "margin": 2.52
+    },
+    {
+      "season": 2023,
+      "week": 2,
+      "owner": "Jared Messinger",
+      "points": 121.6,
+      "opponent": "Vlad Barber",
+      "opponent_points": 118.54,
+      "margin": 3.06
+    }
+  ]
+}

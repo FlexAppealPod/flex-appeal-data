@@ -1,0 +1,330 @@
+{
+  "high_scores": [
+    {
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 188.1,
+      "opponent": "Paul Bacon",
+      "opponent_points": 100.76,
+      "margin": 87.34
+    },
+    {
+      "week": 2,
+      "owner": "Paul Bacon",
+      "points": 149.32,
+      "opponent": "Marc Caballero",
+      "opponent_points": 98.32,
+      "margin": 51.0
+    },
+    {
+      "week": 1,
+      "owner": "Elijah Bruette",
+      "points": 146.32,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 86.16,
+      "margin": 60.16
+    },
+    {
+      "week": 1,
+      "owner": "Marc Caballero",
+      "points": 142.56,
+      "opponent": "Andrew Reed",
+      "opponent_points": 75.46,
+      "margin": 67.1
+    },
+    {
+      "week": 1,
+      "owner": "Douglas Sullivan",
+      "points": 139.22,
+      "opponent": "Jake Prosser",
+      "opponent_points": 100.2,
+      "margin": 39.02
+    },
+    {
+      "week": 2,
+      "owner": "Matt Zacharias",
+      "points": 138.28,
+      "opponent": "Vlad Barber",
+      "opponent_points": 84.56,
+      "margin": 53.72
+    },
+    {
+      "week": 1,
+      "owner": "Vlad Barber",
+      "points": 132.9,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 89.86,
+      "margin": 43.04
+    },
+    {
+      "week": 2,
+      "owner": "Elijah Bruette",
+      "points": 127.16,
+      "opponent": "Brett Trana",
+      "opponent_points": 91.58,
+      "margin": 35.58
+    },
+    {
+      "week": 1,
+      "owner": "Derek Bock",
+      "points": 119.66,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 98.24,
+      "margin": 21.42
+    },
+    {
+      "week": 2,
+      "owner": "Matt Atkinson",
+      "points": 107.38,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 73.08,
+      "margin": 34.3
+    }
+  ],
+  "low_scores": [
+    {
+      "week": 2,
+      "owner": "Juan Rodriguez",
+      "points": 73.08,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 107.38,
+      "margin": 34.3
+    },
+    {
+      "week": 1,
+      "owner": "Andrew Reed",
+      "points": 75.46,
+      "opponent": "Marc Caballero",
+      "opponent_points": 142.56,
+      "margin": 67.1
+    },
+    {
+      "week": 2,
+      "owner": "Vlad Barber",
+      "points": 84.56,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 138.28,
+      "margin": 53.72
+    },
+    {
+      "week": 1,
+      "owner": "Matt Zacharias",
+      "points": 86.16,
+      "opponent": "Elijah Bruette",
+      "opponent_points": 146.32,
+      "margin": 60.16
+    },
+    {
+      "week": 1,
+      "owner": "Matt Atkinson",
+      "points": 89.86,
+      "opponent": "Vlad Barber",
+      "opponent_points": 132.9,
+      "margin": 43.04
+    },
+    {
+      "week": 2,
+      "owner": "Brett Trana",
+      "points": 91.58,
+      "opponent": "Elijah Bruette",
+      "opponent_points": 127.16,
+      "margin": 35.58
+    },
+    {
+      "week": 2,
+      "owner": "Derek Bock",
+      "points": 92.6,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 99.22,
+      "margin": 6.62
+    },
+    {
+      "week": 2,
+      "owner": "Jake Prosser",
+      "points": 93.88,
+      "opponent": "Andrew Reed",
+      "opponent_points": 101.56,
+      "margin": 7.68
+    },
+    {
+      "week": 1,
+      "owner": "Juan Rodriguez",
+      "points": 98.24,
+      "opponent": "Derek Bock",
+      "opponent_points": 119.66,
+      "margin": 21.42
+    },
+    {
+      "week": 2,
+      "owner": "Marc Caballero",
+      "points": 98.32,
+      "opponent": "Paul Bacon",
+      "opponent_points": 149.32,
+      "margin": 51.0
+    }
+  ],
+  "closest_games": [
+    {
+      "week": 2,
+      "owner": "Douglas Sullivan",
+      "points": 99.22,
+      "opponent": "Derek Bock",
+      "opponent_points": 92.6,
+      "margin": 6.62
+    },
+    {
+      "week": 2,
+      "owner": "Andrew Reed",
+      "points": 101.56,
+      "opponent": "Jake Prosser",
+      "opponent_points": 93.88,
+      "margin": 7.68
+    },
+    {
+      "week": 1,
+      "owner": "Derek Bock",
+      "points": 119.66,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 98.24,
+      "margin": 21.42
+    },
+    {
+      "week": 2,
+      "owner": "Matt Atkinson",
+      "points": 107.38,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 73.08,
+      "margin": 34.3
+    },
+    {
+      "week": 2,
+      "owner": "Elijah Bruette",
+      "points": 127.16,
+      "opponent": "Brett Trana",
+      "opponent_points": 91.58,
+      "margin": 35.58
+    },
+    {
+      "week": 1,
+      "owner": "Douglas Sullivan",
+      "points": 139.22,
+      "opponent": "Jake Prosser",
+      "opponent_points": 100.2,
+      "margin": 39.02
+    },
+    {
+      "week": 1,
+      "owner": "Vlad Barber",
+      "points": 132.9,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 89.86,
+      "margin": 43.04
+    },
+    {
+      "week": 2,
+      "owner": "Paul Bacon",
+      "points": 149.32,
+      "opponent": "Marc Caballero",
+      "opponent_points": 98.32,
+      "margin": 51.0
+    },
+    {
+      "week": 2,
+      "owner": "Matt Zacharias",
+      "points": 138.28,
+      "opponent": "Vlad Barber",
+      "opponent_points": 84.56,
+      "margin": 53.72
+    },
+    {
+      "week": 1,
+      "owner": "Elijah Bruette",
+      "points": 146.32,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 86.16,
+      "margin": 60.16
+    }
+  ],
+  "blowouts": [
+    {
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 188.1,
+      "opponent": "Paul Bacon",
+      "opponent_points": 100.76,
+      "margin": 87.34
+    },
+    {
+      "week": 1,
+      "owner": "Marc Caballero",
+      "points": 142.56,
+      "opponent": "Andrew Reed",
+      "opponent_points": 75.46,
+      "margin": 67.1
+    },
+    {
+      "week": 1,
+      "owner": "Elijah Bruette",
+      "points": 146.32,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 86.16,
+      "margin": 60.16
+    },
+    {
+      "week": 2,
+      "owner": "Matt Zacharias",
+      "points": 138.28,
+      "opponent": "Vlad Barber",
+      "opponent_points": 84.56,
+      "margin": 53.72
+    },
+    {
+      "week": 2,
+      "owner": "Paul Bacon",
+      "points": 149.32,
+      "opponent": "Marc Caballero",
+      "opponent_points": 98.32,
+      "margin": 51.0
+    },
+    {
+      "week": 1,
+      "owner": "Vlad Barber",
+      "points": 132.9,
+      "opponent": "Matt Atkinson",
+      "opponent_points": 89.86,
+      "margin": 43.04
+    },
+    {
+      "week": 1,
+      "owner": "Douglas Sullivan",
+      "points": 139.22,
+      "opponent": "Jake Prosser",
+      "opponent_points": 100.2,
+      "margin": 39.02
+    },
+    {
+      "week": 2,
+      "owner": "Elijah Bruette",
+      "points": 127.16,
+      "opponent": "Brett Trana",
+      "opponent_points": 91.58,
+      "margin": 35.58
+    },
+    {
+      "week": 2,
+      "owner": "Matt Atkinson",
+      "points": 107.38,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 73.08,
+      "margin": 34.3
+    },
+    {
+      "week": 1,
+      "owner": "Derek Bock",
+      "points": 119.66,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 98.24,
+      "margin": 21.42
+    }
+  ]
+}
