@@ -1,56 +1,56 @@
 [
   {
-    "week": 3,
+    "week": 4,
     "team_a": "my njigba",
     "owner_a": "Derek Bock",
-    "record_a": "2-2",
-    "team_b": "Stephen Miller Sucks",
-    "owner_b": "Matt Atkinson",
-    "record_b": "2-2"
-  },
-  {
-    "week": 3,
-    "team_a": "9 - 5",
-    "owner_a": "Douglas Sullivan",
-    "record_a": "4-0",
+    "record_a": "2-4",
     "team_b": "Carried by RA",
     "owner_b": "Andrew Reed",
-    "record_b": "2-2"
+    "record_b": "2-4"
   },
   {
-    "week": 3,
+    "week": 4,
     "team_a": "Before 6, After 4",
     "owner_a": "Matt Zacharias",
-    "record_a": "2-2",
-    "team_b": "RACEY RICE",
-    "owner_b": "Juan Rodriguez",
-    "record_b": "0-4"
+    "record_a": "4-2",
+    "team_b": "Stephen Miller Sucks",
+    "owner_b": "Matt Atkinson",
+    "record_b": "4-2"
   },
   {
-    "week": 3,
-    "team_a": "Drought Ends Here",
-    "owner_a": "Jake Prosser",
-    "record_a": "0-4",
-    "team_b": "Rudy",
-    "owner_b": "Paul Bacon",
-    "record_b": "2-2"
+    "week": 4,
+    "team_a": "Rudy",
+    "owner_a": "Paul Bacon",
+    "record_a": "3-3",
+    "team_b": "9 - 5",
+    "owner_b": "Douglas Sullivan",
+    "record_b": "5-1"
   },
   {
-    "week": 3,
-    "team_a": "WHO’s YOUR VLADDY",
-    "owner_a": "Vlad Barber",
-    "record_a": "2-2",
+    "week": 4,
+    "team_a": "RACEY RICE",
+    "owner_a": "Juan Rodriguez",
+    "record_a": "1-5",
     "team_b": "Paper Kings",
     "owner_b": "Brett Trana",
-    "record_b": "2-2"
+    "record_b": "4-2"
   },
   {
-    "week": 3,
-    "team_a": "Taylor Swift",
-    "owner_a": "Elijah Bruette",
-    "record_a": "4-0",
+    "week": 4,
+    "team_a": "Got the Beam on Me",
+    "owner_a": "Jake Prosser",
+    "record_a": "0-6",
+    "team_b": "Taylor Swift",
+    "owner_b": "Elijah Bruette",
+    "record_b": "4-2"
+  },
+  {
+    "week": 4,
+    "team_a": "WHO’s YOUR VLADDY",
+    "owner_a": "Vlad Barber",
+    "record_a": "3-3",
     "team_b": "Walker? Barely know her",
     "owner_b": "Marc Caballero",
-    "record_b": "2-2"
+    "record_b": "4-2"
   }
 ]

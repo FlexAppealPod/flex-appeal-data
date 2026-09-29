@@ -37,7 +37,7 @@
     "team_name": "9 - 5",
     "owner": "Douglas Sullivan",
     "points": 139.22,
-    "opponent": "Drought Ends Here",
+    "opponent": "Got the Beam on Me",
     "opponent_points": 100.2,
     "h2h_result": "W",
     "weekly_median": 110.21,
@@ -56,7 +56,7 @@
   },
   {
     "week": 1,
-    "team_name": "Drought Ends Here",
+    "team_name": "Got the Beam on Me",
     "owner": "Jake Prosser",
     "points": 100.2,
     "opponent": "9 - 5",
@@ -136,7 +136,7 @@
     "team_name": "Carried by RA",
     "owner": "Andrew Reed",
     "points": 101.56,
-    "opponent": "Drought Ends Here",
+    "opponent": "Got the Beam on Me",
     "opponent_points": 93.88,
     "h2h_result": "W",
     "weekly_median": 98.77,
@@ -188,7 +188,7 @@
   },
   {
     "week": 2,
-    "team_name": "Drought Ends Here",
+    "team_name": "Got the Beam on Me",
     "owner": "Jake Prosser",
     "points": 93.88,
     "opponent": "Carried by RA",
@@ -262,5 +262,137 @@
     "h2h_result": "L",
     "weekly_median": 98.77,
     "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "Carried by RA",
+    "owner": "Andrew Reed",
+    "points": 94.04,
+    "opponent": "9 - 5",
+    "opponent_points": 95.66,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "Paper Kings",
+    "owner": "Brett Trana",
+    "points": 139.98,
+    "opponent": "WHO’s YOUR VLADDY",
+    "opponent_points": 134.78,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "W"
+  },
+  {
+    "week": 3,
+    "team_name": "my njigba",
+    "owner": "Derek Bock",
+    "points": 100.6,
+    "opponent": "Stephen Miller Sucks",
+    "opponent_points": 104.74,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "9 - 5",
+    "owner": "Douglas Sullivan",
+    "points": 95.66,
+    "opponent": "Carried by RA",
+    "opponent_points": 94.04,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "Taylor Swift",
+    "owner": "Elijah Bruette",
+    "points": 60.12,
+    "opponent": "Walker? Barely know her",
+    "opponent_points": 111.9,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "Got the Beam on Me",
+    "owner": "Jake Prosser",
+    "points": 79.44,
+    "opponent": "Rudy",
+    "opponent_points": 99.36,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "RACEY RICE",
+    "owner": "Juan Rodriguez",
+    "points": 106.42,
+    "opponent": "Before 6, After 4",
+    "opponent_points": 127.04,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "W"
+  },
+  {
+    "week": 3,
+    "team_name": "Walker? Barely know her",
+    "owner": "Marc Caballero",
+    "points": 111.9,
+    "opponent": "Taylor Swift",
+    "opponent_points": 60.12,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "W"
+  },
+  {
+    "week": 3,
+    "team_name": "Stephen Miller Sucks",
+    "owner": "Matt Atkinson",
+    "points": 104.74,
+    "opponent": "my njigba",
+    "opponent_points": 100.6,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "W"
+  },
+  {
+    "week": 3,
+    "team_name": "Before 6, After 4",
+    "owner": "Matt Zacharias",
+    "points": 127.04,
+    "opponent": "RACEY RICE",
+    "opponent_points": 106.42,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "W"
+  },
+  {
+    "week": 3,
+    "team_name": "Rudy",
+    "owner": "Paul Bacon",
+    "points": 99.36,
+    "opponent": "Got the Beam on Me",
+    "opponent_points": 79.44,
+    "h2h_result": "W",
+    "weekly_median": 102.67,
+    "median_result": "L"
+  },
+  {
+    "week": 3,
+    "team_name": "WHO’s YOUR VLADDY",
+    "owner": "Vlad Barber",
+    "points": 134.78,
+    "opponent": "Paper Kings",
+    "opponent_points": 139.98,
+    "h2h_result": "L",
+    "weekly_median": 102.67,
+    "median_result": "W"
   }
 ]

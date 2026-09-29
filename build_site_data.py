@@ -82,9 +82,9 @@ SHORT = {
     "Andrew Reed": "Andrew",
     "Deion": "Deion",
 }
-# Jake's Sleeper team_name is blank; force display name.
-TEAM_NAME_OVERRIDE = {
-    "Jake Prosser": "Drought Ends Here",
+# Fallback team names, used ONLY when Sleeper metadata.team_name is blank.
+TEAM_NAME_FALLBACK = {
+    "Jake Prosser": "Got the Beam on Me",
 }
 # 2023 roster 3 had owner_id null — label Deion (championship runner-up).
 DEION_ROSTER = {(2023, 3): "Deion"}
@@ -122,6 +122,15 @@ LOCKED_WEEK3_FLEX = [
     (11, "Jake Prosser", -3),
     (12, "Juan Rodriguez", -3),
 ]
+
+
+# Posted boards (board week -> ordered owners, 1..12). Movement for board N is
+# measured vs POSTED board N-1 when present; otherwise vs recomputed N-1 board.
+# Append each week's posted board here after it goes out.
+POSTED_FLEX = {
+    3: [o for _, o, _ in LOCKED_WEEK3_FLEX],
+    # 4: [...]  <- add the Week 4 board once it is posted
+}
 
 
 def r2(x) -> float:
@@ -199,10 +208,8 @@ def owner_name(user: dict | None, user_id: str | None = None, season_roster=None
 
 
 def team_name_for(owner: str, meta_team: str | None) -> str:
-    if owner in TEAM_NAME_OVERRIDE:
-        return TEAM_NAME_OVERRIDE[owner]
     tn = (meta_team or "").strip()
-    return tn if tn else owner
+    return tn if tn else TEAM_NAME_FALLBACK.get(owner, owner)
 
 
 def rank_avg(items, key, reverse=True):
@@ -374,6 +381,13 @@ def cumulative(weekly, through_week):
             "prev_week_pts": last_week["points"] if last_week else None,
         }
     return agg
+
+
+def fetch_week_stats(season: int, week: int) -> dict:
+    return fetch_or_cache(
+        f"{BASE}/stats/nfl/regular/{season}/{week}",
+        CACHE_2026 / f"stats-w{week}.json",
+    ) or {}
 
 
 def flex_rank_table(teams, weekly, through_week, prev_flex: dict | None, ctx: dict | None = None):
@@ -893,9 +907,11 @@ def main():
     print(f"  completed weeks: {completed_weeks}  display_week={display_week}")
 
     # meta
+    # current_week = week the league is heading into (upcoming slate)
+    site_week = (through + 1) if through else display_week
     write_json("meta.json", {
         "season": season,
-        "current_week": display_week,
+        "current_week": site_week,
         "last_updated": now_iso(),
         "league_name": "Flex Appeal FFL",
     })
@@ -958,9 +974,10 @@ def main():
     write_json("season_records.json", season_recs)
 
     # flex rankings
-    # Board week = ranking heading into current display week.
+    # Board week N = ranking heading into week N (results through N-1).
+    # Prefer completed-data-driven week over Sleeper display_week (can lag Tue AM).
     # Week 3 board is LOCKED per league decision.
-    board_week = display_week  # heading into this week
+    board_week = (through + 1) if through else display_week
     if FLEX_PUBLISH_MAX_BOARD is not None and board_week > FLEX_PUBLISH_MAX_BOARD:
         print(f"  Flex rankings ON HOLD: not publishing Week {board_week} board "
               f"(max {FLEX_PUBLISH_MAX_BOARD}); existing flex_rankings.json left as-is")
@@ -971,14 +988,13 @@ def main():
         print("  private flex module unavailable; existing flex_rankings.json left as-is")
         flex = None
     else:
-        ctx = {
-            "matchups_by_week": matchups_by_week,
-            "get_stats": lambda w: fetch_or_cache(
-                f"{BASE}/stats/nfl/regular/{season}/{w}", CACHE_2026 / f"stats-w{w}.json"),
-        }
-        # compute previous board for movement
+        ctx = {"matchups_by_week": matchups_by_week,
+               "get_stats": lambda w: fetch_week_stats(season, w)}
+        # previous board for movement: posted board if recorded, else recompute
         prev = None
-        if board_week >= 3 and through >= board_week - 2:
+        if (board_week - 1) in POSTED_FLEX:
+            prev = {o: i for i, o in enumerate(POSTED_FLEX[board_week - 1], 1)}
+        elif board_week >= 3 and through >= board_week - 2:
             prev_rows = flex_rank_table(teams, weekly, board_week - 2, None, ctx)
             prev = {r["owner"]: r["rank"] for r in prev_rows}
         flex = build_flex_live(teams, weekly, board_week, prev, ctx)
