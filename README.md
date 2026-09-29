@@ -27,19 +27,12 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `history.json` | Champions, career (through 2026 to date), all-time extremes |
 | `teams.json` | Owner, short name, team name, Sleeper handle |
 
-## Flex formula
+## Flex Rankings
 
-Lower score is better:
+Flex Rankings are calculated via Commissioner Jake's secret formula, discretion, and vibes.
 
-`0.35×standings rank + 0.25×PF rank + 0.10×PD rank + 0.15×prev-week points rank + 0.15×streak rank`
-
-Input ties use average ranks. Final whole-number ranks break ties by higher PF, then higher PD.
-
-Sheet / board convention matches the Numbers workbook: **Week N** = ranking
-heading into week N, using results through week N−1.
-
-**Week 3 board is locked** (posted movements). Later weeks compute movement
-vs the previous computed board.
+Board convention: **Week N** = ranking heading into week N, using results
+through week N−1. **Week 3 board is locked** (posted movements).
 
 ## League IDs
 

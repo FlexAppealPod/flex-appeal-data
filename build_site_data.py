@@ -89,12 +89,24 @@ TEAM_NAME_OVERRIDE = {
 # 2023 roster 3 had owner_id null — label Deion (championship runner-up).
 DEION_ROSTER = {(2023, 3): "Deion"}
 
-# Formula weights (lower score = better)
-W_STAND, W_PF, W_PD, W_PREV, W_STREAK = 0.35, 0.25, 0.10, 0.15, 0.15
+# Flex Rankings ordering is private (Commissioner Jake's secret formula).
+# The scoring module lives OUTSIDE this public repo; the site JSON only ever
+# carries the board order + display fields. If the module is unavailable the
+# build leaves the existing data/flex_rankings.json untouched.
+PRIVATE_DIR = Path("/workspace/flex-private")
+try:
+    import sys as _sys
+    _sys.path.insert(0, str(PRIVATE_DIR))
+    import flex_formula_private as _flex  # type: ignore
+except ImportError:  # pragma: no cover
+    _flex = None
+
+# Rankings ON HOLD: never publish a board week above this (None = no hold).
+FLEX_PUBLISH_MAX_BOARD = 3
 
 # Week 3 Flex board is LOCKED (posted board). Movement vs last posted board
-# (not necessarily week_2_flex.csv). formula/pf/pd/streak come from computed
-# week-3 flex / week_3_flex.csv. Order and movements are authoritative.
+# (not necessarily week_2_flex.csv). Record/PF/PD/streak come from results
+# through Week 2. Order and movements are authoritative.
 LOCKED_WEEK3_FLEX = [
     # rank, owner, movement
     (1, "Elijah Bruette", 4),
@@ -364,7 +376,10 @@ def cumulative(weekly, through_week):
     return agg
 
 
-def flex_rank_table(teams, weekly, through_week, prev_flex: dict | None):
+def flex_rank_table(teams, weekly, through_week, prev_flex: dict | None, ctx: dict | None = None):
+    """Board order for the week after through_week (private scoring)."""
+    if _flex is None:
+        raise RuntimeError("private flex module unavailable")
     agg = cumulative(weekly, through_week)
     items = []
     for rid, t in teams.items():
@@ -386,23 +401,10 @@ def flex_rank_table(teams, weekly, through_week, prev_flex: dict | None):
             "streak_val": a["streak_val"],
             "prev_week_pts": a["prev_week_pts"],
         })
-    stand_rank = rank_avg(items, key=lambda r: (r["wins"], r["pf"]), reverse=True)
-    pf_rank = rank_avg(items, key=lambda r: r["pf"], reverse=True)
-    pd_rank = rank_avg(items, key=lambda r: r["pd"], reverse=True)
-    streak_rank = rank_avg(items, key=lambda r: r["streak_val"], reverse=True)
-    prev_pts_rank = rank_avg(items, key=lambda r: r["prev_week_pts"] or 0, reverse=True)
-    for r in items:
-        o = r["owner"]
-        r["formula_score"] = r2(
-            W_STAND * stand_rank[o]
-            + W_PF * pf_rank[o]
-            + W_PD * pd_rank[o]
-            + W_PREV * prev_pts_rank[o]
-            + W_STREAK * streak_rank[o]
-        )
+    _flex.score(items, through_week, ctx)
     flex_order = sorted(
         items,
-        key=lambda r: (r["formula_score"], -r["pf"], -r["pd"], r["owner"]),
+        key=lambda r: (r["_score"], -r["pf"], -r["pd"], r["owner"]),
     )
     for flex, r in enumerate(flex_order, 1):
         r["rank"] = flex
@@ -563,8 +565,9 @@ def season_record_lists(teams, weekly, top_n=10):
 
 
 def locked_week3_flex(teams, weekly):
-    """Use computed formula/pf/pd/streak but LOCKED order + movements."""
-    computed = {r["owner"]: r for r in flex_rank_table(teams, weekly, 2, None)}
+    """LOCKED order + movements; record/pf/pd/streak from results through Week 2."""
+    agg = cumulative(weekly, 2)
+    computed = {teams[rid]["owner"]: a for rid, a in agg.items()}
     rankings = []
     for rank, owner, movement in LOCKED_WEEK3_FLEX:
         c = computed[owner]
@@ -575,7 +578,6 @@ def locked_week3_flex(teams, weekly):
             "owner": owner,
             "record": c["record"],
             "movement": movement,
-            "formula_score": c["formula_score"],
             "pf": c["pf"],
             "pd": c["pd"],
             "streak": c["streak"],
@@ -598,12 +600,12 @@ def locked_week3_flex(teams, weekly):
     }
 
 
-def build_flex_live(teams, weekly, board_week: int, prev_flex: dict | None):
+def build_flex_live(teams, weekly, board_week: int, prev_flex: dict | None, ctx: dict | None = None):
     """board_week N = ranking heading into week N (data through N-1)."""
     through = board_week - 1
     if through < 1:
         return {"week": board_week, "rankings": [], "climbers": [], "sliders": []}
-    rows = flex_rank_table(teams, weekly, through, prev_flex)
+    rows = flex_rank_table(teams, weekly, through, prev_flex, ctx)
     rankings = [
         {
             "rank": r["rank"],
@@ -611,7 +613,6 @@ def build_flex_live(teams, weekly, board_week: int, prev_flex: dict | None):
             "owner": r["owner"],
             "record": r["record"],
             "movement": r["movement"] if r["movement"] is not None else 0,
-            "formula_score": r["formula_score"],
             "pf": r["pf"],
             "pd": r["pd"],
             "streak": r["streak"],
@@ -960,16 +961,31 @@ def main():
     # Board week = ranking heading into current display week.
     # Week 3 board is LOCKED per league decision.
     board_week = display_week  # heading into this week
-    if board_week == 3 and through >= 2:
+    if FLEX_PUBLISH_MAX_BOARD is not None and board_week > FLEX_PUBLISH_MAX_BOARD:
+        print(f"  Flex rankings ON HOLD: not publishing Week {board_week} board "
+              f"(max {FLEX_PUBLISH_MAX_BOARD}); existing flex_rankings.json left as-is")
+        flex = None
+    elif board_week == 3 and through >= 2:
         flex = locked_week3_flex(teams, weekly)
+    elif _flex is None:
+        print("  private flex module unavailable; existing flex_rankings.json left as-is")
+        flex = None
     else:
+        ctx = {
+            "matchups_by_week": matchups_by_week,
+            "get_stats": lambda w: fetch_or_cache(
+                f"{BASE}/stats/nfl/regular/{season}/{w}", CACHE_2026 / f"stats-w{w}.json"),
+        }
         # compute previous board for movement
         prev = None
         if board_week >= 3 and through >= board_week - 2:
-            prev_rows = flex_rank_table(teams, weekly, board_week - 2, None)
+            prev_rows = flex_rank_table(teams, weekly, board_week - 2, None, ctx)
             prev = {r["owner"]: r["rank"] for r in prev_rows}
-        flex = build_flex_live(teams, weekly, board_week, prev)
-    write_json("flex_rankings.json", flex)
+        flex = build_flex_live(teams, weekly, board_week, prev, ctx)
+    if flex is not None:
+        write_json("flex_rankings.json", flex)
+    else:
+        flex = json.loads((OUT / "flex_rankings.json").read_text())
 
     # history (include 2026 to date)
     by_owner_agg = {}
