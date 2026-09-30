@@ -1,0 +1,30 @@
+{
+  "note": "Display names used across the public data (h2h_all_time.json, all_time_stats.json, history.json) and the PDFs. Manager ids never change; only the display names do. Read by build_h2h.py (and so build_all_time_stats.py) and apply_history_overrides.py.",
+  "legacy_owners": {
+    "jmoneymess": "Jared M",
+    "deion": "Deion H",
+    "jakefitzy": "Jake F",
+    "michaeldewey99": "Mike D",
+    "anupds23": "Anup S",
+    "mrpfizer": "Matt F"
+  },
+  "current_overrides": {
+    "jake": "Jake P"
+  },
+  "history_json_aliases": {
+    "note": "history.json owner/opponent/champion names written by build_site_data.py -> display name. Current managers keep their full names in history.json because the site's team pages match history.json career rows to teams.json owners by exact full name.",
+    "names": {
+      "Deion": "Deion H",
+      "Deion Hulse": "Deion H",
+      "Jakefitzy": "Jake F",
+      "Jake Fitzgerald": "Jake F",
+      "MichaelDewey99": "Mike D",
+      "Mike Dewey": "Mike D",
+      "Jared Messinger": "Jared M",
+      "Anupds23": "Anup S",
+      "Anup Singh": "Anup S",
+      "MrPfizer": "Matt F",
+      "Matt Froemming": "Matt F"
+    }
+  }
+}

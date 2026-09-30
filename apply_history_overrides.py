@@ -7,6 +7,10 @@ build_site_data.py only knows Sleeper seasons (2023+), so run this right after i
 
 1. data/sources/champions_manual.json: keeps the champions schema (season / champion /
    runner_up) and adds co_champions, note and platform.
+3. data/sources/display_names.json: Legacy Owner display names (Deion H, Jake F, Jared M,
+   Mike D, Anup S, Matt F) for every owner/opponent/champion field, and manual co-championships
+   counted in career championships. Current managers keep their full names here (the site's
+   team pages match history.json to teams.json owners by full name).
 2. data/sources/score_overrides.json: official standings totals for weeks where Sleeper's
    matchup data under-counts (2024 Week 7). Rebuilds all_time_high_scores,
    all_time_low_scores, biggest_blowouts and closest_games from the Sleeper history
@@ -24,6 +28,7 @@ ROOT = Path(__file__).resolve().parent
 HISTORY = ROOT / "data" / "history.json"
 MANUAL = ROOT / "data" / "sources" / "champions_manual.json"
 SCORE_OVERRIDES = ROOT / "data" / "sources" / "score_overrides.json"
+DISPLAY_NAMES = ROOT / "data" / "sources" / "display_names.json"
 SLEEPER_HISTORY = Path("/workspace/flex-appeal/sleeper/history")  # same source build_site_data.py reads
 LIST_LEN = {"all_time_high_scores": 15, "all_time_low_scores": 10, "biggest_blowouts": 15, "closest_games": 15}
 
@@ -87,6 +92,38 @@ def apply_score_overrides(hist: dict) -> None:
     print("history.json score overrides:", applied)
 
 
+def apply_display_names(hist: dict) -> None:
+    """Legacy Owner display names (data/sources/display_names.json -> history_json_aliases).
+
+    Renames owner / opponent / champion / runner_up / co_champions everywhere in history.json and
+    makes sure career championships count manual co-championships (2022). Idempotent.
+    """
+    if not DISPLAY_NAMES.exists():
+        return
+    alias = json.loads(DISPLAY_NAMES.read_text()).get("history_json_aliases", {}).get("names", {})
+    ren = lambda n: alias.get(n, n) if isinstance(n, str) else n  # noqa: E731
+    for k in ("career", "all_time_high_scores", "all_time_low_scores", "biggest_blowouts", "closest_games"):
+        for e in hist.get(k, []):
+            for f in ("owner", "opponent"):
+                if f in e:
+                    e[f] = ren(e[f])
+    for c in hist.get("champions", []):
+        c["champion"], c["runner_up"] = ren(c.get("champion")), ren(c.get("runner_up"))
+        if c.get("co_champions"):
+            c["co_champions"] = [ren(n) for n in c["co_champions"]]
+    if hist.get("score_overrides_applied"):
+        out = []
+        for line in hist["score_overrides_applied"]:
+            for old, new in alias.items():
+                line = line.replace(f"career {old}:", f"career {new}:")
+            out.append(line)
+        hist["score_overrides_applied"] = out
+    for row in hist.get("career", []):
+        titles = sum(1 for c in hist.get("champions", []) if row["owner"] == c.get("champion") or row["owner"] in (c.get("co_champions") or []))
+        if titles > row.get("championships", 0):
+            row["championships"] = titles
+
+
 def main() -> None:
     hist = json.loads(HISTORY.read_text())
     manual = json.loads(MANUAL.read_text())["seasons"]
@@ -99,6 +136,7 @@ def main() -> None:
         champs.append(entry)
     hist["champions"] = sorted(champs, key=lambda c: int(c["season"]))
     apply_score_overrides(hist)
+    apply_display_names(hist)
     HISTORY.write_text(json.dumps(hist, indent=2, ensure_ascii=False) + "\n")
     print("history.json champions:", [(c["season"], c["champion"]) for c in hist["champions"]])
 

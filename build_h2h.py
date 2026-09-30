@@ -12,7 +12,7 @@ Rules
 - A two-week playoff round is ONE meeting decided by combined score.
 - Only completed weeks count (league last_scored_leg, capped by NFL state).
 - Managers are keyed by Sleeper owner user_id (team names / roster ids change).
-  Deion Hulse owned his 2023 roster, but it had no linked Sleeper account, so it
+  Deion H owned his 2023 roster, but it had no linked Sleeper account, so it
   is mapped to him by (season, roster_id).
 - Mid-season owner changes: data/sources/owner_overrides.json credits a roster's
   games in the listed weeks to another manager (Sleeper keeps only the final owner).
@@ -66,12 +66,20 @@ FIRST_NAMES = {
     "789344057498451968": "Andrew",
 }
 # Display names for Legacy Owners (ids stay stable)
-LEGACY_NAMES = {"jmoneymess": "Jared Messinger", "deion": "Deion Hulse", "anupds23": "Anup Singh",
-                "mrpfizer": "Matt Froemming", "jakefitzy": "Jake Fitzgerald", "michaeldewey99": "Mike Dewey"}
-# Other ESPN team names seen for a manager (2022 ESPN "Team Hulse" = Deion Hulse)
+LEGACY_NAMES = {"jmoneymess": "Jared M", "deion": "Deion H", "anupds23": "Anup S",
+                "mrpfizer": "Matt F", "jakefitzy": "Jake F", "michaeldewey99": "Mike D"}
+DISPLAY_NAMES_FILE = SOURCES / "display_names.json"  # single source for display names (manual)
+if DISPLAY_NAMES_FILE.exists():
+    _dn = json.loads(DISPLAY_NAMES_FILE.read_text())
+    LEGACY_NAMES.update(_dn.get("legacy_owners", {}))
+# Display-name overrides for current managers, keyed by stable id (ids never change)
+DISPLAY_NAMES = {"jake": "Jake P"}  # vs Legacy Owner "Jake F"
+if DISPLAY_NAMES_FILE.exists():
+    DISPLAY_NAMES.update(json.loads(DISPLAY_NAMES_FILE.read_text()).get("current_overrides", {}))
+# Other ESPN team names seen for a manager (2022 ESPN "Team Hulse" = Deion H)
 ESPN_TEAM_ALIASES = {"deion": ["Team Hulse"]}
 LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
-# Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion Hulse owned it in 2023)
+# Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion H owned it in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
 OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (manual)
@@ -385,6 +393,9 @@ def main() -> None:
             c["t" if g["winner"] == "tie" else ("w" if g["winner"] == x else "l")] += 1
             gp[x]["regular_games" if g["type"] == "regular" else "playoff_games"] += 1
 
+    for mid_, dn_ in DISPLAY_NAMES.items():
+        if mid_ in managers:
+            managers[mid_]["name"] = dn_
     cur_ids = [managers[uid_to_id[uid]]["id"] for uid in
                sorted((r for r in FIRST_NAMES), key=lambda u: managers.get(uid_to_id.get(u, ""), {}).get("roster_id", 99))
                if uid in uid_to_id and current_season in managers[uid_to_id[uid]]["seasons"]]
@@ -479,10 +490,10 @@ def main() -> None:
                       "Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. "
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
                       "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
-                      "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Dewey Weeks 1-6, Matt Z from Week 7). "
+                      "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike D Weeks 1-6, Matt Z from Week 7). "
                       "Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total "
-                      "(2024 Week 7: Juan, roster 2, Matt Froemming and Lij, whose trade-reversal players show 0 in the matchup data). "
-                      "Deion Hulse's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
+                      "(2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). "
+                      "Deion H's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
             "labels": LABELS,
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
             "warnings": warnings,
