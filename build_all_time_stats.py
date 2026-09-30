@@ -18,8 +18,9 @@ Rules
   starts come from data/sources/espn_2022_starters.json (processed ESPN box scores; each
   team-week's starter points sum to its weekly score). D/ST TDs are not counted, like
   Sleeper 2023 team DEF.
-- Regular-season record = H2H + weekly median where the league used it (2023+ on Sleeper:
-  league_average_match = 1). A median win = beating the median of all scores that week.
+- Regular-season record = H2H + weekly median where the league used it (2024+ on Sleeper:
+  league_average_match = 1 and the standings count it; 2023 had the flag but its standings
+  are H2H only). A median win = beating the median of all scores that week.
 - PF / PA / PPG / all-play = regular season only. Playoff results come from the H2H game
   list (a two-week round is one game on combined score).
 - Single-week records use every real weekly pairing (regular season, playoff legs and
@@ -391,6 +392,11 @@ def main() -> None:
     for r in rows.values():
         if r["finish"] is None:
             r["finish"] = "In progress" if r["in_progress"] else ("Playoffs" if r["playoffs"] else "Missed playoffs")
+    # A manager who handed his roster over mid-season didn't miss the playoffs; he left.
+    for o in overrides:
+        r = rows.get((o["season"], o["manager"]))
+        if r and o.get("handover_to") and r["finish"] == "Missed playoffs":
+            r["finish"] = f"Left after Week {o['weeks'][1]}"
 
     # ---------------- finalize season rows ----------------
     season_rows = []
@@ -610,7 +616,7 @@ def main() -> None:
             "labels": H.LABELS,
             "rules": [
                 "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
-                "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2023+). 2022 (ESPN) had no median, so its record is H2H only.",
+                "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2024+). 2022 (ESPN) and 2023 (Sleeper standings) had no median game, so their records are H2H only.",
                 "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
                 "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
                 "2022 titles: Deion and Jared are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
@@ -621,7 +627,7 @@ def main() -> None:
             "caveats": [
                 "Scoring and lineups differ by season: 2022 ESPN 0.5 PPR with K and D/ST, no IDP; 2023 Sleeper had K and team DEF, no IDP; 2024+ Sleeper has IDP and no K/DEF. Compare points per game rather than raw totals across seasons.",
                 "Season length differs: 13 regular-season games in 2022-2024, 11 in 2025. Use points per game and win pct for fair comparisons.",
-                "2022 records are H2H only (13 games); 2023+ records include the median game (26 results per 13 weeks). Win pct is comparable, raw win totals are not.",
+                "2022 and 2023 records are H2H only (13 games); 2024+ records include the median game (26 results in 2024, 22 in 2025). Win pct is comparable, raw win totals are not.",
                 "2022 player-level data (starter TDs, yards, individual starts) comes from ESPN box scores (0.5 PPR, K and D/ST). Starter points reconcile with every 2022 weekly score.",
                 "Team-defense touchdowns (2022 ESPN D/ST, 2023 Sleeper team DEF) are not counted as starter TDs; kick/punt return and fumble-recovery TDs by individual starters are counted.",
                 "Mike's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",

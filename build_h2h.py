@@ -470,12 +470,8 @@ def main() -> None:
     bf = max(cur_ids, key=lambda m: (totals[m]["vs_former"]["w"] - totals[m]["vs_former"]["l"], totals[m]["vs_former"]["w"]))
     if totals[bf]["games_vs_former"]:
         notable.append(f"Best vs {LABELS['former']}: {nm(bf)} {fmt(totals[bf]['vs_former'])}.")
-    if titles:
-        def title_text(t):
-            if t.get("co_champions"):
-                return f"{t['season']} co-champions {' and '.join(t['co_champions'])} ({t['winner'].split()[0]} led {t['score']} when the final was cut short)"
-            return f"{t['season']} {t['winner']} over {t['loser']} {t['score']}"
-        notable.append("Title games: " + "; ".join(title_text(t) for t in titles) + ".")
+    # Title games are not repeated in `notable`: they stay in out['title_games'], and the
+    # site's Champions cards already show every final.
 
     last_fmt = formats[-1]
     out = {
