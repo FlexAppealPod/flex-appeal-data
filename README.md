@@ -26,6 +26,20 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `season_records.json` | 2026 high/low scores, closest games, blowouts |
 | `history.json` | Champions, career (through 2026 to date), all-time extremes |
 | `teams.json` | Owner, short name, team name, Sleeper handle |
+| `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
+| `h2h_all_time.json` | All-time head-to-head grid 2023-present, former managers, season formats, title games, game log (`build_h2h.py`) |
+
+## Head-to-head (all-time)
+
+```bash
+python3 build_h2h.py   # writes data/h2h_all_time.json (stdlib only)
+```
+
+Real H2H games only (same `matchup_id`, no median games); regular season plus all
+winners-bracket games (3rd/5th-place games typed `placement`); two-week playoff
+rounds count once on combined score; toilet bowl excluded; completed weeks only.
+Keyed by Sleeper user, so team renames don't split records. PDF snapshot:
+`assets/Flex_Appeal_H2H_All_Time.pdf` (through 2026 Week 3).
 
 ## Flex Rankings
 
