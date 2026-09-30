@@ -12,7 +12,10 @@ Rules
 - A two-week playoff round is ONE meeting decided by combined score.
 - Only completed weeks count (league last_scored_leg, capped by NFL state).
 - Managers are keyed by Sleeper owner user_id (team names / roster ids change).
-  2023 roster 3 had no Sleeper owner all season; it is labeled "Deion".
+  Deion's 2023 roster shows no owner in Sleeper (his account dropped off and the
+  roster auto-drafted); it is labeled "Deion".
+- Pre-Sleeper seasons (2022, ESPN) come from processed files in data/sources/
+  (espn_<season>_games.json); raw ESPN dumps are never committed.
 
 Stdlib only. Standalone (does not import build_site_data.py).
 """
@@ -29,6 +32,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
+SOURCES = ROOT / "data" / "sources"
 OUT = ROOT / "data" / "h2h_all_time.json"
 BASE = "https://api.sleeper.app/v1"
 UA = "FlexAppealFFL-site-data/1.0"
@@ -57,7 +61,10 @@ FIRST_NAMES = {
     "1135688681358348288": "Brett",
     "789344057498451968": "Andrew",
 }
-# Rosters with no Sleeper owner: (season, roster_id) -> label
+# Display names for Legacy Owners (ids stay stable)
+LEGACY_NAMES = {"1001303666940338176": "Jared", "1002043477347094528": "Jake F.", "762378622244921344": "Mike D.", "608130030094065664": "Anup"}
+LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
+# Rosters with no Sleeper owner: (season, roster_id) -> label (Deion's account dropped off in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
@@ -153,11 +160,12 @@ def main() -> None:
         if uid is None:
             label = UNOWNED_LABELS.get((season, rid), f"Unowned roster {season}-{rid}")
             mid = slug(label)
-            managers.setdefault(mid, {"id": mid, "name": label, "sleeper_user_id": None, "seasons": [], "unowned_roster": True})
+            managers.setdefault(mid, {"id": mid, "name": label, "sleeper_user_id": None, "seasons": [],
+                                     "note": "2023 Sleeper roster shows no owner (account dropped off; roster auto-drafted)"})
         else:
             if uid not in uid_to_id:
-                name = FIRST_NAMES.get(uid) or users.get(uid, {}).get("display_name") or uid
-                mid = slug(name)
+                name = FIRST_NAMES.get(uid) or LEGACY_NAMES.get(uid) or users.get(uid, {}).get("display_name") or uid
+                mid = slug(FIRST_NAMES.get(uid) or users.get(uid, {}).get("display_name") or uid)  # stable id
                 uid_to_id[uid] = mid
                 managers[mid] = {"id": mid, "name": name, "sleeper_user_id": uid, "seasons": []}
             mid = uid_to_id[uid]
@@ -241,13 +249,41 @@ def main() -> None:
         lb_done = sum(1 for g in lb if g.get("t1") and g.get("t2") and rounds.get(g["r"]) and max(rounds[g["r"]]) <= last_leg)
         rtype = int(s.get("playoff_round_type") or 0)
         formats.append({
-            "season": season, "league_id": lid, "league_name": lg.get("name"), "teams": int(s.get("num_teams") or len(rosters)),
+            "season": season, "platform": "Sleeper", "league_id": lid, "league_name": lg.get("name"), "teams": int(s.get("num_teams") or len(rosters)),
             "regular_weeks": f"1-{pstart - 1}", "playoff_start_week": pstart, "playoff_teams": int(s.get("playoff_teams") or 0),
             "round_length": round_length_text(rtype),
             "playoff_round_weeks": {str(r): ws for r, ws in rounds.items()},
             "status": lg.get("status"), "completed_through_week": last_leg,
             "games_counted": counts, "losers_bracket_games_excluded": lb_done,
         })
+
+    # ---- pre-Sleeper seasons from processed source files (ESPN)
+    for src in sorted(SOURCES.glob("espn_*_games.json")):
+        sd = json.loads(src.read_text())
+        fmt_ = dict(sd["season_format"])
+        season = fmt_["season"]
+        counts = {"regular": 0, "playoff": 0, "placement": 0}
+        for t in sd["teams"]:
+            mid = t["manager"]
+            if mid not in managers:
+                managers[mid] = {"id": mid, "name": t["espn_owner"].split()[0], "sleeper_user_id": None, "seasons": []}
+            if season not in managers[mid]["seasons"]:
+                managers[mid]["seasons"].append(season)
+                managers[mid]["seasons"].sort()
+        for g in sd["games"]:
+            games.append({k: g[k] for k in ("season", "weeks", "type", "label", "a", "b", "a_pts", "b_pts")})
+            counts[g["type"]] += 1
+            if g["label"] == "Championship" and g["a_pts"] != g["b_pts"]:
+                win, lose = (g["a"], g["b"]) if g["a_pts"] > g["b_pts"] else (g["b"], g["a"])
+                titles.append({"season": season, "winner": managers[win]["name"], "loser": managers[lose]["name"],
+                               "score": f"{max(g['a_pts'], g['b_pts']):.2f}-{min(g['a_pts'], g['b_pts']):.2f}", "weeks": g["weeks"]})
+        fmt_.update(games_counted=counts, losers_bracket_games_excluded=len(sd.get("excluded_consolation_games", [])))
+        formats.append(fmt_)
+        leagues[season] = fmt_["league_id"]
+    leagues = dict(sorted(leagues.items()))
+    formats.sort(key=lambda f: f["season"])
+    titles.sort(key=lambda t: t["season"])
+    games.sort(key=lambda g: (g["season"], int(g["weeks"].split("-")[0])))
 
     for g in games:
         g["winner"] = "tie" if g["a_pts"] == g["b_pts"] else (g["a"] if g["a_pts"] > g["b_pts"] else g["b"])
@@ -335,7 +371,7 @@ def main() -> None:
     notable.append(f"Toughest all-time road: {nm(worst_all)} {fmt(totals[worst_all]['all_games'])} ({pstr(totals[worst_all]['all_games']['pct'])}).")
     bf = max(cur_ids, key=lambda m: (totals[m]["vs_former"]["w"] - totals[m]["vs_former"]["l"], totals[m]["vs_former"]["w"]))
     if totals[bf]["games_vs_former"]:
-        notable.append(f"Best vs former managers: {nm(bf)} {fmt(totals[bf]['vs_former'])}.")
+        notable.append(f"Best vs {LABELS['former']}: {nm(bf)} {fmt(totals[bf]['vs_former'])}.")
     if titles:
         notable.append("Title games: " + "; ".join(f"{t['season']} {t['winner']} over {t['loser']} {t['score']}" for t in titles) + ".")
 
@@ -351,7 +387,9 @@ def main() -> None:
                       "A two-week playoff round counts as one meeting decided by combined score. "
                       "Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. "
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
-                      "'Deion' is the 2023 roster that had no Sleeper owner all season (label from league records)."),
+                      "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
+                      "'Deion' also covers his 2023 Sleeper roster, which shows no owner after his account dropped off (label from league records)."),
+            "labels": LABELS,
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
             "warnings": warnings,
         },

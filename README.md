@@ -27,7 +27,7 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `history.json` | Champions, career (through 2026 to date), all-time extremes |
 | `teams.json` | Owner, short name, team name, Sleeper handle |
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
-| `h2h_all_time.json` | All-time head-to-head grid 2023-present, former managers, season formats, title games, game log (`build_h2h.py`) |
+| `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |
 
 ## Head-to-head (all-time)
 
@@ -38,7 +38,10 @@ python3 build_h2h.py   # writes data/h2h_all_time.json (stdlib only)
 Real H2H games only (same `matchup_id`, no median games); regular season plus all
 winners-bracket games (3rd/5th-place games typed `placement`); two-week playoff
 rounds count once on combined score; toilet bowl excluded; completed weeks only.
-Keyed by Sleeper user, so team renames don't split records. PDF snapshot:
+Keyed by person (Sleeper user / ESPN owner), so team renames don't split records.
+2022 (ESPN) comes from the processed file `data/sources/espn_2022_games.json`
+(raw ESPN dumps are not committed). Past managers are labeled **Legacy Owners**
+(`meta.labels.former`; JSON keys stay `former_*`). PDF snapshot:
 `assets/Flex_Appeal_H2H_All_Time.pdf` (through 2026 Week 3).
 
 ## Flex Rankings

@@ -1,0 +1,1365 @@
+{
+ "source": "ESPN fantasy league 1260678264 (2022), processed from saved league JSON; raw dumps not committed.",
+ "season_format": {
+  "season": "2022",
+  "platform": "ESPN",
+  "league_id": "1260678264",
+  "league_name": "Nothing Catchy FFL",
+  "teams": 8,
+  "scoring": "0.5 PPR, H2H points",
+  "divisions": [
+   "East",
+   "West"
+  ],
+  "regular_weeks": "1-13",
+  "playoff_start_week": 14,
+  "playoff_teams": 4,
+  "round_length": "2 weeks per round",
+  "playoff_round_weeks": {
+   "1": [
+    14,
+    15
+   ],
+   "2": [
+    16,
+    17
+   ]
+  },
+  "status": "complete",
+  "completed_through_week": 17
+ },
+ "teams": [
+  {
+   "team_id": 5,
+   "manager": "deion",
+   "espn_owner": "Deion Hulse",
+   "team_name": "Hurts Donut",
+   "division": "East",
+   "wins": 10,
+   "losses": 3,
+   "ties": 0,
+   "points_for": 1619.04,
+   "points_against": 1304.62,
+   "playoff_seed": 1,
+   "final_rank": 1
+  },
+  {
+   "team_id": 2,
+   "manager": "jmoneymess",
+   "espn_owner": "Jared Mess",
+   "team_name": "Team Mess",
+   "division": "West",
+   "wins": 8,
+   "losses": 5,
+   "ties": 0,
+   "points_for": 1410.5,
+   "points_against": 1451.38,
+   "playoff_seed": 2,
+   "final_rank": 2
+  },
+  {
+   "team_id": 4,
+   "manager": "vlad",
+   "espn_owner": "Vladimir Yagudayev",
+   "team_name": "Phx Vlady daddy",
+   "division": "West",
+   "wins": 8,
+   "losses": 5,
+   "ties": 0,
+   "points_for": 1356.14,
+   "points_against": 1384.52,
+   "playoff_seed": 3,
+   "final_rank": 3
+  },
+  {
+   "team_id": 7,
+   "manager": "doug",
+   "espn_owner": "Doug Sullivan",
+   "team_name": "Reid’s Nnadi Boys",
+   "division": "East",
+   "wins": 8,
+   "losses": 5,
+   "ties": 0,
+   "points_for": 1595.9,
+   "points_against": 1401.2,
+   "playoff_seed": 4,
+   "final_rank": 4
+  },
+  {
+   "team_id": 1,
+   "manager": "jake",
+   "espn_owner": "Jacob Prosser",
+   "team_name": "Losin With MaHomies",
+   "division": "East",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "points_for": 1354.8,
+   "points_against": 1463.28,
+   "playoff_seed": 6,
+   "final_rank": 5
+  },
+  {
+   "team_id": 6,
+   "manager": "lij",
+   "espn_owner": "Elijah Bruette",
+   "team_name": "Griddy Griddy Bang Bang",
+   "division": "West",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "points_for": 1526.38,
+   "points_against": 1519.4,
+   "playoff_seed": 7,
+   "final_rank": 6
+  },
+  {
+   "team_id": 8,
+   "manager": "jakefitzy",
+   "espn_owner": "Jacob FitzGerald",
+   "team_name": "Team FitzGerald",
+   "division": "West",
+   "wins": 6,
+   "losses": 7,
+   "ties": 0,
+   "points_for": 1348.6,
+   "points_against": 1491.98,
+   "playoff_seed": 5,
+   "final_rank": 7
+  },
+  {
+   "team_id": 3,
+   "manager": "michaeldewey99",
+   "espn_owner": "Michael Dewey",
+   "team_name": "Reid'em And Weep",
+   "division": "East",
+   "wins": 2,
+   "losses": 11,
+   "ties": 0,
+   "points_for": 1261.7,
+   "points_against": 1456.68,
+   "playoff_seed": 8,
+   "final_rank": 8
+  }
+ ],
+ "games": [
+  {
+   "season": "2022",
+   "weeks": "1",
+   "matchup_period": 1,
+   "a": "michaeldewey99",
+   "b": "doug",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 98.56,
+   "b_pts": 150.46,
+   "a_weekly": {
+    "1": 98.56
+   },
+   "b_weekly": {
+    "1": 150.46
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "1",
+   "matchup_period": 1,
+   "a": "jake",
+   "b": "deion",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Hurts Donut",
+   "a_pts": 91.4,
+   "b_pts": 114.22,
+   "a_weekly": {
+    "1": 91.4
+   },
+   "b_weekly": {
+    "1": 114.22
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "1",
+   "matchup_period": 1,
+   "a": "vlad",
+   "b": "lij",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 97.02,
+   "b_pts": 160.62,
+   "a_weekly": {
+    "1": 97.02
+   },
+   "b_weekly": {
+    "1": 160.62
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "1",
+   "matchup_period": 1,
+   "a": "jakefitzy",
+   "b": "jmoneymess",
+   "a_team": "Team FitzGerald",
+   "b_team": "Team Mess",
+   "a_pts": 87.02,
+   "b_pts": 103.78,
+   "a_weekly": {
+    "1": 87.02
+   },
+   "b_weekly": {
+    "1": 103.78
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "2",
+   "matchup_period": 2,
+   "a": "doug",
+   "b": "deion",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Hurts Donut",
+   "a_pts": 114.76,
+   "b_pts": 163.82,
+   "a_weekly": {
+    "2": 114.76
+   },
+   "b_weekly": {
+    "2": 163.82
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "2",
+   "matchup_period": 2,
+   "a": "jake",
+   "b": "michaeldewey99",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 109.9,
+   "b_pts": 66.3,
+   "a_weekly": {
+    "2": 109.9
+   },
+   "b_weekly": {
+    "2": 66.3
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "2",
+   "matchup_period": 2,
+   "a": "lij",
+   "b": "jmoneymess",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Team Mess",
+   "a_pts": 183.82,
+   "b_pts": 93.18,
+   "a_weekly": {
+    "2": 183.82
+   },
+   "b_weekly": {
+    "2": 93.18
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "2",
+   "matchup_period": 2,
+   "a": "jakefitzy",
+   "b": "vlad",
+   "a_team": "Team FitzGerald",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 88.16,
+   "b_pts": 100.98,
+   "a_weekly": {
+    "2": 88.16
+   },
+   "b_weekly": {
+    "2": 100.98
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "3",
+   "matchup_period": 3,
+   "a": "jake",
+   "b": "doug",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 70.08,
+   "b_pts": 108.78,
+   "a_weekly": {
+    "3": 70.08
+   },
+   "b_weekly": {
+    "3": 108.78
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "3",
+   "matchup_period": 3,
+   "a": "deion",
+   "b": "michaeldewey99",
+   "a_team": "Hurts Donut",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 122.1,
+   "b_pts": 70.84,
+   "a_weekly": {
+    "3": 122.1
+   },
+   "b_weekly": {
+    "3": 70.84
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "3",
+   "matchup_period": 3,
+   "a": "jakefitzy",
+   "b": "lij",
+   "a_team": "Team FitzGerald",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 79.5,
+   "b_pts": 103.02,
+   "a_weekly": {
+    "3": 79.5
+   },
+   "b_weekly": {
+    "3": 103.02
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "3",
+   "matchup_period": 3,
+   "a": "jmoneymess",
+   "b": "vlad",
+   "a_team": "Team Mess",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 135.2,
+   "b_pts": 107.26,
+   "a_weekly": {
+    "3": 135.2
+   },
+   "b_weekly": {
+    "3": 107.26
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "4",
+   "matchup_period": 4,
+   "a": "doug",
+   "b": "lij",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 145.0,
+   "b_pts": 85.46,
+   "a_weekly": {
+    "4": 145.0
+   },
+   "b_weekly": {
+    "4": 85.46
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "4",
+   "matchup_period": 4,
+   "a": "michaeldewey99",
+   "b": "vlad",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 93.42,
+   "b_pts": 102.48,
+   "a_weekly": {
+    "4": 93.42
+   },
+   "b_weekly": {
+    "4": 102.48
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "4",
+   "matchup_period": 4,
+   "a": "deion",
+   "b": "jmoneymess",
+   "a_team": "Hurts Donut",
+   "b_team": "Team Mess",
+   "a_pts": 119.26,
+   "b_pts": 121.82,
+   "a_weekly": {
+    "4": 119.26
+   },
+   "b_weekly": {
+    "4": 121.82
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "4",
+   "matchup_period": 4,
+   "a": "jake",
+   "b": "jakefitzy",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Team FitzGerald",
+   "a_pts": 121.66,
+   "b_pts": 115.38,
+   "a_weekly": {
+    "4": 121.66
+   },
+   "b_weekly": {
+    "4": 115.38
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "5",
+   "matchup_period": 5,
+   "a": "lij",
+   "b": "michaeldewey99",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 105.78,
+   "b_pts": 138.54,
+   "a_weekly": {
+    "5": 105.78
+   },
+   "b_weekly": {
+    "5": 138.54
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "5",
+   "matchup_period": 5,
+   "a": "vlad",
+   "b": "deion",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Hurts Donut",
+   "a_pts": 80.4,
+   "b_pts": 129.86,
+   "a_weekly": {
+    "5": 80.4
+   },
+   "b_weekly": {
+    "5": 129.86
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "5",
+   "matchup_period": 5,
+   "a": "jmoneymess",
+   "b": "jake",
+   "a_team": "Team Mess",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 141.66,
+   "b_pts": 126.58,
+   "a_weekly": {
+    "5": 141.66
+   },
+   "b_weekly": {
+    "5": 126.58
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "5",
+   "matchup_period": 5,
+   "a": "jakefitzy",
+   "b": "doug",
+   "a_team": "Team FitzGerald",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 89.68,
+   "b_pts": 151.12,
+   "a_weekly": {
+    "5": 89.68
+   },
+   "b_weekly": {
+    "5": 151.12
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "6",
+   "matchup_period": 6,
+   "a": "deion",
+   "b": "lij",
+   "a_team": "Hurts Donut",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 134.78,
+   "b_pts": 99.7,
+   "a_weekly": {
+    "6": 134.78
+   },
+   "b_weekly": {
+    "6": 99.7
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "6",
+   "matchup_period": 6,
+   "a": "jake",
+   "b": "vlad",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 87.36,
+   "b_pts": 92.88,
+   "a_weekly": {
+    "6": 87.36
+   },
+   "b_weekly": {
+    "6": 92.88
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "6",
+   "matchup_period": 6,
+   "a": "doug",
+   "b": "jmoneymess",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Team Mess",
+   "a_pts": 64.62,
+   "b_pts": 101.66,
+   "a_weekly": {
+    "6": 64.62
+   },
+   "b_weekly": {
+    "6": 101.66
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "6",
+   "matchup_period": 6,
+   "a": "michaeldewey99",
+   "b": "jakefitzy",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Team FitzGerald",
+   "a_pts": 99.2,
+   "b_pts": 100.9,
+   "a_weekly": {
+    "6": 99.2
+   },
+   "b_weekly": {
+    "6": 100.9
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "7",
+   "matchup_period": 7,
+   "a": "lij",
+   "b": "jake",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 84.7,
+   "b_pts": 128.62,
+   "a_weekly": {
+    "7": 84.7
+   },
+   "b_weekly": {
+    "7": 128.62
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "7",
+   "matchup_period": 7,
+   "a": "vlad",
+   "b": "doug",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 129.06,
+   "b_pts": 117.12,
+   "a_weekly": {
+    "7": 129.06
+   },
+   "b_weekly": {
+    "7": 117.12
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "7",
+   "matchup_period": 7,
+   "a": "jmoneymess",
+   "b": "michaeldewey99",
+   "a_team": "Team Mess",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 103.9,
+   "b_pts": 86.54,
+   "a_weekly": {
+    "7": 103.9
+   },
+   "b_weekly": {
+    "7": 86.54
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "7",
+   "matchup_period": 7,
+   "a": "jakefitzy",
+   "b": "deion",
+   "a_team": "Team FitzGerald",
+   "b_team": "Hurts Donut",
+   "a_pts": 121.64,
+   "b_pts": 75.9,
+   "a_weekly": {
+    "7": 121.64
+   },
+   "b_weekly": {
+    "7": 75.9
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "8",
+   "matchup_period": 8,
+   "a": "doug",
+   "b": "michaeldewey99",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 107.24,
+   "b_pts": 146.68,
+   "a_weekly": {
+    "8": 107.24
+   },
+   "b_weekly": {
+    "8": 146.68
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "8",
+   "matchup_period": 8,
+   "a": "deion",
+   "b": "jake",
+   "a_team": "Hurts Donut",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 177.06,
+   "b_pts": 115.54,
+   "a_weekly": {
+    "8": 177.06
+   },
+   "b_weekly": {
+    "8": 115.54
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "8",
+   "matchup_period": 8,
+   "a": "lij",
+   "b": "vlad",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 112.42,
+   "b_pts": 122.44,
+   "a_weekly": {
+    "8": 112.42
+   },
+   "b_weekly": {
+    "8": 122.44
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "8",
+   "matchup_period": 8,
+   "a": "jmoneymess",
+   "b": "jakefitzy",
+   "a_team": "Team Mess",
+   "b_team": "Team FitzGerald",
+   "a_pts": 112.62,
+   "b_pts": 122.18,
+   "a_weekly": {
+    "8": 112.62
+   },
+   "b_weekly": {
+    "8": 122.18
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "9",
+   "matchup_period": 9,
+   "a": "deion",
+   "b": "doug",
+   "a_team": "Hurts Donut",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 102.62,
+   "b_pts": 101.3,
+   "a_weekly": {
+    "9": 102.62
+   },
+   "b_weekly": {
+    "9": 101.3
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "9",
+   "matchup_period": 9,
+   "a": "michaeldewey99",
+   "b": "jake",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 111.98,
+   "b_pts": 126.64,
+   "a_weekly": {
+    "9": 111.98
+   },
+   "b_weekly": {
+    "9": 126.64
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "9",
+   "matchup_period": 9,
+   "a": "jmoneymess",
+   "b": "lij",
+   "a_team": "Team Mess",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 97.3,
+   "b_pts": 86.92,
+   "a_weekly": {
+    "9": 97.3
+   },
+   "b_weekly": {
+    "9": 86.92
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "9",
+   "matchup_period": 9,
+   "a": "vlad",
+   "b": "jakefitzy",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Team FitzGerald",
+   "a_pts": 105.9,
+   "b_pts": 122.74,
+   "a_weekly": {
+    "9": 105.9
+   },
+   "b_weekly": {
+    "9": 122.74
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "10",
+   "matchup_period": 10,
+   "a": "doug",
+   "b": "jake",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 103.24,
+   "b_pts": 99.04,
+   "a_weekly": {
+    "10": 103.24
+   },
+   "b_weekly": {
+    "10": 99.04
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "10",
+   "matchup_period": 10,
+   "a": "michaeldewey99",
+   "b": "deion",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Hurts Donut",
+   "a_pts": 79.2,
+   "b_pts": 90.5,
+   "a_weekly": {
+    "10": 79.2
+   },
+   "b_weekly": {
+    "10": 90.5
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "10",
+   "matchup_period": 10,
+   "a": "lij",
+   "b": "jakefitzy",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Team FitzGerald",
+   "a_pts": 149.98,
+   "b_pts": 96.16,
+   "a_weekly": {
+    "10": 149.98
+   },
+   "b_weekly": {
+    "10": 96.16
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "10",
+   "matchup_period": 10,
+   "a": "vlad",
+   "b": "jmoneymess",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Team Mess",
+   "a_pts": 121.78,
+   "b_pts": 68.1,
+   "a_weekly": {
+    "10": 121.78
+   },
+   "b_weekly": {
+    "10": 68.1
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "11",
+   "matchup_period": 11,
+   "a": "lij",
+   "b": "doug",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 96.72,
+   "b_pts": 118.0,
+   "a_weekly": {
+    "11": 96.72
+   },
+   "b_weekly": {
+    "11": 118.0
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "11",
+   "matchup_period": 11,
+   "a": "vlad",
+   "b": "michaeldewey99",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 114.94,
+   "b_pts": 95.58,
+   "a_weekly": {
+    "11": 114.94
+   },
+   "b_weekly": {
+    "11": 95.58
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "11",
+   "matchup_period": 11,
+   "a": "jmoneymess",
+   "b": "deion",
+   "a_team": "Team Mess",
+   "b_team": "Hurts Donut",
+   "a_pts": 108.34,
+   "b_pts": 102.7,
+   "a_weekly": {
+    "11": 108.34
+   },
+   "b_weekly": {
+    "11": 102.7
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "11",
+   "matchup_period": 11,
+   "a": "jakefitzy",
+   "b": "jake",
+   "a_team": "Team FitzGerald",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 137.5,
+   "b_pts": 108.06,
+   "a_weekly": {
+    "11": 137.5
+   },
+   "b_weekly": {
+    "11": 108.06
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "12",
+   "matchup_period": 12,
+   "a": "michaeldewey99",
+   "b": "lij",
+   "a_team": "Reid'em And Weep",
+   "b_team": "Griddy Griddy Bang Bang",
+   "a_pts": 91.76,
+   "b_pts": 133.0,
+   "a_weekly": {
+    "12": 91.76
+   },
+   "b_weekly": {
+    "12": 133.0
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "12",
+   "matchup_period": 12,
+   "a": "deion",
+   "b": "vlad",
+   "a_team": "Hurts Donut",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 109.12,
+   "b_pts": 75.44,
+   "a_weekly": {
+    "12": 109.12
+   },
+   "b_weekly": {
+    "12": 75.44
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "12",
+   "matchup_period": 12,
+   "a": "jake",
+   "b": "jmoneymess",
+   "a_team": "Losin With MaHomies",
+   "b_team": "Team Mess",
+   "a_pts": 105.1,
+   "b_pts": 104.02,
+   "a_weekly": {
+    "12": 105.1
+   },
+   "b_weekly": {
+    "12": 104.02
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "12",
+   "matchup_period": 12,
+   "a": "doug",
+   "b": "jakefitzy",
+   "a_team": "Reid’s Nnadi Boys",
+   "b_team": "Team FitzGerald",
+   "a_pts": 176.66,
+   "b_pts": 98.9,
+   "a_weekly": {
+    "12": 176.66
+   },
+   "b_weekly": {
+    "12": 98.9
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "13",
+   "matchup_period": 13,
+   "a": "lij",
+   "b": "deion",
+   "a_team": "Griddy Griddy Bang Bang",
+   "b_team": "Hurts Donut",
+   "a_pts": 124.24,
+   "b_pts": 177.1,
+   "a_weekly": {
+    "13": 124.24
+   },
+   "b_weekly": {
+    "13": 177.1
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "13",
+   "matchup_period": 13,
+   "a": "vlad",
+   "b": "jake",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Losin With MaHomies",
+   "a_pts": 105.56,
+   "b_pts": 64.82,
+   "a_weekly": {
+    "13": 105.56
+   },
+   "b_weekly": {
+    "13": 64.82
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "13",
+   "matchup_period": 13,
+   "a": "jmoneymess",
+   "b": "doug",
+   "a_team": "Team Mess",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 118.92,
+   "b_pts": 137.6,
+   "a_weekly": {
+    "13": 118.92
+   },
+   "b_weekly": {
+    "13": 137.6
+   },
+   "espn_winner": "b",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "13",
+   "matchup_period": 13,
+   "a": "jakefitzy",
+   "b": "michaeldewey99",
+   "a_team": "Team FitzGerald",
+   "b_team": "Reid'em And Weep",
+   "a_pts": 88.84,
+   "b_pts": 83.1,
+   "a_weekly": {
+    "13": 88.84
+   },
+   "b_weekly": {
+    "13": 83.1
+   },
+   "espn_winner": "a",
+   "espn_tier": "NONE",
+   "type": "regular",
+   "label": "Regular season"
+  },
+  {
+   "season": "2022",
+   "weeks": "14-15",
+   "matchup_period": 14,
+   "a": "deion",
+   "b": "doug",
+   "a_team": "Hurts Donut",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 277.48,
+   "b_pts": 187.2,
+   "a_weekly": {
+    "14": 132.58,
+    "15": 141.9
+   },
+   "b_weekly": {
+    "14": 104.68,
+    "15": 82.52
+   },
+   "espn_winner": "a",
+   "espn_tier": "WINNERS_BRACKET",
+   "type": "playoff",
+   "label": "Semifinal"
+  },
+  {
+   "season": "2022",
+   "weeks": "14-15",
+   "matchup_period": 14,
+   "a": "jmoneymess",
+   "b": "vlad",
+   "a_team": "Team Mess",
+   "b_team": "Phx Vlady daddy",
+   "a_pts": 264.24,
+   "b_pts": 165.58,
+   "a_weekly": {
+    "14": 123.58,
+    "15": 137.66
+   },
+   "b_weekly": {
+    "14": 68.38,
+    "15": 97.2
+   },
+   "espn_winner": "a",
+   "espn_tier": "WINNERS_BRACKET",
+   "type": "playoff",
+   "label": "Semifinal"
+  },
+  {
+   "season": "2022",
+   "weeks": "16-17",
+   "matchup_period": 15,
+   "a": "deion",
+   "b": "jmoneymess",
+   "a_team": "Hurts Donut",
+   "b_team": "Team Mess",
+   "a_pts": 203.96,
+   "b_pts": 194.58,
+   "a_weekly": {
+    "16": 79.8,
+    "17": 121.16
+   },
+   "b_weekly": {
+    "16": 112.18,
+    "17": 82.4
+   },
+   "espn_winner": "a",
+   "espn_tier": "WINNERS_BRACKET",
+   "type": "playoff",
+   "label": "Championship"
+  },
+  {
+   "season": "2022",
+   "weeks": "16-17",
+   "matchup_period": 15,
+   "a": "vlad",
+   "b": "doug",
+   "a_team": "Phx Vlady daddy",
+   "b_team": "Reid’s Nnadi Boys",
+   "a_pts": 201.44,
+   "b_pts": 191.7,
+   "a_weekly": {
+    "16": 90.36,
+    "17": 108.08
+   },
+   "b_weekly": {
+    "16": 82.9,
+    "17": 108.8
+   },
+   "espn_winner": "a",
+   "espn_tier": "WINNERS_CONSOLATION_LADDER",
+   "type": "placement",
+   "label": "3rd-place game"
+  }
+ ],
+ "excluded_consolation_games": [
+  {
+   "weeks": "14-15",
+   "tier": "LOSERS_CONSOLATION_LADDER",
+   "a": "jakefitzy",
+   "b": "jake",
+   "a_pts": 181.76,
+   "b_pts": 222.02
+  },
+  {
+   "weeks": "14-15",
+   "tier": "LOSERS_CONSOLATION_LADDER",
+   "a": "lij",
+   "b": "michaeldewey99",
+   "a_pts": 213.1,
+   "b_pts": 203.2
+  },
+  {
+   "weeks": "16-17",
+   "tier": "LOSERS_CONSOLATION_LADDER",
+   "a": "jake",
+   "b": "lij",
+   "a_pts": 232.28,
+   "b_pts": 215.46
+  },
+  {
+   "weeks": "16-17",
+   "tier": "LOSERS_CONSOLATION_LADDER",
+   "a": "jakefitzy",
+   "b": "michaeldewey99",
+   "a_pts": 223.6,
+   "b_pts": 186.6
+  }
+ ]
+}
