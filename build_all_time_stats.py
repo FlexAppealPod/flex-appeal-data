@@ -103,6 +103,7 @@ def main() -> None:
     overrides = json.loads(H.OVERRIDES_FILE.read_text())["overrides"] if H.OVERRIDES_FILE.exists() else []
     score_overrides = H.load_score_overrides()
     score_fixes: list[str] = []
+    cent_fixes: list[str] = []
     name = lambda i: reg[i]["name"] if i in reg else i  # noqa: E731
     state = H.get_json("state/nfl") or {}
 
@@ -256,6 +257,7 @@ def main() -> None:
             return H.slug(H.UNOWNED_LABELS.get((season, rid), f"roster {season}-{rid}"))
 
         roster_pf = defaultdict(float)
+        roster_pa = defaultdict(float)
         roster_rec = defaultdict(rec)
         for w in range(1, max_week + 1):
             ms = fetch(f"league/{lid}/matchups/{w}", complete) or []
@@ -292,6 +294,7 @@ def main() -> None:
                         continue
                     r["games"] += 1; r["pf"] += mp; r["pa"] += opp
                     roster_pf[me["roster_id"]] += mp
+                    roster_pa[me["roster_id"]] += opp
                     hres = res_of(mp, opp)
                     add(r["h2h"], hres); add(r["record"], hres); add(roster_rec[me["roster_id"]], hres)
                     if median_on:
@@ -321,7 +324,18 @@ def main() -> None:
             fpts = r2((st.get("fpts") or 0) + (st.get("fpts_decimal") or 0) / 100)
             fpa = r2((st.get("fpts_against") or 0) + (st.get("fpts_against_decimal") or 0) / 100)
             mine = roster_rec[rr["roster_id"]]
-            ok_pf = abs(roster_pf[rr["roster_id"]] - fpts) < 0.02
+            # Official season PF/PA = Sleeper standings. Cent-level differences (Sleeper stores fpts as whole points +
+            # hundredths and can land 0.01 below the summed matchup scores) are aligned to the official figure.
+            owners_now = {mid for (se, mid) in rows if se == season} & {mgr(rr["roster_id"], w) for w in range(1, max_week + 1)}
+            for key, comp, offv in (("pf", r2(roster_pf[rr["roster_id"]]), fpts), ("pa", r2(roster_pa[rr["roster_id"]]), fpa)):
+                d = r2(offv - comp)
+                if d and abs(d) <= 0.02 and rr["roster_id"] not in split_rids and len(owners_now) == 1:
+                    r_ = rows[(season, next(iter(owners_now)))]
+                    r_[key] += d
+                    r_.setdefault("official_adjustments", []).append(f"{key.upper()} {comp:.2f} -> {offv:.2f} (Sleeper standings; cent rounding)")
+                    (roster_pf if key == "pf" else roster_pa)[rr["roster_id"]] += d
+                    cent_fixes.append(f"{season} {name(next(iter(owners_now)))} {key.upper()} {comp:.2f} -> {offv:.2f}")
+            ok_pf = abs(roster_pf[rr["roster_id"]] - fpts) < 0.005 and abs(roster_pa[rr["roster_id"]] - fpa) < 0.005
             ok_rec = (mine["w"], mine["l"], mine["t"]) == (st.get("wins", 0), st.get("losses", 0), st.get("ties", 0))
             off = {"record": f"{st.get('wins', 0)}-{st.get('losses', 0)}" + (f"-{st['ties']}" if st.get("ties") else ""), "pf": fpts, "pa": fpa}
             if rr["roster_id"] in split_rids:
@@ -330,7 +344,7 @@ def main() -> None:
             for mid in owners_here:
                 rows[(season, mid)]["sleeper_standings"] = off
             msg = (f"{season} roster {rr['roster_id']} ({'/'.join(sorted(name(m) for m in owners_here))}): computed {fmt(mine)}, PF {r2(roster_pf[rr['roster_id']])}"
-                   f" | Sleeper standings {off['record']}, PF {fpts}")
+                   f", PA {r2(roster_pa[rr['roster_id']])} | Sleeper standings {off['record']}, PF {fpts}, PA {fpa}")
             if not ok_rec and rr["roster_id"] not in split_rids and len(owners_here) == 1:
                 # Official record = Sleeper standings. H2H stays as recomputed; the median part absorbs the gap.
                 r = rows[(season, next(iter(owners_here)))]
@@ -611,11 +625,13 @@ def main() -> None:
                 "Team-defense touchdowns (2022 ESPN D/ST, 2023 Sleeper team DEF) are not counted as starter TDs; kick/punt return and fumble-recovery TDs by individual starters are counted.",
                 "Mike Dewey's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",
                 "2024 Week 7 uses Sleeper's official standings totals (data/sources/score_overrides.json): Juan 118.34 (matchup data 43.20), roster 2 98.94 (78.10), Matt Froemming 96.66 (67.80) and Lij 97.44 (97.04). Three trades made on Sat Oct 19 were reversed by the commissioner after the Sunday games, and Sleeper's matchup data shows the returned starters with 0 points. With the official totals every 2024 record and PF matches the standings, and Matt Froemming beats Doug 96.66-89.80 that week.",
-                "Small PF gap between Sleeper standings and matchup data with no record change: Brett 2025 (+9.70). PF here equals the sum of weekly scores.",
+                "Season PF and PA match Sleeper's official standings (roster fpts). Where the weekly matchup scores add up to one cent more than the standings (Sleeper rounding: 2024 Paul PF, 2025 Paul PF and PA, 2025 Marc PA), the official figure is used; see meta.official_cent_alignments.",
+                "Known gap, not adjusted: 2025 Week 5, Brett's starter Zay Flowers shows 0 in Sleeper's matchup data, but the official standings credit his 9.70 (Brett PF +9.70, Vlad PA +9.70). Brett won that game either way and no record changes; PF here uses the matchup data (97.88 that week).",
             ],
             "scoring_by_season": sorted(scoring_by_season, key=lambda x: x["season"]),
             "checks": {"passed": len(checks), "discrepancies": problems, "history_json": hist_checks},
             "score_overrides_applied": score_fixes,
+            "official_cent_alignments": cent_fixes,
         },
         "career": career,
         "season_records": season_records,

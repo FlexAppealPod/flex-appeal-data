@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T22:13:21-07:00",
+    "generated_at": "2026-09-29T23:28:24-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -34,7 +34,8 @@
       "Team-defense touchdowns (2022 ESPN D/ST, 2023 Sleeper team DEF) are not counted as starter TDs; kick/punt return and fumble-recovery TDs by individual starters are counted.",
       "Mike Dewey's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",
       "2024 Week 7 uses Sleeper's official standings totals (data/sources/score_overrides.json): Juan 118.34 (matchup data 43.20), roster 2 98.94 (78.10), Matt Froemming 96.66 (67.80) and Lij 97.44 (97.04). Three trades made on Sat Oct 19 were reversed by the commissioner after the Sunday games, and Sleeper's matchup data shows the returned starters with 0 points. With the official totals every 2024 record and PF matches the standings, and Matt Froemming beats Doug 96.66-89.80 that week.",
-      "Small PF gap between Sleeper standings and matchup data with no record change: Brett 2025 (+9.70). PF here equals the sum of weekly scores."
+      "Season PF and PA match Sleeper's official standings (roster fpts). Where the weekly matchup scores add up to one cent more than the standings (Sleeper rounding: 2024 Paul PF, 2025 Paul PF and PA, 2025 Marc PA), the official figure is used; see meta.official_cent_alignments.",
+      "Known gap, not adjusted: 2025 Week 5, Brett's starter Zay Flowers shows 0 in Sleeper's matchup data, but the official standings credit his 9.70 (Brett PF +9.70, Vlad PA +9.70). Brett won that game either way and no record changes; PF here uses the matchup data (97.88 that week)."
     ],
     "scoring_by_season": [
       {
@@ -98,9 +99,10 @@
       }
     ],
     "checks": {
-      "passed": 56,
+      "passed": 55,
       "discrepancies": [
-        "2025 roster 11 (Brett): computed 9-13, PF 1138.5 | Sleeper standings 9-13, PF 1148.2"
+        "2025 roster 9 (Vlad): computed 13-9, PF 1213.24, PA 1169.46 | Sleeper standings 13-9, PF 1213.24, PA 1179.16",
+        "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9"
       ],
       "history_json": [
         "ok Juan Rodriguez: history.json 26-14 vs Sleeper H2H 26-14",
@@ -132,6 +134,12 @@
       "2024 wk7 roster 2: 78.1 -> 98.94",
       "2024 wk7 roster 8: 67.8 -> 96.66",
       "2024 wk7 roster 4: 97.04 -> 97.44"
+    ],
+    "official_cent_alignments": [
+      "2024 Paul PF 1619.00 -> 1618.99",
+      "2025 Paul PF 976.00 -> 975.99",
+      "2025 Paul PA 1257.00 -> 1256.99",
+      "2025 Marc PA 1190.00 -> 1189.99"
     ]
   },
   "career": [
@@ -547,7 +555,7 @@
         "t": 0
       },
       "pf": 4438.16,
-      "pa": 4476.3,
+      "pa": 4476.29,
       "all_play": {
         "w": 216,
         "l": 224,
@@ -770,8 +778,8 @@
         "l": 29,
         "t": 0
       },
-      "pf": 2944.44,
-      "pa": 3115.06,
+      "pf": 2944.42,
+      "pa": 3115.05,
       "all_play": {
         "w": 137,
         "l": 160,
@@ -1519,7 +1527,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "19-7",
-        "pf": 1619.0,
+        "pf": 1618.99,
         "ppg": 124.54,
         "games": 13
       }
@@ -1531,7 +1539,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "3-19",
-        "pf": 976.0,
+        "pf": 975.99,
         "ppg": 88.73,
         "games": 11
       },
@@ -1635,7 +1643,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "3-19",
-        "pf": 976.0,
+        "pf": 975.99,
         "ppg": 88.73,
         "games": 11
       },
@@ -1739,7 +1747,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "19-7",
-        "pf": 1619.0,
+        "pf": 1618.99,
         "ppg": 124.54,
         "games": 13,
         "record_pct": 0.731,
@@ -1754,7 +1762,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "3-19",
-        "pf": 976.0,
+        "pf": 975.99,
         "ppg": 88.73,
         "games": 11,
         "record_pct": 0.136,
@@ -1897,7 +1905,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "19-7",
-        "pf": 1619.0,
+        "pf": 1618.99,
         "ppg": 124.54,
         "games": 13,
         "starter_tds": 73,
@@ -2002,7 +2010,7 @@
         "name": "Paul",
         "platform": "Sleeper",
         "record": "19-7",
-        "pf": 1619.0,
+        "pf": 1618.99,
         "ppg": 124.54,
         "games": 13,
         "starter_yards": 10589
@@ -5196,7 +5204,7 @@
         "l": 7,
         "t": 0
       },
-      "pf": 1619.0,
+      "pf": 1618.99,
       "pa": 1492.2,
       "all_play": {
         "w": 90,
@@ -5237,6 +5245,9 @@
         "pa": 1492.2
       },
       "record_note": null,
+      "official_adjustments": [
+        "PF 1619.00 -> 1618.99 (Sleeper standings; cent rounding)"
+      ],
       "ppg": 124.54,
       "pa_pg": 114.78,
       "record_str": "19-7",
@@ -5908,7 +5919,7 @@
         "t": 0
       },
       "pf": 1080.82,
-      "pa": 1190.0,
+      "pa": 1189.99,
       "all_play": {
         "w": 46,
         "l": 75,
@@ -5948,6 +5959,9 @@
         "pa": 1189.99
       },
       "record_note": null,
+      "official_adjustments": [
+        "PA 1190.00 -> 1189.99 (Sleeper standings; cent rounding)"
+      ],
       "ppg": 98.26,
       "pa_pg": 108.18,
       "record_str": "7-15",
@@ -6144,8 +6158,8 @@
         "l": 19,
         "t": 0
       },
-      "pf": 976.0,
-      "pa": 1257.0,
+      "pf": 975.99,
+      "pa": 1256.99,
       "all_play": {
         "w": 27,
         "l": 94,
@@ -6185,6 +6199,10 @@
         "pa": 1256.99
       },
       "record_note": null,
+      "official_adjustments": [
+        "PF 976.00 -> 975.99 (Sleeper standings; cent rounding)",
+        "PA 1257.00 -> 1256.99 (Sleeper standings; cent rounding)"
+      ],
       "ppg": 88.73,
       "pa_pg": 114.27,
       "record_str": "3-19",
@@ -7652,7 +7670,7 @@
         "record_pct": 0.731,
         "h2h_str": "9-4",
         "median_str": "10-3",
-        "pf": 1619.0,
+        "pf": 1618.99,
         "ppg": 124.54,
         "all_play_str": "90-53",
         "finish": "Runner-up"
@@ -7663,7 +7681,7 @@
         "record_pct": 0.136,
         "h2h_str": "1-10",
         "median_str": "2-9",
-        "pf": 976.0,
+        "pf": 975.99,
         "ppg": 88.73,
         "all_play_str": "27-94",
         "finish": "Missed playoffs"
