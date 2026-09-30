@@ -82,6 +82,10 @@ SHORT = {
     "Andrew Reed": "Andrew",
     "Deion": "Deion",
 }
+# Short-name overrides (e.g. "Jake P" vs Legacy Owner "Jake F") from data/sources/display_names.json.
+_DN_FILE = Path(__file__).resolve().parent / "data" / "sources" / "display_names.json"
+if _DN_FILE.exists():
+    SHORT.update(json.loads(_DN_FILE.read_text()).get("site_short_names", {}).get("names", {}))
 # Fallback team names, used ONLY when Sleeper metadata.team_name is blank.
 TEAM_NAME_FALLBACK = {
     "Jake Prosser": "Got the Beam on Me",

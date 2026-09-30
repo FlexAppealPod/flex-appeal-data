@@ -53,7 +53,7 @@ Keyed by person (Sleeper user / ESPN owner), so team renames don't split records
 (`meta.labels.former`; JSON keys stay `former_*`): Deion H, Jake F,
 Jared M, Mike D, Anup S and Matt F (`managers[].name`; ids
 stay stable). Current managers show first names; Jake shows as "Jake P" (id `jake`)
-to tell him apart from Jake F. All display names live in `data/sources/display_names.json`
+to tell him apart from Jake F. All display names live in `data/sources/display_names.json` (its `site_short_names` also sets the `short_name` in teams.json / team_stats.json via `build_site_data.py` and `build_team_stats.py`; `owner` stays the full name)
 (also applied to history.json by `apply_history_overrides.py`; current managers keep full
 names there because the site's team pages match history.json to teams.json owners). Deion H's 2023 roster had no linked Sleeper account and is mapped
 to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner changes

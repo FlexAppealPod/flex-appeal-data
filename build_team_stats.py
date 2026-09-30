@@ -47,6 +47,11 @@ OWNERS = {
     11: ("Brett Trana", "Brett"),
     12: ("Andrew Reed", "Andrew"),
 }
+# Short-name overrides (e.g. "Jake P" vs Legacy Owner "Jake F") from data/sources/display_names.json.
+_DN_FILE = Path(__file__).resolve().parent / "data" / "sources" / "display_names.json"
+if _DN_FILE.exists():
+    _short = json.loads(_DN_FILE.read_text()).get("site_short_names", {}).get("names", {})
+    OWNERS = {rid: (own, _short.get(own, sh)) for rid, (own, sh) in OWNERS.items()}
 # Used only if Sleeper metadata.team_name is blank.
 TEAM_NAME_FALLBACK = {1: "Got the Beam on Me"}
 

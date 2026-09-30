@@ -1,5 +1,5 @@
 {
-  "note": "Display names used across the public data (h2h_all_time.json, all_time_stats.json, history.json) and the PDFs. Manager ids never change; only the display names do. Read by build_h2h.py (and so build_all_time_stats.py) and apply_history_overrides.py.",
+  "note": "Display names used across the public data (h2h_all_time.json, all_time_stats.json, history.json) and the PDFs. Manager ids never change; only the display names do. Read by build_h2h.py (and so build_all_time_stats.py), apply_history_overrides.py, build_site_data.py and build_team_stats.py.",
   "legacy_owners": {
     "jmoneymess": "Jared M",
     "deion": "Deion H",
@@ -25,6 +25,12 @@
       "Anup Singh": "Anup S",
       "MrPfizer": "Matt F",
       "Matt Froemming": "Matt F"
+    }
+  },
+  "site_short_names": {
+    "note": "Full owner name (as in teams.json 'owner', which pages match on) -> short_name shown on the site. Read by build_site_data.py (teams.json) and build_team_stats.py (team_stats.json). Full owner names are never changed.",
+    "names": {
+      "Jake Prosser": "Jake P"
     }
   }
 }
