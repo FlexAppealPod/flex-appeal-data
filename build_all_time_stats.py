@@ -9,10 +9,15 @@ ids, display names and title games from data/h2h_all_time.json):
 Rules
 - Keyed by manager (same ids / names / Legacy Owners label as build_h2h.py), incl. the
   mid-season owner overrides in data/sources/owner_overrides.json (2024 roster 2:
-  Mike Dewey Weeks 1-7, Matt Z from Week 8).
+  Mike Dewey Weeks 1-6, Matt Z from Week 7).
+- Weekly scores are Sleeper matchup points, except the official standings totals listed in
+  data/sources/score_overrides.json (2024 Week 7 trade reversals), applied via
+  build_h2h.apply_score_overrides so every build reconciles with the standings.
 - 2022 comes from data/sources/espn_2022_games.json (processed ESPN data; raw dumps are
-  never committed). ESPN 2022 had no median game and no player-level data here, so
-  2022 TDs / yards / player starts are null (N/A).
+  never committed). ESPN 2022 had no median game. 2022 starter TDs / yards / player
+  starts come from data/sources/espn_2022_starters.json (processed ESPN box scores; each
+  team-week's starter points sum to its weekly score). D/ST TDs are not counted, like
+  Sleeper 2023 team DEF.
 - Regular-season record = H2H + weekly median where the league used it (2023+ on Sleeper:
   league_average_match = 1). A median win = beating the median of all scores that week.
 - PF / PA / PPG / all-play = regular season only. Playoff results come from the H2H game
@@ -96,6 +101,8 @@ def main() -> None:
     uid2id = {m["sleeper_user_id"]: m["id"] for m in h2h["managers"] if m.get("sleeper_user_id")}
     handle_full = {t["sleeper_handle"].lower(): t["owner"] for t in json.loads(TEAMS_FILE.read_text())} if TEAMS_FILE.exists() else {}
     overrides = json.loads(H.OVERRIDES_FILE.read_text())["overrides"] if H.OVERRIDES_FILE.exists() else []
+    score_overrides = H.load_score_overrides()
+    score_fixes: list[str] = []
     name = lambda i: reg[i]["name"] if i in reg else i  # noqa: E731
     state = H.get_json("state/nfl") or {}
 
@@ -103,6 +110,7 @@ def main() -> None:
     week_scores: list[dict] = []      # every real weekly score
     week_games: list[dict] = []       # every real weekly pairing
     player_starts: list[dict] = []
+    starter_checks = 0
     scoring_by_season: list[dict] = []
     checks: list[str] = []
     problems: list[str] = []
@@ -159,6 +167,41 @@ def main() -> None:
                 for mid2, pts2 in sc:
                     if mid2 != mid:
                         add(rows[(season, mid)]["all_play"], res_of(pts, pts2))
+        # starter lines (processed box scores): TDs / yards (regular season) and player starts (every real game)
+        starters_src = src.with_name(src.name.replace("_games.json", "_starters.json"))
+        if starters_src.exists():
+            wk_phase = {}
+            for p in sd["weekly_pairs"]:
+                ph = tier_phase.get(p["tier"], "consolation")
+                wk_phase[(p["week"], p["a"])] = wk_phase[(p["week"], p["b"])] = ph
+            tw_list = json.loads(starters_src.read_text())["team_weeks"]
+            for tw in tw_list:
+                w, mid = tw["week"], tw["manager"]
+                r = rows[(season, mid)]
+                phase = wk_phase.get((w, mid))
+                if phase is None:
+                    continue  # no real game that week
+                for x in tw["starters"]:
+                    player_starts.append({"season": season, "week": w, "manager": mid, "name": r["name"], "player": x["player"],
+                                          "position": x["pos"], "points": x["pts"], "phase": phase})
+                if w <= reg_last:
+                    if r["starter_tds"] is None:
+                        r["starter_tds"], r["starter_yards"] = 0, 0
+                        r["td_breakdown"] = Counter({"pass": 0, "rush": 0, "rec": 0, "idp": 0, "return": 0})
+                    for x in tw["starters"]:
+                        t = x.get("td") or {}
+                        r["td_breakdown"].update(t)
+                        r["starter_tds"] += sum(t.values())
+                        r["starter_yards"] += sum((x.get("yds") or {}).values())
+            for p in sd["weekly_pairs"]:  # starter points must reconcile with the weekly scores
+                for side in ("a", "b"):
+                    tw = next((t for t in tw_list if t["week"] == p["week"] and t["manager"] == p[side]), None)
+                    ok = tw is not None and abs(sum(x["pts"] for x in tw["starters"]) - p[f"{side}_pts"]) < 0.01
+                    if not ok:
+                        problems.append(f"{season} wk{p['week']} {p[side]}: starter points do not sum to {p[side + '_pts']}")
+                    else:
+                        starter_checks += 1
+            checks.append(f"{season}: starter points reconcile with the weekly score for {starter_checks} team-games")
         for t in sd["teams"]:  # sanity vs ESPN standings
             r = rows[(season, t["manager"])]
             ok = (r["h2h"]["w"], r["h2h"]["l"]) == (t["wins"], t["losses"]) and abs(r["pf"] - t["points_for"]) < 0.01 and abs(r["pa"] - t["points_against"]) < 0.01
@@ -216,6 +259,7 @@ def main() -> None:
         roster_rec = defaultdict(rec)
         for w in range(1, max_week + 1):
             ms = fetch(f"league/{lid}/matchups/{w}", complete) or []
+            score_fixes.extend(H.apply_score_overrides(season, w, ms, problems, score_overrides))
             regular = w < pstart
             stats = fetch(f"stats/nfl/regular/{season}/{w}", complete) if regular else None
             pairs = defaultdict(list)
@@ -461,10 +505,14 @@ def main() -> None:
                 else:
                     cur = 0
             if best[0]:
-                active = best[3] and s_[-1][0] == kind
-                streaks[key].append({"manager": mid, "name": name(mid), "length": best[0],
-                                     "from": f"{best[1]['season']} Wk {best[1]['weeks']}", "to": f"{best[2]['season']} Wk {best[2]['weeks']}",
-                                     "active": active})
+                at_end = best[3] and s_[-1][0] == kind
+                active = at_end and mid in h2h["current_managers"]
+                item = {"manager": mid, "name": name(mid), "length": best[0],
+                        "from": f"{best[1]['season']} Wk {best[1]['weeks']}", "to": f"{best[2]['season']} Wk {best[2]['weeks']}",
+                        "active": active}
+                if at_end and not active:
+                    item["note"] = "streak ended when he left the league"
+                streaks[key].append(item)
     for k in streaks:
         streaks[k].sort(key=lambda x: -x["length"])
         streaks[k] = streaks[k][:TOP]
@@ -494,10 +542,10 @@ def main() -> None:
         f"Longest H2H win streak: {lw['name']}, {lw['length']} ({lw['from']} to {lw['to']}). Longest losing streak: {ll['name']}, {ll['length']} ({ll['from']} to {ll['to']}).",
     ]
     if td1:
-        notable.insert(5, f"Most starter TDs in a season (2023+): {td1['name']} {td1['season']}, {td1['starter_tds']} ({td1['tds_per_game']} per game).")
+        notable.insert(5, f"Most starter TDs in a season: {td1['name']} {td1['season']}, {td1['starter_tds']} ({td1['tds_per_game']} per game).")
     if ps:
         tied = [p for p in week_records["top_player_starts"] if p["points"] == ps["points"]]
-        notable.append(("Best individual start (2023+): " if len(tied) == 1 else f"Best individual start (2023+, {len(tied)}-way tie at {ps['points']}): ")
+        notable.append(("Best individual start: " if len(tied) == 1 else f"Best individual start ({len(tied)}-way tie at {ps['points']}): ")
                        + "; ".join(f"{p['player']} {p['points']} for {p['name']} ({p['season']} Wk {p['week']})" for p in tied) + ".")
 
     # ---------------- cross-check vs history.json (Sleeper seasons, H2H regular, by roster owner) ----------------
@@ -546,7 +594,7 @@ def main() -> None:
             "through": through,
             "labels": H.LABELS,
             "rules": [
-                "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Dewey Weeks 1-7, Matt Z from Week 8.",
+                "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Dewey Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
                 "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2023+). 2022 (ESPN) had no median, so its record is H2H only.",
                 "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
                 "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
@@ -559,14 +607,15 @@ def main() -> None:
                 "Scoring and lineups differ by season: 2022 ESPN 0.5 PPR with K and D/ST, no IDP; 2023 Sleeper had K and team DEF, no IDP; 2024+ Sleeper has IDP and no K/DEF. Compare points per game rather than raw totals across seasons.",
                 "Season length differs: 13 regular-season games in 2022-2024, 11 in 2025. Use points per game and win pct for fair comparisons.",
                 "2022 records are H2H only (13 games); 2023+ records include the median game (26 results per 13 weeks). Win pct is comparable, raw win totals are not.",
-                "Player-level data (starter TDs, yards, individual starts) is N/A for 2022: the saved ESPN data only has final scores.",
-                "2023 team-DEF touchdowns are not counted as IDP TDs (team DEF is not IDP); return TDs are counted when Sleeper credits them.",
-                "Mike Dewey's 2024 (Weeks 1-7) and Matt Z's 2024 (Weeks 8-17) are partial seasons.",
-                "2024 Week 7 (the week of the overturned Mike Dewey / Matt Froemming trade): Sleeper's official standings credit Juan +75.14, roster 2 +20.84 and Matt Froemming +28.86 more points than the current matchup data. That flips four median results, so the official standings records are used for Juan (20-6), Doug (18-8), Matt Froemming (7-19) and Andrew (6-20). PF, all-play and weekly scores use the matchup data (e.g. Juan's 43.20 that week).",
-                "Small PF gaps between Sleeper standings and matchup data with no record change: Lij 2024 (+0.40) and Brett 2025 (+9.70). PF here always equals the sum of weekly matchup scores.",
+                "2022 player-level data (starter TDs, yards, individual starts) comes from ESPN box scores (0.5 PPR, K and D/ST). Starter points reconcile with every 2022 weekly score.",
+                "Team-defense touchdowns (2022 ESPN D/ST, 2023 Sleeper team DEF) are not counted as starter TDs; kick/punt return and fumble-recovery TDs by individual starters are counted.",
+                "Mike Dewey's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",
+                "2024 Week 7 uses Sleeper's official standings totals (data/sources/score_overrides.json): Juan 118.34 (matchup data 43.20), roster 2 98.94 (78.10), Matt Froemming 96.66 (67.80) and Lij 97.44 (97.04). Three trades made on Sat Oct 19 were reversed by the commissioner after the Sunday games, and Sleeper's matchup data shows the returned starters with 0 points. With the official totals every 2024 record and PF matches the standings, and Matt Froemming beats Doug 96.66-89.80 that week.",
+                "Small PF gap between Sleeper standings and matchup data with no record change: Brett 2025 (+9.70). PF here equals the sum of weekly scores.",
             ],
             "scoring_by_season": sorted(scoring_by_season, key=lambda x: x["season"]),
             "checks": {"passed": len(checks), "discrepancies": problems, "history_json": hist_checks},
+            "score_overrides_applied": score_fixes,
         },
         "career": career,
         "season_records": season_records,

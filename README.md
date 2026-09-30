@@ -15,7 +15,9 @@ python3 build_site_data.py && python3 apply_history_overrides.py
 `data/sources/champions_manual.json` into `history.json` (build_site_data.py only
 knows the Sleeper seasons). Right now that's 2022: Deion Hulse & Jared Messinger,
 co-champions (the Week 17 final was cut short when the Bills-Bengals game was
-suspended). Run it after every `build_site_data.py` run or the 2022 entry drops out.
+suspended). It also applies `data/sources/score_overrides.json` to the all-time
+extremes lists and career H2H (2024 Week 7 official totals). Run it after every
+`build_site_data.py` run or those fixes drop out.
 
 No third-party packages required (stdlib only). Run weekly after scores
 finalize, or anytime during the week to refresh standings / upcoming.
@@ -53,7 +55,11 @@ Jared Messinger, Mike Dewey, Anup Singh and Matt Froemming (`managers[].name`; i
 stay stable). Deion Hulse's 2023 roster had no linked Sleeper account and is mapped
 to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner changes
 live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike Dewey
-for Weeks 1-7 and to Matt Z from Week 8 (`managers[].partial_seasons`). PDF snapshot:
+for Weeks 1-6 (he left at 11-1) and to Matt Z from Week 7 (`managers[].partial_seasons`).
+Weekly scores are Sleeper matchup points except the official standings totals in
+`data/sources/score_overrides.json` (2024 Week 7: trades reversed after the Sunday games
+left the returned starters at 0 in Sleeper's matchup data; `meta.score_overrides_applied`).
+`build_h2h.py`, `build_all_time_stats.py` and `apply_history_overrides.py` all apply it. PDF snapshot:
 `assets/Flex_Appeal_H2H_All_Time.pdf` (through 2026 Week 3).
 
 ## All-time stats
@@ -67,8 +73,10 @@ overrides from `h2h_all_time.json`, so run it after `build_h2h.py`. Top-level ke
 `meta` (labels, rules, caveats, scoring_by_season, checks), `career`, `season_records`,
 `week_records`, `streaks`, `manager_seasons`, `best_worst`, `notable`. Regular-season
 PF/PA/PPG/all-play; record = H2H + median where Sleeper's standings count it (2024+).
-2022 player-level stats are null (N/A). Records use Sleeper's official standings where
-they differ from recomputed matchup scores (2024 Week 7). Completed-season Sleeper
+2022 starter TDs / yards / player starts come from `data/sources/espn_2022_starters.json`
+(processed ESPN box scores; starter points reconcile with every 2022 weekly score; raw
+dumps are not committed). 2024 Week 7 uses the official standings totals from
+`score_overrides.json`, so every 2024 record and PF matches Sleeper's standings. Completed-season Sleeper
 responses are cached in `/workspace/flex-alltime-cache` (not committed). PDF snapshot:
 `assets/Flex_Appeal_All_Time_Stats.pdf`.
 

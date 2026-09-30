@@ -75,8 +75,50 @@ LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
 OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (manual)
+SCORE_OVERRIDES_FILE = SOURCES / "score_overrides.json"  # official weekly totals where Sleeper matchup data under-counts (manual)
 CHAMPIONS_FILE = SOURCES / "champions_manual.json"  # manual title rulings (2022 co-champions)
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
+
+
+def load_score_overrides() -> list[dict]:
+    if not SCORE_OVERRIDES_FILE.exists():
+        return []
+    return json.loads(SCORE_OVERRIDES_FILE.read_text()).get("overrides", [])
+
+
+def apply_score_overrides(season: str, week: int, matchups: list[dict], warnings: list[str] | None = None,
+                          overrides: list[dict] | None = None) -> list[str]:
+    """Swap Sleeper matchup points for the official standings total (data/sources/score_overrides.json).
+
+    Mutates the matchup dicts in place: points -> official_points, and each zeroed starter gets its real
+    points in starters_points / players_points. Applies only while Sleeper's score still equals
+    matchup_points, so a future Sleeper fix switches the override off. Returns a list of applied labels.
+    """
+    applied = []
+    for o in (load_score_overrides() if overrides is None else overrides):
+        if str(o["season"]) != str(season) or int(o["week"]) != int(week):
+            continue
+        m = next((x for x in matchups if x.get("roster_id") == o["roster_id"]), None)
+        if m is None:
+            continue
+        cur = round(m.get("points") or 0, 2)
+        if abs(cur - o["official_points"]) < 0.005:
+            continue  # already official (Sleeper fixed it, or applied twice)
+        if abs(cur - o["matchup_points"]) >= 0.005:
+            if warnings is not None:
+                warnings.append(f"score override {season} wk{week} roster {o['roster_id']} skipped: Sleeper now shows {cur}, "
+                                f"expected {o['matchup_points']} (review data/sources/score_overrides.json)")
+            continue
+        m["points"] = o["official_points"]
+        zs = o.get("zeroed_starters") or {}
+        if m.get("starters") and m.get("starters_points"):
+            m["starters_points"] = [zs[p]["points"] if p in zs else pp for p, pp in zip(m["starters"], m["starters_points"])]
+        pp = m.get("players_points")
+        if isinstance(pp, dict):
+            for p, z in zs.items():
+                pp[p] = z["points"]
+        applied.append(f"{season} wk{week} roster {o['roster_id']}: {cur} -> {o['official_points']}")
+    return applied
 
 
 def now_iso() -> str:
@@ -165,6 +207,8 @@ def main() -> None:
     current_season = max(leagues)
 
     overrides = json.loads(OVERRIDES_FILE.read_text())["overrides"] if OVERRIDES_FILE.exists() else []
+    score_overrides = load_score_overrides()
+    score_fixes: list[str] = []
 
     def override_for(season, rid, weeks):
         # all weeks of the game must fall inside the override range
@@ -234,6 +278,8 @@ def main() -> None:
 
         weeks_needed = set(reg_weeks) | {w for ws in rounds.values() for w in ws if w <= last_leg}
         mweek = {w: (get_json(f"league/{lid}/matchups/{w}") or []) for w in sorted(weeks_needed)}
+        for w, ms_ in mweek.items():
+            score_fixes.extend(apply_score_overrides(season, w, ms_, warnings, score_overrides))
         counts = {"regular": 0, "playoff": 0, "placement": 0}
         for w in reg_weeks:
             pairs = defaultdict(list)
@@ -433,11 +479,14 @@ def main() -> None:
                       "Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. "
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
                       "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
-                      "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Dewey Weeks 1-7, Matt Z from Week 8). "
+                      "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Dewey Weeks 1-6, Matt Z from Week 7). "
+                      "Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total "
+                      "(2024 Week 7: Juan, roster 2, Matt Froemming and Lij, whose trade-reversal players show 0 in the matchup data). "
                       "Deion Hulse's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
             "labels": LABELS,
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
             "warnings": warnings,
+            "score_overrides_applied": score_fixes,
         },
         "current_managers": cur_ids,
         "former_managers": former_ids,

@@ -41,9 +41,9 @@
     {
       "owner": "Douglas Sullivan",
       "seasons": 4,
-      "wins": 22,
-      "losses": 18,
-      "win_pct": 0.55,
+      "wins": 21,
+      "losses": 19,
+      "win_pct": 0.53,
       "total_pf": 4622.9,
       "championships": 2,
       "playoff_appearances": 2
@@ -201,9 +201,9 @@
     {
       "owner": "MrPfizer",
       "seasons": 1,
-      "wins": 4,
-      "losses": 9,
-      "win_pct": 0.31,
+      "wins": 5,
+      "losses": 8,
+      "win_pct": 0.38,
       "total_pf": 1257.52,
       "championships": 0,
       "playoff_appearances": 0
@@ -318,13 +318,6 @@
   ],
   "all_time_low_scores": [
     {
-      "season": 2024,
-      "week": 7,
-      "owner": "Juan Rodriguez",
-      "points": 43.2,
-      "opponent": "Derek Bock"
-    },
-    {
       "season": 2025,
       "week": 16,
       "owner": "Douglas Sullivan",
@@ -386,6 +379,13 @@
       "owner": "Matt Zacharias",
       "points": 66.58,
       "opponent": "Jared Messinger"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Juan Rodriguez",
+      "points": 66.84,
+      "opponent": "Douglas Sullivan"
     }
   ],
   "biggest_blowouts": [
@@ -406,15 +406,6 @@
       "opponent": "Elijah Bruette",
       "opponent_points": 92.38,
       "margin": 109.7
-    },
-    {
-      "season": 2024,
-      "week": 7,
-      "owner": "Derek Bock",
-      "points": 152.38,
-      "opponent": "Juan Rodriguez",
-      "opponent_points": 43.2,
-      "margin": 109.18
     },
     {
       "season": 2024,
@@ -523,6 +514,15 @@
       "opponent": "MrPfizer",
       "opponent_points": 100.12,
       "margin": 62.18
+    },
+    {
+      "season": 2025,
+      "week": 15,
+      "owner": "Vlad Barber",
+      "points": 191.9,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 130.1,
+      "margin": 61.8
     }
   ],
   "closest_games": [
@@ -661,5 +661,13 @@
       "opponent_points": 95.08,
       "margin": 2.52
     }
+  ],
+  "score_overrides_applied": [
+    "2024 wk7 matchup 6: 43.2 -> 118.34",
+    "2024 wk7 matchup 2: 78.1 -> 98.94",
+    "2024 wk7 matchup 1: 67.8 -> 96.66",
+    "2024 wk7 matchup 3: 97.04 -> 97.44",
+    "career Douglas Sullivan: +1 L (2024 wk7)",
+    "career MrPfizer: +1 W (2024 wk7)"
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "note": "Manual weekly score overrides. Sleeper's current matchup data for these weeks under-counts some teams; the official season standings (roster settings fpts) credit the full points. Builds (build_h2h.py, build_all_time_stats.py, apply_history_overrides.py) replace the matchup score with official_points for the listed roster/week, and give the zeroed starters their real points. An override only applies while Sleeper's matchup score still equals matchup_points, so if Sleeper ever fixes its data the override switches itself off (with a warning).",
+  "decision": "League ruling (Jake Prosser, commissioner, Sep 2026): use Sleeper's official standings totals for 2024 Week 7. No scores were edited by hand in Sleeper.",
+  "overrides": [
+    {
+      "season": "2024", "week": 7, "roster_id": 6, "team": "Juan Rodriguez", "matchup_id": 6,
+      "matchup_points": 43.20, "official_points": 118.34, "add_points": 75.14,
+      "zeroed_starters": {
+        "11566": {"player": "Jayden Daniels", "points": 5.24},
+        "9509": {"player": "Bijan Robinson", "points": 25.80},
+        "4098": {"player": "Kareem Hunt", "points": 21.30},
+        "5967": {"player": "Tony Pollard", "points": 7.50},
+        "8112": {"player": "Drake London", "points": 15.30}
+      }
+    },
+    {
+      "season": "2024", "week": 7, "roster_id": 2, "team": "roster 2 (Matt Z from Week 7; see owner_overrides.json)", "matchup_id": 2,
+      "matchup_points": 78.10, "official_points": 98.94, "add_points": 20.84,
+      "zeroed_starters": {"11564": {"player": "Drake Maye", "points": 20.84}}
+    },
+    {
+      "season": "2024", "week": 7, "roster_id": 8, "team": "Matt Froemming", "matchup_id": 1,
+      "matchup_points": 67.80, "official_points": 96.66, "add_points": 28.86,
+      "zeroed_starters": {
+        "6904": {"player": "Jalen Hurts", "points": 22.76},
+        "11632": {"player": "Malik Nabers", "points": 6.10}
+      }
+    },
+    {
+      "season": "2024", "week": 7, "roster_id": 4, "team": "Elijah (Lij) Bruette", "matchup_id": 3,
+      "matchup_points": 97.04, "official_points": 97.44, "add_points": 0.40,
+      "zeroed_starters": {"8230": {"player": "Ty Chandler", "points": 0.40}}
+    }
+  ],
+  "evidence": [
+    "Each gap equals, to the cent, the points of starters that Sleeper's Week 7 matchup record lists at 0.0 (their real points now sit on the other team's bench in that same record). Every other starter matches the Week 7 stats, so this is not a stat correction.",
+    "Sat 2024-10-19 (MST): roster 2 traded Drake Maye, Calvin Ridley, Rico Dowdle and Tank Dell to Matt Froemming (roster 8) for Malik Nabers and Jalen Hurts; Juan (roster 6) traded Jayden Daniels, Kareem Hunt, Drake London and Bijan Robinson to Doug (roster 5) for Kimani Vidal, Zay Jones and Clyde Edwards-Helaire; Lij (roster 4) traded Ty Chandler to Juan for Tony Pollard.",
+    "Sun 2024-10-20, 4:44-4:52 PM MST (after the Sunday games): the commissioner reversed all three trades with commissioner transactions. The players went back into their original lineups after their games had been played, so the rebuilt matchup record shows them as starters with 0 points, while the official standings credit their full points to the original teams.",
+    "Doug's (roster 5) standings PF has no gap: the traded players' points were never counted for him."
+  ]
+}
