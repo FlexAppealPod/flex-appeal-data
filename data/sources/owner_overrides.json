@@ -1,0 +1,19 @@
+{
+  "note": "Manual owner overrides for rosters that changed hands mid-season. Sleeper only records a roster's final owner, so games in the listed weeks are credited to the listed manager id instead.",
+  "overrides": [
+    {
+      "season": "2024",
+      "roster_id": 2,
+      "weeks": [1, 7],
+      "manager": "michaeldewey99",
+      "sleeper_user_id": "762378622244921344",
+      "handover_to": "matt-z",
+      "reason": "Mike Dewey ran this roster Weeks 1-7 of 2024. He left after the league overturned his trade with Matt Froemming, and Matt Z (the roster's Sleeper owner) took it over from Week 8.",
+      "evidence": [
+        "Sleeper 2024 transactions: every roster-2 move through Mon 2024-10-21 was made by Mike Dewey's account, including the 2024-10-19 trade with roster 8 (Matt Froemming) that the commissioner reversed on 2024-10-20. Matt Z's first move was a Week 8 waiver claim on Tue 2024-10-22.",
+        "Nothing Catchy Fantasy Football Podcast (Mike Dewey's show): the last episode, 'Week 7: Halfway to the Playoffs!', was published 2024-10-15.",
+        "Roster 2 was 11-1 (H2H plus median) after Week 6 and 11-3 after Week 7."
+      ]
+    }
+  ]
+}

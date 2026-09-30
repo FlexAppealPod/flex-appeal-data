@@ -44,7 +44,9 @@ Keyed by person (Sleeper user / ESPN owner), so team renames don't split records
 (`meta.labels.former`; JSON keys stay `former_*`): Deion Hulse, Jake Fitzgerald,
 Jared Messinger, Mike Dewey, Anup Singh and Matt Froemming (`managers[].name`; ids
 stay stable). Deion Hulse's 2023 roster had no linked Sleeper account and is mapped
-to him; his 2022 ESPN team also appears as "Team Hulse". PDF snapshot:
+to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner changes
+live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike Dewey
+for Weeks 1-7 and to Matt Z from Week 8 (`managers[].partial_seasons`). PDF snapshot:
 `assets/Flex_Appeal_H2H_All_Time.pdf` (through 2026 Week 3).
 
 ## Flex Rankings

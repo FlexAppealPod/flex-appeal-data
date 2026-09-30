@@ -14,6 +14,8 @@ Rules
 - Managers are keyed by Sleeper owner user_id (team names / roster ids change).
   Deion Hulse owned his 2023 roster, but it had no linked Sleeper account, so it
   is mapped to him by (season, roster_id).
+- Mid-season owner changes: data/sources/owner_overrides.json credits a roster's
+  games in the listed weeks to another manager (Sleeper keeps only the final owner).
 - Pre-Sleeper seasons (2022, ESPN) come from processed files in data/sources/
   (espn_<season>_games.json); raw ESPN dumps are never committed.
 
@@ -70,6 +72,7 @@ LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
 # Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion Hulse owned it in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
+OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (manual)
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
 
 
@@ -158,7 +161,29 @@ def main() -> None:
     warnings: list[str] = []
     current_season = max(leagues)
 
-    def manager_for(season, rid, rid2uid, users):
+    overrides = json.loads(OVERRIDES_FILE.read_text())["overrides"] if OVERRIDES_FILE.exists() else []
+
+    def override_for(season, rid, weeks):
+        # all weeks of the game must fall inside the override range
+        for o in overrides:
+            if o["season"] == season and o["roster_id"] == rid and all(o["weeks"][0] <= w <= o["weeks"][1] for w in weeks):
+                mid = o["manager"]
+                if mid not in managers:
+                    managers[mid] = {"id": mid, "name": LEGACY_NAMES.get(mid, mid), "sleeper_user_id": o.get("sleeper_user_id"), "seasons": []}
+                    if o.get("sleeper_user_id"):
+                        uid_to_id[o["sleeper_user_id"]] = mid
+                if season not in managers[mid]["seasons"]:
+                    managers[mid]["seasons"].append(season)
+                    managers[mid]["seasons"].sort()
+                managers[mid].setdefault("partial_seasons", {})[season] = f"Weeks {o['weeks'][0]}-{o['weeks'][1]}"
+                return mid
+        return None
+
+    def manager_for(season, rid, rid2uid, users, weeks=None):
+        if weeks:
+            ov = override_for(season, rid, weeks)
+            if ov:
+                return ov
         uid = rid2uid.get(rid)
         if uid is None:
             label = UNOWNED_LABELS.get((season, rid), f"Unowned roster {season}-{rid}")
@@ -218,7 +243,7 @@ def main() -> None:
                     continue
                 a, b = pr
                 games.append({"season": season, "weeks": str(w), "type": "regular", "label": "Regular season",
-                              "a": manager_for(season, a["roster_id"], rid2uid, users), "b": manager_for(season, b["roster_id"], rid2uid, users),
+                              "a": manager_for(season, a["roster_id"], rid2uid, users, [w]), "b": manager_for(season, b["roster_id"], rid2uid, users, [w]),
                               "a_pts": round(a["points"] or 0, 2), "b_pts": round(b["points"] or 0, 2)})
                 counts["regular"] += 1
 
@@ -241,7 +266,7 @@ def main() -> None:
             if a_pts != b_pts and g.get("w") and (g["t1"] if a_pts > b_pts else g["t2"]) != g["w"]:
                 warnings.append(f"{season} bracket m{g.get('m')}: combined-score winner differs from Sleeper bracket")
             ga = {"season": season, "weeks": "-".join(map(str, ws)), "type": gtype, "label": label,
-                  "a": manager_for(season, g["t1"], rid2uid, users), "b": manager_for(season, g["t2"], rid2uid, users),
+                  "a": manager_for(season, g["t1"], rid2uid, users, ws), "b": manager_for(season, g["t2"], rid2uid, users, ws),
                   "a_pts": a_pts, "b_pts": b_pts}
             games.append(ga)
             counts[gtype] += 1
@@ -394,6 +419,7 @@ def main() -> None:
                       "Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. "
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
                       "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
+                      "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Dewey Weeks 1-7, Matt Z from Week 8). "
                       "Deion Hulse's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
             "labels": LABELS,
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
