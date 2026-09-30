@@ -12,8 +12,8 @@ Rules
 - A two-week playoff round is ONE meeting decided by combined score.
 - Only completed weeks count (league last_scored_leg, capped by NFL state).
 - Managers are keyed by Sleeper owner user_id (team names / roster ids change).
-  Deion's 2023 roster shows no owner in Sleeper (his account dropped off and the
-  roster auto-drafted); it is labeled "Deion".
+  Deion Hulse owned his 2023 roster, but it had no linked Sleeper account, so it
+  is mapped to him by (season, roster_id).
 - Pre-Sleeper seasons (2022, ESPN) come from processed files in data/sources/
   (espn_<season>_games.json); raw ESPN dumps are never committed.
 
@@ -62,9 +62,12 @@ FIRST_NAMES = {
     "789344057498451968": "Andrew",
 }
 # Display names for Legacy Owners (ids stay stable)
-LEGACY_NAMES = {"1001303666940338176": "Jared", "1002043477347094528": "Jake F.", "762378622244921344": "Mike D.", "608130030094065664": "Anup"}
+LEGACY_NAMES = {"jmoneymess": "Jared Messinger", "deion": "Deion Hulse", "anupds23": "Anup Singh",
+                "mrpfizer": "Matt Froemming", "jakefitzy": "Jake Fitzgerald", "michaeldewey99": "Mike Dewey"}
+# Other ESPN team names seen for a manager (2022 ESPN "Team Hulse" = Deion Hulse)
+ESPN_TEAM_ALIASES = {"deion": ["Team Hulse"]}
 LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
-# Rosters with no Sleeper owner: (season, roster_id) -> label (Deion's account dropped off in 2023)
+# Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion Hulse owned it in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
@@ -160,12 +163,12 @@ def main() -> None:
         if uid is None:
             label = UNOWNED_LABELS.get((season, rid), f"Unowned roster {season}-{rid}")
             mid = slug(label)
-            managers.setdefault(mid, {"id": mid, "name": label, "sleeper_user_id": None, "seasons": [],
-                                     "note": "2023 Sleeper roster shows no owner (account dropped off; roster auto-drafted)"})
+            managers.setdefault(mid, {"id": mid, "name": LEGACY_NAMES.get(mid, label), "sleeper_user_id": None, "seasons": [],
+                                     "note": f"{season} roster had no linked Sleeper account"})
         else:
             if uid not in uid_to_id:
-                name = FIRST_NAMES.get(uid) or LEGACY_NAMES.get(uid) or users.get(uid, {}).get("display_name") or uid
                 mid = slug(FIRST_NAMES.get(uid) or users.get(uid, {}).get("display_name") or uid)  # stable id
+                name = FIRST_NAMES.get(uid) or LEGACY_NAMES.get(mid) or users.get(uid, {}).get("display_name") or uid
                 uid_to_id[uid] = mid
                 managers[mid] = {"id": mid, "name": name, "sleeper_user_id": uid, "seasons": []}
             mid = uid_to_id[uid]
@@ -266,7 +269,10 @@ def main() -> None:
         for t in sd["teams"]:
             mid = t["manager"]
             if mid not in managers:
-                managers[mid] = {"id": mid, "name": t["espn_owner"].split()[0], "sleeper_user_id": None, "seasons": []}
+                managers[mid] = {"id": mid, "name": LEGACY_NAMES.get(mid, t["espn_owner"]), "sleeper_user_id": None, "seasons": []}
+            names = [n for n in [t.get("team_name", "").strip()] + ESPN_TEAM_ALIASES.get(mid, []) if n]
+            if names:
+                managers[mid].setdefault("espn_team_names", {})[season] = names
             if season not in managers[mid]["seasons"]:
                 managers[mid]["seasons"].append(season)
                 managers[mid]["seasons"].sort()
@@ -388,7 +394,7 @@ def main() -> None:
                       "Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. "
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
                       "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
-                      "'Deion' also covers his 2023 Sleeper roster, which shows no owner after his account dropped off (label from league records)."),
+                      "Deion Hulse's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
             "labels": LABELS,
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
             "warnings": warnings,

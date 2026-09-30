@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-29T21:27:28-07:00",
+  "generated_at": "2026-09-29T21:31:35-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -13,7 +13,7 @@
    "week": 3
   },
   "total_games": 319,
-  "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. 'Deion' also covers his 2023 Sleeper roster, which shows no owner after his account dropped off (label from league records).",
+  "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. Deion Hulse's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records.",
   "labels": {
    "current": "Current Managers",
    "former": "Legacy Owners"
@@ -57,6 +57,11 @@
    ],
    "sleeper_handle": "jacobpro",
    "current_team_name": "Got the Beam on Me",
+   "espn_team_names": {
+    "2022": [
+     "Losin With MaHomies"
+    ]
+   },
    "current": true
   },
   {
@@ -99,6 +104,11 @@
    ],
    "sleeper_handle": "syrax",
    "current_team_name": "Taylor Swift",
+   "espn_team_names": {
+    "2022": [
+     "Griddy Griddy Bang Bang"
+    ]
+   },
    "current": true
   },
   {
@@ -114,6 +124,11 @@
    ],
    "sleeper_handle": "DSully701",
    "current_team_name": "9 - 5",
+   "espn_team_names": {
+    "2022": [
+     "Reid’s Nnadi Boys"
+    ]
+   },
    "current": true
   },
   {
@@ -169,6 +184,11 @@
    ],
    "sleeper_handle": "vladydaddy23",
    "current_team_name": "WHO’s YOUR VLADDY",
+   "espn_team_names": {
+    "2022": [
+     "Phx Vlady daddy"
+    ]
+   },
    "current": true
   },
   {
@@ -212,51 +232,72 @@
   },
   {
    "id": "deion",
-   "name": "Deion",
+   "name": "Deion Hulse",
    "sleeper_user_id": null,
    "seasons": [
     "2022",
     "2023"
    ],
-   "note": "2023 Sleeper roster shows no owner (account dropped off; roster auto-drafted)",
+   "note": "2023 roster had no linked Sleeper account",
+   "espn_team_names": {
+    "2022": [
+     "Hurts Donut",
+     "Team Hulse"
+    ]
+   },
    "current": false
   },
   {
    "id": "jakefitzy",
-   "name": "Jake F.",
+   "name": "Jake Fitzgerald",
    "sleeper_user_id": "1002043477347094528",
    "seasons": [
     "2022",
     "2023"
    ],
    "sleeper_handle": "Jakefitzy",
+   "espn_team_names": {
+    "2022": [
+     "Team FitzGerald"
+    ]
+   },
    "current": false
   },
   {
    "id": "jmoneymess",
-   "name": "Jared",
+   "name": "Jared Messinger",
    "sleeper_user_id": "1001303666940338176",
    "seasons": [
     "2022",
     "2023"
    ],
    "sleeper_handle": "Jmoneymess",
+   "espn_team_names": {
+    "2022": [
+     "Team Mess"
+    ]
+   },
    "current": false
   },
   {
    "id": "michaeldewey99",
-   "name": "Mike D.",
+   "name": "Mike Dewey",
    "sleeper_user_id": "762378622244921344",
    "seasons": [
     "2022",
     "2023"
    ],
    "sleeper_handle": "MichaelDewey99",
+   "espn_team_names": {
+    "2022": [
+     "Reid'em And Weep"
+    ]
+   },
    "current": false
   },
   {
    "id": "anupds23",
-   "name": "Anup",
+   "name": "Anup Singh",
    "sleeper_user_id": "608130030094065664",
    "seasons": [
     "2023"
@@ -266,7 +307,7 @@
   },
   {
    "id": "mrpfizer",
-   "name": "MrPfizer",
+   "name": "Matt Froemming",
    "sleeper_user_id": "1134240220636954624",
    "seasons": [
     "2024"
@@ -2214,7 +2255,7 @@
  "former_manager_rows": [
   {
    "id": "deion",
-   "name": "Deion",
+   "name": "Deion Hulse",
    "seasons": [
     "2022",
     "2023"
@@ -2240,7 +2281,7 @@
   },
   {
    "id": "jakefitzy",
-   "name": "Jake F.",
+   "name": "Jake Fitzgerald",
    "seasons": [
     "2022",
     "2023"
@@ -2266,7 +2307,7 @@
   },
   {
    "id": "jmoneymess",
-   "name": "Jared",
+   "name": "Jared Messinger",
    "seasons": [
     "2022",
     "2023"
@@ -2292,7 +2333,7 @@
   },
   {
    "id": "michaeldewey99",
-   "name": "Mike D.",
+   "name": "Mike Dewey",
    "seasons": [
     "2022",
     "2023"
@@ -2318,7 +2359,7 @@
   },
   {
    "id": "anupds23",
-   "name": "Anup",
+   "name": "Anup Singh",
    "seasons": [
     "2023"
    ],
@@ -2343,7 +2384,7 @@
   },
   {
    "id": "mrpfizer",
-   "name": "MrPfizer",
+   "name": "Matt Froemming",
    "seasons": [
     "2024"
    ],
@@ -2534,15 +2575,15 @@
  "title_games": [
   {
    "season": "2022",
-   "winner": "Deion",
-   "loser": "Jared",
+   "winner": "Deion Hulse",
+   "loser": "Jared Messinger",
    "score": "203.96-194.58",
    "weeks": "16-17"
   },
   {
    "season": "2023",
    "winner": "Doug",
-   "loser": "Deion",
+   "loser": "Deion Hulse",
    "score": "267.12-243.00",
    "weeks": "16-17"
   },
@@ -2570,7 +2611,7 @@
   "Best record counting every game: Juan 29-17 (.630).",
   "Toughest all-time road: Jake 20-33 (.377).",
   "Best vs Legacy Owners: Juan 7-1.",
-  "Title games: 2022 Deion over Jared 203.96-194.58; 2023 Doug over Deion 267.12-243.00; 2024 Doug over Paul 249.46-236.80; 2025 Vlad over Matt Z 223.20-220.96."
+  "Title games: 2022 Deion Hulse over Jared Messinger 203.96-194.58; 2023 Doug over Deion Hulse 267.12-243.00; 2024 Doug over Paul 249.46-236.80; 2025 Vlad over Matt Z 223.20-220.96."
  ],
  "games": [
   {"season":"2022","weeks":"1","type":"regular","label":"Regular season","a":"michaeldewey99","b":"doug","a_pts":98.56,"b_pts":150.46,"winner":"doug"},
