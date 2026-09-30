@@ -33,6 +33,7 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `history.json` | Champions (2022 co-champions via `apply_history_overrides.py`; entries may carry `co_champions` / `note`), career (through 2026 to date), all-time extremes |
 | `teams.json` | Owner, short name, team name, Sleeper handle |
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
+| `all_time_stats.json` | All-time stats 2022-present by manager: career, season and single-week records, streaks, manager seasons, best/worst seasons (`build_all_time_stats.py`) |
 | `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |
 
 ## Head-to-head (all-time)
@@ -54,6 +55,22 @@ to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner change
 live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike Dewey
 for Weeks 1-7 and to Matt Z from Week 8 (`managers[].partial_seasons`). PDF snapshot:
 `assets/Flex_Appeal_H2H_All_Time.pdf` (through 2026 Week 3).
+
+## All-time stats
+
+```bash
+python3 build_h2h.py && python3 build_all_time_stats.py   # writes data/all_time_stats.json
+```
+
+Reuses the manager registry, names, Legacy Owners label, title games and owner
+overrides from `h2h_all_time.json`, so run it after `build_h2h.py`. Top-level keys:
+`meta` (labels, rules, caveats, scoring_by_season, checks), `career`, `season_records`,
+`week_records`, `streaks`, `manager_seasons`, `best_worst`, `notable`. Regular-season
+PF/PA/PPG/all-play; record = H2H + median where Sleeper's standings count it (2024+).
+2022 player-level stats are null (N/A). Records use Sleeper's official standings where
+they differ from recomputed matchup scores (2024 Week 7). Completed-season Sleeper
+responses are cached in `/workspace/flex-alltime-cache` (not committed). PDF snapshot:
+`assets/Flex_Appeal_All_Time_Stats.pdf`.
 
 ## Flex Rankings
 

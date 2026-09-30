@@ -1361,5 +1361,552 @@
    "a_pts": 223.6,
    "b_pts": 186.6
   }
+ ],
+ "lineup": "QB, RB x2, WR x2, TE, FLEX, D/ST, K (no IDP)",
+ "weekly_pairs": [
+  {
+   "week": 1,
+   "a": "jake",
+   "b": "deion",
+   "a_pts": 91.4,
+   "b_pts": 114.22,
+   "tier": "NONE"
+  },
+  {
+   "week": 1,
+   "a": "jakefitzy",
+   "b": "jmoneymess",
+   "a_pts": 87.02,
+   "b_pts": 103.78,
+   "tier": "NONE"
+  },
+  {
+   "week": 1,
+   "a": "michaeldewey99",
+   "b": "doug",
+   "a_pts": 98.56,
+   "b_pts": 150.46,
+   "tier": "NONE"
+  },
+  {
+   "week": 1,
+   "a": "vlad",
+   "b": "lij",
+   "a_pts": 97.02,
+   "b_pts": 160.62,
+   "tier": "NONE"
+  },
+  {
+   "week": 2,
+   "a": "doug",
+   "b": "deion",
+   "a_pts": 114.76,
+   "b_pts": 163.82,
+   "tier": "NONE"
+  },
+  {
+   "week": 2,
+   "a": "jake",
+   "b": "michaeldewey99",
+   "a_pts": 109.9,
+   "b_pts": 66.3,
+   "tier": "NONE"
+  },
+  {
+   "week": 2,
+   "a": "jakefitzy",
+   "b": "vlad",
+   "a_pts": 88.16,
+   "b_pts": 100.98,
+   "tier": "NONE"
+  },
+  {
+   "week": 2,
+   "a": "lij",
+   "b": "jmoneymess",
+   "a_pts": 183.82,
+   "b_pts": 93.18,
+   "tier": "NONE"
+  },
+  {
+   "week": 3,
+   "a": "deion",
+   "b": "michaeldewey99",
+   "a_pts": 122.1,
+   "b_pts": 70.84,
+   "tier": "NONE"
+  },
+  {
+   "week": 3,
+   "a": "jake",
+   "b": "doug",
+   "a_pts": 70.08,
+   "b_pts": 108.78,
+   "tier": "NONE"
+  },
+  {
+   "week": 3,
+   "a": "jakefitzy",
+   "b": "lij",
+   "a_pts": 79.5,
+   "b_pts": 103.02,
+   "tier": "NONE"
+  },
+  {
+   "week": 3,
+   "a": "jmoneymess",
+   "b": "vlad",
+   "a_pts": 135.2,
+   "b_pts": 107.26,
+   "tier": "NONE"
+  },
+  {
+   "week": 4,
+   "a": "deion",
+   "b": "jmoneymess",
+   "a_pts": 119.26,
+   "b_pts": 121.82,
+   "tier": "NONE"
+  },
+  {
+   "week": 4,
+   "a": "doug",
+   "b": "lij",
+   "a_pts": 145.0,
+   "b_pts": 85.46,
+   "tier": "NONE"
+  },
+  {
+   "week": 4,
+   "a": "jake",
+   "b": "jakefitzy",
+   "a_pts": 121.66,
+   "b_pts": 115.38,
+   "tier": "NONE"
+  },
+  {
+   "week": 4,
+   "a": "michaeldewey99",
+   "b": "vlad",
+   "a_pts": 93.42,
+   "b_pts": 102.48,
+   "tier": "NONE"
+  },
+  {
+   "week": 5,
+   "a": "jakefitzy",
+   "b": "doug",
+   "a_pts": 89.68,
+   "b_pts": 151.12,
+   "tier": "NONE"
+  },
+  {
+   "week": 5,
+   "a": "jmoneymess",
+   "b": "jake",
+   "a_pts": 141.66,
+   "b_pts": 126.58,
+   "tier": "NONE"
+  },
+  {
+   "week": 5,
+   "a": "lij",
+   "b": "michaeldewey99",
+   "a_pts": 105.78,
+   "b_pts": 138.54,
+   "tier": "NONE"
+  },
+  {
+   "week": 5,
+   "a": "vlad",
+   "b": "deion",
+   "a_pts": 80.4,
+   "b_pts": 129.86,
+   "tier": "NONE"
+  },
+  {
+   "week": 6,
+   "a": "deion",
+   "b": "lij",
+   "a_pts": 134.78,
+   "b_pts": 99.7,
+   "tier": "NONE"
+  },
+  {
+   "week": 6,
+   "a": "doug",
+   "b": "jmoneymess",
+   "a_pts": 64.62,
+   "b_pts": 101.66,
+   "tier": "NONE"
+  },
+  {
+   "week": 6,
+   "a": "jake",
+   "b": "vlad",
+   "a_pts": 87.36,
+   "b_pts": 92.88,
+   "tier": "NONE"
+  },
+  {
+   "week": 6,
+   "a": "michaeldewey99",
+   "b": "jakefitzy",
+   "a_pts": 99.2,
+   "b_pts": 100.9,
+   "tier": "NONE"
+  },
+  {
+   "week": 7,
+   "a": "jakefitzy",
+   "b": "deion",
+   "a_pts": 121.64,
+   "b_pts": 75.9,
+   "tier": "NONE"
+  },
+  {
+   "week": 7,
+   "a": "jmoneymess",
+   "b": "michaeldewey99",
+   "a_pts": 103.9,
+   "b_pts": 86.54,
+   "tier": "NONE"
+  },
+  {
+   "week": 7,
+   "a": "lij",
+   "b": "jake",
+   "a_pts": 84.7,
+   "b_pts": 128.62,
+   "tier": "NONE"
+  },
+  {
+   "week": 7,
+   "a": "vlad",
+   "b": "doug",
+   "a_pts": 129.06,
+   "b_pts": 117.12,
+   "tier": "NONE"
+  },
+  {
+   "week": 8,
+   "a": "deion",
+   "b": "jake",
+   "a_pts": 177.06,
+   "b_pts": 115.54,
+   "tier": "NONE"
+  },
+  {
+   "week": 8,
+   "a": "doug",
+   "b": "michaeldewey99",
+   "a_pts": 107.24,
+   "b_pts": 146.68,
+   "tier": "NONE"
+  },
+  {
+   "week": 8,
+   "a": "jmoneymess",
+   "b": "jakefitzy",
+   "a_pts": 112.62,
+   "b_pts": 122.18,
+   "tier": "NONE"
+  },
+  {
+   "week": 8,
+   "a": "lij",
+   "b": "vlad",
+   "a_pts": 112.42,
+   "b_pts": 122.44,
+   "tier": "NONE"
+  },
+  {
+   "week": 9,
+   "a": "deion",
+   "b": "doug",
+   "a_pts": 102.62,
+   "b_pts": 101.3,
+   "tier": "NONE"
+  },
+  {
+   "week": 9,
+   "a": "jmoneymess",
+   "b": "lij",
+   "a_pts": 97.3,
+   "b_pts": 86.92,
+   "tier": "NONE"
+  },
+  {
+   "week": 9,
+   "a": "michaeldewey99",
+   "b": "jake",
+   "a_pts": 111.98,
+   "b_pts": 126.64,
+   "tier": "NONE"
+  },
+  {
+   "week": 9,
+   "a": "vlad",
+   "b": "jakefitzy",
+   "a_pts": 105.9,
+   "b_pts": 122.74,
+   "tier": "NONE"
+  },
+  {
+   "week": 10,
+   "a": "doug",
+   "b": "jake",
+   "a_pts": 103.24,
+   "b_pts": 99.04,
+   "tier": "NONE"
+  },
+  {
+   "week": 10,
+   "a": "lij",
+   "b": "jakefitzy",
+   "a_pts": 149.98,
+   "b_pts": 96.16,
+   "tier": "NONE"
+  },
+  {
+   "week": 10,
+   "a": "michaeldewey99",
+   "b": "deion",
+   "a_pts": 79.2,
+   "b_pts": 90.5,
+   "tier": "NONE"
+  },
+  {
+   "week": 10,
+   "a": "vlad",
+   "b": "jmoneymess",
+   "a_pts": 121.78,
+   "b_pts": 68.1,
+   "tier": "NONE"
+  },
+  {
+   "week": 11,
+   "a": "jakefitzy",
+   "b": "jake",
+   "a_pts": 137.5,
+   "b_pts": 108.06,
+   "tier": "NONE"
+  },
+  {
+   "week": 11,
+   "a": "jmoneymess",
+   "b": "deion",
+   "a_pts": 108.34,
+   "b_pts": 102.7,
+   "tier": "NONE"
+  },
+  {
+   "week": 11,
+   "a": "lij",
+   "b": "doug",
+   "a_pts": 96.72,
+   "b_pts": 118.0,
+   "tier": "NONE"
+  },
+  {
+   "week": 11,
+   "a": "vlad",
+   "b": "michaeldewey99",
+   "a_pts": 114.94,
+   "b_pts": 95.58,
+   "tier": "NONE"
+  },
+  {
+   "week": 12,
+   "a": "deion",
+   "b": "vlad",
+   "a_pts": 109.12,
+   "b_pts": 75.44,
+   "tier": "NONE"
+  },
+  {
+   "week": 12,
+   "a": "doug",
+   "b": "jakefitzy",
+   "a_pts": 176.66,
+   "b_pts": 98.9,
+   "tier": "NONE"
+  },
+  {
+   "week": 12,
+   "a": "jake",
+   "b": "jmoneymess",
+   "a_pts": 105.1,
+   "b_pts": 104.02,
+   "tier": "NONE"
+  },
+  {
+   "week": 12,
+   "a": "michaeldewey99",
+   "b": "lij",
+   "a_pts": 91.76,
+   "b_pts": 133.0,
+   "tier": "NONE"
+  },
+  {
+   "week": 13,
+   "a": "jakefitzy",
+   "b": "michaeldewey99",
+   "a_pts": 88.84,
+   "b_pts": 83.1,
+   "tier": "NONE"
+  },
+  {
+   "week": 13,
+   "a": "jmoneymess",
+   "b": "doug",
+   "a_pts": 118.92,
+   "b_pts": 137.6,
+   "tier": "NONE"
+  },
+  {
+   "week": 13,
+   "a": "lij",
+   "b": "deion",
+   "a_pts": 124.24,
+   "b_pts": 177.1,
+   "tier": "NONE"
+  },
+  {
+   "week": 13,
+   "a": "vlad",
+   "b": "jake",
+   "a_pts": 105.56,
+   "b_pts": 64.82,
+   "tier": "NONE"
+  },
+  {
+   "week": 14,
+   "a": "deion",
+   "b": "doug",
+   "a_pts": 132.58,
+   "b_pts": 104.68,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 14,
+   "a": "jakefitzy",
+   "b": "jake",
+   "a_pts": 53.56,
+   "b_pts": 80.08,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 14,
+   "a": "jmoneymess",
+   "b": "vlad",
+   "a_pts": 123.58,
+   "b_pts": 68.38,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 14,
+   "a": "lij",
+   "b": "michaeldewey99",
+   "a_pts": 109.46,
+   "b_pts": 77.5,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 15,
+   "a": "deion",
+   "b": "doug",
+   "a_pts": 141.9,
+   "b_pts": 82.52,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 15,
+   "a": "jakefitzy",
+   "b": "jake",
+   "a_pts": 125.2,
+   "b_pts": 141.94,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 15,
+   "a": "jmoneymess",
+   "b": "vlad",
+   "a_pts": 137.66,
+   "b_pts": 97.2,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 15,
+   "a": "lij",
+   "b": "michaeldewey99",
+   "a_pts": 100.64,
+   "b_pts": 125.7,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 16,
+   "a": "deion",
+   "b": "jmoneymess",
+   "a_pts": 79.8,
+   "b_pts": 112.18,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 16,
+   "a": "jake",
+   "b": "lij",
+   "a_pts": 123.26,
+   "b_pts": 124.58,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 16,
+   "a": "jakefitzy",
+   "b": "michaeldewey99",
+   "a_pts": 122.5,
+   "b_pts": 98.5,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 16,
+   "a": "vlad",
+   "b": "doug",
+   "a_pts": 90.36,
+   "b_pts": 82.9,
+   "tier": "WINNERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 17,
+   "a": "deion",
+   "b": "jmoneymess",
+   "a_pts": 121.16,
+   "b_pts": 82.4,
+   "tier": "WINNERS_BRACKET"
+  },
+  {
+   "week": 17,
+   "a": "jake",
+   "b": "lij",
+   "a_pts": 106.02,
+   "b_pts": 90.88,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 17,
+   "a": "jakefitzy",
+   "b": "michaeldewey99",
+   "a_pts": 98.1,
+   "b_pts": 88.1,
+   "tier": "LOSERS_CONSOLATION_LADDER"
+  },
+  {
+   "week": 17,
+   "a": "vlad",
+   "b": "doug",
+   "a_pts": 108.08,
+   "b_pts": 108.8,
+   "tier": "WINNERS_CONSOLATION_LADDER"
+  }
  ]
 }

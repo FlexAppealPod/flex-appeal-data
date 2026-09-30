@@ -1,0 +1,7663 @@
+{
+  "meta": {
+    "generated_at": "2026-09-29T22:02:14-07:00",
+    "seasons_covered": [
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "through": {
+      "season": "2026",
+      "week": 3
+    },
+    "labels": {
+      "current": "Current Managers",
+      "former": "Legacy Owners"
+    },
+    "rules": [
+      "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Dewey Weeks 1-7, Matt Z from Week 8.",
+      "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2023+). 2022 (ESPN) had no median, so its record is H2H only.",
+      "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
+      "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
+      "2022 titles: Deion Hulse and Jared Messinger are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
+      "Single-week records include every real weekly pairing: regular season, playoff legs and consolation legs.",
+      "Starter TDs = passing + rushing + receiving + IDP defensive + return TDs by starters, regular season only (same logic as team_stats.json). Yards = passing + rushing + receiving.",
+      "Season records and best/worst seasons use full seasons only; partial seasons (the in-progress season, or a mid-season owner change) are listed in manager_seasons but not ranked."
+    ],
+    "caveats": [
+      "Scoring and lineups differ by season: 2022 ESPN 0.5 PPR with K and D/ST, no IDP; 2023 Sleeper had K and team DEF, no IDP; 2024+ Sleeper has IDP and no K/DEF. Compare points per game rather than raw totals across seasons.",
+      "Season length differs: 13 regular-season games in 2022-2024, 11 in 2025. Use points per game and win pct for fair comparisons.",
+      "2022 records are H2H only (13 games); 2023+ records include the median game (26 results per 13 weeks). Win pct is comparable, raw win totals are not.",
+      "Player-level data (starter TDs, yards, individual starts) is N/A for 2022: the saved ESPN data only has final scores.",
+      "2023 team-DEF touchdowns are not counted as IDP TDs (team DEF is not IDP); return TDs are counted when Sleeper credits them.",
+      "Mike Dewey's 2024 (Weeks 1-7) and Matt Z's 2024 (Weeks 8-17) are partial seasons.",
+      "2024 Week 7 (the week of the overturned Mike Dewey / Matt Froemming trade): Sleeper's official standings credit Juan +75.14, roster 2 +20.84 and Matt Froemming +28.86 more points than the current matchup data. That flips four median results, so the official standings records are used for Juan (20-6), Doug (18-8), Matt Froemming (7-19) and Andrew (6-20). PF, all-play and weekly scores use the matchup data (e.g. Juan's 43.20 that week).",
+      "Small PF gaps between Sleeper standings and matchup data with no record change: Lij 2024 (+0.40) and Brett 2025 (+9.70). PF here always equals the sum of weekly matchup scores."
+    ],
+    "scoring_by_season": [
+      {
+        "season": "2022",
+        "platform": "ESPN",
+        "ppr": 0.5,
+        "idp": false,
+        "median_game": false,
+        "lineup": "QB, RB x2, WR x2, TE, FLEX, D/ST, K (no IDP)",
+        "teams": 8,
+        "regular_weeks": "1-13",
+        "scoring": "0.5 PPR, H2H points"
+      },
+      {
+        "season": "2023",
+        "platform": "Sleeper",
+        "ppr": 0.5,
+        "idp": false,
+        "median_game": false,
+        "lineup": "QB, RB, RB, WR, WR, TE, FLEX, FLEX, K, DEF",
+        "teams": 12,
+        "regular_weeks": "1-13",
+        "status": "complete",
+        "completed_through_week": 17
+      },
+      {
+        "season": "2024",
+        "platform": "Sleeper",
+        "ppr": 0.5,
+        "idp": true,
+        "median_game": true,
+        "lineup": "QB, RB, RB, WR, WR, FLEX, FLEX, REC_FLEX, IDP_FLEX",
+        "teams": 12,
+        "regular_weeks": "1-13",
+        "status": "complete",
+        "completed_through_week": 17
+      },
+      {
+        "season": "2025",
+        "platform": "Sleeper",
+        "ppr": 0.5,
+        "idp": true,
+        "median_game": true,
+        "lineup": "QB, RB, RB, WR, WR, FLEX, FLEX, REC_FLEX, IDP_FLEX",
+        "teams": 12,
+        "regular_weeks": "1-11",
+        "status": "complete",
+        "completed_through_week": 17
+      },
+      {
+        "season": "2026",
+        "platform": "Sleeper",
+        "ppr": 0.5,
+        "idp": true,
+        "median_game": true,
+        "lineup": "QB, RB, RB, WR, WR, FLEX, FLEX, REC_FLEX, IDP_FLEX",
+        "teams": 12,
+        "regular_weeks": "1-11",
+        "status": "in_season",
+        "completed_through_week": 3
+      }
+    ],
+    "checks": {
+      "passed": 49,
+      "discrepancies": [
+        "2024 roster 2 (Matt Z/Mike Dewey): computed 17-9, PF 1556.86 | Sleeper standings 17-9, PF 1577.7",
+        "2024 roster 4 (Lij): computed 11-15, PF 1392.4 | Sleeper standings 11-15, PF 1392.8",
+        "2024 roster 5 (Doug): computed 19-7, PF 1650.08 | Sleeper standings 18-8, PF 1650.08 -> official standings record used",
+        "2024 roster 6 (Juan): computed 19-7, PF 1661.76 | Sleeper standings 20-6, PF 1736.9 -> official standings record used",
+        "2024 roster 8 (Matt Froemming): computed 6-20, PF 1228.66 | Sleeper standings 7-19, PF 1257.52 -> official standings record used",
+        "2024 roster 12 (Andrew): computed 7-19, PF 1346.1 | Sleeper standings 6-20, PF 1346.1 -> official standings record used",
+        "2025 roster 11 (Brett): computed 9-13, PF 1138.5 | Sleeper standings 9-13, PF 1148.2"
+      ],
+      "history_json": [
+        "ok Juan Rodriguez: history.json 26-14 vs Sleeper H2H 26-14",
+        "ok Douglas Sullivan: history.json 22-18 vs Sleeper H2H 22-18",
+        "ok Matt Zacharias: history.json 24-16 vs Sleeper H2H 24-16",
+        "ok Vlad Barber: history.json 19-21 vs Sleeper H2H 19-21",
+        "ok Elijah Bruette: history.json 23-17 vs Sleeper H2H 23-17",
+        "ok Marc Caballero: history.json 17-23 vs Sleeper H2H 17-23",
+        "ok Jake Prosser: history.json 15-25 vs Sleeper H2H 15-25",
+        "ok Derek Bock: history.json 14-13 vs Sleeper H2H 14-13",
+        "ok Paul Bacon: history.json 12-15 vs Sleeper H2H 12-15",
+        "ok Matt Atkinson: history.json 15-12 vs Sleeper H2H 15-12",
+        "ok Andrew Reed: history.json 12-15 vs Sleeper H2H 12-15",
+        "ok Brett Trana: history.json 7-7 vs Sleeper H2H 7-7",
+        "ok MichaelDewey99: history.json 6-7 vs Sleeper H2H 6-7",
+        "ok Deion: history.json 8-5 vs Sleeper H2H 8-5",
+        "ok Jakefitzy: history.json 7-6 vs Sleeper H2H 7-6",
+        "ok Jared Messinger: history.json 5-8 vs Sleeper H2H 5-8",
+        "ok Anupds23: history.json 4-9 vs Sleeper H2H 4-9",
+        "ok MrPfizer: history.json 4-9 vs Sleeper H2H 4-9",
+        "ok champion 2022: Deion Hulse & Jared Messinger (co-champions)",
+        "ok champion 2023: Douglas Sullivan",
+        "ok champion 2024: Douglas Sullivan",
+        "ok champion 2025: Vlad Barber"
+      ]
+    }
+  },
+  "career": [
+    {
+      "manager": "doug",
+      "name": "Doug",
+      "group": "current",
+      "full_name": "Douglas Sullivan",
+      "seasons": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 53,
+      "h2h": {
+        "w": 30,
+        "l": 23,
+        "t": 0
+      },
+      "median": {
+        "w": 15,
+        "l": 12,
+        "t": 0
+      },
+      "record": {
+        "w": 45,
+        "l": 35,
+        "t": 0
+      },
+      "pf": 6218.8,
+      "pa": 5718.52,
+      "all_play": {
+        "w": 291,
+        "l": 240,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 6,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 3,
+      "finals": 2,
+      "titles": 2,
+      "title_seasons": [
+        "2023",
+        "2024"
+      ],
+      "starter_tds": 206,
+      "starter_yards": 29163,
+      "ppg": 117.34,
+      "pa_pg": 107.9,
+      "record_str": "45-35",
+      "record_pct": 0.562,
+      "h2h_str": "30-23",
+      "h2h_pct": 0.566,
+      "median_str": "15-12",
+      "all_play_str": "291-240",
+      "all_play_pct": 0.548,
+      "playoff_record_str": "6-2",
+      "tds_per_game": 5.15,
+      "career_high": {
+        "season": "2024",
+        "week": 11,
+        "points": 202.08,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 16,
+        "points": 50.7,
+        "opponent": "Brett",
+        "phase": "consolation"
+      },
+      "full_seasons": 4,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "lij",
+      "name": "Lij",
+      "group": "current",
+      "full_name": "Elijah Bruette",
+      "seasons": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 53,
+      "h2h": {
+        "w": 28,
+        "l": 25,
+        "t": 0
+      },
+      "median": {
+        "w": 13,
+        "l": 14,
+        "t": 0
+      },
+      "record": {
+        "w": 41,
+        "l": 39,
+        "t": 0
+      },
+      "pf": 6049.82,
+      "pa": 6021.8,
+      "all_play": {
+        "w": 277,
+        "l": 254,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 2,
+        "l": 3,
+        "t": 0
+      },
+      "playoff_appearances": 2,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 199,
+      "starter_yards": 29357,
+      "ppg": 114.15,
+      "pa_pg": 113.62,
+      "record_str": "41-39",
+      "record_pct": 0.512,
+      "h2h_str": "28-25",
+      "h2h_pct": 0.528,
+      "median_str": "13-14",
+      "all_play_str": "277-254",
+      "all_play_pct": 0.522,
+      "playoff_record_str": "2-3",
+      "tds_per_game": 4.97,
+      "career_high": {
+        "season": "2022",
+        "week": 2,
+        "points": 183.82,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2026",
+        "week": 3,
+        "points": 60.12,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "full_seasons": 4,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "vlad",
+      "name": "Vlad",
+      "group": "current",
+      "full_name": "Vlad Barber",
+      "seasons": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 53,
+      "h2h": {
+        "w": 27,
+        "l": 26,
+        "t": 0
+      },
+      "median": {
+        "w": 19,
+        "l": 8,
+        "t": 0
+      },
+      "record": {
+        "w": 46,
+        "l": 34,
+        "t": 0
+      },
+      "pf": 5899.52,
+      "pa": 5905.4,
+      "all_play": {
+        "w": 276,
+        "l": 255,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 4,
+        "l": 3,
+        "t": 0
+      },
+      "playoff_appearances": 3,
+      "finals": 1,
+      "titles": 1,
+      "title_seasons": [
+        "2025"
+      ],
+      "starter_tds": 205,
+      "starter_yards": 29425,
+      "ppg": 111.31,
+      "pa_pg": 111.42,
+      "record_str": "46-34",
+      "record_pct": 0.575,
+      "h2h_str": "27-26",
+      "h2h_pct": 0.509,
+      "median_str": "19-8",
+      "all_play_str": "276-255",
+      "all_play_pct": 0.52,
+      "playoff_record_str": "4-3",
+      "tds_per_game": 5.12,
+      "career_high": {
+        "season": "2025",
+        "week": 15,
+        "points": 191.9,
+        "opponent": "Juan",
+        "phase": "playoff"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 12,
+        "points": 56.8,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "full_seasons": 4,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "jake",
+      "name": "Jake",
+      "group": "current",
+      "full_name": "Jake Prosser",
+      "seasons": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 53,
+      "h2h": {
+        "w": 20,
+        "l": 33,
+        "t": 0
+      },
+      "median": {
+        "w": 11,
+        "l": 16,
+        "t": 0
+      },
+      "record": {
+        "w": 31,
+        "l": 49,
+        "t": 0
+      },
+      "pf": 5607.96,
+      "pa": 6090.2,
+      "all_play": {
+        "w": 247,
+        "l": 284,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 196,
+      "starter_yards": 28102,
+      "ppg": 105.81,
+      "pa_pg": 114.91,
+      "record_str": "31-49",
+      "record_pct": 0.388,
+      "h2h_str": "20-33",
+      "h2h_pct": 0.377,
+      "median_str": "11-16",
+      "all_play_str": "247-284",
+      "all_play_pct": 0.465,
+      "playoff_record_str": null,
+      "tds_per_game": 4.9,
+      "career_high": {
+        "season": "2024",
+        "week": 14,
+        "points": 162.3,
+        "opponent": "Matt Froemming",
+        "phase": "consolation"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 10,
+        "points": 51.1,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "full_seasons": 4,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "juan",
+      "name": "Juan",
+      "group": "current",
+      "full_name": "Juan Rodriguez",
+      "seasons": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 40,
+      "h2h": {
+        "w": 26,
+        "l": 14,
+        "t": 0
+      },
+      "median": {
+        "w": 21,
+        "l": 6,
+        "t": 0
+      },
+      "record": {
+        "w": 47,
+        "l": 20,
+        "t": 0
+      },
+      "pf": 4953.18,
+      "pa": 4434.86,
+      "all_play": {
+        "w": 305,
+        "l": 135,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 3,
+        "l": 3,
+        "t": 0
+      },
+      "playoff_appearances": 3,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 216,
+      "starter_yards": 32362,
+      "ppg": 123.83,
+      "pa_pg": 110.87,
+      "record_str": "47-20",
+      "record_pct": 0.701,
+      "h2h_str": "26-14",
+      "h2h_pct": 0.65,
+      "median_str": "21-6",
+      "all_play_str": "305-135",
+      "all_play_pct": 0.693,
+      "playoff_record_str": "3-3",
+      "tds_per_game": 5.4,
+      "career_high": {
+        "season": "2024",
+        "week": 17,
+        "points": 199.68,
+        "opponent": "Vlad",
+        "phase": "playoff"
+      },
+      "career_low": {
+        "season": "2024",
+        "week": 7,
+        "points": 43.2,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "full_seasons": 3,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "marc",
+      "name": "Marc",
+      "group": "current",
+      "full_name": "Marc Caballero",
+      "seasons": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 40,
+      "h2h": {
+        "w": 17,
+        "l": 23,
+        "t": 0
+      },
+      "median": {
+        "w": 11,
+        "l": 16,
+        "t": 0
+      },
+      "record": {
+        "w": 28,
+        "l": 39,
+        "t": 0
+      },
+      "pf": 4438.16,
+      "pa": 4476.3,
+      "all_play": {
+        "w": 217,
+        "l": 223,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 200,
+      "starter_yards": 28761,
+      "ppg": 110.95,
+      "pa_pg": 111.91,
+      "record_str": "28-39",
+      "record_pct": 0.418,
+      "h2h_str": "17-23",
+      "h2h_pct": 0.425,
+      "median_str": "11-16",
+      "all_play_str": "217-223",
+      "all_play_pct": 0.493,
+      "playoff_record_str": "0-2",
+      "tds_per_game": 5.0,
+      "career_high": {
+        "season": "2023",
+        "week": 10,
+        "points": 149.16,
+        "opponent": "Deion Hulse",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 17,
+        "points": 60.7,
+        "opponent": "Paul",
+        "phase": "consolation"
+      },
+      "full_seasons": 3,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "matt-z",
+      "name": "Matt Z",
+      "group": "current",
+      "full_name": "Matt Zacharias",
+      "seasons": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 33,
+      "h2h": {
+        "w": 18,
+        "l": 15,
+        "t": 0
+      },
+      "median": {
+        "w": 13,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 31,
+        "l": 22,
+        "t": 0
+      },
+      "pf": 3765.42,
+      "pa": 3481.1,
+      "all_play": {
+        "w": 186,
+        "l": 177,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 3,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 2,
+      "finals": 1,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 178,
+      "starter_yards": 24716,
+      "ppg": 114.1,
+      "pa_pg": 105.49,
+      "record_str": "31-22",
+      "record_pct": 0.585,
+      "h2h_str": "18-15",
+      "h2h_pct": 0.545,
+      "median_str": "13-7",
+      "all_play_str": "186-177",
+      "all_play_pct": 0.512,
+      "playoff_record_str": "3-2",
+      "tds_per_game": 5.39,
+      "career_high": {
+        "season": "2024",
+        "week": 12,
+        "points": 167.72,
+        "opponent": "Matt Froemming",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 9,
+        "points": 66.58,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2024 (Weeks 8-17)",
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "derek",
+      "name": "Derek",
+      "group": "current",
+      "full_name": "Derek Bock",
+      "seasons": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 27,
+      "h2h": {
+        "w": 14,
+        "l": 13,
+        "t": 0
+      },
+      "median": {
+        "w": 14,
+        "l": 13,
+        "t": 0
+      },
+      "record": {
+        "w": 28,
+        "l": 26,
+        "t": 0
+      },
+      "pf": 2991.7,
+      "pa": 2855.38,
+      "all_play": {
+        "w": 151,
+        "l": 146,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 1,
+        "l": 3,
+        "t": 0
+      },
+      "playoff_appearances": 2,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 133,
+      "starter_yards": 18894,
+      "ppg": 110.8,
+      "pa_pg": 105.75,
+      "record_str": "28-26",
+      "record_pct": 0.519,
+      "h2h_str": "14-13",
+      "h2h_pct": 0.519,
+      "median_str": "14-13",
+      "all_play_str": "151-146",
+      "all_play_pct": 0.508,
+      "playoff_record_str": "1-3",
+      "tds_per_game": 4.93,
+      "career_high": {
+        "season": "2024",
+        "week": 7,
+        "points": 152.38,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 6,
+        "points": 69.74,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "paul",
+      "name": "Paul",
+      "group": "current",
+      "full_name": "Paul Bacon",
+      "seasons": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 27,
+      "h2h": {
+        "w": 12,
+        "l": 15,
+        "t": 0
+      },
+      "median": {
+        "w": 13,
+        "l": 14,
+        "t": 0
+      },
+      "record": {
+        "w": 25,
+        "l": 29,
+        "t": 0
+      },
+      "pf": 2944.44,
+      "pa": 3094.22,
+      "all_play": {
+        "w": 138,
+        "l": 159,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 1,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 147,
+      "starter_yards": 19639,
+      "ppg": 109.05,
+      "pa_pg": 114.6,
+      "record_str": "25-29",
+      "record_pct": 0.463,
+      "h2h_str": "12-15",
+      "h2h_pct": 0.444,
+      "median_str": "13-14",
+      "all_play_str": "138-159",
+      "all_play_pct": 0.465,
+      "playoff_record_str": "2-1",
+      "tds_per_game": 5.44,
+      "career_high": {
+        "season": "2024",
+        "week": 15,
+        "points": 155.5,
+        "opponent": "Vlad",
+        "phase": "playoff"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 15,
+        "points": 63.86,
+        "opponent": "Brett",
+        "phase": "consolation"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "matt-a",
+      "name": "Matt A",
+      "group": "current",
+      "full_name": "Matt Atkinson",
+      "seasons": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 27,
+      "h2h": {
+        "w": 15,
+        "l": 12,
+        "t": 0
+      },
+      "median": {
+        "w": 9,
+        "l": 18,
+        "t": 0
+      },
+      "record": {
+        "w": 24,
+        "l": 30,
+        "t": 0
+      },
+      "pf": 2752.94,
+      "pa": 2811.9,
+      "all_play": {
+        "w": 120,
+        "l": 177,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 128,
+      "starter_yards": 18159,
+      "ppg": 101.96,
+      "pa_pg": 104.14,
+      "record_str": "24-30",
+      "record_pct": 0.444,
+      "h2h_str": "15-12",
+      "h2h_pct": 0.556,
+      "median_str": "9-18",
+      "all_play_str": "120-177",
+      "all_play_pct": 0.404,
+      "playoff_record_str": "0-2",
+      "tds_per_game": 4.74,
+      "career_high": {
+        "season": "2025",
+        "week": 5,
+        "points": 136.14,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 15,
+        "points": 79.68,
+        "opponent": "Andrew",
+        "phase": "playoff"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "andrew",
+      "name": "Andrew",
+      "group": "current",
+      "full_name": "Andrew Reed",
+      "seasons": [
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "games": 27,
+      "h2h": {
+        "w": 12,
+        "l": 15,
+        "t": 0
+      },
+      "median": {
+        "w": 9,
+        "l": 18,
+        "t": 0
+      },
+      "record": {
+        "w": 21,
+        "l": 33,
+        "t": 0
+      },
+      "pf": 2745.7,
+      "pa": 2984.86,
+      "all_play": {
+        "w": 120,
+        "l": 177,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 126,
+      "starter_yards": 18781,
+      "ppg": 101.69,
+      "pa_pg": 110.55,
+      "record_str": "21-33",
+      "record_pct": 0.389,
+      "h2h_str": "12-15",
+      "h2h_pct": 0.444,
+      "median_str": "9-18",
+      "all_play_str": "120-177",
+      "all_play_pct": 0.404,
+      "playoff_record_str": "1-2",
+      "tds_per_game": 4.67,
+      "career_high": {
+        "season": "2024",
+        "week": 6,
+        "points": 136.6,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 11,
+        "points": 53.24,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "brett",
+      "name": "Brett",
+      "group": "current",
+      "full_name": "Brett Trana",
+      "seasons": [
+        "2025",
+        "2026"
+      ],
+      "games": 14,
+      "h2h": {
+        "w": 7,
+        "l": 7,
+        "t": 0
+      },
+      "median": {
+        "w": 6,
+        "l": 8,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 15,
+        "t": 0
+      },
+      "pf": 1558.16,
+      "pa": 1504.6,
+      "all_play": {
+        "w": 77,
+        "l": 77,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 80,
+      "starter_yards": 10850,
+      "ppg": 111.3,
+      "pa_pg": 107.47,
+      "record_str": "13-15",
+      "record_pct": 0.464,
+      "h2h_str": "7-7",
+      "h2h_pct": 0.5,
+      "median_str": "6-8",
+      "all_play_str": "77-77",
+      "all_play_pct": 0.5,
+      "playoff_record_str": null,
+      "tds_per_game": 5.71,
+      "career_high": {
+        "season": "2026",
+        "week": 1,
+        "points": 188.1,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 14,
+        "points": 73.96,
+        "opponent": "Paul",
+        "phase": "consolation"
+      },
+      "full_seasons": 1,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "michaeldewey99",
+      "name": "Mike Dewey",
+      "group": "former",
+      "full_name": "Mike Dewey",
+      "seasons": [
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "games": 33,
+      "h2h": {
+        "w": 14,
+        "l": 19,
+        "t": 0
+      },
+      "median": {
+        "w": 5,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 19,
+        "l": 21,
+        "t": 0
+      },
+      "pf": 3640.16,
+      "pa": 3675.84,
+      "all_play": {
+        "w": 165,
+        "l": 146,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 104,
+      "starter_yards": 14902,
+      "ppg": 110.31,
+      "pa_pg": 111.39,
+      "record_str": "19-21",
+      "record_pct": 0.475,
+      "h2h_str": "14-19",
+      "h2h_pct": 0.424,
+      "median_str": "5-2",
+      "all_play_str": "165-146",
+      "all_play_pct": 0.531,
+      "playoff_record_str": null,
+      "tds_per_game": 5.2,
+      "career_high": {
+        "season": "2023",
+        "week": 17,
+        "points": 160.08,
+        "opponent": "Jake",
+        "phase": "consolation"
+      },
+      "career_low": {
+        "season": "2022",
+        "week": 2,
+        "points": 66.3,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": [
+        "2024 (Weeks 1-7)"
+      ]
+    },
+    {
+      "manager": "deion",
+      "name": "Deion Hulse",
+      "group": "former",
+      "full_name": "Deion Hulse",
+      "seasons": [
+        "2022",
+        "2023"
+      ],
+      "games": 26,
+      "h2h": {
+        "w": 18,
+        "l": 8,
+        "t": 0
+      },
+      "median": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "record": {
+        "w": 18,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 3084.2,
+      "pa": 2774.28,
+      "all_play": {
+        "w": 122,
+        "l": 112,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 3,
+        "l": 1,
+        "t": 0
+      },
+      "playoff_appearances": 2,
+      "finals": 2,
+      "titles": 1,
+      "title_seasons": [
+        "2022 (co)"
+      ],
+      "starter_tds": 58,
+      "starter_yards": 8644,
+      "ppg": 118.62,
+      "pa_pg": 106.7,
+      "record_str": "18-8",
+      "record_pct": 0.692,
+      "h2h_str": "18-8",
+      "h2h_pct": 0.692,
+      "median_str": null,
+      "all_play_str": "122-112",
+      "all_play_pct": 0.521,
+      "playoff_record_str": "3-1",
+      "tds_per_game": 4.46,
+      "career_high": {
+        "season": "2022",
+        "week": 13,
+        "points": 177.1,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 9,
+        "points": 67.1,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": []
+    },
+    {
+      "manager": "jakefitzy",
+      "name": "Jake Fitzgerald",
+      "group": "former",
+      "full_name": "Jake Fitzgerald",
+      "seasons": [
+        "2022",
+        "2023"
+      ],
+      "games": 26,
+      "h2h": {
+        "w": 13,
+        "l": 13,
+        "t": 0
+      },
+      "median": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 13,
+        "t": 0
+      },
+      "pf": 2809.22,
+      "pa": 2927.56,
+      "all_play": {
+        "w": 110,
+        "l": 124,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 71,
+      "starter_yards": 9400,
+      "ppg": 108.05,
+      "pa_pg": 112.6,
+      "record_str": "13-13",
+      "record_pct": 0.5,
+      "h2h_str": "13-13",
+      "h2h_pct": 0.5,
+      "median_str": null,
+      "all_play_str": "110-124",
+      "all_play_pct": 0.47,
+      "playoff_record_str": "1-2",
+      "tds_per_game": 5.46,
+      "career_high": {
+        "season": "2023",
+        "week": 8,
+        "points": 148.36,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2022",
+        "week": 14,
+        "points": 53.56,
+        "opponent": "Jake",
+        "phase": "consolation"
+      },
+      "full_seasons": 2,
+      "partial_seasons": []
+    },
+    {
+      "manager": "jmoneymess",
+      "name": "Jared Messinger",
+      "group": "former",
+      "full_name": "Jared Messinger",
+      "seasons": [
+        "2022",
+        "2023"
+      ],
+      "games": 26,
+      "h2h": {
+        "w": 13,
+        "l": 13,
+        "t": 0
+      },
+      "median": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 13,
+        "t": 0
+      },
+      "pf": 2799.22,
+      "pa": 3050.52,
+      "all_play": {
+        "w": 111,
+        "l": 123,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 1,
+      "titles": 1,
+      "title_seasons": [
+        "2022 (co)"
+      ],
+      "starter_tds": 48,
+      "starter_yards": 9126,
+      "ppg": 107.66,
+      "pa_pg": 117.33,
+      "record_str": "13-13",
+      "record_pct": 0.5,
+      "h2h_str": "13-13",
+      "h2h_pct": 0.5,
+      "median_str": null,
+      "all_play_str": "111-123",
+      "all_play_pct": 0.474,
+      "playoff_record_str": "1-1",
+      "tds_per_game": 3.69,
+      "career_high": {
+        "season": "2022",
+        "week": 5,
+        "points": 141.66,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 13,
+        "points": 66.92,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "full_seasons": 2,
+      "partial_seasons": []
+    },
+    {
+      "manager": "anupds23",
+      "name": "Anup Singh",
+      "group": "former",
+      "full_name": "Anup Singh",
+      "seasons": [
+        "2023"
+      ],
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "pf": 1374.22,
+      "pa": 1551.86,
+      "all_play": {
+        "w": 59,
+        "l": 84,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 64,
+      "starter_yards": 9314,
+      "ppg": 105.71,
+      "pa_pg": 119.37,
+      "record_str": "4-9",
+      "record_pct": 0.308,
+      "h2h_str": "4-9",
+      "h2h_pct": 0.308,
+      "median_str": null,
+      "all_play_str": "59-84",
+      "all_play_pct": 0.413,
+      "playoff_record_str": null,
+      "tds_per_game": 4.92,
+      "career_high": {
+        "season": "2023",
+        "week": 3,
+        "points": 149.96,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2023",
+        "week": 7,
+        "points": 66.96,
+        "opponent": "Deion Hulse",
+        "phase": "regular"
+      },
+      "full_seasons": 1,
+      "partial_seasons": []
+    },
+    {
+      "manager": "mrpfizer",
+      "name": "Matt Froemming",
+      "group": "former",
+      "full_name": "Matt Froemming",
+      "seasons": [
+        "2024"
+      ],
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 3,
+        "l": 10,
+        "t": 0
+      },
+      "record": {
+        "w": 7,
+        "l": 19,
+        "t": 0
+      },
+      "pf": 1228.66,
+      "pa": 1502.28,
+      "all_play": {
+        "w": 32,
+        "l": 111,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 53,
+      "starter_yards": 7809,
+      "ppg": 94.51,
+      "pa_pg": 115.56,
+      "record_str": "7-19",
+      "record_pct": 0.269,
+      "h2h_str": "4-9",
+      "h2h_pct": 0.308,
+      "median_str": "3-10",
+      "all_play_str": "32-111",
+      "all_play_pct": 0.224,
+      "playoff_record_str": null,
+      "tds_per_game": 4.08,
+      "career_high": {
+        "season": "2024",
+        "week": 17,
+        "points": 130.3,
+        "opponent": "Matt A",
+        "phase": "consolation"
+      },
+      "career_low": {
+        "season": "2024",
+        "week": 7,
+        "points": 67.8,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "full_seasons": 1,
+      "partial_seasons": []
+    }
+  ],
+  "season_records": {
+    "most_pf": [
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13
+      },
+      {
+        "season": "2024",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "20-6",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "games": 13
+      },
+      {
+        "season": "2024",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "18-8",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "games": 13
+      },
+      {
+        "season": "2022",
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "platform": "ESPN",
+        "record": "10-3",
+        "pf": 1619.04,
+        "ppg": 124.54,
+        "games": 13
+      },
+      {
+        "season": "2024",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1619.0,
+        "ppg": 124.54,
+        "games": 13
+      }
+    ],
+    "fewest_pf": [
+      {
+        "season": "2025",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "3-19",
+        "pf": 976.0,
+        "ppg": 88.73,
+        "games": 11
+      },
+      {
+        "season": "2025",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "7-15",
+        "pf": 1058.76,
+        "ppg": 96.25,
+        "games": 11
+      },
+      {
+        "season": "2025",
+        "manager": "marc",
+        "name": "Marc",
+        "platform": "Sleeper",
+        "record": "7-15",
+        "pf": 1080.82,
+        "ppg": 98.26,
+        "games": 11
+      },
+      {
+        "season": "2025",
+        "manager": "jake",
+        "name": "Jake",
+        "platform": "Sleeper",
+        "record": "8-14",
+        "pf": 1121.16,
+        "ppg": 101.92,
+        "games": 11
+      },
+      {
+        "season": "2025",
+        "manager": "andrew",
+        "name": "Andrew",
+        "platform": "Sleeper",
+        "record": "13-9",
+        "pf": 1128.54,
+        "ppg": 102.59,
+        "games": 11
+      }
+    ],
+    "highest_ppg": [
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13
+      },
+      {
+        "season": "2024",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "20-6",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "games": 13
+      },
+      {
+        "season": "2025",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "16-6",
+        "pf": 1400.44,
+        "ppg": 127.31,
+        "games": 11
+      },
+      {
+        "season": "2024",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "18-8",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "games": 13
+      },
+      {
+        "season": "2022",
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "platform": "ESPN",
+        "record": "10-3",
+        "pf": 1619.04,
+        "ppg": 124.54,
+        "games": 13
+      }
+    ],
+    "lowest_ppg": [
+      {
+        "season": "2025",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "3-19",
+        "pf": 976.0,
+        "ppg": 88.73,
+        "games": 11
+      },
+      {
+        "season": "2024",
+        "manager": "mrpfizer",
+        "name": "Matt Froemming",
+        "platform": "Sleeper",
+        "record": "7-19",
+        "pf": 1228.66,
+        "ppg": 94.51,
+        "games": 13
+      },
+      {
+        "season": "2025",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "7-15",
+        "pf": 1058.76,
+        "ppg": 96.25,
+        "games": 11
+      },
+      {
+        "season": "2022",
+        "manager": "michaeldewey99",
+        "name": "Mike Dewey",
+        "platform": "ESPN",
+        "record": "2-11",
+        "pf": 1261.7,
+        "ppg": 97.05,
+        "games": 13
+      },
+      {
+        "season": "2025",
+        "manager": "marc",
+        "name": "Marc",
+        "platform": "Sleeper",
+        "record": "7-15",
+        "pf": 1080.82,
+        "ppg": 98.26,
+        "games": 11
+      }
+    ],
+    "best_record": [
+      {
+        "season": "2024",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "20-6",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "games": 13,
+        "record_pct": 0.769,
+        "h2h_str": "9-4",
+        "median_str": "11-2"
+      },
+      {
+        "season": "2022",
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "platform": "ESPN",
+        "record": "10-3",
+        "pf": 1619.04,
+        "ppg": 124.54,
+        "games": 13,
+        "record_pct": 0.769,
+        "h2h_str": "10-3",
+        "median_str": null
+      },
+      {
+        "season": "2023",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "10-3",
+        "pf": 1613.24,
+        "ppg": 124.1,
+        "games": 13,
+        "record_pct": 0.769,
+        "h2h_str": "10-3",
+        "median_str": null
+      },
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13,
+        "record_pct": 0.731,
+        "h2h_str": "8-5",
+        "median_str": "11-2"
+      },
+      {
+        "season": "2024",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1619.0,
+        "ppg": 124.54,
+        "games": 13,
+        "record_pct": 0.731,
+        "h2h_str": "9-4",
+        "median_str": "10-3"
+      }
+    ],
+    "worst_record": [
+      {
+        "season": "2025",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "3-19",
+        "pf": 976.0,
+        "ppg": 88.73,
+        "games": 11,
+        "record_pct": 0.136,
+        "h2h_str": "1-10",
+        "median_str": "2-9"
+      },
+      {
+        "season": "2022",
+        "manager": "michaeldewey99",
+        "name": "Mike Dewey",
+        "platform": "ESPN",
+        "record": "2-11",
+        "pf": 1261.7,
+        "ppg": 97.05,
+        "games": 13,
+        "record_pct": 0.154,
+        "h2h_str": "2-11",
+        "median_str": null
+      },
+      {
+        "season": "2023",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "3-10",
+        "pf": 1292.64,
+        "ppg": 99.43,
+        "games": 13,
+        "record_pct": 0.231,
+        "h2h_str": "3-10",
+        "median_str": null
+      },
+      {
+        "season": "2024",
+        "manager": "matt-a",
+        "name": "Matt A",
+        "platform": "Sleeper",
+        "record": "6-20",
+        "pf": 1299.52,
+        "ppg": 99.96,
+        "games": 13,
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11"
+      },
+      {
+        "season": "2024",
+        "manager": "andrew",
+        "name": "Andrew",
+        "platform": "Sleeper",
+        "record": "6-20",
+        "pf": 1346.1,
+        "ppg": 103.55,
+        "games": 13,
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11"
+      }
+    ],
+    "most_starter_tds": [
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13,
+        "starter_tds": 80,
+        "tds_per_game": 6.15,
+        "td_breakdown": {
+          "pass": 32,
+          "rush": 23,
+          "rec": 24,
+          "idp": 1,
+          "return": 0
+        }
+      },
+      {
+        "season": "2024",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "18-8",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "games": 13,
+        "starter_tds": 78,
+        "tds_per_game": 6.0,
+        "td_breakdown": {
+          "pass": 24,
+          "rush": 21,
+          "rec": 33,
+          "idp": 0,
+          "return": 0
+        }
+      },
+      {
+        "season": "2025",
+        "manager": "matt-z",
+        "name": "Matt Z",
+        "platform": "Sleeper",
+        "record": "15-7",
+        "pf": 1285.68,
+        "ppg": 116.88,
+        "games": 11,
+        "starter_tds": 74,
+        "tds_per_game": 6.73,
+        "td_breakdown": {
+          "pass": 22,
+          "rush": 19,
+          "rec": 33,
+          "idp": 0,
+          "return": 0
+        }
+      },
+      {
+        "season": "2024",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1619.0,
+        "ppg": 124.54,
+        "games": 13,
+        "starter_tds": 73,
+        "tds_per_game": 5.62,
+        "td_breakdown": {
+          "pass": 29,
+          "rush": 17,
+          "rec": 26,
+          "idp": 0,
+          "return": 1
+        }
+      },
+      {
+        "season": "2023",
+        "manager": "jakefitzy",
+        "name": "Jake Fitzgerald",
+        "platform": "Sleeper",
+        "record": "7-6",
+        "pf": 1460.62,
+        "ppg": 112.36,
+        "games": 13,
+        "starter_tds": 71,
+        "tds_per_game": 5.46,
+        "td_breakdown": {
+          "pass": 27,
+          "rush": 22,
+          "rec": 22,
+          "idp": 0,
+          "return": 0
+        }
+      }
+    ],
+    "most_tds_per_game": [
+      {
+        "season": "2025",
+        "manager": "matt-z",
+        "name": "Matt Z",
+        "platform": "Sleeper",
+        "record": "15-7",
+        "pf": 1285.68,
+        "ppg": 116.88,
+        "games": 11,
+        "starter_tds": 74,
+        "tds_per_game": 6.73
+      },
+      {
+        "season": "2025",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "16-6",
+        "pf": 1400.44,
+        "ppg": 127.31,
+        "games": 11,
+        "starter_tds": 68,
+        "tds_per_game": 6.18
+      },
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13,
+        "starter_tds": 80,
+        "tds_per_game": 6.15
+      },
+      {
+        "season": "2024",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "18-8",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "games": 13,
+        "starter_tds": 78,
+        "tds_per_game": 6.0
+      },
+      {
+        "season": "2025",
+        "manager": "lij",
+        "name": "Lij",
+        "platform": "Sleeper",
+        "record": "13-9",
+        "pf": 1241.2,
+        "ppg": 112.84,
+        "games": 11,
+        "starter_tds": 62,
+        "tds_per_game": 5.64
+      }
+    ],
+    "most_starter_yards": [
+      {
+        "season": "2023",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "10-3",
+        "pf": 1613.24,
+        "ppg": 124.1,
+        "games": 13,
+        "starter_yards": 10633
+      },
+      {
+        "season": "2024",
+        "manager": "paul",
+        "name": "Paul",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1619.0,
+        "ppg": 124.54,
+        "games": 13,
+        "starter_yards": 10589
+      },
+      {
+        "season": "2024",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "20-6",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "games": 13,
+        "starter_yards": 10552
+      },
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13,
+        "starter_yards": 10386
+      },
+      {
+        "season": "2024",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "Sleeper",
+        "record": "18-8",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "games": 13,
+        "starter_yards": 10142
+      }
+    ],
+    "best_all_play": [
+      {
+        "season": "2025",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "16-6",
+        "pf": 1400.44,
+        "ppg": 127.31,
+        "games": 11,
+        "all_play_str": "98-23",
+        "all_play_pct": 0.81
+      },
+      {
+        "season": "2024",
+        "manager": "vlad",
+        "name": "Vlad",
+        "platform": "Sleeper",
+        "record": "19-7",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "games": 13,
+        "all_play_str": "104-39",
+        "all_play_pct": 0.727
+      },
+      {
+        "season": "2023",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "10-3",
+        "pf": 1613.24,
+        "ppg": 124.1,
+        "games": 13,
+        "all_play_str": "99-44",
+        "all_play_pct": 0.692
+      },
+      {
+        "season": "2024",
+        "manager": "juan",
+        "name": "Juan",
+        "platform": "Sleeper",
+        "record": "20-6",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "games": 13,
+        "all_play_str": "98-45",
+        "all_play_pct": 0.685
+      },
+      {
+        "season": "2022",
+        "manager": "doug",
+        "name": "Doug",
+        "platform": "ESPN",
+        "record": "8-5",
+        "pf": 1595.9,
+        "ppg": 122.76,
+        "games": 13,
+        "all_play_str": "60-31",
+        "all_play_pct": 0.659
+      }
+    ]
+  },
+  "week_records": {
+    "highest_scores": [
+      {
+        "season": "2024",
+        "week": 11,
+        "manager": "doug",
+        "name": "Doug",
+        "points": 202.08,
+        "opponent": "lij",
+        "opponent_name": "Lij",
+        "opponent_points": 92.38,
+        "phase": "regular"
+      },
+      {
+        "season": "2024",
+        "week": 17,
+        "manager": "juan",
+        "name": "Juan",
+        "points": 199.68,
+        "opponent": "vlad",
+        "opponent_name": "Vlad",
+        "opponent_points": 144.98,
+        "phase": "playoff"
+      },
+      {
+        "season": "2023",
+        "week": 4,
+        "manager": "doug",
+        "name": "Doug",
+        "points": 196.7,
+        "opponent": "deion",
+        "opponent_name": "Deion Hulse",
+        "opponent_points": 84.8,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 15,
+        "manager": "vlad",
+        "name": "Vlad",
+        "points": 191.9,
+        "opponent": "juan",
+        "opponent_name": "Juan",
+        "opponent_points": 130.1,
+        "phase": "playoff"
+      },
+      {
+        "season": "2026",
+        "week": 1,
+        "manager": "brett",
+        "name": "Brett",
+        "points": 188.1,
+        "opponent": "paul",
+        "opponent_name": "Paul",
+        "opponent_points": 100.76,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 2,
+        "manager": "lij",
+        "name": "Lij",
+        "points": 183.82,
+        "opponent": "jmoneymess",
+        "opponent_name": "Jared Messinger",
+        "opponent_points": 93.18,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 13,
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "points": 177.1,
+        "opponent": "lij",
+        "opponent_name": "Lij",
+        "opponent_points": 124.24,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 8,
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "points": 177.06,
+        "opponent": "jake",
+        "opponent_name": "Jake",
+        "opponent_points": 115.54,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 12,
+        "manager": "doug",
+        "name": "Doug",
+        "points": 176.66,
+        "opponent": "jakefitzy",
+        "opponent_name": "Jake Fitzgerald",
+        "opponent_points": 98.9,
+        "phase": "regular"
+      },
+      {
+        "season": "2024",
+        "week": 12,
+        "manager": "juan",
+        "name": "Juan",
+        "points": 173.7,
+        "opponent": "andrew",
+        "opponent_name": "Andrew",
+        "opponent_points": 106.36,
+        "phase": "regular"
+      }
+    ],
+    "lowest_scores": [
+      {
+        "season": "2024",
+        "week": 7,
+        "manager": "juan",
+        "name": "Juan",
+        "points": 43.2,
+        "opponent": "derek",
+        "opponent_name": "Derek",
+        "opponent_points": 152.38,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 16,
+        "manager": "doug",
+        "name": "Doug",
+        "points": 50.7,
+        "opponent": "brett",
+        "opponent_name": "Brett",
+        "opponent_points": 124.2,
+        "phase": "consolation"
+      },
+      {
+        "season": "2023",
+        "week": 10,
+        "manager": "jake",
+        "name": "Jake",
+        "points": 51.1,
+        "opponent": "matt-z",
+        "opponent_name": "Matt Z",
+        "opponent_points": 108.62,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 11,
+        "manager": "andrew",
+        "name": "Andrew",
+        "points": 53.24,
+        "opponent": "jake",
+        "opponent_name": "Jake",
+        "opponent_points": 78.74,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 14,
+        "manager": "jakefitzy",
+        "name": "Jake Fitzgerald",
+        "points": 53.56,
+        "opponent": "jake",
+        "opponent_name": "Jake",
+        "opponent_points": 80.08,
+        "phase": "consolation"
+      },
+      {
+        "season": "2023",
+        "week": 12,
+        "manager": "vlad",
+        "name": "Vlad",
+        "points": 56.8,
+        "opponent": "jake",
+        "opponent_name": "Jake",
+        "opponent_points": 80.32,
+        "phase": "regular"
+      },
+      {
+        "season": "2026",
+        "week": 3,
+        "manager": "lij",
+        "name": "Lij",
+        "points": 60.12,
+        "opponent": "marc",
+        "opponent_name": "Marc",
+        "opponent_points": 111.9,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 17,
+        "manager": "marc",
+        "name": "Marc",
+        "points": 60.7,
+        "opponent": "paul",
+        "opponent_name": "Paul",
+        "opponent_points": 74.78,
+        "phase": "consolation"
+      },
+      {
+        "season": "2025",
+        "week": 15,
+        "manager": "paul",
+        "name": "Paul",
+        "points": 63.86,
+        "opponent": "brett",
+        "opponent_name": "Brett",
+        "opponent_points": 127.1,
+        "phase": "consolation"
+      },
+      {
+        "season": "2023",
+        "week": 9,
+        "manager": "jakefitzy",
+        "name": "Jake Fitzgerald",
+        "points": 64.32,
+        "opponent": "marc",
+        "opponent_name": "Marc",
+        "opponent_points": 117.86,
+        "phase": "regular"
+      }
+    ],
+    "biggest_blowouts": [
+      {
+        "season": "2023",
+        "week": 4,
+        "phase": "regular",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 196.7,
+        "loser": "Deion Hulse",
+        "loser_id": "deion",
+        "loser_points": 84.8,
+        "margin": 111.9
+      },
+      {
+        "season": "2024",
+        "week": 11,
+        "phase": "regular",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 202.08,
+        "loser": "Lij",
+        "loser_id": "lij",
+        "loser_points": 92.38,
+        "margin": 109.7
+      },
+      {
+        "season": "2024",
+        "week": 7,
+        "phase": "regular",
+        "winner": "Derek",
+        "winner_id": "derek",
+        "winner_points": 152.38,
+        "loser": "Juan",
+        "loser_id": "juan",
+        "loser_points": 43.2,
+        "margin": 109.18
+      },
+      {
+        "season": "2024",
+        "week": 12,
+        "phase": "regular",
+        "winner": "Matt Z",
+        "winner_id": "matt-z",
+        "winner_points": 167.72,
+        "loser": "Matt Froemming",
+        "loser_id": "mrpfizer",
+        "loser_points": 71.46,
+        "margin": 96.26
+      },
+      {
+        "season": "2022",
+        "week": 2,
+        "phase": "regular",
+        "winner": "Lij",
+        "winner_id": "lij",
+        "winner_points": 183.82,
+        "loser": "Jared Messinger",
+        "loser_id": "jmoneymess",
+        "loser_points": 93.18,
+        "margin": 90.64
+      },
+      {
+        "season": "2026",
+        "week": 1,
+        "phase": "regular",
+        "winner": "Brett",
+        "winner_id": "brett",
+        "winner_points": 188.1,
+        "loser": "Paul",
+        "loser_id": "paul",
+        "loser_points": 100.76,
+        "margin": 87.34
+      },
+      {
+        "season": "2023",
+        "week": 5,
+        "phase": "regular",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 163.44,
+        "loser": "Jared Messinger",
+        "loser_id": "jmoneymess",
+        "loser_points": 79.78,
+        "margin": 83.66
+      },
+      {
+        "season": "2025",
+        "week": 7,
+        "phase": "regular",
+        "winner": "Juan",
+        "winner_id": "juan",
+        "winner_points": 160.16,
+        "loser": "Paul",
+        "loser_id": "paul",
+        "loser_points": 82.36,
+        "margin": 77.8
+      },
+      {
+        "season": "2022",
+        "week": 12,
+        "phase": "regular",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 176.66,
+        "loser": "Jake Fitzgerald",
+        "loser_id": "jakefitzy",
+        "loser_points": 98.9,
+        "margin": 77.76
+      },
+      {
+        "season": "2025",
+        "week": 16,
+        "phase": "consolation",
+        "winner": "Brett",
+        "winner_id": "brett",
+        "winner_points": 124.2,
+        "loser": "Doug",
+        "loser_id": "doug",
+        "loser_points": 50.7,
+        "margin": 73.5
+      }
+    ],
+    "closest_games": [
+      {
+        "season": "2025",
+        "week": 13,
+        "phase": "consolation",
+        "winner": "Brett",
+        "winner_id": "brett",
+        "winner_points": 108.52,
+        "loser": "Jake",
+        "loser_id": "jake",
+        "loser_points": 108.44,
+        "margin": 0.08
+      },
+      {
+        "season": "2024",
+        "week": 16,
+        "phase": "consolation",
+        "winner": "Matt Froemming",
+        "winner_id": "mrpfizer",
+        "winner_points": 86.04,
+        "loser": "Matt A",
+        "loser_id": "matt-a",
+        "loser_points": 85.86,
+        "margin": 0.18
+      },
+      {
+        "season": "2024",
+        "week": 10,
+        "phase": "regular",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 105.04,
+        "loser": "Marc",
+        "loser_id": "marc",
+        "loser_points": 104.84,
+        "margin": 0.2
+      },
+      {
+        "season": "2023",
+        "week": 13,
+        "phase": "regular",
+        "winner": "Juan",
+        "winner_id": "juan",
+        "winner_points": 113.18,
+        "loser": "Anup Singh",
+        "loser_id": "anupds23",
+        "loser_points": 112.9,
+        "margin": 0.28
+      },
+      {
+        "season": "2023",
+        "week": 12,
+        "phase": "regular",
+        "winner": "Matt Z",
+        "winner_id": "matt-z",
+        "winner_points": 144.46,
+        "loser": "Mike Dewey",
+        "loser_id": "michaeldewey99",
+        "loser_points": 144.12,
+        "margin": 0.34
+      },
+      {
+        "season": "2022",
+        "week": 17,
+        "phase": "playoff",
+        "winner": "Doug",
+        "winner_id": "doug",
+        "winner_points": 108.8,
+        "loser": "Vlad",
+        "loser_id": "vlad",
+        "loser_points": 108.08,
+        "margin": 0.72
+      },
+      {
+        "season": "2024",
+        "week": 16,
+        "phase": "playoff",
+        "winner": "Paul",
+        "winner_id": "paul",
+        "winner_points": 137.68,
+        "loser": "Doug",
+        "loser_id": "doug",
+        "loser_points": 136.74,
+        "margin": 0.94
+      },
+      {
+        "season": "2024",
+        "week": 2,
+        "phase": "regular",
+        "winner": "Derek",
+        "winner_id": "derek",
+        "winner_points": 111.86,
+        "loser": "Doug",
+        "loser_id": "doug",
+        "loser_points": 110.9,
+        "margin": 0.96
+      },
+      {
+        "season": "2025",
+        "week": 10,
+        "phase": "regular",
+        "winner": "Andrew",
+        "winner_id": "andrew",
+        "winner_points": 94.2,
+        "loser": "Doug",
+        "loser_id": "doug",
+        "loser_points": 93.14,
+        "margin": 1.06
+      },
+      {
+        "season": "2022",
+        "week": 12,
+        "phase": "regular",
+        "winner": "Jake",
+        "winner_id": "jake",
+        "winner_points": 105.1,
+        "loser": "Jared Messinger",
+        "loser_id": "jmoneymess",
+        "loser_points": 104.02,
+        "margin": 1.08
+      }
+    ],
+    "top_player_starts": [
+      {
+        "season": "2024",
+        "week": 10,
+        "manager": "paul",
+        "name": "Paul",
+        "player": "Ja'Marr Chase",
+        "position": "WR",
+        "points": 49.9,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 12,
+        "manager": "vlad",
+        "name": "Vlad",
+        "player": "Jahmyr Gibbs",
+        "position": "RB",
+        "points": 49.9,
+        "phase": "playoff"
+      },
+      {
+        "season": "2025",
+        "week": 10,
+        "manager": "lij",
+        "name": "Lij",
+        "player": "Jonathan Taylor",
+        "position": "RB",
+        "points": 49.1,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 17,
+        "manager": "juan",
+        "name": "Juan",
+        "player": "Derrick Henry",
+        "position": "RB",
+        "points": 45.6,
+        "phase": "playoff"
+      },
+      {
+        "season": "2023",
+        "week": 4,
+        "manager": "marc",
+        "name": "Marc",
+        "player": "Christian McCaffrey",
+        "position": "RB",
+        "points": 45.2,
+        "phase": "regular"
+      },
+      {
+        "season": "2023",
+        "week": 5,
+        "manager": "juan",
+        "name": "Juan",
+        "player": "DJ Moore",
+        "position": "WR",
+        "points": 45.0,
+        "phase": "regular"
+      },
+      {
+        "season": "2023",
+        "week": 5,
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "player": "Ja'Marr Chase",
+        "position": "WR",
+        "points": 44.7,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 11,
+        "manager": "doug",
+        "name": "Doug",
+        "player": "Josh Allen",
+        "position": "QB",
+        "points": 44.68,
+        "phase": "regular"
+      },
+      {
+        "season": "2025",
+        "week": 15,
+        "manager": "vlad",
+        "name": "Vlad",
+        "player": "Trevor Lawrence",
+        "position": "QB",
+        "points": 44.3,
+        "phase": "playoff"
+      },
+      {
+        "season": "2024",
+        "week": 12,
+        "manager": "juan",
+        "name": "Juan",
+        "player": "Saquon Barkley",
+        "position": "RB",
+        "points": 44.2,
+        "phase": "regular"
+      }
+    ]
+  },
+  "streaks": {
+    "longest_win": [
+      {
+        "manager": "deion",
+        "name": "Deion Hulse",
+        "length": 7,
+        "from": "2022 Wk 12",
+        "to": "2023 Wk 3",
+        "active": false
+      },
+      {
+        "manager": "michaeldewey99",
+        "name": "Mike Dewey",
+        "length": 6,
+        "from": "2024 Wk 1",
+        "to": "2024 Wk 6",
+        "active": false
+      },
+      {
+        "manager": "vlad",
+        "name": "Vlad",
+        "length": 6,
+        "from": "2025 Wk 10",
+        "to": "2026 Wk 1",
+        "active": false
+      },
+      {
+        "manager": "matt-z",
+        "name": "Matt Z",
+        "length": 6,
+        "from": "2025 Wk 8",
+        "to": "2025 Wk 14-15",
+        "active": false
+      },
+      {
+        "manager": "juan",
+        "name": "Juan",
+        "length": 6,
+        "from": "2024 Wk 8",
+        "to": "2024 Wk 13",
+        "active": false
+      },
+      {
+        "manager": "doug",
+        "name": "Doug",
+        "length": 5,
+        "from": "2024 Wk 13",
+        "to": "2025 Wk 1",
+        "active": false
+      },
+      {
+        "manager": "lij",
+        "name": "Lij",
+        "length": 5,
+        "from": "2023 Wk 15",
+        "to": "2024 Wk 4",
+        "active": false
+      },
+      {
+        "manager": "jmoneymess",
+        "name": "Jared Messinger",
+        "length": 5,
+        "from": "2022 Wk 3",
+        "to": "2022 Wk 7",
+        "active": false
+      },
+      {
+        "manager": "andrew",
+        "name": "Andrew",
+        "length": 5,
+        "from": "2025 Wk 6",
+        "to": "2025 Wk 10",
+        "active": false
+      },
+      {
+        "manager": "paul",
+        "name": "Paul",
+        "length": 5,
+        "from": "2024 Wk 4",
+        "to": "2024 Wk 8",
+        "active": false
+      }
+    ],
+    "longest_loss": [
+      {
+        "manager": "marc",
+        "name": "Marc",
+        "length": 10,
+        "from": "2023 Wk 11",
+        "to": "2024 Wk 5",
+        "active": false
+      },
+      {
+        "manager": "andrew",
+        "name": "Andrew",
+        "length": 8,
+        "from": "2024 Wk 7",
+        "to": "2025 Wk 1",
+        "active": false
+      },
+      {
+        "manager": "doug",
+        "name": "Doug",
+        "length": 7,
+        "from": "2025 Wk 5",
+        "to": "2025 Wk 11",
+        "active": false
+      },
+      {
+        "manager": "paul",
+        "name": "Paul",
+        "length": 7,
+        "from": "2025 Wk 6",
+        "to": "2026 Wk 1",
+        "active": false
+      },
+      {
+        "manager": "lij",
+        "name": "Lij",
+        "length": 6,
+        "from": "2022 Wk 4",
+        "to": "2022 Wk 9",
+        "active": false
+      },
+      {
+        "manager": "vlad",
+        "name": "Vlad",
+        "length": 6,
+        "from": "2023 Wk 5",
+        "to": "2023 Wk 10",
+        "active": false
+      },
+      {
+        "manager": "michaeldewey99",
+        "name": "Mike Dewey",
+        "length": 5,
+        "from": "2022 Wk 9",
+        "to": "2022 Wk 13",
+        "active": false
+      },
+      {
+        "manager": "jakefitzy",
+        "name": "Jake Fitzgerald",
+        "length": 5,
+        "from": "2022 Wk 1",
+        "to": "2022 Wk 5",
+        "active": false
+      },
+      {
+        "manager": "jake",
+        "name": "Jake",
+        "length": 4,
+        "from": "2025 Wk 5",
+        "to": "2025 Wk 8",
+        "active": false
+      },
+      {
+        "manager": "anupds23",
+        "name": "Anup Singh",
+        "length": 4,
+        "from": "2023 Wk 4",
+        "to": "2023 Wk 7",
+        "active": false
+      }
+    ]
+  },
+  "manager_seasons": [
+    {
+      "season": "2022",
+      "manager": "deion",
+      "name": "Deion Hulse",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 10,
+        "l": 3,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 10,
+        "l": 3,
+        "t": 0
+      },
+      "pf": 1619.04,
+      "pa": 1304.62,
+      "all_play": {
+        "w": 58,
+        "l": 33,
+        "t": 0
+      },
+      "high_week": {
+        "week": 13,
+        "points": 177.1,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 75.9,
+        "opponent": "Jake Fitzgerald",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": true,
+      "finish": "Co-champion",
+      "playoff_record": {
+        "w": 2,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 124.54,
+      "pa_pg": 100.36,
+      "record_str": "10-3",
+      "h2h_str": "10-3",
+      "median_str": null,
+      "record_pct": 0.769,
+      "h2h_pct": 0.769,
+      "all_play_pct": 0.637,
+      "all_play_str": "58-33",
+      "playoff_record_str": "2-0",
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2022",
+      "manager": "doug",
+      "name": "Doug",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1595.9,
+      "pa": 1401.2,
+      "all_play": {
+        "w": 60,
+        "l": 31,
+        "t": 0
+      },
+      "high_week": {
+        "week": 12,
+        "points": 176.66,
+        "opponent": "Jake Fitzgerald",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 6,
+        "points": 64.62,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": true,
+      "finish": "4th",
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 122.76,
+      "pa_pg": 107.78,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.659,
+      "all_play_str": "60-31",
+      "playoff_record_str": "0-2",
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2022",
+      "manager": "jake",
+      "name": "Jake",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1354.8,
+      "pa": 1463.28,
+      "all_play": {
+        "w": 41,
+        "l": 50,
+        "t": 0
+      },
+      "high_week": {
+        "week": 15,
+        "points": 141.94,
+        "opponent": "Jake Fitzgerald",
+        "phase": "consolation"
+      },
+      "low_week": {
+        "week": 13,
+        "points": 64.82,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 104.22,
+      "pa_pg": 112.56,
+      "record_str": "5-8",
+      "h2h_str": "5-8",
+      "median_str": null,
+      "record_pct": 0.385,
+      "h2h_pct": 0.385,
+      "all_play_pct": 0.451,
+      "all_play_str": "41-50",
+      "playoff_record_str": null,
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2022",
+      "manager": "jakefitzy",
+      "name": "Jake Fitzgerald",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1348.6,
+      "pa": 1491.98,
+      "all_play": {
+        "w": 41,
+        "l": 50,
+        "t": 0
+      },
+      "high_week": {
+        "week": 11,
+        "points": 137.5,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 14,
+        "points": 53.56,
+        "opponent": "Jake",
+        "phase": "consolation"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 103.74,
+      "pa_pg": 114.77,
+      "record_str": "6-7",
+      "h2h_str": "6-7",
+      "median_str": null,
+      "record_pct": 0.462,
+      "h2h_pct": 0.462,
+      "all_play_pct": 0.451,
+      "all_play_str": "41-50",
+      "playoff_record_str": null,
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2022",
+      "manager": "jmoneymess",
+      "name": "Jared Messinger",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1410.5,
+      "pa": 1451.38,
+      "all_play": {
+        "w": 48,
+        "l": 43,
+        "t": 0
+      },
+      "high_week": {
+        "week": 5,
+        "points": 141.66,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 10,
+        "points": 68.1,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": true,
+      "finish": "Co-champion",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 108.5,
+      "pa_pg": 111.64,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.527,
+      "all_play_str": "48-43",
+      "playoff_record_str": "1-1",
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2022",
+      "manager": "lij",
+      "name": "Lij",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1526.38,
+      "pa": 1519.4,
+      "all_play": {
+        "w": 44,
+        "l": 47,
+        "t": 0
+      },
+      "high_week": {
+        "week": 2,
+        "points": 183.82,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 84.7,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 117.41,
+      "pa_pg": 116.88,
+      "record_str": "5-8",
+      "h2h_str": "5-8",
+      "median_str": null,
+      "record_pct": 0.385,
+      "h2h_pct": 0.385,
+      "all_play_pct": 0.484,
+      "all_play_str": "44-47",
+      "playoff_record_str": null,
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2022",
+      "manager": "michaeldewey99",
+      "name": "Mike Dewey",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "pf": 1261.7,
+      "pa": 1456.68,
+      "all_play": {
+        "w": 29,
+        "l": 62,
+        "t": 0
+      },
+      "high_week": {
+        "week": 8,
+        "points": 146.68,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 66.3,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 97.05,
+      "pa_pg": 112.05,
+      "record_str": "2-11",
+      "h2h_str": "2-11",
+      "median_str": null,
+      "record_pct": 0.154,
+      "h2h_pct": 0.154,
+      "all_play_pct": 0.319,
+      "all_play_str": "29-62",
+      "playoff_record_str": null,
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2022",
+      "manager": "vlad",
+      "name": "Vlad",
+      "platform": "ESPN",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1356.14,
+      "pa": 1384.52,
+      "all_play": {
+        "w": 43,
+        "l": 48,
+        "t": 0
+      },
+      "high_week": {
+        "week": 7,
+        "points": 129.06,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 14,
+        "points": 68.38,
+        "opponent": "Jared Messinger",
+        "phase": "playoff"
+      },
+      "starter_tds": null,
+      "starter_yards": null,
+      "td_breakdown": null,
+      "playoffs": true,
+      "finish": "3rd",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": null,
+      "record_note": null,
+      "ppg": 104.32,
+      "pa_pg": 106.5,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.473,
+      "all_play_str": "43-48",
+      "playoff_record_str": "1-1",
+      "tds_per_game": null,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "anupds23",
+      "name": "Anup Singh",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "pf": 1374.22,
+      "pa": 1551.86,
+      "all_play": {
+        "w": 59,
+        "l": 84,
+        "t": 0
+      },
+      "high_week": {
+        "week": 3,
+        "points": 149.96,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 66.96,
+        "opponent": "Deion Hulse",
+        "phase": "regular"
+      },
+      "starter_tds": 64,
+      "starter_yards": 9314,
+      "td_breakdown": {
+        "pass": 19,
+        "rush": 26,
+        "rec": 19,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-9",
+        "pf": 1374.22,
+        "pa": 1551.86
+      },
+      "record_note": null,
+      "ppg": 105.71,
+      "pa_pg": 119.37,
+      "record_str": "4-9",
+      "h2h_str": "4-9",
+      "median_str": null,
+      "record_pct": 0.308,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.413,
+      "all_play_str": "59-84",
+      "playoff_record_str": null,
+      "tds_per_game": 4.92,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2023",
+      "manager": "deion",
+      "name": "Deion Hulse",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1465.16,
+      "pa": 1469.66,
+      "all_play": {
+        "w": 64,
+        "l": 79,
+        "t": 0
+      },
+      "high_week": {
+        "week": 5,
+        "points": 168.68,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 67.1,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "starter_tds": 58,
+      "starter_yards": 8644,
+      "td_breakdown": {
+        "pass": 17,
+        "rush": 17,
+        "rec": 24,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "Runner-up",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "8-5",
+        "pf": 1465.16,
+        "pa": 1469.66
+      },
+      "record_note": null,
+      "ppg": 112.7,
+      "pa_pg": 113.05,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.448,
+      "all_play_str": "64-79",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 4.46,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2023",
+      "manager": "doug",
+      "name": "Doug",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 1579.96,
+      "pa": 1418.14,
+      "all_play": {
+        "w": 78,
+        "l": 65,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 196.7,
+        "opponent": "Deion Hulse",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 8,
+        "points": 87.38,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "starter_tds": 60,
+      "starter_yards": 9765,
+      "td_breakdown": {
+        "pass": 14,
+        "rush": 24,
+        "rec": 22,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "Champion",
+      "playoff_record": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "7-6",
+        "pf": 1579.96,
+        "pa": 1418.14
+      },
+      "record_note": null,
+      "ppg": 121.54,
+      "pa_pg": 109.09,
+      "record_str": "7-6",
+      "h2h_str": "7-6",
+      "median_str": null,
+      "record_pct": 0.538,
+      "h2h_pct": 0.538,
+      "all_play_pct": 0.545,
+      "all_play_str": "78-65",
+      "playoff_record_str": "3-0",
+      "tds_per_game": 4.62,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "jake",
+      "name": "Jake",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1388.22,
+      "pa": 1470.28,
+      "all_play": {
+        "w": 66,
+        "l": 77,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 155.26,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 10,
+        "points": 51.1,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "starter_tds": 65,
+      "starter_yards": 8603,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 25,
+        "rec": 18,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-7",
+        "pf": 1388.22,
+        "pa": 1470.28
+      },
+      "record_note": null,
+      "ppg": 106.79,
+      "pa_pg": 113.1,
+      "record_str": "6-7",
+      "h2h_str": "6-7",
+      "median_str": null,
+      "record_pct": 0.462,
+      "h2h_pct": 0.462,
+      "all_play_pct": 0.462,
+      "all_play_str": "66-77",
+      "playoff_record_str": null,
+      "tds_per_game": 5.0,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "jakefitzy",
+      "name": "Jake Fitzgerald",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 1460.62,
+      "pa": 1435.58,
+      "all_play": {
+        "w": 69,
+        "l": 74,
+        "t": 0
+      },
+      "high_week": {
+        "week": 8,
+        "points": 148.36,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 64.32,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "starter_tds": 71,
+      "starter_yards": 9400,
+      "td_breakdown": {
+        "pass": 27,
+        "rush": 22,
+        "rec": 22,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "4th",
+      "playoff_record": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "7-6",
+        "pf": 1460.62,
+        "pa": 1435.58
+      },
+      "record_note": null,
+      "ppg": 112.36,
+      "pa_pg": 110.43,
+      "record_str": "7-6",
+      "h2h_str": "7-6",
+      "median_str": null,
+      "record_pct": 0.538,
+      "h2h_pct": 0.538,
+      "all_play_pct": 0.483,
+      "all_play_str": "69-74",
+      "playoff_record_str": "1-2",
+      "tds_per_game": 5.46,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2023",
+      "manager": "jmoneymess",
+      "name": "Jared Messinger",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1388.72,
+      "pa": 1599.14,
+      "all_play": {
+        "w": 63,
+        "l": 80,
+        "t": 0
+      },
+      "high_week": {
+        "week": 7,
+        "points": 135.16,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 13,
+        "points": 66.92,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "starter_tds": 48,
+      "starter_yards": 9126,
+      "td_breakdown": {
+        "pass": 14,
+        "rush": 14,
+        "rec": 20,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "5-8",
+        "pf": 1388.72,
+        "pa": 1599.14
+      },
+      "record_note": null,
+      "ppg": 106.82,
+      "pa_pg": 123.01,
+      "record_str": "5-8",
+      "h2h_str": "5-8",
+      "median_str": null,
+      "record_pct": 0.385,
+      "h2h_pct": 0.385,
+      "all_play_pct": 0.441,
+      "all_play_str": "63-80",
+      "playoff_record_str": null,
+      "tds_per_game": 3.69,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2023",
+      "manager": "juan",
+      "name": "Juan",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 10,
+        "l": 3,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 10,
+        "l": 3,
+        "t": 0
+      },
+      "pf": 1613.24,
+      "pa": 1415.46,
+      "all_play": {
+        "w": 99,
+        "l": 44,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 151.08,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 66.84,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "starter_tds": 69,
+      "starter_yards": 10633,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 16,
+        "rec": 31,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "3rd",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "10-3",
+        "pf": 1613.24,
+        "pa": 1415.46
+      },
+      "record_note": null,
+      "ppg": 124.1,
+      "pa_pg": 108.88,
+      "record_str": "10-3",
+      "h2h_str": "10-3",
+      "median_str": null,
+      "record_pct": 0.769,
+      "h2h_pct": 0.769,
+      "all_play_pct": 0.692,
+      "all_play_str": "99-44",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 5.31,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "lij",
+      "name": "Lij",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1556.24,
+      "pa": 1478.9,
+      "all_play": {
+        "w": 85,
+        "l": 58,
+        "t": 0
+      },
+      "high_week": {
+        "week": 13,
+        "points": 162.52,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 5,
+        "points": 93.92,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "starter_tds": 66,
+      "starter_yards": 9948,
+      "td_breakdown": {
+        "pass": 20,
+        "rush": 15,
+        "rec": 30,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": true,
+      "finish": "5th",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "8-5",
+        "pf": 1556.24,
+        "pa": 1478.9
+      },
+      "record_note": null,
+      "ppg": 119.71,
+      "pa_pg": 113.76,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.594,
+      "all_play_str": "85-58",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 5.08,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "marc",
+      "name": "Marc",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 1545.66,
+      "pa": 1441.78,
+      "all_play": {
+        "w": 85,
+        "l": 58,
+        "t": 0
+      },
+      "high_week": {
+        "week": 10,
+        "points": 149.16,
+        "opponent": "Deion Hulse",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 75.92,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "starter_tds": 69,
+      "starter_yards": 9852,
+      "td_breakdown": {
+        "pass": 27,
+        "rush": 18,
+        "rec": 24,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "6th",
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "8-5",
+        "pf": 1545.66,
+        "pa": 1441.78
+      },
+      "record_note": null,
+      "ppg": 118.9,
+      "pa_pg": 110.91,
+      "record_str": "8-5",
+      "h2h_str": "8-5",
+      "median_str": null,
+      "record_pct": 0.615,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.594,
+      "all_play_str": "85-58",
+      "playoff_record_str": "0-2",
+      "tds_per_game": 5.31,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "matt-z",
+      "name": "Matt Z",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1396.26,
+      "pa": 1401.56,
+      "all_play": {
+        "w": 55,
+        "l": 88,
+        "t": 0
+      },
+      "high_week": {
+        "week": 3,
+        "points": 165.0,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 66.58,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "starter_tds": 54,
+      "starter_yards": 9325,
+      "td_breakdown": {
+        "pass": 18,
+        "rush": 21,
+        "rec": 15,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-7",
+        "pf": 1396.26,
+        "pa": 1401.56
+      },
+      "record_note": null,
+      "ppg": 107.4,
+      "pa_pg": 107.81,
+      "record_str": "6-7",
+      "h2h_str": "6-7",
+      "median_str": null,
+      "record_pct": 0.462,
+      "h2h_pct": 0.462,
+      "all_play_pct": 0.385,
+      "all_play_str": "55-88",
+      "playoff_record_str": null,
+      "tds_per_game": 4.15,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2023",
+      "manager": "michaeldewey99",
+      "name": "Mike Dewey",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1553.6,
+      "pa": 1496.44,
+      "all_play": {
+        "w": 87,
+        "l": 56,
+        "t": 0
+      },
+      "high_week": {
+        "week": 17,
+        "points": 160.08,
+        "opponent": "Jake",
+        "phase": "consolation"
+      },
+      "low_week": {
+        "week": 5,
+        "points": 81.36,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "starter_tds": 64,
+      "starter_yards": 9942,
+      "td_breakdown": {
+        "pass": 23,
+        "rush": 13,
+        "rec": 27,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-7",
+        "pf": 1553.6,
+        "pa": 1496.44
+      },
+      "record_note": null,
+      "ppg": 119.51,
+      "pa_pg": 115.11,
+      "record_str": "6-7",
+      "h2h_str": "6-7",
+      "median_str": null,
+      "record_pct": 0.462,
+      "h2h_pct": 0.462,
+      "all_play_pct": 0.608,
+      "all_play_str": "87-56",
+      "playoff_record_str": null,
+      "tds_per_game": 4.92,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2023",
+      "manager": "vlad",
+      "name": "Vlad",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 3,
+        "l": 10,
+        "t": 0
+      },
+      "median": null,
+      "record": {
+        "w": 3,
+        "l": 10,
+        "t": 0
+      },
+      "pf": 1292.64,
+      "pa": 1435.74,
+      "all_play": {
+        "w": 48,
+        "l": 95,
+        "t": 0
+      },
+      "high_week": {
+        "week": 13,
+        "points": 130.64,
+        "opponent": "Jared Messinger",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 12,
+        "points": 56.8,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": 46,
+      "starter_yards": 8667,
+      "td_breakdown": {
+        "pass": 16,
+        "rush": 11,
+        "rec": 19,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "3-10",
+        "pf": 1292.64,
+        "pa": 1435.74
+      },
+      "record_note": null,
+      "ppg": 99.43,
+      "pa_pg": 110.44,
+      "record_str": "3-10",
+      "h2h_str": "3-10",
+      "median_str": null,
+      "record_pct": 0.231,
+      "h2h_pct": 0.231,
+      "all_play_pct": 0.336,
+      "all_play_str": "48-95",
+      "playoff_record_str": null,
+      "tds_per_game": 3.54,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "andrew",
+      "name": "Andrew",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "record": {
+        "w": 6,
+        "l": 20,
+        "t": 0
+      },
+      "pf": 1346.1,
+      "pa": 1577.86,
+      "all_play": {
+        "w": 49,
+        "l": 94,
+        "t": 0
+      },
+      "high_week": {
+        "week": 6,
+        "points": 136.6,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 82.5,
+        "opponent": "Mike Dewey",
+        "phase": "regular"
+      },
+      "starter_tds": 63,
+      "starter_yards": 9083,
+      "td_breakdown": {
+        "pass": 24,
+        "rush": 23,
+        "rec": 16,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-20",
+        "pf": 1346.1,
+        "pa": 1577.86
+      },
+      "record_note": "Official Sleeper standings (6-20) used; recomputing from current matchup scores gives 7-19. The gap is in median results only.",
+      "ppg": 103.55,
+      "pa_pg": 121.37,
+      "record_str": "6-20",
+      "h2h_str": "4-9",
+      "median_str": "2-11",
+      "record_pct": 0.231,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.343,
+      "all_play_str": "49-94",
+      "playoff_record_str": null,
+      "tds_per_game": 4.85,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "derek",
+      "name": "Derek",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "median": {
+        "w": 6,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 12,
+        "l": 14,
+        "t": 0
+      },
+      "pf": 1485.1,
+      "pa": 1446.96,
+      "all_play": {
+        "w": 68,
+        "l": 75,
+        "t": 0
+      },
+      "high_week": {
+        "week": 7,
+        "points": 152.38,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 12,
+        "points": 78.06,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": 61,
+      "starter_yards": 9309,
+      "td_breakdown": {
+        "pass": 13,
+        "rush": 24,
+        "rec": 24,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "6th",
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "12-14",
+        "pf": 1485.1,
+        "pa": 1522.1
+      },
+      "record_note": null,
+      "ppg": 114.24,
+      "pa_pg": 111.3,
+      "record_str": "12-14",
+      "h2h_str": "6-7",
+      "median_str": "6-7",
+      "record_pct": 0.462,
+      "h2h_pct": 0.462,
+      "all_play_pct": 0.476,
+      "all_play_str": "68-75",
+      "playoff_record_str": "0-2",
+      "tds_per_game": 4.69,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "doug",
+      "name": "Doug",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 9,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 9,
+        "l": 4,
+        "t": 0
+      },
+      "record": {
+        "w": 18,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1650.08,
+      "pa": 1423.92,
+      "all_play": {
+        "w": 94,
+        "l": 49,
+        "t": 0
+      },
+      "high_week": {
+        "week": 11,
+        "points": 202.08,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 89.8,
+        "opponent": "Matt Froemming",
+        "phase": "regular"
+      },
+      "starter_tds": 78,
+      "starter_yards": 10142,
+      "td_breakdown": {
+        "pass": 24,
+        "rush": 21,
+        "rec": 33,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "Champion",
+      "playoff_record": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "18-8",
+        "pf": 1650.08,
+        "pa": 1452.78
+      },
+      "record_note": "Official Sleeper standings (18-8) used; recomputing from current matchup scores gives 19-7. The gap is in median results only.",
+      "ppg": 126.93,
+      "pa_pg": 109.53,
+      "record_str": "18-8",
+      "h2h_str": "9-4",
+      "median_str": "9-4",
+      "record_pct": 0.692,
+      "h2h_pct": 0.692,
+      "all_play_pct": 0.657,
+      "all_play_str": "94-49",
+      "playoff_record_str": "3-0",
+      "tds_per_game": 6.0,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "jake",
+      "name": "Jake",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "median": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "record": {
+        "w": 12,
+        "l": 14,
+        "t": 0
+      },
+      "pf": 1470.26,
+      "pa": 1578.56,
+      "all_play": {
+        "w": 76,
+        "l": 67,
+        "t": 0
+      },
+      "high_week": {
+        "week": 14,
+        "points": 162.3,
+        "opponent": "Matt Froemming",
+        "phase": "consolation"
+      },
+      "low_week": {
+        "week": 12,
+        "points": 92.52,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "starter_tds": 67,
+      "starter_yards": 9492,
+      "td_breakdown": {
+        "pass": 19,
+        "rush": 23,
+        "rec": 25,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "12-14",
+        "pf": 1470.26,
+        "pa": 1578.56
+      },
+      "record_note": null,
+      "ppg": 113.1,
+      "pa_pg": 121.43,
+      "record_str": "12-14",
+      "h2h_str": "5-8",
+      "median_str": "7-6",
+      "record_pct": 0.462,
+      "h2h_pct": 0.385,
+      "all_play_pct": 0.531,
+      "all_play_str": "76-67",
+      "playoff_record_str": null,
+      "tds_per_game": 5.15,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "juan",
+      "name": "Juan",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 9,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 11,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 20,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 1661.76,
+      "pa": 1491.98,
+      "all_play": {
+        "w": 98,
+        "l": 45,
+        "t": 0
+      },
+      "high_week": {
+        "week": 17,
+        "points": 199.68,
+        "opponent": "Vlad",
+        "phase": "playoff"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 43.2,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "starter_tds": 69,
+      "starter_yards": 10552,
+      "td_breakdown": {
+        "pass": 19,
+        "rush": 24,
+        "rec": 26,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "3rd",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "20-6",
+        "pf": 1736.9,
+        "pa": 1491.98
+      },
+      "record_note": "Official Sleeper standings (20-6) used; recomputing from current matchup scores gives 19-7. The gap is in median results only.",
+      "ppg": 127.83,
+      "pa_pg": 114.77,
+      "record_str": "20-6",
+      "h2h_str": "9-4",
+      "median_str": "11-2",
+      "record_pct": 0.769,
+      "h2h_pct": 0.692,
+      "all_play_pct": 0.685,
+      "all_play_str": "98-45",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 5.31,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "lij",
+      "name": "Lij",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 7,
+        "l": 6,
+        "t": 0
+      },
+      "median": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "record": {
+        "w": 11,
+        "l": 15,
+        "t": 0
+      },
+      "pf": 1392.4,
+      "pa": 1486.54,
+      "all_play": {
+        "w": 58,
+        "l": 85,
+        "t": 0
+      },
+      "high_week": {
+        "week": 3,
+        "points": 151.06,
+        "opponent": "Andrew",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 13,
+        "points": 76.68,
+        "opponent": "Matt Froemming",
+        "phase": "regular"
+      },
+      "starter_tds": 51,
+      "starter_yards": 9310,
+      "td_breakdown": {
+        "pass": 16,
+        "rush": 20,
+        "rec": 15,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "11-15",
+        "pf": 1392.8,
+        "pa": 1486.54
+      },
+      "record_note": null,
+      "ppg": 107.11,
+      "pa_pg": 114.35,
+      "record_str": "11-15",
+      "h2h_str": "7-6",
+      "median_str": "4-9",
+      "record_pct": 0.423,
+      "h2h_pct": 0.538,
+      "all_play_pct": 0.406,
+      "all_play_str": "58-85",
+      "playoff_record_str": null,
+      "tds_per_game": 3.92,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "marc",
+      "name": "Marc",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 5,
+        "l": 8,
+        "t": 0
+      },
+      "record": {
+        "w": 9,
+        "l": 17,
+        "t": 0
+      },
+      "pf": 1458.9,
+      "pa": 1559.62,
+      "all_play": {
+        "w": 64,
+        "l": 79,
+        "t": 0
+      },
+      "high_week": {
+        "week": 8,
+        "points": 147.24,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 12,
+        "points": 72.82,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "starter_tds": 65,
+      "starter_yards": 9441,
+      "td_breakdown": {
+        "pass": 27,
+        "rush": 20,
+        "rec": 18,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "9-17",
+        "pf": 1458.9,
+        "pa": 1559.62
+      },
+      "record_note": null,
+      "ppg": 112.22,
+      "pa_pg": 119.97,
+      "record_str": "9-17",
+      "h2h_str": "4-9",
+      "median_str": "5-8",
+      "record_pct": 0.346,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.448,
+      "all_play_str": "64-79",
+      "playoff_record_str": null,
+      "tds_per_game": 5.0,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "matt-a",
+      "name": "Matt A",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "record": {
+        "w": 6,
+        "l": 20,
+        "t": 0
+      },
+      "pf": 1299.52,
+      "pa": 1409.44,
+      "all_play": {
+        "w": 42,
+        "l": 101,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 123.18,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 16,
+        "points": 85.86,
+        "opponent": "Matt Froemming",
+        "phase": "consolation"
+      },
+      "starter_tds": 54,
+      "starter_yards": 8303,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 19,
+        "rec": 12,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-20",
+        "pf": 1299.52,
+        "pa": 1409.44
+      },
+      "record_note": null,
+      "ppg": 99.96,
+      "pa_pg": 108.42,
+      "record_str": "6-20",
+      "h2h_str": "4-9",
+      "median_str": "2-11",
+      "record_pct": 0.231,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.294,
+      "all_play_str": "42-101",
+      "playoff_record_str": null,
+      "tds_per_game": 4.15,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "mrpfizer",
+      "name": "Matt Froemming",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 3,
+        "l": 10,
+        "t": 0
+      },
+      "record": {
+        "w": 7,
+        "l": 19,
+        "t": 0
+      },
+      "pf": 1228.66,
+      "pa": 1502.28,
+      "all_play": {
+        "w": 32,
+        "l": 111,
+        "t": 0
+      },
+      "high_week": {
+        "week": 17,
+        "points": 130.3,
+        "opponent": "Matt A",
+        "phase": "consolation"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 67.8,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "starter_tds": 53,
+      "starter_yards": 7809,
+      "td_breakdown": {
+        "pass": 16,
+        "rush": 17,
+        "rec": 20,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "7-19",
+        "pf": 1257.52,
+        "pa": 1502.28
+      },
+      "record_note": "Official Sleeper standings (7-19) used; recomputing from current matchup scores gives 6-20. The gap is in median results only.",
+      "ppg": 94.51,
+      "pa_pg": 115.56,
+      "record_str": "7-19",
+      "h2h_str": "4-9",
+      "median_str": "3-10",
+      "record_pct": 0.269,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.224,
+      "all_play_str": "32-111",
+      "playoff_record_str": null,
+      "tds_per_game": 4.08,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2024",
+      "manager": "matt-z",
+      "name": "Matt Z",
+      "platform": "Sleeper",
+      "weeks_managed": "Weeks 8-17",
+      "partial": true,
+      "in_progress": false,
+      "games": 6,
+      "h2h": {
+        "w": 3,
+        "l": 3,
+        "t": 0
+      },
+      "median": {
+        "w": 3,
+        "l": 3,
+        "t": 0
+      },
+      "record": {
+        "w": 6,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 732.0,
+      "pa": 635.1,
+      "all_play": {
+        "w": 33,
+        "l": 33,
+        "t": 0
+      },
+      "high_week": {
+        "week": 12,
+        "points": 167.72,
+        "opponent": "Matt Froemming",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 95.52,
+        "opponent": "Matt A",
+        "phase": "regular"
+      },
+      "starter_tds": 31,
+      "starter_yards": 4507,
+      "td_breakdown": {
+        "pass": 6,
+        "rush": 13,
+        "rec": 12,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "5th",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "17-9",
+        "pf": 1577.7,
+        "pa": 1357.82,
+        "note": "whole-roster figure (roster changed hands mid-season)"
+      },
+      "record_note": null,
+      "ppg": 122.0,
+      "pa_pg": 105.85,
+      "record_str": "6-6",
+      "h2h_str": "3-3",
+      "median_str": "3-3",
+      "record_pct": 0.5,
+      "h2h_pct": 0.5,
+      "all_play_pct": 0.5,
+      "all_play_str": "33-33",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 5.17,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "michaeldewey99",
+      "name": "Mike Dewey",
+      "platform": "Sleeper",
+      "weeks_managed": "Weeks 1-7",
+      "partial": true,
+      "in_progress": false,
+      "games": 7,
+      "h2h": {
+        "w": 6,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 5,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 11,
+        "l": 3,
+        "t": 0
+      },
+      "pf": 824.86,
+      "pa": 722.72,
+      "all_play": {
+        "w": 49,
+        "l": 28,
+        "t": 0
+      },
+      "high_week": {
+        "week": 5,
+        "points": 133.84,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 7,
+        "points": 78.1,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "starter_tds": 40,
+      "starter_yards": 4960,
+      "td_breakdown": {
+        "pass": 9,
+        "rush": 16,
+        "rec": 15,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "17-9",
+        "pf": 1577.7,
+        "pa": 1357.82,
+        "note": "whole-roster figure (roster changed hands mid-season)"
+      },
+      "record_note": null,
+      "ppg": 117.84,
+      "pa_pg": 103.25,
+      "record_str": "11-3",
+      "h2h_str": "6-1",
+      "median_str": "5-2",
+      "record_pct": 0.786,
+      "h2h_pct": 0.857,
+      "all_play_pct": 0.636,
+      "all_play_str": "49-28",
+      "playoff_record_str": null,
+      "tds_per_game": 5.71,
+      "eligible_for_records": false,
+      "current": false
+    },
+    {
+      "season": "2024",
+      "manager": "paul",
+      "name": "Paul",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 9,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 10,
+        "l": 3,
+        "t": 0
+      },
+      "record": {
+        "w": 19,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1619.0,
+      "pa": 1471.36,
+      "all_play": {
+        "w": 91,
+        "l": 52,
+        "t": 0
+      },
+      "high_week": {
+        "week": 15,
+        "points": 155.5,
+        "opponent": "Vlad",
+        "phase": "playoff"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 87.62,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "starter_tds": 73,
+      "starter_yards": 10589,
+      "td_breakdown": {
+        "pass": 29,
+        "rush": 17,
+        "rec": 26,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": true,
+      "finish": "Runner-up",
+      "playoff_record": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "19-7",
+        "pf": 1618.99,
+        "pa": 1492.2
+      },
+      "record_note": null,
+      "ppg": 124.54,
+      "pa_pg": 113.18,
+      "record_str": "19-7",
+      "h2h_str": "9-4",
+      "median_str": "10-3",
+      "record_pct": 0.731,
+      "h2h_pct": 0.692,
+      "all_play_pct": 0.636,
+      "all_play_str": "91-52",
+      "playoff_record_str": "2-1",
+      "tds_per_game": 5.62,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2024",
+      "manager": "vlad",
+      "name": "Vlad",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 8,
+        "l": 5,
+        "t": 0
+      },
+      "median": {
+        "w": 11,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 19,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1685.26,
+      "pa": 1547.56,
+      "all_play": {
+        "w": 104,
+        "l": 39,
+        "t": 0
+      },
+      "high_week": {
+        "week": 9,
+        "points": 163.24,
+        "opponent": "Matt Froemming",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 72.76,
+        "opponent": "Matt A",
+        "phase": "regular"
+      },
+      "starter_tds": 80,
+      "starter_yards": 10386,
+      "td_breakdown": {
+        "pass": 32,
+        "rush": 23,
+        "rec": 24,
+        "idp": 1,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "4th",
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "19-7",
+        "pf": 1685.26,
+        "pa": 1547.96
+      },
+      "record_note": null,
+      "ppg": 129.64,
+      "pa_pg": 119.04,
+      "record_str": "19-7",
+      "h2h_str": "8-5",
+      "median_str": "11-2",
+      "record_pct": 0.731,
+      "h2h_pct": 0.615,
+      "all_play_pct": 0.727,
+      "all_play_str": "104-39",
+      "playoff_record_str": "0-2",
+      "tds_per_game": 6.15,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "andrew",
+      "name": "Andrew",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 6,
+        "l": 5,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 9,
+        "t": 0
+      },
+      "pf": 1128.54,
+      "pa": 1074.9,
+      "all_play": {
+        "w": 62,
+        "l": 59,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 132.52,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 11,
+        "points": 53.24,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": 49,
+      "starter_yards": 7757,
+      "td_breakdown": {
+        "pass": 17,
+        "rush": 9,
+        "rec": 22,
+        "idp": 1,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "6th",
+      "playoff_record": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "13-9",
+        "pf": 1128.54,
+        "pa": 1074.9
+      },
+      "record_note": null,
+      "ppg": 102.59,
+      "pa_pg": 97.72,
+      "record_str": "13-9",
+      "h2h_str": "7-4",
+      "median_str": "6-5",
+      "record_pct": 0.591,
+      "h2h_pct": 0.636,
+      "all_play_pct": 0.512,
+      "all_play_str": "62-59",
+      "playoff_record_str": "1-2",
+      "tds_per_game": 4.45,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "brett",
+      "name": "Brett",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 5,
+        "l": 6,
+        "t": 0
+      },
+      "median": {
+        "w": 4,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 9,
+        "l": 13,
+        "t": 0
+      },
+      "pf": 1138.5,
+      "pa": 1141.9,
+      "all_play": {
+        "w": 53,
+        "l": 68,
+        "t": 0
+      },
+      "high_week": {
+        "week": 17,
+        "points": 140.72,
+        "opponent": "Doug",
+        "phase": "consolation"
+      },
+      "low_week": {
+        "week": 14,
+        "points": 73.96,
+        "opponent": "Paul",
+        "phase": "consolation"
+      },
+      "starter_tds": 53,
+      "starter_yards": 8130,
+      "td_breakdown": {
+        "pass": 20,
+        "rush": 16,
+        "rec": 17,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "9-13",
+        "pf": 1148.2,
+        "pa": 1141.9
+      },
+      "record_note": null,
+      "ppg": 103.5,
+      "pa_pg": 103.81,
+      "record_str": "9-13",
+      "h2h_str": "5-6",
+      "median_str": "4-7",
+      "record_pct": 0.409,
+      "h2h_pct": 0.455,
+      "all_play_pct": 0.438,
+      "all_play_str": "53-68",
+      "playoff_record_str": null,
+      "tds_per_game": 4.82,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "derek",
+      "name": "Derek",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "record": {
+        "w": 14,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1193.74,
+      "pa": 1106.22,
+      "all_play": {
+        "w": 69,
+        "l": 52,
+        "t": 0
+      },
+      "high_week": {
+        "week": 16,
+        "points": 146.86,
+        "opponent": "Andrew",
+        "phase": "playoff"
+      },
+      "low_week": {
+        "week": 6,
+        "points": 69.74,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "starter_tds": 57,
+      "starter_yards": 7526,
+      "td_breakdown": {
+        "pass": 18,
+        "rush": 13,
+        "rec": 26,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "5th",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "14-8",
+        "pf": 1193.74,
+        "pa": 1106.22
+      },
+      "record_note": null,
+      "ppg": 108.52,
+      "pa_pg": 100.57,
+      "record_str": "14-8",
+      "h2h_str": "7-4",
+      "median_str": "7-4",
+      "record_pct": 0.636,
+      "h2h_pct": 0.636,
+      "all_play_pct": 0.57,
+      "all_play_str": "69-52",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 5.18,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "doug",
+      "name": "Doug",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 3,
+        "l": 8,
+        "t": 0
+      },
+      "median": {
+        "w": 4,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 7,
+        "l": 15,
+        "t": 0
+      },
+      "pf": 1058.76,
+      "pa": 1188.42,
+      "all_play": {
+        "w": 42,
+        "l": 79,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 126.96,
+        "opponent": "Brett",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 16,
+        "points": 50.7,
+        "opponent": "Brett",
+        "phase": "consolation"
+      },
+      "starter_tds": 52,
+      "starter_yards": 7279,
+      "td_breakdown": {
+        "pass": 20,
+        "rush": 19,
+        "rec": 12,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "7-15",
+        "pf": 1058.76,
+        "pa": 1188.42
+      },
+      "record_note": null,
+      "ppg": 96.25,
+      "pa_pg": 108.04,
+      "record_str": "7-15",
+      "h2h_str": "3-8",
+      "median_str": "4-7",
+      "record_pct": 0.318,
+      "h2h_pct": 0.273,
+      "all_play_pct": 0.347,
+      "all_play_str": "42-79",
+      "playoff_record_str": null,
+      "tds_per_game": 4.73,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "jake",
+      "name": "Jake",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 4,
+        "l": 7,
+        "t": 0
+      },
+      "median": {
+        "w": 4,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 8,
+        "l": 14,
+        "t": 0
+      },
+      "pf": 1121.16,
+      "pa": 1237.94,
+      "all_play": {
+        "w": 55,
+        "l": 66,
+        "t": 0
+      },
+      "high_week": {
+        "week": 4,
+        "points": 127.1,
+        "opponent": "Derek",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 11,
+        "points": 78.74,
+        "opponent": "Andrew",
+        "phase": "regular"
+      },
+      "starter_tds": 54,
+      "starter_yards": 8008,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 17,
+        "rec": 15,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "8-14",
+        "pf": 1121.16,
+        "pa": 1237.94
+      },
+      "record_note": null,
+      "ppg": 101.92,
+      "pa_pg": 112.54,
+      "record_str": "8-14",
+      "h2h_str": "4-7",
+      "median_str": "4-7",
+      "record_pct": 0.364,
+      "h2h_pct": 0.364,
+      "all_play_pct": 0.455,
+      "all_play_str": "55-66",
+      "playoff_record_str": null,
+      "tds_per_game": 4.91,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "juan",
+      "name": "Juan",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 9,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 16,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 1400.44,
+      "pa": 1173.34,
+      "all_play": {
+        "w": 98,
+        "l": 23,
+        "t": 0
+      },
+      "high_week": {
+        "week": 8,
+        "points": 163.86,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 14,
+        "points": 88.96,
+        "opponent": "Vlad",
+        "phase": "playoff"
+      },
+      "starter_tds": 68,
+      "starter_yards": 9260,
+      "td_breakdown": {
+        "pass": 19,
+        "rush": 24,
+        "rec": 25,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "3rd",
+      "playoff_record": {
+        "w": 1,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "16-6",
+        "pf": 1400.44,
+        "pa": 1173.34
+      },
+      "record_note": null,
+      "ppg": 127.31,
+      "pa_pg": 106.67,
+      "record_str": "16-6",
+      "h2h_str": "7-4",
+      "median_str": "9-2",
+      "record_pct": 0.727,
+      "h2h_pct": 0.636,
+      "all_play_pct": 0.81,
+      "all_play_str": "98-23",
+      "playoff_record_str": "1-1",
+      "tds_per_game": 6.18,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "lij",
+      "name": "Lij",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 6,
+        "l": 5,
+        "t": 0
+      },
+      "median": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 9,
+        "t": 0
+      },
+      "pf": 1241.2,
+      "pa": 1247.32,
+      "all_play": {
+        "w": 71,
+        "l": 50,
+        "t": 0
+      },
+      "high_week": {
+        "week": 7,
+        "points": 152.74,
+        "opponent": "Brett",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 9,
+        "points": 81.3,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": 62,
+      "starter_yards": 8096,
+      "td_breakdown": {
+        "pass": 16,
+        "rush": 33,
+        "rec": 13,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "4th",
+      "playoff_record": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "13-9",
+        "pf": 1241.2,
+        "pa": 1247.32
+      },
+      "record_note": null,
+      "ppg": 112.84,
+      "pa_pg": 113.39,
+      "record_str": "13-9",
+      "h2h_str": "6-5",
+      "median_str": "7-4",
+      "record_pct": 0.591,
+      "h2h_pct": 0.545,
+      "all_play_pct": 0.587,
+      "all_play_str": "71-50",
+      "playoff_record_str": "1-2",
+      "tds_per_game": 5.64,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "marc",
+      "name": "Marc",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 3,
+        "l": 8,
+        "t": 0
+      },
+      "median": {
+        "w": 4,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 7,
+        "l": 15,
+        "t": 0
+      },
+      "pf": 1080.82,
+      "pa": 1190.0,
+      "all_play": {
+        "w": 46,
+        "l": 75,
+        "t": 0
+      },
+      "high_week": {
+        "week": 7,
+        "points": 130.78,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 17,
+        "points": 60.7,
+        "opponent": "Paul",
+        "phase": "consolation"
+      },
+      "starter_tds": 55,
+      "starter_yards": 7051,
+      "td_breakdown": {
+        "pass": 18,
+        "rush": 19,
+        "rec": 18,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "7-15",
+        "pf": 1080.82,
+        "pa": 1189.99
+      },
+      "record_note": null,
+      "ppg": 98.26,
+      "pa_pg": 108.18,
+      "record_str": "7-15",
+      "h2h_str": "3-8",
+      "median_str": "4-7",
+      "record_pct": 0.318,
+      "h2h_pct": 0.273,
+      "all_play_pct": 0.38,
+      "all_play_str": "46-75",
+      "playoff_record_str": null,
+      "tds_per_game": 5.0,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "matt-a",
+      "name": "Matt A",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 9,
+        "l": 2,
+        "t": 0
+      },
+      "median": {
+        "w": 5,
+        "l": 6,
+        "t": 0
+      },
+      "record": {
+        "w": 14,
+        "l": 8,
+        "t": 0
+      },
+      "pf": 1151.44,
+      "pa": 1095.88,
+      "all_play": {
+        "w": 62,
+        "l": 59,
+        "t": 0
+      },
+      "high_week": {
+        "week": 5,
+        "points": 136.14,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 15,
+        "points": 79.68,
+        "opponent": "Andrew",
+        "phase": "playoff"
+      },
+      "starter_tds": 62,
+      "starter_yards": 7625,
+      "td_breakdown": {
+        "pass": 19,
+        "rush": 10,
+        "rec": 33,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "Playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "14-8",
+        "pf": 1151.44,
+        "pa": 1095.88
+      },
+      "record_note": null,
+      "ppg": 104.68,
+      "pa_pg": 99.63,
+      "record_str": "14-8",
+      "h2h_str": "9-2",
+      "median_str": "5-6",
+      "record_pct": 0.636,
+      "h2h_pct": 0.818,
+      "all_play_pct": 0.512,
+      "all_play_str": "62-59",
+      "playoff_record_str": "0-2",
+      "tds_per_game": 5.64,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "matt-z",
+      "name": "Matt Z",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 8,
+        "l": 3,
+        "t": 0
+      },
+      "record": {
+        "w": 15,
+        "l": 7,
+        "t": 0
+      },
+      "pf": 1285.68,
+      "pa": 1107.14,
+      "all_play": {
+        "w": 78,
+        "l": 43,
+        "t": 0
+      },
+      "high_week": {
+        "week": 9,
+        "points": 146.56,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 8,
+        "points": 92.38,
+        "opponent": "Brett",
+        "phase": "regular"
+      },
+      "starter_tds": 74,
+      "starter_yards": 8579,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 19,
+        "rec": 33,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": true,
+      "finish": "Runner-up",
+      "playoff_record": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "15-7",
+        "pf": 1285.68,
+        "pa": 1107.14
+      },
+      "record_note": null,
+      "ppg": 116.88,
+      "pa_pg": 100.65,
+      "record_str": "15-7",
+      "h2h_str": "7-4",
+      "median_str": "8-3",
+      "record_pct": 0.682,
+      "h2h_pct": 0.636,
+      "all_play_pct": 0.645,
+      "all_play_str": "78-43",
+      "playoff_record_str": "2-1",
+      "tds_per_game": 6.73,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "paul",
+      "name": "Paul",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 1,
+        "l": 10,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 9,
+        "t": 0
+      },
+      "record": {
+        "w": 3,
+        "l": 19,
+        "t": 0
+      },
+      "pf": 976.0,
+      "pa": 1257.0,
+      "all_play": {
+        "w": 27,
+        "l": 94,
+        "t": 0
+      },
+      "high_week": {
+        "week": 5,
+        "points": 124.78,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 15,
+        "points": 63.86,
+        "opponent": "Brett",
+        "phase": "consolation"
+      },
+      "starter_tds": 57,
+      "starter_yards": 6624,
+      "td_breakdown": {
+        "pass": 26,
+        "rush": 11,
+        "rec": 20,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "3-19",
+        "pf": 975.99,
+        "pa": 1256.99
+      },
+      "record_note": null,
+      "ppg": 88.73,
+      "pa_pg": 114.27,
+      "record_str": "3-19",
+      "h2h_str": "1-10",
+      "median_str": "2-9",
+      "record_pct": 0.136,
+      "h2h_pct": 0.091,
+      "all_play_pct": 0.223,
+      "all_play_str": "27-94",
+      "playoff_record_str": null,
+      "tds_per_game": 5.18,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2025",
+      "manager": "vlad",
+      "name": "Vlad",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 11,
+      "h2h": {
+        "w": 7,
+        "l": 4,
+        "t": 0
+      },
+      "median": {
+        "w": 6,
+        "l": 5,
+        "t": 0
+      },
+      "record": {
+        "w": 13,
+        "l": 9,
+        "t": 0
+      },
+      "pf": 1213.24,
+      "pa": 1169.46,
+      "all_play": {
+        "w": 63,
+        "l": 58,
+        "t": 0
+      },
+      "high_week": {
+        "week": 15,
+        "points": 191.9,
+        "opponent": "Juan",
+        "phase": "playoff"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 80.0,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "starter_tds": 60,
+      "starter_yards": 8055,
+      "td_breakdown": {
+        "pass": 14,
+        "rush": 21,
+        "rec": 24,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": true,
+      "finish": "Champion",
+      "playoff_record": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "13-9",
+        "pf": 1213.24,
+        "pa": 1179.16
+      },
+      "record_note": null,
+      "ppg": 110.29,
+      "pa_pg": 106.31,
+      "record_str": "13-9",
+      "h2h_str": "7-4",
+      "median_str": "6-5",
+      "record_pct": 0.591,
+      "h2h_pct": 0.636,
+      "all_play_pct": 0.521,
+      "all_play_str": "63-58",
+      "playoff_record_str": "3-0",
+      "tds_per_game": 5.45,
+      "eligible_for_records": true,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "andrew",
+      "name": "Andrew",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "median": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 2,
+        "l": 4,
+        "t": 0
+      },
+      "pf": 271.06,
+      "pa": 332.1,
+      "all_play": {
+        "w": 9,
+        "l": 24,
+        "t": 0
+      },
+      "high_week": {
+        "week": 2,
+        "points": 101.56,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 75.46,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "starter_tds": 14,
+      "starter_yards": 1941,
+      "td_breakdown": {
+        "pass": 6,
+        "rush": 1,
+        "rec": 7,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "2-4",
+        "pf": 271.06,
+        "pa": 332.1
+      },
+      "record_note": null,
+      "ppg": 90.35,
+      "pa_pg": 110.7,
+      "record_str": "2-4",
+      "h2h_str": "1-2",
+      "median_str": "1-2",
+      "record_pct": 0.333,
+      "h2h_pct": 0.333,
+      "all_play_pct": 0.273,
+      "all_play_str": "9-24",
+      "playoff_record_str": null,
+      "tds_per_game": 4.67,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "brett",
+      "name": "Brett",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 2,
+        "t": 0
+      },
+      "pf": 419.66,
+      "pa": 362.7,
+      "all_play": {
+        "w": 24,
+        "l": 9,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 188.1,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 91.58,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "starter_tds": 27,
+      "starter_yards": 2720,
+      "td_breakdown": {
+        "pass": 9,
+        "rush": 11,
+        "rec": 7,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-2",
+        "pf": 419.66,
+        "pa": 362.7
+      },
+      "record_note": null,
+      "ppg": 139.89,
+      "pa_pg": 120.9,
+      "record_str": "4-2",
+      "h2h_str": "2-1",
+      "median_str": "2-1",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.727,
+      "all_play_str": "24-9",
+      "playoff_record_str": null,
+      "tds_per_game": 9.0,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "derek",
+      "name": "Derek",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "median": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 2,
+        "l": 4,
+        "t": 0
+      },
+      "pf": 312.86,
+      "pa": 302.2,
+      "all_play": {
+        "w": 14,
+        "l": 19,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 119.66,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 92.6,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "starter_tds": 15,
+      "starter_yards": 2059,
+      "td_breakdown": {
+        "pass": 4,
+        "rush": 2,
+        "rec": 9,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "2-4",
+        "pf": 312.86,
+        "pa": 302.2
+      },
+      "record_note": null,
+      "ppg": 104.29,
+      "pa_pg": 100.73,
+      "record_str": "2-4",
+      "h2h_str": "1-2",
+      "median_str": "1-2",
+      "record_pct": 0.333,
+      "h2h_pct": 0.333,
+      "all_play_pct": 0.424,
+      "all_play_str": "14-19",
+      "playoff_record_str": null,
+      "tds_per_game": 5.0,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "doug",
+      "name": "Doug",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 5,
+        "l": 1,
+        "t": 0
+      },
+      "pf": 334.1,
+      "pa": 286.84,
+      "all_play": {
+        "w": 17,
+        "l": 16,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 139.22,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 3,
+        "points": 95.66,
+        "opponent": "Andrew",
+        "phase": "regular"
+      },
+      "starter_tds": 16,
+      "starter_yards": 1977,
+      "td_breakdown": {
+        "pass": 1,
+        "rush": 2,
+        "rec": 12,
+        "idp": 1,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "5-1",
+        "pf": 334.1,
+        "pa": 286.84
+      },
+      "record_note": null,
+      "ppg": 111.37,
+      "pa_pg": 95.61,
+      "record_str": "5-1",
+      "h2h_str": "3-0",
+      "median_str": "2-1",
+      "record_pct": 0.833,
+      "h2h_pct": 1.0,
+      "all_play_pct": 0.515,
+      "all_play_str": "17-16",
+      "playoff_record_str": null,
+      "tds_per_game": 5.33,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "jake",
+      "name": "Jake",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 0,
+        "l": 3,
+        "t": 0
+      },
+      "median": {
+        "w": 0,
+        "l": 3,
+        "t": 0
+      },
+      "record": {
+        "w": 0,
+        "l": 6,
+        "t": 0
+      },
+      "pf": 273.52,
+      "pa": 340.14,
+      "all_play": {
+        "w": 9,
+        "l": 24,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 100.2,
+        "opponent": "Doug",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 3,
+        "points": 79.44,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "starter_tds": 10,
+      "starter_yards": 1999,
+      "td_breakdown": {
+        "pass": 5,
+        "rush": 2,
+        "rec": 3,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "0-6",
+        "pf": 273.52,
+        "pa": 340.14
+      },
+      "record_note": null,
+      "ppg": 91.17,
+      "pa_pg": 113.38,
+      "record_str": "0-6",
+      "h2h_str": "0-3",
+      "median_str": "0-3",
+      "record_pct": 0.0,
+      "h2h_pct": 0.0,
+      "all_play_pct": 0.273,
+      "all_play_str": "9-24",
+      "playoff_record_str": null,
+      "tds_per_game": 3.33,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "juan",
+      "name": "Juan",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 0,
+        "l": 3,
+        "t": 0
+      },
+      "median": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 1,
+        "l": 5,
+        "t": 0
+      },
+      "pf": 277.74,
+      "pa": 354.08,
+      "all_play": {
+        "w": 10,
+        "l": 23,
+        "t": 0
+      },
+      "high_week": {
+        "week": 3,
+        "points": 106.42,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 73.08,
+        "opponent": "Matt A",
+        "phase": "regular"
+      },
+      "starter_tds": 10,
+      "starter_yards": 1917,
+      "td_breakdown": {
+        "pass": 2,
+        "rush": 3,
+        "rec": 5,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "1-5",
+        "pf": 277.74,
+        "pa": 354.08
+      },
+      "record_note": null,
+      "ppg": 92.58,
+      "pa_pg": 118.03,
+      "record_str": "1-5",
+      "h2h_str": "0-3",
+      "median_str": "1-2",
+      "record_pct": 0.167,
+      "h2h_pct": 0.0,
+      "all_play_pct": 0.303,
+      "all_play_str": "10-23",
+      "playoff_record_str": null,
+      "tds_per_game": 3.33,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "lij",
+      "name": "Lij",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 2,
+        "t": 0
+      },
+      "pf": 333.6,
+      "pa": 289.64,
+      "all_play": {
+        "w": 19,
+        "l": 14,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 146.32,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 3,
+        "points": 60.12,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "starter_tds": 20,
+      "starter_yards": 2003,
+      "td_breakdown": {
+        "pass": 5,
+        "rush": 9,
+        "rec": 5,
+        "idp": 1,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-2",
+        "pf": 333.6,
+        "pa": 289.64
+      },
+      "record_note": null,
+      "ppg": 111.2,
+      "pa_pg": 96.55,
+      "record_str": "4-2",
+      "h2h_str": "2-1",
+      "median_str": "2-1",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.576,
+      "all_play_str": "19-14",
+      "playoff_record_str": null,
+      "tds_per_game": 6.67,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "marc",
+      "name": "Marc",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 2,
+        "t": 0
+      },
+      "pf": 352.78,
+      "pa": 284.9,
+      "all_play": {
+        "w": 22,
+        "l": 11,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 142.56,
+        "opponent": "Andrew",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 98.32,
+        "opponent": "Paul",
+        "phase": "regular"
+      },
+      "starter_tds": 11,
+      "starter_yards": 2417,
+      "td_breakdown": {
+        "pass": 2,
+        "rush": 4,
+        "rec": 5,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-2",
+        "pf": 352.78,
+        "pa": 284.9
+      },
+      "record_note": null,
+      "ppg": 117.59,
+      "pa_pg": 94.97,
+      "record_str": "4-2",
+      "h2h_str": "2-1",
+      "median_str": "2-1",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.667,
+      "all_play_str": "22-11",
+      "playoff_record_str": null,
+      "tds_per_game": 3.67,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "matt-a",
+      "name": "Matt A",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 2,
+        "t": 0
+      },
+      "pf": 301.98,
+      "pa": 306.58,
+      "all_play": {
+        "w": 16,
+        "l": 17,
+        "t": 0
+      },
+      "high_week": {
+        "week": 2,
+        "points": 107.38,
+        "opponent": "Juan",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 89.86,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "starter_tds": 12,
+      "starter_yards": 2231,
+      "td_breakdown": {
+        "pass": 3,
+        "rush": 5,
+        "rec": 4,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-2",
+        "pf": 301.98,
+        "pa": 306.58
+      },
+      "record_note": null,
+      "ppg": 100.66,
+      "pa_pg": 102.19,
+      "record_str": "4-2",
+      "h2h_str": "2-1",
+      "median_str": "2-1",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.485,
+      "all_play_str": "16-17",
+      "playoff_record_str": null,
+      "tds_per_game": 4.0,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "matt-z",
+      "name": "Matt Z",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 4,
+        "l": 2,
+        "t": 0
+      },
+      "pf": 351.48,
+      "pa": 337.3,
+      "all_play": {
+        "w": 20,
+        "l": 13,
+        "t": 0
+      },
+      "high_week": {
+        "week": 2,
+        "points": 138.28,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 1,
+        "points": 86.16,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "starter_tds": 19,
+      "starter_yards": 2305,
+      "td_breakdown": {
+        "pass": 7,
+        "rush": 4,
+        "rec": 8,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "4-2",
+        "pf": 351.48,
+        "pa": 337.3
+      },
+      "record_note": null,
+      "ppg": 117.16,
+      "pa_pg": 112.43,
+      "record_str": "4-2",
+      "h2h_str": "2-1",
+      "median_str": "2-1",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.606,
+      "all_play_str": "20-13",
+      "playoff_record_str": null,
+      "tds_per_game": 6.33,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "paul",
+      "name": "Paul",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "median": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "record": {
+        "w": 3,
+        "l": 3,
+        "t": 0
+      },
+      "pf": 349.44,
+      "pa": 365.86,
+      "all_play": {
+        "w": 20,
+        "l": 13,
+        "t": 0
+      },
+      "high_week": {
+        "week": 2,
+        "points": 149.32,
+        "opponent": "Marc",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 3,
+        "points": 99.36,
+        "opponent": "Jake",
+        "phase": "regular"
+      },
+      "starter_tds": 17,
+      "starter_yards": 2426,
+      "td_breakdown": {
+        "pass": 5,
+        "rush": 6,
+        "rec": 6,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "3-3",
+        "pf": 349.44,
+        "pa": 365.86
+      },
+      "record_note": null,
+      "ppg": 116.48,
+      "pa_pg": 121.95,
+      "record_str": "3-3",
+      "h2h_str": "2-1",
+      "median_str": "1-2",
+      "record_pct": 0.5,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.606,
+      "all_play_str": "20-13",
+      "playoff_record_str": null,
+      "tds_per_game": 5.67,
+      "eligible_for_records": false,
+      "current": true
+    },
+    {
+      "season": "2026",
+      "manager": "vlad",
+      "name": "Vlad",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": true,
+      "games": 3,
+      "h2h": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "record": {
+        "w": 3,
+        "l": 3,
+        "t": 0
+      },
+      "pf": 352.24,
+      "pa": 368.12,
+      "all_play": {
+        "w": 18,
+        "l": 15,
+        "t": 0
+      },
+      "high_week": {
+        "week": 3,
+        "points": 134.78,
+        "opponent": "Brett",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 2,
+        "points": 84.56,
+        "opponent": "Matt Z",
+        "phase": "regular"
+      },
+      "starter_tds": 19,
+      "starter_yards": 2317,
+      "td_breakdown": {
+        "pass": 7,
+        "rush": 8,
+        "rec": 4,
+        "idp": 0,
+        "return": 0
+      },
+      "playoffs": false,
+      "finish": "In progress",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "3-3",
+        "pf": 352.24,
+        "pa": 368.12
+      },
+      "record_note": null,
+      "ppg": 117.41,
+      "pa_pg": 122.71,
+      "record_str": "3-3",
+      "h2h_str": "1-2",
+      "median_str": "2-1",
+      "record_pct": 0.5,
+      "h2h_pct": 0.333,
+      "all_play_pct": 0.545,
+      "all_play_str": "18-15",
+      "playoff_record_str": null,
+      "tds_per_game": 6.33,
+      "eligible_for_records": false,
+      "current": true
+    }
+  ],
+  "best_worst": {
+    "deion": {
+      "name": "Deion Hulse",
+      "best": {
+        "season": "2022",
+        "record_str": "10-3",
+        "record_pct": 0.769,
+        "h2h_str": "10-3",
+        "median_str": null,
+        "pf": 1619.04,
+        "ppg": 124.54,
+        "all_play_str": "58-33",
+        "finish": "Co-champion"
+      },
+      "worst": {
+        "season": "2023",
+        "record_str": "8-5",
+        "record_pct": 0.615,
+        "h2h_str": "8-5",
+        "median_str": null,
+        "pf": 1465.16,
+        "ppg": 112.7,
+        "all_play_str": "64-79",
+        "finish": "Runner-up"
+      },
+      "only_one_full_season": false
+    },
+    "doug": {
+      "name": "Doug",
+      "best": {
+        "season": "2024",
+        "record_str": "18-8",
+        "record_pct": 0.692,
+        "h2h_str": "9-4",
+        "median_str": "9-4",
+        "pf": 1650.08,
+        "ppg": 126.93,
+        "all_play_str": "94-49",
+        "finish": "Champion"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "7-15",
+        "record_pct": 0.318,
+        "h2h_str": "3-8",
+        "median_str": "4-7",
+        "pf": 1058.76,
+        "ppg": 96.25,
+        "all_play_str": "42-79",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "jake": {
+      "name": "Jake",
+      "best": {
+        "season": "2024",
+        "record_str": "12-14",
+        "record_pct": 0.462,
+        "h2h_str": "5-8",
+        "median_str": "7-6",
+        "pf": 1470.26,
+        "ppg": 113.1,
+        "all_play_str": "76-67",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "8-14",
+        "record_pct": 0.364,
+        "h2h_str": "4-7",
+        "median_str": "4-7",
+        "pf": 1121.16,
+        "ppg": 101.92,
+        "all_play_str": "55-66",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "jakefitzy": {
+      "name": "Jake Fitzgerald",
+      "best": {
+        "season": "2023",
+        "record_str": "7-6",
+        "record_pct": 0.538,
+        "h2h_str": "7-6",
+        "median_str": null,
+        "pf": 1460.62,
+        "ppg": 112.36,
+        "all_play_str": "69-74",
+        "finish": "4th"
+      },
+      "worst": {
+        "season": "2022",
+        "record_str": "6-7",
+        "record_pct": 0.462,
+        "h2h_str": "6-7",
+        "median_str": null,
+        "pf": 1348.6,
+        "ppg": 103.74,
+        "all_play_str": "41-50",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "jmoneymess": {
+      "name": "Jared Messinger",
+      "best": {
+        "season": "2022",
+        "record_str": "8-5",
+        "record_pct": 0.615,
+        "h2h_str": "8-5",
+        "median_str": null,
+        "pf": 1410.5,
+        "ppg": 108.5,
+        "all_play_str": "48-43",
+        "finish": "Co-champion"
+      },
+      "worst": {
+        "season": "2023",
+        "record_str": "5-8",
+        "record_pct": 0.385,
+        "h2h_str": "5-8",
+        "median_str": null,
+        "pf": 1388.72,
+        "ppg": 106.82,
+        "all_play_str": "63-80",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "lij": {
+      "name": "Lij",
+      "best": {
+        "season": "2023",
+        "record_str": "8-5",
+        "record_pct": 0.615,
+        "h2h_str": "8-5",
+        "median_str": null,
+        "pf": 1556.24,
+        "ppg": 119.71,
+        "all_play_str": "85-58",
+        "finish": "5th"
+      },
+      "worst": {
+        "season": "2022",
+        "record_str": "5-8",
+        "record_pct": 0.385,
+        "h2h_str": "5-8",
+        "median_str": null,
+        "pf": 1526.38,
+        "ppg": 117.41,
+        "all_play_str": "44-47",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "michaeldewey99": {
+      "name": "Mike Dewey",
+      "best": {
+        "season": "2023",
+        "record_str": "6-7",
+        "record_pct": 0.462,
+        "h2h_str": "6-7",
+        "median_str": null,
+        "pf": 1553.6,
+        "ppg": 119.51,
+        "all_play_str": "87-56",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2022",
+        "record_str": "2-11",
+        "record_pct": 0.154,
+        "h2h_str": "2-11",
+        "median_str": null,
+        "pf": 1261.7,
+        "ppg": 97.05,
+        "all_play_str": "29-62",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "vlad": {
+      "name": "Vlad",
+      "best": {
+        "season": "2024",
+        "record_str": "19-7",
+        "record_pct": 0.731,
+        "h2h_str": "8-5",
+        "median_str": "11-2",
+        "pf": 1685.26,
+        "ppg": 129.64,
+        "all_play_str": "104-39",
+        "finish": "4th"
+      },
+      "worst": {
+        "season": "2023",
+        "record_str": "3-10",
+        "record_pct": 0.231,
+        "h2h_str": "3-10",
+        "median_str": null,
+        "pf": 1292.64,
+        "ppg": 99.43,
+        "all_play_str": "48-95",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "anupds23": {
+      "name": "Anup Singh",
+      "best": {
+        "season": "2023",
+        "record_str": "4-9",
+        "record_pct": 0.308,
+        "h2h_str": "4-9",
+        "median_str": null,
+        "pf": 1374.22,
+        "ppg": 105.71,
+        "all_play_str": "59-84",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2023",
+        "record_str": "4-9",
+        "record_pct": 0.308,
+        "h2h_str": "4-9",
+        "median_str": null,
+        "pf": 1374.22,
+        "ppg": 105.71,
+        "all_play_str": "59-84",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": true
+    },
+    "juan": {
+      "name": "Juan",
+      "best": {
+        "season": "2024",
+        "record_str": "20-6",
+        "record_pct": 0.769,
+        "h2h_str": "9-4",
+        "median_str": "11-2",
+        "pf": 1661.76,
+        "ppg": 127.83,
+        "all_play_str": "98-45",
+        "finish": "3rd"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "16-6",
+        "record_pct": 0.727,
+        "h2h_str": "7-4",
+        "median_str": "9-2",
+        "pf": 1400.44,
+        "ppg": 127.31,
+        "all_play_str": "98-23",
+        "finish": "3rd"
+      },
+      "only_one_full_season": false
+    },
+    "marc": {
+      "name": "Marc",
+      "best": {
+        "season": "2023",
+        "record_str": "8-5",
+        "record_pct": 0.615,
+        "h2h_str": "8-5",
+        "median_str": null,
+        "pf": 1545.66,
+        "ppg": 118.9,
+        "all_play_str": "85-58",
+        "finish": "6th"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "7-15",
+        "record_pct": 0.318,
+        "h2h_str": "3-8",
+        "median_str": "4-7",
+        "pf": 1080.82,
+        "ppg": 98.26,
+        "all_play_str": "46-75",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "matt-z": {
+      "name": "Matt Z",
+      "best": {
+        "season": "2025",
+        "record_str": "15-7",
+        "record_pct": 0.682,
+        "h2h_str": "7-4",
+        "median_str": "8-3",
+        "pf": 1285.68,
+        "ppg": 116.88,
+        "all_play_str": "78-43",
+        "finish": "Runner-up"
+      },
+      "worst": {
+        "season": "2023",
+        "record_str": "6-7",
+        "record_pct": 0.462,
+        "h2h_str": "6-7",
+        "median_str": null,
+        "pf": 1396.26,
+        "ppg": 107.4,
+        "all_play_str": "55-88",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "andrew": {
+      "name": "Andrew",
+      "best": {
+        "season": "2025",
+        "record_str": "13-9",
+        "record_pct": 0.591,
+        "h2h_str": "7-4",
+        "median_str": "6-5",
+        "pf": 1128.54,
+        "ppg": 102.59,
+        "all_play_str": "62-59",
+        "finish": "6th"
+      },
+      "worst": {
+        "season": "2024",
+        "record_str": "6-20",
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11",
+        "pf": 1346.1,
+        "ppg": 103.55,
+        "all_play_str": "49-94",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "derek": {
+      "name": "Derek",
+      "best": {
+        "season": "2025",
+        "record_str": "14-8",
+        "record_pct": 0.636,
+        "h2h_str": "7-4",
+        "median_str": "7-4",
+        "pf": 1193.74,
+        "ppg": 108.52,
+        "all_play_str": "69-52",
+        "finish": "5th"
+      },
+      "worst": {
+        "season": "2024",
+        "record_str": "12-14",
+        "record_pct": 0.462,
+        "h2h_str": "6-7",
+        "median_str": "6-7",
+        "pf": 1485.1,
+        "ppg": 114.24,
+        "all_play_str": "68-75",
+        "finish": "6th"
+      },
+      "only_one_full_season": false
+    },
+    "matt-a": {
+      "name": "Matt A",
+      "best": {
+        "season": "2025",
+        "record_str": "14-8",
+        "record_pct": 0.636,
+        "h2h_str": "9-2",
+        "median_str": "5-6",
+        "pf": 1151.44,
+        "ppg": 104.68,
+        "all_play_str": "62-59",
+        "finish": "Playoffs"
+      },
+      "worst": {
+        "season": "2024",
+        "record_str": "6-20",
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11",
+        "pf": 1299.52,
+        "ppg": 99.96,
+        "all_play_str": "42-101",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "mrpfizer": {
+      "name": "Matt Froemming",
+      "best": {
+        "season": "2024",
+        "record_str": "7-19",
+        "record_pct": 0.269,
+        "h2h_str": "4-9",
+        "median_str": "3-10",
+        "pf": 1228.66,
+        "ppg": 94.51,
+        "all_play_str": "32-111",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2024",
+        "record_str": "7-19",
+        "record_pct": 0.269,
+        "h2h_str": "4-9",
+        "median_str": "3-10",
+        "pf": 1228.66,
+        "ppg": 94.51,
+        "all_play_str": "32-111",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": true
+    },
+    "paul": {
+      "name": "Paul",
+      "best": {
+        "season": "2024",
+        "record_str": "19-7",
+        "record_pct": 0.731,
+        "h2h_str": "9-4",
+        "median_str": "10-3",
+        "pf": 1619.0,
+        "ppg": 124.54,
+        "all_play_str": "91-52",
+        "finish": "Runner-up"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "3-19",
+        "record_pct": 0.136,
+        "h2h_str": "1-10",
+        "median_str": "2-9",
+        "pf": 976.0,
+        "ppg": 88.73,
+        "all_play_str": "27-94",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": false
+    },
+    "brett": {
+      "name": "Brett",
+      "best": {
+        "season": "2025",
+        "record_str": "9-13",
+        "record_pct": 0.409,
+        "h2h_str": "5-6",
+        "median_str": "4-7",
+        "pf": 1138.5,
+        "ppg": 103.5,
+        "all_play_str": "53-68",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "9-13",
+        "record_pct": 0.409,
+        "h2h_str": "5-6",
+        "median_str": "4-7",
+        "pf": 1138.5,
+        "ppg": 103.5,
+        "all_play_str": "53-68",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": true
+    }
+  },
+  "notable": [
+    "All-time points leader: Doug, 6,218.80 regular-season PF over 53 games (117.34 per game).",
+    "Best career points per game (20+ games): Juan, 123.83.",
+    "Best career regular-season record (20+ games): Juan, 47-20 (0.701).",
+    "Most titles: Doug 2.",
+    "Best season record: Juan 2024, 20-6 (0.769) (tied on win pct with Deion Hulse 2022 10-3, Juan 2023 10-3; PF breaks the tie). Worst: Paul 2025, 3-19 (0.136).",
+    "Most starter TDs in a season (2023+): Vlad 2024, 80 (6.15 per game).",
+    "Highest single week: Doug 202.08 (2024 Wk 11). Lowest: Juan 43.2 (2024 Wk 7).",
+    "Biggest blowout: Doug over Deion Hulse by 111.9 (2023 Wk 4). Closest: Brett over Jake by 0.08 (2025 Wk 13).",
+    "Longest H2H win streak: Deion Hulse, 7 (2022 Wk 12 to 2023 Wk 3). Longest losing streak: Marc, 10 (2023 Wk 11 to 2024 Wk 5).",
+    "Best individual start (2023+, 2-way tie at 49.9): Ja'Marr Chase 49.9 for Paul (2024 Wk 10); Jahmyr Gibbs 49.9 for Vlad (2025 Wk 12)."
+  ]
+}
