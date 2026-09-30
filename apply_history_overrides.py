@@ -7,8 +7,8 @@ build_site_data.py only knows Sleeper seasons (2023+), so run this right after i
 
 1. data/sources/champions_manual.json: keeps the champions schema (season / champion /
    runner_up) and adds co_champions, note and platform.
-3. data/sources/display_names.json: Legacy Owner display names (Deion H, Jake F, Jared M,
-   Mike D, Anup S, Matt F) for every owner/opponent/champion field, and manual co-championships
+3. data/sources/display_names.json: Legacy Owner display names (Deion, Jake F, Jared,
+   Mike, Anup, Matt F) for every owner/opponent/champion field, and manual co-championships
    counted in career championships. Current managers keep their full names here (the site's
    team pages match history.json to teams.json owners by full name).
 2. data/sources/score_overrides.json: official standings totals for weeks where Sleeper's

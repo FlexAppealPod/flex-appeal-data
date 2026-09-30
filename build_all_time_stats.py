@@ -9,7 +9,7 @@ ids, display names and title games from data/h2h_all_time.json):
 Rules
 - Keyed by manager (same ids / names / Legacy Owners label as build_h2h.py), incl. the
   mid-season owner overrides in data/sources/owner_overrides.json (2024 roster 2:
-  Mike D Weeks 1-6, Matt Z from Week 7).
+  Mike Weeks 1-6, Matt Z from Week 7).
 - Weekly scores are Sleeper matchup points, except the official standings totals listed in
   data/sources/score_overrides.json (2024 Week 7 trade reversals), applied via
   build_h2h.apply_score_overrides so every build reconciles with the standings.
@@ -568,7 +568,7 @@ def main() -> None:
     if hist_file.exists():
         hist = json.loads(hist_file.read_text())
         full2short = {t["owner"]: t["short_name"] for t in json.loads(TEAMS_FILE.read_text())} if TEAMS_FILE.exists() else {}
-        by_name = {m["id"]: m["id"] for m in h2h["managers"]}  # ids too (teams.json short_name "Jake" = id jake, shown as "Jake P")
+        by_name = {m["id"]: m["id"] for m in h2h["managers"]}  # ids too, in case a display name differs from the teams.json short_name
         by_name.update({m["name"].lower(): m["id"] for m in h2h["managers"]})
         by_handle = {(m.get("sleeper_handle") or "").lower(): m["id"] for m in h2h["managers"]}
 
@@ -609,11 +609,11 @@ def main() -> None:
             "through": through,
             "labels": H.LABELS,
             "rules": [
-                "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike D Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
+                "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
                 "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2023+). 2022 (ESPN) had no median, so its record is H2H only.",
                 "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
                 "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
-                "2022 titles: Deion H and Jared M are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
+                "2022 titles: Deion and Jared are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
                 "Single-week records include every real weekly pairing: regular season, playoff legs and consolation legs.",
                 "Starter TDs = passing + rushing + receiving + IDP defensive + return TDs by starters, regular season only (same logic as team_stats.json). Yards = passing + rushing + receiving.",
                 "Season records and best/worst seasons use full seasons only; partial seasons (the in-progress season, or a mid-season owner change) are listed in manager_seasons but not ranked.",
@@ -624,7 +624,7 @@ def main() -> None:
                 "2022 records are H2H only (13 games); 2023+ records include the median game (26 results per 13 weeks). Win pct is comparable, raw win totals are not.",
                 "2022 player-level data (starter TDs, yards, individual starts) comes from ESPN box scores (0.5 PPR, K and D/ST). Starter points reconcile with every 2022 weekly score.",
                 "Team-defense touchdowns (2022 ESPN D/ST, 2023 Sleeper team DEF) are not counted as starter TDs; kick/punt return and fumble-recovery TDs by individual starters are counted.",
-                "Mike D's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",
+                "Mike's 2024 (Weeks 1-6) and Matt Z's 2024 (Weeks 7-17) are partial seasons.",
                 "2024 Week 7 uses Sleeper's official standings totals (data/sources/score_overrides.json): Juan 118.34 (matchup data 43.20), roster 2 98.94 (78.10), Matt F 96.66 (67.80) and Lij 97.44 (97.04). Three trades made on Sat Oct 19 were reversed by the commissioner after the Sunday games, and Sleeper's matchup data shows the returned starters with 0 points. With the official totals every 2024 record and PF matches the standings, and Matt F beats Doug 96.66-89.80 that week.",
                 "Season PF and PA match Sleeper's official standings (roster fpts). Where the weekly matchup scores add up to one cent more than the standings (Sleeper rounding: 2024 Paul PF, 2025 Paul PF and PA, 2025 Marc PA), the official figure is used; see meta.official_cent_alignments.",
                 "Known gap, not adjusted: 2025 Week 5, Brett's starter Zay Flowers shows 0 in Sleeper's matchup data, but the official standings credit his 9.70 (Brett PF +9.70, Vlad PA +9.70). Brett won that game either way and no record changes; PF here uses the matchup data (97.88 that week).",

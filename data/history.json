@@ -2,11 +2,11 @@
   "champions": [
     {
       "season": 2022,
-      "champion": "Deion H & Jared M (co-champions)",
+      "champion": "Deion & Jared (co-champions)",
       "runner_up": "None (title split)",
       "co_champions": [
-        "Deion H",
-        "Jared M"
+        "Deion",
+        "Jared"
       ],
       "note": "Deion led 203.96-194.58 on combined score when the Week 17 Bills-Bengals game was suspended after Damar Hamlin's collapse. With Josh Allen's game never completed, Deion and Jared split the title.",
       "platform": "ESPN"
@@ -14,7 +14,7 @@
     {
       "season": 2023,
       "champion": "Douglas Sullivan",
-      "runner_up": "Deion H"
+      "runner_up": "Deion"
     },
     {
       "season": 2024,
@@ -149,7 +149,7 @@
       "playoff_appearances": 0
     },
     {
-      "owner": "Mike D",
+      "owner": "Mike",
       "seasons": 1,
       "wins": 6,
       "losses": 7,
@@ -159,7 +159,7 @@
       "playoff_appearances": 0
     },
     {
-      "owner": "Deion H",
+      "owner": "Deion",
       "seasons": 1,
       "wins": 8,
       "losses": 5,
@@ -179,7 +179,7 @@
       "playoff_appearances": 1
     },
     {
-      "owner": "Jared M",
+      "owner": "Jared",
       "seasons": 1,
       "wins": 5,
       "losses": 8,
@@ -189,7 +189,7 @@
       "playoff_appearances": 0
     },
     {
-      "owner": "Anup S",
+      "owner": "Anup",
       "seasons": 1,
       "wins": 4,
       "losses": 9,
@@ -229,7 +229,7 @@
       "week": 4,
       "owner": "Douglas Sullivan",
       "points": 196.7,
-      "opponent": "Deion H"
+      "opponent": "Deion"
     },
     {
       "season": 2025,
@@ -255,7 +255,7 @@
     {
       "season": 2023,
       "week": 5,
-      "owner": "Deion H",
+      "owner": "Deion",
       "points": 168.68,
       "opponent": "Vlad Barber"
     },
@@ -292,7 +292,7 @@
       "week": 5,
       "owner": "Douglas Sullivan",
       "points": 163.44,
-      "opponent": "Jared M"
+      "opponent": "Jared"
     },
     {
       "season": 2024,
@@ -378,7 +378,7 @@
       "week": 9,
       "owner": "Matt Zacharias",
       "points": 66.58,
-      "opponent": "Jared M"
+      "opponent": "Jared"
     },
     {
       "season": 2023,
@@ -394,7 +394,7 @@
       "week": 4,
       "owner": "Douglas Sullivan",
       "points": 196.7,
-      "opponent": "Deion H",
+      "opponent": "Deion",
       "opponent_points": 84.8,
       "margin": 111.9
     },
@@ -430,7 +430,7 @@
       "week": 5,
       "owner": "Douglas Sullivan",
       "points": 163.44,
-      "opponent": "Jared M",
+      "opponent": "Jared",
       "opponent_points": 79.78,
       "margin": 83.66
     },
@@ -457,14 +457,14 @@
       "week": 4,
       "owner": "Jake Prosser",
       "points": 155.26,
-      "opponent": "Jared M",
+      "opponent": "Jared",
       "opponent_points": 84.38,
       "margin": 70.88
     },
     {
       "season": 2023,
       "week": 5,
-      "owner": "Deion H",
+      "owner": "Deion",
       "points": 168.68,
       "opponent": "Vlad Barber",
       "opponent_points": 100.54,
@@ -493,7 +493,7 @@
       "week": 13,
       "owner": "Vlad Barber",
       "points": 130.64,
-      "opponent": "Jared M",
+      "opponent": "Jared",
       "opponent_points": 66.92,
       "margin": 63.72
     },
@@ -558,7 +558,7 @@
       "week": 13,
       "owner": "Juan Rodriguez",
       "points": 113.18,
-      "opponent": "Anup S",
+      "opponent": "Anup",
       "opponent_points": 112.9,
       "margin": 0.28
     },
@@ -567,7 +567,7 @@
       "week": 12,
       "owner": "Matt Zacharias",
       "points": 144.46,
-      "opponent": "Mike D",
+      "opponent": "Mike",
       "opponent_points": 144.12,
       "margin": 0.34
     },
@@ -610,9 +610,9 @@
     {
       "season": 2023,
       "week": 14,
-      "owner": "Jared M",
+      "owner": "Jared",
       "points": 102.62,
-      "opponent": "Mike D",
+      "opponent": "Mike",
       "opponent_points": 101.22,
       "margin": 1.4
     },

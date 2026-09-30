@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "through_week": 3,
-  "last_updated": "2026-09-29T23:35:17-07:00",
+  "last_updated": "2026-09-29T23:36:38-07:00",
   "notes": "Starters only, weeks started. TDs = passing + rushing + receiving + IDP defensive + return; yards exclude return yards.",
   "teams": [
     {
@@ -688,7 +688,7 @@
       "roster_id": 1,
       "team_name": "Got the Beam on Me",
       "owner": "Jake Prosser",
-      "short_name": "Jake P",
+      "short_name": "Jake",
       "tds": {
         "pass": 5,
         "rush": 2,

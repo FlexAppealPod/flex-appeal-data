@@ -13,7 +13,7 @@ python3 build_site_data.py && python3 apply_history_overrides.py
 
 `apply_history_overrides.py` merges manual title rulings from
 `data/sources/champions_manual.json` into `history.json` (build_site_data.py only
-knows the Sleeper seasons). Right now that's 2022: Deion H & Jared M,
+knows the Sleeper seasons). Right now that's 2022: Deion & Jared,
 co-champions (the Week 17 final was cut short when the Bills-Bengals game was
 suspended). It also applies `data/sources/score_overrides.json` to the all-time
 extremes lists and career H2H (2024 Week 7 official totals). Run it after every
@@ -50,14 +50,14 @@ rounds count once on combined score; toilet bowl excluded; completed weeks only.
 Keyed by person (Sleeper user / ESPN owner), so team renames don't split records.
 2022 (ESPN) comes from the processed file `data/sources/espn_2022_games.json`
 (raw ESPN dumps are not committed). Past managers are labeled **Legacy Owners**
-(`meta.labels.former`; JSON keys stay `former_*`): Deion H, Jake F,
-Jared M, Mike D, Anup S and Matt F (`managers[].name`; ids
-stay stable). Current managers show first names; Jake shows as "Jake P" (id `jake`)
-to tell him apart from Jake F. All display names live in `data/sources/display_names.json` (its `site_short_names` also sets the `short_name` in teams.json / team_stats.json via `build_site_data.py` and `build_team_stats.py`; `owner` stays the full name)
+(`meta.labels.former`; JSON keys stay `former_*`): Deion, Jake F,
+Jared, Mike, Anup and Matt F (`managers[].name`; ids
+stay stable). Everyone shows by first name; shared first names get a last initial (Matt Z, Matt A,
+Matt F, Jake F; current Jake is just "Jake"). All display names live in `data/sources/display_names.json` (its `site_short_names` also sets the `short_name` in teams.json / team_stats.json via `build_site_data.py` and `build_team_stats.py`; `owner` stays the full name)
 (also applied to history.json by `apply_history_overrides.py`; current managers keep full
-names there because the site's team pages match history.json to teams.json owners). Deion H's 2023 roster had no linked Sleeper account and is mapped
+names there because the site's team pages match history.json to teams.json owners). Deion's 2023 roster had no linked Sleeper account and is mapped
 to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner changes
-live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike D
+live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike
 for Weeks 1-6 (he left at 11-1) and to Matt Z from Week 7 (`managers[].partial_seasons`).
 Weekly scores are Sleeper matchup points except the official standings totals in
 `data/sources/score_overrides.json` (2024 Week 7: trades reversed after the Sunday games

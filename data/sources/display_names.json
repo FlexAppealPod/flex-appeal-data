@@ -1,36 +1,36 @@
 {
-  "note": "Display names used across the public data (h2h_all_time.json, all_time_stats.json, history.json) and the PDFs. Manager ids never change; only the display names do. Read by build_h2h.py (and so build_all_time_stats.py), apply_history_overrides.py, build_site_data.py and build_team_stats.py.",
+  "note": "Display names: first names only; shared first names get a last initial (Jake F, Matt F, Matt Z, Matt A; current Jake is \"Jake\"). Manager ids never change. Read by build_h2h.py (and so build_all_time_stats.py), apply_history_overrides.py, build_site_data.py and build_team_stats.py. current_overrides / site_short_names are optional per-manager overrides (empty = defaults).",
   "legacy_owners": {
-    "jmoneymess": "Jared M",
-    "deion": "Deion H",
+    "jmoneymess": "Jared",
+    "deion": "Deion",
     "jakefitzy": "Jake F",
-    "michaeldewey99": "Mike D",
-    "anupds23": "Anup S",
+    "michaeldewey99": "Mike",
+    "anupds23": "Anup",
     "mrpfizer": "Matt F"
   },
-  "current_overrides": {
-    "jake": "Jake P"
-  },
+  "current_overrides": {},
   "history_json_aliases": {
     "note": "history.json owner/opponent/champion names written by build_site_data.py -> display name. Current managers keep their full names in history.json because the site's team pages match history.json career rows to teams.json owners by exact full name.",
     "names": {
-      "Deion": "Deion H",
-      "Deion Hulse": "Deion H",
+      "Deion": "Deion",
+      "Deion Hulse": "Deion",
+      "Deion H": "Deion",
       "Jakefitzy": "Jake F",
       "Jake Fitzgerald": "Jake F",
-      "MichaelDewey99": "Mike D",
-      "Mike Dewey": "Mike D",
-      "Jared Messinger": "Jared M",
-      "Anupds23": "Anup S",
-      "Anup Singh": "Anup S",
+      "MichaelDewey99": "Mike",
+      "Mike Dewey": "Mike",
+      "Mike D": "Mike",
+      "Jared Messinger": "Jared",
+      "Jared M": "Jared",
+      "Anupds23": "Anup",
+      "Anup Singh": "Anup",
+      "Anup S": "Anup",
       "MrPfizer": "Matt F",
       "Matt Froemming": "Matt F"
     }
   },
   "site_short_names": {
     "note": "Full owner name (as in teams.json 'owner', which pages match on) -> short_name shown on the site. Read by build_site_data.py (teams.json) and build_team_stats.py (team_stats.json). Full owner names are never changed.",
-    "names": {
-      "Jake Prosser": "Jake P"
-    }
+    "names": {}
   }
 }

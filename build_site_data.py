@@ -82,7 +82,7 @@ SHORT = {
     "Andrew Reed": "Andrew",
     "Deion": "Deion",
 }
-# Short-name overrides (e.g. "Jake P" vs Legacy Owner "Jake F") from data/sources/display_names.json.
+# Optional short-name overrides from data/sources/display_names.json (site_short_names).
 _DN_FILE = Path(__file__).resolve().parent / "data" / "sources" / "display_names.json"
 if _DN_FILE.exists():
     SHORT.update(json.loads(_DN_FILE.read_text()).get("site_short_names", {}).get("names", {}))
