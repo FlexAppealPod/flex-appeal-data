@@ -37,6 +37,7 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
 | `all_time_stats.json` | All-time stats 2022-present by manager: career, season and single-week records, streaks, manager seasons, best/worst seasons (`build_all_time_stats.py`) |
 | `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |
+| `rankings_history.json` | Power/Flex Rankings history 2022-present: confirmed boards (season, week, date, ranks by display name), all-time and per-season tally, #1 runs, coverage. No formula data. Built by `/workspace/flex-rankings-history/scripts_v2/publish_v3.py` |
 
 ## Head-to-head (all-time)
 
