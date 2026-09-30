@@ -16,6 +16,8 @@ Rules
   is mapped to him by (season, roster_id).
 - Mid-season owner changes: data/sources/owner_overrides.json credits a roster's
   games in the listed weeks to another manager (Sleeper keeps only the final owner).
+- Manual title rulings (2022 co-champions) come from data/sources/champions_manual.json;
+  the H2H game itself still counts on combined score.
 - Pre-Sleeper seasons (2022, ESPN) come from processed files in data/sources/
   (espn_<season>_games.json); raw ESPN dumps are never committed.
 
@@ -73,6 +75,7 @@ LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
 OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (manual)
+CHAMPIONS_FILE = SOURCES / "champions_manual.json"  # manual title rulings (2022 co-champions)
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
 
 
@@ -314,6 +317,13 @@ def main() -> None:
     leagues = dict(sorted(leagues.items()))
     formats.sort(key=lambda f: f["season"])
     titles.sort(key=lambda t: t["season"])
+    manual = json.loads(CHAMPIONS_FILE.read_text())["seasons"] if CHAMPIONS_FILE.exists() else {}
+    for t in titles:
+        m = manual.get(t["season"])
+        if m and m.get("co_champions"):
+            # H2H result stays as played (combined score); the title itself is shared
+            t["co_champions"] = m["co_champions"]
+            t["note"] = m["note"]
     games.sort(key=lambda g: (g["season"], int(g["weeks"].split("-")[0])))
 
     for g in games:
@@ -404,7 +414,11 @@ def main() -> None:
     if totals[bf]["games_vs_former"]:
         notable.append(f"Best vs {LABELS['former']}: {nm(bf)} {fmt(totals[bf]['vs_former'])}.")
     if titles:
-        notable.append("Title games: " + "; ".join(f"{t['season']} {t['winner']} over {t['loser']} {t['score']}" for t in titles) + ".")
+        def title_text(t):
+            if t.get("co_champions"):
+                return f"{t['season']} co-champions {' and '.join(t['co_champions'])} ({t['winner'].split()[0]} led {t['score']} when the final was cut short)"
+            return f"{t['season']} {t['winner']} over {t['loser']} {t['score']}"
+        notable.append("Title games: " + "; ".join(title_text(t) for t in titles) + ".")
 
     last_fmt = formats[-1]
     out = {

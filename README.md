@@ -8,8 +8,14 @@ JSON feeds for the Flex Appeal FFL website, rebuilt from the public
 
 ```bash
 cd /workspace/flex-appeal-data
-python3 build_site_data.py
+python3 build_site_data.py && python3 apply_history_overrides.py
 ```
+
+`apply_history_overrides.py` merges manual title rulings from
+`data/sources/champions_manual.json` into `history.json` (build_site_data.py only
+knows the Sleeper seasons). Right now that's 2022: Deion Hulse & Jared Messinger,
+co-champions (the Week 17 final was cut short when the Bills-Bengals game was
+suspended). Run it after every `build_site_data.py` run or the 2022 entry drops out.
 
 No third-party packages required (stdlib only). Run weekly after scores
 finalize, or anytime during the week to refresh standings / upcoming.
@@ -24,7 +30,7 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `matchups.json` | Completed weeks only (per-team rows) |
 | `upcoming.json` | Next unscored week’s pairings + records |
 | `season_records.json` | 2026 high/low scores, closest games, blowouts |
-| `history.json` | Champions, career (through 2026 to date), all-time extremes |
+| `history.json` | Champions (2022 co-champions via `apply_history_overrides.py`; entries may carry `co_champions` / `note`), career (through 2026 to date), all-time extremes |
 | `teams.json` | Owner, short name, team name, Sleeper handle |
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
 | `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |

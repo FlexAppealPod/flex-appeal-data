@@ -1,6 +1,17 @@
 {
   "champions": [
     {
+      "season": 2022,
+      "champion": "Deion Hulse & Jared Messinger (co-champions)",
+      "runner_up": "None (title split)",
+      "co_champions": [
+        "Deion Hulse",
+        "Jared Messinger"
+      ],
+      "note": "Deion led 203.96-194.58 on combined score when the Week 17 Bills-Bengals game was suspended after Damar Hamlin's collapse. With Josh Allen's game never completed, Deion and Jared split the title.",
+      "platform": "ESPN"
+    },
+    {
       "season": 2023,
       "champion": "Douglas Sullivan",
       "runner_up": "Deion"

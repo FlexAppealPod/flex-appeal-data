@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-29T21:43:31-07:00",
+  "generated_at": "2026-09-29T21:47:05-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -2619,7 +2619,12 @@
    "winner": "Deion Hulse",
    "loser": "Jared Messinger",
    "score": "203.96-194.58",
-   "weeks": "16-17"
+   "weeks": "16-17",
+   "co_champions": [
+    "Deion Hulse",
+    "Jared Messinger"
+   ],
+   "note": "Deion led 203.96-194.58 on combined score when the Week 17 Bills-Bengals game was suspended after Damar Hamlin's collapse. With Josh Allen's game never completed, Deion and Jared split the title."
   },
   {
    "season": "2023",
@@ -2652,7 +2657,7 @@
   "Best record counting every game: Juan 29-17 (.630).",
   "Toughest all-time road: Jake 20-33 (.377).",
   "Best vs Legacy Owners: Juan 7-2.",
-  "Title games: 2022 Deion Hulse over Jared Messinger 203.96-194.58; 2023 Doug over Deion Hulse 267.12-243.00; 2024 Doug over Paul 249.46-236.80; 2025 Vlad over Matt Z 223.20-220.96."
+  "Title games: 2022 co-champions Deion Hulse and Jared Messinger (Deion led 203.96-194.58 when the final was cut short); 2023 Doug over Deion Hulse 267.12-243.00; 2024 Doug over Paul 249.46-236.80; 2025 Vlad over Matt Z 223.20-220.96."
  ],
  "games": [
   {"season":"2022","weeks":"1","type":"regular","label":"Regular season","a":"michaeldewey99","b":"doug","a_pts":98.56,"b_pts":150.46,"winner":"doug"},
