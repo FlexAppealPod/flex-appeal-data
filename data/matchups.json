@@ -271,7 +271,7 @@
     "opponent": "9 - 5",
     "opponent_points": 95.66,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -282,7 +282,7 @@
     "opponent": "WHO’s YOUR VLADDY",
     "opponent_points": 134.78,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   },
   {
@@ -291,9 +291,9 @@
     "owner": "Derek Bock",
     "points": 100.6,
     "opponent": "Stephen Miller Sucks",
-    "opponent_points": 104.74,
+    "opponent_points": 104.24,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -304,7 +304,7 @@
     "opponent": "Carried by RA",
     "opponent_points": 94.04,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -315,7 +315,7 @@
     "opponent": "Walker? Barely know her",
     "opponent_points": 111.9,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -326,7 +326,7 @@
     "opponent": "Rudy",
     "opponent_points": 99.36,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -337,7 +337,7 @@
     "opponent": "Before 6, After 4",
     "opponent_points": 127.04,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   },
   {
@@ -348,18 +348,18 @@
     "opponent": "Taylor Swift",
     "opponent_points": 60.12,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   },
   {
     "week": 3,
     "team_name": "Stephen Miller Sucks",
     "owner": "Matt Atkinson",
-    "points": 104.74,
+    "points": 104.24,
     "opponent": "my njigba",
     "opponent_points": 100.6,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   },
   {
@@ -370,7 +370,7 @@
     "opponent": "RACEY RICE",
     "opponent_points": 106.42,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   },
   {
@@ -381,7 +381,7 @@
     "opponent": "Got the Beam on Me",
     "opponent_points": 79.44,
     "h2h_result": "W",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "L"
   },
   {
@@ -392,7 +392,7 @@
     "opponent": "Paper Kings",
     "opponent_points": 139.98,
     "h2h_result": "L",
-    "weekly_median": 102.67,
+    "weekly_median": 102.42,
     "median_result": "W"
   }
 ]

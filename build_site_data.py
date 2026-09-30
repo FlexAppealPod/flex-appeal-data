@@ -106,7 +106,7 @@ except ImportError:  # pragma: no cover
     _flex = None
 
 # Rankings ON HOLD: never publish a board week above this (None = no hold).
-FLEX_PUBLISH_MAX_BOARD = 3
+FLEX_PUBLISH_MAX_BOARD = 4
 
 # Week 3 Flex board is LOCKED (posted board). Movement vs last posted board
 # (not necessarily week_2_flex.csv). Record/PF/PD/streak come from results
@@ -133,7 +133,10 @@ LOCKED_WEEK3_FLEX = [
 # Append each week's posted board here after it goes out.
 POSTED_FLEX = {
     3: [o for _, o, _ in LOCKED_WEEK3_FLEX],
-    # 4: [...]  <- add the Week 4 board once it is posted
+    4: ["Brett Trana", "Matt Zacharias", "Marc Caballero", "Vlad Barber",
+        "Douglas Sullivan", "Elijah Bruette", "Paul Bacon", "Matt Atkinson",
+        "Derek Bock", "Juan Rodriguez", "Andrew Reed", "Jake Prosser"],
+    # 5: [...]  <- add the Week 5 board once it is posted
 }
 
 

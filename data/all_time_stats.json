@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T00:00:07-07:00",
+    "generated_at": "2026-09-30T13:47:45-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -99,10 +99,12 @@
       }
     ],
     "checks": {
-      "passed": 55,
+      "passed": 53,
       "discrepancies": [
         "2025 roster 9 (Vlad): computed 13-9, PF 1213.24, PA 1169.46 | Sleeper standings 13-9, PF 1213.24, PA 1179.16",
-        "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9"
+        "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9",
+        "2026 roster 7 (Derek): computed 2-4, PF 312.86, PA 301.7 | Sleeper standings 2-4, PF 312.86, PA 302.2",
+        "2026 roster 8 (Matt A): computed 4-2, PF 301.48, PA 306.58 | Sleeper standings 4-2, PF 301.98, PA 306.58"
       ],
       "history_json": [
         "ok Juan Rodriguez: history.json 26-14 vs Sleeper H2H 26-14",
@@ -705,7 +707,7 @@
         "t": 0
       },
       "pf": 2991.7,
-      "pa": 2930.52,
+      "pa": 2930.02,
       "all_play": {
         "w": 151,
         "l": 146,
@@ -723,7 +725,7 @@
       "starter_tds": 133,
       "starter_yards": 18894,
       "ppg": 110.8,
-      "pa_pg": 108.54,
+      "pa_pg": 108.52,
       "record_str": "28-26",
       "record_pct": 0.519,
       "h2h_str": "14-13",
@@ -852,7 +854,7 @@
         "l": 30,
         "t": 0
       },
-      "pf": 2752.94,
+      "pf": 2752.44,
       "pa": 2811.9,
       "all_play": {
         "w": 117,
@@ -870,7 +872,7 @@
       "title_seasons": [],
       "starter_tds": 128,
       "starter_yards": 18159,
-      "ppg": 101.96,
+      "ppg": 101.94,
       "pa_pg": 104.14,
       "record_str": "24-30",
       "record_pct": 0.444,
@@ -6479,7 +6481,7 @@
         "t": 0
       },
       "pf": 312.86,
-      "pa": 302.2,
+      "pa": 301.7,
       "all_play": {
         "w": 14,
         "l": 19,
@@ -6520,7 +6522,7 @@
       },
       "record_note": null,
       "ppg": 104.29,
-      "pa_pg": 100.73,
+      "pa_pg": 100.57,
       "record_str": "2-4",
       "h2h_str": "1-2",
       "median_str": "1-2",
@@ -6952,7 +6954,7 @@
         "l": 2,
         "t": 0
       },
-      "pf": 301.98,
+      "pf": 301.48,
       "pa": 306.58,
       "all_play": {
         "w": 16,
@@ -6993,7 +6995,7 @@
         "pa": 306.58
       },
       "record_note": null,
-      "ppg": 100.66,
+      "ppg": 100.49,
       "pa_pg": 102.19,
       "record_str": "4-2",
       "h2h_str": "2-1",

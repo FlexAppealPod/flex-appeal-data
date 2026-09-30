@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-30T00:00:06-07:00",
+  "generated_at": "2026-09-30T13:47:44-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -2966,7 +2966,7 @@
   {"season":"2026","weeks":"2","type":"regular","label":"Regular season","a":"matt-z","b":"vlad","a_pts":138.28,"b_pts":84.56,"winner":"matt-z"},
   {"season":"2026","weeks":"2","type":"regular","label":"Regular season","a":"paul","b":"marc","a_pts":149.32,"b_pts":98.32,"winner":"paul"},
   {"season":"2026","weeks":"2","type":"regular","label":"Regular season","a":"lij","b":"brett","a_pts":127.16,"b_pts":91.58,"winner":"lij"},
-  {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"derek","b":"matt-a","a_pts":100.6,"b_pts":104.74,"winner":"matt-a"},
+  {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"derek","b":"matt-a","a_pts":100.6,"b_pts":104.24,"winner":"matt-a"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"doug","b":"andrew","a_pts":95.66,"b_pts":94.04,"winner":"doug"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"matt-z","b":"juan","a_pts":127.04,"b_pts":106.42,"winner":"matt-z"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"jake","b":"paul","a_pts":79.44,"b_pts":99.36,"winner":"paul"},
