@@ -1,5 +1,5 @@
 {
-  "note": "Display names: first names only; shared first names get a last initial (Jake F, Matt F, Matt Z, Matt A; current Jake is \"Jake\"). Manager ids never change. Aaron (2024 roster 11, Legacy Owner) comes from data/sources/owner_overrides.json season_owners. Read by build_h2h.py (and so build_all_time_stats.py), apply_history_overrides.py, build_site_data.py and build_team_stats.py. current_overrides / site_short_names are optional per-manager overrides (empty = defaults).",
+  "note": "Display names: first names only; shared first names get a last initial (Jake F, Matt F, Matt Z, Matt A; current Jake is \"Jake\"). Manager ids never change. Aaron (2024 roster 11, Legacy Manager) comes from data/sources/owner_overrides.json season_owners. Read by build_h2h.py (and so build_all_time_stats.py), apply_history_overrides.py, build_site_data.py and build_team_stats.py. current_overrides / site_short_names are optional per-manager overrides (empty = defaults).",
   "legacy_owners": {
     "jmoneymess": "Jared",
     "deion": "Deion",

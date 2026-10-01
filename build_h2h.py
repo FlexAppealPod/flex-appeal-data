@@ -68,7 +68,7 @@ FIRST_NAMES = {
     "1135688681358348288": "Brett",
     "789344057498451968": "Andrew",
 }
-# Display names for Legacy Owners (ids stay stable)
+# Display names for Legacy Managers (ids stay stable)
 LEGACY_NAMES = {"jmoneymess": "Jared", "deion": "Deion", "anupds23": "Anup",
                 "mrpfizer": "Matt F", "jakefitzy": "Jake F", "michaeldewey99": "Mike", "amartinez528": "Aaron"}
 DISPLAY_NAMES_FILE = SOURCES / "display_names.json"  # single source for display names (manual)
@@ -81,7 +81,7 @@ if DISPLAY_NAMES_FILE.exists():
     DISPLAY_NAMES.update(json.loads(DISPLAY_NAMES_FILE.read_text()).get("current_overrides", {}))
 # Other ESPN team names seen for a manager (2022 ESPN "Team Hulse" = Deion)
 ESPN_TEAM_ALIASES = {"deion": ["Team Hulse"]}
-LABELS = {"current": "Current Managers", "former": "Legacy Owners"}
+LABELS = {"current": "Current Managers", "former": "Legacy Managers"}
 # Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion owned it in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
 TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank

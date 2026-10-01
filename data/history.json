@@ -328,13 +328,6 @@
   ],
   "all_time_low_scores": [
     {
-      "season": 2025,
-      "week": 16,
-      "owner": "Douglas Sullivan",
-      "points": 50.7,
-      "opponent": "Brett Trana"
-    },
-    {
       "season": 2023,
       "week": 10,
       "owner": "Jake Prosser",
@@ -363,20 +356,6 @@
       "opponent": "Marc Caballero"
     },
     {
-      "season": 2025,
-      "week": 17,
-      "owner": "Marc Caballero",
-      "points": 60.7,
-      "opponent": "Paul Bacon"
-    },
-    {
-      "season": 2025,
-      "week": 15,
-      "owner": "Paul Bacon",
-      "points": 63.86,
-      "opponent": "Brett Trana"
-    },
-    {
       "season": 2023,
       "week": 9,
       "owner": "Jake F",
@@ -396,6 +375,27 @@
       "owner": "Juan Rodriguez",
       "points": 66.84,
       "opponent": "Douglas Sullivan"
+    },
+    {
+      "season": 2023,
+      "week": 13,
+      "owner": "Jared",
+      "points": 66.92,
+      "opponent": "Vlad Barber"
+    },
+    {
+      "season": 2023,
+      "week": 7,
+      "owner": "Anup",
+      "points": 66.96,
+      "opponent": "Deion"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Deion",
+      "points": 67.1,
+      "opponent": "Mike"
     }
   ],
   "biggest_blowouts": [
@@ -454,15 +454,6 @@
       "margin": 77.8
     },
     {
-      "season": 2025,
-      "week": 16,
-      "owner": "Brett Trana",
-      "points": 124.2,
-      "opponent": "Douglas Sullivan",
-      "opponent_points": 50.7,
-      "margin": 73.5
-    },
-    {
       "season": 2023,
       "week": 4,
       "owner": "Jake Prosser",
@@ -510,50 +501,41 @@
     {
       "season": 2025,
       "week": 15,
-      "owner": "Brett Trana",
-      "points": 127.1,
-      "opponent": "Paul Bacon",
-      "opponent_points": 63.86,
-      "margin": 63.24
-    },
-    {
-      "season": 2024,
-      "week": 14,
-      "owner": "Jake Prosser",
-      "points": 162.3,
-      "opponent": "Matt F",
-      "opponent_points": 100.12,
-      "margin": 62.18
-    },
-    {
-      "season": 2025,
-      "week": 15,
       "owner": "Vlad Barber",
       "points": 191.9,
       "opponent": "Juan Rodriguez",
       "opponent_points": 130.1,
       "margin": 61.8
-    }
-  ],
-  "closest_games": [
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "owner": "Elijah Bruette",
+      "points": 146.32,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 86.16,
+      "margin": 60.16
+    },
     {
       "season": 2025,
-      "week": 13,
-      "owner": "Brett Trana",
-      "points": 108.52,
-      "opponent": "Jake Prosser",
-      "opponent_points": 108.44,
-      "margin": 0.08
+      "week": 14,
+      "owner": "Vlad Barber",
+      "points": 148.86,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 88.96,
+      "margin": 59.9
     },
     {
       "season": 2024,
-      "week": 16,
-      "owner": "Matt F",
-      "points": 86.04,
+      "week": 13,
+      "owner": "Paul Bacon",
+      "points": 151.48,
       "opponent": "Aaron",
-      "opponent_points": 85.86,
-      "margin": 0.18
-    },
+      "opponent_points": 91.92,
+      "margin": 59.56
+    }
+  ],
+  "closest_games": [
     {
       "season": 2024,
       "week": 10,
@@ -618,15 +600,6 @@
       "margin": 1.16
     },
     {
-      "season": 2023,
-      "week": 14,
-      "owner": "Jared",
-      "points": 102.62,
-      "opponent": "Mike",
-      "opponent_points": 101.22,
-      "margin": 1.4
-    },
-    {
       "season": 2024,
       "week": 8,
       "owner": "Matt F",
@@ -670,8 +643,36 @@
       "opponent": "Douglas Sullivan",
       "opponent_points": 95.08,
       "margin": 2.52
+    },
+    {
+      "season": 2023,
+      "week": 2,
+      "owner": "Jared",
+      "points": 121.6,
+      "opponent": "Vlad Barber",
+      "opponent_points": 118.54,
+      "margin": 3.06
+    },
+    {
+      "season": 2026,
+      "week": 3,
+      "owner": "Matt Atkinson",
+      "points": 104.24,
+      "opponent": "Derek Bock",
+      "opponent_points": 100.6,
+      "margin": 3.64
+    },
+    {
+      "season": 2025,
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 107.94,
+      "opponent": "Paul Bacon",
+      "opponent_points": 104.26,
+      "margin": 3.68
     }
   ],
+  "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded.",
   "score_overrides_applied": [
     "2024 wk7 matchup 6: 43.2 -> 118.34",
     "2024 wk7 matchup 2: 78.1 -> 98.94",

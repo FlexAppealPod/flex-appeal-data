@@ -7,7 +7,7 @@ ids, display names and title games from data/h2h_all_time.json):
     python3 build_h2h.py && python3 build_all_time_stats.py
 
 Rules
-- Keyed by manager (same ids / names / Legacy Owners label as build_h2h.py), incl. the
+- Keyed by manager (same ids / names / Legacy Managers label as build_h2h.py), incl. the
   mid-season owner overrides in data/sources/owner_overrides.json (2024 roster 2:
   Mike Weeks 1-6, Matt Z from Week 7) and its whole-season "season_owners" fixes
   (2024 roster 11: Aaron, not Matt A), applied via build_h2h.apply_season_owners.
@@ -24,8 +24,15 @@ Rules
   are H2H only). A median win = beating the median of all scores that week.
 - PF / PA / PPG / all-play = regular season only. Playoff results come from the H2H game
   list (a two-week round is one game on combined score).
-- Single-week records use every real weekly pairing (regular season, playoff legs and
-  consolation legs), the same convention as history.json.
+- Records (single-week highs/lows, blowouts, closest games, best individual starts,
+  manager-season high_week / low_week, career_high / career_low) count regular-season
+  games and real playoff-bracket games only: every winners-bracket game incl. the
+  placement games inside it (3rd-place, 5th-place, 5th-place semifinal). Consolation
+  games (losers bracket / toilet bowl, non-bracket playoff-week pairings) are excluded
+  (record_phases.py, shared with build_site_data.py / apply_history_overrides.py).
+- career[].games_played = regular-season head-to-head games played (the weekly median
+  result is not a game); career[].playoff_games = winners-bracket games (a two-week round
+  is one game). career[].games is kept as an alias of games_played.
 - Starter TDs / yards reuse build_team_stats.py (starters only, weeks started, regular
   season only). Scoring differs by season (see meta.scoring_by_season), so compare
   per-game numbers and read cross-season records with that in mind.
@@ -43,6 +50,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import build_h2h as H
+import record_phases as RP
 from build_team_stats import td_breakdown, yard_breakdown
 
 ROOT = Path(__file__).resolve().parent
@@ -113,6 +121,7 @@ def main() -> None:
     week_scores: list[dict] = []      # every real weekly score
     week_games: list[dict] = []       # every real weekly pairing
     player_starts: list[dict] = []
+    excluded = Counter()              # consolation entries kept out of the record lists
     starter_checks = 0
     scoring_by_season: list[dict] = []
     checks: list[str] = []
@@ -133,6 +142,9 @@ def main() -> None:
         return rows[k]
 
     def note_week(r, season, week, pts, opp_id, opp_pts, phase):
+        if not RP.counts_for_records(phase):
+            excluded["team_scores"] += 1
+            return  # consolation games never count for records
         e = {"season": season, "week": week, "manager": r["manager"], "name": r["name"], "points": r2(pts),
              "opponent": opp_id, "opponent_name": name(opp_id), "opponent_points": r2(opp_pts), "phase": phase}
         week_scores.append(e)
@@ -151,15 +163,18 @@ def main() -> None:
                                   "teams": sd["season_format"]["teams"], "regular_weeks": sd["season_format"]["regular_weeks"],
                                   "scoring": sd["season_format"].get("scoring")})
         reg_last = int(sd["season_format"]["regular_weeks"].split("-")[1])
-        tier_phase = {"NONE": "regular", "WINNERS_BRACKET": "playoff", "WINNERS_CONSOLATION_LADDER": "playoff"}
+        tier_phase = RP.ESPN_TIER_PHASE
         by_week = defaultdict(list)
         for p in sd["weekly_pairs"]:
             phase = tier_phase.get(p["tier"], "consolation")
             ra, rb = row(season, p["a"], "ESPN"), row(season, p["b"], "ESPN")
             note_week(ra, season, p["week"], p["a_pts"], p["b"], p["b_pts"], phase)
             note_week(rb, season, p["week"], p["b_pts"], p["a"], p["a_pts"], phase)
-            week_games.append({"season": season, "week": p["week"], "phase": phase, "a": p["a"], "b": p["b"],
-                               "a_pts": p["a_pts"], "b_pts": p["b_pts"]})
+            if RP.counts_for_records(phase):
+                week_games.append({"season": season, "week": p["week"], "phase": phase, "a": p["a"], "b": p["b"],
+                                   "a_pts": p["a_pts"], "b_pts": p["b_pts"]})
+            else:
+                excluded["games"] += 1
             if p["week"] <= reg_last:
                 for r, me, op in ((ra, p["a_pts"], p["b_pts"]), (rb, p["b_pts"], p["a_pts"])):
                     r["games"] += 1; r["pf"] += me; r["pa"] += op
@@ -184,7 +199,7 @@ def main() -> None:
                 phase = wk_phase.get((w, mid))
                 if phase is None:
                     continue  # no real game that week
-                for x in tw["starters"]:
+                for x in tw["starters"] if RP.counts_for_records(phase) else []:
                     player_starts.append({"season": season, "week": w, "manager": mid, "name": r["name"], "player": x["player"],
                                           "position": x["pos"], "points": x["pts"], "phase": phase})
                 if w <= reg_last:
@@ -244,10 +259,7 @@ def main() -> None:
                                   "completed_through_week": last_leg})
         through = {"season": season, "week": last_leg}
         max_week = min(last_leg, 17)
-        in_wb = defaultdict(set)  # week -> roster ids in a winners-bracket game that week
-        for g in wb:
-            for w in rounds.get(g["r"], []):
-                in_wb[w] |= {g.get("t1"), g.get("t2")}
+        in_wb = RP.winners_bracket_by_week(s, wb)  # week -> roster ids in a winners-bracket game that week
 
         def mgr(rid, week):
             for o in overrides:
@@ -277,16 +289,19 @@ def main() -> None:
                     problems.append(f"{season} wk{w}: matchup with {len(pr)} rosters skipped")
                     continue
                 a, b = pr
-                phase = "regular" if regular else ("playoff" if a["roster_id"] in in_wb[w] else "consolation")
+                phase = RP.sleeper_phase(w, a["roster_id"], s, in_wb)
                 ida, idb = mgr(a["roster_id"], w), mgr(b["roster_id"], w)
-                week_games.append({"season": season, "week": w, "phase": phase, "a": ida, "b": idb,
-                                   "a_pts": r2(a["points"] or 0), "b_pts": r2(b["points"] or 0)})
+                if RP.counts_for_records(phase):
+                    week_games.append({"season": season, "week": w, "phase": phase, "a": ida, "b": idb,
+                                       "a_pts": r2(a["points"] or 0), "b_pts": r2(b["points"] or 0)})
+                else:
+                    excluded["games"] += 1
                 for me, op, mid, oid in ((a, b, ida, idb), (b, a, idb, ida)):
                     r = row(season, mid, "Sleeper")
                     mp, opp = me["points"] or 0, op["points"] or 0
                     note_week(r, season, w, mp, oid, opp, phase)
                     for pid, pp in zip(me.get("starters") or [], me.get("starters_points") or []):
-                        if pid and pid != "0":
+                        if pid and pid != "0" and RP.counts_for_records(phase):
                             pl = players.get(pid) or {}
                             player_starts.append({"season": season, "week": w, "manager": mid, "name": r["name"],
                                                   "player": pl.get("full_name") or (f"{pid} DEF" if not pid.isdigit() else pid),
@@ -453,6 +468,8 @@ def main() -> None:
                 c["starter_tds"] += r["starter_tds"]; c["starter_yards"] += r["starter_yards"]; c["td_games"] += r["games"]
         hi = max((dict(season=r["season"], **r["high_week"]) for r in rs if r["high_week"]), key=lambda x: x["points"])
         lo = min((dict(season=r["season"], **r["low_week"]) for r in rs if r["low_week"]), key=lambda x: x["points"])
+        c["games_played"] = c["games"]  # regular-season H2H games (median results are not games)
+        c["playoff_games"] = sum(c["playoff_record"].values())  # winners-bracket games; a two-week round = 1
         c.update(pf=r2(c["pf"]), pa=r2(c["pa"]), ppg=r2(c["pf"] / c["games"]) if c["games"] else None,
                  pa_pg=r2(c["pa"] / c["games"]) if c["games"] else None,
                  record_str=fmt(c["record"]), record_pct=pct(c["record"]), h2h_str=fmt(c["h2h"]), h2h_pct=pct(c["h2h"]),
@@ -616,13 +633,14 @@ def main() -> None:
             "through": through,
             "labels": H.LABELS,
             "rules": [
-                "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
-                "2024 roster 11 is Aaron's (Legacy Owner) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
+                "Keyed by manager (same ids, names and Legacy Managers label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
+                "2024 roster 11 is Aaron's (Legacy Manager) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
                 "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2024+). 2022 (ESPN) and 2023 (Sleeper standings) had no median game, so their records are H2H only.",
                 "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
                 "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
                 "2022 titles: Deion and Jared are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
-                "Single-week records include every real weekly pairing: regular season, playoff legs and consolation legs.",
+                "Records count regular-season and playoff-bracket games only: single-week highs/lows, blowouts, closest games, best individual starts, manager-season high/low weeks and career highs/lows include every winners-bracket game (quarterfinals, semifinals, championship and the 3rd-place / 5th-place placement games inside the bracket; each leg of a two-week round is its own week). Consolation games (losers bracket / toilet bowl and other non-bracket playoff-week games) are excluded. Streaks use H2H games (no consolation games).",
+                "Games played (career[].games_played, alias games) = regular-season head-to-head games; the weekly median result is not a game, so 2024+ records have about twice as many results as games. career[].playoff_games = winners-bracket games (a two-week round is one game).",
                 "Starter TDs = passing + rushing + receiving + IDP defensive + return TDs by starters, regular season only (same logic as team_stats.json). Yards = passing + rushing + receiving.",
                 "Season records and best/worst seasons use full seasons only; partial seasons (the in-progress season, or a mid-season owner change) are listed in manager_seasons but not ranked.",
             ],
@@ -641,6 +659,11 @@ def main() -> None:
             "checks": {"passed": len(checks), "discrepancies": problems, "history_json": hist_checks},
             "score_overrides_applied": score_fixes,
             "official_cent_alignments": cent_fixes,
+            "consolation_excluded_from_records": {"games": excluded["games"], "team_scores": excluded["team_scores"]},
+            "field_notes": {
+                "career.games_played": "Regular-season head-to-head games played (median results not counted as games). Same value as career.games.",
+                "career.playoff_games": "Winners-bracket games played incl. 3rd/5th-place games; a two-week round counts once. Equals the playoff_record total.",
+            },
         },
         "career": career,
         "season_records": season_records,

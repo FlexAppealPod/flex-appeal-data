@@ -20,6 +20,8 @@ from pathlib import Path
 from statistics import median
 from zoneinfo import ZoneInfo
 
+import record_phases as RP  # records: regular season + winners bracket only (no consolation games)
+
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "data"
 CACHE_2026 = Path("/workspace/flex-numbers-2026/api")
@@ -508,13 +510,25 @@ def upcoming_pairings(teams, matchup_rows_raw, agg):
     return by_mid  # placeholder — filled in main
 
 
-def season_record_lists(teams, weekly, top_n=10):
+def record_phase_fn(league: dict | None, winners_bracket: list | None):
+    """(week, roster_id) -> 'regular' | 'playoff' | 'consolation' for the current season."""
+    settings = (league or {}).get("settings") or {}
+    in_wb = RP.winners_bracket_by_week(settings, winners_bracket or [])
+    return lambda week, rid: RP.sleeper_phase(week, rid, settings, in_wb)
+
+
+def season_record_lists(teams, weekly, top_n=10, phase_of=None):
+    """Season highs/lows, closest games and blowouts. Consolation games are excluded
+    (regular season + winners-bracket games only; see record_phases.py)."""
+    phase_of = phase_of or (lambda week, rid: "regular")
     games = []  # one side per H2H
     for week, wk in weekly.items():
         seen = set()
         for rid, info in wk.items():
             opp = info["opp_rid"]
             if opp is None or rid in seen:
+                continue
+            if not RP.counts_for_records(phase_of(week, rid)):
                 continue
             seen.add(rid)
             seen.add(opp)
@@ -535,6 +549,8 @@ def season_record_lists(teams, weekly, top_n=10):
     lows = []
     for week, wk in weekly.items():
         for rid, info in wk.items():
+            if info["opp_rid"] is None or not RP.counts_for_records(phase_of(week, rid)):
+                continue  # byes / unpaired weeks and consolation games are not record games
             opp = teams.get(info["opp_rid"], {})
             row = {
                 "week": week,
@@ -813,10 +829,19 @@ def build_history(season_2026_agg, season_records_2026):
             "margin": float(row["margin"]),
         }
 
-    all_high = [hist_high(r) for r in load_extremes_csv("top15_team_games.csv")]
-    all_low = [hist_low(r) for r in load_extremes_csv("bottom10_team_games.csv")]
-    all_blow = [hist_blowout(r) for r in load_extremes_csv("blowouts.csv")]
-    all_close = [hist_closest(r) for r in load_extremes_csv("closest_games.csv")]
+    # Past-season extremes: every team-game in team_games.csv except consolation games
+    # (records = regular season + winners bracket incl. 3rd/5th-place games; record_phases.py).
+    consolation = RP.history_consolation_games(HISTORY)
+    record_rows = [r for r in load_extremes_csv("team_games.csv")
+                   if (int(r["season"]), int(r["week"]), str(r["matchup_id"])) not in consolation]
+    all_high = [hist_high(r) for r in record_rows]
+    all_low = [hist_low(r) for r in record_rows]
+    pair_rows = [{"season": r["season"], "week": r["week"], "manager_a": r["manager"], "points_a": r["points"],
+                  "manager_b": r["opponent"], "points_b": r["opp_points"], "margin": f"{abs(float(r['margin'])):.2f}",
+                  "winner": r["manager"]}
+                 for r in record_rows if float(r["points"]) > float(r["opp_points"])]
+    all_blow = [hist_blowout(r) for r in pair_rows]
+    all_close = [hist_closest(r) for r in pair_rows]
 
     # Merge 2026 season extremes
     for h in season_records_2026["high_scores"]:
@@ -868,6 +893,7 @@ def build_history(season_2026_agg, season_records_2026):
         "all_time_low_scores": all_low[:10],
         "biggest_blowouts": all_blow[:15],
         "closest_games": all_close[:15],
+        "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded.",
     }
 
 
@@ -975,7 +1001,11 @@ def main():
     write_json("upcoming.json", upcoming)
 
     # season records
-    season_recs = season_record_lists(teams, weekly) if weekly else {
+    pstart = int((league.get("settings") or {}).get("playoff_week_start") or 15)
+    wb_2026 = None
+    if any(w >= pstart for w in weekly):  # playoffs underway: need the bracket to drop consolation games
+        wb_2026 = fetch_or_cache(f"{BASE}/league/{LEAGUE_ID_2026}/winners_bracket", CACHE_2026 / "winners_bracket.json")
+    season_recs = season_record_lists(teams, weekly, phase_of=record_phase_fn(league, wb_2026)) if weekly else {
         "high_scores": [], "low_scores": [], "closest_games": [], "blowouts": []
     }
     write_json("season_records.json", season_recs)

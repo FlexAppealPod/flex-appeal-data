@@ -7,14 +7,16 @@ build_site_data.py only knows Sleeper seasons (2023+), so run this right after i
 
 1. data/sources/champions_manual.json: keeps the champions schema (season / champion /
    runner_up) and adds co_champions, note and platform.
-3. data/sources/display_names.json: Legacy Owner display names (Deion, Jake F, Jared,
+3. data/sources/display_names.json: Legacy Manager display names (Deion, Jake F, Jared,
    Mike, Anup, Matt F) for every owner/opponent/champion field, and manual co-championships
    counted in career championships. Current managers keep their full names here (the site's
    team pages match history.json to teams.json owners by full name).
 2. data/sources/score_overrides.json: official standings totals for weeks where Sleeper's
    matchup data under-counts (2024 Week 7). Rebuilds all_time_high_scores,
    all_time_low_scores, biggest_blowouts and closest_games from the Sleeper history
-   team_games.csv with those totals (2026 entries are kept as built), and moves the
+   team_games.csv with those totals (2026 entries are kept as built), leaving out consolation
+   games (records = regular season + winners bracket incl. 3rd/5th-place games; see
+   record_phases.py), and moves the
    career H2H W/L for any game whose winner flips. build_site_data.py rewrites
    history.json from scratch every run; the "score_overrides_applied" key marks a file
    that is already patched, so this stays idempotent.
@@ -31,6 +33,8 @@ Stdlib only.
 import csv
 import json
 from pathlib import Path
+
+import record_phases as RP
 
 ROOT = Path(__file__).resolve().parent
 HISTORY = ROOT / "data" / "history.json"
@@ -76,10 +80,12 @@ def apply_score_overrides(hist: dict) -> None:
     keep26 = {k: [e for e in hist.get(k, []) if int(e["season"]) > max(g["season"] for g in games)] for k in LIST_LEN}
     team = lambda g: {"season": g["season"], "week": g["week"], "owner": g["owner"], "points": g["points"], "opponent": g["opponent"]}  # noqa: E731
     pair = lambda g: {**team(g), "opponent_points": g["opponent_points"], "margin": g["margin"]}  # noqa: E731
-    winners = [g for g in games if g["points"] > g["opponent_points"]]
+    consolation = RP.history_consolation_games(SLEEPER_HISTORY)
+    rec_games = [g for g in games if (g["season"], g["week"], str(g["mid"])) not in consolation]  # no consolation games in records
+    winners = [g for g in rec_games if g["points"] > g["opponent_points"]]
     new = {
-        "all_time_high_scores": sorted([team(g) for g in games] + keep26["all_time_high_scores"], key=lambda e: e["points"], reverse=True),
-        "all_time_low_scores": sorted([team(g) for g in games] + keep26["all_time_low_scores"], key=lambda e: e["points"]),
+        "all_time_high_scores": sorted([team(g) for g in rec_games] + keep26["all_time_high_scores"], key=lambda e: e["points"], reverse=True),
+        "all_time_low_scores": sorted([team(g) for g in rec_games] + keep26["all_time_low_scores"], key=lambda e: e["points"]),
         "biggest_blowouts": sorted([pair(g) for g in winners] + keep26["biggest_blowouts"], key=lambda e: e["margin"], reverse=True),
         "closest_games": sorted([pair(g) for g in winners] + keep26["closest_games"], key=lambda e: e["margin"]),
     }
@@ -129,7 +135,7 @@ def apply_season_owner_fixes(hist: dict) -> None:
     """Owner fixes (owner_overrides.json season_owners + mid-season overrides) for history.json.
 
     The Sleeper history CSVs credit every roster to its CURRENT owner. Runs after apply_display_names, so
-    Legacy Owner rows already carry their display names (e.g. "Mike"). Each fix is applied once
+    Legacy Manager rows already carry their display names (e.g. "Mike"). Each fix is applied once
     (hist["season_owner_fixes_applied"] lists the applied keys); name changes in lists are idempotent.
     """
     ms_path = SLEEPER_HISTORY / "manager_seasons.csv"
@@ -216,7 +222,7 @@ def apply_season_owner_fixes(hist: dict) -> None:
 
 
 def apply_display_names(hist: dict) -> None:
-    """Legacy Owner display names (data/sources/display_names.json -> history_json_aliases).
+    """Legacy Manager display names (data/sources/display_names.json -> history_json_aliases).
 
     Renames owner / opponent / champion / runner_up / co_champions everywhere in history.json and
     makes sure career championships count manual co-championships (2022). Idempotent.
@@ -260,7 +266,7 @@ def main() -> None:
     hist["champions"] = sorted(champs, key=lambda c: int(c["season"]))
     apply_score_overrides(hist)
     apply_display_names(hist)
-    apply_season_owner_fixes(hist)  # after display names: Legacy Owner rows already use them (e.g. "Mike")
+    apply_season_owner_fixes(hist)  # after display names: Legacy Manager rows already use them (e.g. "Mike")
     HISTORY.write_text(json.dumps(hist, indent=2, ensure_ascii=False) + "\n")
     print("history.json champions:", [(c["season"], c["champion"]) for c in hist["champions"]])
 

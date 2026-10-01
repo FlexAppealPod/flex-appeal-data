@@ -39,7 +39,7 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `teams.json` | Owner, short name, team name, Sleeper handle |
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
 | `all_time_stats.json` | All-time stats 2022-present by manager: career, season and single-week records, streaks, manager seasons, best/worst seasons (`build_all_time_stats.py`) |
-| `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |
+| `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Managers, season formats, title games, game log (`build_h2h.py`) |
 | `transactions.json` | Roster moves for the current season (`build_transactions.py`): every completed trade / waiver / free-agent move newest first (managers + team names, adds/drops with position and NFL team, FAAB bids, trade picks and FAAB), per-manager FAAB remaining/spent, summary (totals, most active, biggest bid, most added), traded-pick ownership, and clearly labeled `failed_claims` (losing waiver bids; omit with `--no-failed-claims`) |
 | `rankings_history.json` | Power/Flex Rankings history 2022-present: confirmed boards (season, week, date, ranks by display name), all-time and per-season tally, #1 runs, coverage. No formula data. Built by `/workspace/flex-rankings-history/scripts_v2/publish_v3.py` |
 
@@ -56,6 +56,21 @@ Reuses the owner map, team-name fallback and fetch helpers from `build_team_stat
 move under leg 1; the build relabels moves before the startup draft as `phase: offseason`
 and draft-to-kickoff as `phase: preseason` (both `week: 0`; `sleeper_leg` keeps the raw value).
 
+## Records: no consolation games
+
+Every record list counts regular-season games and real playoff-bracket games only:
+single-week highs/lows, blowouts, closest games and best individual starts
+(`all_time_stats.json` `week_records`), career highs/lows, manager-season `high_week` /
+`low_week`, `season_records.json` and the `history.json` extremes lists. "Playoff bracket" =
+every Sleeper winners-bracket game, including the placement games inside it (3rd-place game,
+5th-place game, 5th-place semifinal); each leg of a two-week round is its own week. Consolation
+games (losers bracket / toilet bowl, and any other playoff-week pairing of teams outside the
+winners bracket; ESPN 2022 `LOSERS_CONSOLATION_LADDER`) are excluded. The rule lives in
+`record_phases.py`, used by `build_site_data.py`, `apply_history_overrides.py` and
+`build_all_time_stats.py`, so the Tuesday rebuild keeps it. `all_time_stats.json`
+`meta.consolation_excluded_from_records` counts what was left out. W-L records, PF and streaks
+were already regular season / H2H only and are unaffected.
+
 ## Head-to-head (all-time)
 
 ```bash
@@ -67,7 +82,7 @@ winners-bracket games (3rd/5th-place games typed `placement`); two-week playoff
 rounds count once on combined score; toilet bowl excluded; completed weeks only.
 Keyed by person (Sleeper user / ESPN owner), so team renames don't split records.
 2022 (ESPN) comes from the processed file `data/sources/espn_2022_games.json`
-(raw ESPN dumps are not committed). Past managers are labeled **Legacy Owners**
+(raw ESPN dumps are not committed). Past managers are labeled **Legacy Managers**
 (`meta.labels.former`; JSON keys stay `former_*`): Deion, Jake F,
 Jared, Mike, Anup, Matt F and Aaron (`managers[].name`; ids
 stay stable). Everyone shows by first name; shared first names get a last initial (Matt Z, Matt A,
@@ -80,7 +95,7 @@ for Weeks 1-6 (he left at 11-1) and to Matt Z from Week 7 (`managers[].partial_s
 Whole-season owner fixes live in the same file under `season_owners`: Sleeper stores only a
 roster's *current* owner, so a roster handed to a new manager after the season shows him for the
 old season too. 2024 roster 11 ("Team AMartinez" / "Comrade Kamara", 6-20) was Aaron Martinez's
-(Sleeper `AMartinez528`, Legacy Owner "Aaron") all season; Matt A (`matkinson94`) only took it over
+(Sleeper `AMartinez528`, Legacy Manager "Aaron") all season; Matt A (`matkinson94`) only took it over
 on 2024-12-31, and his first season is 2025. `build_h2h.apply_season_owners` swaps the owner before
 anything is counted (h2h, all-time stats), and `apply_history_overrides.py` moves that season's
 career line and extremes names in history.json (`season_owner_fixes_applied`). To check a roster's
@@ -98,11 +113,14 @@ left the returned starters at 0 in Sleeper's matchup data; `meta.score_overrides
 python3 build_h2h.py && python3 build_all_time_stats.py   # writes data/all_time_stats.json
 ```
 
-Reuses the manager registry, names, Legacy Owners label, title games and owner
+Reuses the manager registry, names, Legacy Managers label, title games and owner
 overrides from `h2h_all_time.json`, so run it after `build_h2h.py`. Top-level keys:
 `meta` (labels, rules, caveats, scoring_by_season, checks), `career`, `season_records`,
 `week_records`, `streaks`, `manager_seasons`, `best_worst`, `notable`. Regular-season
 PF/PA/PPG/all-play; record = H2H + median where Sleeper's standings count it (2024+).
+`career[].games_played` (alias `games`) = regular-season head-to-head games played; the weekly
+median result is not a game (Doug: 53 games, record 45-35 = 29-24 H2H + 16-11 median).
+`career[].playoff_games` = winners-bracket games (a two-week round is one game).
 2022 starter TDs / yards / player starts come from `data/sources/espn_2022_starters.json`
 (processed ESPN box scores; starter points reconcile with every 2022 weekly score; raw
 dumps are not committed). 2024 Week 7 uses the official standings totals from

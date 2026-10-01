@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-10-01T08:21:00-07:00",
+  "generated_at": "2026-10-01T12:09:05-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -16,7 +16,7 @@
   "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Weeks 1-6, Matt Z from Week 7). Whole-season owner fixes come from its season_owners list (2024 roster 11: Aaron all season; Sleeper now lists Matt A, who took the roster over after the season). Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total (2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). Deion's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records.",
   "labels": {
    "current": "Current Managers",
-   "former": "Legacy Owners"
+   "former": "Legacy Managers"
   },
   "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
   "warnings": [],
@@ -66,7 +66,7 @@
     "2026"
    ],
    "sleeper_handle": "jacobpro",
-   "current_team_name": "Got the Beam on Me",
+   "current_team_name": "Top Play",
    "espn_team_names": {
     "2022": [
      "Losin With MaHomies"
@@ -2833,7 +2833,7 @@
   "14 of 66 current-manager rivalries are dead even: Lij-Juan 2-2, Doug-Derek 2-2, Doug-Marc 2-2.",
   "Best record vs current managers: Matt A 11-5 (.688).",
   "Toughest all-time road: Jake 20-33 (.377).",
-  "Best vs Legacy Owners: Juan 8-2."
+  "Best vs Legacy Managers: Juan 8-2."
  ],
  "games": [
   {"season":"2022","weeks":"1","type":"regular","label":"Regular season","a":"michaeldewey99","b":"doug","a_pts":98.56,"b_pts":150.46,"winner":"doug"},

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T08:42:49-07:00",
+    "generated_at": "2026-10-01T12:09:06-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -14,16 +14,17 @@
     },
     "labels": {
       "current": "Current Managers",
-      "former": "Legacy Owners"
+      "former": "Legacy Managers"
     },
     "rules": [
-      "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
-      "2024 roster 11 is Aaron's (Legacy Owner) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
+      "Keyed by manager (same ids, names and Legacy Managers label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
+      "2024 roster 11 is Aaron's (Legacy Manager) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
       "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2024+). 2022 (ESPN) and 2023 (Sleeper standings) had no median game, so their records are H2H only.",
       "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
       "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
       "2022 titles: Deion and Jared are co-champions (counted as a title for both). 2023 and 2024 Doug, 2025 Vlad.",
-      "Single-week records include every real weekly pairing: regular season, playoff legs and consolation legs.",
+      "Records count regular-season and playoff-bracket games only: single-week highs/lows, blowouts, closest games, best individual starts, manager-season high/low weeks and career highs/lows include every winners-bracket game (quarterfinals, semifinals, championship and the 3rd-place / 5th-place placement games inside the bracket; each leg of a two-week round is its own week). Consolation games (losers bracket / toilet bowl and other non-bracket playoff-week games) are excluded. Streaks use H2H games (no consolation games).",
+      "Games played (career[].games_played, alias games) = regular-season head-to-head games; the weekly median result is not a game, so 2024+ records have about twice as many results as games. career[].playoff_games = winners-bracket games (a two-week round is one game).",
       "Starter TDs = passing + rushing + receiving + IDP defensive + return TDs by starters, regular season only (same logic as team_stats.json). Yards = passing + rushing + receiving.",
       "Season records and best/worst seasons use full seasons only; partial seasons (the in-progress season, or a mid-season owner change) are listed in manager_seasons but not ranked."
     ],
@@ -142,7 +143,15 @@
       "2025 Paul PF 976.00 -> 975.99",
       "2025 Paul PA 1257.00 -> 1256.99",
       "2025 Marc PA 1190.00 -> 1189.99"
-    ]
+    ],
+    "consolation_excluded_from_records": {
+      "games": 36,
+      "team_scores": 72
+    },
+    "field_notes": {
+      "career.games_played": "Regular-season head-to-head games played (median results not counted as games). Same value as career.games.",
+      "career.playoff_games": "Winners-bracket games played incl. 3rd/5th-place games; a two-week round counts once. Equals the playoff_record total."
+    }
   },
   "career": [
     {
@@ -194,6 +203,8 @@
       ],
       "starter_tds": 284,
       "starter_yards": 39983,
+      "games_played": 53,
+      "playoff_games": 8,
       "ppg": 117.34,
       "pa_pg": 108.44,
       "record_str": "45-35",
@@ -213,11 +224,11 @@
         "phase": "regular"
       },
       "career_low": {
-        "season": "2025",
-        "week": 16,
-        "points": 50.7,
-        "opponent": "Brett",
-        "phase": "consolation"
+        "season": "2022",
+        "week": 6,
+        "points": 64.62,
+        "opponent": "Jared",
+        "phase": "regular"
       },
       "full_seasons": 4,
       "partial_seasons": [
@@ -270,6 +281,8 @@
       "title_seasons": [],
       "starter_tds": 265,
       "starter_yards": 38788,
+      "games_played": 53,
+      "playoff_games": 5,
       "ppg": 114.16,
       "pa_pg": 113.62,
       "record_str": "41-39",
@@ -348,6 +361,8 @@
       ],
       "starter_tds": 259,
       "starter_yards": 38687,
+      "games_played": 53,
+      "playoff_games": 7,
       "ppg": 111.31,
       "pa_pg": 111.45,
       "record_str": "46-34",
@@ -424,6 +439,8 @@
       "title_seasons": [],
       "starter_tds": 260,
       "starter_yards": 37440,
+      "games_played": 53,
+      "playoff_games": 0,
       "ppg": 105.81,
       "pa_pg": 114.91,
       "record_str": "31-49",
@@ -436,11 +453,11 @@
       "playoff_record_str": null,
       "tds_per_game": 4.91,
       "career_high": {
-        "season": "2024",
-        "week": 14,
-        "points": 162.3,
-        "opponent": "Matt F",
-        "phase": "consolation"
+        "season": "2023",
+        "week": 4,
+        "points": 155.26,
+        "opponent": "Jared",
+        "phase": "regular"
       },
       "career_low": {
         "season": "2023",
@@ -499,6 +516,8 @@
       "title_seasons": [],
       "starter_tds": 216,
       "starter_yards": 32362,
+      "games_played": 40,
+      "playoff_games": 6,
       "ppg": 125.71,
       "pa_pg": 110.87,
       "record_str": "47-20",
@@ -574,6 +593,8 @@
       "title_seasons": [],
       "starter_tds": 200,
       "starter_yards": 28761,
+      "games_played": 40,
+      "playoff_games": 2,
       "ppg": 110.95,
       "pa_pg": 111.91,
       "record_str": "28-39",
@@ -593,11 +614,11 @@
         "phase": "regular"
       },
       "career_low": {
-        "season": "2025",
-        "week": 17,
-        "points": 60.7,
-        "opponent": "Paul",
-        "phase": "consolation"
+        "season": "2024",
+        "week": 12,
+        "points": 72.82,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "full_seasons": 3,
       "partial_seasons": [
@@ -649,6 +670,8 @@
       "title_seasons": [],
       "starter_tds": 183,
       "starter_yards": 25371,
+      "games_played": 34,
+      "playoff_games": 5,
       "ppg": 113.66,
       "pa_pg": 105.8,
       "record_str": "31-24",
@@ -724,6 +747,8 @@
       "title_seasons": [],
       "starter_tds": 133,
       "starter_yards": 18894,
+      "games_played": 27,
+      "playoff_games": 4,
       "ppg": 110.8,
       "pa_pg": 108.52,
       "record_str": "28-26",
@@ -798,6 +823,8 @@
       "title_seasons": [],
       "starter_tds": 147,
       "starter_yards": 19639,
+      "games_played": 27,
+      "playoff_games": 3,
       "ppg": 109.05,
       "pa_pg": 115.37,
       "record_str": "25-29",
@@ -818,10 +845,10 @@
       },
       "career_low": {
         "season": "2025",
-        "week": 15,
-        "points": 63.86,
-        "opponent": "Brett",
-        "phase": "consolation"
+        "week": 10,
+        "points": 67.32,
+        "opponent": "Marc",
+        "phase": "regular"
       },
       "full_seasons": 2,
       "partial_seasons": [
@@ -872,6 +899,8 @@
       "title_seasons": [],
       "starter_tds": 126,
       "starter_yards": 18781,
+      "games_played": 27,
+      "playoff_games": 3,
       "ppg": 101.69,
       "pa_pg": 110.55,
       "record_str": "21-33",
@@ -945,6 +974,8 @@
       "title_seasons": [],
       "starter_tds": 80,
       "starter_yards": 10850,
+      "games_played": 14,
+      "playoff_games": 0,
       "ppg": 111.37,
       "pa_pg": 107.47,
       "record_str": "13-15",
@@ -965,10 +996,10 @@
       },
       "career_low": {
         "season": "2025",
-        "week": 14,
-        "points": 73.96,
-        "opponent": "Paul",
-        "phase": "consolation"
+        "week": 8,
+        "points": 79.22,
+        "opponent": "Matt Z",
+        "phase": "regular"
       },
       "full_seasons": 1,
       "partial_seasons": [
@@ -1018,6 +1049,8 @@
       "title_seasons": [],
       "starter_tds": 74,
       "starter_yards": 9856,
+      "games_played": 14,
+      "playoff_games": 2,
       "ppg": 103.78,
       "pa_pg": 100.18,
       "record_str": "18-10",
@@ -1092,6 +1125,8 @@
       "title_seasons": [],
       "starter_tds": 148,
       "starter_yards": 22839,
+      "games_played": 32,
+      "playoff_games": 0,
       "ppg": 111.31,
       "pa_pg": 111.24,
       "record_str": "19-19",
@@ -1105,10 +1140,10 @@
       "tds_per_game": 4.62,
       "career_high": {
         "season": "2023",
-        "week": 17,
-        "points": 160.08,
-        "opponent": "Jake",
-        "phase": "consolation"
+        "week": 8,
+        "points": 148.08,
+        "opponent": "Jared",
+        "phase": "regular"
       },
       "career_low": {
         "season": "2022",
@@ -1167,6 +1202,8 @@
       ],
       "starter_tds": 123,
       "starter_yards": 18985,
+      "games_played": 26,
+      "playoff_games": 4,
       "ppg": 118.62,
       "pa_pg": 106.7,
       "record_str": "18-8",
@@ -1238,6 +1275,8 @@
       "title_seasons": [],
       "starter_tds": 136,
       "starter_yards": 18764,
+      "games_played": 26,
+      "playoff_games": 3,
       "ppg": 108.05,
       "pa_pg": 112.6,
       "record_str": "13-13",
@@ -1257,11 +1296,11 @@
         "phase": "regular"
       },
       "career_low": {
-        "season": "2022",
-        "week": 14,
-        "points": 53.56,
-        "opponent": "Jake",
-        "phase": "consolation"
+        "season": "2023",
+        "week": 9,
+        "points": 64.32,
+        "opponent": "Marc",
+        "phase": "regular"
       },
       "full_seasons": 2,
       "partial_seasons": []
@@ -1311,6 +1350,8 @@
       ],
       "starter_tds": 120,
       "starter_yards": 18651,
+      "games_played": 26,
+      "playoff_games": 2,
       "ppg": 107.66,
       "pa_pg": 117.33,
       "record_str": "13-13",
@@ -1381,6 +1422,8 @@
       "title_seasons": [],
       "starter_tds": 64,
       "starter_yards": 9314,
+      "games_played": 13,
+      "playoff_games": 0,
       "ppg": 105.71,
       "pa_pg": 119.37,
       "record_str": "4-9",
@@ -1451,6 +1494,8 @@
       "title_seasons": [],
       "starter_tds": 54,
       "starter_yards": 8303,
+      "games_played": 13,
+      "playoff_games": 0,
       "ppg": 99.96,
       "pa_pg": 108.42,
       "record_str": "6-20",
@@ -1471,10 +1516,10 @@
       },
       "career_low": {
         "season": "2024",
-        "week": 16,
-        "points": 85.86,
-        "opponent": "Matt F",
-        "phase": "consolation"
+        "week": 4,
+        "points": 87.2,
+        "opponent": "Jake",
+        "phase": "regular"
       },
       "full_seasons": 1,
       "partial_seasons": []
@@ -1521,6 +1566,8 @@
       "title_seasons": [],
       "starter_tds": 53,
       "starter_yards": 7809,
+      "games_played": 13,
+      "playoff_games": 0,
       "ppg": 96.73,
       "pa_pg": 115.56,
       "record_str": "7-19",
@@ -1534,10 +1581,10 @@
       "tds_per_game": 4.08,
       "career_high": {
         "season": "2024",
-        "week": 17,
-        "points": 130.3,
-        "opponent": "Aaron",
-        "phase": "consolation"
+        "week": 2,
+        "points": 120.62,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "career_low": {
         "season": "2024",
@@ -2287,17 +2334,6 @@
     ],
     "lowest_scores": [
       {
-        "season": "2025",
-        "week": 16,
-        "manager": "doug",
-        "name": "Doug",
-        "points": 50.7,
-        "opponent": "brett",
-        "opponent_name": "Brett",
-        "opponent_points": 124.2,
-        "phase": "consolation"
-      },
-      {
         "season": "2023",
         "week": 10,
         "manager": "jake",
@@ -2318,17 +2354,6 @@
         "opponent_name": "Jake",
         "opponent_points": 78.74,
         "phase": "regular"
-      },
-      {
-        "season": "2022",
-        "week": 14,
-        "manager": "jakefitzy",
-        "name": "Jake F",
-        "points": 53.56,
-        "opponent": "jake",
-        "opponent_name": "Jake",
-        "opponent_points": 80.08,
-        "phase": "consolation"
       },
       {
         "season": "2023",
@@ -2353,28 +2378,6 @@
         "phase": "regular"
       },
       {
-        "season": "2025",
-        "week": 17,
-        "manager": "marc",
-        "name": "Marc",
-        "points": 60.7,
-        "opponent": "paul",
-        "opponent_name": "Paul",
-        "opponent_points": 74.78,
-        "phase": "consolation"
-      },
-      {
-        "season": "2025",
-        "week": 15,
-        "manager": "paul",
-        "name": "Paul",
-        "points": 63.86,
-        "opponent": "brett",
-        "opponent_name": "Brett",
-        "opponent_points": 127.1,
-        "phase": "consolation"
-      },
-      {
         "season": "2023",
         "week": 9,
         "manager": "jakefitzy",
@@ -2394,6 +2397,50 @@
         "opponent": "jmoneymess",
         "opponent_name": "Jared",
         "opponent_points": 101.66,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 13,
+        "manager": "jake",
+        "name": "Jake",
+        "points": 64.82,
+        "opponent": "vlad",
+        "opponent_name": "Vlad",
+        "opponent_points": 105.56,
+        "phase": "regular"
+      },
+      {
+        "season": "2022",
+        "week": 2,
+        "manager": "michaeldewey99",
+        "name": "Mike",
+        "points": 66.3,
+        "opponent": "jake",
+        "opponent_name": "Jake",
+        "opponent_points": 109.9,
+        "phase": "regular"
+      },
+      {
+        "season": "2023",
+        "week": 9,
+        "manager": "matt-z",
+        "name": "Matt Z",
+        "points": 66.58,
+        "opponent": "jmoneymess",
+        "opponent_name": "Jared",
+        "opponent_points": 121.82,
+        "phase": "regular"
+      },
+      {
+        "season": "2023",
+        "week": 9,
+        "manager": "juan",
+        "name": "Juan",
+        "points": 66.84,
+        "opponent": "doug",
+        "opponent_name": "Doug",
+        "opponent_points": 91.98,
         "phase": "regular"
       }
     ],
@@ -2495,18 +2542,6 @@
         "margin": 77.76
       },
       {
-        "season": "2025",
-        "week": 16,
-        "phase": "consolation",
-        "winner": "Brett",
-        "winner_id": "brett",
-        "winner_points": 124.2,
-        "loser": "Doug",
-        "loser_id": "doug",
-        "loser_points": 50.7,
-        "margin": 73.5
-      },
-      {
         "season": "2023",
         "week": 4,
         "phase": "regular",
@@ -2517,33 +2552,21 @@
         "loser_id": "jmoneymess",
         "loser_points": 84.38,
         "margin": 70.88
+      },
+      {
+        "season": "2023",
+        "week": 5,
+        "phase": "regular",
+        "winner": "Deion",
+        "winner_id": "deion",
+        "winner_points": 168.68,
+        "loser": "Vlad",
+        "loser_id": "vlad",
+        "loser_points": 100.54,
+        "margin": 68.14
       }
     ],
     "closest_games": [
-      {
-        "season": "2025",
-        "week": 13,
-        "phase": "consolation",
-        "winner": "Brett",
-        "winner_id": "brett",
-        "winner_points": 108.52,
-        "loser": "Jake",
-        "loser_id": "jake",
-        "loser_points": 108.44,
-        "margin": 0.08
-      },
-      {
-        "season": "2024",
-        "week": 16,
-        "phase": "consolation",
-        "winner": "Matt F",
-        "winner_id": "mrpfizer",
-        "winner_points": 86.04,
-        "loser": "Aaron",
-        "loser_id": "amartinez528",
-        "loser_points": 85.86,
-        "margin": 0.18
-      },
       {
         "season": "2024",
         "week": 10,
@@ -2639,6 +2662,30 @@
         "loser_id": "jmoneymess",
         "loser_points": 104.02,
         "margin": 1.08
+      },
+      {
+        "season": "2024",
+        "week": 8,
+        "phase": "regular",
+        "winner": "Lij",
+        "winner_id": "lij",
+        "winner_points": 95.34,
+        "loser": "Derek",
+        "loser_id": "derek",
+        "loser_points": 94.18,
+        "margin": 1.16
+      },
+      {
+        "season": "2022",
+        "week": 9,
+        "phase": "regular",
+        "winner": "Deion",
+        "winner_id": "deion",
+        "winner_points": 102.62,
+        "loser": "Doug",
+        "loser_id": "doug",
+        "loser_points": 101.3,
+        "margin": 1.32
       }
     ],
     "top_player_starts": [
@@ -3082,10 +3129,10 @@
         "t": 0
       },
       "high_week": {
-        "week": 15,
-        "points": 141.94,
-        "opponent": "Jake F",
-        "phase": "consolation"
+        "week": 7,
+        "points": 128.62,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "low_week": {
         "week": 13,
@@ -3159,10 +3206,10 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 14,
-        "points": 53.56,
-        "opponent": "Jake",
-        "phase": "consolation"
+        "week": 3,
+        "points": 79.5,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "starter_tds": 65,
       "starter_yards": 9364,
@@ -4258,10 +4305,10 @@
         "t": 0
       },
       "high_week": {
-        "week": 17,
-        "points": 160.08,
-        "opponent": "Jake",
-        "phase": "consolation"
+        "week": 8,
+        "points": 148.08,
+        "opponent": "Jared",
+        "phase": "regular"
       },
       "low_week": {
         "week": 5,
@@ -4418,10 +4465,10 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 16,
-        "points": 85.86,
-        "opponent": "Matt F",
-        "phase": "consolation"
+        "week": 4,
+        "points": 87.2,
+        "opponent": "Jake",
+        "phase": "regular"
       },
       "starter_tds": 54,
       "starter_yards": 8303,
@@ -4728,10 +4775,10 @@
         "t": 0
       },
       "high_week": {
-        "week": 14,
-        "points": 162.3,
-        "opponent": "Matt F",
-        "phase": "consolation"
+        "week": 9,
+        "points": 133.44,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "low_week": {
         "week": 12,
@@ -5044,10 +5091,10 @@
         "t": 0
       },
       "high_week": {
-        "week": 17,
-        "points": 130.3,
-        "opponent": "Aaron",
-        "phase": "consolation"
+        "week": 2,
+        "points": 120.62,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "low_week": {
         "week": 12,
@@ -5523,16 +5570,16 @@
         "t": 0
       },
       "high_week": {
-        "week": 17,
-        "points": 140.72,
-        "opponent": "Doug",
-        "phase": "consolation"
+        "week": 7,
+        "points": 126.22,
+        "opponent": "Lij",
+        "phase": "regular"
       },
       "low_week": {
-        "week": 14,
-        "points": 73.96,
-        "opponent": "Paul",
-        "phase": "consolation"
+        "week": 8,
+        "points": 79.22,
+        "opponent": "Matt Z",
+        "phase": "regular"
       },
       "starter_tds": 53,
       "starter_yards": 8130,
@@ -5687,10 +5734,10 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 16,
-        "points": 50.7,
-        "opponent": "Brett",
-        "phase": "consolation"
+        "week": 9,
+        "points": 71.32,
+        "opponent": "Juan",
+        "phase": "regular"
       },
       "starter_tds": 52,
       "starter_yards": 7279,
@@ -6003,10 +6050,10 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 17,
-        "points": 60.7,
-        "opponent": "Paul",
-        "phase": "consolation"
+        "week": 11,
+        "points": 73.82,
+        "opponent": "Brett",
+        "phase": "regular"
       },
       "starter_tds": 55,
       "starter_yards": 7051,
@@ -6243,10 +6290,10 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 15,
-        "points": 63.86,
-        "opponent": "Brett",
-        "phase": "consolation"
+        "week": 10,
+        "points": 67.32,
+        "opponent": "Marc",
+        "phase": "regular"
       },
       "starter_tds": 57,
       "starter_yards": 6624,
@@ -7819,8 +7866,8 @@
     "Most titles: Doug 2.",
     "Best season record: Juan 2024, 20-6 (0.769) (tied on win pct with Deion 2022 10-3, Juan 2023 10-3; PF breaks the tie). Worst: Paul 2025, 3-19 (0.136).",
     "Most starter TDs in a season: Vlad 2024, 80 (6.15 per game).",
-    "Highest single week: Doug 202.08 (2024 Wk 11). Lowest: Doug 50.7 (2025 Wk 16).",
-    "Biggest blowout: Doug over Deion by 111.9 (2023 Wk 4). Closest: Brett over Jake by 0.08 (2025 Wk 13).",
+    "Highest single week: Doug 202.08 (2024 Wk 11). Lowest: Jake 51.1 (2023 Wk 10).",
+    "Biggest blowout: Doug over Deion by 111.9 (2023 Wk 4). Closest: Doug over Marc by 0.2 (2024 Wk 10).",
     "Longest H2H win streak: Deion, 7 (2022 Wk 12 to 2023 Wk 3). Longest losing streak: Marc, 10 (2023 Wk 11 to 2024 Wk 5).",
     "Best individual start: Joe Mixon 53.1 for Jake F (2022 Wk 9)."
   ]
