@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T08:21:01-07:00",
+    "generated_at": "2026-10-01T08:42:49-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -6100,7 +6100,7 @@
         "return": 0
       },
       "playoffs": true,
-      "finish": "Playoffs",
+      "finish": "7th",
       "playoff_record": {
         "w": 0,
         "l": 2,
@@ -7796,7 +7796,7 @@
         "pf": 1151.44,
         "ppg": 104.68,
         "all_play_str": "62-59",
-        "finish": "Playoffs"
+        "finish": "7th"
       },
       "worst": {
         "season": "2025",
@@ -7807,7 +7807,7 @@
         "pf": 1151.44,
         "ppg": 104.68,
         "all_play_str": "62-59",
-        "finish": "Playoffs"
+        "finish": "7th"
       },
       "only_one_full_season": true
     }

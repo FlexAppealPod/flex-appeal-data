@@ -386,6 +386,9 @@ def main() -> None:
         fin = {"Championship": ("Champion", "Runner-up"), "3rd-place game": ("3rd", "4th"), "5th-place game": ("5th", "6th")}.get(g["label"])
         if fin:
             rows[(g["season"], win)]["finish"], rows[(g["season"], lose)]["finish"] = fin
+        elif g["label"] == "5th-place semifinal":
+            # 7-team bracket: the loser of the 5th-place semifinal is done and finishes 7th.
+            rows[(g["season"], lose)]["finish"] = "7th"
     for season, t in titles_by_season.items():
         if t.get("co_champions"):
             for nm in t["co_champions"]:
