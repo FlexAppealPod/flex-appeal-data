@@ -1,0 +1,17 @@
+{
+  "_note": "Episodes not (yet) on Spotify/Apple/RSS, e.g. X-only video drops. The site merges these with the live feed, sorts newest first, and hides an entry once the feed has an episode with the same normalized title (or matching match_key). Remove entries once they are on Spotify if you like; dedupe makes it optional.",
+  "episodes": [
+    {
+      "id": "x-2105216670314942760",
+      "title": "Commissioner in the Cellar - 26' Season, Week 4",
+      "match_key": "cellar",
+      "season": 5,
+      "episode": 2,
+      "date": "2026-09-30T08:42:21Z",
+      "seconds": 1970,
+      "url": "https://x.com/flexappealffl/status/2105216670314942760",
+      "listen_label": "Watch on X",
+      "blurb": "Season 5, Episode 2: Week 3 recap and Week 4 preview with the Week 4 Flex Rankings."
+    }
+  ]
+}
