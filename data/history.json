@@ -49,16 +49,6 @@
       "playoff_appearances": 2
     },
     {
-      "owner": "Matt Zacharias",
-      "seasons": 4,
-      "wins": 24,
-      "losses": 16,
-      "win_pct": 0.6,
-      "total_pf": 4611.12,
-      "championships": 0,
-      "playoff_appearances": 2
-    },
-    {
       "owner": "Vlad Barber",
       "seasons": 4,
       "wins": 19,
@@ -99,6 +89,16 @@
       "playoff_appearances": 0
     },
     {
+      "owner": "Matt Zacharias",
+      "seasons": 4,
+      "wins": 18,
+      "losses": 16,
+      "win_pct": 0.53,
+      "total_pf": 3864.36,
+      "championships": 0,
+      "playoff_appearances": 2
+    },
+    {
       "owner": "Derek Bock",
       "seasons": 3,
       "wins": 14,
@@ -129,22 +129,22 @@
       "playoff_appearances": 1
     },
     {
+      "owner": "Mike",
+      "seasons": 2,
+      "wins": 12,
+      "losses": 7,
+      "win_pct": 0.63,
+      "total_pf": 2300.36,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
       "owner": "Brett Trana",
       "seasons": 2,
       "wins": 7,
       "losses": 7,
       "win_pct": 0.5,
       "total_pf": 1568.86,
-      "championships": 0,
-      "playoff_appearances": 0
-    },
-    {
-      "owner": "Mike",
-      "seasons": 1,
-      "wins": 6,
-      "losses": 7,
-      "win_pct": 0.46,
-      "total_pf": 1553.6,
       "championships": 0,
       "playoff_appearances": 0
     },
@@ -681,6 +681,7 @@
     "career Matt F: +1 W (2024 wk7)"
   ],
   "season_owner_fixes_applied": [
-    "2024 roster 11: Matt Atkinson -> Aaron (4-9-0 H2H, PF 1299.52, playoffs 0)"
+    "2024 roster 11 whole season: Matt Atkinson -> Aaron (whole season: 4-9 H2H, PF 1299.52, playoffs 0)",
+    "2024 roster 2 weeks 1-6: Matt Zacharias -> Mike (Weeks 1-6: 6-0 H2H, PF 746.76, playoffs 0)"
   ]
 }

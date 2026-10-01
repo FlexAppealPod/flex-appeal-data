@@ -11,8 +11,10 @@ cd /workspace/flex-appeal-data
 python3 build_site_data.py && python3 apply_history_overrides.py
 ```
 
-`apply_history_overrides.py` also applies the whole-season owner fixes in
-`data/sources/owner_overrides.json` (`season_owners`) to history.json. It merges manual title rulings from
+`apply_history_overrides.py` also applies the owner fixes in
+`data/sources/owner_overrides.json` to history.json: `season_owners` (2024 roster 11 = Aaron)
+and the mid-season split (2024 roster 2: Mike gets Weeks 1-6 H2H W/L and PF plus a 2024 season;
+Matt Z keeps Week 7 on, the playoff appearance and the finish). It merges manual title rulings from
 `data/sources/champions_manual.json` into `history.json` (build_site_data.py only
 knows the Sleeper seasons). Right now that's 2022: Deion & Jared,
 co-champions (the Week 17 final was cut short when the Bills-Bengals game was

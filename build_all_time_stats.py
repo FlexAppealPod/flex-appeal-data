@@ -569,7 +569,7 @@ def main() -> None:
         notable.append(("Best individual start: " if len(tied) == 1 else f"Best individual start ({len(tied)}-way tie at {ps['points']}): ")
                        + "; ".join(f"{p['player']} {p['points']} for {p['name']} ({p['season']} Wk {p['week']})" for p in tied) + ".")
 
-    # ---------------- cross-check vs history.json (Sleeper seasons, H2H regular, by roster owner) ----------------
+    # ---------------- cross-check vs history.json (Sleeper seasons, H2H regular, by manager incl. owner overrides) ----------------
     hist_checks = []
     hist_file = ROOT / "data" / "history.json"
     if hist_file.exists():
@@ -585,10 +585,7 @@ def main() -> None:
         sleeper_h2h = defaultdict(rec)
         for r in season_rows:
             if r["platform"] == "Sleeper":
-                owner = r["manager"]
-                for o in overrides:  # history.json credits a split roster to its Sleeper owner
-                    if o["season"] == r["season"] and o["manager"] == r["manager"] and o.get("handover_to"):
-                        owner = o["handover_to"]
+                owner = r["manager"]  # history.json splits rosters the same way (apply_history_overrides.py owner fixes)
                 for k in ("w", "l", "t"):
                     sleeper_h2h[owner][k] += r["h2h"][k]
         for c in hist.get("career", []):

@@ -1,5 +1,5 @@
 {
-  "note": "Manual owner overrides. 'overrides': rosters that changed hands mid-season (games in the listed weeks are credited to the listed manager id). 'season_owners': rosters whose Sleeper owner_id is wrong for the WHOLE season (Sleeper only stores a roster's current owner, so a roster handed to a new manager after the season shows the new manager for the old season). Every build (build_h2h.py, build_all_time_stats.py, apply_history_overrides.py) swaps the roster's owner to sleeper_user_id for that season before anything is counted.",
+  "note": "Manual owner overrides. 'overrides': rosters that changed hands mid-season (games in the listed weeks are credited to the listed manager id). 'season_owners': rosters whose Sleeper owner_id is wrong for the WHOLE season (Sleeper only stores a roster's current owner, so a roster handed to a new manager after the season shows the new manager for the old season). Both lists are applied by build_h2h.py, build_all_time_stats.py and apply_history_overrides.py (history.json). For season_owners every build swaps the roster's owner to sleeper_user_id for that season before anything is counted.",
   "overrides": [
     {
       "season": "2024",
@@ -17,7 +17,9 @@
         "Roster 2 was 11-1 (H2H plus median) after Week 6 and 11-3 after Week 7.",
         "Sleeper 2024 transactions: the 2024-10-19 trade with roster 8 (Matt F) was reversed by the commissioner on 2024-10-20 (see score_overrides.json). Matt Z's first move of his own was a waiver claim on Tue 2024-10-22.",
         "Nothing Catchy Fantasy Football Podcast (Mike's show): the last episode, 'Week 7: Halfway to the Playoffs!', was published 2024-10-15."
-      ]
+      ],
+      "display_name": "Mike",
+      "history_json": "apply_history_overrides.py splits history.json the same way (approved by Jake Prosser, commissioner, Oct 2026): Mike gets the 2024 Weeks 1-6 regular-season H2H W/L and PF and a 2024 season; Matt Z keeps Week 7 onward, the 2024 season, the playoff appearance and the finish (owner at season end)."
     }
   ],
   "season_owners": [

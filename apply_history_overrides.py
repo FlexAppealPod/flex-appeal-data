@@ -18,12 +18,14 @@ build_site_data.py only knows Sleeper seasons (2023+), so run this right after i
    career H2H W/L for any game whose winner flips. build_site_data.py rewrites
    history.json from scratch every run; the "score_overrides_applied" key marks a file
    that is already patched, so this stays idempotent.
-4. data/sources/owner_overrides.json "season_owners": whole-season roster owner fixes. Sleeper
-   (and so the Sleeper history CSVs) credits a roster to its CURRENT owner, so a roster handed
-   to a new manager after the season shows him for the old season too (2024 roster 11 = Aaron,
-   not Matt Atkinson). Moves that season's career line (seasons, H2H W/L, PF, playoffs, titles,
-   from manager_seasons.csv) to the true owner and renames that season's owner/opponent in the
-   extremes lists. The "season_owner_fixes_applied" key keeps the career move idempotent.
+4. data/sources/owner_overrides.json: Sleeper (and so the Sleeper history CSVs) credits a roster
+   to its CURRENT owner. "season_owners" (whole season, e.g. 2024 roster 11 = Aaron, not Matt
+   Atkinson) moves that season's career line (seasons, H2H W/L, PF, playoffs, titles, from
+   manager_seasons.csv) to the true owner. "overrides" (mid-season splits, e.g. 2024 roster 2:
+   Mike Weeks 1-6, Matt Z from Week 7) moves only the listed regular-season weeks' H2H W/L and PF
+   (team_games.csv) and adds the season to the incoming manager; playoffs / finish / titles stay
+   with the owner at season end. Both rename owner/opponent in the extremes lists for the affected
+   season / weeks. "season_owner_fixes_applied" lists applied fixes so career moves happen once.
 Stdlib only.
 """
 import csv
@@ -99,65 +101,118 @@ def apply_score_overrides(hist: dict) -> None:
     print("history.json score overrides:", applied)
 
 
-def apply_season_owner_fixes(hist: dict) -> None:
-    """Whole-season owner fixes (owner_overrides.json season_owners) for history.json."""
-    ms_path = SLEEPER_HISTORY / "manager_seasons.csv"
-    if not OWNER_OVERRIDES.exists() or not ms_path.exists():
-        return
-    fixes = json.loads(OWNER_OVERRIDES.read_text()).get("season_owners", [])
-    if not fixes:
-        return
+def _owner_fix_list() -> list[dict]:
+    """owner_overrides.json -> uniform list of history.json owner fixes.
+
+    season_owners: whole season to the true owner (seasons, H2H, PF, playoffs, titles all move).
+    overrides: mid-season splits; only the listed weeks move (H2H W/L and PF for those regular-season
+    weeks, plus that week range's extremes entries). The season itself also counts for the incoming
+    manager. Playoffs / finish / titles stay with the roster's owner at season end (handover_to).
+    """
+    if not OWNER_OVERRIDES.exists():
+        return []
+    d = json.loads(OWNER_OVERRIDES.read_text())
     legacy = json.loads(DISPLAY_NAMES.read_text()).get("legacy_owners", {}) if DISPLAY_NAMES.exists() else {}
+    out = []
+    for o in d.get("season_owners", []):
+        out.append({"key": f"{o['season']} roster {o['roster_id']} whole season", "season": int(o["season"]), "roster_id": int(o["roster_id"]),
+                    "weeks": None, "user_id": o["sleeper_user_id"],
+                    "new": o.get("display_name") or legacy.get(o["manager"]) or o.get("full_name") or o["manager"]})
+    for o in d.get("overrides", []):
+        out.append({"key": f"{o['season']} roster {o['roster_id']} weeks {o['weeks'][0]}-{o['weeks'][1]}", "season": int(o["season"]),
+                    "roster_id": int(o["roster_id"]), "weeks": (int(o["weeks"][0]), int(o["weeks"][1])), "user_id": o.get("sleeper_user_id"),
+                    "new": o.get("display_name") or legacy.get(o["manager"]) or o["manager"]})
+    return out
+
+
+def apply_season_owner_fixes(hist: dict) -> None:
+    """Owner fixes (owner_overrides.json season_owners + mid-season overrides) for history.json.
+
+    The Sleeper history CSVs credit every roster to its CURRENT owner. Runs after apply_display_names, so
+    Legacy Owner rows already carry their display names (e.g. "Mike"). Each fix is applied once
+    (hist["season_owner_fixes_applied"] lists the applied keys); name changes in lists are idempotent.
+    """
+    ms_path = SLEEPER_HISTORY / "manager_seasons.csv"
+    tg_path = SLEEPER_HISTORY / "team_games.csv"
+    fixes = _owner_fix_list()
+    if not fixes or not ms_path.exists():
+        return
     ms_rows = list(csv.DictReader(ms_path.open(newline="", encoding="utf-8")))
-    already = bool(hist.get("season_owner_fixes_applied"))
+    tg_rows = list(csv.DictReader(tg_path.open(newline="", encoding="utf-8"))) if tg_path.exists() else []
+    done = list(hist.get("season_owner_fixes_applied") or [])
+    done_keys = {x.split(":")[0] for x in done}
     applied = []
     for o in fixes:
-        season = int(o["season"])
-        row = next((r for r in ms_rows if int(r["season"]) == season and int(r["roster_id"]) == int(o["roster_id"])), None)
+        season = o["season"]
+        row = next((r for r in ms_rows if int(r["season"]) == season and int(r["roster_id"]) == o["roster_id"]), None)
         if row is None:
             continue
-        old = row["manager"]  # name the Sleeper history credits (the roster's current owner)
-        new = o.get("display_name") or legacy.get(o["manager"]) or o.get("full_name") or o["manager"]
-        if old == new or row.get("user_id") == o["sleeper_user_id"]:
+        old, new = row["manager"], o["new"]  # old = name the Sleeper history credits (roster owner now)
+        if old == new or (o["weeks"] is None and row.get("user_id") == o["user_id"]):
             continue
+        in_range = (lambda wk: True) if o["weeks"] is None else (lambda wk, a=o["weeks"][0], b=o["weeks"][1]: a <= wk <= b)
         for k in LIST_LEN:
             for e in hist.get(k, []):
-                if int(e.get("season", 0)) == season:
+                if int(e.get("season", 0)) == season and in_range(int(e.get("week", 0))):
                     for f in ("owner", "opponent"):
                         if e.get(f) == old:
                             e[f] = new
-        for c in hist.get("champions", []):
-            if int(c.get("season", 0)) == season:
-                for f in ("champion", "runner_up"):
-                    if c.get(f) == old:
-                        c[f] = new
-        if already:
+        if o["weeks"] is None:
+            for c in hist.get("champions", []):
+                if int(c.get("season", 0)) == season:
+                    for f in ("champion", "runner_up"):
+                        if c.get(f) == old:
+                            c[f] = new
+        if o["key"] in done_keys:
             continue
-        w, l_ = (int(x) for x in row["h2h_reg_record"].split("-")[:2])
-        pf, playoff, champ = float(row["pf_settings"]), int(row["playoff"] or 0), int(row["champion"] or 0)
+        if o["weeks"] is None:
+            w, l_ = (int(x) for x in row["h2h_reg_record"].split("-")[:2])
+            pf, playoff, champ, seasons_mv = float(row["pf_settings"]), int(row["playoff"] or 0), int(row["champion"] or 0), 1
+            moves = [(old, -1), (new, 1)]
+        else:
+            # regular-season games of this roster in the week range (team_games.csv; owner = Sleeper owner now)
+            gs = [g for g in tg_rows if int(g["season"]) == season and g["manager"] == old and g["playoff_week"] == "0"
+                  and in_range(int(g["week"]))]
+            if not gs:
+                continue
+            sov = json.loads(SCORE_OVERRIDES.read_text())["overrides"] if SCORE_OVERRIDES.exists() else []
+
+            def official(g, pts):  # official standings total where score_overrides.json has one for this game
+                for x in sov:
+                    if (int(x["season"]), int(x["week"]), str(x["matchup_id"])) == (season, int(g["week"]), g["matchup_id"]) \
+                            and abs(pts - x["matchup_points"]) < 0.005:
+                        return x["official_points"]
+                return pts
+            pts = [(official(g, float(g["points"])), official(g, float(g["opp_points"]))) for g in gs]
+            w = sum(a > b for a, b in pts)
+            l_ = sum(a < b for a, b in pts)
+            pf, playoff, champ, seasons_mv = round(sum(a for a, _ in pts), 2), 0, 0, 1
+            moves = [(old, -1), (new, 1)]
         career = {c["owner"]: c for c in hist.get("career", [])}
         if new not in career:
             career[new] = {"owner": new, "seasons": 0, "wins": 0, "losses": 0, "win_pct": 0.0, "total_pf": 0.0,
                            "championships": 0, "playoff_appearances": 0}
             hist.setdefault("career", []).append(career[new])
-        for name_, sign in ((old, -1), (new, 1)):
+        for name_, sign in moves:
             c = career.get(name_)
             if not c:
                 continue
-            c["seasons"] += sign
+            if o["weeks"] is None or sign > 0:  # a split season still counts for the outgoing (end-of-season) owner
+                c["seasons"] += sign * seasons_mv
             c["wins"] += sign * w
             c["losses"] += sign * l_
             c["total_pf"] = round(c["total_pf"] + sign * pf, 2)
             c["playoff_appearances"] += sign * playoff
             c["championships"] += sign * champ
             c["win_pct"] = round(c["wins"] / (c["wins"] + c["losses"]), 2) if c["wins"] + c["losses"] else 0.0
-        applied.append(f"{season} roster {o['roster_id']}: {old} -> {new} ({row['h2h_reg_record']} H2H, PF {pf:.2f}, playoffs {playoff})")
+        label = "whole season" if o["weeks"] is None else f"Weeks {o['weeks'][0]}-{o['weeks'][1]}"
+        applied.append(f"{o['key']}: {old} -> {new} ({label}: {w}-{l_} H2H, PF {pf:.2f}, playoffs {playoff})")
     if applied:
         hist["career"].sort(key=lambda r: (-r["total_pf"], -r["wins"], r["owner"]))
-        hist["season_owner_fixes_applied"] = applied
-        print("history.json season owner fixes:", applied)
-    elif already:
-        print("history.json season owner fixes already applied")
+        hist["season_owner_fixes_applied"] = done + applied
+        print("history.json owner fixes:", applied)
+    else:
+        print("history.json owner fixes already applied" if done else "history.json owner fixes: none")
 
 
 def apply_display_names(hist: dict) -> None:
@@ -204,8 +259,8 @@ def main() -> None:
         champs.append(entry)
     hist["champions"] = sorted(champs, key=lambda c: int(c["season"]))
     apply_score_overrides(hist)
-    apply_season_owner_fixes(hist)
     apply_display_names(hist)
+    apply_season_owner_fixes(hist)  # after display names: Legacy Owner rows already use them (e.g. "Mike")
     HISTORY.write_text(json.dumps(hist, indent=2, ensure_ascii=False) + "\n")
     print("history.json champions:", [(c["season"], c["champion"]) for c in hist["champions"]])
 
