@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T23:46:34-07:00",
+    "generated_at": "2026-09-30T23:47:08-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,8 +10,7 @@
     "faab_budget": 100,
     "current_week": 4,
     "counts": {
-      "transactions": 166,
-      "failed_claims": 29
+      "transactions": 166
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -25,8 +24,7 @@
       "sides[] = per-manager adds/drops. In trades adds = players received, drops = players sent, plus picks_received/picks_sent (original_owner = whose pick it was) and FAAB swapped.",
       "FAAB: spent = Sleeper rosters waiver_budget_used; remaining = budget - spent. A $0 bid is a valid claim.",
       "Display names: first names, last initial only for shared names (Matt Z, Matt A).",
-      "draft_picks lists current ownership of every traded pick per Sleeper (includes pick trades made in the prior league before this season's league existed, which are not in transactions).",
-      "failed_claims = UNSUCCESSFUL waiver claims (not roster moves): reason outbid or roster_full, with the bid. outbid[] on a winning claim lists the losing bids on that player."
+      "draft_picks lists current ownership of every traded pick per Sleeper (includes pick trades made in the prior league before this season's league existed, which are not in transactions)."
     ]
   },
   "transactions": [
@@ -478,33 +476,7 @@
         }
       ],
       "faab_bid": 19,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Doug",
-          "bid": 10
-        },
-        {
-          "manager": "Vlad",
-          "bid": 9
-        },
-        {
-          "manager": "Juan",
-          "bid": 7
-        },
-        {
-          "manager": "Brett",
-          "bid": 7
-        },
-        {
-          "manager": "Marc",
-          "bid": 2
-        },
-        {
-          "manager": "Derek",
-          "bid": 1
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1410826279334289408",
@@ -547,8 +519,7 @@
         }
       ],
       "faab_bid": 6,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410630250005544960",
@@ -591,8 +562,7 @@
         }
       ],
       "faab_bid": 2,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410629391205113856",
@@ -628,25 +598,7 @@
         }
       ],
       "faab_bid": 32,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Jake",
-          "bid": 25
-        },
-        {
-          "manager": "Vlad",
-          "bid": 13
-        },
-        {
-          "manager": "Matt Z",
-          "bid": 7
-        },
-        {
-          "manager": "Brett",
-          "bid": 0
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1410334230063374336",
@@ -689,8 +641,7 @@
         }
       ],
       "faab_bid": 0,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410300907555508224",
@@ -733,8 +684,7 @@
         }
       ],
       "faab_bid": 2,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410296762039590912",
@@ -777,8 +727,7 @@
         }
       ],
       "faab_bid": 10,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410206621291835392",
@@ -821,13 +770,7 @@
         }
       ],
       "faab_bid": 5,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Marc",
-          "bid": 1
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1410039551870709760",
@@ -870,29 +813,7 @@
         }
       ],
       "faab_bid": 84,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Derek",
-          "bid": 21
-        },
-        {
-          "manager": "Matt Z",
-          "bid": 19
-        },
-        {
-          "manager": "Brett",
-          "bid": 18
-        },
-        {
-          "manager": "Marc",
-          "bid": 13
-        },
-        {
-          "manager": "Brett",
-          "bid": 7
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1409916515007975424",
@@ -935,8 +856,7 @@
         }
       ],
       "faab_bid": 8,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1410852676723372032",
@@ -1708,8 +1628,7 @@
         }
       ],
       "faab_bid": 2,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1408267632313995264",
@@ -1752,13 +1671,7 @@
         }
       ],
       "faab_bid": 9,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Brett",
-          "bid": 7
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1408130876893679616",
@@ -1801,8 +1714,7 @@
         }
       ],
       "faab_bid": 0,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1408108126913282048",
@@ -1845,8 +1757,7 @@
         }
       ],
       "faab_bid": 4,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1408102778865299456",
@@ -1882,21 +1793,7 @@
         }
       ],
       "faab_bid": 33,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Juan",
-          "bid": 11
-        },
-        {
-          "manager": "Vlad",
-          "bid": 9
-        },
-        {
-          "manager": "Brett",
-          "bid": 8
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1408099754646294528",
@@ -1932,13 +1829,7 @@
         }
       ],
       "faab_bid": 21,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Matt Z",
-          "bid": 5
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1407526432413941760",
@@ -1981,8 +1872,7 @@
         }
       ],
       "faab_bid": 0,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1407458727979728896",
@@ -2025,8 +1915,7 @@
         }
       ],
       "faab_bid": 10,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1407155123007782912",
@@ -2069,13 +1958,7 @@
         }
       ],
       "faab_bid": 11,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Derek",
-          "bid": 0
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1407135395459645440",
@@ -2118,8 +2001,7 @@
         }
       ],
       "faab_bid": 5,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1408099322116968448",
@@ -2482,8 +2364,7 @@
         }
       ],
       "faab_bid": 2,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1406338022227640320",
@@ -2949,17 +2830,7 @@
         }
       ],
       "faab_bid": 8,
-      "winning_claim": true,
-      "outbid": [
-        {
-          "manager": "Marc",
-          "bid": 5
-        },
-        {
-          "manager": "Derek",
-          "bid": 2
-        }
-      ]
+      "winning_claim": true
     },
     {
       "id": "1405816587767877632",
@@ -3002,8 +2873,7 @@
         }
       ],
       "faab_bid": 8,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405729630882664448",
@@ -3046,8 +2916,7 @@
         }
       ],
       "faab_bid": 2,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405707654612951040",
@@ -3090,8 +2959,7 @@
         }
       ],
       "faab_bid": 3,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405635298372624384",
@@ -3127,8 +2995,7 @@
         }
       ],
       "faab_bid": 6,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405353061240623104",
@@ -3171,8 +3038,7 @@
         }
       ],
       "faab_bid": 1,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405299722419175424",
@@ -3215,8 +3081,7 @@
         }
       ],
       "faab_bid": 5,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405231556427075584",
@@ -3259,8 +3124,7 @@
         }
       ],
       "faab_bid": 5,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1405682892968849408",
@@ -6230,8 +6094,7 @@
         }
       ],
       "faab_bid": 0,
-      "winning_claim": true,
-      "outbid": []
+      "winning_claim": true
     },
     {
       "id": "1390505378713710592",
@@ -6789,8 +6652,7 @@
       "remaining": 100,
       "claims_won": 0,
       "winning_bids_total": 0,
-      "biggest_bid": null,
-      "failed_claims": 0
+      "biggest_bid": null
     },
     {
       "roster_id": 3,
@@ -6805,8 +6667,7 @@
         "bid": 1,
         "player": "Dallas Turner",
         "week": 1
-      },
-      "failed_claims": 0
+      }
     },
     {
       "roster_id": 7,
@@ -6821,8 +6682,7 @@
         "bid": 2,
         "player": "Kalif Raymond",
         "week": 1
-      },
-      "failed_claims": 4
+      }
     },
     {
       "roster_id": 8,
@@ -6837,8 +6697,7 @@
         "bid": 3,
         "player": "Ray Davis",
         "week": 1
-      },
-      "failed_claims": 0
+      }
     },
     {
       "roster_id": 10,
@@ -6853,8 +6712,7 @@
         "bid": 2,
         "player": "Drew Lock",
         "week": 2
-      },
-      "failed_claims": 5
+      }
     },
     {
       "roster_id": 5,
@@ -6869,8 +6727,7 @@
         "bid": 10,
         "player": "Keenan Allen",
         "week": 3
-      },
-      "failed_claims": 1
+      }
     },
     {
       "roster_id": 12,
@@ -6885,8 +6742,7 @@
         "bid": 10,
         "player": "Tank Bigsby",
         "week": 2
-      },
-      "failed_claims": 0
+      }
     },
     {
       "roster_id": 11,
@@ -6901,8 +6757,7 @@
         "bid": 8,
         "player": "Kaleb Johnson",
         "week": 3
-      },
-      "failed_claims": 9
+      }
     },
     {
       "roster_id": 9,
@@ -6917,8 +6772,7 @@
         "bid": 9,
         "player": "Adonai Mitchell",
         "week": 2
-      },
-      "failed_claims": 3
+      }
     },
     {
       "roster_id": 6,
@@ -6933,8 +6787,7 @@
         "bid": 32,
         "player": "Jaylen Wright",
         "week": 3
-      },
-      "failed_claims": 2
+      }
     },
     {
       "roster_id": 2,
@@ -6949,8 +6802,7 @@
         "bid": 33,
         "player": "Jonah Coleman",
         "week": 2
-      },
-      "failed_claims": 4
+      }
     },
     {
       "roster_id": 1,
@@ -6965,8 +6817,7 @@
         "bid": 84,
         "player": "Ollie Gordon",
         "week": 3
-      },
-      "failed_claims": 1
+      }
     }
   ],
   "summary": {
@@ -6996,7 +6847,6 @@
       "3": 29,
       "4": 10
     },
-    "failed_waiver_claims": 29,
     "most_active_manager": {
       "managers": [
         "Jake"
@@ -7542,718 +7392,6 @@
       "current_owner": "Matt Z",
       "current_team": "Before 6, After 4",
       "draft_complete": false
-    }
-  ],
-  "failed_claims": [
-    {
-      "id": "1410913366851047424",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T23:41:09-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 9,
-      "manager": "Vlad",
-      "team_name": "WHO’s YOUR VLADDY",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 9,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410898225040240640",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T22:40:59-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 5,
-      "manager": "Doug",
-      "team_name": "9 - 5",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 10,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410854268272984064",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T19:46:19-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 6,
-      "manager": "Juan",
-      "team_name": "RACEY RICE",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 7,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410841310822187008",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T18:54:49-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 2,
-      "manager": "Matt Z",
-      "team_name": "Before 6, After 4",
-      "player": {
-        "player_id": "11643",
-        "name": "Jaylen Wright",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 7,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Juan",
-        "bid": 32
-      }
-    },
-    {
-      "id": "1410840940775530496",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T18:53:21-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 2,
-      "manager": "Matt Z",
-      "team_name": "Before 6, After 4",
-      "player": {
-        "player_id": "12495",
-        "name": "Ollie Gordon",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 19,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 84
-      }
-    },
-    {
-      "id": "1410835273754935296",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T18:30:50-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "12495",
-        "name": "Ollie Gordon",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 18,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 84
-      }
-    },
-    {
-      "id": "1410835157493059584",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T18:30:22-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "8154",
-        "name": "Brian Robinson",
-        "position": "RB",
-        "nfl_team": "ATL"
-      },
-      "would_drop": [],
-      "faab_bid": 1,
-      "reason": "roster_full",
-      "sleeper_note": "Unfortunately, your roster will have too many players after this transaction.",
-      "won_by": null
-    },
-    {
-      "id": "1410835049804210176",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T18:29:57-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "11643",
-        "name": "Jaylen Wright",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 0,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Juan",
-        "bid": 32
-      }
-    },
-    {
-      "id": "1410826738124034048",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T17:56:55-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 7,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410826710860976128",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T17:56:49-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "12495",
-        "name": "Ollie Gordon",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 7,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 84
-      }
-    },
-    {
-      "id": "1410826613116907520",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T17:56:25-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 9,
-      "manager": "Vlad",
-      "team_name": "WHO’s YOUR VLADDY",
-      "player": {
-        "player_id": "11643",
-        "name": "Jaylen Wright",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 13,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Juan",
-        "bid": 32
-      }
-    },
-    {
-      "id": "1410656638834155520",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-29T06:41:00-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 2,
-      "manager": "Matt Z",
-      "team_name": "Before 6, After 4",
-      "player": {
-        "player_id": "12718",
-        "name": "Konata Mumpfield",
-        "position": "WR",
-        "nfl_team": "LAR"
-      },
-      "would_drop": [],
-      "faab_bid": 6,
-      "reason": "roster_full",
-      "sleeper_note": "Unfortunately, your roster will have too many players after this transaction.",
-      "won_by": null
-    },
-    {
-      "id": "1410508684286611456",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-28T20:53:05-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 2,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410334408728231936",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-28T09:20:35-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "player": {
-        "player_id": "1373",
-        "name": "Geno Smith",
-        "position": "QB",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 0,
-      "reason": "roster_full",
-      "sleeper_note": "Unfortunately, your roster will have too many players after this transaction.",
-      "won_by": null
-    },
-    {
-      "id": "1410329534414221312",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-28T09:01:12-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 7,
-      "manager": "Derek",
-      "team_name": "my njigba",
-      "player": {
-        "player_id": "13330",
-        "name": "Kenyon Sadiq",
-        "position": "TE",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 1,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 19
-      }
-    },
-    {
-      "id": "1410329373315182592",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-28T09:00:34-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 7,
-      "manager": "Derek",
-      "team_name": "my njigba",
-      "player": {
-        "player_id": "12495",
-        "name": "Ollie Gordon",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 21,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 84
-      }
-    },
-    {
-      "id": "1410312372207304704",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-28T07:53:01-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 1,
-      "manager": "Jake",
-      "team_name": "Got the Beam on Me",
-      "player": {
-        "player_id": "11643",
-        "name": "Jaylen Wright",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 25,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Juan",
-        "bid": 32
-      }
-    },
-    {
-      "id": "1410160236219625472",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-27T21:48:29-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "player": {
-        "player_id": "4017",
-        "name": "Deshaun Watson",
-        "position": "QB",
-        "nfl_team": "CLE"
-      },
-      "would_drop": [],
-      "faab_bid": 1,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Vlad",
-        "bid": 5
-      }
-    },
-    {
-      "id": "1410159856370937856",
-      "week": 3,
-      "phase": "regular",
-      "created": "2026-09-27T21:46:58-07:00",
-      "processed": "2026-09-30T00:15:50-07:00",
-      "status": "failed",
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "player": {
-        "player_id": "12495",
-        "name": "Ollie Gordon",
-        "position": "RB",
-        "nfl_team": "MIA"
-      },
-      "would_drop": [],
-      "faab_bid": 13,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 84
-      }
-    },
-    {
-      "id": "1408268136217632768",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T16:29:57-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 9,
-      "manager": "Vlad",
-      "team_name": "WHO’s YOUR VLADDY",
-      "player": {
-        "player_id": "13345",
-        "name": "Jonah Coleman",
-        "position": "RB",
-        "nfl_team": "DEN"
-      },
-      "would_drop": [],
-      "faab_bid": 9,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 33
-      }
-    },
-    {
-      "id": "1408205590483755008",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T12:21:25-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 7,
-      "manager": "Derek",
-      "team_name": "my njigba",
-      "player": {
-        "player_id": "7670",
-        "name": "Joshua Palmer",
-        "position": "WR",
-        "nfl_team": "BUF"
-      },
-      "would_drop": [],
-      "faab_bid": 0,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Jake",
-        "bid": 11
-      }
-    },
-    {
-      "id": "1408147829871923200",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T08:31:54-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "13345",
-        "name": "Jonah Coleman",
-        "position": "RB",
-        "nfl_team": "DEN"
-      },
-      "would_drop": [],
-      "faab_bid": 8,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 33
-      }
-    },
-    {
-      "id": "1408106983206264832",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T05:49:35-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "11625",
-        "name": "Adonai Mitchell",
-        "position": "WR",
-        "nfl_team": "NYJ"
-      },
-      "would_drop": [],
-      "faab_bid": 7,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Vlad",
-        "bid": 9
-      }
-    },
-    {
-      "id": "1408102902949478400",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T05:33:22-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 2,
-      "manager": "Matt Z",
-      "team_name": "Before 6, After 4",
-      "player": {
-        "player_id": "10213",
-        "name": "Tre Tucker",
-        "position": "WR",
-        "nfl_team": "LV"
-      },
-      "would_drop": [],
-      "faab_bid": 5,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Juan",
-        "bid": 21
-      }
-    },
-    {
-      "id": "1408099546034188288",
-      "week": 2,
-      "phase": "regular",
-      "created": "2026-09-22T05:20:02-07:00",
-      "processed": "2026-09-23T00:15:29-07:00",
-      "status": "failed",
-      "roster_id": 6,
-      "manager": "Juan",
-      "team_name": "RACEY RICE",
-      "player": {
-        "player_id": "13345",
-        "name": "Jonah Coleman",
-        "position": "RB",
-        "nfl_team": "DEN"
-      },
-      "would_drop": [],
-      "faab_bid": 11,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Matt Z",
-        "bid": 33
-      }
-    },
-    {
-      "id": "1405787988427821056",
-      "week": 1,
-      "phase": "regular",
-      "created": "2026-09-15T20:14:44-07:00",
-      "processed": "2026-09-16T00:16:19-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "4177",
-        "name": "Mack Hollins",
-        "position": "WR",
-        "nfl_team": "NE"
-      },
-      "would_drop": [],
-      "faab_bid": 1,
-      "reason": "roster_full",
-      "sleeper_note": "Unfortunately, your roster will have too many players after this transaction.",
-      "won_by": null
-    },
-    {
-      "id": "1405787655752499200",
-      "week": 1,
-      "phase": "regular",
-      "created": "2026-09-15T20:13:24-07:00",
-      "processed": "2026-09-16T00:16:19-07:00",
-      "status": "failed",
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
-      "player": {
-        "player_id": "7002",
-        "name": "Juwan Johnson",
-        "position": "TE",
-        "nfl_team": "NO"
-      },
-      "would_drop": [],
-      "faab_bid": 0,
-      "reason": "roster_full",
-      "sleeper_note": "Unfortunately, your roster will have too many players after this transaction.",
-      "won_by": null
-    },
-    {
-      "id": "1405658491862941696",
-      "week": 1,
-      "phase": "regular",
-      "created": "2026-09-15T11:40:09-07:00",
-      "processed": "2026-09-16T00:16:19-07:00",
-      "status": "failed",
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "player": {
-        "player_id": "6130",
-        "name": "Devin Singletary",
-        "position": "RB",
-        "nfl_team": "NYG"
-      },
-      "would_drop": [],
-      "faab_bid": 5,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Vlad",
-        "bid": 8
-      }
-    },
-    {
-      "id": "1405647117078237184",
-      "week": 1,
-      "phase": "regular",
-      "created": "2026-09-15T10:54:57-07:00",
-      "processed": "2026-09-16T00:16:19-07:00",
-      "status": "failed",
-      "roster_id": 7,
-      "manager": "Derek",
-      "team_name": "my njigba",
-      "player": {
-        "player_id": "6130",
-        "name": "Devin Singletary",
-        "position": "RB",
-        "nfl_team": "NYG"
-      },
-      "would_drop": [],
-      "faab_bid": 2,
-      "reason": "outbid",
-      "sleeper_note": "This player was claimed by another owner.",
-      "won_by": {
-        "manager": "Vlad",
-        "bid": 8
-      }
     }
   ]
 }
