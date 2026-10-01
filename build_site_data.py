@@ -90,7 +90,7 @@ if _DN_FILE.exists():
     SHORT.update(json.loads(_DN_FILE.read_text()).get("site_short_names", {}).get("names", {}))
 # Fallback team names, used ONLY when Sleeper metadata.team_name is blank.
 TEAM_NAME_FALLBACK = {
-    "Jake Prosser": "Got the Beam on Me",
+    "Jake Prosser": "Top Play",
 }
 # 2023 roster 3 had owner_id null — label Deion (championship runner-up).
 DEION_ROSTER = {(2023, 3): "Deion"}

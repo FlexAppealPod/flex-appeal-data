@@ -78,7 +78,7 @@
     {
       "roster_id": 1,
       "owner": "Jake",
-      "team_name": "Got the Beam on Me",
+      "team_name": "Top Play",
       "avatar": "https://sleepercdn.com/uploads/10c055e0ad8417cf5dbe557c79dbce34.jpg",
       "record": {
         "wins": 0,
@@ -3750,7 +3750,7 @@
           "for_need_label": "RB",
           "partner_roster_id": 1,
           "partner_owner": "Jake",
-          "partner_team_name": "Got the Beam on Me",
+          "partner_team_name": "Top Play",
           "partner_surplus": "RB",
           "partner_depth_examples": [],
           "fit_strength": "possible",

@@ -84,7 +84,7 @@ ESPN_TEAM_ALIASES = {"deion": ["Team Hulse"]}
 LABELS = {"current": "Current Managers", "former": "Legacy Managers"}
 # Rosters with no linked Sleeper account: (season, roster_id) -> manager label (Deion owned it in 2023)
 UNOWNED_LABELS = {("2023", 3): "Deion"}
-TEAM_NAME_FALLBACK = {"996131000033988608": "Got the Beam on Me"}  # Jake's Sleeper team name is blank
+TEAM_NAME_FALLBACK = {"996131000033988608": "Top Play"}  # used only if Jake's Sleeper team name is blank
 OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (manual)
 SCORE_OVERRIDES_FILE = SOURCES / "score_overrides.json"  # official weekly totals where Sleeper matchup data under-counts (manual)
 CHAMPIONS_FILE = SOURCES / "champions_manual.json"  # manual title rulings (2022 co-champions)

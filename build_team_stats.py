@@ -53,7 +53,7 @@ if _DN_FILE.exists():
     _short = json.loads(_DN_FILE.read_text()).get("site_short_names", {}).get("names", {})
     OWNERS = {rid: (own, _short.get(own, sh)) for rid, (own, sh) in OWNERS.items()}
 # Used only if Sleeper metadata.team_name is blank.
-TEAM_NAME_FALLBACK = {1: "Got the Beam on Me"}
+TEAM_NAME_FALLBACK = {1: "Top Play"}
 
 
 def now_iso() -> str:
