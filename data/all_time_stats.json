@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T13:47:45-07:00",
+    "generated_at": "2026-10-01T08:15:36-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -18,6 +18,7 @@
     },
     "rules": [
       "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
+      "2024 roster 11 is Aaron's (Legacy Owner) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
       "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2024+). 2022 (ESPN) and 2023 (Sleeper standings) had no median game, so their records are H2H only.",
       "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
       "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",
@@ -99,12 +100,10 @@
       }
     ],
     "checks": {
-      "passed": 53,
+      "passed": 55,
       "discrepancies": [
         "2025 roster 9 (Vlad): computed 13-9, PF 1213.24, PA 1169.46 | Sleeper standings 13-9, PF 1213.24, PA 1179.16",
-        "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9",
-        "2026 roster 7 (Derek): computed 2-4, PF 312.86, PA 301.7 | Sleeper standings 2-4, PF 312.86, PA 302.2",
-        "2026 roster 8 (Matt A): computed 4-2, PF 301.48, PA 306.58 | Sleeper standings 4-2, PF 301.98, PA 306.58"
+        "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9"
       ],
       "history_json": [
         "ok Juan Rodriguez: history.json 26-14 vs Sleeper H2H 26-14",
@@ -116,14 +115,15 @@
         "ok Jake Prosser: history.json 15-25 vs Sleeper H2H 15-25",
         "ok Derek Bock: history.json 14-13 vs Sleeper H2H 14-13",
         "ok Paul Bacon: history.json 12-15 vs Sleeper H2H 12-15",
-        "ok Matt Atkinson: history.json 15-12 vs Sleeper H2H 15-12",
         "ok Andrew Reed: history.json 12-15 vs Sleeper H2H 12-15",
         "ok Brett Trana: history.json 7-7 vs Sleeper H2H 7-7",
         "ok Mike: history.json 6-7 vs Sleeper H2H 6-7",
         "ok Deion: history.json 8-5 vs Sleeper H2H 8-5",
         "ok Jake F: history.json 7-6 vs Sleeper H2H 7-6",
+        "ok Matt Atkinson: history.json 11-3 vs Sleeper H2H 11-3",
         "ok Jared: history.json 5-8 vs Sleeper H2H 5-8",
         "ok Anup: history.json 4-9 vs Sleeper H2H 4-9",
+        "ok Aaron: history.json 4-9 vs Sleeper H2H 4-9",
         "ok Matt F: history.json 5-8 vs Sleeper H2H 5-8",
         "ok champion 2022: Deion & Jared (co-champions)",
         "ok champion 2023: Douglas Sullivan",
@@ -329,7 +329,7 @@
         "t": 0
       },
       "pf": 5899.52,
-      "pa": 5905.8,
+      "pa": 5906.8,
       "all_play": {
         "w": 276,
         "l": 255,
@@ -349,7 +349,7 @@
       "starter_tds": 259,
       "starter_yards": 38687,
       "ppg": 111.31,
-      "pa_pg": 111.43,
+      "pa_pg": 111.45,
       "record_str": "46-34",
       "record_pct": 0.575,
       "h2h_str": "27-26",
@@ -829,80 +829,6 @@
       ]
     },
     {
-      "manager": "matt-a",
-      "name": "Matt A",
-      "group": "current",
-      "full_name": "Matt Atkinson",
-      "seasons": [
-        "2024",
-        "2025",
-        "2026"
-      ],
-      "games": 27,
-      "h2h": {
-        "w": 15,
-        "l": 12,
-        "t": 0
-      },
-      "median": {
-        "w": 9,
-        "l": 18,
-        "t": 0
-      },
-      "record": {
-        "w": 24,
-        "l": 30,
-        "t": 0
-      },
-      "pf": 2752.44,
-      "pa": 2811.9,
-      "all_play": {
-        "w": 117,
-        "l": 180,
-        "t": 0
-      },
-      "playoff_record": {
-        "w": 0,
-        "l": 2,
-        "t": 0
-      },
-      "playoff_appearances": 1,
-      "finals": 0,
-      "titles": 0,
-      "title_seasons": [],
-      "starter_tds": 128,
-      "starter_yards": 18159,
-      "ppg": 101.94,
-      "pa_pg": 104.14,
-      "record_str": "24-30",
-      "record_pct": 0.444,
-      "h2h_str": "15-12",
-      "h2h_pct": 0.556,
-      "median_str": "9-18",
-      "all_play_str": "117-180",
-      "all_play_pct": 0.394,
-      "playoff_record_str": "0-2",
-      "tds_per_game": 4.74,
-      "career_high": {
-        "season": "2025",
-        "week": 5,
-        "points": 136.14,
-        "opponent": "Lij",
-        "phase": "regular"
-      },
-      "career_low": {
-        "season": "2025",
-        "week": 15,
-        "points": 79.68,
-        "opponent": "Andrew",
-        "phase": "playoff"
-      },
-      "full_seasons": 2,
-      "partial_seasons": [
-        "2026 (in progress)"
-      ]
-    },
-    {
       "manager": "andrew",
       "name": "Andrew",
       "group": "current",
@@ -1001,7 +927,7 @@
         "l": 15,
         "t": 0
       },
-      "pf": 1558.16,
+      "pf": 1559.16,
       "pa": 1504.6,
       "all_play": {
         "w": 77,
@@ -1019,7 +945,7 @@
       "title_seasons": [],
       "starter_tds": 80,
       "starter_yards": 10850,
-      "ppg": 111.3,
+      "ppg": 111.37,
       "pa_pg": 107.47,
       "record_str": "13-15",
       "record_pct": 0.464,
@@ -1043,6 +969,79 @@
         "points": 73.96,
         "opponent": "Paul",
         "phase": "consolation"
+      },
+      "full_seasons": 1,
+      "partial_seasons": [
+        "2026 (in progress)"
+      ]
+    },
+    {
+      "manager": "matt-a",
+      "name": "Matt A",
+      "group": "current",
+      "full_name": "Matt Atkinson",
+      "seasons": [
+        "2025",
+        "2026"
+      ],
+      "games": 14,
+      "h2h": {
+        "w": 11,
+        "l": 3,
+        "t": 0
+      },
+      "median": {
+        "w": 7,
+        "l": 7,
+        "t": 0
+      },
+      "record": {
+        "w": 18,
+        "l": 10,
+        "t": 0
+      },
+      "pf": 1452.92,
+      "pa": 1402.46,
+      "all_play": {
+        "w": 78,
+        "l": 76,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 2,
+        "t": 0
+      },
+      "playoff_appearances": 1,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 74,
+      "starter_yards": 9856,
+      "ppg": 103.78,
+      "pa_pg": 100.18,
+      "record_str": "18-10",
+      "record_pct": 0.643,
+      "h2h_str": "11-3",
+      "h2h_pct": 0.786,
+      "median_str": "7-7",
+      "all_play_str": "78-76",
+      "all_play_pct": 0.506,
+      "playoff_record_str": "0-2",
+      "tds_per_game": 5.29,
+      "career_high": {
+        "season": "2025",
+        "week": 5,
+        "points": 136.14,
+        "opponent": "Lij",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2025",
+        "week": 15,
+        "points": 79.68,
+        "opponent": "Andrew",
+        "phase": "playoff"
       },
       "full_seasons": 1,
       "partial_seasons": [
@@ -1411,6 +1410,76 @@
       "partial_seasons": []
     },
     {
+      "manager": "amartinez528",
+      "name": "Aaron",
+      "group": "former",
+      "full_name": "Aaron",
+      "seasons": [
+        "2024"
+      ],
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "record": {
+        "w": 6,
+        "l": 20,
+        "t": 0
+      },
+      "pf": 1299.52,
+      "pa": 1409.44,
+      "all_play": {
+        "w": 39,
+        "l": 104,
+        "t": 0
+      },
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "playoff_appearances": 0,
+      "finals": 0,
+      "titles": 0,
+      "title_seasons": [],
+      "starter_tds": 54,
+      "starter_yards": 8303,
+      "ppg": 99.96,
+      "pa_pg": 108.42,
+      "record_str": "6-20",
+      "record_pct": 0.231,
+      "h2h_str": "4-9",
+      "h2h_pct": 0.308,
+      "median_str": "2-11",
+      "all_play_str": "39-104",
+      "all_play_pct": 0.273,
+      "playoff_record_str": null,
+      "tds_per_game": 4.15,
+      "career_high": {
+        "season": "2024",
+        "week": 1,
+        "points": 123.18,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "career_low": {
+        "season": "2024",
+        "week": 16,
+        "points": 85.86,
+        "opponent": "Matt F",
+        "phase": "consolation"
+      },
+      "full_seasons": 1,
+      "partial_seasons": []
+    },
+    {
       "manager": "mrpfizer",
       "name": "Matt F",
       "group": "former",
@@ -1467,7 +1536,7 @@
         "season": "2024",
         "week": 17,
         "points": 130.3,
-        "opponent": "Matt A",
+        "opponent": "Aaron",
         "phase": "consolation"
       },
       "career_low": {
@@ -1799,8 +1868,8 @@
       },
       {
         "season": "2024",
-        "manager": "matt-a",
-        "name": "Matt A",
+        "manager": "amartinez528",
+        "name": "Aaron",
         "platform": "Sleeper",
         "record": "6-20",
         "pf": 1299.52,
@@ -2470,8 +2539,8 @@
         "winner": "Matt F",
         "winner_id": "mrpfizer",
         "winner_points": 86.04,
-        "loser": "Matt A",
-        "loser_id": "matt-a",
+        "loser": "Aaron",
+        "loser_id": "amartinez528",
         "loser_points": 85.86,
         "margin": 0.18
       },
@@ -4313,6 +4382,85 @@
     },
     {
       "season": "2024",
+      "manager": "amartinez528",
+      "name": "Aaron",
+      "platform": "Sleeper",
+      "weeks_managed": null,
+      "partial": false,
+      "in_progress": false,
+      "games": 13,
+      "h2h": {
+        "w": 4,
+        "l": 9,
+        "t": 0
+      },
+      "median": {
+        "w": 2,
+        "l": 11,
+        "t": 0
+      },
+      "record": {
+        "w": 6,
+        "l": 20,
+        "t": 0
+      },
+      "pf": 1299.52,
+      "pa": 1409.44,
+      "all_play": {
+        "w": 39,
+        "l": 104,
+        "t": 0
+      },
+      "high_week": {
+        "week": 1,
+        "points": 123.18,
+        "opponent": "Vlad",
+        "phase": "regular"
+      },
+      "low_week": {
+        "week": 16,
+        "points": 85.86,
+        "opponent": "Matt F",
+        "phase": "consolation"
+      },
+      "starter_tds": 54,
+      "starter_yards": 8303,
+      "td_breakdown": {
+        "pass": 22,
+        "rush": 19,
+        "rec": 12,
+        "idp": 0,
+        "return": 1
+      },
+      "playoffs": false,
+      "finish": "Missed playoffs",
+      "playoff_record": {
+        "w": 0,
+        "l": 0,
+        "t": 0
+      },
+      "sleeper_standings": {
+        "record": "6-20",
+        "pf": 1299.52,
+        "pa": 1409.44
+      },
+      "record_note": null,
+      "ppg": 99.96,
+      "pa_pg": 108.42,
+      "record_str": "6-20",
+      "h2h_str": "4-9",
+      "median_str": "2-11",
+      "record_pct": 0.231,
+      "h2h_pct": 0.308,
+      "all_play_pct": 0.273,
+      "all_play_str": "39-104",
+      "playoff_record_str": null,
+      "tds_per_game": 4.15,
+      "eligible_for_records": true,
+      "current": false
+    },
+    {
+      "season": "2024",
       "manager": "andrew",
       "name": "Andrew",
       "platform": "Sleeper",
@@ -4866,85 +5014,6 @@
     },
     {
       "season": "2024",
-      "manager": "matt-a",
-      "name": "Matt A",
-      "platform": "Sleeper",
-      "weeks_managed": null,
-      "partial": false,
-      "in_progress": false,
-      "games": 13,
-      "h2h": {
-        "w": 4,
-        "l": 9,
-        "t": 0
-      },
-      "median": {
-        "w": 2,
-        "l": 11,
-        "t": 0
-      },
-      "record": {
-        "w": 6,
-        "l": 20,
-        "t": 0
-      },
-      "pf": 1299.52,
-      "pa": 1409.44,
-      "all_play": {
-        "w": 39,
-        "l": 104,
-        "t": 0
-      },
-      "high_week": {
-        "week": 1,
-        "points": 123.18,
-        "opponent": "Vlad",
-        "phase": "regular"
-      },
-      "low_week": {
-        "week": 16,
-        "points": 85.86,
-        "opponent": "Matt F",
-        "phase": "consolation"
-      },
-      "starter_tds": 54,
-      "starter_yards": 8303,
-      "td_breakdown": {
-        "pass": 22,
-        "rush": 19,
-        "rec": 12,
-        "idp": 0,
-        "return": 1
-      },
-      "playoffs": false,
-      "finish": "Missed playoffs",
-      "playoff_record": {
-        "w": 0,
-        "l": 0,
-        "t": 0
-      },
-      "sleeper_standings": {
-        "record": "6-20",
-        "pf": 1299.52,
-        "pa": 1409.44
-      },
-      "record_note": null,
-      "ppg": 99.96,
-      "pa_pg": 108.42,
-      "record_str": "6-20",
-      "h2h_str": "4-9",
-      "median_str": "2-11",
-      "record_pct": 0.231,
-      "h2h_pct": 0.308,
-      "all_play_pct": 0.273,
-      "all_play_str": "39-104",
-      "playoff_record_str": null,
-      "tds_per_game": 4.15,
-      "eligible_for_records": true,
-      "current": true
-    },
-    {
-      "season": "2024",
       "manager": "mrpfizer",
       "name": "Matt F",
       "platform": "Sleeper",
@@ -4977,7 +5046,7 @@
       "high_week": {
         "week": 17,
         "points": 130.3,
-        "opponent": "Matt A",
+        "opponent": "Aaron",
         "phase": "consolation"
       },
       "low_week": {
@@ -5062,7 +5131,7 @@
       "low_week": {
         "week": 9,
         "points": 95.52,
-        "opponent": "Matt A",
+        "opponent": "Aaron",
         "phase": "regular"
       },
       "starter_tds": 36,
@@ -5304,7 +5373,7 @@
       "low_week": {
         "week": 1,
         "points": 72.76,
-        "opponent": "Matt A",
+        "opponent": "Aaron",
         "phase": "regular"
       },
       "starter_tds": 80,
@@ -6401,7 +6470,7 @@
         "l": 2,
         "t": 0
       },
-      "pf": 419.66,
+      "pf": 420.66,
       "pa": 362.7,
       "all_play": {
         "w": 24,
@@ -6438,11 +6507,11 @@
       },
       "sleeper_standings": {
         "record": "4-2",
-        "pf": 419.66,
+        "pf": 420.66,
         "pa": 362.7
       },
       "record_note": null,
-      "ppg": 139.89,
+      "ppg": 140.22,
       "pa_pg": 120.9,
       "record_str": "4-2",
       "h2h_str": "2-1",
@@ -6518,7 +6587,7 @@
       "sleeper_standings": {
         "record": "2-4",
         "pf": 312.86,
-        "pa": 302.2
+        "pa": 301.7
       },
       "record_note": null,
       "ppg": 104.29,
@@ -6991,7 +7060,7 @@
       },
       "sleeper_standings": {
         "record": "4-2",
-        "pf": 301.98,
+        "pf": 301.48,
         "pa": 306.58
       },
       "record_note": null,
@@ -7192,7 +7261,7 @@
         "t": 0
       },
       "pf": 352.24,
-      "pa": 368.12,
+      "pa": 369.12,
       "all_play": {
         "w": 18,
         "l": 15,
@@ -7229,11 +7298,11 @@
       "sleeper_standings": {
         "record": "3-3",
         "pf": 352.24,
-        "pa": 368.12
+        "pa": 369.12
       },
       "record_note": null,
       "ppg": 117.41,
-      "pa_pg": 122.71,
+      "pa_pg": 123.04,
       "record_str": "3-3",
       "h2h_str": "1-2",
       "median_str": "2-1",
@@ -7560,6 +7629,32 @@
       },
       "only_one_full_season": false
     },
+    "amartinez528": {
+      "name": "Aaron",
+      "best": {
+        "season": "2024",
+        "record_str": "6-20",
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11",
+        "pf": 1299.52,
+        "ppg": 99.96,
+        "all_play_str": "39-104",
+        "finish": "Missed playoffs"
+      },
+      "worst": {
+        "season": "2024",
+        "record_str": "6-20",
+        "record_pct": 0.231,
+        "h2h_str": "4-9",
+        "median_str": "2-11",
+        "pf": 1299.52,
+        "ppg": 99.96,
+        "all_play_str": "39-104",
+        "finish": "Missed playoffs"
+      },
+      "only_one_full_season": true
+    },
     "andrew": {
       "name": "Andrew",
       "best": {
@@ -7609,32 +7704,6 @@
         "ppg": 114.24,
         "all_play_str": "68-75",
         "finish": "6th"
-      },
-      "only_one_full_season": false
-    },
-    "matt-a": {
-      "name": "Matt A",
-      "best": {
-        "season": "2025",
-        "record_str": "14-8",
-        "record_pct": 0.636,
-        "h2h_str": "9-2",
-        "median_str": "5-6",
-        "pf": 1151.44,
-        "ppg": 104.68,
-        "all_play_str": "62-59",
-        "finish": "Playoffs"
-      },
-      "worst": {
-        "season": "2024",
-        "record_str": "6-20",
-        "record_pct": 0.231,
-        "h2h_str": "4-9",
-        "median_str": "2-11",
-        "pf": 1299.52,
-        "ppg": 99.96,
-        "all_play_str": "39-104",
-        "finish": "Missed playoffs"
       },
       "only_one_full_season": false
     },
@@ -7713,6 +7782,32 @@
         "ppg": 103.5,
         "all_play_str": "53-68",
         "finish": "Missed playoffs"
+      },
+      "only_one_full_season": true
+    },
+    "matt-a": {
+      "name": "Matt A",
+      "best": {
+        "season": "2025",
+        "record_str": "14-8",
+        "record_pct": 0.636,
+        "h2h_str": "9-2",
+        "median_str": "5-6",
+        "pf": 1151.44,
+        "ppg": 104.68,
+        "all_play_str": "62-59",
+        "finish": "Playoffs"
+      },
+      "worst": {
+        "season": "2025",
+        "record_str": "14-8",
+        "record_pct": 0.636,
+        "h2h_str": "9-2",
+        "median_str": "5-6",
+        "pf": 1151.44,
+        "ppg": 104.68,
+        "all_play_str": "62-59",
+        "finish": "Playoffs"
       },
       "only_one_full_season": true
     }

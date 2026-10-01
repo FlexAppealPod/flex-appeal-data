@@ -119,16 +119,6 @@
       "playoff_appearances": 1
     },
     {
-      "owner": "Matt Atkinson",
-      "seasons": 3,
-      "wins": 15,
-      "losses": 12,
-      "win_pct": 0.56,
-      "total_pf": 2752.44,
-      "championships": 0,
-      "playoff_appearances": 1
-    },
-    {
       "owner": "Andrew Reed",
       "seasons": 3,
       "wins": 12,
@@ -144,7 +134,7 @@
       "wins": 7,
       "losses": 7,
       "win_pct": 0.5,
-      "total_pf": 1567.86,
+      "total_pf": 1568.86,
       "championships": 0,
       "playoff_appearances": 0
     },
@@ -179,6 +169,16 @@
       "playoff_appearances": 1
     },
     {
+      "owner": "Matt Atkinson",
+      "seasons": 2,
+      "wins": 11,
+      "losses": 3,
+      "win_pct": 0.79,
+      "total_pf": 1452.92,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
       "owner": "Jared",
       "seasons": 1,
       "wins": 5,
@@ -195,6 +195,16 @@
       "losses": 9,
       "win_pct": 0.31,
       "total_pf": 1374.22,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
+      "owner": "Aaron",
+      "seasons": 1,
+      "wins": 4,
+      "losses": 9,
+      "win_pct": 0.31,
+      "total_pf": 1299.52,
       "championships": 0,
       "playoff_appearances": 0
     },
@@ -540,7 +550,7 @@
       "week": 16,
       "owner": "Matt F",
       "points": 86.04,
-      "opponent": "Matt Atkinson",
+      "opponent": "Aaron",
       "opponent_points": 85.86,
       "margin": 0.18
     },
@@ -621,7 +631,7 @@
       "week": 8,
       "owner": "Matt F",
       "points": 103.24,
-      "opponent": "Matt Atkinson",
+      "opponent": "Aaron",
       "opponent_points": 101.72,
       "margin": 1.52
     },
@@ -669,5 +679,8 @@
     "2024 wk7 matchup 3: 97.04 -> 97.44",
     "career Douglas Sullivan: +1 L (2024 wk7)",
     "career Matt F: +1 W (2024 wk7)"
+  ],
+  "season_owner_fixes_applied": [
+    "2024 roster 11: Matt Atkinson -> Aaron (4-9-0 H2H, PF 1299.52, playoffs 0)"
   ]
 }

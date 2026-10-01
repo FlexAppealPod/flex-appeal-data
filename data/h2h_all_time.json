@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-30T13:47:44-07:00",
+  "generated_at": "2026-10-01T08:15:35-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -13,7 +13,7 @@
    "week": 3
   },
   "total_games": 319,
-  "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Weeks 1-6, Matt Z from Week 7). Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total (2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). Deion's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records.",
+  "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Weeks 1-6, Matt Z from Week 7). Whole-season owner fixes come from its season_owners list (2024 roster 11: Aaron all season; Sleeper now lists Matt A, who took the roster over after the season). Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total (2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). Deion's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records.",
   "labels": {
    "current": "Current Managers",
    "former": "Legacy Owners"
@@ -25,6 +25,9 @@
    "2024 wk7 roster 2: 78.1 -> 98.94",
    "2024 wk7 roster 8: 67.8 -> 96.66",
    "2024 wk7 roster 4: 97.04 -> 97.44"
+  ],
+  "season_owner_fixes_applied": [
+   "2024 roster 11: owner matkinson94 -> AMartinez528 (Aaron, whole season)"
   ]
  },
  "current_managers": [
@@ -47,6 +50,7 @@
   "jmoneymess",
   "michaeldewey99",
   "anupds23",
+  "amartinez528",
   "mrpfizer"
  ],
  "managers": [
@@ -169,7 +173,6 @@
    "name": "Matt A",
    "sleeper_user_id": "1135747453468438528",
    "seasons": [
-    "2024",
     "2025",
     "2026"
    ],
@@ -316,6 +319,16 @@
    "current": false
   },
   {
+   "id": "amartinez528",
+   "name": "Aaron",
+   "sleeper_user_id": "1135318402727460864",
+   "seasons": [
+    "2024"
+   ],
+   "sleeper_handle": "AMartinez528",
+   "current": false
+  },
+  {
    "id": "mrpfizer",
    "name": "Matt F",
    "sleeper_user_id": "1134240220636954624",
@@ -329,16 +342,16 @@
  "totals": {
   "jake": {
    "vs_current": {
-    "w": 14,
+    "w": 13,
     "l": 25,
     "t": 0,
-    "pct": 0.359
+    "pct": 0.342
    },
    "vs_former": {
-    "w": 6,
+    "w": 7,
     "l": 8,
     "t": 0,
-    "pct": 0.429
+    "pct": 0.467
    },
    "all_games": {
     "w": 20,
@@ -348,21 +361,21 @@
    },
    "regular_games": 53,
    "playoff_games": 0,
-   "games_vs_former": 14,
+   "games_vs_former": 15,
    "total_games": 53
   },
   "matt-z": {
    "vs_current": {
     "w": 18,
-    "l": 14,
+    "l": 13,
     "t": 0,
-    "pct": 0.562
+    "pct": 0.581
    },
    "vs_former": {
     "w": 3,
-    "l": 4,
+    "l": 5,
     "t": 0,
-    "pct": 0.429
+    "pct": 0.375
    },
    "all_games": {
     "w": 21,
@@ -372,18 +385,18 @@
    },
    "regular_games": 34,
    "playoff_games": 5,
-   "games_vs_former": 7,
+   "games_vs_former": 8,
    "total_games": 39
   },
   "paul": {
    "vs_current": {
-    "w": 13,
+    "w": 11,
     "l": 16,
     "t": 0,
-    "pct": 0.448
+    "pct": 0.407
    },
    "vs_former": {
-    "w": 1,
+    "w": 3,
     "l": 0,
     "t": 0,
     "pct": 1.0
@@ -396,21 +409,21 @@
    },
    "regular_games": 27,
    "playoff_games": 3,
-   "games_vs_former": 1,
+   "games_vs_former": 3,
    "total_games": 30
   },
   "lij": {
    "vs_current": {
     "w": 20,
-    "l": 19,
+    "l": 18,
     "t": 0,
-    "pct": 0.513
+    "pct": 0.526
    },
    "vs_former": {
     "w": 10,
-    "l": 9,
+    "l": 10,
     "t": 0,
-    "pct": 0.526
+    "pct": 0.5
    },
    "all_games": {
     "w": 30,
@@ -420,21 +433,21 @@
    },
    "regular_games": 53,
    "playoff_games": 5,
-   "games_vs_former": 19,
+   "games_vs_former": 20,
    "total_games": 58
   },
   "doug": {
    "vs_current": {
-    "w": 26,
+    "w": 25,
     "l": 17,
     "t": 0,
-    "pct": 0.605
+    "pct": 0.595
    },
    "vs_former": {
-    "w": 9,
+    "w": 10,
     "l": 9,
     "t": 0,
-    "pct": 0.5
+    "pct": 0.526
    },
    "all_games": {
     "w": 35,
@@ -444,21 +457,21 @@
    },
    "regular_games": 53,
    "playoff_games": 8,
-   "games_vs_former": 18,
+   "games_vs_former": 19,
    "total_games": 61
   },
   "juan": {
    "vs_current": {
-    "w": 22,
+    "w": 21,
     "l": 15,
     "t": 0,
-    "pct": 0.595
+    "pct": 0.583
    },
    "vs_former": {
-    "w": 7,
+    "w": 8,
     "l": 2,
     "t": 0,
-    "pct": 0.778
+    "pct": 0.8
    },
    "all_games": {
     "w": 29,
@@ -468,21 +481,21 @@
    },
    "regular_games": 40,
    "playoff_games": 6,
-   "games_vs_former": 9,
+   "games_vs_former": 10,
    "total_games": 46
   },
   "derek": {
    "vs_current": {
-    "w": 15,
+    "w": 14,
     "l": 15,
     "t": 0,
-    "pct": 0.5
+    "pct": 0.483
    },
    "vs_former": {
-    "w": 0,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "pct": 0.0
+    "pct": 0.5
    },
    "all_games": {
     "w": 15,
@@ -492,45 +505,45 @@
    },
    "regular_games": 27,
    "playoff_games": 4,
-   "games_vs_former": 1,
+   "games_vs_former": 2,
    "total_games": 31
   },
   "matt-a": {
    "vs_current": {
-    "w": 15,
-    "l": 13,
+    "w": 11,
+    "l": 5,
     "t": 0,
-    "pct": 0.536
+    "pct": 0.688
    },
    "vs_former": {
     "w": 0,
-    "l": 1,
+    "l": 0,
     "t": 0,
     "pct": 0.0
    },
    "all_games": {
-    "w": 15,
-    "l": 14,
+    "w": 11,
+    "l": 5,
     "t": 0,
-    "pct": 0.517
+    "pct": 0.688
    },
-   "regular_games": 27,
+   "regular_games": 14,
    "playoff_games": 2,
-   "games_vs_former": 1,
-   "total_games": 29
+   "games_vs_former": 0,
+   "total_games": 16
   },
   "vlad": {
    "vs_current": {
-    "w": 24,
-    "l": 20,
+    "w": 23,
+    "l": 19,
     "t": 0,
-    "pct": 0.545
+    "pct": 0.548
    },
    "vs_former": {
-    "w": 7,
-    "l": 9,
+    "w": 8,
+    "l": 10,
     "t": 0,
-    "pct": 0.438
+    "pct": 0.444
    },
    "all_games": {
     "w": 31,
@@ -540,21 +553,21 @@
    },
    "regular_games": 53,
    "playoff_games": 7,
-   "games_vs_former": 16,
+   "games_vs_former": 18,
    "total_games": 60
   },
   "marc": {
    "vs_current": {
-    "w": 13,
+    "w": 12,
     "l": 22,
     "t": 0,
-    "pct": 0.371
+    "pct": 0.353
    },
    "vs_former": {
-    "w": 4,
+    "w": 5,
     "l": 3,
     "t": 0,
-    "pct": 0.571
+    "pct": 0.625
    },
    "all_games": {
     "w": 17,
@@ -564,7 +577,7 @@
    },
    "regular_games": 40,
    "playoff_games": 2,
-   "games_vs_former": 7,
+   "games_vs_former": 8,
    "total_games": 42
   },
   "brett": {
@@ -594,15 +607,15 @@
   "andrew": {
    "vs_current": {
     "w": 12,
-    "l": 16,
+    "l": 15,
     "t": 0,
-    "pct": 0.429
+    "pct": 0.444
    },
    "vs_former": {
     "w": 1,
-    "l": 1,
+    "l": 2,
     "t": 0,
-    "pct": 0.5
+    "pct": 0.333
    },
    "all_games": {
     "w": 13,
@@ -612,7 +625,7 @@
    },
    "regular_games": 27,
    "playoff_games": 3,
-   "games_vs_former": 2,
+   "games_vs_former": 3,
    "total_games": 30
   },
   "deion": {
@@ -735,18 +748,42 @@
    "games_vs_former": 4,
    "total_games": 13
   },
-  "mrpfizer": {
+  "amartinez528": {
    "vs_current": {
-    "w": 5,
-    "l": 7,
+    "w": 4,
+    "l": 8,
     "t": 0,
-    "pct": 0.417
+    "pct": 0.333
    },
    "vs_former": {
     "w": 0,
     "l": 1,
     "t": 0,
     "pct": 0.0
+   },
+   "all_games": {
+    "w": 4,
+    "l": 9,
+    "t": 0,
+    "pct": 0.308
+   },
+   "regular_games": 13,
+   "playoff_games": 0,
+   "games_vs_former": 1,
+   "total_games": 13
+  },
+  "mrpfizer": {
+   "vs_current": {
+    "w": 4,
+    "l": 7,
+    "t": 0,
+    "pct": 0.364
+   },
+   "vs_former": {
+    "w": 1,
+    "l": 1,
+    "t": 0,
+    "pct": 0.5
    },
    "all_games": {
     "w": 5,
@@ -756,7 +793,7 @@
    },
    "regular_games": 13,
    "playoff_games": 0,
-   "games_vs_former": 1,
+   "games_vs_former": 2,
    "total_games": 13
   }
  },
@@ -799,10 +836,10 @@
     "games": 3
    },
    "matt-a": {
-    "w": 1,
+    "w": 0,
     "l": 1,
     "t": 0,
-    "games": 2
+    "games": 1
    },
    "vlad": {
     "w": 2,
@@ -858,6 +895,12 @@
     "t": 0,
     "games": 1
    },
+   "amartinez528": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
    "mrpfizer": {
     "w": 1,
     "l": 0,
@@ -904,9 +947,9 @@
    },
    "matt-a": {
     "w": 0,
-    "l": 2,
+    "l": 1,
     "t": 0,
-    "games": 2
+    "games": 1
    },
    "vlad": {
     "w": 2,
@@ -962,6 +1005,12 @@
     "t": 0,
     "games": 1
    },
+   "amartinez528": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
    "mrpfizer": {
     "w": 1,
     "l": 0,
@@ -1007,10 +1056,10 @@
     "games": 3
    },
    "matt-a": {
-    "w": 2,
+    "w": 0,
     "l": 1,
     "t": 0,
-    "games": 3
+    "games": 1
    },
    "vlad": {
     "w": 1,
@@ -1033,6 +1082,12 @@
    "andrew": {
     "w": 1,
     "l": 1,
+    "t": 0,
+    "games": 2
+   },
+   "amartinez528": {
+    "w": 2,
+    "l": 0,
     "t": 0,
     "games": 2
    },
@@ -1082,9 +1137,9 @@
    },
    "matt-a": {
     "w": 1,
-    "l": 2,
+    "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "vlad": {
     "w": 2,
@@ -1140,6 +1195,12 @@
     "t": 0,
     "games": 2
    },
+   "amartinez528": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
    "mrpfizer": {
     "w": 1,
     "l": 1,
@@ -1185,10 +1246,10 @@
     "games": 4
    },
    "matt-a": {
-    "w": 1,
+    "w": 0,
     "l": 1,
     "t": 0,
-    "games": 2
+    "games": 1
    },
    "vlad": {
     "w": 2,
@@ -1239,6 +1300,12 @@
     "games": 4
    },
    "anupds23": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
+   "amartinez528": {
     "w": 1,
     "l": 0,
     "t": 0,
@@ -1289,10 +1356,10 @@
     "games": 3
    },
    "matt-a": {
-    "w": 2,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "vlad": {
     "w": 3,
@@ -1347,6 +1414,12 @@
     "l": 0,
     "t": 0,
     "games": 2
+   },
+   "amartinez528": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
    },
    "mrpfizer": {
     "w": 1,
@@ -1393,10 +1466,10 @@
     "games": 3
    },
    "matt-a": {
-    "w": 2,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "vlad": {
     "w": 1,
@@ -1421,6 +1494,12 @@
     "l": 2,
     "t": 0,
     "games": 3
+   },
+   "amartinez528": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
    },
    "mrpfizer": {
     "w": 0,
@@ -1432,57 +1511,57 @@
   "matt-a": {
    "jake": {
     "w": 1,
-    "l": 1,
-    "t": 0,
-    "games": 2
-   },
-   "matt-z": {
-    "w": 2,
     "l": 0,
     "t": 0,
-    "games": 2
+    "games": 1
+   },
+   "matt-z": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
    },
    "paul": {
     "w": 1,
-    "l": 2,
+    "l": 0,
     "t": 0,
-    "games": 3
+    "games": 1
    },
    "lij": {
-    "w": 2,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "doug": {
     "w": 1,
-    "l": 1,
+    "l": 0,
     "t": 0,
-    "games": 2
+    "games": 1
    },
    "juan": {
     "w": 1,
-    "l": 2,
+    "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "derek": {
-    "w": 1,
-    "l": 2,
-    "t": 0,
-    "games": 3
-   },
-   "vlad": {
-    "w": 2,
-    "l": 2,
-    "t": 0,
-    "games": 4
-   },
-   "marc": {
     "w": 1,
     "l": 1,
     "t": 0,
     "games": 2
+   },
+   "vlad": {
+    "w": 1,
+    "l": 1,
+    "t": 0,
+    "games": 2
+   },
+   "marc": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
    },
    "brett": {
     "w": 1,
@@ -1491,16 +1570,10 @@
     "games": 1
    },
    "andrew": {
-    "w": 2,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "games": 3
-   },
-   "mrpfizer": {
-    "w": 0,
-    "l": 1,
-    "t": 0,
-    "games": 1
+    "games": 2
    }
   },
   "vlad": {
@@ -1547,10 +1620,10 @@
     "games": 3
    },
    "matt-a": {
-    "w": 2,
-    "l": 2,
+    "w": 1,
+    "l": 1,
     "t": 0,
-    "games": 4
+    "games": 2
    },
    "marc": {
     "w": 1,
@@ -1599,6 +1672,12 @@
     "l": 1,
     "t": 0,
     "games": 1
+   },
+   "amartinez528": {
+    "w": 1,
+    "l": 1,
+    "t": 0,
+    "games": 2
    },
    "mrpfizer": {
     "w": 1,
@@ -1651,10 +1730,10 @@
     "games": 2
    },
    "matt-a": {
-    "w": 1,
+    "w": 0,
     "l": 1,
     "t": 0,
-    "games": 2
+    "games": 1
    },
    "vlad": {
     "w": 2,
@@ -1699,6 +1778,12 @@
     "games": 2
    },
    "anupds23": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
+   "amartinez528": {
     "w": 1,
     "l": 0,
     "t": 0,
@@ -1824,9 +1909,9 @@
    },
    "matt-a": {
     "w": 1,
-    "l": 2,
+    "l": 1,
     "t": 0,
-    "games": 3
+    "games": 2
    },
    "vlad": {
     "w": 1,
@@ -1847,6 +1932,12 @@
     "games": 1
    },
    "michaeldewey99": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "amartinez528": {
     "w": 0,
     "l": 1,
     "t": 0,
@@ -2211,6 +2302,74 @@
     "games": 1
    }
   },
+  "amartinez528": {
+   "jake": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "matt-z": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
+   "paul": {
+    "w": 0,
+    "l": 2,
+    "t": 0,
+    "games": 2
+   },
+   "lij": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
+   "doug": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "juan": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "derek": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "vlad": {
+    "w": 1,
+    "l": 1,
+    "t": 0,
+    "games": 2
+   },
+   "marc": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "andrew": {
+    "w": 1,
+    "l": 0,
+    "t": 0,
+    "games": 1
+   },
+   "mrpfizer": {
+    "w": 0,
+    "l": 1,
+    "t": 0,
+    "games": 1
+   }
+  },
   "mrpfizer": {
    "jake": {
     "w": 0,
@@ -2254,12 +2413,6 @@
     "t": 0,
     "games": 1
    },
-   "matt-a": {
-    "w": 1,
-    "l": 0,
-    "t": 0,
-    "games": 1
-   },
    "vlad": {
     "w": 0,
     "l": 1,
@@ -2281,6 +2434,12 @@
    "michaeldewey99": {
     "w": 0,
     "l": 1,
+    "t": 0,
+    "games": 1
+   },
+   "amartinez528": {
+    "w": 1,
+    "l": 0,
     "t": 0,
     "games": 1
    }
@@ -2418,22 +2577,47 @@
    }
   },
   {
-   "id": "mrpfizer",
-   "name": "Matt F",
+   "id": "amartinez528",
+   "name": "Aaron",
    "seasons": [
     "2024"
    ],
    "vs_current": {
-    "w": 5,
-    "l": 7,
+    "w": 4,
+    "l": 8,
     "t": 0,
-    "pct": 0.417
+    "pct": 0.333
    },
    "vs_former": {
     "w": 0,
     "l": 1,
     "t": 0,
     "pct": 0.0
+   },
+   "all_games": {
+    "w": 4,
+    "l": 9,
+    "t": 0,
+    "pct": 0.308
+   }
+  },
+  {
+   "id": "mrpfizer",
+   "name": "Matt F",
+   "seasons": [
+    "2024"
+   ],
+   "vs_current": {
+    "w": 4,
+    "l": 7,
+    "t": 0,
+    "pct": 0.364
+   },
+   "vs_former": {
+    "w": 1,
+    "l": 1,
+    "t": 0,
+    "pct": 0.5
    },
    "all_games": {
     "w": 5,
@@ -2646,11 +2830,10 @@
   "Most lopsided rivalry: Doug is 6-1 all-time vs Jake.",
   "Most-played rivalry: Vlad vs Jake, 7 meetings (Vlad leads 5-2).",
   "Unbeaten vs someone (3+ meetings): Juan 5-0 vs Marc; Matt Z 3-0 vs Andrew; Paul 3-0 vs Jake; Juan 3-0 vs Jake; Derek 3-0 vs Juan.",
-  "13 of 66 current-manager rivalries are dead even: Lij-Juan 2-2, Doug-Derek 2-2, Doug-Marc 2-2, Matt A-Vlad 2-2.",
-  "Best record vs current managers: Doug 26-17 (.605).",
-  "Best record counting every game: Juan 29-17 (.630).",
+  "14 of 66 current-manager rivalries are dead even: Lij-Juan 2-2, Doug-Derek 2-2, Doug-Marc 2-2.",
+  "Best record vs current managers: Matt A 11-5 (.688).",
   "Toughest all-time road: Jake 20-33 (.377).",
-  "Best vs Legacy Owners: Juan 7-2."
+  "Best vs Legacy Owners: Juan 8-2."
  ],
  "games": [
   {"season":"2022","weeks":"1","type":"regular","label":"Regular season","a":"michaeldewey99","b":"doug","a_pts":98.56,"b_pts":150.46,"winner":"doug"},
@@ -2798,12 +2981,12 @@
   {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"lij","b":"marc","a_pts":111.56,"b_pts":98.4,"winner":"lij"},
   {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"juan","b":"andrew","a_pts":87.78,"b_pts":109.22,"winner":"andrew"},
   {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"paul","b":"doug","a_pts":87.62,"b_pts":130.08,"winner":"doug"},
-  {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"vlad","b":"matt-a","a_pts":72.76,"b_pts":123.18,"winner":"matt-a"},
+  {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"vlad","b":"amartinez528","a_pts":72.76,"b_pts":123.18,"winner":"amartinez528"},
   {"season":"2024","weeks":"1","type":"regular","label":"Regular season","a":"jake","b":"derek","a_pts":118.14,"b_pts":130.38,"winner":"derek"},
   {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"lij","b":"mrpfizer","a_pts":134.02,"b_pts":120.62,"winner":"lij"},
   {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"michaeldewey99","b":"andrew","a_pts":113.6,"b_pts":82.5,"winner":"michaeldewey99"},
   {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"juan","b":"marc","a_pts":143.34,"b_pts":106.38,"winner":"juan"},
-  {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"paul","b":"matt-a","a_pts":117.28,"b_pts":112.06,"winner":"paul"},
+  {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"paul","b":"amartinez528","a_pts":117.28,"b_pts":112.06,"winner":"paul"},
   {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"doug","b":"derek","a_pts":110.9,"b_pts":111.86,"winner":"derek"},
   {"season":"2024","weeks":"2","type":"regular","label":"Regular season","a":"jake","b":"vlad","a_pts":128.84,"b_pts":152.22,"winner":"vlad"},
   {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"mrpfizer","b":"marc","a_pts":105.84,"b_pts":90.94,"winner":"mrpfizer"},
@@ -2811,39 +2994,39 @@
   {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"lij","b":"andrew","a_pts":151.06,"b_pts":96.32,"winner":"lij"},
   {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"paul","b":"vlad","a_pts":116.88,"b_pts":143.38,"winner":"vlad"},
   {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"jake","b":"doug","a_pts":104.98,"b_pts":129.76,"winner":"doug"},
-  {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"derek","b":"matt-a","a_pts":94.08,"b_pts":90.22,"winner":"derek"},
+  {"season":"2024","weeks":"3","type":"regular","label":"Regular season","a":"derek","b":"amartinez528","a_pts":94.08,"b_pts":90.22,"winner":"derek"},
   {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"mrpfizer","b":"andrew","a_pts":74.92,"b_pts":97.18,"winner":"andrew"},
   {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"michaeldewey99","b":"marc","a_pts":128.48,"b_pts":101.7,"winner":"michaeldewey99"},
   {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"lij","b":"juan","a_pts":124.24,"b_pts":86.08,"winner":"lij"},
   {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"paul","b":"derek","a_pts":121.14,"b_pts":113.54,"winner":"paul"},
   {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"doug","b":"vlad","a_pts":146.18,"b_pts":120.46,"winner":"doug"},
-  {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"jake","b":"matt-a","a_pts":112.6,"b_pts":87.2,"winner":"jake"},
+  {"season":"2024","weeks":"4","type":"regular","label":"Regular season","a":"jake","b":"amartinez528","a_pts":112.6,"b_pts":87.2,"winner":"jake"},
   {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"juan","b":"mrpfizer","a_pts":137.42,"b_pts":89.46,"winner":"juan"},
   {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"michaeldewey99","b":"lij","a_pts":133.84,"b_pts":92.38,"winner":"michaeldewey99"},
   {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"marc","b":"andrew","a_pts":108.66,"b_pts":119.3,"winner":"andrew"},
   {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"jake","b":"paul","a_pts":121.44,"b_pts":148.92,"winner":"paul"},
-  {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"doug","b":"matt-a","a_pts":142.56,"b_pts":92.94,"winner":"doug"},
+  {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"doug","b":"amartinez528","a_pts":142.56,"b_pts":92.94,"winner":"doug"},
   {"season":"2024","weeks":"5","type":"regular","label":"Regular season","a":"derek","b":"vlad","a_pts":120.36,"b_pts":162.58,"winner":"vlad"},
   {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"paul","b":"mrpfizer","a_pts":106.52,"b_pts":88.26,"winner":"paul"},
   {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"michaeldewey99","b":"doug","a_pts":123.0,"b_pts":100.7,"winner":"michaeldewey99"},
-  {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"lij","b":"matt-a","a_pts":80.22,"b_pts":91.8,"winner":"matt-a"},
+  {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"lij","b":"amartinez528","a_pts":80.22,"b_pts":91.8,"winner":"amartinez528"},
   {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"vlad","b":"marc","a_pts":118.12,"b_pts":123.12,"winner":"marc"},
   {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"derek","b":"andrew","a_pts":119.48,"b_pts":136.6,"winner":"andrew"},
   {"season":"2024","weeks":"6","type":"regular","label":"Regular season","a":"jake","b":"juan","a_pts":104.8,"b_pts":139.66,"winner":"juan"},
   {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"doug","b":"mrpfizer","a_pts":89.8,"b_pts":96.66,"winner":"mrpfizer"},
   {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"matt-z","b":"paul","a_pts":98.94,"b_pts":116.24,"winner":"paul"},
   {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"lij","b":"vlad","a_pts":97.44,"b_pts":123.74,"winner":"vlad"},
-  {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"marc","b":"matt-a","a_pts":102.1,"b_pts":93.42,"winner":"marc"},
+  {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"marc","b":"amartinez528","a_pts":102.1,"b_pts":93.42,"winner":"marc"},
   {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"jake","b":"andrew","a_pts":112.66,"b_pts":99.6,"winner":"jake"},
   {"season":"2024","weeks":"7","type":"regular","label":"Regular season","a":"juan","b":"derek","a_pts":118.34,"b_pts":152.38,"winner":"derek"},
-  {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"mrpfizer","b":"matt-a","a_pts":103.24,"b_pts":101.72,"winner":"mrpfizer"},
+  {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"mrpfizer","b":"amartinez528","a_pts":103.24,"b_pts":101.72,"winner":"mrpfizer"},
   {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"matt-z","b":"vlad","a_pts":137.52,"b_pts":104.86,"winner":"matt-z"},
   {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"lij","b":"derek","a_pts":95.34,"b_pts":94.18,"winner":"lij"},
   {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"jake","b":"marc","a_pts":110.58,"b_pts":147.24,"winner":"marc"},
   {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"paul","b":"andrew","a_pts":129.46,"b_pts":108.16,"winner":"paul"},
   {"season":"2024","weeks":"8","type":"regular","label":"Regular season","a":"doug","b":"juan","a_pts":115.0,"b_pts":162.88,"winner":"juan"},
   {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"mrpfizer","b":"vlad","a_pts":119.7,"b_pts":163.24,"winner":"vlad"},
-  {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"matt-z","b":"matt-a","a_pts":95.52,"b_pts":107.5,"winner":"matt-a"},
+  {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"matt-z","b":"amartinez528","a_pts":95.52,"b_pts":107.5,"winner":"amartinez528"},
   {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"jake","b":"lij","a_pts":133.44,"b_pts":141.7,"winner":"lij"},
   {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"derek","b":"marc","a_pts":121.8,"b_pts":116.5,"winner":"derek"},
   {"season":"2024","weeks":"9","type":"regular","label":"Regular season","a":"doug","b":"andrew","a_pts":122.08,"b_pts":91.34,"winner":"doug"},
@@ -2852,24 +3035,24 @@
   {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"jake","b":"matt-z","a_pts":109.54,"b_pts":100.42,"winner":"jake"},
   {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"paul","b":"lij","a_pts":142.6,"b_pts":94.96,"winner":"paul"},
   {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"doug","b":"marc","a_pts":105.04,"b_pts":104.84,"winner":"doug"},
-  {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"matt-a","b":"andrew","a_pts":118.2,"b_pts":83.38,"winner":"matt-a"},
+  {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"amartinez528","b":"andrew","a_pts":118.2,"b_pts":83.38,"winner":"amartinez528"},
   {"season":"2024","weeks":"10","type":"regular","label":"Regular season","a":"juan","b":"vlad","a_pts":125.58,"b_pts":120.12,"winner":"juan"},
   {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"jake","b":"mrpfizer","a_pts":120.88,"b_pts":88.74,"winner":"jake"},
   {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"matt-z","b":"derek","a_pts":109.8,"b_pts":144.84,"winner":"derek"},
   {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"lij","b":"doug","a_pts":92.38,"b_pts":202.08,"winner":"doug"},
   {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"paul","b":"marc","a_pts":134.48,"b_pts":139.84,"winner":"marc"},
   {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"vlad","b":"andrew","a_pts":145.24,"b_pts":119.24,"winner":"vlad"},
-  {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"juan","b":"matt-a","a_pts":130.34,"b_pts":99.28,"winner":"juan"},
+  {"season":"2024","weeks":"11","type":"regular","label":"Regular season","a":"juan","b":"amartinez528","a_pts":130.34,"b_pts":99.28,"winner":"juan"},
   {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"matt-z","b":"mrpfizer","a_pts":167.72,"b_pts":71.46,"winner":"matt-z"},
   {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"lij","b":"marc","a_pts":100.82,"b_pts":72.82,"winner":"lij"},
   {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"juan","b":"andrew","a_pts":173.7,"b_pts":106.36,"winner":"juan"},
   {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"paul","b":"doug","a_pts":149.18,"b_pts":101.96,"winner":"paul"},
-  {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"vlad","b":"matt-a","a_pts":123.88,"b_pts":90.08,"winner":"vlad"},
+  {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"vlad","b":"amartinez528","a_pts":123.88,"b_pts":90.08,"winner":"vlad"},
   {"season":"2024","weeks":"12","type":"regular","label":"Regular season","a":"jake","b":"derek","a_pts":92.52,"b_pts":78.06,"winner":"jake"},
   {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"lij","b":"mrpfizer","a_pts":76.68,"b_pts":90.62,"winner":"mrpfizer"},
   {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"matt-z","b":"andrew","a_pts":121.02,"b_pts":96.9,"winner":"matt-z"},
   {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"juan","b":"marc","a_pts":166.84,"b_pts":146.36,"winner":"juan"},
-  {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"paul","b":"matt-a","a_pts":151.48,"b_pts":91.92,"winner":"paul"},
+  {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"paul","b":"amartinez528","a_pts":151.48,"b_pts":91.92,"winner":"paul"},
   {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"doug","b":"derek","a_pts":153.94,"b_pts":114.64,"winner":"doug"},
   {"season":"2024","weeks":"13","type":"regular","label":"Regular season","a":"jake","b":"vlad","a_pts":99.84,"b_pts":134.66,"winner":"vlad"},
   {"season":"2024","weeks":"14","type":"playoff","label":"Quarterfinal","a":"doug","b":"matt-z","a_pts":141.62,"b_pts":96.72,"winner":"doug"},
@@ -2970,7 +3153,7 @@
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"doug","b":"andrew","a_pts":95.66,"b_pts":94.04,"winner":"doug"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"matt-z","b":"juan","a_pts":127.04,"b_pts":106.42,"winner":"matt-z"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"jake","b":"paul","a_pts":79.44,"b_pts":99.36,"winner":"paul"},
-  {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"vlad","b":"brett","a_pts":134.78,"b_pts":139.98,"winner":"brett"},
+  {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"vlad","b":"brett","a_pts":134.78,"b_pts":140.98,"winner":"brett"},
   {"season":"2026","weeks":"3","type":"regular","label":"Regular season","a":"lij","b":"marc","a_pts":60.12,"b_pts":111.9,"winner":"marc"}
  ]
 }

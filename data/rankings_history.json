@@ -1,16 +1,17 @@
 {
  "meta": {
   "title": "Flex Appeal Rankings History",
-  "generated": "2026-09-30T13:35:10-07:00",
+  "generated": "2026-10-01T08:16:24-07:00",
   "description": "Power Rankings (Nothing Catchy Podcast, 2022-2024 Week 7, Mike) and Flex Rankings (Flex Appeal Podcast, 2024 Week 8+, Jake). Confirmed boards only.",
   "date": "episode air date = podcast feed publish time converted to America/Phoenix (often the evening before the UTC date); null when the board was not tied to an episode",
   "week_convention": "week = the week the board heads into (2024 \"final\" = post-championship board). 2022 had 8 teams; 2023+ 12.",
-  "display_names": "first names; shared first names get a last initial. Legacy Owners: Jared, Deion, Jake F, Mike, Anup, Matt F",
+  "display_names": "first names; shared first names get a last initial. Legacy Owners: Jared, Deion, Jake F, Mike, Anup, Matt F, Aaron",
   "avg_pct": "(rank-1)/(teams-1) x 100 averaged; 0 = always #1, 100 = always last",
   "longest_no1_run": "consecutive boards at #1 within a season; a board that aired but was not recovered breaks the run",
   "not_included": "Unrecovered boards (2022 Wk 6 not aired; 2023 Wk 1-5 no boards; 2024 Wk 10 not aired; 2025 preseason posted on X, reconstructed only). No formula weights, scores or component ranks."
  },
  "legacy_owners": [
+  "Aaron",
   "Anup",
   "Deion",
   "Jake F",
@@ -472,7 +473,7 @@
     "Lij",
     "Mike",
     "Juan",
-    "Matt A"
+    "Aaron"
    ]
   },
   {
@@ -485,7 +486,7 @@
    "source": "podcast audio",
    "teams": 12,
    "ranks": [
-    "Matt A",
+    "Aaron",
     "Doug",
     "Derek",
     "Mike",
@@ -515,7 +516,7 @@
     "Mike",
     "Doug",
     "Juan",
-    "Matt A",
+    "Aaron",
     "Vlad",
     "Matt F",
     "Marc",
@@ -541,7 +542,7 @@
     "Derek",
     "Jake",
     "Matt F",
-    "Matt A",
+    "Aaron",
     "Paul",
     "Andrew",
     "Marc"
@@ -566,7 +567,7 @@
     "Matt F",
     "Paul",
     "Juan",
-    "Matt A",
+    "Aaron",
     "Andrew",
     "Marc"
    ]
@@ -590,7 +591,7 @@
     "Juan",
     "Jake",
     "Matt F",
-    "Matt A",
+    "Aaron",
     "Andrew",
     "Marc"
    ]
@@ -614,7 +615,7 @@
     "Derek",
     "Andrew",
     "Jake",
-    "Matt A",
+    "Aaron",
     "Marc",
     "Matt F"
    ]
@@ -640,7 +641,7 @@
     "Marc",
     "Andrew",
     "Matt F",
-    "Matt A"
+    "Aaron"
    ]
   },
   {
@@ -664,7 +665,7 @@
     "Lij",
     "Andrew",
     "Matt F",
-    "Matt A"
+    "Aaron"
    ]
   },
   {
@@ -686,7 +687,7 @@
     "Marc",
     "Derek",
     "Lij",
-    "Matt A",
+    "Aaron",
     "Matt F",
     "Andrew"
    ]
@@ -709,7 +710,7 @@
     "Jake",
     "Marc",
     "Matt Z",
-    "Matt A",
+    "Aaron",
     "Lij",
     "Matt F",
     "Andrew"
@@ -736,7 +737,7 @@
     "Lij",
     "Andrew",
     "Matt F",
-    "Matt A"
+    "Aaron"
    ]
   },
   {
@@ -1286,14 +1287,14 @@
     "longest_no1_run": 1,
     "longest_no1_run_span": "2025 Wk 3"
    },
-   "Matt A": {
-    "legacy": false,
-    "boards": 26,
+   "Aaron": {
+    "legacy": true,
+    "boards": 12,
     "no1": 1,
-    "top3": 3,
+    "top3": 1,
     "last": 4,
-    "avg_rank": 8.04,
-    "avg_pct": 64.0,
+    "avg_rank": 9.5,
+    "avg_pct": 77.3,
     "best": 1,
     "worst": 12,
     "longest_no1_run": 1,
@@ -1311,6 +1312,19 @@
     "worst": 9,
     "longest_no1_run": 1,
     "longest_no1_run_span": "2026 Wk 2"
+   },
+   "Matt A": {
+    "legacy": false,
+    "boards": 14,
+    "no1": 0,
+    "top3": 2,
+    "last": 0,
+    "avg_rank": 6.79,
+    "avg_pct": 52.6,
+    "best": 2,
+    "worst": 11,
+    "longest_no1_run": 0,
+    "longest_no1_run_span": null
    }
   },
   "by_season": {
@@ -1722,8 +1736,8 @@
      "longest_no1_run": 3,
      "longest_no1_run_span": "2024 Wk 8-11"
     },
-    "Matt A": {
-     "legacy": false,
+    "Aaron": {
+     "legacy": true,
      "boards": 12,
      "no1": 1,
      "top3": 1,

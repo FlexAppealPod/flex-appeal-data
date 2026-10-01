@@ -16,6 +16,9 @@ Rules
   is mapped to him by (season, roster_id).
 - Mid-season owner changes: data/sources/owner_overrides.json credits a roster's
   games in the listed weeks to another manager (Sleeper keeps only the final owner).
+- Whole-season owner fixes: owner_overrides.json "season_owners" swaps a roster's
+  owner_id for one season (a roster handed to a new manager after the season shows
+  the new manager in Sleeper; 2024 roster 11 was Aaron's, not Matt A's).
 - Manual title rulings (2022 co-champions) come from data/sources/champions_manual.json;
   the H2H game itself still counts on combined score.
 - Pre-Sleeper seasons (2022, ESPN) come from processed files in data/sources/
@@ -67,7 +70,7 @@ FIRST_NAMES = {
 }
 # Display names for Legacy Owners (ids stay stable)
 LEGACY_NAMES = {"jmoneymess": "Jared", "deion": "Deion", "anupds23": "Anup",
-                "mrpfizer": "Matt F", "jakefitzy": "Jake F", "michaeldewey99": "Mike"}
+                "mrpfizer": "Matt F", "jakefitzy": "Jake F", "michaeldewey99": "Mike", "amartinez528": "Aaron"}
 DISPLAY_NAMES_FILE = SOURCES / "display_names.json"  # single source for display names (manual)
 if DISPLAY_NAMES_FILE.exists():
     _dn = json.loads(DISPLAY_NAMES_FILE.read_text())
@@ -86,6 +89,41 @@ OVERRIDES_FILE = SOURCES / "owner_overrides.json"  # mid-season owner changes (m
 SCORE_OVERRIDES_FILE = SOURCES / "score_overrides.json"  # official weekly totals where Sleeper matchup data under-counts (manual)
 CHAMPIONS_FILE = SOURCES / "champions_manual.json"  # manual title rulings (2022 co-champions)
 PLACEMENT = {1: "Championship", 3: "3rd-place game", 5: "5th-place game"}
+
+
+def load_season_owners() -> list[dict]:
+    """Whole-season roster owner fixes (owner_overrides.json "season_owners")."""
+    if not OVERRIDES_FILE.exists():
+        return []
+    return json.loads(OVERRIDES_FILE.read_text()).get("season_owners", [])
+
+
+def apply_season_owners(season: str, rosters: list[dict], users, fixes: list[str] | None = None) -> list[dict]:
+    """Return rosters with owner_id swapped to the true owner for this season (owner_overrides.json season_owners).
+
+    Sleeper only stores a roster's current owner: a roster handed to a new manager after the season
+    shows the new manager for the old season too. users (dict by user_id, or list) gets a stub entry for
+    a true owner who is no longer in the league's user list, so ids / handles stay stable.
+    """
+    fixes_here = [o for o in load_season_owners() if str(o["season"]) == str(season)]
+    if not fixes_here:
+        return rosters
+    out = []
+    for r in rosters:
+        o = next((x for x in fixes_here if x["roster_id"] == r.get("roster_id")), None)
+        if o and r.get("owner_id") != o["sleeper_user_id"]:
+            r = dict(r, owner_id=o["sleeper_user_id"], sleeper_owner_id=r.get("owner_id"))
+            if fixes is not None:
+                fixes.append(f"{season} roster {o['roster_id']}: owner {(o.get('sleeper_owner_now') or {}).get('sleeper_handle') or r['sleeper_owner_id']}"
+                             f" -> {o.get('sleeper_handle') or o['sleeper_user_id']} ({o.get('display_name') or o['manager']}, whole season)")
+        out.append(r)
+    for o in fixes_here:
+        stub = {"user_id": o["sleeper_user_id"], "display_name": o.get("sleeper_handle") or o["manager"], "metadata": {}}
+        if isinstance(users, dict):
+            users.setdefault(o["sleeper_user_id"], stub)
+        elif not any(u.get("user_id") == o["sleeper_user_id"] for u in users):
+            users.append(stub)
+    return out
 
 
 def load_score_overrides() -> list[dict]:
@@ -217,6 +255,7 @@ def main() -> None:
     overrides = json.loads(OVERRIDES_FILE.read_text())["overrides"] if OVERRIDES_FILE.exists() else []
     score_overrides = load_score_overrides()
     score_fixes: list[str] = []
+    owner_fixes: list[str] = []
 
     def override_for(season, rid, weeks):
         # all weeks of the game must fall inside the override range
@@ -263,7 +302,7 @@ def main() -> None:
         lg = get_json(f"league/{lid}")
         s = lg["settings"]
         users = {u["user_id"]: u for u in (get_json(f"league/{lid}/users") or [])}
-        rosters = get_json(f"league/{lid}/rosters") or []
+        rosters = apply_season_owners(season, get_json(f"league/{lid}/rosters") or [], users, owner_fixes)
         rid2uid = {r["roster_id"]: r.get("owner_id") for r in rosters}
         wb = get_json(f"league/{lid}/winners_bracket") or []
         lb = get_json(f"league/{lid}/losers_bracket") or []
@@ -487,6 +526,7 @@ def main() -> None:
                       "Managers are keyed by Sleeper account, so team-name and roster changes don't split records. "
                       "2022 was played on ESPN (8 teams); 2023 onward on Sleeper. "
                       "Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Weeks 1-6, Matt Z from Week 7). "
+                      "Whole-season owner fixes come from its season_owners list (2024 roster 11: Aaron all season; Sleeper now lists Matt A, who took the roster over after the season). "
                       "Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total "
                       "(2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). "
                       "Deion's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records."),
@@ -494,6 +534,7 @@ def main() -> None:
             "matrix_note": "matrix[row][col] = row manager's record vs col manager; pairs that never met are omitted.",
             "warnings": warnings,
             "score_overrides_applied": score_fixes,
+            "season_owner_fixes_applied": owner_fixes,
         },
         "current_managers": cur_ids,
         "former_managers": former_ids,

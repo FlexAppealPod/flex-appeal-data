@@ -9,7 +9,8 @@ ids, display names and title games from data/h2h_all_time.json):
 Rules
 - Keyed by manager (same ids / names / Legacy Owners label as build_h2h.py), incl. the
   mid-season owner overrides in data/sources/owner_overrides.json (2024 roster 2:
-  Mike Weeks 1-6, Matt Z from Week 7).
+  Mike Weeks 1-6, Matt Z from Week 7) and its whole-season "season_owners" fixes
+  (2024 roster 11: Aaron, not Matt A), applied via build_h2h.apply_season_owners.
 - Weekly scores are Sleeper matchup points, except the official standings totals listed in
   data/sources/score_overrides.json (2024 Week 7 trade reversals), applied via
   build_h2h.apply_score_overrides so every build reconciles with the standings.
@@ -217,7 +218,7 @@ def main() -> None:
         complete = lg.get("status") == "complete"
         s = lg["settings"]
         users = fetch(f"league/{lid}/users", complete) or []
-        rosters = fetch(f"league/{lid}/rosters", complete) or []
+        rosters = H.apply_season_owners(season, fetch(f"league/{lid}/rosters", complete) or [], users)  # whole-season owner fixes
         wb = fetch(f"league/{lid}/winners_bracket", complete) or []
         rid2uid = {r["roster_id"]: r.get("owner_id") for r in rosters}
         last_leg = int(s.get("last_scored_leg") or 0)
@@ -616,6 +617,7 @@ def main() -> None:
             "labels": H.LABELS,
             "rules": [
                 "Keyed by manager (same ids, names and Legacy Owners label as h2h_all_time.json). 2024 roster 2 is split: Mike Weeks 1-6 (left at 11-1), Matt Z from Week 7.",
+                "2024 roster 11 is Aaron's (Legacy Owner) for the whole season: Sleeper now lists Matt A as its owner because he took the roster over after the 2024 season (data/sources/owner_overrides.json season_owners). Matt A's first season is 2025.",
                 "Regular-season record = H2H + weekly median where the league used a median game (Sleeper 2024+). 2022 (ESPN) and 2023 (Sleeper standings) had no median game, so their records are H2H only.",
                 "PF, PA, points per game and all-play are regular season only. All-play = record if you played every team every week.",
                 "Playoff appearances / finals / titles and playoff records come from winners-bracket games; a two-week round is one game on combined score.",

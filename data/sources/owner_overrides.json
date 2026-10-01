@@ -1,5 +1,5 @@
 {
-  "note": "Manual owner overrides for rosters that changed hands mid-season. Sleeper only records a roster's final owner, so games in the listed weeks are credited to the listed manager id instead.",
+  "note": "Manual owner overrides. 'overrides': rosters that changed hands mid-season (games in the listed weeks are credited to the listed manager id). 'season_owners': rosters whose Sleeper owner_id is wrong for the WHOLE season (Sleeper only stores a roster's current owner, so a roster handed to a new manager after the season shows the new manager for the old season). Every build (build_h2h.py, build_all_time_stats.py, apply_history_overrides.py) swaps the roster's owner to sleeper_user_id for that season before anything is counted.",
   "overrides": [
     {
       "season": "2024",
@@ -17,6 +17,31 @@
         "Roster 2 was 11-1 (H2H plus median) after Week 6 and 11-3 after Week 7.",
         "Sleeper 2024 transactions: the 2024-10-19 trade with roster 8 (Matt F) was reversed by the commissioner on 2024-10-20 (see score_overrides.json). Matt Z's first move of his own was a waiver claim on Tue 2024-10-22.",
         "Nothing Catchy Fantasy Football Podcast (Mike's show): the last episode, 'Week 7: Halfway to the Playoffs!', was published 2024-10-15."
+      ]
+    }
+  ],
+  "season_owners": [
+    {
+      "season": "2024",
+      "roster_id": 11,
+      "manager": "amartinez528",
+      "sleeper_user_id": "1135318402727460864",
+      "sleeper_handle": "AMartinez528",
+      "full_name": "Aaron Martinez",
+      "display_name": "Aaron",
+      "sleeper_owner_now": {
+        "sleeper_user_id": "1135747453468438528",
+        "sleeper_handle": "matkinson94",
+        "manager": "matt-a",
+        "full_name": "Matt Atkinson"
+      },
+      "reason": "Aaron Martinez managed 2024 roster 11 ('Team AMartinez', renamed 'Comrade Kamara') for the entire 2024 season (6-20, 4-9 H2H, missed playoffs) and then left the league. On 2024-12-31, after the season, the roster was handed to Matt Atkinson (Matt A), so Sleeper's 2024 league now lists matkinson94 as roster 11's owner. Matt A's first season was 2025 (roster 8 in the fresh 2025 league). The 2024 roster 11 season belongs to Aaron (Legacy Owner).",
+      "evidence": [
+        "Sleeper 2024 transactions: every roster 11 move from 2024-09-02 through 2024-11-20 (15 waiver/FA moves plus 3 trades) was created by user 1135318402727460864 (amartinez528 / AMartinez528). matkinson94's only 2024 activity is 14 drops on 2024-12-31 between 10:18 and 10:20 MST, after the 2024 championship.",
+        "Nothing Catchy Podcast 2024-09-10 Power Rankings: 'Team A Martinez' ranked #1 (Kamara, Josh Allen, Waddle, Pittman, Ekeler roster = Sleeper 2024 roster 11).",
+        "Flex Appeal Podcast 2024-11-20: 'Aaron Martinez, that's team Aaron or Comrade Kamara ... did no trades'.",
+        "Matt A (Matt Atkinson, X @MattIsGeneric) says 2025 was his first season in the league.",
+        "Sleeper draft picks (picked_by) and roster owner_id are rewritten to the current owner, so they can't show the original 2024 manager; the transaction creator ids can."
       ]
     }
   ]

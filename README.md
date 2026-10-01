@@ -11,7 +11,8 @@ cd /workspace/flex-appeal-data
 python3 build_site_data.py && python3 apply_history_overrides.py
 ```
 
-`apply_history_overrides.py` merges manual title rulings from
+`apply_history_overrides.py` also applies the whole-season owner fixes in
+`data/sources/owner_overrides.json` (`season_owners`) to history.json. It merges manual title rulings from
 `data/sources/champions_manual.json` into `history.json` (build_site_data.py only
 knows the Sleeper seasons). Right now that's 2022: Deion & Jared,
 co-champions (the Week 17 final was cut short when the Bills-Bengals game was
@@ -66,7 +67,7 @@ Keyed by person (Sleeper user / ESPN owner), so team renames don't split records
 2022 (ESPN) comes from the processed file `data/sources/espn_2022_games.json`
 (raw ESPN dumps are not committed). Past managers are labeled **Legacy Owners**
 (`meta.labels.former`; JSON keys stay `former_*`): Deion, Jake F,
-Jared, Mike, Anup and Matt F (`managers[].name`; ids
+Jared, Mike, Anup, Matt F and Aaron (`managers[].name`; ids
 stay stable). Everyone shows by first name; shared first names get a last initial (Matt Z, Matt A,
 Matt F, Jake F; current Jake is just "Jake"). All display names live in `data/sources/display_names.json` (its `site_short_names` also sets the `short_name` in teams.json / team_stats.json via `build_site_data.py` and `build_team_stats.py`; `owner` stays the full name)
 (also applied to history.json by `apply_history_overrides.py`; current managers keep full
@@ -74,6 +75,15 @@ names there because the site's team pages match history.json to teams.json owner
 to him; his 2022 ESPN team also appears as "Team Hulse". Mid-season owner changes
 live in `data/sources/owner_overrides.json`: 2024 roster 2 is credited to Mike
 for Weeks 1-6 (he left at 11-1) and to Matt Z from Week 7 (`managers[].partial_seasons`).
+Whole-season owner fixes live in the same file under `season_owners`: Sleeper stores only a
+roster's *current* owner, so a roster handed to a new manager after the season shows him for the
+old season too. 2024 roster 11 ("Team AMartinez" / "Comrade Kamara", 6-20) was Aaron Martinez's
+(Sleeper `AMartinez528`, Legacy Owner "Aaron") all season; Matt A (`matkinson94`) only took it over
+on 2024-12-31, and his first season is 2025. `build_h2h.apply_season_owners` swaps the owner before
+anything is counted (h2h, all-time stats), and `apply_history_overrides.py` moves that season's
+career line and extremes names in history.json (`season_owner_fixes_applied`). To check a roster's
+real manager, look at who created its Sleeper transactions (`creator`), not `owner_id` or draft
+`picked_by` (both are rewritten to the current owner).
 Weekly scores are Sleeper matchup points except the official standings totals in
 `data/sources/score_overrides.json` (2024 Week 7: trades reversed after the Sunday games
 left the returned starters at 0 in Sleeper's matchup data; `meta.score_overrides_applied`).
@@ -115,7 +125,8 @@ through week N−1. **Week 3 board is locked** (posted movements).
 | 2023 (Nothing Catchy FFL) | `996133920917856256` |
 
 Champions come from Sleeper `winners_bracket` (`p=1`). 2023 roster 3
-(owner_id null) is labeled **Deion**. Jake’s blank Sleeper team name is
+(owner_id null) is labeled **Deion**. 2024 roster 11 (Sleeper owner now matkinson94) is
+**Aaron** (see `season_owners` in `data/sources/owner_overrides.json`). Jake’s blank Sleeper team name is
 shown as **Drought Ends Here**.
 
 ## Fallback cache
