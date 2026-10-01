@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T12:09:06-07:00",
+    "generated_at": "2026-10-01T12:14:34-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -148,6 +148,7 @@
       "games": 36,
       "team_scores": 72
     },
+    "career_split": "career[].regular = regular season only (games = H2H games; record = H2H + median where used; PF/PA/PPG/all-play; high/low week from regular-season weeks). career[].playoffs = winners-bracket games incl. placement games (3rd-place, 5th-place, 5th-place semifinal); consolation games excluded. A two-week playoff round is ONE game decided on combined score (games, W-L, pct, best/worst game), but its PF/PA are the two-week totals. playoffs.ppg / pa_pg are per WEEK played (PF / playoffs.weeks), so two-week rounds compare fairly with one-week rounds; playoffs.weeks = playoff weeks played. high_week / low_week are single playoff weeks (each leg of a two-week round). best_game = biggest winning margin, worst_game = biggest losing margin (game level). appearances = seasons in the winners bracket (a first-round bye counts). finishes lists every season. 2022 final: Deion and Jared are co-champions (a title for both), but the W-L counts Deion's combined-score lead (203.96-194.58) as a win, as in h2h_all_time.json. Top-level career fields are unchanged for backward compatibility.",
     "field_notes": {
       "career.games_played": "Regular-season head-to-head games played (median results not counted as games). Same value as career.games.",
       "career.playoff_games": "Winners-bracket games played incl. 3rd/5th-place games; a two-week round counts once. Equals the playoff_record total."
@@ -233,7 +234,247 @@
       "full_seasons": 4,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 53,
+        "record": {
+          "w": 45,
+          "l": 35,
+          "t": 0
+        },
+        "record_str": "45-35",
+        "record_pct": 0.562,
+        "h2h": {
+          "w": 29,
+          "l": 24,
+          "t": 0
+        },
+        "h2h_str": "29-24",
+        "h2h_pct": 0.547,
+        "median": {
+          "w": 16,
+          "l": 11,
+          "t": 0
+        },
+        "median_str": "16-11",
+        "median_pct": 0.593,
+        "pf": 6218.8,
+        "pa": 5747.38,
+        "ppg": 117.34,
+        "pa_pg": 108.44,
+        "all_play": {
+          "w": 288,
+          "l": 243,
+          "t": 0
+        },
+        "all_play_str": "288-243",
+        "all_play_pct": 0.542,
+        "high_week": {
+          "season": "2024",
+          "week": 11,
+          "points": 202.08,
+          "opponent": "Lij",
+          "opponent_points": 92.38
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 6,
+          "points": 64.62,
+          "opponent": "Jared",
+          "opponent_points": 101.66
+        },
+        "starter_tds": 284,
+        "starter_yards": 39983,
+        "tds_per_game": 5.36
+      },
+      "playoffs": {
+        "appearances": 3,
+        "seasons": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "games": 8,
+        "weeks": 12,
+        "record": {
+          "w": 6,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "6-2",
+        "record_pct": 0.75,
+        "pf": 1450.14,
+        "pa": 1367.38,
+        "ppg": 120.85,
+        "pa_pg": 113.95,
+        "finals": 2,
+        "titles": 2,
+        "title_seasons": [
+          "2023",
+          "2024"
+        ],
+        "high_week": {
+          "season": "2024",
+          "week": 15,
+          "points": 147.76,
+          "opponent": "Juan",
+          "opponent_points": 135.94
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 15,
+          "points": 82.52,
+          "opponent": "Deion",
+          "opponent_points": 141.9
+        },
+        "best_game": {
+          "season": "2023",
+          "weeks": "15",
+          "round": "Semifinal",
+          "points": 123.34,
+          "opponent": "Juan",
+          "opponent_points": 71.86,
+          "margin": 51.48
+        },
+        "worst_game": {
+          "season": "2022",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 187.2,
+          "opponent": "Deion",
+          "opponent_points": 277.48,
+          "margin": -90.28
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "4th",
+            "made_playoffs": true,
+            "playoff_record": "0-2"
+          },
+          {
+            "season": "2023",
+            "finish": "Champion",
+            "made_playoffs": true,
+            "playoff_record": "3-0"
+          },
+          {
+            "season": "2024",
+            "finish": "Champion",
+            "made_playoffs": true,
+            "playoff_record": "3-0"
+          },
+          {
+            "season": "2025",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2022",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 187.2,
+            "opponent": "Deion",
+            "opponent_points": 277.48,
+            "result": "l",
+            "margin": -90.28
+          },
+          {
+            "season": "2022",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 191.7,
+            "opponent": "Vlad",
+            "opponent_points": 201.44,
+            "result": "l",
+            "margin": -9.74
+          },
+          {
+            "season": "2023",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 141.94,
+            "opponent": "Marc",
+            "opponent_points": 104.14,
+            "result": "w",
+            "margin": 37.8
+          },
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 123.34,
+            "opponent": "Juan",
+            "opponent_points": 71.86,
+            "result": "w",
+            "margin": 51.48
+          },
+          {
+            "season": "2023",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 267.12,
+            "opponent": "Deion",
+            "opponent_points": 243.0,
+            "result": "w",
+            "margin": 24.12
+          },
+          {
+            "season": "2024",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 141.62,
+            "opponent": "Matt Z",
+            "opponent_points": 96.72,
+            "result": "w",
+            "margin": 44.9
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 147.76,
+            "opponent": "Juan",
+            "opponent_points": 135.94,
+            "result": "w",
+            "margin": 11.82
+          },
+          {
+            "season": "2024",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 249.46,
+            "opponent": "Paul",
+            "opponent_points": 236.8,
+            "result": "w",
+            "margin": 12.66
+          }
+        ]
+      }
     },
     {
       "manager": "lij",
@@ -311,7 +552,210 @@
       "full_seasons": 4,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 53,
+        "record": {
+          "w": 41,
+          "l": 39,
+          "t": 0
+        },
+        "record_str": "41-39",
+        "record_pct": 0.512,
+        "h2h": {
+          "w": 28,
+          "l": 25,
+          "t": 0
+        },
+        "h2h_str": "28-25",
+        "h2h_pct": 0.528,
+        "median": {
+          "w": 13,
+          "l": 14,
+          "t": 0
+        },
+        "median_str": "13-14",
+        "median_pct": 0.481,
+        "pf": 6050.22,
+        "pa": 6021.8,
+        "ppg": 114.16,
+        "pa_pg": 113.62,
+        "all_play": {
+          "w": 275,
+          "l": 256,
+          "t": 0
+        },
+        "all_play_str": "275-256",
+        "all_play_pct": 0.518,
+        "high_week": {
+          "season": "2022",
+          "week": 2,
+          "points": 183.82,
+          "opponent": "Jared",
+          "opponent_points": 93.18
+        },
+        "low_week": {
+          "season": "2026",
+          "week": 3,
+          "points": 60.12,
+          "opponent": "Marc",
+          "opponent_points": 111.9
+        },
+        "starter_tds": 265,
+        "starter_yards": 38788,
+        "tds_per_game": 5.0
+      },
+      "playoffs": {
+        "appearances": 2,
+        "seasons": [
+          "2023",
+          "2025"
+        ],
+        "games": 5,
+        "weeks": 8,
+        "record": {
+          "w": 2,
+          "l": 3,
+          "t": 0
+        },
+        "record_str": "2-3",
+        "record_pct": 0.4,
+        "pf": 891.56,
+        "pa": 965.86,
+        "ppg": 111.44,
+        "pa_pg": 120.73,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2023",
+          "week": 15,
+          "points": 160.02,
+          "opponent": "Marc",
+          "opponent_points": 134.26
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 16,
+          "points": 93.4,
+          "opponent": "Juan",
+          "opponent_points": 125.64
+        },
+        "best_game": {
+          "season": "2023",
+          "weeks": "15",
+          "round": "5th-place game",
+          "points": 160.02,
+          "opponent": "Marc",
+          "opponent_points": 134.26,
+          "margin": 25.76
+        },
+        "worst_game": {
+          "season": "2025",
+          "weeks": "16-17",
+          "round": "3rd-place game",
+          "points": 196.3,
+          "opponent": "Juan",
+          "opponent_points": 266.36,
+          "margin": -70.06
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2023",
+            "finish": "5th",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2025",
+            "finish": "4th",
+            "made_playoffs": true,
+            "playoff_record": "1-2"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2023",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 105.08,
+            "opponent": "Jake F",
+            "opponent_points": 108.92,
+            "result": "l",
+            "margin": -3.84
+          },
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 160.02,
+            "opponent": "Marc",
+            "opponent_points": 134.26,
+            "result": "w",
+            "margin": 25.76
+          },
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 211.36,
+            "opponent": "Matt A",
+            "opponent_points": 206.28,
+            "result": "w",
+            "margin": 5.08
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 218.8,
+            "opponent": "Matt Z",
+            "opponent_points": 250.04,
+            "result": "l",
+            "margin": -31.24
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 196.3,
+            "opponent": "Juan",
+            "opponent_points": 266.36,
+            "result": "l",
+            "margin": -70.06
+          }
+        ]
+      }
     },
     {
       "manager": "vlad",
@@ -391,7 +835,235 @@
       "full_seasons": 4,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 53,
+        "record": {
+          "w": 46,
+          "l": 34,
+          "t": 0
+        },
+        "record_str": "46-34",
+        "record_pct": 0.575,
+        "h2h": {
+          "w": 27,
+          "l": 26,
+          "t": 0
+        },
+        "h2h_str": "27-26",
+        "h2h_pct": 0.509,
+        "median": {
+          "w": 19,
+          "l": 8,
+          "t": 0
+        },
+        "median_str": "19-8",
+        "median_pct": 0.704,
+        "pf": 5899.52,
+        "pa": 5906.8,
+        "ppg": 111.31,
+        "pa_pg": 111.45,
+        "all_play": {
+          "w": 276,
+          "l": 255,
+          "t": 0
+        },
+        "all_play_str": "276-255",
+        "all_play_pct": 0.52,
+        "high_week": {
+          "season": "2024",
+          "week": 9,
+          "points": 163.24,
+          "opponent": "Matt F",
+          "opponent_points": 119.7
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 12,
+          "points": 56.8,
+          "opponent": "Jake",
+          "opponent_points": 80.32
+        },
+        "starter_tds": 259,
+        "starter_yards": 38687,
+        "tds_per_game": 4.89
+      },
+      "playoffs": {
+        "appearances": 3,
+        "seasons": [
+          "2022",
+          "2024",
+          "2025"
+        ],
+        "games": 7,
+        "weeks": 13,
+        "record": {
+          "w": 4,
+          "l": 3,
+          "t": 0
+        },
+        "record_str": "4-3",
+        "record_pct": 0.571,
+        "pf": 1650.16,
+        "pa": 1610.72,
+        "ppg": 126.94,
+        "pa_pg": 123.9,
+        "finals": 1,
+        "titles": 1,
+        "title_seasons": [
+          "2025"
+        ],
+        "high_week": {
+          "season": "2025",
+          "week": 15,
+          "points": 191.9,
+          "opponent": "Juan",
+          "opponent_points": 130.1
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 14,
+          "points": 68.38,
+          "opponent": "Jared",
+          "opponent_points": 123.58
+        },
+        "best_game": {
+          "season": "2025",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 340.76,
+          "opponent": "Juan",
+          "opponent_points": 219.06,
+          "margin": 121.7
+        },
+        "worst_game": {
+          "season": "2022",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 165.58,
+          "opponent": "Jared",
+          "opponent_points": 264.24,
+          "margin": -98.66
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "3rd",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2024",
+            "finish": "4th",
+            "made_playoffs": true,
+            "playoff_record": "0-2"
+          },
+          {
+            "season": "2025",
+            "finish": "Champion",
+            "made_playoffs": true,
+            "playoff_record": "3-0"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2022",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 165.58,
+            "opponent": "Jared",
+            "opponent_points": 264.24,
+            "result": "l",
+            "margin": -98.66
+          },
+          {
+            "season": "2022",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 201.44,
+            "opponent": "Doug",
+            "opponent_points": 191.7,
+            "result": "w",
+            "margin": 9.74
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 129.64,
+            "opponent": "Paul",
+            "opponent_points": 155.5,
+            "result": "l",
+            "margin": -25.86
+          },
+          {
+            "season": "2024",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 297.16,
+            "opponent": "Juan",
+            "opponent_points": 361.06,
+            "result": "l",
+            "margin": -63.9
+          },
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 292.38,
+            "opponent": "Derek",
+            "opponent_points": 198.2,
+            "result": "w",
+            "margin": 94.18
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 340.76,
+            "opponent": "Juan",
+            "opponent_points": 219.06,
+            "result": "w",
+            "margin": 121.7
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 223.2,
+            "opponent": "Matt Z",
+            "opponent_points": 220.96,
+            "result": "w",
+            "margin": 2.24
+          }
+        ]
+      }
     },
     {
       "manager": "jake",
@@ -469,7 +1141,123 @@
       "full_seasons": 4,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 53,
+        "record": {
+          "w": 31,
+          "l": 49,
+          "t": 0
+        },
+        "record_str": "31-49",
+        "record_pct": 0.388,
+        "h2h": {
+          "w": 20,
+          "l": 33,
+          "t": 0
+        },
+        "h2h_str": "20-33",
+        "h2h_pct": 0.377,
+        "median": {
+          "w": 11,
+          "l": 16,
+          "t": 0
+        },
+        "median_str": "11-16",
+        "median_pct": 0.407,
+        "pf": 5607.96,
+        "pa": 6090.2,
+        "ppg": 105.81,
+        "pa_pg": 114.91,
+        "all_play": {
+          "w": 246,
+          "l": 285,
+          "t": 0
+        },
+        "all_play_str": "246-285",
+        "all_play_pct": 0.463,
+        "high_week": {
+          "season": "2023",
+          "week": 4,
+          "points": 155.26,
+          "opponent": "Jared",
+          "opponent_points": 84.38
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 10,
+          "points": 51.1,
+          "opponent": "Matt Z",
+          "opponent_points": 108.62
+        },
+        "starter_tds": 260,
+        "starter_yards": 37440,
+        "tds_per_game": 4.91
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2025",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     },
     {
       "manager": "juan",
@@ -546,7 +1334,215 @@
       "full_seasons": 3,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 40,
+        "record": {
+          "w": 47,
+          "l": 20,
+          "t": 0
+        },
+        "record_str": "47-20",
+        "record_pct": 0.701,
+        "h2h": {
+          "w": 26,
+          "l": 14,
+          "t": 0
+        },
+        "h2h_str": "26-14",
+        "h2h_pct": 0.65,
+        "median": {
+          "w": 21,
+          "l": 6,
+          "t": 0
+        },
+        "median_str": "21-6",
+        "median_pct": 0.778,
+        "pf": 5028.32,
+        "pa": 4434.86,
+        "ppg": 125.71,
+        "pa_pg": 110.87,
+        "all_play": {
+          "w": 314,
+          "l": 126,
+          "t": 0
+        },
+        "all_play_str": "314-126",
+        "all_play_pct": 0.714,
+        "high_week": {
+          "season": "2024",
+          "week": 12,
+          "points": 173.7,
+          "opponent": "Andrew",
+          "opponent_points": 106.36
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 9,
+          "points": 66.84,
+          "opponent": "Doug",
+          "opponent_points": 91.98
+        },
+        "starter_tds": 216,
+        "starter_yards": 32362,
+        "tds_per_game": 5.4
+      },
+      "playoffs": {
+        "appearances": 3,
+        "seasons": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "games": 6,
+        "weeks": 10,
+        "record": {
+          "w": 3,
+          "l": 3,
+          "t": 0
+        },
+        "record_str": "3-3",
+        "record_pct": 0.5,
+        "pf": 1279.16,
+        "pa": 1307.86,
+        "ppg": 127.92,
+        "pa_pg": 130.79,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2024",
+          "week": 17,
+          "points": 199.68,
+          "opponent": "Vlad",
+          "opponent_points": 144.98
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 15,
+          "points": 71.86,
+          "opponent": "Doug",
+          "opponent_points": 123.34
+        },
+        "best_game": {
+          "season": "2025",
+          "weeks": "16-17",
+          "round": "3rd-place game",
+          "points": 266.36,
+          "opponent": "Lij",
+          "opponent_points": 196.3,
+          "margin": 70.06
+        },
+        "worst_game": {
+          "season": "2025",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 219.06,
+          "opponent": "Vlad",
+          "opponent_points": 340.76,
+          "margin": -121.7
+        },
+        "finishes": [
+          {
+            "season": "2023",
+            "finish": "3rd",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2024",
+            "finish": "3rd",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2025",
+            "finish": "3rd",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 71.86,
+            "opponent": "Doug",
+            "opponent_points": 123.34,
+            "result": "l",
+            "margin": -51.48
+          },
+          {
+            "season": "2023",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 224.88,
+            "opponent": "Jake F",
+            "opponent_points": 202.54,
+            "result": "w",
+            "margin": 22.34
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 135.94,
+            "opponent": "Doug",
+            "opponent_points": 147.76,
+            "result": "l",
+            "margin": -11.82
+          },
+          {
+            "season": "2024",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 361.06,
+            "opponent": "Vlad",
+            "opponent_points": 297.16,
+            "result": "w",
+            "margin": 63.9
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 219.06,
+            "opponent": "Vlad",
+            "opponent_points": 340.76,
+            "result": "l",
+            "margin": -121.7
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 266.36,
+            "opponent": "Lij",
+            "opponent_points": 196.3,
+            "result": "w",
+            "margin": 70.06
+          }
+        ]
+      }
     },
     {
       "manager": "marc",
@@ -623,7 +1619,161 @@
       "full_seasons": 3,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 40,
+        "record": {
+          "w": 28,
+          "l": 39,
+          "t": 0
+        },
+        "record_str": "28-39",
+        "record_pct": 0.418,
+        "h2h": {
+          "w": 17,
+          "l": 23,
+          "t": 0
+        },
+        "h2h_str": "17-23",
+        "h2h_pct": 0.425,
+        "median": {
+          "w": 11,
+          "l": 16,
+          "t": 0
+        },
+        "median_str": "11-16",
+        "median_pct": 0.407,
+        "pf": 4438.16,
+        "pa": 4476.29,
+        "ppg": 110.95,
+        "pa_pg": 111.91,
+        "all_play": {
+          "w": 216,
+          "l": 224,
+          "t": 0
+        },
+        "all_play_str": "216-224",
+        "all_play_pct": 0.491,
+        "high_week": {
+          "season": "2023",
+          "week": 10,
+          "points": 149.16,
+          "opponent": "Deion",
+          "opponent_points": 141.72
+        },
+        "low_week": {
+          "season": "2024",
+          "week": 12,
+          "points": 72.82,
+          "opponent": "Lij",
+          "opponent_points": 100.82
+        },
+        "starter_tds": 200,
+        "starter_yards": 28761,
+        "tds_per_game": 5.0
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2023"
+        ],
+        "games": 2,
+        "weeks": 2,
+        "record": {
+          "w": 0,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "0-2",
+        "record_pct": 0.0,
+        "pf": 238.4,
+        "pa": 301.96,
+        "ppg": 119.2,
+        "pa_pg": 150.98,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2023",
+          "week": 15,
+          "points": 134.26,
+          "opponent": "Lij",
+          "opponent_points": 160.02
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 14,
+          "points": 104.14,
+          "opponent": "Doug",
+          "opponent_points": 141.94
+        },
+        "best_game": null,
+        "worst_game": {
+          "season": "2023",
+          "weeks": "14",
+          "round": "Quarterfinal",
+          "points": 104.14,
+          "opponent": "Doug",
+          "opponent_points": 141.94,
+          "margin": -37.8
+        },
+        "finishes": [
+          {
+            "season": "2023",
+            "finish": "6th",
+            "made_playoffs": true,
+            "playoff_record": "0-2"
+          },
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2025",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2023",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 104.14,
+            "opponent": "Doug",
+            "opponent_points": 141.94,
+            "result": "l",
+            "margin": -37.8
+          },
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 134.26,
+            "opponent": "Lij",
+            "opponent_points": 160.02,
+            "result": "l",
+            "margin": -25.76
+          }
+        ]
+      }
     },
     {
       "manager": "matt-z",
@@ -701,7 +1851,203 @@
       "partial_seasons": [
         "2024 (Weeks 7-17)",
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 34,
+        "record": {
+          "w": 31,
+          "l": 24,
+          "t": 0
+        },
+        "record_str": "31-24",
+        "record_pct": 0.564,
+        "h2h": {
+          "w": 18,
+          "l": 16,
+          "t": 0
+        },
+        "h2h_str": "18-16",
+        "h2h_pct": 0.529,
+        "median": {
+          "w": 13,
+          "l": 8,
+          "t": 0
+        },
+        "median_str": "13-8",
+        "median_pct": 0.619,
+        "pf": 3864.36,
+        "pa": 3597.34,
+        "ppg": 113.66,
+        "pa_pg": 105.8,
+        "all_play": {
+          "w": 190,
+          "l": 184,
+          "t": 0
+        },
+        "all_play_str": "190-184",
+        "all_play_pct": 0.508,
+        "high_week": {
+          "season": "2024",
+          "week": 12,
+          "points": 167.72,
+          "opponent": "Matt F",
+          "opponent_points": 71.46
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 9,
+          "points": 66.58,
+          "opponent": "Jared",
+          "opponent_points": 121.82
+        },
+        "starter_tds": 183,
+        "starter_yards": 25371,
+        "tds_per_game": 5.38
+      },
+      "playoffs": {
+        "appearances": 2,
+        "seasons": [
+          "2024",
+          "2025"
+        ],
+        "games": 5,
+        "weeks": 8,
+        "record": {
+          "w": 3,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "3-2",
+        "record_pct": 0.6,
+        "pf": 930.66,
+        "pa": 842.18,
+        "ppg": 116.33,
+        "pa_pg": 105.27,
+        "finals": 1,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2024",
+          "week": 15,
+          "points": 129.4,
+          "opponent": "Derek",
+          "opponent_points": 93.46
+        },
+        "low_week": {
+          "season": "2024",
+          "week": 14,
+          "points": 96.72,
+          "opponent": "Doug",
+          "opponent_points": 141.62
+        },
+        "best_game": {
+          "season": "2025",
+          "weeks": "12-13",
+          "round": "Quarterfinal",
+          "points": 233.54,
+          "opponent": "Andrew",
+          "opponent_points": 165.1,
+          "margin": 68.44
+        },
+        "worst_game": {
+          "season": "2024",
+          "weeks": "14",
+          "round": "Quarterfinal",
+          "points": 96.72,
+          "opponent": "Doug",
+          "opponent_points": 141.62,
+          "margin": -44.9
+        },
+        "finishes": [
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2024",
+            "finish": "5th",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2025",
+            "finish": "Runner-up",
+            "made_playoffs": true,
+            "playoff_record": "2-1"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2024",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 96.72,
+            "opponent": "Doug",
+            "opponent_points": 141.62,
+            "result": "l",
+            "margin": -44.9
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 129.4,
+            "opponent": "Derek",
+            "opponent_points": 93.46,
+            "result": "w",
+            "margin": 35.94
+          },
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 233.54,
+            "opponent": "Andrew",
+            "opponent_points": 165.1,
+            "result": "w",
+            "margin": 68.44
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 250.04,
+            "opponent": "Lij",
+            "opponent_points": 218.8,
+            "result": "w",
+            "margin": 31.24
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 220.96,
+            "opponent": "Vlad",
+            "opponent_points": 223.2,
+            "result": "l",
+            "margin": -2.24
+          }
+        ]
+      }
     },
     {
       "manager": "derek",
@@ -777,7 +2123,185 @@
       "full_seasons": 2,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 27,
+        "record": {
+          "w": 28,
+          "l": 26,
+          "t": 0
+        },
+        "record_str": "28-26",
+        "record_pct": 0.519,
+        "h2h": {
+          "w": 14,
+          "l": 13,
+          "t": 0
+        },
+        "h2h_str": "14-13",
+        "h2h_pct": 0.519,
+        "median": {
+          "w": 14,
+          "l": 13,
+          "t": 0
+        },
+        "median_str": "14-13",
+        "median_pct": 0.519,
+        "pf": 2991.7,
+        "pa": 2930.02,
+        "ppg": 110.8,
+        "pa_pg": 108.52,
+        "all_play": {
+          "w": 151,
+          "l": 146,
+          "t": 0
+        },
+        "all_play_str": "151-146",
+        "all_play_pct": 0.508,
+        "high_week": {
+          "season": "2024",
+          "week": 7,
+          "points": 152.38,
+          "opponent": "Juan",
+          "opponent_points": 118.34
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 6,
+          "points": 69.74,
+          "opponent": "Matt Z",
+          "opponent_points": 101.04
+        },
+        "starter_tds": 133,
+        "starter_yards": 18894,
+        "tds_per_game": 4.93
+      },
+      "playoffs": {
+        "appearances": 2,
+        "seasons": [
+          "2024",
+          "2025"
+        ],
+        "games": 4,
+        "weeks": 6,
+        "record": {
+          "w": 1,
+          "l": 3,
+          "t": 0
+        },
+        "record_str": "1-3",
+        "record_pct": 0.25,
+        "pf": 654.02,
+        "pa": 775.74,
+        "ppg": 109.0,
+        "pa_pg": 129.29,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2025",
+          "week": 16,
+          "points": 146.86,
+          "opponent": "Andrew",
+          "opponent_points": 103.2
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 13,
+          "points": 81.64,
+          "opponent": "Vlad",
+          "opponent_points": 139.76
+        },
+        "best_game": {
+          "season": "2025",
+          "weeks": "16-17",
+          "round": "5th-place game",
+          "points": 256.04,
+          "opponent": "Andrew",
+          "opponent_points": 200.4,
+          "margin": 55.64
+        },
+        "worst_game": {
+          "season": "2025",
+          "weeks": "12-13",
+          "round": "Quarterfinal",
+          "points": 198.2,
+          "opponent": "Vlad",
+          "opponent_points": 292.38,
+          "margin": -94.18
+        },
+        "finishes": [
+          {
+            "season": "2024",
+            "finish": "6th",
+            "made_playoffs": true,
+            "playoff_record": "0-2"
+          },
+          {
+            "season": "2025",
+            "finish": "5th",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2024",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 106.32,
+            "opponent": "Paul",
+            "opponent_points": 153.56,
+            "result": "l",
+            "margin": -47.24
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 93.46,
+            "opponent": "Matt Z",
+            "opponent_points": 129.4,
+            "result": "l",
+            "margin": -35.94
+          },
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 198.2,
+            "opponent": "Vlad",
+            "opponent_points": 292.38,
+            "result": "l",
+            "margin": -94.18
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 256.04,
+            "opponent": "Andrew",
+            "opponent_points": 200.4,
+            "result": "w",
+            "margin": 55.64
+          }
+        ]
+      }
     },
     {
       "manager": "paul",
@@ -853,7 +2377,173 @@
       "full_seasons": 2,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 27,
+        "record": {
+          "w": 25,
+          "l": 29,
+          "t": 0
+        },
+        "record_str": "25-29",
+        "record_pct": 0.463,
+        "h2h": {
+          "w": 12,
+          "l": 15,
+          "t": 0
+        },
+        "h2h_str": "12-15",
+        "h2h_pct": 0.444,
+        "median": {
+          "w": 13,
+          "l": 14,
+          "t": 0
+        },
+        "median_str": "13-14",
+        "median_pct": 0.481,
+        "pf": 2944.42,
+        "pa": 3115.05,
+        "ppg": 109.05,
+        "pa_pg": 115.37,
+        "all_play": {
+          "w": 137,
+          "l": 160,
+          "t": 0
+        },
+        "all_play_str": "137-160",
+        "all_play_pct": 0.461,
+        "high_week": {
+          "season": "2024",
+          "week": 13,
+          "points": 151.48,
+          "opponent": "Aaron",
+          "opponent_points": 91.92
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 10,
+          "points": 67.32,
+          "opponent": "Marc",
+          "opponent_points": 91.9
+        },
+        "starter_tds": 147,
+        "starter_yards": 19639,
+        "tds_per_game": 5.44
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2024"
+        ],
+        "games": 3,
+        "weeks": 4,
+        "record": {
+          "w": 2,
+          "l": 1,
+          "t": 0
+        },
+        "record_str": "2-1",
+        "record_pct": 0.667,
+        "pf": 545.86,
+        "pa": 485.42,
+        "ppg": 136.47,
+        "pa_pg": 121.36,
+        "finals": 1,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2024",
+          "week": 15,
+          "points": 155.5,
+          "opponent": "Vlad",
+          "opponent_points": 129.64
+        },
+        "low_week": {
+          "season": "2024",
+          "week": 17,
+          "points": 99.12,
+          "opponent": "Doug",
+          "opponent_points": 112.72
+        },
+        "best_game": {
+          "season": "2024",
+          "weeks": "14",
+          "round": "Quarterfinal",
+          "points": 153.56,
+          "opponent": "Derek",
+          "opponent_points": 106.32,
+          "margin": 47.24
+        },
+        "worst_game": {
+          "season": "2024",
+          "weeks": "16-17",
+          "round": "Championship",
+          "points": 236.8,
+          "opponent": "Doug",
+          "opponent_points": 249.46,
+          "margin": -12.66
+        },
+        "finishes": [
+          {
+            "season": "2024",
+            "finish": "Runner-up",
+            "made_playoffs": true,
+            "playoff_record": "2-1"
+          },
+          {
+            "season": "2025",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2024",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 153.56,
+            "opponent": "Derek",
+            "opponent_points": 106.32,
+            "result": "w",
+            "margin": 47.24
+          },
+          {
+            "season": "2024",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 155.5,
+            "opponent": "Vlad",
+            "opponent_points": 129.64,
+            "result": "w",
+            "margin": 25.86
+          },
+          {
+            "season": "2024",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 236.8,
+            "opponent": "Doug",
+            "opponent_points": 249.46,
+            "result": "l",
+            "margin": -12.66
+          }
+        ]
+      }
     },
     {
       "manager": "andrew",
@@ -929,7 +2619,173 @@
       "full_seasons": 2,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "games": 27,
+        "record": {
+          "w": 21,
+          "l": 33,
+          "t": 0
+        },
+        "record_str": "21-33",
+        "record_pct": 0.389,
+        "h2h": {
+          "w": 12,
+          "l": 15,
+          "t": 0
+        },
+        "h2h_str": "12-15",
+        "h2h_pct": 0.444,
+        "median": {
+          "w": 9,
+          "l": 18,
+          "t": 0
+        },
+        "median_str": "9-18",
+        "median_pct": 0.333,
+        "pf": 2745.7,
+        "pa": 2984.86,
+        "ppg": 101.69,
+        "pa_pg": 110.55,
+        "all_play": {
+          "w": 119,
+          "l": 178,
+          "t": 0
+        },
+        "all_play_str": "119-178",
+        "all_play_pct": 0.401,
+        "high_week": {
+          "season": "2024",
+          "week": 6,
+          "points": 136.6,
+          "opponent": "Derek",
+          "opponent_points": 119.48
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 11,
+          "points": 53.24,
+          "opponent": "Jake",
+          "opponent_points": 78.74
+        },
+        "starter_tds": 126,
+        "starter_yards": 18781,
+        "tds_per_game": 4.67
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2025"
+        ],
+        "games": 3,
+        "weeks": 6,
+        "record": {
+          "w": 1,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "1-2",
+        "record_pct": 0.333,
+        "pf": 614.56,
+        "pa": 656.74,
+        "ppg": 102.43,
+        "pa_pg": 109.46,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2025",
+          "week": 15,
+          "points": 125.9,
+          "opponent": "Matt A",
+          "opponent_points": 79.68
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 13,
+          "points": 69.94,
+          "opponent": "Matt Z",
+          "opponent_points": 123.28
+        },
+        "best_game": {
+          "season": "2025",
+          "weeks": "14-15",
+          "round": "5th-place semifinal",
+          "points": 249.06,
+          "opponent": "Matt A",
+          "opponent_points": 167.16,
+          "margin": 81.9
+        },
+        "worst_game": {
+          "season": "2025",
+          "weeks": "12-13",
+          "round": "Quarterfinal",
+          "points": 165.1,
+          "opponent": "Matt Z",
+          "opponent_points": 233.54,
+          "margin": -68.44
+        },
+        "finishes": [
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2025",
+            "finish": "6th",
+            "made_playoffs": true,
+            "playoff_record": "1-2"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 165.1,
+            "opponent": "Matt Z",
+            "opponent_points": 233.54,
+            "result": "l",
+            "margin": -68.44
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "5th-place semifinal",
+            "type": "placement",
+            "points": 249.06,
+            "opponent": "Matt A",
+            "opponent_points": 167.16,
+            "result": "w",
+            "margin": 81.9
+          },
+          {
+            "season": "2025",
+            "weeks": "16-17",
+            "round": "5th-place game",
+            "type": "placement",
+            "points": 200.4,
+            "opponent": "Derek",
+            "opponent_points": 256.04,
+            "result": "l",
+            "margin": -55.64
+          }
+        ]
+      }
     },
     {
       "manager": "brett",
@@ -1004,7 +2860,102 @@
       "full_seasons": 1,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2025",
+          "2026"
+        ],
+        "games": 14,
+        "record": {
+          "w": 13,
+          "l": 15,
+          "t": 0
+        },
+        "record_str": "13-15",
+        "record_pct": 0.464,
+        "h2h": {
+          "w": 7,
+          "l": 7,
+          "t": 0
+        },
+        "h2h_str": "7-7",
+        "h2h_pct": 0.5,
+        "median": {
+          "w": 6,
+          "l": 8,
+          "t": 0
+        },
+        "median_str": "6-8",
+        "median_pct": 0.429,
+        "pf": 1559.16,
+        "pa": 1504.6,
+        "ppg": 111.37,
+        "pa_pg": 107.47,
+        "all_play": {
+          "w": 77,
+          "l": 77,
+          "t": 0
+        },
+        "all_play_str": "77-77",
+        "all_play_pct": 0.5,
+        "high_week": {
+          "season": "2026",
+          "week": 1,
+          "points": 188.1,
+          "opponent": "Paul",
+          "opponent_points": 100.76
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 8,
+          "points": 79.22,
+          "opponent": "Matt Z",
+          "opponent_points": 92.38
+        },
+        "starter_tds": 80,
+        "starter_yards": 10850,
+        "tds_per_game": 5.71
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2025",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     },
     {
       "manager": "matt-a",
@@ -1079,7 +3030,147 @@
       "full_seasons": 1,
       "partial_seasons": [
         "2026 (in progress)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2025",
+          "2026"
+        ],
+        "games": 14,
+        "record": {
+          "w": 18,
+          "l": 10,
+          "t": 0
+        },
+        "record_str": "18-10",
+        "record_pct": 0.643,
+        "h2h": {
+          "w": 11,
+          "l": 3,
+          "t": 0
+        },
+        "h2h_str": "11-3",
+        "h2h_pct": 0.786,
+        "median": {
+          "w": 7,
+          "l": 7,
+          "t": 0
+        },
+        "median_str": "7-7",
+        "median_pct": 0.5,
+        "pf": 1452.92,
+        "pa": 1402.46,
+        "ppg": 103.78,
+        "pa_pg": 100.18,
+        "all_play": {
+          "w": 78,
+          "l": 76,
+          "t": 0
+        },
+        "all_play_str": "78-76",
+        "all_play_pct": 0.506,
+        "high_week": {
+          "season": "2025",
+          "week": 5,
+          "points": 136.14,
+          "opponent": "Lij",
+          "opponent_points": 93.6
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 7,
+          "points": 85.72,
+          "opponent": "Doug",
+          "opponent_points": 81.32
+        },
+        "starter_tds": 74,
+        "starter_yards": 9856,
+        "tds_per_game": 5.29
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2025"
+        ],
+        "games": 2,
+        "weeks": 4,
+        "record": {
+          "w": 0,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "0-2",
+        "record_pct": 0.0,
+        "pf": 373.44,
+        "pa": 460.42,
+        "ppg": 93.36,
+        "pa_pg": 115.11,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2025",
+          "week": 13,
+          "points": 111.24,
+          "opponent": "Lij",
+          "opponent_points": 106.6
+        },
+        "low_week": {
+          "season": "2025",
+          "week": 15,
+          "points": 79.68,
+          "opponent": "Andrew",
+          "opponent_points": 125.9
+        },
+        "best_game": null,
+        "worst_game": {
+          "season": "2025",
+          "weeks": "14-15",
+          "round": "5th-place semifinal",
+          "points": 167.16,
+          "opponent": "Andrew",
+          "opponent_points": 249.06,
+          "margin": -81.9
+        },
+        "finishes": [
+          {
+            "season": "2025",
+            "finish": "7th",
+            "made_playoffs": true,
+            "playoff_record": "0-2"
+          },
+          {
+            "season": "2026",
+            "finish": "In progress",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2025",
+            "weeks": "12-13",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 206.28,
+            "opponent": "Lij",
+            "opponent_points": 211.36,
+            "result": "l",
+            "margin": -5.08
+          },
+          {
+            "season": "2025",
+            "weeks": "14-15",
+            "round": "5th-place semifinal",
+            "type": "placement",
+            "points": 167.16,
+            "opponent": "Andrew",
+            "opponent_points": 249.06,
+            "result": "l",
+            "margin": -81.9
+          }
+        ]
+      }
     },
     {
       "manager": "michaeldewey99",
@@ -1155,7 +3246,109 @@
       "full_seasons": 2,
       "partial_seasons": [
         "2024 (Weeks 1-6)"
-      ]
+      ],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "games": 32,
+        "record": {
+          "w": 19,
+          "l": 19,
+          "t": 0
+        },
+        "record_str": "19-19",
+        "record_pct": 0.5,
+        "h2h": {
+          "w": 14,
+          "l": 18,
+          "t": 0
+        },
+        "h2h_str": "14-18",
+        "h2h_pct": 0.438,
+        "median": {
+          "w": 5,
+          "l": 1,
+          "t": 0
+        },
+        "median_str": "5-1",
+        "median_pct": 0.833,
+        "pf": 3562.06,
+        "pa": 3559.6,
+        "ppg": 111.31,
+        "pa_pg": 111.24,
+        "all_play": {
+          "w": 163,
+          "l": 137,
+          "t": 0
+        },
+        "all_play_str": "163-137",
+        "all_play_pct": 0.543,
+        "high_week": {
+          "season": "2023",
+          "week": 8,
+          "points": 148.08,
+          "opponent": "Jared",
+          "opponent_points": 110.68
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 2,
+          "points": 66.3,
+          "opponent": "Jake",
+          "opponent_points": 109.9
+        },
+        "starter_tds": 148,
+        "starter_yards": 22839,
+        "tds_per_game": 4.62
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2024",
+            "finish": "Left after Week 6",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     },
     {
       "manager": "deion",
@@ -1230,7 +3423,176 @@
         "phase": "regular"
       },
       "full_seasons": 2,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023"
+        ],
+        "games": 26,
+        "record": {
+          "w": 18,
+          "l": 8,
+          "t": 0
+        },
+        "record_str": "18-8",
+        "record_pct": 0.692,
+        "h2h": {
+          "w": 18,
+          "l": 8,
+          "t": 0
+        },
+        "h2h_str": "18-8",
+        "h2h_pct": 0.692,
+        "median": null,
+        "median_str": null,
+        "median_pct": null,
+        "pf": 3084.2,
+        "pa": 2774.28,
+        "ppg": 118.62,
+        "pa_pg": 106.7,
+        "all_play": {
+          "w": 122,
+          "l": 112,
+          "t": 0
+        },
+        "all_play_str": "122-112",
+        "all_play_pct": 0.521,
+        "high_week": {
+          "season": "2022",
+          "week": 13,
+          "points": 177.1,
+          "opponent": "Lij",
+          "opponent_points": 124.24
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 9,
+          "points": 67.1,
+          "opponent": "Mike",
+          "opponent_points": 108.22
+        },
+        "starter_tds": 123,
+        "starter_yards": 18985,
+        "tds_per_game": 4.73
+      },
+      "playoffs": {
+        "appearances": 2,
+        "seasons": [
+          "2022",
+          "2023"
+        ],
+        "games": 4,
+        "weeks": 7,
+        "record": {
+          "w": 3,
+          "l": 1,
+          "t": 0
+        },
+        "record_str": "3-1",
+        "record_pct": 0.75,
+        "pf": 830.66,
+        "pa": 725.96,
+        "ppg": 118.67,
+        "pa_pg": 103.71,
+        "finals": 2,
+        "titles": 1,
+        "title_seasons": [
+          "2022 (co)"
+        ],
+        "high_week": {
+          "season": "2022",
+          "week": 15,
+          "points": 141.9,
+          "opponent": "Doug",
+          "opponent_points": 82.52
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 16,
+          "points": 79.8,
+          "opponent": "Jared",
+          "opponent_points": 112.18
+        },
+        "best_game": {
+          "season": "2022",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 277.48,
+          "opponent": "Doug",
+          "opponent_points": 187.2,
+          "margin": 90.28
+        },
+        "worst_game": {
+          "season": "2023",
+          "weeks": "16-17",
+          "round": "Championship",
+          "points": 243.0,
+          "opponent": "Doug",
+          "opponent_points": 267.12,
+          "margin": -24.12
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Co-champion",
+            "made_playoffs": true,
+            "playoff_record": "2-0"
+          },
+          {
+            "season": "2023",
+            "finish": "Runner-up",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2022",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 277.48,
+            "opponent": "Doug",
+            "opponent_points": 187.2,
+            "result": "w",
+            "margin": 90.28
+          },
+          {
+            "season": "2022",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 203.96,
+            "opponent": "Jared",
+            "opponent_points": 194.58,
+            "result": "w",
+            "margin": 9.38
+          },
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 106.22,
+            "opponent": "Jake F",
+            "opponent_points": 77.06,
+            "result": "w",
+            "margin": 29.16
+          },
+          {
+            "season": "2023",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 243.0,
+            "opponent": "Doug",
+            "opponent_points": 267.12,
+            "result": "l",
+            "margin": -24.12
+          }
+        ]
+      }
     },
     {
       "manager": "jakefitzy",
@@ -1303,7 +3665,162 @@
         "phase": "regular"
       },
       "full_seasons": 2,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023"
+        ],
+        "games": 26,
+        "record": {
+          "w": 13,
+          "l": 13,
+          "t": 0
+        },
+        "record_str": "13-13",
+        "record_pct": 0.5,
+        "h2h": {
+          "w": 13,
+          "l": 13,
+          "t": 0
+        },
+        "h2h_str": "13-13",
+        "h2h_pct": 0.5,
+        "median": null,
+        "median_str": null,
+        "median_pct": null,
+        "pf": 2809.22,
+        "pa": 2927.56,
+        "ppg": 108.05,
+        "pa_pg": 112.6,
+        "all_play": {
+          "w": 110,
+          "l": 124,
+          "t": 0
+        },
+        "all_play_str": "110-124",
+        "all_play_pct": 0.47,
+        "high_week": {
+          "season": "2023",
+          "week": 8,
+          "points": 148.36,
+          "opponent": "Juan",
+          "opponent_points": 120.82
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 9,
+          "points": 64.32,
+          "opponent": "Marc",
+          "opponent_points": 117.86
+        },
+        "starter_tds": 136,
+        "starter_yards": 18764,
+        "tds_per_game": 5.23
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2023"
+        ],
+        "games": 3,
+        "weeks": 4,
+        "record": {
+          "w": 1,
+          "l": 2,
+          "t": 0
+        },
+        "record_str": "1-2",
+        "record_pct": 0.333,
+        "pf": 388.52,
+        "pa": 436.18,
+        "ppg": 97.13,
+        "pa_pg": 109.05,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": {
+          "season": "2023",
+          "week": 14,
+          "points": 108.92,
+          "opponent": "Lij",
+          "opponent_points": 105.08
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 15,
+          "points": 77.06,
+          "opponent": "Deion",
+          "opponent_points": 106.22
+        },
+        "best_game": {
+          "season": "2023",
+          "weeks": "14",
+          "round": "Quarterfinal",
+          "points": 108.92,
+          "opponent": "Lij",
+          "opponent_points": 105.08,
+          "margin": 3.84
+        },
+        "worst_game": {
+          "season": "2023",
+          "weeks": "15",
+          "round": "Semifinal",
+          "points": 77.06,
+          "opponent": "Deion",
+          "opponent_points": 106.22,
+          "margin": -29.16
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          },
+          {
+            "season": "2023",
+            "finish": "4th",
+            "made_playoffs": true,
+            "playoff_record": "1-2"
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2023",
+            "weeks": "14",
+            "round": "Quarterfinal",
+            "type": "playoff",
+            "points": 108.92,
+            "opponent": "Lij",
+            "opponent_points": 105.08,
+            "result": "w",
+            "margin": 3.84
+          },
+          {
+            "season": "2023",
+            "weeks": "15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 77.06,
+            "opponent": "Deion",
+            "opponent_points": 106.22,
+            "result": "l",
+            "margin": -29.16
+          },
+          {
+            "season": "2023",
+            "weeks": "16-17",
+            "round": "3rd-place game",
+            "type": "placement",
+            "points": 202.54,
+            "opponent": "Juan",
+            "opponent_points": 224.88,
+            "result": "l",
+            "margin": -22.34
+          }
+        ]
+      }
     },
     {
       "manager": "jmoneymess",
@@ -1378,7 +3895,153 @@
         "phase": "regular"
       },
       "full_seasons": 2,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2022",
+          "2023"
+        ],
+        "games": 26,
+        "record": {
+          "w": 13,
+          "l": 13,
+          "t": 0
+        },
+        "record_str": "13-13",
+        "record_pct": 0.5,
+        "h2h": {
+          "w": 13,
+          "l": 13,
+          "t": 0
+        },
+        "h2h_str": "13-13",
+        "h2h_pct": 0.5,
+        "median": null,
+        "median_str": null,
+        "median_pct": null,
+        "pf": 2799.22,
+        "pa": 3050.52,
+        "ppg": 107.66,
+        "pa_pg": 117.33,
+        "all_play": {
+          "w": 111,
+          "l": 123,
+          "t": 0
+        },
+        "all_play_str": "111-123",
+        "all_play_pct": 0.474,
+        "high_week": {
+          "season": "2022",
+          "week": 5,
+          "points": 141.66,
+          "opponent": "Jake",
+          "opponent_points": 126.58
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 13,
+          "points": 66.92,
+          "opponent": "Vlad",
+          "opponent_points": 130.64
+        },
+        "starter_tds": 120,
+        "starter_yards": 18651,
+        "tds_per_game": 4.62
+      },
+      "playoffs": {
+        "appearances": 1,
+        "seasons": [
+          "2022"
+        ],
+        "games": 2,
+        "weeks": 4,
+        "record": {
+          "w": 1,
+          "l": 1,
+          "t": 0
+        },
+        "record_str": "1-1",
+        "record_pct": 0.5,
+        "pf": 458.82,
+        "pa": 369.54,
+        "ppg": 114.7,
+        "pa_pg": 92.39,
+        "finals": 1,
+        "titles": 1,
+        "title_seasons": [
+          "2022 (co)"
+        ],
+        "high_week": {
+          "season": "2022",
+          "week": 15,
+          "points": 137.66,
+          "opponent": "Vlad",
+          "opponent_points": 97.2
+        },
+        "low_week": {
+          "season": "2022",
+          "week": 17,
+          "points": 82.4,
+          "opponent": "Deion",
+          "opponent_points": 121.16
+        },
+        "best_game": {
+          "season": "2022",
+          "weeks": "14-15",
+          "round": "Semifinal",
+          "points": 264.24,
+          "opponent": "Vlad",
+          "opponent_points": 165.58,
+          "margin": 98.66
+        },
+        "worst_game": {
+          "season": "2022",
+          "weeks": "16-17",
+          "round": "Championship",
+          "points": 194.58,
+          "opponent": "Deion",
+          "opponent_points": 203.96,
+          "margin": -9.38
+        },
+        "finishes": [
+          {
+            "season": "2022",
+            "finish": "Co-champion",
+            "made_playoffs": true,
+            "playoff_record": "1-1"
+          },
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": [
+          {
+            "season": "2022",
+            "weeks": "14-15",
+            "round": "Semifinal",
+            "type": "playoff",
+            "points": 264.24,
+            "opponent": "Vlad",
+            "opponent_points": 165.58,
+            "result": "w",
+            "margin": 98.66
+          },
+          {
+            "season": "2022",
+            "weeks": "16-17",
+            "round": "Championship",
+            "type": "playoff",
+            "points": 194.58,
+            "opponent": "Deion",
+            "opponent_points": 203.96,
+            "result": "l",
+            "margin": -9.38
+          }
+        ]
+      }
     },
     {
       "manager": "anupds23",
@@ -1450,7 +4113,91 @@
         "phase": "regular"
       },
       "full_seasons": 1,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2023"
+        ],
+        "games": 13,
+        "record": {
+          "w": 4,
+          "l": 9,
+          "t": 0
+        },
+        "record_str": "4-9",
+        "record_pct": 0.308,
+        "h2h": {
+          "w": 4,
+          "l": 9,
+          "t": 0
+        },
+        "h2h_str": "4-9",
+        "h2h_pct": 0.308,
+        "median": null,
+        "median_str": null,
+        "median_pct": null,
+        "pf": 1374.22,
+        "pa": 1551.86,
+        "ppg": 105.71,
+        "pa_pg": 119.37,
+        "all_play": {
+          "w": 59,
+          "l": 84,
+          "t": 0
+        },
+        "all_play_str": "59-84",
+        "all_play_pct": 0.413,
+        "high_week": {
+          "season": "2023",
+          "week": 3,
+          "points": 149.96,
+          "opponent": "Mike",
+          "opponent_points": 130.64
+        },
+        "low_week": {
+          "season": "2023",
+          "week": 7,
+          "points": 66.96,
+          "opponent": "Deion",
+          "opponent_points": 126.14
+        },
+        "starter_tds": 64,
+        "starter_yards": 9314,
+        "tds_per_game": 4.92
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2023",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     },
     {
       "manager": "amartinez528",
@@ -1522,7 +4269,95 @@
         "phase": "regular"
       },
       "full_seasons": 1,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2024"
+        ],
+        "games": 13,
+        "record": {
+          "w": 6,
+          "l": 20,
+          "t": 0
+        },
+        "record_str": "6-20",
+        "record_pct": 0.231,
+        "h2h": {
+          "w": 4,
+          "l": 9,
+          "t": 0
+        },
+        "h2h_str": "4-9",
+        "h2h_pct": 0.308,
+        "median": {
+          "w": 2,
+          "l": 11,
+          "t": 0
+        },
+        "median_str": "2-11",
+        "median_pct": 0.154,
+        "pf": 1299.52,
+        "pa": 1409.44,
+        "ppg": 99.96,
+        "pa_pg": 108.42,
+        "all_play": {
+          "w": 39,
+          "l": 104,
+          "t": 0
+        },
+        "all_play_str": "39-104",
+        "all_play_pct": 0.273,
+        "high_week": {
+          "season": "2024",
+          "week": 1,
+          "points": 123.18,
+          "opponent": "Vlad",
+          "opponent_points": 72.76
+        },
+        "low_week": {
+          "season": "2024",
+          "week": 4,
+          "points": 87.2,
+          "opponent": "Jake",
+          "opponent_points": 112.6
+        },
+        "starter_tds": 54,
+        "starter_yards": 8303,
+        "tds_per_game": 4.15
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     },
     {
       "manager": "mrpfizer",
@@ -1594,7 +4429,95 @@
         "phase": "regular"
       },
       "full_seasons": 1,
-      "partial_seasons": []
+      "partial_seasons": [],
+      "regular": {
+        "seasons": [
+          "2024"
+        ],
+        "games": 13,
+        "record": {
+          "w": 7,
+          "l": 19,
+          "t": 0
+        },
+        "record_str": "7-19",
+        "record_pct": 0.269,
+        "h2h": {
+          "w": 5,
+          "l": 8,
+          "t": 0
+        },
+        "h2h_str": "5-8",
+        "h2h_pct": 0.385,
+        "median": {
+          "w": 2,
+          "l": 11,
+          "t": 0
+        },
+        "median_str": "2-11",
+        "median_pct": 0.154,
+        "pf": 1257.52,
+        "pa": 1502.28,
+        "ppg": 96.73,
+        "pa_pg": 115.56,
+        "all_play": {
+          "w": 33,
+          "l": 110,
+          "t": 0
+        },
+        "all_play_str": "33-110",
+        "all_play_pct": 0.231,
+        "high_week": {
+          "season": "2024",
+          "week": 2,
+          "points": 120.62,
+          "opponent": "Lij",
+          "opponent_points": 134.02
+        },
+        "low_week": {
+          "season": "2024",
+          "week": 12,
+          "points": 71.46,
+          "opponent": "Matt Z",
+          "opponent_points": 167.72
+        },
+        "starter_tds": 53,
+        "starter_yards": 7809,
+        "tds_per_game": 4.08
+      },
+      "playoffs": {
+        "appearances": 0,
+        "seasons": [],
+        "games": 0,
+        "weeks": 0,
+        "record": {
+          "w": 0,
+          "l": 0,
+          "t": 0
+        },
+        "record_str": null,
+        "record_pct": null,
+        "pf": null,
+        "pa": null,
+        "ppg": null,
+        "pa_pg": null,
+        "finals": 0,
+        "titles": 0,
+        "title_seasons": [],
+        "high_week": null,
+        "low_week": null,
+        "best_game": null,
+        "worst_game": null,
+        "finishes": [
+          {
+            "season": "2024",
+            "finish": "Missed playoffs",
+            "made_playoffs": false,
+            "playoff_record": null
+          }
+        ],
+        "game_log": []
+      }
     }
   ],
   "season_records": {

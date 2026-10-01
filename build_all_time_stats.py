@@ -33,6 +33,10 @@ Rules
 - career[].games_played = regular-season head-to-head games played (the weekly median
   result is not a game); career[].playoff_games = winners-bracket games (a two-week round
   is one game). career[].games is kept as an alias of games_played.
+- career[].regular / career[].playoffs: structured regular-season vs playoff split (top-level
+  career fields kept for backward compatibility). Playoff W-L / games count a two-week round
+  once; playoff PF/PA are the round totals and playoffs.ppg / pa_pg are per playoff WEEK played
+  (meta.career_split).
 - Starter TDs / yards reuse build_team_stats.py (starters only, weeks started, regular
   season only). Scoring differs by season (see meta.scoring_by_season), so compare
   per-game numbers and read cross-season records with that in mind.
@@ -442,6 +446,29 @@ def main() -> None:
 
     # ---------------- career ----------------
     career = []
+    # playoff games per manager (winners bracket incl. placement games; consolation never in h2h games)
+    po_games = defaultdict(list)
+    for g in h2h["games"]:
+        if g["type"] == "regular":
+            continue
+        wk_a, wk_b = (int(x) for x in (g["weeks"].split("-") * 2)[:2])
+        n_weeks = wk_b - wk_a + 1
+        for me, op in (("a", "b"), ("b", "a")):
+            po_games[g[me]].append({"season": g["season"], "weeks": g["weeks"], "n_weeks": n_weeks, "round": g["label"],
+                                    "type": g["type"], "points": r2(g[me + "_pts"]), "opponent": name(g[op]),
+                                    "opponent_id": g[op], "opponent_points": r2(g[op + "_pts"]),
+                                    "result": res_of(g[me + "_pts"], g[op + "_pts"]),
+                                    "margin": r2(g[me + "_pts"] - g[op + "_pts"])})
+    scores_by = defaultdict(list)  # (manager, phase) -> single-week scores (record games only)
+    for e in week_scores:
+        scores_by[(e["manager"], e["phase"])].append(e)
+
+    def wk_view(e):
+        return None if e is None else {"season": e["season"], "week": e["week"], "points": e["points"], "opponent": e["opponent_name"],
+                                       "opponent_points": e["opponent_points"]}
+
+    def game_slim(g):
+        return None if g is None else {k: g[k] for k in ("season", "weeks", "round", "points", "opponent", "opponent_points", "margin")}
     by_mgr = defaultdict(list)
     for r in season_rows:
         by_mgr[r["manager"]].append(r)
@@ -483,6 +510,45 @@ def main() -> None:
         if not c["td_games"]:
             c["starter_tds"] = c["starter_yards"] = None
         del c["td_games"]
+        # ---- structured split: regular season vs playoffs (top-level fields kept for backward compatibility)
+        reg_s = scores_by[(mid, "regular")]
+        c["regular"] = {
+            "seasons": c["seasons"], "games": c["games_played"],
+            "record": c["record"], "record_str": c["record_str"], "record_pct": c["record_pct"],
+            "h2h": c["h2h"], "h2h_str": c["h2h_str"], "h2h_pct": c["h2h_pct"],
+            "median": c["median"] if c["median_str"] else None, "median_str": c["median_str"],
+            "median_pct": pct(c["median"]) if c["median_str"] else None,
+            "pf": c["pf"], "pa": c["pa"], "ppg": c["ppg"], "pa_pg": c["pa_pg"],
+            "all_play": c["all_play"], "all_play_str": c["all_play_str"], "all_play_pct": c["all_play_pct"],
+            "high_week": wk_view(max(reg_s, key=lambda e: e["points"], default=None)),
+            "low_week": wk_view(min(reg_s, key=lambda e: e["points"], default=None)),
+            "starter_tds": c["starter_tds"], "starter_yards": c["starter_yards"], "tds_per_game": c["tds_per_game"],
+        }
+        pg = sorted(po_games.get(mid, []), key=lambda g: (g["season"], int(g["weeks"].split("-")[0])))
+        po_s = scores_by[(mid, "playoff")]
+        pw = sum(g["n_weeks"] for g in pg)
+        ppf, ppa = r2(sum(g["points"] for g in pg)), r2(sum(g["opponent_points"] for g in pg))
+        prec = rec()
+        for g in pg:
+            add(prec, g["result"])
+        wins, losses = [g for g in pg if g["result"] == "w"], [g for g in pg if g["result"] == "l"]
+        c["playoffs"] = {
+            "appearances": c["playoff_appearances"],
+            "seasons": [r["season"] for r in rs if r["playoffs"]],
+            "games": len(pg), "weeks": pw,
+            "record": prec, "record_str": fmt(prec) if pg else None, "record_pct": pct(prec),
+            "pf": ppf if pg else None, "pa": ppa if pg else None,
+            "ppg": r2(ppf / pw) if pw else None, "pa_pg": r2(ppa / pw) if pw else None,
+            "finals": c["finals"], "titles": c["titles"], "title_seasons": c["title_seasons"],
+            "high_week": wk_view(max(po_s, key=lambda e: e["points"], default=None)),
+            "low_week": wk_view(min(po_s, key=lambda e: e["points"], default=None)),
+            "best_game": game_slim(max(wins, key=lambda g: g["margin"], default=None)),
+            "worst_game": game_slim(min(losses, key=lambda g: g["margin"], default=None)),
+            "finishes": [{"season": r["season"], "finish": r["finish"], "made_playoffs": r["playoffs"],
+                          "playoff_record": r["playoff_record_str"]} for r in rs],
+            "game_log": [{k: g[k] for k in ("season", "weeks", "round", "type", "points", "opponent", "opponent_points", "result", "margin")} for g in pg],
+        }
+        assert prec == c["playoff_record"], (mid, prec, c["playoff_record"])
         career.append(c)
         full = [r for r in rs if r["eligible_for_records"]]
         if full:
@@ -660,6 +726,16 @@ def main() -> None:
             "score_overrides_applied": score_fixes,
             "official_cent_alignments": cent_fixes,
             "consolation_excluded_from_records": {"games": excluded["games"], "team_scores": excluded["team_scores"]},
+            "career_split": ("career[].regular = regular season only (games = H2H games; record = H2H + median where used; PF/PA/PPG/all-play; "
+                             "high/low week from regular-season weeks). career[].playoffs = winners-bracket games incl. placement games "
+                             "(3rd-place, 5th-place, 5th-place semifinal); consolation games excluded. A two-week playoff round is ONE game "
+                             "decided on combined score (games, W-L, pct, best/worst game), but its PF/PA are the two-week totals. "
+                             "playoffs.ppg / pa_pg are per WEEK played (PF / playoffs.weeks), so two-week rounds compare fairly with one-week rounds; "
+                             "playoffs.weeks = playoff weeks played. high_week / low_week are single playoff weeks (each leg of a two-week round). "
+                             "best_game = biggest winning margin, worst_game = biggest losing margin (game level). "
+                             "appearances = seasons in the winners bracket (a first-round bye counts). finishes lists every season. "
+                             "2022 final: Deion and Jared are co-champions (a title for both), but the W-L counts Deion's combined-score lead "
+                             "(203.96-194.58) as a win, as in h2h_all_time.json. Top-level career fields are unchanged for backward compatibility."),
             "field_notes": {
                 "career.games_played": "Regular-season head-to-head games played (median results not counted as games). Same value as career.games.",
                 "career.playoff_games": "Winners-bracket games played incl. 3rd/5th-place games; a two-week round counts once. Equals the playoff_record total.",

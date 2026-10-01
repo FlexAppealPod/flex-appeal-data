@@ -121,6 +121,13 @@ PF/PA/PPG/all-play; record = H2H + median where Sleeper's standings count it (20
 `career[].games_played` (alias `games`) = regular-season head-to-head games played; the weekly
 median result is not a game (Doug: 53 games, record 45-35 = 29-24 H2H + 16-11 median).
 `career[].playoff_games` = winners-bracket games (a two-week round is one game).
+Each career row also has a structured split (top-level fields stay for backward compatibility):
+`career[].regular` (seasons, games, record / h2h / median with _str and _pct, pf, pa, ppg, pa_pg,
+all_play, high_week / low_week from regular-season weeks, starter TDs/yards) and `career[].playoffs`
+(appearances, seasons, games, weeks, record_str / record_pct, pf, pa, ppg / pa_pg **per playoff week
+played**, finals, titles, title_seasons, high_week / low_week, best_game / worst_game by margin,
+finishes by season, game_log). Playoffs = winners bracket incl. 3rd/5th-place games, no consolation;
+a two-week round is one game but its PF/PA are two-week totals (see `meta.career_split`).
 2022 starter TDs / yards / player starts come from `data/sources/espn_2022_starters.json`
 (processed ESPN box scores; starter points reconcile with every 2022 weekly score; raw
 dumps are not committed). 2024 Week 7 uses the official standings totals from
