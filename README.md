@@ -37,7 +37,21 @@ finalize, or anytime during the week to refresh standings / upcoming.
 | `team_stats.json` | Starter TDs/yards per team, completed weeks (`build_team_stats.py`) |
 | `all_time_stats.json` | All-time stats 2022-present by manager: career, season and single-week records, streaks, manager seasons, best/worst seasons (`build_all_time_stats.py`) |
 | `h2h_all_time.json` | All-time head-to-head grid 2022-present (2022 ESPN + Sleeper), Legacy Owners, season formats, title games, game log (`build_h2h.py`) |
+| `transactions.json` | Roster moves for the current season (`build_transactions.py`): every completed trade / waiver / free-agent move newest first (managers + team names, adds/drops with position and NFL team, FAAB bids, trade picks and FAAB), per-manager FAAB remaining/spent, summary (totals, most active, biggest bid, most added), traded-pick ownership, and clearly labeled `failed_claims` (losing waiver bids; omit with `--no-failed-claims`) |
 | `rankings_history.json` | Power/Flex Rankings history 2022-present: confirmed boards (season, week, date, ranks by display name), all-time and per-season tally, #1 runs, coverage. No formula data. Built by `/workspace/flex-rankings-history/scripts_v2/publish_v3.py` |
+
+## Roster moves
+
+```bash
+python3 build_transactions.py   # writes data/transactions.json (stdlib only)
+```
+
+Pulls Sleeper transaction legs 0-18 plus rosters (`waiver_budget_used`), users, traded
+picks and the players file (cached at `/workspace/sleeper_players.json`, refreshed weekly).
+Reuses the owner map, team-name fallback and fetch helpers from `build_team_stats.py`
+(so display names follow `data/sources/display_names.json`). Sleeper files every pre-season
+move under leg 1; the build relabels moves before the startup draft as `phase: offseason`
+and draft-to-kickoff as `phase: preseason` (both `week: 0`; `sleeper_leg` keeps the raw value).
 
 ## Head-to-head (all-time)
 
