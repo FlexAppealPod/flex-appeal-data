@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T06:58:43-07:00",
+    "generated_at": "2026-10-02T06:50:19-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 4,
     "counts": {
-      "transactions": 166
+      "transactions": 167
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,47 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1411492874918379520",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-01T14:03:54-07:00",
+      "processed": "2026-10-01T14:03:54-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Konata Mumpfield / drops Terrance Ferguson",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "12718",
+              "name": "Konata Mumpfield",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12487",
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "nfl_team": "LAR"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1411225944340873216",
       "type": "free_agent",
@@ -6824,19 +6865,19 @@
     "totals_by_type": {
       "trade": 11,
       "waiver": 30,
-      "free_agent": 125,
+      "free_agent": 126,
       "commissioner": 0,
-      "total": 166
+      "total": 167
     },
     "regular_season_totals_by_type": {
       "trade": 3,
       "waiver": 29,
-      "free_agent": 53,
+      "free_agent": 54,
       "commissioner": 0,
-      "total": 85
+      "total": 86
     },
     "totals_by_phase": {
-      "regular": 85,
+      "regular": 86,
       "preseason": 31,
       "offseason": 50
     },
@@ -6845,7 +6886,7 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 10
+      "4": 11
     },
     "most_active_manager": {
       "managers": [
@@ -6912,6 +6953,17 @@
         "added_by": [
           "Vlad",
           "Matt Z"
+        ]
+      },
+      {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR",
+        "nfl_team": "LAR",
+        "adds": 2,
+        "added_by": [
+          "Doug",
+          "Jake"
         ]
       },
       {
@@ -7062,13 +7114,13 @@
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 14,
-        "regular_season_transactions": 3,
+        "transactions": 15,
+        "regular_season_transactions": 4,
         "trades": 2,
         "waiver_claims": 2,
-        "free_agent_moves": 10,
-        "players_added": 7,
-        "players_dropped": 12
+        "free_agent_moves": 11,
+        "players_added": 8,
+        "players_dropped": 13
       },
       {
         "roster_id": 3,
