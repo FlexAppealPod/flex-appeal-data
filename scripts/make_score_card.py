@@ -432,7 +432,7 @@ def pending_text(omitted, with_names=True) -> str:
     return head + ":  " + ",  ".join(f"{a['manager']} vs {b['manager']}" for a, b in omitted)
 
 
-def status_variants(d: dict, final: bool, omitted=()) -> list[str]:
+def status_variants(d: dict, final: bool, omitted=(), show_median=True) -> list[str]:
     """Header sub-line candidates, most informative first."""
     games = (f"{d['games_final']} of {d['games_total']} NFL games final"
              if d.get("has_schedule") and d.get("games_total") else "")
@@ -440,6 +440,8 @@ def status_variants(d: dict, final: bool, omitted=()) -> list[str]:
     if omitted:
         return [join(games, pending_text(omitted)), pending_text(omitted),
                 join(games, pending_text(omitted, False)), pending_text(omitted, False)]
+    if not show_median:
+        return [games]
     return [join(games, "H2H + weekly median" if not final else "H2H + weekly median both count"), games]
 
 
@@ -524,7 +526,8 @@ def draw_footer(draw, W, H, M, s):
     draw.text((W - M, fy), f"Sleeper live data  ·  {updated_text()}", font=uf, fill=MUTED, anchor="rs")
 
 
-def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=True, omitted=()):
+def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=True, omitted=(),
+                show_median=True):
     draw.rectangle([0, 0, W, int(10 * s)], fill=ACCENT)
     logo_sz = int(150 * s)
     right_edge = W - M
@@ -541,7 +544,7 @@ def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=Tru
     draw.text((M, ty), ttxt, font=tf, fill=FG, anchor="ls")
     sf = F("sans", 24 * s, 500)
     sy = ty + 18 * s + cap_h(sf)
-    for st in status_variants(d, final, omitted):
+    for st in status_variants(d, final, omitted, show_median):
         if tw(draw, st, sf) <= title_max:
             break
     draw.text((M, sy), st, font=sf, fill=MUTED, anchor="ls")
@@ -624,17 +627,19 @@ def draw_pending_note(draw, cx, y, max_w, omitted, s):
 NOTE_H = 44
 
 
-def render_wide(d, label, final) -> Image.Image:
+def render_wide(d, label, final, show_median=True) -> Image.Image:
     W, H, s, M = 1600, 900, 1.0, 56
     img = Image.new("RGBA", (W, H), BG)
     draw = ImageDraw.Draw(img)
     shown, omitted = select_pairs(d, final)
-    hb = draw_header(img, draw, W, M, d, label, final, s, omitted=omitted)
+    hb = draw_header(img, draw, W, M, d, label, final, s, median_right=show_median, omitted=omitted,
+                     show_median=show_median)
 
     footer_line = H - 70
     py = footer_line - 178          # TOP PERFORMERS label baseline
     gy = hb + 30
-    draw_grid(draw, M, gy, W - 2 * M, (py - 46) - gy, shown, GRID_WIDE, final, d["median"], 22)
+    draw_grid(draw, M, gy, W - 2 * M, (py - 46) - gy, shown, GRID_WIDE, final,
+              d["median"] if show_median else None, 22)
     draw_section_label(draw, M, py, "TOP PERFORMERS" if not final else "TOP PERFORMERS OF THE WEEK", s, W - 2 * M)
     top = d["top"][:5]
     if top:
@@ -650,31 +655,36 @@ def render_wide(d, label, final) -> Image.Image:
     return img.convert("RGB")
 
 
-def render_square(d, label, final) -> Image.Image:
+def render_square(d, label, final, show_median=True) -> Image.Image:
     W, H, s, M = 1080, 1350, 1.0, 48
     img = Image.new("RGBA", (W, H), BG)
     draw = ImageDraw.Draw(img)
     s_head = 0.9
-    hb = draw_header(img, draw, W, M, d, label, final, s_head, logo=True, median_right=False)
-    # median strip
-    my = hb + 26
-    mh = 92
-    draw.rounded_rectangle([M, my, W - M, my + mh], radius=10, fill=FG)
-    lf = F("cond-bold", 24)
-    vf = F("cond-xbold", 56)
-    cf = F("sans", 24, 500)
-    mid = my + mh / 2
-    draw_tracked(draw, (M + 26, mid + cap_h(lf) / 2), "WEEKLY MEDIAN", lf, "#ff5a5f", 2.5)
-    vx = M + 26 + tw(draw, "WEEKLY MEDIAN", lf, 2.5) + 22
-    draw.text((vx, mid + cap_h(vf) / 2), fmt(d["median"]), font=vf, fill="#ffffff", anchor="ls")
-    above_txt = f"{d['above']} of {d['n_teams']} teams {'beat it' if final else 'above'}"
-    draw.text((W - M - 26, mid + cap_h(cf) / 2), above_txt, font=cf, fill="#d6d6d6", anchor="rs")
+    hb = draw_header(img, draw, W, M, d, label, final, s_head, logo=True, median_right=False,
+                     show_median=show_median)
+    # median strip (hidden on TNF / --no-median; the grid gets that space instead)
+    my, mh = hb + 26, 92
+    if show_median:
+        draw.rounded_rectangle([M, my, W - M, my + mh], radius=10, fill=FG)
+        lf = F("cond-bold", 24)
+        vf = F("cond-xbold", 56)
+        cf = F("sans", 24, 500)
+        mid = my + mh / 2
+        draw_tracked(draw, (M + 26, mid + cap_h(lf) / 2), "WEEKLY MEDIAN", lf, "#ff5a5f", 2.5)
+        vx = M + 26 + tw(draw, "WEEKLY MEDIAN", lf, 2.5) + 22
+        draw.text((vx, mid + cap_h(vf) / 2), fmt(d["median"]), font=vf, fill="#ffffff", anchor="ls")
+        above_txt = f"{d['above']} of {d['n_teams']} teams {'beat it' if final else 'above'}"
+        draw.text((W - M - 26, mid + cap_h(cf) / 2), above_txt, font=cf, fill="#d6d6d6", anchor="rs")
 
-    gy = my + mh + 24
     grid_h = 3 * 168 + 2 * 18          # fixed grid area; boxes re-flow inside it
+    gy = my + mh + 24
+    if not show_median:
+        grid_h += gy - (hb + 30)
+        gy = hb + 30
     shown, omitted = select_pairs(d, final)
     area_h = grid_h - (NOTE_H if omitted else 0)
-    bottom = draw_grid(draw, M, gy, W - 2 * M, area_h, shown, GRID_SQUARE, final, d["median"], 18)
+    bottom = draw_grid(draw, M, gy, W - 2 * M, area_h, shown, GRID_SQUARE, final,
+                       d["median"] if show_median else None, 18)
     draw_pending_note(draw, W / 2, bottom + NOTE_H - 10, W - 2 * M, omitted, 1.0)
     py = gy + grid_h + 52
     draw_section_label(draw, M, py, "TOP PERFORMERS", 1.0, W - 2 * M)
@@ -698,6 +708,11 @@ def main(argv=None):
     ap.add_argument("--week", type=int, default=None, help="NFL week (default: Sleeper state/nfl display_week)")
     ap.add_argument("--label", default="", help="'TNF' | 'Sunday early' | 'SNF' | 'MNF final' ... (title text)")
     ap.add_argument("--final", action="store_true", help="mark W/L (implied when --label contains 'final')")
+    mg = ap.add_mutually_exclusive_group()
+    mg.add_argument("--median", dest="median", action="store_true", default=None,
+                    help="force the Weekly Median block on")
+    mg.add_argument("--no-median", dest="median", action="store_false",
+                    help="hide the Weekly Median block (default for TNF / Thursday labels)")
     ap.add_argument("--format", choices=["wide", "square"], default="wide",
                     help="wide = 1600x900 (default), square = 1080x1350 portrait")
     ap.add_argument("--out", default=None, help="output PNG path (default /workspace/score-cards/week<N>-<label>.png)")
@@ -714,14 +729,18 @@ def main(argv=None):
         d = collect(a.week, a.refresh_players, not a.no_schedule)
     if len(d["pairs"]) != 6:
         print(f"WARN expected 6 matchups, got {len(d['pairs'])}", file=sys.stderr)
-    img = render_square(d, a.label, final) if a.format == "square" else render_wide(d, a.label, final)
+    lab = a.label.lower()
+    show_median = a.median if a.median is not None else not ("tnf" in lab or "thursday" in lab)
+    render = render_square if a.format == "square" else render_wide
+    img = render(d, a.label, final, show_median)
     out = Path(a.out) if a.out else Path("/workspace/score-cards") / (
         f"week{d['week']}-{(a.label or 'live').lower().replace(' ', '-')}{'-sq' if a.format == 'square' else ''}.png")
     out.parent.mkdir(parents=True, exist_ok=True)
     img.save(out, optimize=True)
     if a.dump_json:
         Path(a.dump_json).write_text(json.dumps(d, indent=2, default=str))
-    print(f"wrote {out}  ({img.width}x{img.height})  week {d['week']}  median {fmt(d['median'])}")
+    print(f"wrote {out}  ({img.width}x{img.height})  week {d['week']}  median {fmt(d['median'])}"
+          f"{'' if show_median else ' (hidden)'}")
     shown, _ = select_pairs(d, final)
     for a_, b_ in d["pairs"]:
         tag = "" if [a_, b_] in shown else "   (not shown: yet to kick off)"

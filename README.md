@@ -176,7 +176,8 @@ Sleeper's public API: all six matchups (leader in red; W/L/T badges and median r
 label contains "final" or `--final`), the weekly median and how many teams are above it, and the
 top starting-lineup scorers. Live cards only show matchups where a starter on either team has
 played (ESPN game state; falls back to nonzero points) and note the rest as "yet to kick off";
-final cards show all six. The grid re-flows for 1-6 matchups. Week defaults to Sleeper `state/nfl`. "To play" counts come from
+final cards show all six. The grid re-flows for 1-6 matchups. The Weekly Median block is hidden on TNF /
+Thursday labels (override with `--median`; `--no-median` hides it on any card). Week defaults to Sleeper `state/nfl`. "To play" counts come from
 ESPN's public scoreboard (skip with `--no-schedule`). Needs Pillow; uses the site's fonts
 (Barlow Condensed, Outfit), downloaded from google/fonts into `/workspace/cache/fonts` if they
 aren't installed. The Sleeper players file is cached at `/workspace/cache/sleeper/players_nfl.json`
