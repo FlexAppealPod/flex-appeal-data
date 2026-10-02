@@ -174,7 +174,9 @@ python3 scripts/make_score_card.py --label SNF --format square --out /workspace/
 1600x900 PNG (or `--format square`, 1080x1350) for @FlexAppealFFL in-game posts, built from
 Sleeper's public API: all six matchups (leader in red; W/L/T badges and median result when the
 label contains "final" or `--final`), the weekly median and how many teams are above it, and the
-top starting-lineup scorers. Week defaults to Sleeper `state/nfl`. "To play" counts come from
+top starting-lineup scorers. Live cards only show matchups where a starter on either team has
+played (ESPN game state; falls back to nonzero points) and note the rest as "yet to kick off";
+final cards show all six. The grid re-flows for 1-6 matchups. Week defaults to Sleeper `state/nfl`. "To play" counts come from
 ESPN's public scoreboard (skip with `--no-schedule`). Needs Pillow; uses the site's fonts
 (Barlow Condensed, Outfit), downloaded from google/fonts into `/workspace/cache/fonts` if they
 aren't installed. The Sleeper players file is cached at `/workspace/cache/sleeper/players_nfl.json`

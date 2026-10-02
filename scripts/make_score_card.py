@@ -192,7 +192,7 @@ def collect(week: int | None, refresh_players: bool, use_schedule: bool) -> dict
             pts = m.get("points") or 0.0
         pp = m.get("players_points") or {}
         starters = [s for s in (m.get("starters") or []) if s and s != "0"]
-        to_play = live = 0
+        to_play = live = done = 0
         perf = []
         for s in starters:
             p = players.get(s) or {}
@@ -201,6 +201,7 @@ def collect(week: int | None, refresh_players: bool, use_schedule: bool) -> dict
                 st = games.get(nfl)
                 to_play += st == "pre"
                 live += st == "in"
+                done += st == "post"
             perf.append({
                 "pid": s,
                 "name": clean_text(p.get("full_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}".strip() or s),
@@ -212,7 +213,8 @@ def collect(week: int | None, refresh_players: bool, use_schedule: bool) -> dict
         rows.append({**teams.get(rid, {"roster_id": rid, "manager": ROSTER_FALLBACK.get(rid, ""), "team": f"Team {rid}"}),
                      "matchup_id": m.get("matchup_id"), "points": round(float(pts), 2),
                      "to_play": to_play if games is not None else None,
-                     "live": live if games is not None else None, "perf": perf})
+                     "live": live if games is not None else None,
+                     "started": (live + done) if games is not None else None, "perf": perf})
 
     by_mid: dict = {}
     for r in rows:
@@ -422,12 +424,23 @@ def title_text(week: int, label: str, final: bool) -> str:
     return f"WEEK {week} · {lab} CHECK-IN" if lab else f"WEEK {week} · LIVE CHECK-IN"
 
 
-def status_line(d: dict, final: bool) -> str:
-    parts = []
-    if d["has_schedule"] and d["games_total"]:
-        parts.append(f"{d['games_final']} of {d['games_total']} NFL games final")
-    parts.append("H2H + weekly median" if not final else "H2H + weekly median both count")
-    return "  ·  ".join(parts)
+def pending_text(omitted, with_names=True) -> str:
+    n = len(omitted)
+    head = f"{n} matchup{'s' if n != 1 else ''} yet to kick off"
+    if not with_names:
+        return head
+    return head + ":  " + ",  ".join(f"{a['manager']} vs {b['manager']}" for a, b in omitted)
+
+
+def status_variants(d: dict, final: bool, omitted=()) -> list[str]:
+    """Header sub-line candidates, most informative first."""
+    games = (f"{d['games_final']} of {d['games_total']} NFL games final"
+             if d.get("has_schedule") and d.get("games_total") else "")
+    join = lambda *xs: "  ·  ".join(x for x in xs if x)  # noqa: E731
+    if omitted:
+        return [join(games, pending_text(omitted)), pending_text(omitted),
+                join(games, pending_text(omitted, False)), pending_text(omitted, False)]
+    return [join(games, "H2H + weekly median" if not final else "H2H + weekly median both count"), games]
 
 
 def updated_text() -> str:
@@ -511,7 +524,7 @@ def draw_footer(draw, W, H, M, s):
     draw.text((W - M, fy), f"Sleeper live data  ·  {updated_text()}", font=uf, fill=MUTED, anchor="rs")
 
 
-def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=True):
+def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=True, omitted=()):
     draw.rectangle([0, 0, W, int(10 * s)], fill=ACCENT)
     logo_sz = int(150 * s)
     right_edge = W - M
@@ -528,7 +541,10 @@ def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=Tru
     draw.text((M, ty), ttxt, font=tf, fill=FG, anchor="ls")
     sf = F("sans", 24 * s, 500)
     sy = ty + 18 * s + cap_h(sf)
-    draw.text((M, sy), status_line(d, final), font=sf, fill=MUTED, anchor="ls")
+    for st in status_variants(d, final, omitted):
+        if tw(draw, st, sf) <= title_max:
+            break
+    draw.text((M, sy), st, font=sf, fill=MUTED, anchor="ls")
     if median_right:
         draw_median_block(draw, right_edge, 30 * s, d, s, final=final)
     return sy
@@ -538,22 +554,87 @@ def draw_header(img, draw, W, M, d, label, final, s, logo=True, median_right=Tru
 # Layouts
 # ---------------------------------------------------------------------------
 
+def pair_started(pair, has_schedule: bool) -> bool:
+    """True once at least one starter on either team has played (game started or final).
+    Uses the ESPN game states; falls back to 'either team has nonzero points'."""
+    if has_schedule and all(t.get("started") is not None for t in pair):
+        return any(t["started"] > 0 for t in pair)
+    return any((t.get("points") or 0) > 0 for t in pair)
+
+
+def select_pairs(d: dict, final: bool):
+    """(pairs to show, pairs omitted). Final cards always show all six; live cards hide
+    matchups where nobody has played yet (if nobody has played anywhere, show all)."""
+    pairs = d["pairs"]
+    if final:
+        return pairs, []
+    shown = [p for p in pairs if pair_started(p, d.get("has_schedule", False))]
+    if not shown:
+        return pairs, []
+    return shown, [p for p in pairs if p not in shown]
+
+
+# rows per layout: number of boxes in each row (rows with fewer boxes are centred)
+GRID_WIDE = {1: [1], 2: [2], 3: [3], 4: [2, 2], 5: [3, 2], 6: [3, 3]}
+GRID_SQUARE = {1: [1], 2: [1, 1], 3: [2, 1], 4: [2, 2], 5: [2, 2, 1], 6: [2, 2, 2]}
+BOX_BASE_W, BOX_BASE_H = 450, 190     # box size at scale 1.0
+BOX_SMAX, BOX_HSTRETCH, BOX_WSTRETCH = 1.5, 1.45, 1.6
+
+
+def draw_grid(draw, x0, y0, w, h, pairs, spec, final, median, gap):
+    """Lay out matchup boxes in the area: boxes scale with the space they get,
+    rows are centred horizontally and the whole block is centred vertically.
+    Returns the block's bottom y."""
+    if not pairs:
+        return y0
+    rows = spec[len(pairs)]
+    ncol, nrow = max(rows), len(rows)
+    cell_w = (w - (ncol - 1) * gap) / ncol
+    cell_h = (h - (nrow - 1) * gap) / nrow
+    sc = min(cell_w / BOX_BASE_W, cell_h / BOX_BASE_H, BOX_SMAX)
+    # boxes fill their column; only a very wide lone column (1 matchup, landscape) is capped
+    bw = cell_w if cell_w <= 1000 else min(cell_w, BOX_BASE_W * sc * BOX_WSTRETCH)
+    bh = min(cell_h, BOX_BASE_H * sc * BOX_HSTRETCH)
+    block_h = nrow * bh + (nrow - 1) * gap
+    by = y0 + (h - block_h) / 2
+    i = 0
+    for r, n in enumerate(rows):
+        row_w = n * bw + (n - 1) * gap
+        bx = x0 + (w - row_w) / 2
+        for c in range(n):
+            draw_matchup(draw, bx + c * (bw + gap), by + r * (bh + gap), bw, bh, pairs[i], final, sc, median)
+            i += 1
+    return by + block_h
+
+
+def draw_pending_note(draw, cx, y, max_w, omitted, s):
+    """Muted centred line naming the matchups that haven't kicked off."""
+    if not omitted:
+        return
+    n = len(omitted)
+    head = f"{n} matchup{'s' if n != 1 else ''} yet to kick off"
+    names = "  ·  ".join(f"{a['manager']} vs {b['manager']}" for a, b in omitted)
+    f = F("sans", 24 * s, 500)
+    for txt in (f"{head}:  {names}", head):
+        if tw(draw, txt, f) <= max_w:
+            break
+    draw.text((cx, y), txt, font=f, fill=MUTED, anchor="ms")
+
+
+NOTE_H = 44
+
+
 def render_wide(d, label, final) -> Image.Image:
     W, H, s, M = 1600, 900, 1.0, 56
     img = Image.new("RGBA", (W, H), BG)
     draw = ImageDraw.Draw(img)
-    hb = draw_header(img, draw, W, M, d, label, final, s)
+    shown, omitted = select_pairs(d, final)
+    hb = draw_header(img, draw, W, M, d, label, final, s, omitted=omitted)
 
     footer_line = H - 70
     py = footer_line - 178          # TOP PERFORMERS label baseline
     gy = hb + 30
-    gap = 22
-    cols, rows = 3, 2
-    cw = (W - 2 * M - (cols - 1) * gap) / cols
-    ch = (py - 46 - gy - (rows - 1) * gap) / rows
-    for i, pair in enumerate(d["pairs"][: cols * rows]):
-        r, c = divmod(i, cols)
-        draw_matchup(draw, M + c * (cw + gap), gy + r * (ch + gap), cw, ch, pair, final, s, d["median"])
+    draw_grid(draw, M, gy, W - 2 * M, (py - 46) - gy, shown, GRID_WIDE, final, d["median"], 22)
     draw_section_label(draw, M, py, "TOP PERFORMERS" if not final else "TOP PERFORMERS OF THE WEEK", s, W - 2 * M)
     top = d["top"][:5]
     if top:
@@ -590,15 +671,12 @@ def render_square(d, label, final) -> Image.Image:
     draw.text((W - M - 26, mid + cap_h(cf) / 2), above_txt, font=cf, fill="#d6d6d6", anchor="rs")
 
     gy = my + mh + 24
-    gap = 18
-    cols, rows = 2, 3
-    cw = (W - 2 * M - gap) / cols
-    ch = 168
-    sm = 0.9
-    for i, pair in enumerate(d["pairs"][: cols * rows]):
-        r, c = divmod(i, cols)
-        draw_matchup(draw, M + c * (cw + gap), gy + r * (ch + gap), cw, ch, pair, final, sm, d["median"])
-    py = gy + rows * ch + (rows - 1) * gap + 52
+    grid_h = 3 * 168 + 2 * 18          # fixed grid area; boxes re-flow inside it
+    shown, omitted = select_pairs(d, final)
+    area_h = grid_h - (NOTE_H if omitted else 0)
+    bottom = draw_grid(draw, M, gy, W - 2 * M, area_h, shown, GRID_SQUARE, final, d["median"], 18)
+    draw_pending_note(draw, W / 2, bottom + NOTE_H - 10, W - 2 * M, omitted, 1.0)
+    py = gy + grid_h + 52
     draw_section_label(draw, M, py, "TOP PERFORMERS", 1.0, W - 2 * M)
     footer_line = H - 0.9 * 70
     top = d["top"][:5]
@@ -644,8 +722,10 @@ def main(argv=None):
     if a.dump_json:
         Path(a.dump_json).write_text(json.dumps(d, indent=2, default=str))
     print(f"wrote {out}  ({img.width}x{img.height})  week {d['week']}  median {fmt(d['median'])}")
+    shown, _ = select_pairs(d, final)
     for a_, b_ in d["pairs"]:
-        print(f"  {a_['manager']:>7} {fmt(a_['points']):>7}  -  {fmt(b_['points']):<7} {b_['manager']}")
+        tag = "" if [a_, b_] in shown else "   (not shown: yet to kick off)"
+        print(f"  {a_['manager']:>7} {fmt(a_['points']):>7}  -  {fmt(b_['points']):<7} {b_['manager']}{tag}")
 
 
 if __name__ == "__main__":
