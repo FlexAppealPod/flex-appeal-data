@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T06:50:19-07:00",
+    "generated_at": "2026-10-03T06:57:04-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 4,
     "counts": {
-      "transactions": 167
+      "transactions": 170
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,115 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1411856425415696384",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-02T14:08:32-07:00",
+      "processed": "2026-10-02T14:08:32-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds George Holani / drops Pat Bryant",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "12048",
+              "name": "George Holani",
+              "position": "RB",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12492",
+              "name": "Pat Bryant",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1411772077421117440",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-02T08:33:22-07:00",
+      "processed": "2026-10-02T08:33:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Makai Lemon",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "13294",
+              "name": "Makai Lemon",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1411771827365150720",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-02T08:32:22-07:00",
+      "processed": "2026-10-02T08:32:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Pat Bryant",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "12492",
+              "name": "Pat Bryant",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
     {
       "id": "1411492874918379520",
       "type": "free_agent",
@@ -82,7 +191,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Caleb Douglas",
@@ -90,7 +199,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -116,7 +225,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Kayshon Boutte",
@@ -124,7 +233,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -489,7 +598,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Kenyon Sadiq / drops Tyquan Thornton ($19 FAAB)",
@@ -497,7 +606,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "13330",
@@ -697,7 +806,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Kyle Pitts / drops AJ Dillon ($2 FAAB)",
@@ -705,7 +814,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "7553",
@@ -1171,7 +1280,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Kayshon Boutte",
@@ -1179,7 +1288,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "9504",
@@ -1321,7 +1430,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds AJ Dillon",
@@ -1329,7 +1438,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "6828",
@@ -1430,7 +1539,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Tyquan Thornton / drops Antonio Williams",
@@ -1438,7 +1547,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "8188",
@@ -1471,7 +1580,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Nakobe Dean",
@@ -1479,7 +1588,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "8267",
@@ -1505,7 +1614,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Jack Campbell",
@@ -1513,7 +1622,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -1539,7 +1648,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Raheim Sanders",
@@ -1547,7 +1656,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -1573,7 +1682,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Demarcus Robinson",
@@ -1581,7 +1690,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -1813,7 +1922,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Jonah Coleman ($33 FAAB)",
@@ -1821,7 +1930,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "13345",
@@ -2420,7 +2529,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Raheim Sanders",
@@ -2428,7 +2537,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "12472",
@@ -2720,7 +2829,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Antonio Williams / drops Ryan Flournoy",
@@ -2728,7 +2837,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "13301",
@@ -2761,7 +2870,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Demarcus Robinson / drops Zavion Thomas",
@@ -2769,7 +2878,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "3286",
@@ -3548,7 +3657,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Zavion Thomas / drops Germie Bernard",
@@ -3556,7 +3665,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "13411",
@@ -4480,7 +4589,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Antonio Williams",
@@ -4488,7 +4597,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -4650,7 +4759,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Christian Wilkins / drops Deshaun Watson",
@@ -4658,7 +4767,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "6120",
@@ -4691,7 +4800,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z adds Deshaun Watson / drops Kyle Williams",
@@ -4699,7 +4808,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [
             {
               "player_id": "4017",
@@ -5788,7 +5897,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4"
+          "team_name": "Rolling With Mahomies"
         }
       ],
       "headline": "Matt Z drops Michael Carter",
@@ -5796,7 +5905,7 @@
         {
           "roster_id": 2,
           "manager": "Matt Z",
-          "team_name": "Before 6, After 4",
+          "team_name": "Rolling With Mahomies",
           "adds": [],
           "drops": [
             {
@@ -6833,7 +6942,7 @@
     {
       "roster_id": 2,
       "manager": "Matt Z",
-      "team_name": "Before 6, After 4",
+      "team_name": "Rolling With Mahomies",
       "budget": 100,
       "spent": 54,
       "remaining": 46,
@@ -6865,19 +6974,19 @@
     "totals_by_type": {
       "trade": 11,
       "waiver": 30,
-      "free_agent": 126,
+      "free_agent": 129,
       "commissioner": 0,
-      "total": 167
+      "total": 170
     },
     "regular_season_totals_by_type": {
       "trade": 3,
       "waiver": 29,
-      "free_agent": 54,
+      "free_agent": 57,
       "commissioner": 0,
-      "total": 86
+      "total": 89
     },
     "totals_by_phase": {
-      "regular": 86,
+      "regular": 89,
       "preseason": 31,
       "offseason": 50
     },
@@ -6886,7 +6995,7 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 11
+      "4": 14
     },
     "most_active_manager": {
       "managers": [
@@ -6898,7 +7007,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 15
+      "count": 18
     },
     "most_trades": {
       "managers": [
@@ -6956,6 +7065,17 @@
         ]
       },
       {
+        "player_id": "12048",
+        "name": "George Holani",
+        "position": "RB",
+        "nfl_team": "SEA",
+        "adds": 2,
+        "added_by": [
+          "Matt Z",
+          "Derek"
+        ]
+      },
+      {
         "player_id": "12718",
         "name": "Konata Mumpfield",
         "position": "WR",
@@ -6964,6 +7084,17 @@
         "added_by": [
           "Doug",
           "Jake"
+        ]
+      },
+      {
+        "player_id": "12492",
+        "name": "Pat Bryant",
+        "position": "WR",
+        "nfl_team": "DEN",
+        "adds": 2,
+        "added_by": [
+          "Matt Z",
+          "Brett"
         ]
       },
       {
@@ -7075,6 +7206,18 @@
         "players_dropped": 20
       },
       {
+        "roster_id": 2,
+        "manager": "Matt Z",
+        "team_name": "Rolling With Mahomies",
+        "transactions": 23,
+        "regular_season_transactions": 18,
+        "trades": 0,
+        "waiver_claims": 3,
+        "free_agent_moves": 20,
+        "players_added": 16,
+        "players_dropped": 16
+      },
+      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "RACEY RICE",
@@ -7085,18 +7228,6 @@
         "free_agent_moves": 15,
         "players_added": 11,
         "players_dropped": 16
-      },
-      {
-        "roster_id": 2,
-        "manager": "Matt Z",
-        "team_name": "Before 6, After 4",
-        "transactions": 20,
-        "regular_season_transactions": 15,
-        "trades": 0,
-        "waiver_claims": 3,
-        "free_agent_moves": 17,
-        "players_added": 13,
-        "players_dropped": 15
       },
       {
         "roster_id": 9,
@@ -7370,7 +7501,7 @@
       "round": 6,
       "original_owner": "Matt Z",
       "current_owner": "Matt Z",
-      "current_team": "Before 6, After 4",
+      "current_team": "Rolling With Mahomies",
       "draft_complete": true
     },
     {
@@ -7442,7 +7573,7 @@
       "round": 5,
       "original_owner": "Vlad",
       "current_owner": "Matt Z",
-      "current_team": "Before 6, After 4",
+      "current_team": "Rolling With Mahomies",
       "draft_complete": false
     }
   ]
