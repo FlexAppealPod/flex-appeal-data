@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-03T06:57:04-07:00",
+    "generated_at": "2026-10-04T06:56:13-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 4,
     "counts": {
-      "transactions": 170
+      "transactions": 175
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,183 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1412316206551027712",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T20:35:32-07:00",
+      "processed": "2026-10-03T20:35:32-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew adds Andrew Van Ginkel",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "6183",
+              "name": "Andrew Van Ginkel",
+              "position": "LB",
+              "nfl_team": "MIN"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1412243454418833408",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T15:46:27-07:00",
+      "processed": "2026-10-03T15:46:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Cooper Kupp",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "4039",
+              "name": "Cooper Kupp",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1412200432813522944",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T12:55:29-07:00",
+      "processed": "2026-10-03T12:55:29-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Marc drops De'Von Achane",
+      "sides": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "9226",
+              "name": "De'Von Achane",
+              "position": "RB",
+              "nfl_team": "MIA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1412200284142198784",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T12:54:54-07:00",
+      "processed": "2026-10-03T12:54:54-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Marc adds Mark Andrews",
+      "sides": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [
+            {
+              "player_id": "5012",
+              "name": "Mark Andrews",
+              "position": "TE",
+              "nfl_team": "BAL"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1412125867135508480",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T07:59:12-07:00",
+      "processed": "2026-10-03T07:59:12-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "RACEY RICE"
+        }
+      ],
+      "headline": "Juan adds Antonio Williams / drops Chris Bell",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "RACEY RICE",
+          "adds": [
+            {
+              "player_id": "13301",
+              "name": "Antonio Williams",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13311",
+              "name": "Chris Bell",
+              "position": "WR",
+              "nfl_team": "MIA"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1411856425415696384",
       "type": "free_agent",
@@ -6974,19 +7151,19 @@
     "totals_by_type": {
       "trade": 11,
       "waiver": 30,
-      "free_agent": 129,
+      "free_agent": 134,
       "commissioner": 0,
-      "total": 170
+      "total": 175
     },
     "regular_season_totals_by_type": {
       "trade": 3,
       "waiver": 29,
-      "free_agent": 57,
+      "free_agent": 62,
       "commissioner": 0,
-      "total": 89
+      "total": 94
     },
     "totals_by_phase": {
-      "regular": 89,
+      "regular": 94,
       "preseason": 31,
       "offseason": 50
     },
@@ -6995,10 +7172,11 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 14
+      "4": 19
     },
     "most_active_manager": {
       "managers": [
+        "Derek",
         "Jake"
       ],
       "count": 25
@@ -7040,6 +7218,17 @@
           "Brett",
           "Matt A",
           "Jake"
+        ]
+      },
+      {
+        "player_id": "13301",
+        "name": "Antonio Williams",
+        "position": "WR",
+        "nfl_team": "WAS",
+        "adds": 2,
+        "added_by": [
+          "Juan",
+          "Matt Z"
         ]
       },
       {
@@ -7131,6 +7320,13 @@
         "drops": 2
       },
       {
+        "player_id": "13311",
+        "name": "Chris Bell",
+        "position": "WR",
+        "nfl_team": "MIA",
+        "drops": 2
+      },
+      {
         "player_id": "13347",
         "name": "Demond Claiborne",
         "position": "RB",
@@ -7171,16 +7367,21 @@
         "position": "WR",
         "nfl_team": "NE",
         "drops": 2
-      },
-      {
-        "player_id": "13285",
-        "name": "Malachi Fields",
-        "position": "WR",
-        "nfl_team": "NYG",
-        "drops": 2
       }
     ],
     "by_manager": [
+      {
+        "roster_id": 7,
+        "manager": "Derek",
+        "team_name": "my njigba",
+        "transactions": 25,
+        "regular_season_transactions": 9,
+        "trades": 4,
+        "waiver_claims": 3,
+        "free_agent_moves": 18,
+        "players_added": 17,
+        "players_dropped": 20
+      },
       {
         "roster_id": 1,
         "manager": "Jake",
@@ -7194,16 +7395,16 @@
         "players_dropped": 22
       },
       {
-        "roster_id": 7,
-        "manager": "Derek",
-        "team_name": "my njigba",
-        "transactions": 24,
-        "regular_season_transactions": 8,
-        "trades": 4,
-        "waiver_claims": 3,
-        "free_agent_moves": 17,
-        "players_added": 16,
-        "players_dropped": 20
+        "roster_id": 6,
+        "manager": "Juan",
+        "team_name": "RACEY RICE",
+        "transactions": 23,
+        "regular_season_transactions": 14,
+        "trades": 5,
+        "waiver_claims": 2,
+        "free_agent_moves": 16,
+        "players_added": 12,
+        "players_dropped": 17
       },
       {
         "roster_id": 2,
@@ -7215,18 +7416,6 @@
         "waiver_claims": 3,
         "free_agent_moves": 20,
         "players_added": 16,
-        "players_dropped": 16
-      },
-      {
-        "roster_id": 6,
-        "manager": "Juan",
-        "team_name": "RACEY RICE",
-        "transactions": 22,
-        "regular_season_transactions": 13,
-        "trades": 5,
-        "waiver_claims": 2,
-        "free_agent_moves": 15,
-        "players_added": 11,
         "players_dropped": 16
       },
       {
@@ -7266,6 +7455,18 @@
         "players_dropped": 9
       },
       {
+        "roster_id": 10,
+        "manager": "Marc",
+        "team_name": "Walker? Barely know her",
+        "transactions": 11,
+        "regular_season_transactions": 6,
+        "trades": 0,
+        "waiver_claims": 3,
+        "free_agent_moves": 8,
+        "players_added": 4,
+        "players_dropped": 9
+      },
+      {
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
@@ -7290,18 +7491,6 @@
         "players_dropped": 9
       },
       {
-        "roster_id": 10,
-        "manager": "Marc",
-        "team_name": "Walker? Barely know her",
-        "transactions": 9,
-        "regular_season_transactions": 4,
-        "trades": 0,
-        "waiver_claims": 3,
-        "free_agent_moves": 6,
-        "players_added": 3,
-        "players_dropped": 8
-      },
-      {
         "roster_id": 4,
         "manager": "Lij",
         "team_name": "Taylor Swift",
@@ -7317,12 +7506,12 @@
         "roster_id": 12,
         "manager": "Andrew",
         "team_name": "Carried by RA",
-        "transactions": 6,
-        "regular_season_transactions": 2,
+        "transactions": 7,
+        "regular_season_transactions": 3,
         "trades": 2,
         "waiver_claims": 2,
-        "free_agent_moves": 2,
-        "players_added": 3,
+        "free_agent_moves": 3,
+        "players_added": 4,
         "players_dropped": 5
       }
     ]
