@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T06:56:13-07:00",
+    "generated_at": "2026-10-05T07:02:43-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 4,
     "counts": {
-      "transactions": 175
+      "transactions": 177
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,90 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1412560500398518272",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-04T12:46:16-07:00",
+      "processed": "2026-10-04T12:46:16-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Jauan Jennings / drops Konata Mumpfield",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "7049",
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "nfl_team": "MIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12718",
+              "name": "Konata Mumpfield",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1412310087673946112",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-03T20:11:13-07:00",
+      "processed": "2026-10-04T11:55:43-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds De'Von Achane / drops Rico Dowdle ($3 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "9226",
+              "name": "De'Von Achane",
+              "position": "RB",
+              "nfl_team": "MIA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7021",
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "nfl_team": "PIT"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 3,
+      "winning_claim": true
+    },
     {
       "id": "1412316206551027712",
       "type": "free_agent",
@@ -177,7 +261,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Antonio Williams / drops Chris Bell",
@@ -185,7 +269,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "13301",
@@ -436,7 +520,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Chris Bell",
@@ -444,7 +528,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "13311",
@@ -470,7 +554,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Jayden Reed",
@@ -478,7 +562,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -659,7 +743,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Brian Robinson",
@@ -667,7 +751,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "8154",
@@ -904,7 +988,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Jaylen Wright ($32 FAAB)",
@@ -912,7 +996,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "11643",
@@ -1198,7 +1282,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Jonathon Brooks",
@@ -1206,7 +1290,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -1232,7 +1316,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops James Conner",
@@ -1240,7 +1324,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -1341,7 +1425,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         },
         {
           "roster_id": 7,
@@ -1354,7 +1438,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "10222",
@@ -1675,7 +1759,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Emanuel Wilson / drops Baker Mayfield",
@@ -1683,7 +1767,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "11435",
@@ -2135,7 +2219,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Tre Tucker ($21 FAAB)",
@@ -2143,7 +2227,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "10213",
@@ -2343,7 +2427,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Zack Baun",
@@ -2351,7 +2435,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -2629,7 +2713,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Zack Baun",
@@ -2637,7 +2721,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "6815",
@@ -3466,7 +3550,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         },
         {
           "roster_id": 7,
@@ -3479,7 +3563,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "5927",
@@ -3725,7 +3809,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Tank Bigsby",
@@ -3733,7 +3817,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -4494,7 +4578,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Omar Cooper",
@@ -4502,7 +4586,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -4528,7 +4612,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Chris Bell",
@@ -4536,7 +4620,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -4902,7 +4986,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds Roschon Johnson",
@@ -4910,7 +4994,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "10235",
@@ -5127,7 +5211,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan adds MarShawn Lloyd / drops Jordyn Brooks",
@@ -5135,7 +5219,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "11581",
@@ -5352,7 +5436,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         },
         {
           "roster_id": 12,
@@ -5365,7 +5449,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -5441,7 +5525,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         },
         {
           "roster_id": 8,
@@ -5454,7 +5538,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [
             {
               "player_id": "12490",
@@ -5591,7 +5675,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Malik Willis",
@@ -5599,7 +5683,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -6113,7 +6197,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Doug gets Ja'Marr Chase, 2026 Rd 5 pick (Juan); Juan gets 2026 Rd 4 pick (Jake), 2026 Rd 2 pick (Lij)",
@@ -6159,7 +6243,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -6504,7 +6588,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE"
+          "team_name": "Red Cross"
         }
       ],
       "headline": "Juan drops Sean Tucker",
@@ -6512,7 +6596,7 @@
         {
           "roster_id": 6,
           "manager": "Juan",
-          "team_name": "RACEY RICE",
+          "team_name": "Red Cross",
           "adds": [],
           "drops": [
             {
@@ -7102,21 +7186,6 @@
       }
     },
     {
-      "roster_id": 6,
-      "manager": "Juan",
-      "team_name": "RACEY RICE",
-      "budget": 100,
-      "spent": 53,
-      "remaining": 47,
-      "claims_won": 2,
-      "winning_bids_total": 53,
-      "biggest_bid": {
-        "bid": 32,
-        "player": "Jaylen Wright",
-        "week": 3
-      }
-    },
-    {
       "roster_id": 2,
       "manager": "Matt Z",
       "team_name": "Rolling With Mahomies",
@@ -7129,6 +7198,21 @@
         "bid": 33,
         "player": "Jonah Coleman",
         "week": 2
+      }
+    },
+    {
+      "roster_id": 6,
+      "manager": "Juan",
+      "team_name": "Red Cross",
+      "budget": 100,
+      "spent": 56,
+      "remaining": 44,
+      "claims_won": 3,
+      "winning_bids_total": 56,
+      "biggest_bid": {
+        "bid": 32,
+        "player": "Jaylen Wright",
+        "week": 3
       }
     },
     {
@@ -7150,20 +7234,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 11,
-      "waiver": 30,
-      "free_agent": 134,
+      "waiver": 31,
+      "free_agent": 135,
       "commissioner": 0,
-      "total": 175
+      "total": 177
     },
     "regular_season_totals_by_type": {
       "trade": 3,
-      "waiver": 29,
-      "free_agent": 62,
+      "waiver": 30,
+      "free_agent": 63,
       "commissioner": 0,
-      "total": 94
+      "total": 96
     },
     "totals_by_phase": {
-      "regular": 94,
+      "regular": 96,
       "preseason": 31,
       "offseason": 50
     },
@@ -7172,7 +7256,7 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 19
+      "4": 21
     },
     "most_active_manager": {
       "managers": [
@@ -7362,10 +7446,10 @@
         "drops": 2
       },
       {
-        "player_id": "12547",
-        "name": "Kyle Williams",
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
         "position": "WR",
-        "nfl_team": "NE",
+        "nfl_team": "LAR",
         "drops": 2
       }
     ],
@@ -7397,14 +7481,14 @@
       {
         "roster_id": 6,
         "manager": "Juan",
-        "team_name": "RACEY RICE",
-        "transactions": 23,
-        "regular_season_transactions": 14,
+        "team_name": "Red Cross",
+        "transactions": 24,
+        "regular_season_transactions": 15,
         "trades": 5,
-        "waiver_claims": 2,
+        "waiver_claims": 3,
         "free_agent_moves": 16,
-        "players_added": 12,
-        "players_dropped": 17
+        "players_added": 13,
+        "players_dropped": 18
       },
       {
         "roster_id": 2,
@@ -7434,13 +7518,13 @@
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 15,
-        "regular_season_transactions": 4,
+        "transactions": 16,
+        "regular_season_transactions": 5,
         "trades": 2,
         "waiver_claims": 2,
-        "free_agent_moves": 11,
-        "players_added": 8,
-        "players_dropped": 13
+        "free_agent_moves": 12,
+        "players_added": 9,
+        "players_dropped": 14
       },
       {
         "roster_id": 3,
@@ -7554,7 +7638,7 @@
       "round": 2,
       "original_owner": "Lij",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7570,7 +7654,7 @@
       "round": 2,
       "original_owner": "Juan",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7594,7 +7678,7 @@
       "round": 3,
       "original_owner": "Matt A",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7610,7 +7694,7 @@
       "round": 4,
       "original_owner": "Jake",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7642,7 +7726,7 @@
       "round": 4,
       "original_owner": "Andrew",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7674,7 +7758,7 @@
       "round": 5,
       "original_owner": "Marc",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": true
     },
     {
@@ -7754,7 +7838,7 @@
       "round": 3,
       "original_owner": "Marc",
       "current_owner": "Juan",
-      "current_team": "RACEY RICE",
+      "current_team": "Red Cross",
       "draft_complete": false
     },
     {
