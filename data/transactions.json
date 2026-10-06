@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-05T07:02:43-07:00",
+    "generated_at": "2026-10-06T06:55:12-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 4,
+    "current_week": 5,
     "counts": {
-      "transactions": 177
+      "transactions": 178
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,47 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1412958023986503680",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-05T15:05:53-07:00",
+      "processed": "2026-10-05T15:05:53-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Joe Mixon / drops Mike Washington",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "4018",
+              "name": "Joe Mixon",
+              "position": "RB",
+              "nfl_team": "FA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13305",
+              "name": "Mike Washington",
+              "position": "RB",
+              "nfl_team": "LV"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1412560500398518272",
       "type": "free_agent",
@@ -588,7 +629,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A adds Wan'Dale Robinson",
@@ -596,7 +637,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "8126",
@@ -661,7 +702,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Jake gets Omarion Hampton, Luther Burden; Matt A gets Puka Nacua",
@@ -700,7 +741,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "9493",
@@ -1500,7 +1541,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A adds AJ Barner / drops Kaleb Johnson",
@@ -1508,7 +1549,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "11603",
@@ -1977,7 +2018,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A adds Kaleb Johnson / drops Jack Bech",
@@ -1985,7 +2026,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "12504",
@@ -2824,7 +2865,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A adds Jack Bech",
@@ -2832,7 +2873,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "12483",
@@ -3342,7 +3383,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A adds Ray Davis / drops Kaleb Johnson ($3 FAAB)",
@@ -3350,7 +3391,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "11575",
@@ -4374,7 +4415,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A drops Braelon Allen",
@@ -4382,7 +4423,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [],
           "drops": [
             {
@@ -4408,7 +4449,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A drops Jack Bech",
@@ -4416,7 +4457,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [],
           "drops": [
             {
@@ -5530,7 +5571,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Juan gets Bhayshul Tuten; Matt A gets James Cook",
@@ -5563,7 +5604,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [
             {
               "player_id": "8138",
@@ -6049,7 +6090,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks"
+          "team_name": "CTE"
         }
       ],
       "headline": "Matt A drops Jake Ferguson",
@@ -6057,7 +6098,7 @@
         {
           "roster_id": 8,
           "manager": "Matt A",
-          "team_name": "Stephen Miller Sucks",
+          "team_name": "CTE",
           "adds": [],
           "drops": [
             {
@@ -7098,7 +7139,7 @@
     {
       "roster_id": 8,
       "manager": "Matt A",
-      "team_name": "Stephen Miller Sucks",
+      "team_name": "CTE",
       "budget": 100,
       "spent": 3,
       "remaining": 97,
@@ -7235,19 +7276,19 @@
     "totals_by_type": {
       "trade": 11,
       "waiver": 31,
-      "free_agent": 135,
+      "free_agent": 136,
       "commissioner": 0,
-      "total": 177
+      "total": 178
     },
     "regular_season_totals_by_type": {
       "trade": 3,
       "waiver": 30,
-      "free_agent": 63,
+      "free_agent": 64,
       "commissioner": 0,
-      "total": 96
+      "total": 97
     },
     "totals_by_phase": {
-      "regular": 96,
+      "regular": 97,
       "preseason": 31,
       "offseason": 50
     },
@@ -7256,14 +7297,13 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 21
+      "4": 22
     },
     "most_active_manager": {
       "managers": [
-        "Derek",
         "Jake"
       ],
-      "count": 25
+      "count": 26
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -7455,6 +7495,18 @@
     ],
     "by_manager": [
       {
+        "roster_id": 1,
+        "manager": "Jake",
+        "team_name": "Top Play",
+        "transactions": 26,
+        "regular_season_transactions": 14,
+        "trades": 2,
+        "waiver_claims": 3,
+        "free_agent_moves": 21,
+        "players_added": 16,
+        "players_dropped": 23
+      },
+      {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
@@ -7465,18 +7517,6 @@
         "free_agent_moves": 18,
         "players_added": 17,
         "players_dropped": 20
-      },
-      {
-        "roster_id": 1,
-        "manager": "Jake",
-        "team_name": "Top Play",
-        "transactions": 25,
-        "regular_season_transactions": 13,
-        "trades": 2,
-        "waiver_claims": 3,
-        "free_agent_moves": 20,
-        "players_added": 15,
-        "players_dropped": 22
       },
       {
         "roster_id": 6,
@@ -7565,7 +7605,7 @@
       {
         "roster_id": 8,
         "manager": "Matt A",
-        "team_name": "Stephen Miller Sucks",
+        "team_name": "CTE",
         "transactions": 10,
         "regular_season_transactions": 6,
         "trades": 2,
