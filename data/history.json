@@ -32,9 +32,9 @@
       "owner": "Juan Rodriguez",
       "seasons": 4,
       "wins": 26,
-      "losses": 14,
-      "win_pct": 0.65,
-      "total_pf": 5028.32,
+      "losses": 15,
+      "win_pct": 0.63,
+      "total_pf": 5125.0,
       "championships": 0,
       "playoff_appearances": 3
     },
@@ -42,39 +42,39 @@
       "owner": "Douglas Sullivan",
       "seasons": 4,
       "wins": 21,
-      "losses": 19,
-      "win_pct": 0.53,
-      "total_pf": 4622.9,
+      "losses": 20,
+      "win_pct": 0.51,
+      "total_pf": 4747.3,
       "championships": 2,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Elijah Bruette",
+      "seasons": 4,
+      "wins": 24,
+      "losses": 17,
+      "win_pct": 0.59,
+      "total_pf": 4637.86,
+      "championships": 0,
       "playoff_appearances": 2
     },
     {
       "owner": "Vlad Barber",
       "seasons": 4,
       "wins": 19,
-      "losses": 21,
-      "win_pct": 0.48,
-      "total_pf": 4543.38,
+      "losses": 22,
+      "win_pct": 0.46,
+      "total_pf": 4637.36,
       "championships": 1,
-      "playoff_appearances": 2
-    },
-    {
-      "owner": "Elijah Bruette",
-      "seasons": 4,
-      "wins": 23,
-      "losses": 17,
-      "win_pct": 0.58,
-      "total_pf": 4523.84,
-      "championships": 0,
       "playoff_appearances": 2
     },
     {
       "owner": "Marc Caballero",
       "seasons": 4,
-      "wins": 17,
+      "wins": 18,
       "losses": 23,
-      "win_pct": 0.43,
-      "total_pf": 4438.16,
+      "win_pct": 0.44,
+      "total_pf": 4569.04,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -82,9 +82,9 @@
       "owner": "Jake Prosser",
       "seasons": 4,
       "wins": 15,
-      "losses": 25,
-      "win_pct": 0.38,
-      "total_pf": 4253.16,
+      "losses": 26,
+      "win_pct": 0.37,
+      "total_pf": 4336.84,
       "championships": 0,
       "playoff_appearances": 0
     },
@@ -92,29 +92,29 @@
       "owner": "Matt Zacharias",
       "seasons": 4,
       "wins": 18,
-      "losses": 16,
-      "win_pct": 0.53,
-      "total_pf": 3864.36,
+      "losses": 17,
+      "win_pct": 0.51,
+      "total_pf": 3963.46,
       "championships": 0,
       "playoff_appearances": 2
     },
     {
       "owner": "Derek Bock",
       "seasons": 3,
-      "wins": 14,
+      "wins": 15,
       "losses": 13,
-      "win_pct": 0.52,
-      "total_pf": 2991.7,
+      "win_pct": 0.54,
+      "total_pf": 3095.74,
       "championships": 0,
       "playoff_appearances": 2
     },
     {
       "owner": "Paul Bacon",
       "seasons": 3,
-      "wins": 12,
+      "wins": 13,
       "losses": 15,
-      "win_pct": 0.44,
-      "total_pf": 2944.42,
+      "win_pct": 0.46,
+      "total_pf": 3072.84,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -122,9 +122,9 @@
       "owner": "Andrew Reed",
       "seasons": 3,
       "wins": 12,
-      "losses": 15,
-      "win_pct": 0.44,
-      "total_pf": 2745.7,
+      "losses": 16,
+      "win_pct": 0.43,
+      "total_pf": 2844.62,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -141,12 +141,22 @@
     {
       "owner": "Brett Trana",
       "seasons": 2,
-      "wins": 7,
+      "wins": 8,
       "losses": 7,
-      "win_pct": 0.5,
-      "total_pf": 1568.86,
+      "win_pct": 0.53,
+      "total_pf": 1690.18,
       "championships": 0,
       "playoff_appearances": 0
+    },
+    {
+      "owner": "Matt Atkinson",
+      "seasons": 2,
+      "wins": 12,
+      "losses": 3,
+      "win_pct": 0.8,
+      "total_pf": 1616.2,
+      "championships": 0,
+      "playoff_appearances": 1
     },
     {
       "owner": "Deion",
@@ -165,16 +175,6 @@
       "losses": 6,
       "win_pct": 0.54,
       "total_pf": 1460.62,
-      "championships": 0,
-      "playoff_appearances": 1
-    },
-    {
-      "owner": "Matt Atkinson",
-      "seasons": 2,
-      "wins": 11,
-      "losses": 3,
-      "win_pct": 0.79,
-      "total_pf": 1452.92,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -305,6 +305,13 @@
       "opponent": "Jared"
     },
     {
+      "season": 2026,
+      "week": 4,
+      "owner": "Matt Atkinson",
+      "points": 163.28,
+      "opponent": "Matt Zacharias"
+    },
+    {
       "season": 2024,
       "week": 9,
       "owner": "Vlad Barber",
@@ -317,13 +324,6 @@
       "owner": "Juan Rodriguez",
       "points": 162.88,
       "opponent": "Douglas Sullivan"
-    },
-    {
-      "season": 2024,
-      "week": 5,
-      "owner": "Vlad Barber",
-      "points": 162.58,
-      "opponent": "Derek Bock"
     }
   ],
   "all_time_low_scores": [
@@ -490,6 +490,15 @@
       "margin": 67.1
     },
     {
+      "season": 2026,
+      "week": 4,
+      "owner": "Matt Atkinson",
+      "points": 163.28,
+      "opponent": "Matt Zacharias",
+      "opponent_points": 99.1,
+      "margin": 64.18
+    },
+    {
       "season": 2023,
       "week": 13,
       "owner": "Vlad Barber",
@@ -524,15 +533,6 @@
       "opponent": "Juan Rodriguez",
       "opponent_points": 88.96,
       "margin": 59.9
-    },
-    {
-      "season": 2024,
-      "week": 13,
-      "owner": "Paul Bacon",
-      "points": 151.48,
-      "opponent": "Aaron",
-      "opponent_points": 91.92,
-      "margin": 59.56
     }
   ],
   "closest_games": [
