@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-06T06:55:12-07:00",
+    "generated_at": "2026-10-07T07:02:27-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 5,
     "counts": {
-      "transactions": 178
+      "transactions": 190
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,495 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1413556561019777024",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T06:44:16-07:00",
+      "processed": "2026-10-07T06:44:16-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Tre' Harris / drops Jauan Jennings",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "12509",
+              "name": "Tre' Harris",
+              "position": "WR",
+              "nfl_team": "LAC"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7049",
+              "name": "Jauan Jennings",
+              "position": "WR",
+              "nfl_team": "MIN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413518850015625216",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T04:14:25-07:00",
+      "processed": "2026-10-07T04:14:25-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew adds Rico Dowdle",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "7021",
+              "name": "Rico Dowdle",
+              "position": "RB",
+              "nfl_team": "PIT"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1413423167203987456",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T21:54:12-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Dohnte Meyers / drops Kyle Pitts ($20 FAAB)",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "13264",
+              "name": "Dohnte Meyers",
+              "position": "WR",
+              "nfl_team": "CIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7553",
+              "name": "Kyle Pitts",
+              "position": "TE",
+              "nfl_team": "ATL"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 20,
+      "winning_claim": true
+    },
+    {
+      "id": "1413345768252739584",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T16:46:39-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Marc adds Mike Washington / drops Tyjae Spears ($9 FAAB)",
+      "sides": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [
+            {
+              "player_id": "13305",
+              "name": "Mike Washington",
+              "position": "RB",
+              "nfl_team": "LV"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "9508",
+              "name": "Tyjae Spears",
+              "position": "RB",
+              "nfl_team": "TEN"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 9,
+      "winning_claim": true
+    },
+    {
+      "id": "1413318242700693504",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T14:57:16-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Arvell Reese / drops Nick Bolton ($4 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "13377",
+              "name": "Arvell Reese",
+              "position": "LB",
+              "nfl_team": "NYG"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7648",
+              "name": "Nick Bolton",
+              "position": "LB",
+              "nfl_team": "KC"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 4,
+      "winning_claim": true
+    },
+    {
+      "id": "1413266534465294336",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T11:31:48-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Robert Henry / drops Cooper Kupp ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "13418",
+              "name": "Robert Henry",
+              "position": "RB",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4039",
+              "name": "Cooper Kupp",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1413256380487393280",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T10:51:27-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Will Shipley / drops Antonio Williams ($22 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "11577",
+              "name": "Will Shipley",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13301",
+              "name": "Antonio Williams",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 22,
+      "winning_claim": true
+    },
+    {
+      "id": "1413197944617803776",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T06:59:15-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Romeo Doubs / drops Dalton Schultz ($37 FAAB)",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "8121",
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "nfl_team": "NE"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5001",
+              "name": "Dalton Schultz",
+              "position": "TE",
+              "nfl_team": "HOU"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 37,
+      "winning_claim": true
+    },
+    {
+      "id": "1413016870079979520",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-05T18:59:43-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Mike Gesicki / drops Adonai Mitchell ($8 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "4993",
+              "name": "Mike Gesicki",
+              "position": "TE",
+              "nfl_team": "CIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11625",
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 8,
+      "winning_claim": true
+    },
+    {
+      "id": "1412683171912249344",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-04T20:53:43-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Marc adds Roman Wilson ($3 FAAB)",
+      "sides": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [
+            {
+              "player_id": "11630",
+              "name": "Roman Wilson",
+              "position": "WR",
+              "nfl_team": "PIT"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 3,
+      "winning_claim": true
+    },
+    {
+      "id": "1412613503491031040",
+      "type": "waiver",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-04T16:16:53-07:00",
+      "processed": "2026-10-07T00:15:47-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew adds Cyrus Allen / drops Aaron Donald ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "13413",
+              "name": "Cyrus Allen",
+              "position": "WR",
+              "nfl_team": "KC"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "2227",
+              "name": "Aaron Donald",
+              "position": "DT",
+              "nfl_team": "LAR"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1413335931523547136",
+      "type": "free_agent",
+      "week": 4,
+      "sleeper_leg": 4,
+      "phase": "regular",
+      "created": "2026-10-06T16:07:33-07:00",
+      "processed": "2026-10-06T16:07:33-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew drops Tank Bigsby",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "9225",
+              "name": "Tank Bigsby",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1412958023986503680",
       "type": "free_agent",
@@ -7128,7 +7617,7 @@
       "budget": 100,
       "spent": 2,
       "remaining": 98,
-      "claims_won": 3,
+      "claims_won": 4,
       "winning_bids_total": 2,
       "biggest_bid": {
         "bid": 2,
@@ -7149,21 +7638,6 @@
         "bid": 3,
         "player": "Ray Davis",
         "week": 1
-      }
-    },
-    {
-      "roster_id": 10,
-      "manager": "Marc",
-      "team_name": "Walker? Barely know her",
-      "budget": 100,
-      "spent": 4,
-      "remaining": 96,
-      "claims_won": 3,
-      "winning_bids_total": 4,
-      "biggest_bid": {
-        "bid": 2,
-        "player": "Drew Lock",
-        "week": 2
       }
     },
     {
@@ -7188,7 +7662,7 @@
       "budget": 100,
       "spent": 15,
       "remaining": 85,
-      "claims_won": 2,
+      "claims_won": 3,
       "winning_bids_total": 15,
       "biggest_bid": {
         "bid": 10,
@@ -7197,18 +7671,18 @@
       }
     },
     {
-      "roster_id": 11,
-      "manager": "Brett",
-      "team_name": "Paper Kings",
+      "roster_id": 10,
+      "manager": "Marc",
+      "team_name": "Walker? Barely know her",
       "budget": 100,
-      "spent": 23,
-      "remaining": 77,
-      "claims_won": 4,
-      "winning_bids_total": 23,
+      "spent": 16,
+      "remaining": 84,
+      "claims_won": 5,
+      "winning_bids_total": 16,
       "biggest_bid": {
-        "bid": 8,
-        "player": "Kaleb Johnson",
-        "week": 3
+        "bid": 9,
+        "player": "Mike Washington",
+        "week": 4
       }
     },
     {
@@ -7216,10 +7690,10 @@
       "manager": "Vlad",
       "team_name": "WHO’s YOUR VLADDY",
       "budget": 100,
-      "spent": 38,
-      "remaining": 62,
-      "claims_won": 6,
-      "winning_bids_total": 38,
+      "spent": 50,
+      "remaining": 50,
+      "claims_won": 8,
+      "winning_bids_total": 50,
       "biggest_bid": {
         "bid": 9,
         "player": "Adonai Mitchell",
@@ -7227,14 +7701,29 @@
       }
     },
     {
+      "roster_id": 11,
+      "manager": "Brett",
+      "team_name": "Paper Kings",
+      "budget": 100,
+      "spent": 60,
+      "remaining": 40,
+      "claims_won": 5,
+      "winning_bids_total": 60,
+      "biggest_bid": {
+        "bid": 37,
+        "player": "Romeo Doubs",
+        "week": 4
+      }
+    },
+    {
       "roster_id": 2,
       "manager": "Matt Z",
       "team_name": "Rolling With Mahomies",
       "budget": 100,
-      "spent": 54,
-      "remaining": 46,
-      "claims_won": 3,
-      "winning_bids_total": 54,
+      "spent": 74,
+      "remaining": 26,
+      "claims_won": 4,
+      "winning_bids_total": 74,
       "biggest_bid": {
         "bid": 33,
         "player": "Jonah Coleman",
@@ -7246,10 +7735,10 @@
       "manager": "Juan",
       "team_name": "Red Cross",
       "budget": 100,
-      "spent": 56,
-      "remaining": 44,
-      "claims_won": 3,
-      "winning_bids_total": 56,
+      "spent": 78,
+      "remaining": 22,
+      "claims_won": 4,
+      "winning_bids_total": 78,
       "biggest_bid": {
         "bid": 32,
         "player": "Jaylen Wright",
@@ -7275,20 +7764,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 11,
-      "waiver": 31,
-      "free_agent": 136,
+      "waiver": 40,
+      "free_agent": 139,
       "commissioner": 0,
-      "total": 178
+      "total": 190
     },
     "regular_season_totals_by_type": {
       "trade": 3,
-      "waiver": 30,
-      "free_agent": 64,
+      "waiver": 39,
+      "free_agent": 67,
       "commissioner": 0,
-      "total": 97
+      "total": 109
     },
     "totals_by_phase": {
-      "regular": 97,
+      "regular": 109,
       "preseason": 31,
       "offseason": 50
     },
@@ -7297,10 +7786,12 @@
       "1": 15,
       "2": 31,
       "3": 29,
-      "4": 22
+      "4": 32,
+      "5": 2
     },
     "most_active_manager": {
       "managers": [
+        "Derek",
         "Jake"
       ],
       "count": 26
@@ -7309,7 +7800,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 18
+      "count": 19
     },
     "most_trades": {
       "managers": [
@@ -7427,6 +7918,13 @@
         "name": "Antonio Williams",
         "position": "WR",
         "nfl_team": "WAS",
+        "drops": 3
+      },
+      {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR",
+        "nfl_team": "NYJ",
         "drops": 2
       },
       {
@@ -7451,6 +7949,20 @@
         "drops": 2
       },
       {
+        "player_id": "4039",
+        "name": "Cooper Kupp",
+        "position": "WR",
+        "nfl_team": "SEA",
+        "drops": 2
+      },
+      {
+        "player_id": "5001",
+        "name": "Dalton Schultz",
+        "position": "TE",
+        "nfl_team": "HOU",
+        "drops": 2
+      },
+      {
         "player_id": "13347",
         "name": "Demond Claiborne",
         "position": "RB",
@@ -7470,30 +7982,21 @@
         "position": "WR",
         "nfl_team": "LV",
         "drops": 2
-      },
-      {
-        "player_id": "12504",
-        "name": "Kaleb Johnson",
-        "position": "RB",
-        "nfl_team": "GB",
-        "drops": 2
-      },
-      {
-        "player_id": "9504",
-        "name": "Kayshon Boutte",
-        "position": "WR",
-        "nfl_team": "HOU",
-        "drops": 2
-      },
-      {
-        "player_id": "12718",
-        "name": "Konata Mumpfield",
-        "position": "WR",
-        "nfl_team": "LAR",
-        "drops": 2
       }
     ],
     "by_manager": [
+      {
+        "roster_id": 7,
+        "manager": "Derek",
+        "team_name": "my njigba",
+        "transactions": 26,
+        "regular_season_transactions": 10,
+        "trades": 4,
+        "waiver_claims": 4,
+        "free_agent_moves": 18,
+        "players_added": 18,
+        "players_dropped": 21
+      },
       {
         "roster_id": 1,
         "manager": "Jake",
@@ -7507,64 +8010,64 @@
         "players_dropped": 23
       },
       {
-        "roster_id": 7,
-        "manager": "Derek",
-        "team_name": "my njigba",
-        "transactions": 25,
-        "regular_season_transactions": 9,
-        "trades": 4,
-        "waiver_claims": 3,
-        "free_agent_moves": 18,
-        "players_added": 17,
-        "players_dropped": 20
-      },
-      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 24,
-        "regular_season_transactions": 15,
+        "transactions": 25,
+        "regular_season_transactions": 16,
         "trades": 5,
-        "waiver_claims": 3,
+        "waiver_claims": 4,
         "free_agent_moves": 16,
-        "players_added": 13,
-        "players_dropped": 18
+        "players_added": 14,
+        "players_dropped": 19
       },
       {
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 23,
-        "regular_season_transactions": 18,
+        "transactions": 24,
+        "regular_season_transactions": 19,
         "trades": 0,
-        "waiver_claims": 3,
+        "waiver_claims": 4,
         "free_agent_moves": 20,
-        "players_added": 16,
-        "players_dropped": 16
+        "players_added": 17,
+        "players_dropped": 17
       },
       {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 17,
-        "regular_season_transactions": 12,
+        "transactions": 19,
+        "regular_season_transactions": 14,
         "trades": 0,
-        "waiver_claims": 6,
+        "waiver_claims": 8,
         "free_agent_moves": 11,
-        "players_added": 14,
-        "players_dropped": 15
+        "players_added": 16,
+        "players_dropped": 17
       },
       {
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 16,
-        "regular_season_transactions": 5,
+        "transactions": 17,
+        "regular_season_transactions": 6,
         "trades": 2,
         "waiver_claims": 2,
-        "free_agent_moves": 12,
-        "players_added": 9,
-        "players_dropped": 14
+        "free_agent_moves": 13,
+        "players_added": 10,
+        "players_dropped": 15
+      },
+      {
+        "roster_id": 10,
+        "manager": "Marc",
+        "team_name": "Walker? Barely know her",
+        "transactions": 13,
+        "regular_season_transactions": 8,
+        "trades": 0,
+        "waiver_claims": 5,
+        "free_agent_moves": 8,
+        "players_added": 6,
+        "players_dropped": 10
       },
       {
         "roster_id": 3,
@@ -7579,25 +8082,25 @@
         "players_dropped": 9
       },
       {
-        "roster_id": 10,
-        "manager": "Marc",
-        "team_name": "Walker? Barely know her",
-        "transactions": 11,
-        "regular_season_transactions": 6,
-        "trades": 0,
-        "waiver_claims": 3,
-        "free_agent_moves": 8,
-        "players_added": 4,
-        "players_dropped": 9
-      },
-      {
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 10,
-        "regular_season_transactions": 8,
+        "transactions": 11,
+        "regular_season_transactions": 9,
         "trades": 1,
-        "waiver_claims": 4,
+        "waiver_claims": 5,
+        "free_agent_moves": 5,
+        "players_added": 7,
+        "players_dropped": 8
+      },
+      {
+        "roster_id": 12,
+        "manager": "Andrew",
+        "team_name": "Carried by RA",
+        "transactions": 10,
+        "regular_season_transactions": 6,
+        "trades": 2,
+        "waiver_claims": 3,
         "free_agent_moves": 5,
         "players_added": 6,
         "players_dropped": 7
@@ -7625,18 +8128,6 @@
         "free_agent_moves": 6,
         "players_added": 3,
         "players_dropped": 6
-      },
-      {
-        "roster_id": 12,
-        "manager": "Andrew",
-        "team_name": "Carried by RA",
-        "transactions": 7,
-        "regular_season_transactions": 3,
-        "trades": 2,
-        "waiver_claims": 2,
-        "free_agent_moves": 3,
-        "players_added": 4,
-        "players_dropped": 5
       }
     ]
   },
