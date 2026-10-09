@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-07T07:02:27-07:00",
+    "generated_at": "2026-10-09T07:20:33-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 5,
     "counts": {
-      "transactions": 190
+      "transactions": 199
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,356 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1413756437833732096",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T19:58:30-07:00",
+      "processed": "2026-10-08T18:36:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Jakobi Meyers / drops Tre Tucker ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "5947",
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "nfl_team": "JAX"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "10213",
+              "name": "Tre Tucker",
+              "position": "WR",
+              "nfl_team": "LV"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1414023687337779200",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-08T13:40:27-07:00",
+      "processed": "2026-10-08T13:40:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Isaiah Williams / drops Keenan Allen",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "11608",
+              "name": "Isaiah Williams",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "1479",
+              "name": "Keenan Allen",
+              "position": "WR",
+              "nfl_team": "IND"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413938867395981312",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-08T08:03:25-07:00",
+      "processed": "2026-10-08T08:03:25-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Rashid Shaheed",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "8676",
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1413938622578593792",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-08T08:02:26-07:00",
+      "processed": "2026-10-08T08:02:26-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Sam Darnold",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "4943",
+              "name": "Sam Darnold",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413748963613356032",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T19:28:48-07:00",
+      "processed": "2026-10-07T19:28:48-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Jacoby Brissett / drops Jakobi Meyers",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "3257",
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5947",
+              "name": "Jakobi Meyers",
+              "position": "WR",
+              "nfl_team": "JAX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413680945109676032",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T14:58:31-07:00",
+      "processed": "2026-10-07T14:58:31-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Dameon Pierce / drops Darius Cooper",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "8129",
+              "name": "Dameon Pierce",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13150",
+              "name": "Darius Cooper",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413678709667356672",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T14:49:38-07:00",
+      "processed": "2026-10-07T14:49:38-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Darius Cooper / drops Darren Waller",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "13150",
+              "name": "Darius Cooper",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "2505",
+              "name": "Darren Waller",
+              "position": "TE",
+              "nfl_team": "CAR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413677977446678528",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T14:46:43-07:00",
+      "processed": "2026-10-07T14:46:43-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Tyler Higbee / drops Joe Mixon",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "3271",
+              "name": "Tyler Higbee",
+              "position": "TE",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4018",
+              "name": "Joe Mixon",
+              "position": "RB",
+              "nfl_team": "FA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1413587071125217280",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-07T08:45:30-07:00",
+      "processed": "2026-10-07T08:45:30-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops George Holani",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "12048",
+              "name": "George Holani",
+              "position": "RB",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1413556561019777024",
       "type": "free_agent",
@@ -7737,7 +8087,7 @@
       "budget": 100,
       "spent": 78,
       "remaining": 22,
-      "claims_won": 4,
+      "claims_won": 5,
       "winning_bids_total": 78,
       "biggest_bid": {
         "bid": 32,
@@ -7764,20 +8114,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 11,
-      "waiver": 40,
-      "free_agent": 139,
+      "waiver": 41,
+      "free_agent": 147,
       "commissioner": 0,
-      "total": 190
+      "total": 199
     },
     "regular_season_totals_by_type": {
       "trade": 3,
-      "waiver": 39,
-      "free_agent": 67,
+      "waiver": 40,
+      "free_agent": 75,
       "commissioner": 0,
-      "total": 109
+      "total": 118
     },
     "totals_by_phase": {
-      "regular": 109,
+      "regular": 118,
       "preseason": 31,
       "offseason": 50
     },
@@ -7787,20 +8137,19 @@
       "2": 31,
       "3": 29,
       "4": 32,
-      "5": 2
+      "5": 11
     },
     "most_active_manager": {
       "managers": [
-        "Derek",
         "Jake"
       ],
-      "count": 26
+      "count": 29
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 19
+      "count": 22
     },
     "most_trades": {
       "managers": [
@@ -7880,6 +8229,17 @@
         ]
       },
       {
+        "player_id": "5947",
+        "name": "Jakobi Meyers",
+        "position": "WR",
+        "nfl_team": "JAX",
+        "adds": 2,
+        "added_by": [
+          "Juan",
+          "Brett"
+        ]
+      },
+      {
         "player_id": "12718",
         "name": "Konata Mumpfield",
         "position": "WR",
@@ -7902,6 +8262,17 @@
         ]
       },
       {
+        "player_id": "8676",
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "nfl_team": "SEA",
+        "adds": 2,
+        "added_by": [
+          "Matt Z",
+          "Derek"
+        ]
+      },
+      {
         "player_id": "3321",
         "name": "Tyreek Hill",
         "position": "WR",
@@ -7918,6 +8289,13 @@
         "name": "Antonio Williams",
         "position": "WR",
         "nfl_team": "WAS",
+        "drops": 3
+      },
+      {
+        "player_id": "10213",
+        "name": "Tre Tucker",
+        "position": "WR",
+        "nfl_team": "LV",
         "drops": 3
       },
       {
@@ -7963,28 +8341,45 @@
         "drops": 2
       },
       {
+        "player_id": "2505",
+        "name": "Darren Waller",
+        "position": "TE",
+        "nfl_team": "CAR",
+        "drops": 2
+      },
+      {
         "player_id": "13347",
         "name": "Demond Claiborne",
         "position": "RB",
         "nfl_team": "MIN",
         "drops": 2
-      },
-      {
-        "player_id": "12469",
-        "name": "Dylan Sampson",
-        "position": "RB",
-        "nfl_team": "CLE",
-        "drops": 2
-      },
-      {
-        "player_id": "12483",
-        "name": "Jack Bech",
-        "position": "WR",
-        "nfl_team": "LV",
-        "drops": 2
       }
     ],
     "by_manager": [
+      {
+        "roster_id": 1,
+        "manager": "Jake",
+        "team_name": "Top Play",
+        "transactions": 29,
+        "regular_season_transactions": 17,
+        "trades": 2,
+        "waiver_claims": 3,
+        "free_agent_moves": 24,
+        "players_added": 19,
+        "players_dropped": 26
+      },
+      {
+        "roster_id": 2,
+        "manager": "Matt Z",
+        "team_name": "Rolling With Mahomies",
+        "transactions": 27,
+        "regular_season_transactions": 22,
+        "trades": 0,
+        "waiver_claims": 4,
+        "free_agent_moves": 23,
+        "players_added": 18,
+        "players_dropped": 19
+      },
       {
         "roster_id": 7,
         "manager": "Derek",
@@ -7998,40 +8393,16 @@
         "players_dropped": 21
       },
       {
-        "roster_id": 1,
-        "manager": "Jake",
-        "team_name": "Top Play",
-        "transactions": 26,
-        "regular_season_transactions": 14,
-        "trades": 2,
-        "waiver_claims": 3,
-        "free_agent_moves": 21,
-        "players_added": 16,
-        "players_dropped": 23
-      },
-      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 25,
-        "regular_season_transactions": 16,
+        "transactions": 26,
+        "regular_season_transactions": 17,
         "trades": 5,
-        "waiver_claims": 4,
+        "waiver_claims": 5,
         "free_agent_moves": 16,
-        "players_added": 14,
-        "players_dropped": 19
-      },
-      {
-        "roster_id": 2,
-        "manager": "Matt Z",
-        "team_name": "Rolling With Mahomies",
-        "transactions": 24,
-        "regular_season_transactions": 19,
-        "trades": 0,
-        "waiver_claims": 4,
-        "free_agent_moves": 20,
-        "players_added": 17,
-        "players_dropped": 17
+        "players_added": 15,
+        "players_dropped": 20
       },
       {
         "roster_id": 9,
@@ -8049,13 +8420,13 @@
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 17,
-        "regular_season_transactions": 6,
+        "transactions": 18,
+        "regular_season_transactions": 7,
         "trades": 2,
         "waiver_claims": 2,
-        "free_agent_moves": 13,
-        "players_added": 10,
-        "players_dropped": 15
+        "free_agent_moves": 14,
+        "players_added": 11,
+        "players_dropped": 16
       },
       {
         "roster_id": 10,
@@ -8070,6 +8441,18 @@
         "players_dropped": 10
       },
       {
+        "roster_id": 11,
+        "manager": "Brett",
+        "team_name": "Paper Kings",
+        "transactions": 12,
+        "regular_season_transactions": 10,
+        "trades": 1,
+        "waiver_claims": 5,
+        "free_agent_moves": 6,
+        "players_added": 8,
+        "players_dropped": 9
+      },
+      {
         "roster_id": 3,
         "manager": "Paul",
         "team_name": "Rudy",
@@ -8080,18 +8463,6 @@
         "free_agent_moves": 9,
         "players_added": 5,
         "players_dropped": 9
-      },
-      {
-        "roster_id": 11,
-        "manager": "Brett",
-        "team_name": "Paper Kings",
-        "transactions": 11,
-        "regular_season_transactions": 9,
-        "trades": 1,
-        "waiver_claims": 5,
-        "free_agent_moves": 5,
-        "players_added": 7,
-        "players_dropped": 8
       },
       {
         "roster_id": 12,
