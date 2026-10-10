@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-09T07:20:33-07:00",
+    "generated_at": "2026-10-10T06:54:20-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 5,
     "counts": {
-      "transactions": 199
+      "transactions": 204
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,308 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1414621038834122752",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-10T05:14:07-07:00",
+      "processed": "2026-10-10T05:14:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Tre Tucker",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "10213",
+              "name": "Tre Tucker",
+              "position": "WR",
+              "nfl_team": "LV"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1414601631810560000",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-10T03:57:00-07:00",
+      "processed": "2026-10-10T03:57:00-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew drops Andrew Van Ginkel",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "6183",
+              "name": "Andrew Van Ginkel",
+              "position": "LB",
+              "nfl_team": "MIN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1414586889456902144",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-10T02:58:25-07:00",
+      "processed": "2026-10-10T02:58:25-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Roschon Johnson",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "10235",
+              "name": "Roschon Johnson",
+              "position": "RB",
+              "nfl_team": "CHI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1414462713928732672",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-09T18:44:59-07:00",
+      "processed": "2026-10-10T02:55:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        },
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Juan gets Blake Corum, Rome Odunze; Brett gets Terry McLaurin, Brian Robinson",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "11586",
+              "name": "Blake Corum",
+              "position": "RB",
+              "nfl_team": "LAR"
+            },
+            {
+              "player_id": "11620",
+              "name": "Rome Odunze",
+              "position": "WR",
+              "nfl_team": "CHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5927",
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "nfl_team": "WAS"
+            },
+            {
+              "player_id": "8154",
+              "name": "Brian Robinson",
+              "position": "RB",
+              "nfl_team": "ATL"
+            }
+          ],
+          "picks_received": [],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "5927",
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "nfl_team": "WAS"
+            },
+            {
+              "player_id": "8154",
+              "name": "Brian Robinson",
+              "position": "RB",
+              "nfl_team": "ATL"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11586",
+              "name": "Blake Corum",
+              "position": "RB",
+              "nfl_team": "LAR"
+            },
+            {
+              "player_id": "11620",
+              "name": "Rome Odunze",
+              "position": "WR",
+              "nfl_team": "CHI"
+            }
+          ],
+          "picks_received": [],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
+    {
+      "id": "1414421451087319040",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-09T16:01:01-07:00",
+      "processed": "2026-10-10T02:54:42-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        },
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Juan gets Jeremiyah Love, 2027 Rd 10 pick (Andrew); Andrew gets Deebo Samuel, Justin Jefferson",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "13287",
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5872",
+              "name": "Deebo Samuel",
+              "position": "WR",
+              "nfl_team": "SF"
+            },
+            {
+              "player_id": "6794",
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "nfl_team": "MIN"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 10,
+              "original_owner": "Andrew",
+              "from": "Andrew"
+            }
+          ],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "5872",
+              "name": "Deebo Samuel",
+              "position": "WR",
+              "nfl_team": "SF"
+            },
+            {
+              "player_id": "6794",
+              "name": "Justin Jefferson",
+              "position": "WR",
+              "nfl_team": "MIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13287",
+              "name": "Jeremiyah Love",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "picks_received": [],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 10,
+              "original_owner": "Andrew",
+              "to": "Juan"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
     {
       "id": "1413756437833732096",
       "type": "waiver",
@@ -609,7 +911,7 @@
               "player_id": "13418",
               "name": "Robert Henry",
               "position": "RB",
-              "nfl_team": "WAS"
+              "nfl_team": "SEA"
             }
           ],
           "drops": [
@@ -8113,21 +8415,21 @@
   ],
   "summary": {
     "totals_by_type": {
-      "trade": 11,
+      "trade": 13,
       "waiver": 41,
-      "free_agent": 147,
+      "free_agent": 150,
       "commissioner": 0,
-      "total": 199
+      "total": 204
     },
     "regular_season_totals_by_type": {
-      "trade": 3,
+      "trade": 5,
       "waiver": 40,
-      "free_agent": 75,
+      "free_agent": 78,
       "commissioner": 0,
-      "total": 118
+      "total": 123
     },
     "totals_by_phase": {
-      "regular": 118,
+      "regular": 123,
       "preseason": 31,
       "offseason": 50
     },
@@ -8137,13 +8439,13 @@
       "2": 31,
       "3": 29,
       "4": 32,
-      "5": 11
+      "5": 16
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 29
+      "count": 30
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -8155,7 +8457,7 @@
       "managers": [
         "Juan"
       ],
-      "count": 5
+      "count": 7
     },
     "biggest_faab_bid": {
       "bid": 84,
@@ -8273,13 +8575,14 @@
         ]
       },
       {
-        "player_id": "3321",
-        "name": "Tyreek Hill",
-        "position": "WR",
-        "nfl_team": "FA",
+        "player_id": "10235",
+        "name": "Roschon Johnson",
+        "position": "RB",
+        "nfl_team": "CHI",
         "adds": 2,
         "added_by": [
-          "Jake"
+          "Jake",
+          "Juan"
         ]
       }
     ],
@@ -8360,13 +8663,25 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 29,
-        "regular_season_transactions": 17,
+        "transactions": 30,
+        "regular_season_transactions": 18,
         "trades": 2,
         "waiver_claims": 3,
-        "free_agent_moves": 24,
-        "players_added": 19,
+        "free_agent_moves": 25,
+        "players_added": 20,
         "players_dropped": 26
+      },
+      {
+        "roster_id": 6,
+        "manager": "Juan",
+        "team_name": "Red Cross",
+        "transactions": 29,
+        "regular_season_transactions": 20,
+        "trades": 7,
+        "waiver_claims": 5,
+        "free_agent_moves": 17,
+        "players_added": 19,
+        "players_dropped": 24
       },
       {
         "roster_id": 2,
@@ -8393,18 +8708,6 @@
         "players_dropped": 21
       },
       {
-        "roster_id": 6,
-        "manager": "Juan",
-        "team_name": "Red Cross",
-        "transactions": 26,
-        "regular_season_transactions": 17,
-        "trades": 5,
-        "waiver_claims": 5,
-        "free_agent_moves": 16,
-        "players_added": 15,
-        "players_dropped": 20
-      },
-      {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
@@ -8429,6 +8732,18 @@
         "players_dropped": 16
       },
       {
+        "roster_id": 11,
+        "manager": "Brett",
+        "team_name": "Paper Kings",
+        "transactions": 13,
+        "regular_season_transactions": 11,
+        "trades": 2,
+        "waiver_claims": 5,
+        "free_agent_moves": 6,
+        "players_added": 10,
+        "players_dropped": 11
+      },
+      {
         "roster_id": 10,
         "manager": "Marc",
         "team_name": "Walker? Barely know her",
@@ -8441,13 +8756,13 @@
         "players_dropped": 10
       },
       {
-        "roster_id": 11,
-        "manager": "Brett",
-        "team_name": "Paper Kings",
+        "roster_id": 12,
+        "manager": "Andrew",
+        "team_name": "Carried by RA",
         "transactions": 12,
-        "regular_season_transactions": 10,
-        "trades": 1,
-        "waiver_claims": 5,
+        "regular_season_transactions": 8,
+        "trades": 3,
+        "waiver_claims": 3,
         "free_agent_moves": 6,
         "players_added": 8,
         "players_dropped": 9
@@ -8463,18 +8778,6 @@
         "free_agent_moves": 9,
         "players_added": 5,
         "players_dropped": 9
-      },
-      {
-        "roster_id": 12,
-        "manager": "Andrew",
-        "team_name": "Carried by RA",
-        "transactions": 10,
-        "regular_season_transactions": 6,
-        "trades": 2,
-        "waiver_claims": 3,
-        "free_agent_moves": 5,
-        "players_added": 6,
-        "players_dropped": 7
       },
       {
         "roster_id": 8,
@@ -8749,6 +9052,14 @@
       "original_owner": "Vlad",
       "current_owner": "Matt Z",
       "current_team": "Rolling With Mahomies",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 10,
+      "original_owner": "Andrew",
+      "current_owner": "Juan",
+      "current_team": "Red Cross",
       "draft_complete": false
     }
   ]
