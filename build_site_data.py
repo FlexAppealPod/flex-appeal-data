@@ -108,7 +108,7 @@ except ImportError:  # pragma: no cover
     _flex = None
 
 # Rankings ON HOLD: never publish a board week above this (None = no hold).
-FLEX_PUBLISH_MAX_BOARD = 4
+FLEX_PUBLISH_MAX_BOARD = 5
 
 # Week 3 Flex board is LOCKED (posted board). Movement vs last posted board
 # (not necessarily week_2_flex.csv). Record/PF/PD/streak come from results
@@ -138,7 +138,9 @@ POSTED_FLEX = {
     4: ["Brett Trana", "Matt Zacharias", "Marc Caballero", "Vlad Barber",
         "Douglas Sullivan", "Elijah Bruette", "Paul Bacon", "Matt Atkinson",
         "Derek Bock", "Juan Rodriguez", "Andrew Reed", "Jake Prosser"],
-    # 5: [...]  <- add the Week 5 board once it is posted
+    5: ["Brett Trana", "Marc Caballero", "Matt Atkinson", "Paul Bacon",
+        "Elijah Bruette", "Douglas Sullivan", "Matt Zacharias", "Vlad Barber",
+        "Derek Bock", "Andrew Reed", "Juan Rodriguez", "Jake Prosser"],
 }
 
 
@@ -637,6 +639,27 @@ def locked_week3_flex(teams, weekly):
     }
 
 
+def posted_flex(teams, weekly, board_week: int):
+    """Exact posted order; movement vs posted board N-1; stats through N-1."""
+    agg = cumulative(weekly, board_week - 1)
+    computed = {teams[rid]["owner"]: a for rid, a in agg.items()}
+    prev = {o: i for i, o in enumerate(POSTED_FLEX.get(board_week - 1, []), 1)}
+    rankings = []
+    for rank, owner in enumerate(POSTED_FLEX[board_week], 1):
+        c = computed[owner]
+        t = next(t for t in teams.values() if t["owner"] == owner)
+        mv = (prev[owner] - rank) if owner in prev else None
+        rankings.append({"rank": rank, "team_name": t["team_name"], "owner": owner,
+                         "record": c["record"], "movement": mv, "pf": c["pf"],
+                         "pd": c["pd"], "streak": c["streak"]})
+    climbers = sorted([r for r in rankings if r["movement"] and r["movement"] > 0],
+                      key=lambda r: r["movement"], reverse=True)
+    sliders = sorted([r for r in rankings if r["movement"] and r["movement"] < 0],
+                     key=lambda r: r["movement"])
+    return {"week": board_week, "rankings": rankings, "climbers": climbers,
+            "sliders": sliders, "locked": True}
+
+
 def build_flex_live(teams, weekly, board_week: int, prev_flex: dict | None, ctx: dict | None = None):
     """board_week N = ranking heading into week N (data through N-1)."""
     through = board_week - 1
@@ -1015,12 +1038,18 @@ def main():
     # Prefer completed-data-driven week over Sleeper display_week (can lag Tue AM).
     # Week 3 board is LOCKED per league decision.
     board_week = (through + 1) if through else display_week
-    if FLEX_PUBLISH_MAX_BOARD is not None and board_week > FLEX_PUBLISH_MAX_BOARD:
+    if (FLEX_PUBLISH_MAX_BOARD is not None and board_week > FLEX_PUBLISH_MAX_BOARD
+            and FLEX_PUBLISH_MAX_BOARD in POSTED_FLEX and FLEX_PUBLISH_MAX_BOARD >= 5):
+        # latest posted board stays live until the next one is posted
+        flex = posted_flex(teams, weekly, FLEX_PUBLISH_MAX_BOARD)
+    elif FLEX_PUBLISH_MAX_BOARD is not None and board_week > FLEX_PUBLISH_MAX_BOARD:
         print(f"  Flex rankings ON HOLD: not publishing Week {board_week} board "
               f"(max {FLEX_PUBLISH_MAX_BOARD}); existing flex_rankings.json left as-is")
         flex = None
     elif board_week == 3 and through >= 2:
         flex = locked_week3_flex(teams, weekly)
+    elif board_week in POSTED_FLEX and board_week >= 5:
+        flex = posted_flex(teams, weekly, board_week)
     elif _flex is None:
         print("  private flex module unavailable; existing flex_rankings.json left as-is")
         flex = None
