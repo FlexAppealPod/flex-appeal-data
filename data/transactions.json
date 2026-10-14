@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-13T07:06:02-07:00",
+    "generated_at": "2026-10-14T06:55:48-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 6,
     "counts": {
-      "transactions": 204
+      "transactions": 223
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,1070 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1416094774900875264",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-14T06:50:13-07:00",
+      "processed": "2026-10-14T06:50:13-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Kenyon Sadiq",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13330",
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "nfl_team": "NYJ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415971814252752896",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T22:41:37-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Darren Waller ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "2505",
+              "name": "Darren Waller",
+              "position": "TE",
+              "nfl_team": "CAR"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1415970535313059840",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T22:36:32-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Byron Young ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "10917",
+              "name": "Byron Young",
+              "position": "LB",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1415889530635943936",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T17:14:39-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew adds Darius Cooper ($10 FAAB)",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "13150",
+              "name": "Darius Cooper",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 10,
+      "winning_claim": true
+    },
+    {
+      "id": "1415790644449796096",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T10:41:43-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Aaron Rodgers / drops Will Shipley ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "96",
+              "name": "Aaron Rodgers",
+              "position": "QB",
+              "nfl_team": "PIT"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11577",
+              "name": "Will Shipley",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1415776310227177472",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T09:44:45-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Germie Bernard / drops Mike Gesicki ($13 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "13274",
+              "name": "Germie Bernard",
+              "position": "WR",
+              "nfl_team": "PIT"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4993",
+              "name": "Mike Gesicki",
+              "position": "TE",
+              "nfl_team": "CIN"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 13,
+      "winning_claim": true
+    },
+    {
+      "id": "1415755884105084928",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T08:23:35-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Adonai Mitchell / drops Kaleb Johnson ($13 FAAB)",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "11625",
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12504",
+              "name": "Kaleb Johnson",
+              "position": "RB",
+              "nfl_team": "GB"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 13,
+      "winning_claim": true
+    },
+    {
+      "id": "1415495290072363008",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-12T15:08:05-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Kimani Vidal / drops Jaylen Wright ($22 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "11647",
+              "name": "Kimani Vidal",
+              "position": "RB",
+              "nfl_team": "LAC"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11643",
+              "name": "Jaylen Wright",
+              "position": "RB",
+              "nfl_team": "MIA"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 22,
+      "winning_claim": true
+    },
+    {
+      "id": "1415366232156221440",
+      "type": "waiver",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-12T06:35:15-07:00",
+      "processed": "2026-10-14T00:16:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Ernest Jones / drops Jordyn Brooks ($1 FAAB)",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "7672",
+              "name": "Ernest Jones",
+              "position": "LB",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "6949",
+              "name": "Jordyn Brooks",
+              "position": "LB",
+              "nfl_team": "MIA"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 1,
+      "winning_claim": true
+    },
+    {
+      "id": "1415965396971872256",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T22:16:07-07:00",
+      "processed": "2026-10-13T22:34:51-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        },
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Jake gets Roman Wilson, Mark Andrews, DK Metcalf, C.J. Stroud, 2027 Rd 8 pick (Marc), 2027 Rd 3 pick (Matt Z); Marc gets Woody Marks, Ollie Gordon, Matthew Stafford, Tony Pollard, 2027 Rd 9 pick (Jake)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "11630",
+              "name": "Roman Wilson",
+              "position": "WR",
+              "nfl_team": "PIT"
+            },
+            {
+              "player_id": "5012",
+              "name": "Mark Andrews",
+              "position": "TE",
+              "nfl_team": "BAL"
+            },
+            {
+              "player_id": "5846",
+              "name": "DK Metcalf",
+              "position": "WR",
+              "nfl_team": "PIT"
+            },
+            {
+              "player_id": "9758",
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "nfl_team": "HOU"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12474",
+              "name": "Woody Marks",
+              "position": "RB",
+              "nfl_team": "HOU"
+            },
+            {
+              "player_id": "12495",
+              "name": "Ollie Gordon",
+              "position": "RB",
+              "nfl_team": "MIA"
+            },
+            {
+              "player_id": "421",
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "nfl_team": "LAR"
+            },
+            {
+              "player_id": "5967",
+              "name": "Tony Pollard",
+              "position": "RB",
+              "nfl_team": "TEN"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 8,
+              "original_owner": "Marc",
+              "from": "Marc"
+            },
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Matt Z",
+              "from": "Marc"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 9,
+              "original_owner": "Jake",
+              "to": "Marc"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [
+            {
+              "player_id": "12474",
+              "name": "Woody Marks",
+              "position": "RB",
+              "nfl_team": "HOU"
+            },
+            {
+              "player_id": "12495",
+              "name": "Ollie Gordon",
+              "position": "RB",
+              "nfl_team": "MIA"
+            },
+            {
+              "player_id": "421",
+              "name": "Matthew Stafford",
+              "position": "QB",
+              "nfl_team": "LAR"
+            },
+            {
+              "player_id": "5967",
+              "name": "Tony Pollard",
+              "position": "RB",
+              "nfl_team": "TEN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11630",
+              "name": "Roman Wilson",
+              "position": "WR",
+              "nfl_team": "PIT"
+            },
+            {
+              "player_id": "5012",
+              "name": "Mark Andrews",
+              "position": "TE",
+              "nfl_team": "BAL"
+            },
+            {
+              "player_id": "5846",
+              "name": "DK Metcalf",
+              "position": "WR",
+              "nfl_team": "PIT"
+            },
+            {
+              "player_id": "9758",
+              "name": "C.J. Stroud",
+              "position": "QB",
+              "nfl_team": "HOU"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 9,
+              "original_owner": "Jake",
+              "from": "Jake"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 8,
+              "original_owner": "Marc",
+              "to": "Jake"
+            },
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Matt Z",
+              "to": "Jake"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
+    {
+      "id": "1415915011947163648",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T18:55:54-07:00",
+      "processed": "2026-10-13T19:43:35-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        },
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift"
+        }
+      ],
+      "headline": "Jake gets 2027 Rd 5 pick (Lij); Lij gets DJ Moore",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "4983",
+              "name": "DJ Moore",
+              "position": "WR",
+              "nfl_team": "BUF"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Lij",
+              "from": "Lij"
+            }
+          ],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift",
+          "adds": [
+            {
+              "player_id": "4983",
+              "name": "DJ Moore",
+              "position": "WR",
+              "nfl_team": "BUF"
+            }
+          ],
+          "drops": [],
+          "picks_received": [],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Lij",
+              "to": "Jake"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
+    {
+      "id": "1415907421360029696",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T18:25:44-07:00",
+      "processed": "2026-10-13T18:25:44-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Dohnte Meyers",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13264",
+              "name": "Dohnte Meyers",
+              "position": "WR",
+              "nfl_team": "CIN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415907217651036160",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T18:24:56-07:00",
+      "processed": "2026-10-13T18:24:56-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Rashid Shaheed",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8676",
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415894655555424256",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T17:35:01-07:00",
+      "processed": "2026-10-13T17:47:28-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        },
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Matt Z gets Rashee Rice, Marvin Harrison, 2027 Rd 3 pick (Marc); Juan gets 2027 Rd 1 pick (Matt Z)",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "10229",
+              "name": "Rashee Rice",
+              "position": "WR",
+              "nfl_team": "KC"
+            },
+            {
+              "player_id": "11628",
+              "name": "Marvin Harrison",
+              "position": "WR",
+              "nfl_team": "HOU"
+            }
+          ],
+          "drops": [],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Marc",
+              "from": "Juan"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 1,
+              "original_owner": "Matt Z",
+              "to": "Juan"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "10229",
+              "name": "Rashee Rice",
+              "position": "WR",
+              "nfl_team": "KC"
+            },
+            {
+              "player_id": "11628",
+              "name": "Marvin Harrison",
+              "position": "WR",
+              "nfl_team": "HOU"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 1,
+              "original_owner": "Matt Z",
+              "from": "Matt Z"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Marc",
+              "to": "Matt Z"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
+    {
+      "id": "1415589099737227264",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-12T21:20:51-07:00",
+      "processed": "2026-10-13T17:10:38-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        },
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Matt Z gets Jaylen Waddle; Andrew gets 2027 Rd 5 pick (Vlad)",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "7526",
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ],
+          "drops": [],
+          "picks_received": [],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Vlad",
+              "to": "Andrew"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "7526",
+              "name": "Jaylen Waddle",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Vlad",
+              "from": "Matt Z"
+            }
+          ],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
+    {
+      "id": "1415877869019639808",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T16:28:19-07:00",
+      "processed": "2026-10-13T16:28:19-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug drops Chris Godwin",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "4037",
+              "name": "Chris Godwin",
+              "position": "WR",
+              "nfl_team": "TB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415877731278692352",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T16:27:46-07:00",
+      "processed": "2026-10-13T16:27:46-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug drops Tre' Harris",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "12509",
+              "name": "Tre' Harris",
+              "position": "WR",
+              "nfl_team": "LAC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415877698235953152",
+      "type": "free_agent",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T16:27:38-07:00",
+      "processed": "2026-10-13T16:27:38-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug drops Isaiah Williams",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11608",
+              "name": "Isaiah Williams",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1415867967622725632",
+      "type": "trade",
+      "week": 5,
+      "sleeper_leg": 5,
+      "phase": "regular",
+      "created": "2026-10-13T15:48:58-07:00",
+      "processed": "2026-10-13T16:04:41-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        },
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Jake gets 2027 Rd 1 pick (Doug); Doug gets Tyreek Hill, DeVonta Smith, Chase Brown",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "3321",
+              "name": "Tyreek Hill",
+              "position": "WR",
+              "nfl_team": "FA"
+            },
+            {
+              "player_id": "7525",
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "nfl_team": "PHI"
+            },
+            {
+              "player_id": "9224",
+              "name": "Chase Brown",
+              "position": "RB",
+              "nfl_team": "CIN"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 1,
+              "original_owner": "Doug",
+              "from": "Doug"
+            }
+          ],
+          "picks_sent": [],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "3321",
+              "name": "Tyreek Hill",
+              "position": "WR",
+              "nfl_team": "FA"
+            },
+            {
+              "player_id": "7525",
+              "name": "DeVonta Smith",
+              "position": "WR",
+              "nfl_team": "PHI"
+            },
+            {
+              "player_id": "9224",
+              "name": "Chase Brown",
+              "position": "RB",
+              "nfl_team": "CIN"
+            }
+          ],
+          "drops": [],
+          "picks_received": [],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 1,
+              "original_owner": "Doug",
+              "to": "Jake"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
     {
       "id": "1414621038834122752",
       "type": "free_agent",
@@ -8308,21 +9372,6 @@
       }
     },
     {
-      "roster_id": 12,
-      "manager": "Andrew",
-      "team_name": "Carried by RA",
-      "budget": 100,
-      "spent": 15,
-      "remaining": 85,
-      "claims_won": 3,
-      "winning_bids_total": 15,
-      "biggest_bid": {
-        "bid": 10,
-        "player": "Tank Bigsby",
-        "week": 2
-      }
-    },
-    {
       "roster_id": 10,
       "manager": "Marc",
       "team_name": "Walker? Barely know her",
@@ -8338,18 +9387,33 @@
       }
     },
     {
+      "roster_id": 12,
+      "manager": "Andrew",
+      "team_name": "Carried by RA",
+      "budget": 100,
+      "spent": 25,
+      "remaining": 75,
+      "claims_won": 4,
+      "winning_bids_total": 25,
+      "biggest_bid": {
+        "bid": 10,
+        "player": "Darius Cooper",
+        "week": 5
+      }
+    },
+    {
       "roster_id": 9,
       "manager": "Vlad",
       "team_name": "WHO’s YOUR VLADDY",
       "budget": 100,
-      "spent": 50,
-      "remaining": 50,
-      "claims_won": 8,
-      "winning_bids_total": 50,
+      "spent": 63,
+      "remaining": 37,
+      "claims_won": 9,
+      "winning_bids_total": 63,
       "biggest_bid": {
-        "bid": 9,
-        "player": "Adonai Mitchell",
-        "week": 2
+        "bid": 13,
+        "player": "Germie Bernard",
+        "week": 5
       }
     },
     {
@@ -8357,10 +9421,10 @@
       "manager": "Brett",
       "team_name": "Paper Kings",
       "budget": 100,
-      "spent": 60,
-      "remaining": 40,
-      "claims_won": 5,
-      "winning_bids_total": 60,
+      "spent": 74,
+      "remaining": 26,
+      "claims_won": 7,
+      "winning_bids_total": 74,
       "biggest_bid": {
         "bid": 37,
         "player": "Romeo Doubs",
@@ -8383,53 +9447,53 @@
       }
     },
     {
-      "roster_id": 6,
-      "manager": "Juan",
-      "team_name": "Red Cross",
-      "budget": 100,
-      "spent": 78,
-      "remaining": 22,
-      "claims_won": 5,
-      "winning_bids_total": 78,
-      "biggest_bid": {
-        "bid": 32,
-        "player": "Jaylen Wright",
-        "week": 3
-      }
-    },
-    {
       "roster_id": 1,
       "manager": "Jake",
       "team_name": "Top Play",
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 3,
+      "claims_won": 5,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 84,
         "player": "Ollie Gordon",
         "week": 3
       }
+    },
+    {
+      "roster_id": 6,
+      "manager": "Juan",
+      "team_name": "Red Cross",
+      "budget": 100,
+      "spent": 100,
+      "remaining": 0,
+      "claims_won": 7,
+      "winning_bids_total": 100,
+      "biggest_bid": {
+        "bid": 32,
+        "player": "Jaylen Wright",
+        "week": 3
+      }
     }
   ],
   "summary": {
     "totals_by_type": {
-      "trade": 13,
-      "waiver": 41,
-      "free_agent": 150,
+      "trade": 18,
+      "waiver": 49,
+      "free_agent": 156,
       "commissioner": 0,
-      "total": 204
+      "total": 223
     },
     "regular_season_totals_by_type": {
-      "trade": 5,
-      "waiver": 40,
-      "free_agent": 78,
+      "trade": 10,
+      "waiver": 48,
+      "free_agent": 84,
       "commissioner": 0,
-      "total": 123
+      "total": 142
     },
     "totals_by_phase": {
-      "regular": 123,
+      "regular": 142,
       "preseason": 31,
       "offseason": 50
     },
@@ -8439,25 +9503,26 @@
       "2": 31,
       "3": 29,
       "4": 32,
-      "5": 16
+      "5": 34,
+      "6": 1
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 30
+      "count": 35
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 22
+      "count": 27
     },
     "most_trades": {
       "managers": [
         "Juan"
       ],
-      "count": 7
+      "count": 8
     },
     "biggest_faab_bid": {
       "bid": 84,
@@ -8487,6 +9552,17 @@
         ]
       },
       {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR",
+        "nfl_team": "NYJ",
+        "adds": 2,
+        "added_by": [
+          "Brett",
+          "Vlad"
+        ]
+      },
+      {
         "player_id": "13301",
         "name": "Antonio Williams",
         "position": "WR",
@@ -8506,6 +9582,27 @@
         "added_by": [
           "Juan",
           "Marc"
+        ]
+      },
+      {
+        "player_id": "13150",
+        "name": "Darius Cooper",
+        "position": "WR",
+        "nfl_team": "PHI",
+        "adds": 2,
+        "added_by": [
+          "Andrew",
+          "Jake"
+        ]
+      },
+      {
+        "player_id": "2505",
+        "name": "Darren Waller",
+        "position": "TE",
+        "nfl_team": "CAR",
+        "adds": 2,
+        "added_by": [
+          "Jake"
         ]
       },
       {
@@ -8551,39 +9648,6 @@
           "Doug",
           "Jake"
         ]
-      },
-      {
-        "player_id": "12492",
-        "name": "Pat Bryant",
-        "position": "WR",
-        "nfl_team": "DEN",
-        "adds": 2,
-        "added_by": [
-          "Matt Z",
-          "Brett"
-        ]
-      },
-      {
-        "player_id": "8676",
-        "name": "Rashid Shaheed",
-        "position": "WR",
-        "nfl_team": "SEA",
-        "adds": 2,
-        "added_by": [
-          "Matt Z",
-          "Derek"
-        ]
-      },
-      {
-        "player_id": "10235",
-        "name": "Roschon Johnson",
-        "position": "RB",
-        "nfl_team": "CHI",
-        "adds": 2,
-        "added_by": [
-          "Jake",
-          "Juan"
-        ]
       }
     ],
     "most_dropped_players": [
@@ -8592,6 +9656,20 @@
         "name": "Antonio Williams",
         "position": "WR",
         "nfl_team": "WAS",
+        "drops": 3
+      },
+      {
+        "player_id": "12504",
+        "name": "Kaleb Johnson",
+        "position": "RB",
+        "nfl_team": "GB",
+        "drops": 3
+      },
+      {
+        "player_id": "8676",
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "nfl_team": "SEA",
         "drops": 3
       },
       {
@@ -8642,20 +9720,6 @@
         "position": "TE",
         "nfl_team": "HOU",
         "drops": 2
-      },
-      {
-        "player_id": "2505",
-        "name": "Darren Waller",
-        "position": "TE",
-        "nfl_team": "CAR",
-        "drops": 2
-      },
-      {
-        "player_id": "13347",
-        "name": "Demond Claiborne",
-        "position": "RB",
-        "nfl_team": "MIN",
-        "drops": 2
       }
     ],
     "by_manager": [
@@ -8663,37 +9727,37 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 30,
-        "regular_season_transactions": 18,
-        "trades": 2,
-        "waiver_claims": 3,
+        "transactions": 35,
+        "regular_season_transactions": 23,
+        "trades": 5,
+        "waiver_claims": 5,
         "free_agent_moves": 25,
-        "players_added": 20,
-        "players_dropped": 26
+        "players_added": 26,
+        "players_dropped": 34
       },
       {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 29,
-        "regular_season_transactions": 20,
-        "trades": 7,
-        "waiver_claims": 5,
+        "transactions": 32,
+        "regular_season_transactions": 23,
+        "trades": 8,
+        "waiver_claims": 7,
         "free_agent_moves": 17,
-        "players_added": 19,
-        "players_dropped": 24
+        "players_added": 21,
+        "players_dropped": 28
       },
       {
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 27,
-        "regular_season_transactions": 22,
-        "trades": 0,
+        "transactions": 32,
+        "regular_season_transactions": 27,
+        "trades": 2,
         "waiver_claims": 4,
-        "free_agent_moves": 23,
-        "players_added": 18,
-        "players_dropped": 19
+        "free_agent_moves": 26,
+        "players_added": 21,
+        "players_dropped": 22
       },
       {
         "roster_id": 7,
@@ -8708,64 +9772,64 @@
         "players_dropped": 21
       },
       {
-        "roster_id": 9,
-        "manager": "Vlad",
-        "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 19,
-        "regular_season_transactions": 14,
-        "trades": 0,
-        "waiver_claims": 8,
-        "free_agent_moves": 11,
-        "players_added": 16,
-        "players_dropped": 17
-      },
-      {
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 18,
-        "regular_season_transactions": 7,
-        "trades": 2,
+        "transactions": 22,
+        "regular_season_transactions": 11,
+        "trades": 3,
         "waiver_claims": 2,
-        "free_agent_moves": 14,
-        "players_added": 11,
-        "players_dropped": 16
+        "free_agent_moves": 17,
+        "players_added": 14,
+        "players_dropped": 19
+      },
+      {
+        "roster_id": 9,
+        "manager": "Vlad",
+        "team_name": "WHO’s YOUR VLADDY",
+        "transactions": 20,
+        "regular_season_transactions": 15,
+        "trades": 0,
+        "waiver_claims": 9,
+        "free_agent_moves": 11,
+        "players_added": 17,
+        "players_dropped": 18
       },
       {
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 13,
-        "regular_season_transactions": 11,
+        "transactions": 15,
+        "regular_season_transactions": 13,
         "trades": 2,
-        "waiver_claims": 5,
+        "waiver_claims": 7,
         "free_agent_moves": 6,
-        "players_added": 10,
-        "players_dropped": 11
-      },
-      {
-        "roster_id": 10,
-        "manager": "Marc",
-        "team_name": "Walker? Barely know her",
-        "transactions": 13,
-        "regular_season_transactions": 8,
-        "trades": 0,
-        "waiver_claims": 5,
-        "free_agent_moves": 8,
-        "players_added": 6,
-        "players_dropped": 10
+        "players_added": 12,
+        "players_dropped": 13
       },
       {
         "roster_id": 12,
         "manager": "Andrew",
         "team_name": "Carried by RA",
-        "transactions": 12,
-        "regular_season_transactions": 8,
-        "trades": 3,
-        "waiver_claims": 3,
+        "transactions": 14,
+        "regular_season_transactions": 10,
+        "trades": 4,
+        "waiver_claims": 4,
         "free_agent_moves": 6,
-        "players_added": 8,
-        "players_dropped": 9
+        "players_added": 9,
+        "players_dropped": 10
+      },
+      {
+        "roster_id": 10,
+        "manager": "Marc",
+        "team_name": "Walker? Barely know her",
+        "transactions": 14,
+        "regular_season_transactions": 9,
+        "trades": 1,
+        "waiver_claims": 5,
+        "free_agent_moves": 8,
+        "players_added": 10,
+        "players_dropped": 14
       },
       {
         "roster_id": 3,
@@ -8795,12 +9859,12 @@
         "roster_id": 4,
         "manager": "Lij",
         "team_name": "Taylor Swift",
-        "transactions": 8,
-        "regular_season_transactions": 2,
-        "trades": 2,
+        "transactions": 9,
+        "regular_season_transactions": 3,
+        "trades": 3,
         "waiver_claims": 0,
         "free_agent_moves": 6,
-        "players_added": 3,
+        "players_added": 4,
         "players_dropped": 6
       }
     ]
@@ -9024,6 +10088,22 @@
     },
     {
       "season": 2027,
+      "round": 1,
+      "original_owner": "Matt Z",
+      "current_owner": "Juan",
+      "current_team": "Red Cross",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 1,
+      "original_owner": "Doug",
+      "current_owner": "Jake",
+      "current_team": "Top Play",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
       "round": 2,
       "original_owner": "Juan",
       "current_owner": "Marc",
@@ -9034,24 +10114,48 @@
       "season": 2027,
       "round": 3,
       "original_owner": "Matt Z",
-      "current_owner": "Marc",
-      "current_team": "Walker? Barely know her",
+      "current_owner": "Jake",
+      "current_team": "Top Play",
       "draft_complete": false
     },
     {
       "season": 2027,
       "round": 3,
       "original_owner": "Marc",
-      "current_owner": "Juan",
-      "current_team": "Red Cross",
+      "current_owner": "Matt Z",
+      "current_team": "Rolling With Mahomies",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 5,
+      "original_owner": "Lij",
+      "current_owner": "Jake",
+      "current_team": "Top Play",
       "draft_complete": false
     },
     {
       "season": 2027,
       "round": 5,
       "original_owner": "Vlad",
-      "current_owner": "Matt Z",
-      "current_team": "Rolling With Mahomies",
+      "current_owner": "Andrew",
+      "current_team": "Carried by RA",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 8,
+      "original_owner": "Marc",
+      "current_owner": "Jake",
+      "current_team": "Top Play",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 9,
+      "original_owner": "Jake",
+      "current_owner": "Marc",
+      "current_team": "Walker? Barely know her",
       "draft_complete": false
     },
     {
