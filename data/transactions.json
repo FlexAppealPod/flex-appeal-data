@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T06:55:48-07:00",
+    "generated_at": "2026-10-15T06:59:40-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 6,
     "counts": {
-      "transactions": 223
+      "transactions": 226
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,108 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1416449140971388928",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-15T06:18:20-07:00",
+      "processed": "2026-10-15T06:18:20-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift"
+        }
+      ],
+      "headline": "Lij drops Brian Thomas",
+      "sides": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11631",
+              "name": "Brian Thomas",
+              "position": "WR",
+              "nfl_team": "JAX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1416207182428418048",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-14T14:16:53-07:00",
+      "processed": "2026-10-14T14:16:53-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy"
+        }
+      ],
+      "headline": "Paul adds Nate Landman",
+      "sides": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy",
+          "adds": [
+            {
+              "player_id": "8659",
+              "name": "Nate Landman",
+              "position": "LB",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1416108320770564096",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-14T07:44:02-07:00",
+      "processed": "2026-10-14T07:44:02-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her"
+        }
+      ],
+      "headline": "Marc drops Mike Washington",
+      "sides": [
+        {
+          "roster_id": 10,
+          "manager": "Marc",
+          "team_name": "Walker? Barely know her",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13305",
+              "name": "Mike Washington",
+              "position": "RB",
+              "nfl_team": "LV"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1416094774900875264",
       "type": "free_agent",
@@ -9481,19 +9583,19 @@
     "totals_by_type": {
       "trade": 18,
       "waiver": 49,
-      "free_agent": 156,
+      "free_agent": 159,
       "commissioner": 0,
-      "total": 223
+      "total": 226
     },
     "regular_season_totals_by_type": {
       "trade": 10,
       "waiver": 48,
-      "free_agent": 84,
+      "free_agent": 87,
       "commissioner": 0,
-      "total": 142
+      "total": 145
     },
     "totals_by_phase": {
-      "regular": 142,
+      "regular": 145,
       "preseason": 31,
       "offseason": 50
     },
@@ -9504,7 +9606,7 @@
       "3": 29,
       "4": 32,
       "5": 34,
-      "6": 1
+      "6": 4
     },
     "most_active_manager": {
       "managers": [
@@ -9808,6 +9910,18 @@
         "players_dropped": 13
       },
       {
+        "roster_id": 10,
+        "manager": "Marc",
+        "team_name": "Walker? Barely know her",
+        "transactions": 15,
+        "regular_season_transactions": 10,
+        "trades": 1,
+        "waiver_claims": 5,
+        "free_agent_moves": 9,
+        "players_added": 10,
+        "players_dropped": 15
+      },
+      {
         "roster_id": 12,
         "manager": "Andrew",
         "team_name": "Carried by RA",
@@ -9820,28 +9934,28 @@
         "players_dropped": 10
       },
       {
-        "roster_id": 10,
-        "manager": "Marc",
-        "team_name": "Walker? Barely know her",
-        "transactions": 14,
-        "regular_season_transactions": 9,
-        "trades": 1,
-        "waiver_claims": 5,
-        "free_agent_moves": 8,
-        "players_added": 10,
-        "players_dropped": 14
-      },
-      {
         "roster_id": 3,
         "manager": "Paul",
         "team_name": "Rudy",
-        "transactions": 12,
-        "regular_season_transactions": 2,
+        "transactions": 13,
+        "regular_season_transactions": 3,
         "trades": 2,
         "waiver_claims": 1,
-        "free_agent_moves": 9,
-        "players_added": 5,
+        "free_agent_moves": 10,
+        "players_added": 6,
         "players_dropped": 9
+      },
+      {
+        "roster_id": 4,
+        "manager": "Lij",
+        "team_name": "Taylor Swift",
+        "transactions": 10,
+        "regular_season_transactions": 4,
+        "trades": 3,
+        "waiver_claims": 0,
+        "free_agent_moves": 7,
+        "players_added": 4,
+        "players_dropped": 7
       },
       {
         "roster_id": 8,
@@ -9854,18 +9968,6 @@
         "free_agent_moves": 7,
         "players_added": 7,
         "players_dropped": 9
-      },
-      {
-        "roster_id": 4,
-        "manager": "Lij",
-        "team_name": "Taylor Swift",
-        "transactions": 9,
-        "regular_season_transactions": 3,
-        "trades": 3,
-        "waiver_claims": 0,
-        "free_agent_moves": 6,
-        "players_added": 4,
-        "players_dropped": 6
       }
     ]
   },
