@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-16T06:56:58-07:00",
+    "generated_at": "2026-10-17T06:48:21-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 6,
     "counts": {
-      "transactions": 246
+      "transactions": 248
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,76 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1416590319176187904",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-15T15:39:20-07:00",
+      "processed": "2026-10-16T14:16:20-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Tank Dell ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "9502",
+              "name": "Tank Dell",
+              "position": "WR",
+              "nfl_team": "HOU"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1416906280433410048",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-16T12:34:51-07:00",
+      "processed": "2026-10-16T12:34:51-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Kendrick Bourne",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "4454",
+              "name": "Kendrick Bourne",
+              "position": "WR",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
     {
       "id": "1416801414675513344",
       "type": "free_agent",
@@ -10568,7 +10638,7 @@
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 5,
+      "claims_won": 6,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 84,
@@ -10595,20 +10665,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 22,
-      "waiver": 50,
-      "free_agent": 172,
+      "waiver": 51,
+      "free_agent": 173,
       "commissioner": 2,
-      "total": 246
+      "total": 248
     },
     "regular_season_totals_by_type": {
       "trade": 14,
-      "waiver": 49,
-      "free_agent": 100,
+      "waiver": 50,
+      "free_agent": 101,
       "commissioner": 2,
-      "total": 165
+      "total": 167
     },
     "totals_by_phase": {
-      "regular": 165,
+      "regular": 167,
       "preseason": 31,
       "offseason": 50
     },
@@ -10619,10 +10689,11 @@
       "3": 29,
       "4": 32,
       "5": 34,
-      "6": 24
+      "6": 26
     },
     "most_active_manager": {
       "managers": [
+        "Jake",
         "Juan"
       ],
       "count": 37
@@ -10631,7 +10702,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 29
+      "count": 30
     },
     "most_trades": {
       "managers": [
@@ -10839,6 +10910,18 @@
     ],
     "by_manager": [
       {
+        "roster_id": 1,
+        "manager": "Jake",
+        "team_name": "Top Play",
+        "transactions": 37,
+        "regular_season_transactions": 25,
+        "trades": 5,
+        "waiver_claims": 6,
+        "free_agent_moves": 26,
+        "players_added": 28,
+        "players_dropped": 35
+      },
+      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
@@ -10851,27 +10934,15 @@
         "players_dropped": 30
       },
       {
-        "roster_id": 1,
-        "manager": "Jake",
-        "team_name": "Top Play",
-        "transactions": 36,
-        "regular_season_transactions": 24,
-        "trades": 5,
-        "waiver_claims": 5,
-        "free_agent_moves": 26,
-        "players_added": 27,
-        "players_dropped": 35
-      },
-      {
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 34,
-        "regular_season_transactions": 29,
+        "transactions": 35,
+        "regular_season_transactions": 30,
         "trades": 4,
         "waiver_claims": 4,
-        "free_agent_moves": 26,
-        "players_added": 23,
+        "free_agent_moves": 27,
+        "players_added": 24,
         "players_dropped": 24
       },
       {
