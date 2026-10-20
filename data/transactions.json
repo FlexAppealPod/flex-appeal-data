@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T06:50:08-07:00",
+    "generated_at": "2026-10-20T06:48:14-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 6,
+    "current_week": 7,
     "counts": {
-      "transactions": 248
+      "transactions": 251
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,122 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1418219221724168192",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T03:32:00-07:00",
+      "processed": "2026-10-20T03:32:00-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett drops Romeo Doubs",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8121",
+              "name": "Romeo Doubs",
+              "position": "WR",
+              "nfl_team": "NE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1417999845783871488",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-19T13:00:17-07:00",
+      "processed": "2026-10-19T13:00:17-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Antonio Williams / drops Brandin Cooks",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "13301",
+              "name": "Antonio Williams",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "2197",
+              "name": "Brandin Cooks",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1417996985562112000",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-19T12:48:55-07:00",
+      "processed": "2026-10-19T12:48:55-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Brandin Cooks / drops Deshaun Watson",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "2197",
+              "name": "Brandin Cooks",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4017",
+              "name": "Deshaun Watson",
+              "position": "QB",
+              "nfl_team": "CLE"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1416590319176187904",
       "type": "waiver",
@@ -10666,19 +10782,19 @@
     "totals_by_type": {
       "trade": 22,
       "waiver": 51,
-      "free_agent": 173,
+      "free_agent": 176,
       "commissioner": 2,
-      "total": 248
+      "total": 251
     },
     "regular_season_totals_by_type": {
       "trade": 14,
       "waiver": 50,
-      "free_agent": 101,
+      "free_agent": 104,
       "commissioner": 2,
-      "total": 167
+      "total": 170
     },
     "totals_by_phase": {
-      "regular": 167,
+      "regular": 170,
       "preseason": 31,
       "offseason": 50
     },
@@ -10689,7 +10805,7 @@
       "3": 29,
       "4": 32,
       "5": 34,
-      "6": 26
+      "6": 29
     },
     "most_active_manager": {
       "managers": [
@@ -10726,6 +10842,18 @@
     },
     "most_added_players": [
       {
+        "player_id": "13301",
+        "name": "Antonio Williams",
+        "position": "WR",
+        "nfl_team": "WAS",
+        "adds": 3,
+        "added_by": [
+          "Vlad",
+          "Juan",
+          "Matt Z"
+        ]
+      },
+      {
         "player_id": "12504",
         "name": "Kaleb Johnson",
         "position": "RB",
@@ -10757,17 +10885,6 @@
         "added_by": [
           "Brett",
           "Vlad"
-        ]
-      },
-      {
-        "player_id": "13301",
-        "name": "Antonio Williams",
-        "position": "WR",
-        "nfl_team": "WAS",
-        "adds": 2,
-        "added_by": [
-          "Juan",
-          "Matt Z"
         ]
       },
       {
@@ -10970,6 +11087,18 @@
         "players_dropped": 19
       },
       {
+        "roster_id": 9,
+        "manager": "Vlad",
+        "team_name": "WHO’s YOUR VLADDY",
+        "transactions": 22,
+        "regular_season_transactions": 17,
+        "trades": 0,
+        "waiver_claims": 9,
+        "free_agent_moves": 13,
+        "players_added": 19,
+        "players_dropped": 20
+      },
+      {
         "roster_id": 12,
         "manager": "Andrew",
         "team_name": "Carried by RA",
@@ -10985,25 +11114,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 20,
-        "regular_season_transactions": 18,
+        "transactions": 21,
+        "regular_season_transactions": 19,
         "trades": 3,
         "waiver_claims": 7,
-        "free_agent_moves": 8,
+        "free_agent_moves": 9,
         "players_added": 16,
-        "players_dropped": 18
-      },
-      {
-        "roster_id": 9,
-        "manager": "Vlad",
-        "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 20,
-        "regular_season_transactions": 15,
-        "trades": 0,
-        "waiver_claims": 9,
-        "free_agent_moves": 11,
-        "players_added": 17,
-        "players_dropped": 18
+        "players_dropped": 19
       },
       {
         "roster_id": 10,
