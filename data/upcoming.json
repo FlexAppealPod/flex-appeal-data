@@ -1,56 +1,56 @@
 [
   {
-    "week": 6,
-    "team_a": "Rudy",
-    "owner_a": "Paul Bacon",
-    "record_a": "7-3",
-    "team_b": "my njigba",
-    "owner_b": "Derek Bock",
-    "record_b": "3-7"
-  },
-  {
-    "week": 6,
-    "team_a": "Rolling With Mahomies",
-    "owner_a": "Matt Zacharias",
-    "record_a": "6-4",
+    "week": 7,
+    "team_a": "my njigba",
+    "owner_a": "Derek Bock",
+    "record_a": "5-7",
     "team_b": "Paper Kings",
     "owner_b": "Brett Trana",
-    "record_b": "8-2"
+    "record_b": "8-4"
   },
   {
-    "week": 6,
-    "team_a": "Taylor Swift",
-    "owner_a": "Elijah Bruette",
-    "record_a": "6-4",
-    "team_b": "Carried by RA",
-    "owner_b": "Andrew Reed",
-    "record_b": "2-8"
+    "week": 7,
+    "team_a": "Rudy",
+    "owner_a": "Paul Bacon",
+    "record_a": "8-4",
+    "team_b": "Taylor Swift",
+    "owner_b": "Elijah Bruette",
+    "record_b": "8-4"
   },
   {
-    "week": 6,
-    "team_a": "CTE",
-    "owner_a": "Matt Atkinson",
-    "record_a": "6-4",
+    "week": 7,
+    "team_a": "Rolling With Mahomies",
+    "owner_a": "Matt Zacharias",
+    "record_a": "7-5",
     "team_b": "Walker? Barely know her",
     "owner_b": "Marc Caballero",
-    "record_b": "8-2"
+    "record_b": "9-3"
   },
   {
-    "week": 6,
-    "team_a": "9 - 5",
-    "owner_a": "Douglas Sullivan",
-    "record_a": "8-2",
-    "team_b": "WHO’s YOUR VLADDY",
-    "owner_b": "Vlad Barber",
-    "record_b": "5-5"
+    "week": 7,
+    "team_a": "WHO’s YOUR VLADDY",
+    "owner_a": "Vlad Barber",
+    "record_a": "5-7",
+    "team_b": "Carried by RA",
+    "owner_b": "Andrew Reed",
+    "record_b": "2-10"
   },
   {
-    "week": 6,
+    "week": 7,
     "team_a": "Top Play",
     "owner_a": "Jake Prosser",
-    "record_a": "0-10",
+    "record_a": "0-12",
+    "team_b": "CTE",
+    "owner_b": "Matt Atkinson",
+    "record_b": "8-4"
+  },
+  {
+    "week": 7,
+    "team_a": "9 - 5",
+    "owner_a": "Douglas Sullivan",
+    "record_a": "10-2",
     "team_b": "Red Cross",
     "owner_b": "Juan Rodriguez",
-    "record_b": "1-9"
+    "record_b": "2-10"
   }
 ]
