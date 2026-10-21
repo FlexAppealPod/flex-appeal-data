@@ -108,7 +108,7 @@ except ImportError:  # pragma: no cover
     _flex = None
 
 # Rankings ON HOLD: never publish a board week above this (None = no hold).
-FLEX_PUBLISH_MAX_BOARD = 5
+FLEX_PUBLISH_MAX_BOARD = 7
 
 # Week 3 Flex board is LOCKED (posted board). Movement vs last posted board
 # (not necessarily week_2_flex.csv). Record/PF/PD/streak come from results
@@ -140,6 +140,10 @@ POSTED_FLEX = {
         "Derek Bock", "Juan Rodriguez", "Andrew Reed", "Jake Prosser"],
     5: ["Brett Trana", "Marc Caballero", "Matt Atkinson", "Paul Bacon",
         "Elijah Bruette", "Douglas Sullivan", "Matt Zacharias", "Vlad Barber",
+        "Derek Bock", "Andrew Reed", "Juan Rodriguez", "Jake Prosser"],
+    # Week 7 board (through Week 6); no Week 6 board was posted, movement vs Week 5
+    7: ["Douglas Sullivan", "Brett Trana", "Marc Caballero", "Paul Bacon",
+        "Matt Atkinson", "Elijah Bruette", "Vlad Barber", "Matt Zacharias",
         "Derek Bock", "Andrew Reed", "Juan Rodriguez", "Jake Prosser"],
 }
 
@@ -643,7 +647,8 @@ def posted_flex(teams, weekly, board_week: int):
     """Exact posted order; movement vs posted board N-1; stats through N-1."""
     agg = cumulative(weekly, board_week - 1)
     computed = {teams[rid]["owner"]: a for rid, a in agg.items()}
-    prev = {o: i for i, o in enumerate(POSTED_FLEX.get(board_week - 1, []), 1)}
+    prev_wk = max((w for w in POSTED_FLEX if w < board_week), default=None)
+    prev = {o: i for i, o in enumerate(POSTED_FLEX.get(prev_wk, []), 1)}
     rankings = []
     for rank, owner in enumerate(POSTED_FLEX[board_week], 1):
         c = computed[owner]
