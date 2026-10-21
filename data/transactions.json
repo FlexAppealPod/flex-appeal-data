@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-20T06:48:14-07:00",
+    "generated_at": "2026-10-21T06:53:53-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 7,
     "counts": {
-      "transactions": 251
+      "transactions": 263
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,465 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1418632058531565568",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-21T06:52:28-07:00",
+      "processed": "2026-10-21T06:52:28-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Tyrone Tracy / drops Antonio Williams",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "11655",
+              "name": "Tyrone Tracy",
+              "position": "RB",
+              "nfl_team": "NYG"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13301",
+              "name": "Antonio Williams",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1418565940274065408",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-21T02:29:45-07:00",
+      "processed": "2026-10-21T02:29:45-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Jack Campbell",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "10880",
+              "name": "Jack Campbell",
+              "position": "LB",
+              "nfl_team": "DET"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1418564625179353088",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-21T02:24:31-07:00",
+      "processed": "2026-10-21T02:24:31-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Nakobe Dean",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8267",
+              "name": "Nakobe Dean",
+              "position": "LB",
+              "nfl_team": "LV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1418461228396814336",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T19:33:39-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Keenan Allen / drops Juwan Johnson ($17 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "1479",
+              "name": "Keenan Allen",
+              "position": "WR",
+              "nfl_team": "IND"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7002",
+              "name": "Juwan Johnson",
+              "position": "TE",
+              "nfl_team": "NO"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 17,
+      "winning_claim": true
+    },
+    {
+      "id": "1418408121482625024",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T16:02:38-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Bryce Young ($20 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "9228",
+              "name": "Bryce Young",
+              "position": "QB",
+              "nfl_team": "CAR"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 20,
+      "winning_claim": true
+    },
+    {
+      "id": "1418342302614552576",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T11:41:05-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Konata Mumpfield ($2 FAAB)",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "12718",
+              "name": "Konata Mumpfield",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 2,
+      "winning_claim": true
+    },
+    {
+      "id": "1418285581519110144",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T07:55:42-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Zonovan Knight ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "8122",
+              "name": "Zonovan Knight",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1418274982819024896",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T07:13:35-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Jaylin Noel / drops Jake Ferguson ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "12536",
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "nfl_team": "HOU"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8110",
+              "name": "Jake Ferguson",
+              "position": "TE",
+              "nfl_team": "DAL"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1418265456837484544",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T06:35:44-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Treylon Burks / drops Kendrick Bourne ($11 FAAB)",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "8135",
+              "name": "Treylon Burks",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4454",
+              "name": "Kendrick Bourne",
+              "position": "WR",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 11,
+      "winning_claim": true
+    },
+    {
+      "id": "1418044107510517760",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-19T15:56:10-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Seth McGowan ($1 FAAB)",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "13424",
+              "name": "Seth McGowan",
+              "position": "RB",
+              "nfl_team": "IND"
+            }
+          ],
+          "drops": []
+        }
+      ],
+      "faab_bid": 1,
+      "winning_claim": true
+    },
+    {
+      "id": "1418040583041056768",
+      "type": "waiver",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-19T15:42:10-07:00",
+      "processed": "2026-10-21T00:16:36-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Omar Cooper / drops Tyreek Hill ($20 FAAB)",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "13276",
+              "name": "Omar Cooper",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "3321",
+              "name": "Tyreek Hill",
+              "position": "WR",
+              "nfl_team": "FA"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 20,
+      "winning_claim": true
+    },
+    {
+      "id": "1418296298259357696",
+      "type": "free_agent",
+      "week": 6,
+      "sleeper_leg": 6,
+      "phase": "regular",
+      "created": "2026-10-20T08:38:17-07:00",
+      "processed": "2026-10-20T08:38:17-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad drops Najee Harris",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "7528",
+              "name": "Najee Harris",
+              "position": "RB",
+              "nfl_team": "NYG"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1418219221724168192",
       "type": "free_agent",
@@ -10632,10 +11091,10 @@
       "manager": "Derek",
       "team_name": "my njigba",
       "budget": 100,
-      "spent": 2,
-      "remaining": 98,
-      "claims_won": 4,
-      "winning_bids_total": 2,
+      "spent": 3,
+      "remaining": 97,
+      "claims_won": 6,
+      "winning_bids_total": 3,
       "biggest_bid": {
         "bid": 2,
         "player": "Kalif Raymond",
@@ -10655,21 +11114,6 @@
         "bid": 3,
         "player": "Ray Davis",
         "week": 1
-      }
-    },
-    {
-      "roster_id": 5,
-      "manager": "Doug",
-      "team_name": "9 - 5",
-      "budget": 100,
-      "spent": 10,
-      "remaining": 90,
-      "claims_won": 2,
-      "winning_bids_total": 10,
-      "biggest_bid": {
-        "bid": 10,
-        "player": "Keenan Allen",
-        "week": 3
       }
     },
     {
@@ -10703,18 +11147,18 @@
       }
     },
     {
-      "roster_id": 9,
-      "manager": "Vlad",
-      "team_name": "WHO’s YOUR VLADDY",
+      "roster_id": 5,
+      "manager": "Doug",
+      "team_name": "9 - 5",
       "budget": 100,
-      "spent": 63,
-      "remaining": 37,
-      "claims_won": 9,
-      "winning_bids_total": 63,
+      "spent": 30,
+      "remaining": 70,
+      "claims_won": 3,
+      "winning_bids_total": 30,
       "biggest_bid": {
-        "bid": 13,
-        "player": "Germie Bernard",
-        "week": 5
+        "bid": 20,
+        "player": "Omar Cooper",
+        "week": 6
       }
     },
     {
@@ -10722,10 +11166,10 @@
       "manager": "Brett",
       "team_name": "Paper Kings",
       "budget": 100,
-      "spent": 74,
-      "remaining": 26,
-      "claims_won": 7,
-      "winning_bids_total": 74,
+      "spent": 76,
+      "remaining": 24,
+      "claims_won": 9,
+      "winning_bids_total": 76,
       "biggest_bid": {
         "bid": 37,
         "player": "Romeo Doubs",
@@ -10737,10 +11181,10 @@
       "manager": "Matt Z",
       "team_name": "Rolling With Mahomies",
       "budget": 100,
-      "spent": 74,
-      "remaining": 26,
-      "claims_won": 4,
-      "winning_bids_total": 74,
+      "spent": 85,
+      "remaining": 15,
+      "claims_won": 5,
+      "winning_bids_total": 85,
       "biggest_bid": {
         "bid": 33,
         "player": "Jonah Coleman",
@@ -10776,25 +11220,40 @@
         "player": "Jaylen Wright",
         "week": 3
       }
+    },
+    {
+      "roster_id": 9,
+      "manager": "Vlad",
+      "team_name": "WHO’s YOUR VLADDY",
+      "budget": 100,
+      "spent": 100,
+      "remaining": 0,
+      "claims_won": 11,
+      "winning_bids_total": 100,
+      "biggest_bid": {
+        "bid": 20,
+        "player": "Bryce Young",
+        "week": 6
+      }
     }
   ],
   "summary": {
     "totals_by_type": {
       "trade": 22,
-      "waiver": 51,
-      "free_agent": 176,
+      "waiver": 59,
+      "free_agent": 180,
       "commissioner": 2,
-      "total": 251
+      "total": 263
     },
     "regular_season_totals_by_type": {
       "trade": 14,
-      "waiver": 50,
-      "free_agent": 104,
+      "waiver": 58,
+      "free_agent": 108,
       "commissioner": 2,
-      "total": 170
+      "total": 182
     },
     "totals_by_phase": {
-      "regular": 170,
+      "regular": 182,
       "preseason": 31,
       "offseason": 50
     },
@@ -10805,20 +11264,20 @@
       "3": 29,
       "4": 32,
       "5": 34,
-      "6": 29
+      "6": 38,
+      "7": 3
     },
     "most_active_manager": {
       "managers": [
-        "Jake",
-        "Juan"
+        "Matt Z"
       ],
-      "count": 37
+      "count": 38
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 30
+      "count": 33
     },
     "most_trades": {
       "managers": [
@@ -10866,6 +11325,18 @@
         ]
       },
       {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR",
+        "nfl_team": "LAR",
+        "adds": 3,
+        "added_by": [
+          "Brett",
+          "Doug",
+          "Jake"
+        ]
+      },
+      {
         "player_id": "8676",
         "name": "Rashid Shaheed",
         "position": "WR",
@@ -10899,6 +11370,17 @@
         ]
       },
       {
+        "player_id": "9228",
+        "name": "Bryce Young",
+        "position": "QB",
+        "nfl_team": "CAR",
+        "adds": 2,
+        "added_by": [
+          "Vlad",
+          "Jake"
+        ]
+      },
+      {
         "player_id": "13150",
         "name": "Darius Cooper",
         "position": "WR",
@@ -10929,28 +11411,6 @@
           "Vlad",
           "Matt Z"
         ]
-      },
-      {
-        "player_id": "12048",
-        "name": "George Holani",
-        "position": "RB",
-        "nfl_team": "SEA",
-        "adds": 2,
-        "added_by": [
-          "Matt Z",
-          "Derek"
-        ]
-      },
-      {
-        "player_id": "5947",
-        "name": "Jakobi Meyers",
-        "position": "WR",
-        "nfl_team": "JAX",
-        "adds": 2,
-        "added_by": [
-          "Juan",
-          "Brett"
-        ]
       }
     ],
     "most_dropped_players": [
@@ -10959,7 +11419,7 @@
         "name": "Antonio Williams",
         "position": "WR",
         "nfl_team": "WAS",
-        "drops": 3
+        "drops": 4
       },
       {
         "player_id": "12504",
@@ -11027,6 +11487,18 @@
     ],
     "by_manager": [
       {
+        "roster_id": 2,
+        "manager": "Matt Z",
+        "team_name": "Rolling With Mahomies",
+        "transactions": 38,
+        "regular_season_transactions": 33,
+        "trades": 4,
+        "waiver_claims": 5,
+        "free_agent_moves": 29,
+        "players_added": 26,
+        "players_dropped": 26
+      },
+      {
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
@@ -11051,51 +11523,51 @@
         "players_dropped": 30
       },
       {
-        "roster_id": 2,
-        "manager": "Matt Z",
-        "team_name": "Rolling With Mahomies",
-        "transactions": 35,
-        "regular_season_transactions": 30,
-        "trades": 4,
-        "waiver_claims": 4,
-        "free_agent_moves": 27,
-        "players_added": 24,
-        "players_dropped": 24
-      },
-      {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 28,
-        "regular_season_transactions": 12,
+        "transactions": 30,
+        "regular_season_transactions": 14,
         "trades": 4,
-        "waiver_claims": 4,
+        "waiver_claims": 6,
         "free_agent_moves": 20,
-        "players_added": 19,
-        "players_dropped": 22
-      },
-      {
-        "roster_id": 5,
-        "manager": "Doug",
-        "team_name": "9 - 5",
-        "transactions": 22,
-        "regular_season_transactions": 11,
-        "trades": 3,
-        "waiver_claims": 2,
-        "free_agent_moves": 17,
-        "players_added": 14,
-        "players_dropped": 19
+        "players_added": 21,
+        "players_dropped": 23
       },
       {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 22,
-        "regular_season_transactions": 17,
+        "transactions": 26,
+        "regular_season_transactions": 21,
         "trades": 0,
+        "waiver_claims": 11,
+        "free_agent_moves": 15,
+        "players_added": 22,
+        "players_dropped": 23
+      },
+      {
+        "roster_id": 11,
+        "manager": "Brett",
+        "team_name": "Paper Kings",
+        "transactions": 23,
+        "regular_season_transactions": 21,
+        "trades": 3,
         "waiver_claims": 9,
-        "free_agent_moves": 13,
-        "players_added": 19,
+        "free_agent_moves": 9,
+        "players_added": 18,
+        "players_dropped": 19
+      },
+      {
+        "roster_id": 5,
+        "manager": "Doug",
+        "team_name": "9 - 5",
+        "transactions": 23,
+        "regular_season_transactions": 12,
+        "trades": 3,
+        "waiver_claims": 3,
+        "free_agent_moves": 17,
+        "players_added": 15,
         "players_dropped": 20
       },
       {
@@ -11109,18 +11581,6 @@
         "free_agent_moves": 8,
         "players_added": 15,
         "players_dropped": 16
-      },
-      {
-        "roster_id": 11,
-        "manager": "Brett",
-        "team_name": "Paper Kings",
-        "transactions": 21,
-        "regular_season_transactions": 19,
-        "trades": 3,
-        "waiver_claims": 7,
-        "free_agent_moves": 9,
-        "players_added": 16,
-        "players_dropped": 19
       },
       {
         "roster_id": 10,
