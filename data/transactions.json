@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T06:49:51-07:00",
+    "generated_at": "2026-10-23T06:54:28-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 7,
     "counts": {
-      "transactions": 271
+      "transactions": 274
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,191 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1419063786001743872",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-22T11:28:00-07:00",
+      "processed": "2026-10-22T11:28:00-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Nakobe Dean / drops Carson Schwesinger",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "8267",
+              "name": "Nakobe Dean",
+              "position": "LB",
+              "nfl_team": "LV"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12578",
+              "name": "Carson Schwesinger",
+              "position": "LB",
+              "nfl_team": "CLE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1419058108491153408",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-22T11:05:27-07:00",
+      "processed": "2026-10-22T11:05:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds George Holani / drops Jaleel McLaughlin",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "12048",
+              "name": "George Holani",
+              "position": "RB",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11439",
+              "name": "Jaleel McLaughlin",
+              "position": "RB",
+              "nfl_team": "CLE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1418990075928231936",
+      "type": "trade",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-22T06:35:06-07:00",
+      "processed": "2026-10-22T10:19:32-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift"
+        },
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Lij gets Tre Tucker, 2027 Rd 5 pick (Juan); Juan gets Rashod Bateman, 2027 Rd 3 pick (Lij)",
+      "sides": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift",
+          "adds": [
+            {
+              "player_id": "10213",
+              "name": "Tre Tucker",
+              "position": "WR",
+              "nfl_team": "LV"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7571",
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "nfl_team": "BAL"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Juan",
+              "from": "Juan"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Lij",
+              "to": "Juan"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "7571",
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "nfl_team": "BAL"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "10213",
+              "name": "Tre Tucker",
+              "position": "WR",
+              "nfl_team": "LV"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Lij",
+              "from": "Lij"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Juan",
+              "to": "Lij"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
     {
       "id": "1418638872006414336",
       "type": "waiver",
@@ -11564,21 +11749,21 @@
   ],
   "summary": {
     "totals_by_type": {
-      "trade": 22,
+      "trade": 23,
       "waiver": 61,
-      "free_agent": 186,
+      "free_agent": 188,
       "commissioner": 2,
-      "total": 271
+      "total": 274
     },
     "regular_season_totals_by_type": {
-      "trade": 14,
+      "trade": 15,
       "waiver": 60,
-      "free_agent": 114,
+      "free_agent": 116,
       "commissioner": 2,
-      "total": 190
+      "total": 193
     },
     "totals_by_phase": {
-      "regular": 190,
+      "regular": 193,
       "preseason": 31,
       "offseason": 50
     },
@@ -11590,14 +11775,13 @@
       "4": 32,
       "5": 34,
       "6": 38,
-      "7": 11
+      "7": 14
     },
     "most_active_manager": {
       "managers": [
-        "Juan",
-        "Matt Z"
+        "Juan"
       ],
-      "count": 39
+      "count": 40
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -11609,7 +11793,7 @@
       "managers": [
         "Juan"
       ],
-      "count": 9
+      "count": 10
     },
     "biggest_faab_bid": {
       "bid": 84,
@@ -11637,6 +11821,18 @@
           "Vlad",
           "Juan",
           "Matt Z"
+        ]
+      },
+      {
+        "player_id": "12048",
+        "name": "George Holani",
+        "position": "RB",
+        "nfl_team": "SEA",
+        "adds": 3,
+        "added_by": [
+          "Jake",
+          "Matt Z",
+          "Derek"
         ]
       },
       {
@@ -11728,16 +11924,6 @@
           "Andrew",
           "Jake"
         ]
-      },
-      {
-        "player_id": "2505",
-        "name": "Darren Waller",
-        "position": "TE",
-        "nfl_team": "CAR",
-        "adds": 2,
-        "added_by": [
-          "Jake"
-        ]
       }
     ],
     "most_dropped_players": [
@@ -11747,6 +11933,13 @@
         "position": "WR",
         "nfl_team": "WAS",
         "drops": 4
+      },
+      {
+        "player_id": "12578",
+        "name": "Carson Schwesinger",
+        "position": "LB",
+        "nfl_team": "CLE",
+        "drops": 3
       },
       {
         "player_id": "12504",
@@ -11798,13 +11991,6 @@
         "drops": 2
       },
       {
-        "player_id": "12578",
-        "name": "Carson Schwesinger",
-        "position": "LB",
-        "nfl_team": "CLE",
-        "drops": 2
-      },
-      {
         "player_id": "13311",
         "name": "Chris Bell",
         "position": "WR",
@@ -11817,13 +12003,13 @@
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 39,
-        "regular_season_transactions": 30,
-        "trades": 9,
+        "transactions": 40,
+        "regular_season_transactions": 31,
+        "trades": 10,
         "waiver_claims": 9,
         "free_agent_moves": 21,
-        "players_added": 27,
-        "players_dropped": 32
+        "players_added": 28,
+        "players_dropped": 33
       },
       {
         "roster_id": 2,
@@ -11841,25 +12027,25 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 37,
-        "regular_season_transactions": 25,
+        "transactions": 38,
+        "regular_season_transactions": 26,
         "trades": 5,
         "waiver_claims": 6,
-        "free_agent_moves": 26,
-        "players_added": 28,
-        "players_dropped": 35
+        "free_agent_moves": 27,
+        "players_added": 29,
+        "players_dropped": 36
       },
       {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 31,
-        "regular_season_transactions": 15,
+        "transactions": 32,
+        "regular_season_transactions": 16,
         "trades": 4,
         "waiver_claims": 6,
-        "free_agent_moves": 21,
-        "players_added": 22,
-        "players_dropped": 24
+        "free_agent_moves": 22,
+        "players_added": 23,
+        "players_dropped": 25
       },
       {
         "roster_id": 9,
@@ -11949,13 +12135,13 @@
         "roster_id": 4,
         "manager": "Lij",
         "team_name": "Taylor Swift",
-        "transactions": 11,
-        "regular_season_transactions": 5,
-        "trades": 3,
+        "transactions": 12,
+        "regular_season_transactions": 6,
+        "trades": 4,
         "waiver_claims": 0,
         "free_agent_moves": 8,
-        "players_added": 5,
-        "players_dropped": 8
+        "players_added": 6,
+        "players_dropped": 9
       }
     ]
   },
@@ -12219,6 +12405,14 @@
     {
       "season": 2027,
       "round": 3,
+      "original_owner": "Lij",
+      "current_owner": "Juan",
+      "current_team": "Red Cross",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 3,
       "original_owner": "Juan",
       "current_owner": "Matt A",
       "current_team": "CTE",
@@ -12254,6 +12448,14 @@
       "original_owner": "Lij",
       "current_owner": "Jake",
       "current_team": "Top Play",
+      "draft_complete": false
+    },
+    {
+      "season": 2027,
+      "round": 5,
+      "original_owner": "Juan",
+      "current_owner": "Lij",
+      "current_team": "Taylor Swift",
       "draft_complete": false
     },
     {
