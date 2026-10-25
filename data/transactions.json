@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-24T06:53:20-07:00",
+    "generated_at": "2026-10-25T06:56:19-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 7,
     "counts": {
-      "transactions": 274
+      "transactions": 278
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,149 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1420077037485326336",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-25T06:34:18-07:00",
+      "processed": "2026-10-25T06:34:18-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Sam Darnold / drops Justice Hill",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "4943",
+              "name": "Sam Darnold",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5995",
+              "name": "Justice Hill",
+              "position": "RB",
+              "nfl_team": "BAL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1419858845584351232",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-24T16:07:17-07:00",
+      "processed": "2026-10-24T16:07:17-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Zonovan Knight",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "8122",
+              "name": "Zonovan Knight",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1419826227266457600",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-24T13:57:40-07:00",
+      "processed": "2026-10-24T13:57:40-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Brandin Cooks",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "2197",
+              "name": "Brandin Cooks",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1419825983980068864",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-24T13:56:42-07:00",
+      "processed": "2026-10-24T13:56:42-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Pierre Strong Jr.",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8116",
+              "name": "Pierre Strong Jr.",
+              "position": "RB",
+              "nfl_team": "GB"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1419063786001743872",
       "type": "free_agent",
@@ -438,7 +581,7 @@
           "team_name": "Rolling With Mahomies"
         }
       ],
-      "headline": "Matt Z adds Pierre Strong / drops MarShawn Lloyd",
+      "headline": "Matt Z adds Pierre Strong Jr. / drops MarShawn Lloyd",
       "sides": [
         {
           "roster_id": 2,
@@ -447,7 +590,7 @@
           "adds": [
             {
               "player_id": "8116",
-              "name": "Pierre Strong",
+              "name": "Pierre Strong Jr.",
               "position": "RB",
               "nfl_team": "GB"
             }
@@ -554,7 +697,7 @@
           "team_name": "WHO’s YOUR VLADDY"
         }
       ],
-      "headline": "Vlad adds Tyrone Tracy / drops Antonio Williams",
+      "headline": "Vlad adds Tyrone Tracy Jr. / drops Antonio Williams",
       "sides": [
         {
           "roster_id": 9,
@@ -563,7 +706,7 @@
           "adds": [
             {
               "player_id": "11655",
-              "name": "Tyrone Tracy",
+              "name": "Tyrone Tracy Jr.",
               "position": "RB",
               "nfl_team": "NYG"
             }
@@ -936,7 +1079,7 @@
           "team_name": "9 - 5"
         }
       ],
-      "headline": "Doug adds Omar Cooper / drops Tyreek Hill ($20 FAAB)",
+      "headline": "Doug adds Omar Cooper Jr. / drops Tyreek Hill ($20 FAAB)",
       "sides": [
         {
           "roster_id": 5,
@@ -945,7 +1088,7 @@
           "adds": [
             {
               "player_id": "13276",
-              "name": "Omar Cooper",
+              "name": "Omar Cooper Jr.",
               "position": "WR",
               "nfl_team": "NYJ"
             }
@@ -1233,7 +1376,7 @@
           "team_name": "Red Cross"
         }
       ],
-      "headline": "Juan adds Brian Thomas ($0 FAAB)",
+      "headline": "Juan adds Brian Thomas Jr. ($0 FAAB)",
       "sides": [
         {
           "roster_id": 6,
@@ -1242,7 +1385,7 @@
           "adds": [
             {
               "player_id": "11631",
-              "name": "Brian Thomas",
+              "name": "Brian Thomas Jr.",
               "position": "WR",
               "nfl_team": "JAX"
             }
@@ -1327,7 +1470,7 @@
           "team_name": "Carried by RA"
         }
       ],
-      "headline": "Brett drops Deebo Samuel, Justin Jefferson",
+      "headline": "Brett drops Deebo Samuel Sr., Justin Jefferson",
       "sides": [
         {
           "roster_id": 11,
@@ -1337,7 +1480,7 @@
           "drops": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -1356,7 +1499,7 @@
           "adds": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -1508,7 +1651,7 @@
           "team_name": "Carried by RA"
         }
       ],
-      "headline": "Brett gets Deebo Samuel, Justin Jefferson; Andrew gets Terry McLaurin, 2027 Rd 3 pick (Brett)",
+      "headline": "Brett gets Deebo Samuel Sr., Justin Jefferson; Andrew gets Terry McLaurin, 2027 Rd 3 pick (Brett)",
       "sides": [
         {
           "roster_id": 11,
@@ -1517,7 +1660,7 @@
           "adds": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -1563,7 +1706,7 @@
           "drops": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -1645,7 +1788,7 @@
           "team_name": "Red Cross"
         }
       ],
-      "headline": "Juan adds Chris Godwin",
+      "headline": "Juan adds Chris Godwin Jr.",
       "sides": [
         {
           "roster_id": 6,
@@ -1654,7 +1797,7 @@
           "adds": [
             {
               "player_id": "4037",
-              "name": "Chris Godwin",
+              "name": "Chris Godwin Jr.",
               "position": "WR",
               "nfl_team": "TB"
             }
@@ -1816,7 +1959,7 @@
           "team_name": "my njigba"
         }
       ],
-      "headline": "Derek drops Robert Henry",
+      "headline": "Derek drops Robert Henry Jr.",
       "sides": [
         {
           "roster_id": 7,
@@ -1826,7 +1969,7 @@
           "drops": [
             {
               "player_id": "13418",
-              "name": "Robert Henry",
+              "name": "Robert Henry Jr.",
               "position": "RB",
               "nfl_team": "SEA"
             }
@@ -1939,7 +2082,7 @@
           "team_name": "Carried by RA"
         }
       ],
-      "headline": "Andrew adds Kyle Pitts",
+      "headline": "Andrew adds Kyle Pitts Sr.",
       "sides": [
         {
           "roster_id": 12,
@@ -1948,7 +2091,7 @@
           "adds": [
             {
               "player_id": "7553",
-              "name": "Kyle Pitts",
+              "name": "Kyle Pitts Sr.",
               "position": "TE",
               "nfl_team": "ATL"
             }
@@ -2007,7 +2150,7 @@
           "team_name": "CTE"
         }
       ],
-      "headline": "Matt A adds Mike Washington / drops AJ Barner",
+      "headline": "Matt A adds Mike Washington Jr. / drops AJ Barner",
       "sides": [
         {
           "roster_id": 8,
@@ -2016,7 +2159,7 @@
           "adds": [
             {
               "player_id": "13305",
-              "name": "Mike Washington",
+              "name": "Mike Washington Jr.",
               "position": "RB",
               "nfl_team": "LV"
             }
@@ -2082,7 +2225,7 @@
           "team_name": "Taylor Swift"
         }
       ],
-      "headline": "Lij adds Michael Penix / drops Jalen Hurts",
+      "headline": "Lij adds Michael Penix Jr. / drops Jalen Hurts",
       "sides": [
         {
           "roster_id": 4,
@@ -2091,7 +2234,7 @@
           "adds": [
             {
               "player_id": "11559",
-              "name": "Michael Penix",
+              "name": "Michael Penix Jr.",
               "position": "QB",
               "nfl_team": "ATL"
             }
@@ -2212,7 +2355,7 @@
           "team_name": "Taylor Swift"
         }
       ],
-      "headline": "Lij drops Brian Thomas",
+      "headline": "Lij drops Brian Thomas Jr.",
       "sides": [
         {
           "roster_id": 4,
@@ -2222,7 +2365,7 @@
           "drops": [
             {
               "player_id": "11631",
-              "name": "Brian Thomas",
+              "name": "Brian Thomas Jr.",
               "position": "WR",
               "nfl_team": "JAX"
             }
@@ -2280,7 +2423,7 @@
           "team_name": "Walker? Barely know her"
         }
       ],
-      "headline": "Marc drops Mike Washington",
+      "headline": "Marc drops Mike Washington Jr.",
       "sides": [
         {
           "roster_id": 10,
@@ -2290,7 +2433,7 @@
           "drops": [
             {
               "player_id": "13305",
-              "name": "Mike Washington",
+              "name": "Mike Washington Jr.",
               "position": "RB",
               "nfl_team": "LV"
             }
@@ -2628,7 +2771,7 @@
           "team_name": "Paper Kings"
         }
       ],
-      "headline": "Brett adds Ernest Jones / drops Jordyn Brooks ($1 FAAB)",
+      "headline": "Brett adds Ernest Jones IV / drops Jordyn Brooks ($1 FAAB)",
       "sides": [
         {
           "roster_id": 11,
@@ -2637,7 +2780,7 @@
           "adds": [
             {
               "player_id": "7672",
-              "name": "Ernest Jones",
+              "name": "Ernest Jones IV",
               "position": "LB",
               "nfl_team": "SEA"
             }
@@ -2676,7 +2819,7 @@
           "team_name": "Walker? Barely know her"
         }
       ],
-      "headline": "Jake gets Roman Wilson, Mark Andrews, DK Metcalf, C.J. Stroud, 2027 Rd 8 pick (Marc), 2027 Rd 3 pick (Matt Z); Marc gets Woody Marks, Ollie Gordon, Matthew Stafford, Tony Pollard, 2027 Rd 9 pick (Jake)",
+      "headline": "Jake gets Roman Wilson, Mark Andrews, DK Metcalf, C.J. Stroud, 2027 Rd 8 pick (Marc), 2027 Rd 3 pick (Matt Z); Marc gets Woody Marks, Ollie Gordon II, Matthew Stafford, Tony Pollard, 2027 Rd 9 pick (Jake)",
       "sides": [
         {
           "roster_id": 1,
@@ -2717,7 +2860,7 @@
             },
             {
               "player_id": "12495",
-              "name": "Ollie Gordon",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "nfl_team": "MIA"
             },
@@ -2772,7 +2915,7 @@
             },
             {
               "player_id": "12495",
-              "name": "Ollie Gordon",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "nfl_team": "MIA"
             },
@@ -3006,7 +3149,7 @@
           "team_name": "Red Cross"
         }
       ],
-      "headline": "Matt Z gets Rashee Rice, Marvin Harrison, 2027 Rd 3 pick (Marc); Juan gets 2027 Rd 1 pick (Matt Z)",
+      "headline": "Matt Z gets Rashee Rice, Marvin Harrison Jr., 2027 Rd 3 pick (Marc); Juan gets 2027 Rd 1 pick (Matt Z)",
       "sides": [
         {
           "roster_id": 2,
@@ -3021,7 +3164,7 @@
             },
             {
               "player_id": "11628",
-              "name": "Marvin Harrison",
+              "name": "Marvin Harrison Jr.",
               "position": "WR",
               "nfl_team": "HOU"
             }
@@ -3060,7 +3203,7 @@
             },
             {
               "player_id": "11628",
-              "name": "Marvin Harrison",
+              "name": "Marvin Harrison Jr.",
               "position": "WR",
               "nfl_team": "HOU"
             }
@@ -3177,7 +3320,7 @@
           "team_name": "9 - 5"
         }
       ],
-      "headline": "Doug drops Chris Godwin",
+      "headline": "Doug drops Chris Godwin Jr.",
       "sides": [
         {
           "roster_id": 5,
@@ -3187,7 +3330,7 @@
           "drops": [
             {
               "player_id": "4037",
-              "name": "Chris Godwin",
+              "name": "Chris Godwin Jr.",
               "position": "WR",
               "nfl_team": "TB"
             }
@@ -3485,7 +3628,7 @@
           "team_name": "Paper Kings"
         }
       ],
-      "headline": "Juan gets Blake Corum, Rome Odunze; Brett gets Terry McLaurin, Brian Robinson",
+      "headline": "Juan gets Blake Corum, Rome Odunze; Brett gets Terry McLaurin, Brian Robinson Jr.",
       "sides": [
         {
           "roster_id": 6,
@@ -3514,7 +3657,7 @@
             },
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -3537,7 +3680,7 @@
             },
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -3584,7 +3727,7 @@
           "team_name": "Carried by RA"
         }
       ],
-      "headline": "Juan gets Jeremiyah Love, 2027 Rd 10 pick (Andrew); Andrew gets Deebo Samuel, Justin Jefferson",
+      "headline": "Juan gets Jeremiyah Love, 2027 Rd 10 pick (Andrew); Andrew gets Deebo Samuel Sr., Justin Jefferson",
       "sides": [
         {
           "roster_id": 6,
@@ -3601,7 +3744,7 @@
           "drops": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -3631,7 +3774,7 @@
           "adds": [
             {
               "player_id": "5872",
-              "name": "Deebo Samuel",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
               "nfl_team": "SF"
             },
@@ -4105,7 +4248,7 @@
           "team_name": "Rolling With Mahomies"
         }
       ],
-      "headline": "Matt Z adds Dohnte Meyers / drops Kyle Pitts ($20 FAAB)",
+      "headline": "Matt Z adds Dohnte Meyers / drops Kyle Pitts Sr. ($20 FAAB)",
       "sides": [
         {
           "roster_id": 2,
@@ -4122,7 +4265,7 @@
           "drops": [
             {
               "player_id": "7553",
-              "name": "Kyle Pitts",
+              "name": "Kyle Pitts Sr.",
               "position": "TE",
               "nfl_team": "ATL"
             }
@@ -4148,7 +4291,7 @@
           "team_name": "Walker? Barely know her"
         }
       ],
-      "headline": "Marc adds Mike Washington / drops Tyjae Spears ($9 FAAB)",
+      "headline": "Marc adds Mike Washington Jr. / drops Tyjae Spears ($9 FAAB)",
       "sides": [
         {
           "roster_id": 10,
@@ -4157,7 +4300,7 @@
           "adds": [
             {
               "player_id": "13305",
-              "name": "Mike Washington",
+              "name": "Mike Washington Jr.",
               "position": "RB",
               "nfl_team": "LV"
             }
@@ -4234,7 +4377,7 @@
           "team_name": "my njigba"
         }
       ],
-      "headline": "Derek adds Robert Henry / drops Cooper Kupp ($0 FAAB)",
+      "headline": "Derek adds Robert Henry Jr. / drops Cooper Kupp ($0 FAAB)",
       "sides": [
         {
           "roster_id": 7,
@@ -4243,7 +4386,7 @@
           "adds": [
             {
               "player_id": "13418",
-              "name": "Robert Henry",
+              "name": "Robert Henry Jr.",
               "position": "RB",
               "nfl_team": "SEA"
             }
@@ -4519,7 +4662,7 @@
           "team_name": "Top Play"
         }
       ],
-      "headline": "Jake adds Joe Mixon / drops Mike Washington",
+      "headline": "Jake adds Joe Mixon / drops Mike Washington Jr.",
       "sides": [
         {
           "roster_id": 1,
@@ -4536,7 +4679,7 @@
           "drops": [
             {
               "player_id": "13305",
-              "name": "Mike Washington",
+              "name": "Mike Washington Jr.",
               "position": "RB",
               "nfl_team": "LV"
             }
@@ -5180,7 +5323,7 @@
           "team_name": "CTE"
         }
       ],
-      "headline": "Jake gets Omarion Hampton, Luther Burden; Matt A gets Puka Nacua",
+      "headline": "Jake gets Omarion Hampton, Luther Burden III; Matt A gets Puka Nacua",
       "sides": [
         {
           "roster_id": 1,
@@ -5195,7 +5338,7 @@
             },
             {
               "player_id": "12519",
-              "name": "Luther Burden",
+              "name": "Luther Burden III",
               "position": "WR",
               "nfl_team": "CHI"
             }
@@ -5234,7 +5377,7 @@
             },
             {
               "player_id": "12519",
-              "name": "Luther Burden",
+              "name": "Luther Burden III",
               "position": "WR",
               "nfl_team": "CHI"
             }
@@ -5262,7 +5405,7 @@
           "team_name": "Red Cross"
         }
       ],
-      "headline": "Juan adds Brian Robinson",
+      "headline": "Juan adds Brian Robinson Jr.",
       "sides": [
         {
           "roster_id": 6,
@@ -5271,7 +5414,7 @@
           "adds": [
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -5586,7 +5729,7 @@
           "team_name": "Rolling With Mahomies"
         }
       ],
-      "headline": "Matt Z adds Kyle Pitts / drops AJ Dillon ($2 FAAB)",
+      "headline": "Matt Z adds Kyle Pitts Sr. / drops AJ Dillon ($2 FAAB)",
       "sides": [
         {
           "roster_id": 2,
@@ -5595,7 +5738,7 @@
           "adds": [
             {
               "player_id": "7553",
-              "name": "Kyle Pitts",
+              "name": "Kyle Pitts Sr.",
               "position": "TE",
               "nfl_team": "ATL"
             }
@@ -5715,7 +5858,7 @@
           "team_name": "Top Play"
         }
       ],
-      "headline": "Jake adds Ollie Gordon / drops Joshua Palmer ($84 FAAB)",
+      "headline": "Jake adds Ollie Gordon II / drops Joshua Palmer ($84 FAAB)",
       "sides": [
         {
           "roster_id": 1,
@@ -5724,7 +5867,7 @@
           "adds": [
             {
               "player_id": "12495",
-              "name": "Ollie Gordon",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "nfl_team": "MIA"
             }
@@ -5869,7 +6012,7 @@
           "team_name": "9 - 5"
         }
       ],
-      "headline": "Doug adds Terrance Ferguson / drops Kyle Pitts",
+      "headline": "Doug adds Terrance Ferguson / drops Kyle Pitts Sr.",
       "sides": [
         {
           "roster_id": 5,
@@ -5886,7 +6029,7 @@
           "drops": [
             {
               "player_id": "7553",
-              "name": "Kyle Pitts",
+              "name": "Kyle Pitts Sr.",
               "position": "TE",
               "nfl_team": "ATL"
             }
@@ -6244,7 +6387,7 @@
           "team_name": "Walker? Barely know her"
         }
       ],
-      "headline": "Marc drops Brian Robinson",
+      "headline": "Marc drops Brian Robinson Jr.",
       "sides": [
         {
           "roster_id": 10,
@@ -6254,7 +6397,7 @@
           "drops": [
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -7266,7 +7409,7 @@
           "team_name": "Walker? Barely know her"
         }
       ],
-      "headline": "Marc adds Brian Robinson / drops Tyrone Tracy ($2 FAAB)",
+      "headline": "Marc adds Brian Robinson Jr. / drops Tyrone Tracy Jr. ($2 FAAB)",
       "sides": [
         {
           "roster_id": 10,
@@ -7275,7 +7418,7 @@
           "adds": [
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -7283,7 +7426,7 @@
           "drops": [
             {
               "player_id": "11655",
-              "name": "Tyrone Tracy",
+              "name": "Tyrone Tracy Jr.",
               "position": "RB",
               "nfl_team": "NYG"
             }
@@ -7568,7 +7711,7 @@
           "team_name": "Top Play"
         }
       ],
-      "headline": "Jake adds Tyreek Hill / drops Brian Robinson",
+      "headline": "Jake adds Tyreek Hill / drops Brian Robinson Jr.",
       "sides": [
         {
           "roster_id": 1,
@@ -7585,7 +7728,7 @@
           "drops": [
             {
               "player_id": "8154",
-              "name": "Brian Robinson",
+              "name": "Brian Robinson Jr.",
               "position": "RB",
               "nfl_team": "ATL"
             }
@@ -8260,7 +8403,7 @@
           "team_name": "Paper Kings"
         }
       ],
-      "headline": "Brett drops Ted Hurst",
+      "headline": "Brett drops Ted Hurst III",
       "sides": [
         {
           "roster_id": 11,
@@ -8270,7 +8413,7 @@
           "drops": [
             {
               "player_id": "13317",
-              "name": "Ted Hurst",
+              "name": "Ted Hurst III",
               "position": "WR",
               "nfl_team": "TB"
             }
@@ -9097,7 +9240,7 @@
           "team_name": "Red Cross"
         }
       ],
-      "headline": "Juan drops Omar Cooper",
+      "headline": "Juan drops Omar Cooper Jr.",
       "sides": [
         {
           "roster_id": 6,
@@ -9107,7 +9250,7 @@
           "drops": [
             {
               "player_id": "13276",
-              "name": "Omar Cooper",
+              "name": "Omar Cooper Jr.",
               "position": "WR",
               "nfl_team": "NYJ"
             }
@@ -10049,7 +10192,7 @@
           "team_name": "CTE"
         }
       ],
-      "headline": "Juan gets Bhayshul Tuten; Matt A gets James Cook",
+      "headline": "Juan gets Bhayshul Tuten; Matt A gets James Cook III",
       "sides": [
         {
           "roster_id": 6,
@@ -10066,7 +10209,7 @@
           "drops": [
             {
               "player_id": "8138",
-              "name": "James Cook",
+              "name": "James Cook III",
               "position": "RB",
               "nfl_team": "BUF"
             }
@@ -10083,7 +10226,7 @@
           "adds": [
             {
               "player_id": "8138",
-              "name": "James Cook",
+              "name": "James Cook III",
               "position": "RB",
               "nfl_team": "BUF"
             }
@@ -10398,7 +10541,7 @@
           "team_name": "Top Play"
         }
       ],
-      "headline": "Jake drops Ollie Gordon",
+      "headline": "Jake drops Ollie Gordon II",
       "sides": [
         {
           "roster_id": 1,
@@ -10408,7 +10551,7 @@
           "drops": [
             {
               "player_id": "12495",
-              "name": "Ollie Gordon",
+              "name": "Ollie Gordon II",
               "position": "RB",
               "nfl_team": "MIA"
             }
@@ -10846,7 +10989,7 @@
           "team_name": "Rudy"
         }
       ],
-      "headline": "Paul drops Marvin Mims",
+      "headline": "Paul drops Marvin Mims Jr.",
       "sides": [
         {
           "roster_id": 3,
@@ -10856,7 +10999,7 @@
           "drops": [
             {
               "player_id": "9494",
-              "name": "Marvin Mims",
+              "name": "Marvin Mims Jr.",
               "position": "WR",
               "nfl_team": "DEN"
             }
@@ -11182,7 +11325,7 @@
           "team_name": "Rudy"
         }
       ],
-      "headline": "Paul drops Calvin Austin",
+      "headline": "Paul drops Calvin Austin III",
       "sides": [
         {
           "roster_id": 3,
@@ -11192,7 +11335,7 @@
           "drops": [
             {
               "player_id": "8125",
-              "name": "Calvin Austin",
+              "name": "Calvin Austin III",
               "position": "WR",
               "nfl_team": "NYG"
             }
@@ -11637,7 +11780,7 @@
       "winning_bids_total": 16,
       "biggest_bid": {
         "bid": 9,
-        "player": "Mike Washington",
+        "player": "Mike Washington Jr.",
         "week": 4
       }
     },
@@ -11667,7 +11810,7 @@
       "winning_bids_total": 30,
       "biggest_bid": {
         "bid": 20,
-        "player": "Omar Cooper",
+        "player": "Omar Cooper Jr.",
         "week": 6
       }
     },
@@ -11712,7 +11855,7 @@
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 84,
-        "player": "Ollie Gordon",
+        "player": "Ollie Gordon II",
         "week": 3
       }
     },
@@ -11751,19 +11894,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 61,
-      "free_agent": 188,
+      "free_agent": 192,
       "commissioner": 2,
-      "total": 274
+      "total": 278
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 60,
-      "free_agent": 116,
+      "free_agent": 120,
       "commissioner": 2,
-      "total": 193
+      "total": 197
     },
     "totals_by_phase": {
-      "regular": 193,
+      "regular": 197,
       "preseason": 31,
       "offseason": 50
     },
@@ -11775,19 +11918,19 @@
       "4": 32,
       "5": 34,
       "6": 38,
-      "7": 14
+      "7": 18
     },
     "most_active_manager": {
       "managers": [
-        "Juan"
+        "Matt Z"
       ],
-      "count": 40
+      "count": 41
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 34
+      "count": 36
     },
     "most_trades": {
       "managers": [
@@ -11801,7 +11944,7 @@
       "team_name": "Top Play",
       "player": {
         "player_id": "12495",
-        "name": "Ollie Gordon",
+        "name": "Ollie Gordon II",
         "position": "RB",
         "nfl_team": "MIA"
       },
@@ -11893,8 +12036,19 @@
         ]
       },
       {
+        "player_id": "2197",
+        "name": "Brandin Cooks",
+        "position": "WR",
+        "nfl_team": "SF",
+        "adds": 2,
+        "added_by": [
+          "Matt Z",
+          "Vlad"
+        ]
+      },
+      {
         "player_id": "8154",
-        "name": "Brian Robinson",
+        "name": "Brian Robinson Jr.",
         "position": "RB",
         "nfl_team": "ATL",
         "adds": 2,
@@ -11911,17 +12065,6 @@
         "adds": 2,
         "added_by": [
           "Vlad",
-          "Jake"
-        ]
-      },
-      {
-        "player_id": "13150",
-        "name": "Darius Cooper",
-        "position": "WR",
-        "nfl_team": "PHI",
-        "adds": 2,
-        "added_by": [
-          "Andrew",
           "Jake"
         ]
       }
@@ -11985,7 +12128,7 @@
       },
       {
         "player_id": "8154",
-        "name": "Brian Robinson",
+        "name": "Brian Robinson Jr.",
         "position": "RB",
         "nfl_team": "ATL",
         "drops": 2
@@ -12000,6 +12143,18 @@
     ],
     "by_manager": [
       {
+        "roster_id": 2,
+        "manager": "Matt Z",
+        "team_name": "Rolling With Mahomies",
+        "transactions": 41,
+        "regular_season_transactions": 36,
+        "trades": 4,
+        "waiver_claims": 5,
+        "free_agent_moves": 32,
+        "players_added": 28,
+        "players_dropped": 28
+      },
+      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
@@ -12010,18 +12165,6 @@
         "free_agent_moves": 21,
         "players_added": 28,
         "players_dropped": 33
-      },
-      {
-        "roster_id": 2,
-        "manager": "Matt Z",
-        "team_name": "Rolling With Mahomies",
-        "transactions": 39,
-        "regular_season_transactions": 34,
-        "trades": 4,
-        "waiver_claims": 5,
-        "free_agent_moves": 30,
-        "players_added": 27,
-        "players_dropped": 27
       },
       {
         "roster_id": 1,
@@ -12039,13 +12182,13 @@
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 32,
-        "regular_season_transactions": 16,
+        "transactions": 33,
+        "regular_season_transactions": 17,
         "trades": 4,
         "waiver_claims": 6,
-        "free_agent_moves": 22,
-        "players_added": 23,
-        "players_dropped": 25
+        "free_agent_moves": 23,
+        "players_added": 24,
+        "players_dropped": 26
       },
       {
         "roster_id": 9,
@@ -12063,12 +12206,12 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 25,
-        "regular_season_transactions": 23,
+        "transactions": 26,
+        "regular_season_transactions": 24,
         "trades": 3,
         "waiver_claims": 10,
-        "free_agent_moves": 10,
-        "players_added": 19,
+        "free_agent_moves": 11,
+        "players_added": 20,
         "players_dropped": 21
       },
       {
