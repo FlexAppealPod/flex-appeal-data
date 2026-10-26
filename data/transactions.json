@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T06:56:19-07:00",
+    "generated_at": "2026-10-26T07:01:07-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 7,
     "counts": {
-      "transactions": 278
+      "transactions": 279
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,40 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1420109726384979968",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-25T08:44:12-07:00",
+      "processed": "2026-10-25T08:44:12-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad drops Ja'Kobi Lane",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13293",
+              "name": "Ja'Kobi Lane",
+              "position": "WR",
+              "nfl_team": "BAL"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1420077037485326336",
       "type": "free_agent",
@@ -11894,19 +11928,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 61,
-      "free_agent": 192,
+      "free_agent": 193,
       "commissioner": 2,
-      "total": 278
+      "total": 279
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 60,
-      "free_agent": 120,
+      "free_agent": 121,
       "commissioner": 2,
-      "total": 197
+      "total": 198
     },
     "totals_by_phase": {
-      "regular": 197,
+      "regular": 198,
       "preseason": 31,
       "offseason": 50
     },
@@ -11918,7 +11952,7 @@
       "4": 32,
       "5": 34,
       "6": 38,
-      "7": 18
+      "7": 19
     },
     "most_active_manager": {
       "managers": [
@@ -12194,13 +12228,13 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 28,
-        "regular_season_transactions": 23,
+        "transactions": 29,
+        "regular_season_transactions": 24,
         "trades": 0,
         "waiver_claims": 11,
-        "free_agent_moves": 17,
+        "free_agent_moves": 18,
         "players_added": 24,
-        "players_dropped": 25
+        "players_dropped": 26
       },
       {
         "roster_id": 11,
