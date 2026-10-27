@@ -1,7 +1,7 @@
 {
   "season": 2026,
-  "through_week": 6,
-  "last_updated": "2026-10-20T08:11:24-07:00",
+  "through_week": 7,
+  "last_updated": "2026-10-27T08:05:25-07:00",
   "notes": "Starters only, weeks started. TDs = passing + rushing + receiving + IDP defensive + return; yards exclude return yards.",
   "teams": [
     {
@@ -10,22 +10,22 @@
       "owner": "Elijah Bruette",
       "short_name": "Lij",
       "tds": {
-        "pass": 13,
-        "rush": 17,
-        "rec": 10,
+        "pass": 15,
+        "rush": 21,
+        "rec": 13,
         "idp": 1,
         "return": 0,
-        "total": 41
+        "total": 50
       },
       "yards": {
-        "pass": 1209,
-        "rush": 1464,
-        "rec": 1518,
-        "scrimmage": 2982,
-        "total": 4191
+        "pass": 1512,
+        "rush": 1742,
+        "rec": 1762,
+        "scrimmage": 3504,
+        "total": 5016
       },
       "tds_rank": 1,
-      "yards_rank": 8,
+      "yards_rank": 7,
       "top_td_scorers": [
         {
           "player": "Jalen Hurts",
@@ -33,11 +33,11 @@
         },
         {
           "player": "Jonathan Taylor",
-          "tds": 7
+          "tds": 8
         },
         {
           "player": "D'Andre Swift",
-          "tds": 6
+          "tds": 7
         }
       ],
       "top_yardage": [
@@ -47,11 +47,11 @@
         },
         {
           "player": "Jonathan Taylor",
-          "yards": 655
+          "yards": 765
         },
         {
-          "player": "D'Andre Swift",
-          "yards": 538
+          "player": "Bucky Irving",
+          "yards": 636
         }
       ],
       "weekly": [
@@ -84,89 +84,11 @@
           "week": 6,
           "tds": 8,
           "yards": 735
-        }
-      ]
-    },
-    {
-      "roster_id": 11,
-      "team_name": "Paper Kings",
-      "owner": "Brett Trana",
-      "short_name": "Brett",
-      "tds": {
-        "pass": 15,
-        "rush": 14,
-        "rec": 11,
-        "idp": 0,
-        "return": 0,
-        "total": 40
-      },
-      "yards": {
-        "pass": 1595,
-        "rush": 1609,
-        "rec": 1812,
-        "scrimmage": 3421,
-        "total": 5016
-      },
-      "tds_rank": 2,
-      "yards_rank": 1,
-      "top_td_scorers": [
-        {
-          "player": "Brock Purdy",
-          "tds": 10
         },
         {
-          "player": "Derrick Henry",
-          "tds": 8
-        },
-        {
-          "player": "Christian Watson",
-          "tds": 6
-        }
-      ],
-      "top_yardage": [
-        {
-          "player": "Brock Purdy",
-          "yards": 1187
-        },
-        {
-          "player": "Bijan Robinson",
-          "yards": 785
-        },
-        {
-          "player": "Derrick Henry",
-          "yards": 598
-        }
-      ],
-      "weekly": [
-        {
-          "week": 1,
-          "tds": 13,
-          "yards": 1074
-        },
-        {
-          "week": 2,
-          "tds": 5,
-          "yards": 703
-        },
-        {
-          "week": 3,
+          "week": 7,
           "tds": 9,
-          "yards": 943
-        },
-        {
-          "week": 4,
-          "tds": 6,
-          "yards": 794
-        },
-        {
-          "week": 5,
-          "tds": 6,
-          "yards": 880
-        },
-        {
-          "week": 6,
-          "tds": 1,
-          "yards": 622
+          "yards": 825
         }
       ]
     },
@@ -176,48 +98,48 @@
       "owner": "Douglas Sullivan",
       "short_name": "Doug",
       "tds": {
-        "pass": 10,
-        "rush": 11,
-        "rec": 17,
+        "pass": 12,
+        "rush": 13,
+        "rec": 21,
         "idp": 1,
         "return": 0,
-        "total": 39
+        "total": 47
       },
       "yards": {
-        "pass": 1559,
-        "rush": 845,
-        "rec": 2087,
-        "scrimmage": 2932,
-        "total": 4491
+        "pass": 1880,
+        "rush": 1086,
+        "rec": 2467,
+        "scrimmage": 3553,
+        "total": 5433
       },
-      "tds_rank": 3,
-      "yards_rank": 6,
+      "tds_rank": 2,
+      "yards_rank": 5,
       "top_td_scorers": [
         {
           "player": "Drake Maye",
-          "tds": 9
+          "tds": 12
         },
         {
           "player": "Javonte Williams",
-          "tds": 8
+          "tds": 9
         },
         {
           "player": "Ja'Marr Chase",
-          "tds": 4
+          "tds": 5
         }
       ],
       "top_yardage": [
         {
           "player": "Drake Maye",
-          "yards": 1325
+          "yards": 1672
         },
         {
           "player": "Ashton Jeanty",
-          "yards": 564
+          "yards": 640
         },
         {
           "player": "Javonte Williams",
-          "yards": 420
+          "yards": 575
         }
       ],
       "weekly": [
@@ -250,89 +172,99 @@
           "week": 6,
           "tds": 7,
           "yards": 699
+        },
+        {
+          "week": 7,
+          "tds": 8,
+          "yards": 942
         }
       ]
     },
     {
-      "roster_id": 9,
-      "team_name": "WHO’s YOUR VLADDY",
-      "owner": "Vlad Barber",
-      "short_name": "Vlad",
+      "roster_id": 11,
+      "team_name": "Paper Kings",
+      "owner": "Brett Trana",
+      "short_name": "Brett",
       "tds": {
-        "pass": 14,
-        "rush": 12,
-        "rec": 10,
+        "pass": 16,
+        "rush": 14,
+        "rec": 12,
         "idp": 0,
         "return": 0,
-        "total": 36
+        "total": 42
       },
       "yards": {
-        "pass": 1480,
-        "rush": 1497,
-        "rec": 1763,
-        "scrimmage": 3260,
-        "total": 4740
+        "pass": 1883,
+        "rush": 1781,
+        "rec": 2187,
+        "scrimmage": 3968,
+        "total": 5851
       },
-      "tds_rank": 4,
-      "yards_rank": 5,
+      "tds_rank": 3,
+      "yards_rank": 1,
       "top_td_scorers": [
         {
-          "player": "Trevor Lawrence",
-          "tds": 14
+          "player": "Brock Purdy",
+          "tds": 11
         },
         {
-          "player": "Jahmyr Gibbs",
-          "tds": 9
+          "player": "Derrick Henry",
+          "tds": 8
         },
         {
-          "player": "Matthew Golden",
-          "tds": 3
+          "player": "Christian Watson",
+          "tds": 6
         }
       ],
       "top_yardage": [
         {
-          "player": "Trevor Lawrence",
-          "yards": 1550
+          "player": "Brock Purdy",
+          "yards": 1480
         },
         {
-          "player": "Jahmyr Gibbs",
-          "yards": 747
+          "player": "Bijan Robinson",
+          "yards": 907
         },
         {
-          "player": "Matthew Golden",
-          "yards": 507
+          "player": "Derrick Henry",
+          "yards": 647
         }
       ],
       "weekly": [
         {
           "week": 1,
-          "tds": 9,
-          "yards": 836
+          "tds": 13,
+          "yards": 1074
         },
         {
           "week": 2,
-          "tds": 2,
-          "yards": 669
+          "tds": 5,
+          "yards": 703
         },
         {
           "week": 3,
-          "tds": 8,
-          "yards": 812
+          "tds": 9,
+          "yards": 943
         },
         {
           "week": 4,
-          "tds": 4,
-          "yards": 681
+          "tds": 6,
+          "yards": 794
         },
         {
           "week": 5,
-          "tds": 7,
-          "yards": 1045
+          "tds": 6,
+          "yards": 880
         },
         {
           "week": 6,
-          "tds": 6,
-          "yards": 697
+          "tds": 1,
+          "yards": 622
+        },
+        {
+          "week": 7,
+          "tds": 2,
+          "yards": 835
         }
       ]
     },
@@ -343,25 +275,25 @@
       "short_name": "Matt Z",
       "tds": {
         "pass": 9,
-        "rush": 15,
-        "rec": 12,
+        "rush": 17,
+        "rec": 15,
         "idp": 0,
         "return": 0,
-        "total": 36
+        "total": 41
       },
       "yards": {
-        "pass": 1488,
-        "rush": 1071,
-        "rec": 1600,
-        "scrimmage": 2671,
-        "total": 4159
+        "pass": 1653,
+        "rush": 1268,
+        "rec": 2070,
+        "scrimmage": 3338,
+        "total": 4991
       },
       "tds_rank": 4,
-      "yards_rank": 9,
+      "yards_rank": 8,
       "top_td_scorers": [
         {
           "player": "Christian McCaffrey",
-          "tds": 7
+          "tds": 8
         },
         {
           "player": "Patrick Mahomes",
@@ -369,21 +301,21 @@
         },
         {
           "player": "Kyren Williams",
-          "tds": 5
+          "tds": 6
         }
       ],
       "top_yardage": [
         {
           "player": "Patrick Mahomes",
-          "yards": 1159
+          "yards": 1338
         },
         {
           "player": "Kyren Williams",
-          "yards": 610
+          "yards": 731
         },
         {
           "player": "Christian McCaffrey",
-          "yards": 540
+          "yards": 640
         }
       ],
       "weekly": [
@@ -416,6 +348,11 @@
           "week": 6,
           "tds": 2,
           "yards": 634
+        },
+        {
+          "week": 7,
+          "tds": 5,
+          "yards": 832
         }
       ]
     },
@@ -425,22 +362,22 @@
       "owner": "Paul Bacon",
       "short_name": "Paul",
       "tds": {
-        "pass": 9,
-        "rush": 12,
-        "rec": 13,
+        "pass": 10,
+        "rush": 14,
+        "rec": 16,
         "idp": 0,
         "return": 0,
-        "total": 34
+        "total": 40
       },
       "yards": {
-        "pass": 1504,
-        "rush": 1003,
-        "rec": 2313,
-        "scrimmage": 3316,
-        "total": 4820
+        "pass": 1726,
+        "rush": 1201,
+        "rec": 2604,
+        "scrimmage": 3805,
+        "total": 5531
       },
-      "tds_rank": 6,
-      "yards_rank": 4,
+      "tds_rank": 5,
+      "yards_rank": 2,
       "top_td_scorers": [
         {
           "player": "Josh Allen",
@@ -448,7 +385,7 @@
         },
         {
           "player": "CeeDee Lamb",
-          "tds": 4
+          "tds": 6
         },
         {
           "player": "Sam LaPorta",
@@ -462,11 +399,11 @@
         },
         {
           "player": "Jaylen Warren",
-          "yards": 718
+          "yards": 855
         },
         {
           "player": "CeeDee Lamb",
-          "yards": 571
+          "yards": 645
         }
       ],
       "weekly": [
@@ -499,6 +436,187 @@
           "week": 6,
           "tds": 4,
           "yards": 677
+        },
+        {
+          "week": 7,
+          "tds": 6,
+          "yards": 711
+        }
+      ]
+    },
+    {
+      "roster_id": 9,
+      "team_name": "WHO’s YOUR VLADDY",
+      "owner": "Vlad Barber",
+      "short_name": "Vlad",
+      "tds": {
+        "pass": 15,
+        "rush": 12,
+        "rec": 10,
+        "idp": 0,
+        "return": 0,
+        "total": 37
+      },
+      "yards": {
+        "pass": 1643,
+        "rush": 1732,
+        "rec": 2008,
+        "scrimmage": 3740,
+        "total": 5383
+      },
+      "tds_rank": 6,
+      "yards_rank": 6,
+      "top_td_scorers": [
+        {
+          "player": "Trevor Lawrence",
+          "tds": 14
+        },
+        {
+          "player": "Jahmyr Gibbs",
+          "tds": 9
+        },
+        {
+          "player": "Matthew Golden",
+          "tds": 3
+        }
+      ],
+      "top_yardage": [
+        {
+          "player": "Trevor Lawrence",
+          "yards": 1550
+        },
+        {
+          "player": "Jahmyr Gibbs",
+          "yards": 890
+        },
+        {
+          "player": "Matthew Golden",
+          "yards": 546
+        }
+      ],
+      "weekly": [
+        {
+          "week": 1,
+          "tds": 9,
+          "yards": 836
+        },
+        {
+          "week": 2,
+          "tds": 2,
+          "yards": 669
+        },
+        {
+          "week": 3,
+          "tds": 8,
+          "yards": 812
+        },
+        {
+          "week": 4,
+          "tds": 4,
+          "yards": 681
+        },
+        {
+          "week": 5,
+          "tds": 7,
+          "yards": 1045
+        },
+        {
+          "week": 6,
+          "tds": 6,
+          "yards": 697
+        },
+        {
+          "week": 7,
+          "tds": 1,
+          "yards": 643
+        }
+      ]
+    },
+    {
+      "roster_id": 12,
+      "team_name": "Carried by RA",
+      "owner": "Andrew Reed",
+      "short_name": "Andrew",
+      "tds": {
+        "pass": 16,
+        "rush": 5,
+        "rec": 16,
+        "idp": 0,
+        "return": 0,
+        "total": 37
+      },
+      "yards": {
+        "pass": 1977,
+        "rush": 759,
+        "rec": 1904,
+        "scrimmage": 2663,
+        "total": 4640
+      },
+      "tds_rank": 6,
+      "yards_rank": 10,
+      "top_td_scorers": [
+        {
+          "player": "Joe Burrow",
+          "tds": 11
+        },
+        {
+          "player": "Dak Prescott",
+          "tds": 6
+        },
+        {
+          "player": "Amon-Ra St. Brown",
+          "tds": 5
+        }
+      ],
+      "top_yardage": [
+        {
+          "player": "Joe Burrow",
+          "yards": 1212
+        },
+        {
+          "player": "Dak Prescott",
+          "yards": 865
+        },
+        {
+          "player": "Amon-Ra St. Brown",
+          "yards": 524
+        }
+      ],
+      "weekly": [
+        {
+          "week": 1,
+          "tds": 4,
+          "yards": 552
+        },
+        {
+          "week": 2,
+          "tds": 6,
+          "yards": 748
+        },
+        {
+          "week": 3,
+          "tds": 4,
+          "yards": 641
+        },
+        {
+          "week": 4,
+          "tds": 4,
+          "yards": 856
+        },
+        {
+          "week": 5,
+          "tds": 8,
+          "yards": 596
+        },
+        {
+          "week": 6,
+          "tds": 5,
+          "yards": 517
+        },
+        {
+          "week": 7,
+          "tds": 6,
+          "yards": 730
         }
       ]
     },
@@ -508,23 +626,27 @@
       "owner": "Matt Atkinson",
       "short_name": "Matt A",
       "tds": {
-        "pass": 8,
+        "pass": 10,
         "rush": 14,
-        "rec": 10,
+        "rec": 12,
         "idp": 0,
         "return": 0,
-        "total": 32
+        "total": 36
       },
       "yards": {
-        "pass": 1467,
-        "rush": 1395,
-        "rec": 1984,
-        "scrimmage": 3379,
-        "total": 4846
+        "pass": 1741,
+        "rush": 1465,
+        "rec": 2318,
+        "scrimmage": 3783,
+        "total": 5524
       },
-      "tds_rank": 7,
+      "tds_rank": 8,
       "yards_rank": 3,
       "top_td_scorers": [
+        {
+          "player": "Jordan Love",
+          "tds": 8
+        },
         {
           "player": "James Cook",
           "tds": 6
@@ -532,16 +654,12 @@
         {
           "player": "Chuba Hubbard",
           "tds": 6
-        },
-        {
-          "player": "Jordan Love",
-          "tds": 6
         }
       ],
       "top_yardage": [
         {
           "player": "Jordan Love",
-          "yards": 850
+          "yards": 1124
         },
         {
           "player": "James Cook",
@@ -582,89 +700,11 @@
           "week": 6,
           "tds": 6,
           "yards": 890
-        }
-      ]
-    },
-    {
-      "roster_id": 12,
-      "team_name": "Carried by RA",
-      "owner": "Andrew Reed",
-      "short_name": "Andrew",
-      "tds": {
-        "pass": 12,
-        "rush": 4,
-        "rec": 15,
-        "idp": 0,
-        "return": 0,
-        "total": 31
-      },
-      "yards": {
-        "pass": 1685,
-        "rush": 683,
-        "rec": 1542,
-        "scrimmage": 2225,
-        "total": 3910
-      },
-      "tds_rank": 8,
-      "yards_rank": 11,
-      "top_td_scorers": [
-        {
-          "player": "Joe Burrow",
-          "tds": 7
         },
         {
-          "player": "Dak Prescott",
-          "tds": 6
-        },
-        {
-          "player": "Amon-Ra St. Brown",
-          "tds": 5
-        }
-      ],
-      "top_yardage": [
-        {
-          "player": "Joe Burrow",
-          "yards": 908
-        },
-        {
-          "player": "Dak Prescott",
-          "yards": 865
-        },
-        {
-          "player": "Amon-Ra St. Brown",
-          "yards": 372
-        }
-      ],
-      "weekly": [
-        {
-          "week": 1,
+          "week": 7,
           "tds": 4,
-          "yards": 552
-        },
-        {
-          "week": 2,
-          "tds": 6,
-          "yards": 748
-        },
-        {
-          "week": 3,
-          "tds": 4,
-          "yards": 641
-        },
-        {
-          "week": 4,
-          "tds": 4,
-          "yards": 856
-        },
-        {
-          "week": 5,
-          "tds": 8,
-          "yards": 596
-        },
-        {
-          "week": 6,
-          "tds": 5,
-          "yards": 517
+          "yards": 678
         }
       ]
     },
@@ -674,26 +714,26 @@
       "owner": "Derek Bock",
       "short_name": "Derek",
       "tds": {
-        "pass": 8,
-        "rush": 6,
-        "rec": 16,
+        "pass": 9,
+        "rush": 7,
+        "rec": 18,
         "idp": 0,
         "return": 0,
-        "total": 30
+        "total": 34
       },
       "yards": {
-        "pass": 1285,
-        "rush": 707,
-        "rec": 2205,
-        "scrimmage": 2912,
-        "total": 4197
+        "pass": 1542,
+        "rush": 873,
+        "rec": 2554,
+        "scrimmage": 3427,
+        "total": 4969
       },
       "tds_rank": 9,
-      "yards_rank": 7,
+      "yards_rank": 9,
       "top_td_scorers": [
         {
           "player": "Jaxon Smith-Njigba",
-          "tds": 7
+          "tds": 8
         },
         {
           "player": "Lamar Jackson",
@@ -706,16 +746,16 @@
       ],
       "top_yardage": [
         {
+          "player": "Jaxon Smith-Njigba",
+          "yards": 910
+        },
+        {
           "player": "Lamar Jackson",
           "yards": 869
         },
         {
-          "player": "Jaxon Smith-Njigba",
-          "yards": 747
-        },
-        {
-          "player": "Tyler Shough",
-          "yards": 563
+          "player": "Malik Nabers",
+          "yards": 605
         }
       ],
       "weekly": [
@@ -748,6 +788,11 @@
           "week": 6,
           "tds": 5,
           "yards": 800
+        },
+        {
+          "week": 7,
+          "tds": 4,
+          "yards": 772
         }
       ]
     },
@@ -757,48 +802,48 @@
       "owner": "Marc Caballero",
       "short_name": "Marc",
       "tds": {
-        "pass": 7,
+        "pass": 10,
         "rush": 10,
-        "rec": 9,
+        "rec": 11,
         "idp": 0,
         "return": 0,
-        "total": 26
+        "total": 31
       },
       "yards": {
-        "pass": 1237,
-        "rush": 1362,
-        "rec": 2327,
-        "scrimmage": 3689,
-        "total": 4926
+        "pass": 1432,
+        "rush": 1487,
+        "rec": 2559,
+        "scrimmage": 4046,
+        "total": 5478
       },
       "tds_rank": 10,
-      "yards_rank": 2,
+      "yards_rank": 4,
       "top_td_scorers": [
         {
           "player": "Kenneth Walker",
           "tds": 8
         },
         {
-          "player": "Caleb Williams",
-          "tds": 4
+          "player": "Matthew Stafford",
+          "tds": 5
         },
         {
-          "player": "C.J. Stroud",
+          "player": "Caleb Williams",
           "tds": 4
         }
       ],
       "top_yardage": [
         {
           "player": "Kenneth Walker",
-          "yards": 760
+          "yards": 817
+        },
+        {
+          "player": "Chris Olave",
+          "yards": 636
         },
         {
           "player": "C.J. Stroud",
           "yards": 625
-        },
-        {
-          "player": "Chris Olave",
-          "yards": 580
         }
       ],
       "weekly": [
@@ -831,6 +876,11 @@
           "week": 6,
           "tds": 5,
           "yards": 701
+        },
+        {
+          "week": 7,
+          "tds": 5,
+          "yards": 552
         }
       ]
     },
@@ -840,22 +890,22 @@
       "owner": "Jake Prosser",
       "short_name": "Jake",
       "tds": {
-        "pass": 11,
-        "rush": 7,
-        "rec": 3,
+        "pass": 13,
+        "rush": 8,
+        "rec": 4,
         "idp": 0,
         "return": 0,
-        "total": 21
+        "total": 25
       },
       "yards": {
-        "pass": 1785,
-        "rush": 942,
-        "rec": 1307,
-        "scrimmage": 2249,
-        "total": 4034
+        "pass": 1938,
+        "rush": 1024,
+        "rec": 1543,
+        "scrimmage": 2567,
+        "total": 4505
       },
       "tds_rank": 11,
-      "yards_rank": 10,
+      "yards_rank": 11,
       "top_td_scorers": [
         {
           "player": "Matthew Stafford",
@@ -863,7 +913,7 @@
         },
         {
           "player": "C.J. Stroud",
-          "tds": 3
+          "tds": 5
         },
         {
           "player": "Ollie Gordon",
@@ -876,12 +926,12 @@
           "yards": 1190
         },
         {
-          "player": "Chase Brown",
-          "yards": 370
+          "player": "C.J. Stroud",
+          "yards": 474
         },
         {
-          "player": "C.J. Stroud",
-          "yards": 317
+          "player": "Chase Brown",
+          "yards": 370
         }
       ],
       "weekly": [
@@ -914,6 +964,11 @@
           "week": 6,
           "tds": 4,
           "yards": 579
+        },
+        {
+          "week": 7,
+          "tds": 4,
+          "yards": 471
         }
       ]
     },
@@ -923,40 +978,40 @@
       "owner": "Juan Rodriguez",
       "short_name": "Juan",
       "tds": {
-        "pass": 4,
-        "rush": 7,
+        "pass": 5,
+        "rush": 10,
         "rec": 9,
         "idp": 0,
         "return": 0,
-        "total": 20
+        "total": 24
       },
       "yards": {
-        "pass": 1257,
-        "rush": 1156,
-        "rec": 1339,
-        "scrimmage": 2495,
-        "total": 3752
+        "pass": 1407,
+        "rush": 1384,
+        "rec": 1501,
+        "scrimmage": 2885,
+        "total": 4292
       },
       "tds_rank": 12,
       "yards_rank": 12,
       "top_td_scorers": [
         {
+          "player": "Quinshon Judkins",
+          "tds": 3
+        },
+        {
+          "player": "Kyler Murray",
+          "tds": 3
+        },
+        {
           "player": "Baker Mayfield",
-          "tds": 2
-        },
-        {
-          "player": "Bhayshul Tuten",
-          "tds": 2
-        },
-        {
-          "player": "Justin Jefferson",
           "tds": 2
         }
       ],
       "top_yardage": [
         {
           "player": "Kyler Murray",
-          "yards": 728
+          "yards": 917
         },
         {
           "player": "Baker Mayfield",
@@ -997,6 +1052,11 @@
           "week": 6,
           "tds": 4,
           "yards": 527
+        },
+        {
+          "week": 7,
+          "tds": 4,
+          "yards": 540
         }
       ]
     }
