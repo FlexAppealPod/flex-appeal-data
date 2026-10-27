@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T07:01:07-07:00",
+    "generated_at": "2026-10-27T06:57:00-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 7,
+    "current_week": 8,
     "counts": {
-      "transactions": 279
+      "transactions": 281
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,81 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1420760696601227264",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-27T03:50:55-07:00",
+      "processed": "2026-10-27T03:50:55-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Brandin Cooks",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "2197",
+              "name": "Brandin Cooks",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1420532734429806592",
+      "type": "free_agent",
+      "week": 7,
+      "sleeper_leg": 7,
+      "phase": "regular",
+      "created": "2026-10-26T12:45:05-07:00",
+      "processed": "2026-10-26T12:45:05-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Brenton Strange / drops Adonai Mitchell",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "9480",
+              "name": "Brenton Strange",
+              "position": "TE",
+              "nfl_team": "JAX"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "11625",
+              "name": "Adonai Mitchell",
+              "position": "WR",
+              "nfl_team": "NYJ"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1420109726384979968",
       "type": "free_agent",
@@ -11928,19 +12003,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 61,
-      "free_agent": 193,
+      "free_agent": 195,
       "commissioner": 2,
-      "total": 279
+      "total": 281
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 60,
-      "free_agent": 121,
+      "free_agent": 123,
       "commissioner": 2,
-      "total": 198
+      "total": 200
     },
     "totals_by_phase": {
-      "regular": 198,
+      "regular": 200,
       "preseason": 31,
       "offseason": 50
     },
@@ -11952,19 +12027,19 @@
       "4": 32,
       "5": 34,
       "6": 38,
-      "7": 19
+      "7": 21
     },
     "most_active_manager": {
       "managers": [
         "Matt Z"
       ],
-      "count": 41
+      "count": 42
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 36
+      "count": 37
     },
     "most_trades": {
       "managers": [
@@ -12081,6 +12156,16 @@
         ]
       },
       {
+        "player_id": "9480",
+        "name": "Brenton Strange",
+        "position": "TE",
+        "nfl_team": "JAX",
+        "adds": 2,
+        "added_by": [
+          "Brett"
+        ]
+      },
+      {
         "player_id": "8154",
         "name": "Brian Robinson Jr.",
         "position": "RB",
@@ -12089,17 +12174,6 @@
         "added_by": [
           "Juan",
           "Marc"
-        ]
-      },
-      {
-        "player_id": "9228",
-        "name": "Bryce Young",
-        "position": "QB",
-        "nfl_team": "CAR",
-        "adds": 2,
-        "added_by": [
-          "Vlad",
-          "Jake"
         ]
       }
     ],
@@ -12110,6 +12184,13 @@
         "position": "WR",
         "nfl_team": "WAS",
         "drops": 4
+      },
+      {
+        "player_id": "11625",
+        "name": "Adonai Mitchell",
+        "position": "WR",
+        "nfl_team": "NYJ",
+        "drops": 3
       },
       {
         "player_id": "12578",
@@ -12147,17 +12228,17 @@
         "drops": 3
       },
       {
-        "player_id": "11625",
-        "name": "Adonai Mitchell",
-        "position": "WR",
-        "nfl_team": "NYJ",
-        "drops": 2
-      },
-      {
         "player_id": "13377",
         "name": "Arvell Reese",
         "position": "LB",
         "nfl_team": "NYG",
+        "drops": 2
+      },
+      {
+        "player_id": "2197",
+        "name": "Brandin Cooks",
+        "position": "WR",
+        "nfl_team": "SF",
         "drops": 2
       },
       {
@@ -12166,13 +12247,6 @@
         "position": "RB",
         "nfl_team": "ATL",
         "drops": 2
-      },
-      {
-        "player_id": "13311",
-        "name": "Chris Bell",
-        "position": "WR",
-        "nfl_team": "MIA",
-        "drops": 2
       }
     ],
     "by_manager": [
@@ -12180,13 +12254,13 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 41,
-        "regular_season_transactions": 36,
+        "transactions": 42,
+        "regular_season_transactions": 37,
         "trades": 4,
         "waiver_claims": 5,
-        "free_agent_moves": 32,
+        "free_agent_moves": 33,
         "players_added": 28,
-        "players_dropped": 28
+        "players_dropped": 29
       },
       {
         "roster_id": 6,
@@ -12240,13 +12314,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 26,
-        "regular_season_transactions": 24,
+        "transactions": 27,
+        "regular_season_transactions": 25,
         "trades": 3,
         "waiver_claims": 10,
-        "free_agent_moves": 11,
-        "players_added": 20,
-        "players_dropped": 21
+        "free_agent_moves": 12,
+        "players_added": 21,
+        "players_dropped": 22
       },
       {
         "roster_id": 5,
