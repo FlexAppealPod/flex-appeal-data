@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T06:51:47-07:00",
+    "generated_at": "2026-10-29T06:50:45-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 8,
     "counts": {
-      "transactions": 286
+      "transactions": 290
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,158 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1421166173529112576",
+      "type": "waiver",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-28T06:42:09-07:00",
+      "processed": "2026-10-28T23:16:14-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Konata Mumpfield / drops Roschon Johnson ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "12718",
+              "name": "Konata Mumpfield",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "10235",
+              "name": "Roschon Johnson",
+              "position": "RB",
+              "nfl_team": "CHI"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1421404990953504768",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-28T22:31:07-07:00",
+      "processed": "2026-10-28T22:31:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds DeMario Douglas",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "9501",
+              "name": "DeMario Douglas",
+              "position": "WR",
+              "nfl_team": "NE"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1421397899295678464",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-28T22:02:56-07:00",
+      "processed": "2026-10-28T22:02:56-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Elijah Mitchell",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "7561",
+              "name": "Elijah Mitchell",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1421376405077303296",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-28T20:37:32-07:00",
+      "processed": "2026-10-28T20:37:32-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Devin Singletary / drops Kendre Miller",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "6130",
+              "name": "Devin Singletary",
+              "position": "RB",
+              "nfl_team": "NYG"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "9757",
+              "name": "Kendre Miller",
+              "position": "RB",
+              "nfl_team": "NO"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1420898209303179264",
       "type": "waiver",
@@ -12168,7 +12320,7 @@
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 7,
+      "claims_won": 8,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 84,
@@ -12210,20 +12362,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 23,
-      "waiver": 66,
-      "free_agent": 195,
+      "waiver": 67,
+      "free_agent": 198,
       "commissioner": 2,
-      "total": 286
+      "total": 290
     },
     "regular_season_totals_by_type": {
       "trade": 15,
-      "waiver": 65,
-      "free_agent": 123,
+      "waiver": 66,
+      "free_agent": 126,
       "commissioner": 2,
-      "total": 205
+      "total": 209
     },
     "totals_by_phase": {
-      "regular": 205,
+      "regular": 209,
       "preseason": 31,
       "offseason": 50
     },
@@ -12235,7 +12387,8 @@
       "4": 32,
       "5": 34,
       "6": 38,
-      "7": 26
+      "7": 26,
+      "8": 4
     },
     "most_active_manager": {
       "managers": [
@@ -12284,6 +12437,18 @@
         ]
       },
       {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR",
+        "nfl_team": "LAR",
+        "adds": 4,
+        "added_by": [
+          "Jake",
+          "Brett",
+          "Doug"
+        ]
+      },
+      {
         "player_id": "12048",
         "name": "George Holani",
         "position": "RB",
@@ -12317,18 +12482,6 @@
           "Brett",
           "Vlad",
           "Doug"
-        ]
-      },
-      {
-        "player_id": "12718",
-        "name": "Konata Mumpfield",
-        "position": "WR",
-        "nfl_team": "LAR",
-        "adds": 3,
-        "added_by": [
-          "Brett",
-          "Doug",
-          "Jake"
         ]
       },
       {
@@ -12472,6 +12625,18 @@
         "players_dropped": 29
       },
       {
+        "roster_id": 1,
+        "manager": "Jake",
+        "team_name": "Top Play",
+        "transactions": 41,
+        "regular_season_transactions": 29,
+        "trades": 5,
+        "waiver_claims": 8,
+        "free_agent_moves": 28,
+        "players_added": 32,
+        "players_dropped": 38
+      },
+      {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
@@ -12482,18 +12647,6 @@
         "free_agent_moves": 21,
         "players_added": 28,
         "players_dropped": 33
-      },
-      {
-        "roster_id": 1,
-        "manager": "Jake",
-        "team_name": "Top Play",
-        "transactions": 39,
-        "regular_season_transactions": 27,
-        "trades": 5,
-        "waiver_claims": 7,
-        "free_agent_moves": 27,
-        "players_added": 30,
-        "players_dropped": 37
       },
       {
         "roster_id": 7,
@@ -12511,13 +12664,13 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 30,
-        "regular_season_transactions": 25,
+        "transactions": 32,
+        "regular_season_transactions": 27,
         "trades": 0,
         "waiver_claims": 12,
-        "free_agent_moves": 18,
-        "players_added": 25,
-        "players_dropped": 27
+        "free_agent_moves": 20,
+        "players_added": 27,
+        "players_dropped": 28
       },
       {
         "roster_id": 11,
