@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T06:53:59-07:00",
+    "generated_at": "2026-10-31T06:50:05-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 8,
     "counts": {
-      "transactions": 291
+      "transactions": 295
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,163 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1422238065073643520",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-31T05:41:27-07:00",
+      "processed": "2026-10-31T05:41:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift"
+        }
+      ],
+      "headline": "Lij drops Michael Penix Jr.",
+      "sides": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11559",
+              "name": "Michael Penix Jr.",
+              "position": "QB",
+              "nfl_team": "ATL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1422072349968064512",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-30T18:42:58-07:00",
+      "processed": "2026-10-30T18:42:58-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Devin Singletary / drops Zonovan Knight",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "6130",
+              "name": "Devin Singletary",
+              "position": "RB",
+              "nfl_team": "NYG"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8122",
+              "name": "Zonovan Knight",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1421994941881548800",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-30T13:35:22-07:00",
+      "processed": "2026-10-30T13:35:22-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Dylan Sampson / drops Jaylin Noel",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "12469",
+              "name": "Dylan Sampson",
+              "position": "RB",
+              "nfl_team": "CLE"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12536",
+              "name": "Jaylin Noel",
+              "position": "WR",
+              "nfl_team": "HOU"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1421951261883801600",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-30T10:41:48-07:00",
+      "processed": "2026-10-30T10:41:48-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 8,
+          "manager": "Matt A",
+          "team_name": "CTE"
+        }
+      ],
+      "headline": "Matt A adds Blake Cashman / drops Justin Herbert",
+      "sides": [
+        {
+          "roster_id": 8,
+          "manager": "Matt A",
+          "team_name": "CTE",
+          "adds": [
+            {
+              "player_id": "6217",
+              "name": "Blake Cashman",
+              "position": "LB",
+              "nfl_team": "MIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "6797",
+              "name": "Justin Herbert",
+              "position": "QB",
+              "nfl_team": "LAC"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1421533347284365312",
       "type": "free_agent",
@@ -12404,19 +12561,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 67,
-      "free_agent": 199,
+      "free_agent": 203,
       "commissioner": 2,
-      "total": 291
+      "total": 295
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 66,
-      "free_agent": 127,
+      "free_agent": 131,
       "commissioner": 2,
-      "total": 210
+      "total": 214
     },
     "totals_by_phase": {
-      "regular": 210,
+      "regular": 214,
       "preseason": 31,
       "offseason": 50
     },
@@ -12429,7 +12586,7 @@
       "5": 34,
       "6": 38,
       "7": 26,
-      "8": 5
+      "8": 9
     },
     "most_active_manager": {
       "managers": [
@@ -12487,6 +12644,17 @@
           "Jake",
           "Brett",
           "Doug"
+        ]
+      },
+      {
+        "player_id": "6130",
+        "name": "Devin Singletary",
+        "position": "RB",
+        "nfl_team": "NYG",
+        "adds": 3,
+        "added_by": [
+          "Brett",
+          "Vlad"
         ]
       },
       {
@@ -12567,16 +12735,6 @@
         "added_by": [
           "Matt Z",
           "Vlad"
-        ]
-      },
-      {
-        "player_id": "9480",
-        "name": "Brenton Strange",
-        "position": "TE",
-        "nfl_team": "JAX",
-        "adds": 2,
-        "added_by": [
-          "Brett"
         ]
       }
     ],
@@ -12693,13 +12851,13 @@
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 34,
-        "regular_season_transactions": 18,
+        "transactions": 35,
+        "regular_season_transactions": 19,
         "trades": 4,
         "waiver_claims": 7,
-        "free_agent_moves": 23,
-        "players_added": 25,
-        "players_dropped": 27
+        "free_agent_moves": 24,
+        "players_added": 26,
+        "players_dropped": 28
       },
       {
         "roster_id": 9,
@@ -12717,13 +12875,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 28,
-        "regular_season_transactions": 26,
+        "transactions": 29,
+        "regular_season_transactions": 27,
         "trades": 3,
         "waiver_claims": 11,
-        "free_agent_moves": 12,
-        "players_added": 22,
-        "players_dropped": 23
+        "free_agent_moves": 13,
+        "players_added": 23,
+        "players_dropped": 24
       },
       {
         "roster_id": 5,
@@ -12765,13 +12923,25 @@
         "roster_id": 8,
         "manager": "Matt A",
         "team_name": "CTE",
-        "transactions": 13,
-        "regular_season_transactions": 9,
+        "transactions": 14,
+        "regular_season_transactions": 10,
         "trades": 3,
         "waiver_claims": 1,
+        "free_agent_moves": 10,
+        "players_added": 10,
+        "players_dropped": 12
+      },
+      {
+        "roster_id": 4,
+        "manager": "Lij",
+        "team_name": "Taylor Swift",
+        "transactions": 13,
+        "regular_season_transactions": 7,
+        "trades": 4,
+        "waiver_claims": 0,
         "free_agent_moves": 9,
-        "players_added": 9,
-        "players_dropped": 11
+        "players_added": 6,
+        "players_dropped": 10
       },
       {
         "roster_id": 3,
@@ -12782,18 +12952,6 @@
         "trades": 2,
         "waiver_claims": 1,
         "free_agent_moves": 10,
-        "players_added": 6,
-        "players_dropped": 9
-      },
-      {
-        "roster_id": 4,
-        "manager": "Lij",
-        "team_name": "Taylor Swift",
-        "transactions": 12,
-        "regular_season_transactions": 6,
-        "trades": 4,
-        "waiver_claims": 0,
-        "free_agent_moves": 8,
         "players_added": 6,
         "players_dropped": 9
       }
