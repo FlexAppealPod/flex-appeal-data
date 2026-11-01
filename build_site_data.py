@@ -141,7 +141,11 @@ POSTED_FLEX = {
     5: ["Brett Trana", "Marc Caballero", "Matt Atkinson", "Paul Bacon",
         "Elijah Bruette", "Douglas Sullivan", "Matt Zacharias", "Vlad Barber",
         "Derek Bock", "Andrew Reed", "Juan Rodriguez", "Jake Prosser"],
-    # Week 7 board (through Week 6); no Week 6 board was posted, movement vs Week 5
+    # Week 6 board (through Week 5); drafted for newsletter/pod, commissioner Juan/Jake swap
+    6: ["Brett Trana", "Douglas Sullivan", "Paul Bacon", "Matt Zacharias",
+        "Marc Caballero", "Vlad Barber", "Matt Atkinson", "Elijah Bruette",
+        "Andrew Reed", "Derek Bock", "Juan Rodriguez", "Jake Prosser"],
+    # Week 7 board (through Week 6); movement vs Week 6
     7: ["Douglas Sullivan", "Brett Trana", "Marc Caballero", "Paul Bacon",
         "Matt Atkinson", "Elijah Bruette", "Vlad Barber", "Matt Zacharias",
         "Derek Bock", "Andrew Reed", "Juan Rodriguez", "Jake Prosser"],
