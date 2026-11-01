@@ -247,8 +247,21 @@ def rank_avg(items, key, reverse=True):
     return ranks
 
 
-def week_is_scored(rows) -> bool:
-    return any((r.get("points") or 0) > 0 for r in rows)
+def week_is_complete(week: int, rows, current_nfl_week: int) -> bool:
+    """Standings/records only count a week after it is final (post-MNF).
+
+    Sleeper starts writing live points on TNF. The old "any points > 0" check
+    then treated the in-progress week as complete, so teams who had not played
+    yet (0 pts) racked up fake H2H/median ties. While the NFL is still on that
+    week, require every roster to have points > 0. Once Sleeper advances
+    current_nfl_week past it, any scored data means the week is final.
+    """
+    if not rows:
+        return False
+    scored = [(r.get("points") or 0) > 0 for r in rows]
+    if week < current_nfl_week:
+        return any(scored)
+    return all(scored)
 
 
 # ---------------------------------------------------------------------------
@@ -275,10 +288,10 @@ def build_teams_universe(users, rosters):
     return teams
 
 
-def compute_weekly(teams, matchups_by_week):
+def compute_weekly(teams, matchups_by_week, current_nfl_week: int):
     weekly = {}
     for week, rows in sorted(matchups_by_week.items()):
-        if not week_is_scored(rows):
+        if not week_is_complete(week, rows, current_nfl_week):
             continue
         by_rid = {r["roster_id"]: r for r in rows}
         pts = {rid: r2(r.get("points") or 0) for rid, r in by_rid.items()}
@@ -966,10 +979,11 @@ def main():
             matchups_by_week[w] = data
 
     teams = build_teams_universe(users, rosters)
-    weekly = compute_weekly(teams, matchups_by_week)
+    nfl_week = int(nfl.get("week") or display_week)
+    weekly = compute_weekly(teams, matchups_by_week, nfl_week)
     completed_weeks = sorted(weekly.keys())
     through = completed_weeks[-1] if completed_weeks else 0
-    print(f"  completed weeks: {completed_weeks}  display_week={display_week}")
+    print(f"  completed weeks: {completed_weeks}  nfl_week={nfl_week}  display_week={display_week}")
 
     # meta
     # current_week = week the league is heading into (upcoming slate)

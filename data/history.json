@@ -31,8 +31,8 @@
       "owner": "Douglas Sullivan",
       "seasons": 4,
       "wins": 25,
-      "losses": 20,
-      "win_pct": 0.56,
+      "losses": 19,
+      "win_pct": 0.57,
       "total_pf": 5141.8,
       "championships": 2,
       "playoff_appearances": 2
@@ -51,19 +51,19 @@
       "owner": "Elijah Bruette",
       "seasons": 4,
       "wins": 26,
-      "losses": 19,
-      "win_pct": 0.58,
-      "total_pf": 5014.62,
+      "losses": 18,
+      "win_pct": 0.59,
+      "total_pf": 5009.62,
       "championships": 0,
       "playoff_appearances": 2
     },
     {
       "owner": "Vlad Barber",
       "seasons": 4,
-      "wins": 21,
+      "wins": 20,
       "losses": 24,
-      "win_pct": 0.47,
-      "total_pf": 4974.26,
+      "win_pct": 0.45,
+      "total_pf": 4956.86,
       "championships": 1,
       "playoff_appearances": 2
     },
@@ -71,8 +71,8 @@
       "owner": "Marc Caballero",
       "seasons": 4,
       "wins": 19,
-      "losses": 26,
-      "win_pct": 0.42,
+      "losses": 25,
+      "win_pct": 0.43,
       "total_pf": 4876.26,
       "championships": 0,
       "playoff_appearances": 1
@@ -90,10 +90,10 @@
     {
       "owner": "Derek Bock",
       "seasons": 3,
-      "wins": 18,
+      "wins": 17,
       "losses": 14,
-      "win_pct": 0.56,
-      "total_pf": 3470.02,
+      "win_pct": 0.55,
+      "total_pf": 3440.22,
       "championships": 0,
       "playoff_appearances": 2
     },
@@ -101,8 +101,8 @@
       "owner": "Paul Bacon",
       "seasons": 3,
       "wins": 14,
-      "losses": 18,
-      "win_pct": 0.44,
+      "losses": 17,
+      "win_pct": 0.45,
       "total_pf": 3423.92,
       "championships": 0,
       "playoff_appearances": 1
@@ -110,10 +110,10 @@
     {
       "owner": "Matt Atkinson",
       "seasons": 3,
-      "wins": 19,
+      "wins": 18,
       "losses": 13,
-      "win_pct": 0.59,
-      "total_pf": 3303.12,
+      "win_pct": 0.58,
+      "total_pf": 3250.4,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -130,10 +130,10 @@
     {
       "owner": "Brett Trana",
       "seasons": 2,
-      "wins": 10,
+      "wins": 9,
       "losses": 9,
-      "win_pct": 0.53,
-      "total_pf": 1993.12,
+      "win_pct": 0.5,
+      "total_pf": 1979.82,
       "championships": 0,
       "playoff_appearances": 0
     },
@@ -307,74 +307,74 @@
   ],
   "all_time_low_scores": [
     {
-      "season": 2026,
-      "week": 8,
+      "season": 2024,
+      "week": 7,
+      "owner": "Juan Rodriguez",
+      "points": 43.2,
+      "opponent": "Derek Bock"
+    },
+    {
+      "season": 2023,
+      "week": 10,
       "owner": "Jake Prosser",
-      "points": 0.0,
+      "points": 51.1,
       "opponent": "Matt Zacharias"
     },
     {
-      "season": 2026,
-      "week": 8,
-      "owner": "Matt Zacharias",
-      "points": 0.0,
+      "season": 2025,
+      "week": 11,
+      "owner": "Andrew Reed",
+      "points": 53.24,
+      "opponent": "Jake Prosser"
+    },
+    {
+      "season": 2023,
+      "week": 12,
+      "owner": "Vlad Barber",
+      "points": 56.8,
       "opponent": "Jake Prosser"
     },
     {
       "season": 2026,
-      "week": 8,
-      "owner": "Paul Bacon",
-      "points": 0.0,
-      "opponent": "Vlad Barber"
-    },
-    {
-      "season": 2026,
-      "week": 8,
-      "owner": "Douglas Sullivan",
-      "points": 0.0,
-      "opponent": "Matt Atkinson"
-    },
-    {
-      "season": 2026,
-      "week": 8,
-      "owner": "Juan Rodriguez",
-      "points": 0.0,
-      "opponent": "Andrew Reed"
-    },
-    {
-      "season": 2026,
-      "week": 8,
-      "owner": "Marc Caballero",
-      "points": 0.0,
-      "opponent": "Brett Trana"
-    },
-    {
-      "season": 2026,
-      "week": 8,
-      "owner": "Andrew Reed",
-      "points": 0.0,
-      "opponent": "Juan Rodriguez"
-    },
-    {
-      "season": 2026,
-      "week": 8,
+      "week": 3,
       "owner": "Elijah Bruette",
-      "points": 5.0,
-      "opponent": "Derek Bock"
+      "points": 60.12,
+      "opponent": "Marc Caballero"
     },
     {
-      "season": 2026,
-      "week": 8,
-      "owner": "Brett Trana",
-      "points": 13.3,
+      "season": 2023,
+      "week": 9,
+      "owner": "Jakefitzy",
+      "points": 64.32,
       "opponent": "Marc Caballero"
     },
     {
       "season": 2026,
-      "week": 8,
-      "owner": "Vlad Barber",
-      "points": 17.4,
-      "opponent": "Paul Bacon"
+      "week": 5,
+      "owner": "Juan Rodriguez",
+      "points": 65.56,
+      "opponent": "Marc Caballero"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Matt Zacharias",
+      "points": 66.58,
+      "opponent": "Jared Messinger"
+    },
+    {
+      "season": 2023,
+      "week": 9,
+      "owner": "Juan Rodriguez",
+      "points": 66.84,
+      "opponent": "Douglas Sullivan"
+    },
+    {
+      "season": 2023,
+      "week": 13,
+      "owner": "Jared Messinger",
+      "points": 66.92,
+      "opponent": "Vlad Barber"
     }
   ],
   "biggest_blowouts": [
@@ -516,24 +516,6 @@
   ],
   "closest_games": [
     {
-      "season": 2026,
-      "week": 8,
-      "owner": "Jake Prosser",
-      "points": 0.0,
-      "opponent": "Matt Zacharias",
-      "opponent_points": 0.0,
-      "margin": 0.0
-    },
-    {
-      "season": 2026,
-      "week": 8,
-      "owner": "Juan Rodriguez",
-      "points": 0.0,
-      "opponent": "Andrew Reed",
-      "opponent_points": 0.0,
-      "margin": 0.0
-    },
-    {
       "season": 2024,
       "week": 10,
       "owner": "Douglas Sullivan",
@@ -649,6 +631,24 @@
       "opponent": "Vlad Barber",
       "opponent_points": 118.54,
       "margin": 3.06
+    },
+    {
+      "season": 2026,
+      "week": 3,
+      "owner": "Matt Atkinson",
+      "points": 104.24,
+      "opponent": "Derek Bock",
+      "opponent_points": 100.6,
+      "margin": 3.64
+    },
+    {
+      "season": 2025,
+      "week": 1,
+      "owner": "Brett Trana",
+      "points": 107.94,
+      "opponent": "Paul Bacon",
+      "opponent_points": 104.26,
+      "margin": 3.68
     }
   ],
   "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded."
