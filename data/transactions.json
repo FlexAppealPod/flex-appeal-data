@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-31T06:50:05-07:00",
+    "generated_at": "2026-11-01T06:49:56-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 8,
     "counts": {
-      "transactions": 295
+      "transactions": 299
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,142 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1422612130380648448",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-11-01T06:27:52-07:00",
+      "processed": "2026-11-01T06:27:52-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Treylon Burks",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8135",
+              "name": "Treylon Burks",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1422278496671043584",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-31T08:22:07-07:00",
+      "processed": "2026-10-31T08:22:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek drops Sam Darnold",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "4943",
+              "name": "Sam Darnold",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1422278243892858880",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-31T08:21:07-07:00",
+      "processed": "2026-10-31T08:21:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Cooper Kupp",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "4039",
+              "name": "Cooper Kupp",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1422278026787315712",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-10-31T08:20:15-07:00",
+      "processed": "2026-10-31T08:20:15-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek drops Rashid Shaheed",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8676",
+              "name": "Rashid Shaheed",
+              "position": "WR",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1422238065073643520",
       "type": "free_agent",
@@ -12561,19 +12697,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 67,
-      "free_agent": 203,
+      "free_agent": 207,
       "commissioner": 2,
-      "total": 295
+      "total": 299
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 66,
-      "free_agent": 131,
+      "free_agent": 135,
       "commissioner": 2,
-      "total": 214
+      "total": 218
     },
     "totals_by_phase": {
-      "regular": 214,
+      "regular": 218,
       "preseason": 31,
       "offseason": 50
     },
@@ -12586,19 +12722,19 @@
       "5": 34,
       "6": 38,
       "7": 26,
-      "8": 9
+      "8": 13
     },
     "most_active_manager": {
       "managers": [
         "Matt Z"
       ],
-      "count": 43
+      "count": 44
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 38
+      "count": 39
     },
     "most_trades": {
       "managers": [
@@ -12747,6 +12883,13 @@
         "drops": 4
       },
       {
+        "player_id": "8676",
+        "name": "Rashid Shaheed",
+        "position": "WR",
+        "nfl_team": "SEA",
+        "drops": 4
+      },
+      {
         "player_id": "11625",
         "name": "Adonai Mitchell",
         "position": "WR",
@@ -12782,13 +12925,6 @@
         "drops": 3
       },
       {
-        "player_id": "8676",
-        "name": "Rashid Shaheed",
-        "position": "WR",
-        "nfl_team": "SEA",
-        "drops": 3
-      },
-      {
         "player_id": "10213",
         "name": "Tre Tucker",
         "position": "WR",
@@ -12815,13 +12951,13 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 43,
-        "regular_season_transactions": 38,
+        "transactions": 44,
+        "regular_season_transactions": 39,
         "trades": 4,
         "waiver_claims": 6,
-        "free_agent_moves": 33,
+        "free_agent_moves": 34,
         "players_added": 29,
-        "players_dropped": 29
+        "players_dropped": 30
       },
       {
         "roster_id": 1,
@@ -12851,13 +12987,13 @@
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 35,
-        "regular_season_transactions": 19,
+        "transactions": 38,
+        "regular_season_transactions": 22,
         "trades": 4,
         "waiver_claims": 7,
-        "free_agent_moves": 24,
-        "players_added": 26,
-        "players_dropped": 28
+        "free_agent_moves": 27,
+        "players_added": 27,
+        "players_dropped": 30
       },
       {
         "roster_id": 9,
