@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T06:53:26-07:00",
+    "generated_at": "2026-11-03T06:52:30-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 8,
+    "current_week": 9,
     "counts": {
-      "transactions": 299
+      "transactions": 301
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,74 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1423318365262315520",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-11-03T05:14:11-07:00",
+      "processed": "2026-11-03T05:14:11-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett drops Jacoby Brissett",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "3257",
+              "name": "Jacoby Brissett",
+              "position": "QB",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1423309848283451392",
+      "type": "free_agent",
+      "week": 8,
+      "sleeper_leg": 8,
+      "phase": "regular",
+      "created": "2026-11-03T04:40:20-07:00",
+      "processed": "2026-11-03T04:40:20-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew drops Cyrus Allen",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13413",
+              "name": "Cyrus Allen",
+              "position": "WR",
+              "nfl_team": "KC"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1422612130380648448",
       "type": "free_agent",
@@ -12697,19 +12765,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 67,
-      "free_agent": 207,
+      "free_agent": 209,
       "commissioner": 2,
-      "total": 299
+      "total": 301
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 66,
-      "free_agent": 135,
+      "free_agent": 137,
       "commissioner": 2,
-      "total": 218
+      "total": 220
     },
     "totals_by_phase": {
-      "regular": 218,
+      "regular": 220,
       "preseason": 31,
       "offseason": 50
     },
@@ -12722,7 +12790,7 @@
       "5": 34,
       "6": 38,
       "7": 26,
-      "8": 13
+      "8": 15
     },
     "most_active_manager": {
       "managers": [
@@ -13011,13 +13079,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 29,
-        "regular_season_transactions": 27,
+        "transactions": 30,
+        "regular_season_transactions": 28,
         "trades": 3,
         "waiver_claims": 11,
-        "free_agent_moves": 13,
+        "free_agent_moves": 14,
         "players_added": 23,
-        "players_dropped": 24
+        "players_dropped": 25
       },
       {
         "roster_id": 5,
@@ -13035,13 +13103,13 @@
         "roster_id": 12,
         "manager": "Andrew",
         "team_name": "Carried by RA",
-        "transactions": 21,
-        "regular_season_transactions": 17,
+        "transactions": 22,
+        "regular_season_transactions": 18,
         "trades": 7,
         "waiver_claims": 4,
-        "free_agent_moves": 8,
+        "free_agent_moves": 9,
         "players_added": 15,
-        "players_dropped": 16
+        "players_dropped": 17
       },
       {
         "roster_id": 10,
