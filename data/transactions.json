@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T06:48:08-07:00",
+    "generated_at": "2026-11-05T06:54:55-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 9,
     "counts": {
-      "transactions": 314
+      "transactions": 317
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,131 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1423622361432821760",
+      "type": "waiver",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-04T01:22:09-07:00",
+      "processed": "2026-11-05T00:25:55-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Seth McGowan / drops Rashod Bateman ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "13424",
+              "name": "Seth McGowan",
+              "position": "RB",
+              "nfl_team": "IND"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7571",
+              "name": "Rashod Bateman",
+              "position": "WR",
+              "nfl_team": "BAL"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
+    {
+      "id": "1423812518257684480",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-04T13:57:46-07:00",
+      "processed": "2026-11-04T13:57:46-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Mike Gesicki / drops Bryce Young",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "4993",
+              "name": "Mike Gesicki",
+              "position": "TE",
+              "nfl_team": "CIN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "9228",
+              "name": "Bryce Young",
+              "position": "QB",
+              "nfl_team": "CAR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1423782803182514176",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-04T11:59:42-07:00",
+      "processed": "2026-11-04T11:59:42-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Drew Lock / drops Sam Darnold",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "5854",
+              "name": "Drew Lock",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4943",
+              "name": "Sam Darnold",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1423703670855401472",
       "type": "free_agent",
@@ -3344,7 +3469,7 @@
               "player_id": "13418",
               "name": "Robert Henry Jr.",
               "position": "RB",
-              "nfl_team": "SEA"
+              "nfl_team": "WAS"
             }
           ]
         }
@@ -5761,7 +5886,7 @@
               "player_id": "13418",
               "name": "Robert Henry Jr.",
               "position": "RB",
-              "nfl_team": "SEA"
+              "nfl_team": "WAS"
             }
           ],
           "drops": [
@@ -13239,7 +13364,7 @@
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 10,
+      "claims_won": 11,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 32,
@@ -13266,20 +13391,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 23,
-      "waiver": 76,
-      "free_agent": 213,
+      "waiver": 77,
+      "free_agent": 215,
       "commissioner": 2,
-      "total": 314
+      "total": 317
     },
     "regular_season_totals_by_type": {
       "trade": 15,
-      "waiver": 75,
-      "free_agent": 141,
+      "waiver": 76,
+      "free_agent": 143,
       "commissioner": 2,
-      "total": 233
+      "total": 236
     },
     "totals_by_phase": {
-      "regular": 233,
+      "regular": 236,
       "preseason": 31,
       "offseason": 50
     },
@@ -13293,7 +13418,7 @@
       "6": 38,
       "7": 26,
       "8": 25,
-      "9": 3
+      "9": 6
     },
     "most_active_manager": {
       "managers": [
@@ -13510,10 +13635,10 @@
         "drops": 3
       },
       {
-        "player_id": "10213",
-        "name": "Tre Tucker",
-        "position": "WR",
-        "nfl_team": "LV",
+        "player_id": "4943",
+        "name": "Sam Darnold",
+        "position": "QB",
+        "nfl_team": "SEA",
         "drops": 3
       }
     ],
@@ -13546,37 +13671,37 @@
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 41,
-        "regular_season_transactions": 32,
+        "transactions": 42,
+        "regular_season_transactions": 33,
         "trades": 10,
-        "waiver_claims": 10,
+        "waiver_claims": 11,
         "free_agent_moves": 21,
-        "players_added": 29,
-        "players_dropped": 34
+        "players_added": 30,
+        "players_dropped": 35
       },
       {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 40,
-        "regular_season_transactions": 24,
+        "transactions": 41,
+        "regular_season_transactions": 25,
         "trades": 4,
         "waiver_claims": 9,
-        "free_agent_moves": 27,
-        "players_added": 29,
-        "players_dropped": 31
+        "free_agent_moves": 28,
+        "players_added": 30,
+        "players_dropped": 32
       },
       {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 34,
-        "regular_season_transactions": 29,
+        "transactions": 35,
+        "regular_season_transactions": 30,
         "trades": 0,
         "waiver_claims": 13,
-        "free_agent_moves": 21,
-        "players_added": 29,
-        "players_dropped": 30
+        "free_agent_moves": 22,
+        "players_added": 30,
+        "players_dropped": 31
       },
       {
         "roster_id": 11,
