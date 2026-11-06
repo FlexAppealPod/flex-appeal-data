@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T06:54:55-07:00",
+    "generated_at": "2026-11-06T06:58:26-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 9,
     "counts": {
-      "transactions": 317
+      "transactions": 318
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,40 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1424228630141087744",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-05T17:31:15-07:00",
+      "processed": "2026-11-05T17:31:15-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett drops Brenton Strange",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "9480",
+              "name": "Brenton Strange",
+              "position": "TE",
+              "nfl_team": "JAX"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1423622361432821760",
       "type": "waiver",
@@ -13392,19 +13426,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 77,
-      "free_agent": 215,
+      "free_agent": 216,
       "commissioner": 2,
-      "total": 317
+      "total": 318
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 76,
-      "free_agent": 143,
+      "free_agent": 144,
       "commissioner": 2,
-      "total": 236
+      "total": 237
     },
     "totals_by_phase": {
-      "regular": 236,
+      "regular": 237,
       "preseason": 31,
       "offseason": 50
     },
@@ -13418,7 +13452,7 @@
       "6": 38,
       "7": 26,
       "8": 25,
-      "9": 6
+      "9": 7
     },
     "most_active_manager": {
       "managers": [
@@ -13707,13 +13741,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 31,
-        "regular_season_transactions": 29,
+        "transactions": 32,
+        "regular_season_transactions": 30,
         "trades": 3,
         "waiver_claims": 12,
-        "free_agent_moves": 14,
+        "free_agent_moves": 15,
         "players_added": 24,
-        "players_dropped": 25
+        "players_dropped": 26
       },
       {
         "roster_id": 12,
