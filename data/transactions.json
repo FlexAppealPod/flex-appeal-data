@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T06:50:05-07:00",
+    "generated_at": "2026-11-08T06:47:56-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 9,
     "counts": {
-      "transactions": 318
+      "transactions": 322
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,149 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1425024926821208064",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-07T22:15:27-07:00",
+      "processed": "2026-11-07T22:15:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Jeffery Simmons / drops Nakobe Dean",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "6125",
+              "name": "Jeffery Simmons",
+              "position": "DT",
+              "nfl_team": "CHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8267",
+              "name": "Nakobe Dean",
+              "position": "LB",
+              "nfl_team": "LV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1424979890242936832",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-07T19:16:29-07:00",
+      "processed": "2026-11-07T19:16:29-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy"
+        }
+      ],
+      "headline": "Paul drops Nate Landman",
+      "sides": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "8659",
+              "name": "Nate Landman",
+              "position": "LB",
+              "nfl_team": "LAR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1424979472033034240",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-07T19:14:50-07:00",
+      "processed": "2026-11-07T19:14:50-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy"
+        }
+      ],
+      "headline": "Paul drops Bo Nix",
+      "sides": [
+        {
+          "roster_id": 3,
+          "manager": "Paul",
+          "team_name": "Rudy",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11563",
+              "name": "Bo Nix",
+              "position": "QB",
+              "nfl_team": "DEN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1424847700863488000",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-07T10:31:13-07:00",
+      "processed": "2026-11-07T10:31:13-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake drops Konata Mumpfield",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "12718",
+              "name": "Konata Mumpfield",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1424228630141087744",
       "type": "free_agent",
@@ -717,7 +860,7 @@
               "player_id": "3257",
               "name": "Jacoby Brissett",
               "position": "QB",
-              "nfl_team": "ARI"
+              "nfl_team": "BAL"
             }
           ]
         }
@@ -5518,7 +5661,7 @@
               "player_id": "3257",
               "name": "Jacoby Brissett",
               "position": "QB",
-              "nfl_team": "ARI"
+              "nfl_team": "BAL"
             }
           ],
           "drops": [
@@ -13426,19 +13569,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 77,
-      "free_agent": 216,
+      "free_agent": 220,
       "commissioner": 2,
-      "total": 318
+      "total": 322
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 76,
-      "free_agent": 144,
+      "free_agent": 148,
       "commissioner": 2,
-      "total": 237
+      "total": 241
     },
     "totals_by_phase": {
-      "regular": 237,
+      "regular": 241,
       "preseason": 31,
       "offseason": 50
     },
@@ -13452,7 +13595,7 @@
       "6": 38,
       "7": 26,
       "8": 25,
-      "9": 7
+      "9": 11
     },
     "most_active_manager": {
       "managers": [
@@ -13613,6 +13756,13 @@
         "drops": 4
       },
       {
+        "player_id": "12718",
+        "name": "Konata Mumpfield",
+        "position": "WR",
+        "nfl_team": "LAR",
+        "drops": 4
+      },
+      {
         "player_id": "8676",
         "name": "Rashid Shaheed",
         "position": "WR",
@@ -13662,13 +13812,6 @@
         "drops": 3
       },
       {
-        "player_id": "12718",
-        "name": "Konata Mumpfield",
-        "position": "WR",
-        "nfl_team": "LAR",
-        "drops": 3
-      },
-      {
         "player_id": "4943",
         "name": "Sam Darnold",
         "position": "QB",
@@ -13693,13 +13836,25 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 43,
-        "regular_season_transactions": 31,
+        "transactions": 44,
+        "regular_season_transactions": 32,
         "trades": 5,
         "waiver_claims": 8,
-        "free_agent_moves": 30,
+        "free_agent_moves": 31,
         "players_added": 34,
-        "players_dropped": 40
+        "players_dropped": 41
+      },
+      {
+        "roster_id": 7,
+        "manager": "Derek",
+        "team_name": "my njigba",
+        "transactions": 42,
+        "regular_season_transactions": 26,
+        "trades": 4,
+        "waiver_claims": 9,
+        "free_agent_moves": 29,
+        "players_added": 31,
+        "players_dropped": 33
       },
       {
         "roster_id": 6,
@@ -13712,18 +13867,6 @@
         "free_agent_moves": 21,
         "players_added": 30,
         "players_dropped": 35
-      },
-      {
-        "roster_id": 7,
-        "manager": "Derek",
-        "team_name": "my njigba",
-        "transactions": 41,
-        "regular_season_transactions": 25,
-        "trades": 4,
-        "waiver_claims": 9,
-        "free_agent_moves": 28,
-        "players_added": 30,
-        "players_dropped": 32
       },
       {
         "roster_id": 9,
@@ -13798,6 +13941,18 @@
         "players_dropped": 13
       },
       {
+        "roster_id": 3,
+        "manager": "Paul",
+        "team_name": "Rudy",
+        "transactions": 15,
+        "regular_season_transactions": 5,
+        "trades": 2,
+        "waiver_claims": 1,
+        "free_agent_moves": 12,
+        "players_added": 6,
+        "players_dropped": 11
+      },
+      {
         "roster_id": 4,
         "manager": "Lij",
         "team_name": "Taylor Swift",
@@ -13808,18 +13963,6 @@
         "free_agent_moves": 9,
         "players_added": 6,
         "players_dropped": 10
-      },
-      {
-        "roster_id": 3,
-        "manager": "Paul",
-        "team_name": "Rudy",
-        "transactions": 13,
-        "regular_season_transactions": 3,
-        "trades": 2,
-        "waiver_claims": 1,
-        "free_agent_moves": 10,
-        "players_added": 6,
-        "players_dropped": 9
       }
     ]
   },
