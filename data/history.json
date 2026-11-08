@@ -1,17 +1,6 @@
 {
   "champions": [
     {
-      "season": 2022,
-      "champion": "Deion & Jared (co-champions)",
-      "runner_up": "None (title split)",
-      "co_champions": [
-        "Deion",
-        "Jared"
-      ],
-      "note": "Deion led 203.96-194.58 on combined score when the Week 17 Bills-Bengals game was suspended after Damar Hamlin's collapse. With Josh Allen's game never completed, Deion and Jared split the title.",
-      "platform": "ESPN"
-    },
-    {
       "season": 2023,
       "champion": "Douglas Sullivan",
       "runner_up": "Deion"
@@ -41,11 +30,21 @@
     {
       "owner": "Douglas Sullivan",
       "seasons": 4,
-      "wins": 24,
-      "losses": 21,
-      "win_pct": 0.53,
+      "wins": 25,
+      "losses": 20,
+      "win_pct": 0.56,
       "total_pf": 5241.86,
       "championships": 2,
+      "playoff_appearances": 2
+    },
+    {
+      "owner": "Matt Zacharias",
+      "seasons": 4,
+      "wins": 28,
+      "losses": 17,
+      "win_pct": 0.62,
+      "total_pf": 5156.94,
+      "championships": 0,
       "playoff_appearances": 2
     },
     {
@@ -89,16 +88,6 @@
       "playoff_appearances": 0
     },
     {
-      "owner": "Matt Zacharias",
-      "seasons": 4,
-      "wins": 22,
-      "losses": 17,
-      "win_pct": 0.56,
-      "total_pf": 4410.18,
-      "championships": 0,
-      "playoff_appearances": 2
-    },
-    {
       "owner": "Paul Bacon",
       "seasons": 3,
       "wins": 14,
@@ -119,32 +108,22 @@
       "playoff_appearances": 2
     },
     {
+      "owner": "Matt Atkinson",
+      "seasons": 3,
+      "wins": 19,
+      "losses": 13,
+      "win_pct": 0.59,
+      "total_pf": 3418.32,
+      "championships": 0,
+      "playoff_appearances": 1
+    },
+    {
       "owner": "Andrew Reed",
       "seasons": 3,
       "wins": 14,
       "losses": 18,
       "win_pct": 0.44,
       "total_pf": 3243.0,
-      "championships": 0,
-      "playoff_appearances": 1
-    },
-    {
-      "owner": "Mike",
-      "seasons": 2,
-      "wins": 12,
-      "losses": 7,
-      "win_pct": 0.63,
-      "total_pf": 2300.36,
-      "championships": 0,
-      "playoff_appearances": 0
-    },
-    {
-      "owner": "Matt Atkinson",
-      "seasons": 2,
-      "wins": 15,
-      "losses": 4,
-      "win_pct": 0.79,
-      "total_pf": 2118.8,
       "championships": 0,
       "playoff_appearances": 1
     },
@@ -159,17 +138,27 @@
       "playoff_appearances": 0
     },
     {
+      "owner": "MichaelDewey99",
+      "seasons": 1,
+      "wins": 6,
+      "losses": 7,
+      "win_pct": 0.46,
+      "total_pf": 1553.6,
+      "championships": 0,
+      "playoff_appearances": 0
+    },
+    {
       "owner": "Deion",
       "seasons": 1,
       "wins": 8,
       "losses": 5,
       "win_pct": 0.62,
       "total_pf": 1465.16,
-      "championships": 1,
+      "championships": 0,
       "playoff_appearances": 1
     },
     {
-      "owner": "Jake F",
+      "owner": "Jakefitzy",
       "seasons": 1,
       "wins": 7,
       "losses": 6,
@@ -179,17 +168,17 @@
       "playoff_appearances": 1
     },
     {
-      "owner": "Jared",
+      "owner": "Jared Messinger",
       "seasons": 1,
       "wins": 5,
       "losses": 8,
       "win_pct": 0.38,
       "total_pf": 1388.72,
-      "championships": 1,
+      "championships": 0,
       "playoff_appearances": 0
     },
     {
-      "owner": "Anup",
+      "owner": "Anupds23",
       "seasons": 1,
       "wins": 4,
       "losses": 9,
@@ -199,21 +188,11 @@
       "playoff_appearances": 0
     },
     {
-      "owner": "Aaron",
+      "owner": "MrPfizer",
       "seasons": 1,
       "wins": 4,
       "losses": 9,
       "win_pct": 0.31,
-      "total_pf": 1299.52,
-      "championships": 0,
-      "playoff_appearances": 0
-    },
-    {
-      "owner": "Matt F",
-      "seasons": 1,
-      "wins": 5,
-      "losses": 8,
-      "win_pct": 0.38,
       "total_pf": 1257.52,
       "championships": 0,
       "playoff_appearances": 0
@@ -281,7 +260,7 @@
       "week": 12,
       "owner": "Matt Zacharias",
       "points": 167.72,
-      "opponent": "Matt F"
+      "opponent": "MrPfizer"
     },
     {
       "season": 2024,
@@ -309,7 +288,7 @@
       "week": 5,
       "owner": "Douglas Sullivan",
       "points": 163.44,
-      "opponent": "Jared"
+      "opponent": "Jared Messinger"
     },
     {
       "season": 2026,
@@ -323,10 +302,17 @@
       "week": 9,
       "owner": "Vlad Barber",
       "points": 163.24,
-      "opponent": "Matt F"
+      "opponent": "MrPfizer"
     }
   ],
   "all_time_low_scores": [
+    {
+      "season": 2024,
+      "week": 7,
+      "owner": "Juan Rodriguez",
+      "points": 43.2,
+      "opponent": "Derek Bock"
+    },
     {
       "season": 2023,
       "week": 10,
@@ -365,7 +351,7 @@
     {
       "season": 2023,
       "week": 9,
-      "owner": "Jake F",
+      "owner": "Jakefitzy",
       "points": 64.32,
       "opponent": "Marc Caballero"
     },
@@ -381,7 +367,7 @@
       "week": 9,
       "owner": "Matt Zacharias",
       "points": 66.58,
-      "opponent": "Jared"
+      "opponent": "Jared Messinger"
     },
     {
       "season": 2023,
@@ -389,13 +375,6 @@
       "owner": "Juan Rodriguez",
       "points": 66.84,
       "opponent": "Douglas Sullivan"
-    },
-    {
-      "season": 2023,
-      "week": 13,
-      "owner": "Jared",
-      "points": 66.92,
-      "opponent": "Vlad Barber"
     }
   ],
   "biggest_blowouts": [
@@ -419,10 +398,19 @@
     },
     {
       "season": 2024,
+      "week": 7,
+      "owner": "Derek Bock",
+      "points": 152.38,
+      "opponent": "Juan Rodriguez",
+      "opponent_points": 43.2,
+      "margin": 109.18
+    },
+    {
+      "season": 2024,
       "week": 12,
       "owner": "Matt Zacharias",
       "points": 167.72,
-      "opponent": "Matt F",
+      "opponent": "MrPfizer",
       "opponent_points": 71.46,
       "margin": 96.26
     },
@@ -440,7 +428,7 @@
       "week": 5,
       "owner": "Douglas Sullivan",
       "points": 163.44,
-      "opponent": "Jared",
+      "opponent": "Jared Messinger",
       "opponent_points": 79.78,
       "margin": 83.66
     },
@@ -458,7 +446,7 @@
       "week": 4,
       "owner": "Jake Prosser",
       "points": 155.26,
-      "opponent": "Jared",
+      "opponent": "Jared Messinger",
       "opponent_points": 84.38,
       "margin": 70.88
     },
@@ -521,18 +509,9 @@
       "week": 13,
       "owner": "Vlad Barber",
       "points": 130.64,
-      "opponent": "Jared",
+      "opponent": "Jared Messinger",
       "opponent_points": 66.92,
       "margin": 63.72
-    },
-    {
-      "season": 2025,
-      "week": 15,
-      "owner": "Vlad Barber",
-      "points": 191.9,
-      "opponent": "Juan Rodriguez",
-      "opponent_points": 130.1,
-      "margin": 61.8
     }
   ],
   "closest_games": [
@@ -550,7 +529,7 @@
       "week": 13,
       "owner": "Juan Rodriguez",
       "points": 113.18,
-      "opponent": "Anup",
+      "opponent": "Anupds23",
       "opponent_points": 112.9,
       "margin": 0.28
     },
@@ -559,7 +538,7 @@
       "week": 12,
       "owner": "Matt Zacharias",
       "points": 144.46,
-      "opponent": "Mike",
+      "opponent": "MichaelDewey99",
       "opponent_points": 144.12,
       "margin": 0.34
     },
@@ -602,9 +581,9 @@
     {
       "season": 2024,
       "week": 8,
-      "owner": "Matt F",
+      "owner": "MrPfizer",
       "points": 103.24,
-      "opponent": "Aaron",
+      "opponent": "Matt Atkinson",
       "opponent_points": 101.72,
       "margin": 1.52
     },
@@ -647,7 +626,7 @@
     {
       "season": 2023,
       "week": 2,
-      "owner": "Jared",
+      "owner": "Jared Messinger",
       "points": 121.6,
       "opponent": "Vlad Barber",
       "opponent_points": 118.54,
@@ -672,17 +651,5 @@
       "margin": 3.68
     }
   ],
-  "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded.",
-  "score_overrides_applied": [
-    "2024 wk7 matchup 6: 43.2 -> 118.34",
-    "2024 wk7 matchup 2: 78.1 -> 98.94",
-    "2024 wk7 matchup 1: 67.8 -> 96.66",
-    "2024 wk7 matchup 3: 97.04 -> 97.44",
-    "career Douglas Sullivan: +1 L (2024 wk7)",
-    "career Matt F: +1 W (2024 wk7)"
-  ],
-  "season_owner_fixes_applied": [
-    "2024 roster 11 whole season: Matt Atkinson -> Aaron (whole season: 4-9 H2H, PF 1299.52, playoffs 0)",
-    "2024 roster 2 weeks 1-6: Matt Zacharias -> Mike (Weeks 1-6: 6-0 H2H, PF 746.76, playoffs 0)"
-  ]
+  "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded."
 }

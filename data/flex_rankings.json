@@ -1,219 +1,229 @@
 {
-  "week": 8,
+  "week": 9,
   "rankings": [
     {
       "rank": 1,
-      "team_name": "9 - 5",
-      "owner": "Douglas Sullivan",
-      "record": "12-2",
-      "movement": 0,
-      "pf": 853.0,
-      "pd": 141.46,
-      "streak": "7W"
+      "team_name": "CTE",
+      "owner": "Matt Atkinson",
+      "record": "11-5",
+      "movement": 5,
+      "pf": 967.36,
+      "pd": 158.86,
+      "streak": "2W"
     },
     {
       "rank": 2,
-      "team_name": "Taylor Swift",
-      "owner": "Elijah Bruette",
-      "record": "10-4",
-      "movement": 4,
-      "pf": 819.38,
-      "pd": 104.9,
-      "streak": "4W"
-    },
-    {
-      "rank": 3,
-      "team_name": "Rudy",
-      "owner": "Paul Bacon",
-      "record": "9-5",
-      "movement": 1,
-      "pf": 828.94,
-      "pd": -32.2,
+      "team_name": "9 - 5",
+      "owner": "Douglas Sullivan",
+      "record": "13-3",
+      "movement": -1,
+      "pf": 953.06,
+      "pd": 73.6,
       "streak": "1W"
     },
     {
-      "rank": 4,
-      "team_name": "Paper Kings",
-      "owner": "Brett Trana",
-      "record": "8-6",
-      "movement": -2,
-      "pf": 831.62,
-      "pd": 75.0,
-      "streak": "4L"
+      "rank": 3,
+      "team_name": "Taylor Swift",
+      "owner": "Elijah Bruette",
+      "record": "12-4",
+      "movement": -1,
+      "pf": 925.92,
+      "pd": 122.54,
+      "streak": "6W"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "team_name": "Rolling With Mahomies",
       "owner": "Matt Zacharias",
-      "record": "9-5",
-      "movement": 3,
-      "pf": 784.42,
-      "pd": 24.14,
-      "streak": "2W"
-    },
-    {
-      "rank": 6,
-      "team_name": "CTE",
-      "owner": "Matt Atkinson",
-      "record": "9-5",
-      "movement": -1,
-      "pf": 799.44,
-      "pd": 91.0,
-      "streak": "1L"
-    },
-    {
-      "rank": 7,
-      "team_name": "Walker? Barely know her",
-      "owner": "Marc Caballero",
-      "record": "9-5",
-      "movement": -4,
-      "pf": 790.88,
-      "pd": 92.7,
-      "streak": "2L"
-    },
-    {
-      "rank": 8,
-      "team_name": "my njigba",
-      "owner": "Derek Bock",
-      "record": "7-7",
+      "record": "11-5",
       "movement": 1,
-      "pf": 761.38,
-      "pd": 36.68,
+      "pf": 897.3,
+      "pd": 75.38,
       "streak": "4W"
     },
     {
-      "rank": 9,
-      "team_name": "Carried by RA",
-      "owner": "Andrew Reed",
-      "record": "4-10",
-      "movement": 1,
-      "pf": 669.38,
-      "pd": -110.78,
+      "rank": 5,
+      "team_name": "Rudy",
+      "owner": "Paul Bacon",
+      "record": "10-6",
+      "movement": -2,
+      "pf": 940.7,
+      "pd": -59.74,
+      "streak": "1W"
+    },
+    {
+      "rank": 6,
+      "team_name": "WHO’s YOUR VLADDY",
+      "owner": "Vlad Barber",
+      "record": "7-9",
+      "movement": 4,
+      "pf": 905.02,
+      "pd": 5.56,
       "streak": "2W"
     },
     {
-      "rank": 10,
-      "team_name": "WHO’s YOUR VLADDY",
-      "owner": "Vlad Barber",
-      "record": "5-9",
+      "rank": 7,
+      "team_name": "Paper Kings",
+      "owner": "Brett Trana",
+      "record": "8-8",
       "movement": -3,
-      "pf": 765.72,
-      "pd": -21.98,
-      "streak": "4L"
+      "pf": 918.18,
+      "pd": 62.68,
+      "streak": "6L"
+    },
+    {
+      "rank": 8,
+      "team_name": "Carried by RA",
+      "owner": "Andrew Reed",
+      "record": "5-11",
+      "movement": 1,
+      "pf": 768.36,
+      "pd": -85.5,
+      "streak": "1L"
+    },
+    {
+      "rank": 9,
+      "team_name": "Walker? Barely know her",
+      "owner": "Marc Caballero",
+      "record": "10-6",
+      "movement": -2,
+      "pf": 889.76,
+      "pd": 105.02,
+      "streak": "1L"
+    },
+    {
+      "rank": 10,
+      "team_name": "my njigba",
+      "owner": "Derek Bock",
+      "record": "7-9",
+      "movement": -2,
+      "pf": 850.28,
+      "pd": 19.04,
+      "streak": "2L"
     },
     {
       "rank": 11,
       "team_name": "Red Cross",
       "owner": "Juan Rodriguez",
-      "record": "2-12",
+      "record": "2-14",
       "movement": 0,
-      "pf": 601.28,
-      "pd": -206.68,
-      "streak": "3L"
+      "pf": 674.98,
+      "pd": -231.96,
+      "streak": "5L"
     },
     {
       "rank": 12,
       "team_name": "Top Play",
       "owner": "Jake Prosser",
-      "record": "0-14",
+      "record": "0-16",
       "movement": 0,
-      "pf": 585.72,
-      "pd": -194.24,
-      "streak": "14L"
+      "pf": 647.36,
+      "pd": -245.48,
+      "streak": "16L"
     }
   ],
   "climbers": [
     {
-      "rank": 2,
-      "team_name": "Taylor Swift",
-      "owner": "Elijah Bruette",
-      "record": "10-4",
-      "movement": 4,
-      "pf": 819.38,
-      "pd": 104.9,
-      "streak": "4W"
-    },
-    {
-      "rank": 5,
-      "team_name": "Rolling With Mahomies",
-      "owner": "Matt Zacharias",
-      "record": "9-5",
-      "movement": 3,
-      "pf": 784.42,
-      "pd": 24.14,
+      "rank": 1,
+      "team_name": "CTE",
+      "owner": "Matt Atkinson",
+      "record": "11-5",
+      "movement": 5,
+      "pf": 967.36,
+      "pd": 158.86,
       "streak": "2W"
     },
     {
-      "rank": 3,
-      "team_name": "Rudy",
-      "owner": "Paul Bacon",
-      "record": "9-5",
+      "rank": 6,
+      "team_name": "WHO’s YOUR VLADDY",
+      "owner": "Vlad Barber",
+      "record": "7-9",
+      "movement": 4,
+      "pf": 905.02,
+      "pd": 5.56,
+      "streak": "2W"
+    },
+    {
+      "rank": 4,
+      "team_name": "Rolling With Mahomies",
+      "owner": "Matt Zacharias",
+      "record": "11-5",
       "movement": 1,
-      "pf": 828.94,
-      "pd": -32.2,
-      "streak": "1W"
+      "pf": 897.3,
+      "pd": 75.38,
+      "streak": "4W"
     },
     {
       "rank": 8,
-      "team_name": "my njigba",
-      "owner": "Derek Bock",
-      "record": "7-7",
-      "movement": 1,
-      "pf": 761.38,
-      "pd": 36.68,
-      "streak": "4W"
-    },
-    {
-      "rank": 9,
       "team_name": "Carried by RA",
       "owner": "Andrew Reed",
-      "record": "4-10",
+      "record": "5-11",
       "movement": 1,
-      "pf": 669.38,
-      "pd": -110.78,
-      "streak": "2W"
+      "pf": 768.36,
+      "pd": -85.5,
+      "streak": "1L"
     }
   ],
   "sliders": [
     {
       "rank": 7,
+      "team_name": "Paper Kings",
+      "owner": "Brett Trana",
+      "record": "8-8",
+      "movement": -3,
+      "pf": 918.18,
+      "pd": 62.68,
+      "streak": "6L"
+    },
+    {
+      "rank": 5,
+      "team_name": "Rudy",
+      "owner": "Paul Bacon",
+      "record": "10-6",
+      "movement": -2,
+      "pf": 940.7,
+      "pd": -59.74,
+      "streak": "1W"
+    },
+    {
+      "rank": 9,
       "team_name": "Walker? Barely know her",
       "owner": "Marc Caballero",
-      "record": "9-5",
-      "movement": -4,
-      "pf": 790.88,
-      "pd": 92.7,
-      "streak": "2L"
+      "record": "10-6",
+      "movement": -2,
+      "pf": 889.76,
+      "pd": 105.02,
+      "streak": "1L"
     },
     {
       "rank": 10,
-      "team_name": "WHO’s YOUR VLADDY",
-      "owner": "Vlad Barber",
-      "record": "5-9",
-      "movement": -3,
-      "pf": 765.72,
-      "pd": -21.98,
-      "streak": "4L"
-    },
-    {
-      "rank": 4,
-      "team_name": "Paper Kings",
-      "owner": "Brett Trana",
-      "record": "8-6",
+      "team_name": "my njigba",
+      "owner": "Derek Bock",
+      "record": "7-9",
       "movement": -2,
-      "pf": 831.62,
-      "pd": 75.0,
-      "streak": "4L"
+      "pf": 850.28,
+      "pd": 19.04,
+      "streak": "2L"
     },
     {
-      "rank": 6,
-      "team_name": "CTE",
-      "owner": "Matt Atkinson",
-      "record": "9-5",
+      "rank": 2,
+      "team_name": "9 - 5",
+      "owner": "Douglas Sullivan",
+      "record": "13-3",
       "movement": -1,
-      "pf": 799.44,
-      "pd": 91.0,
-      "streak": "1L"
+      "pf": 953.06,
+      "pd": 73.6,
+      "streak": "1W"
+    },
+    {
+      "rank": 3,
+      "team_name": "Taylor Swift",
+      "owner": "Elijah Bruette",
+      "record": "12-4",
+      "movement": -1,
+      "pf": 925.92,
+      "pd": 122.54,
+      "streak": "6W"
     }
   ],
   "locked": true
