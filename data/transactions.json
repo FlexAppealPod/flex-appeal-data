@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T06:47:56-07:00",
+    "generated_at": "2026-11-09T06:53:31-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 9,
     "counts": {
-      "transactions": 322
+      "transactions": 324
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,81 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1425308536082014208",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-08T17:02:25-07:00",
+      "processed": "2026-11-08T17:02:25-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Ty Johnson / drops Christian Kirk",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "6039",
+              "name": "Ty Johnson",
+              "position": "RB",
+              "nfl_team": "BUF"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4950",
+              "name": "Christian Kirk",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1425200474532990976",
+      "type": "free_agent",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-08T09:53:01-07:00",
+      "processed": "2026-11-08T09:53:01-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad drops Malachi Fields",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13285",
+              "name": "Malachi Fields",
+              "position": "WR",
+              "nfl_team": "NYG"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1425024926821208064",
       "type": "free_agent",
@@ -5702,7 +5777,7 @@
               "player_id": "8129",
               "name": "Dameon Pierce",
               "position": "RB",
-              "nfl_team": "PHI"
+              "nfl_team": "FA"
             }
           ],
           "drops": [
@@ -13569,19 +13644,19 @@
     "totals_by_type": {
       "trade": 23,
       "waiver": 77,
-      "free_agent": 220,
+      "free_agent": 222,
       "commissioner": 2,
-      "total": 322
+      "total": 324
     },
     "regular_season_totals_by_type": {
       "trade": 15,
       "waiver": 76,
-      "free_agent": 148,
+      "free_agent": 150,
       "commissioner": 2,
-      "total": 241
+      "total": 243
     },
     "totals_by_phase": {
-      "regular": 241,
+      "regular": 243,
       "preseason": 31,
       "offseason": 50
     },
@@ -13595,7 +13670,7 @@
       "6": 38,
       "7": 26,
       "8": 25,
-      "9": 11
+      "9": 13
     },
     "most_active_manager": {
       "managers": [
@@ -13812,10 +13887,10 @@
         "drops": 3
       },
       {
-        "player_id": "4943",
-        "name": "Sam Darnold",
-        "position": "QB",
-        "nfl_team": "SEA",
+        "player_id": "13285",
+        "name": "Malachi Fields",
+        "position": "WR",
+        "nfl_team": "NYG",
         "drops": 3
       }
     ],
@@ -13845,6 +13920,18 @@
         "players_dropped": 41
       },
       {
+        "roster_id": 6,
+        "manager": "Juan",
+        "team_name": "Red Cross",
+        "transactions": 43,
+        "regular_season_transactions": 34,
+        "trades": 10,
+        "waiver_claims": 11,
+        "free_agent_moves": 22,
+        "players_added": 31,
+        "players_dropped": 36
+      },
+      {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
@@ -13857,28 +13944,16 @@
         "players_dropped": 33
       },
       {
-        "roster_id": 6,
-        "manager": "Juan",
-        "team_name": "Red Cross",
-        "transactions": 42,
-        "regular_season_transactions": 33,
-        "trades": 10,
-        "waiver_claims": 11,
-        "free_agent_moves": 21,
-        "players_added": 30,
-        "players_dropped": 35
-      },
-      {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 35,
-        "regular_season_transactions": 30,
+        "transactions": 36,
+        "regular_season_transactions": 31,
         "trades": 0,
         "waiver_claims": 13,
-        "free_agent_moves": 22,
+        "free_agent_moves": 23,
         "players_added": 30,
-        "players_dropped": 31
+        "players_dropped": 32
       },
       {
         "roster_id": 11,
