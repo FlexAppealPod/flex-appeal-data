@@ -25,6 +25,14 @@
       "margin": 64.18
     },
     {
+      "week": 9,
+      "owner": "Matt Atkinson",
+      "points": 157.48,
+      "opponent": "Andrew Reed",
+      "opponent_points": 95.14,
+      "margin": 62.34
+    },
+    {
       "week": 5,
       "owner": "Douglas Sullivan",
       "points": 150.76,
@@ -71,14 +79,6 @@
       "opponent": "Andrew Reed",
       "opponent_points": 116.2,
       "margin": 25.8
-    },
-    {
-      "week": 3,
-      "owner": "Brett Trana",
-      "points": 140.98,
-      "opponent": "Vlad Barber",
-      "opponent_points": 134.78,
-      "margin": 6.2
     }
   ],
   "low_scores": [
@@ -99,6 +99,14 @@
       "margin": 51.24
     },
     {
+      "week": 9,
+      "owner": "Jake Prosser",
+      "points": 63.22,
+      "opponent": "Brett Trana",
+      "opponent_points": 104.46,
+      "margin": 41.24
+    },
+    {
       "week": 5,
       "owner": "Juan Rodriguez",
       "points": 65.56,
@@ -113,6 +121,14 @@
       "opponent": "Juan Rodriguez",
       "opponent_points": 80.8,
       "margin": 12.62
+    },
+    {
+      "week": 9,
+      "owner": "Juan Rodriguez",
+      "points": 69.48,
+      "opponent": "Paul Bacon",
+      "opponent_points": 86.56,
+      "margin": 17.08
     },
     {
       "week": 6,
@@ -145,22 +161,6 @@
       "opponent": "Marc Caballero",
       "opponent_points": 142.56,
       "margin": 67.1
-    },
-    {
-      "week": 7,
-      "owner": "Vlad Barber",
-      "points": 76.52,
-      "opponent": "Andrew Reed",
-      "opponent_points": 102.48,
-      "margin": 25.96
-    },
-    {
-      "week": 6,
-      "owner": "Matt Zacharias",
-      "points": 78.08,
-      "opponent": "Brett Trana",
-      "opponent_points": 69.86,
-      "margin": 8.22
     }
   ],
   "closest_games": [
@@ -287,6 +287,14 @@
       "margin": 64.18
     },
     {
+      "week": 9,
+      "owner": "Matt Atkinson",
+      "points": 157.48,
+      "opponent": "Andrew Reed",
+      "opponent_points": 95.14,
+      "margin": 62.34
+    },
+    {
       "week": 1,
       "owner": "Elijah Bruette",
       "points": 146.32,
@@ -317,14 +325,6 @@
       "opponent": "Vlad Barber",
       "opponent_points": 84.56,
       "margin": 53.72
-    },
-    {
-      "week": 3,
-      "owner": "Marc Caballero",
-      "points": 111.9,
-      "opponent": "Elijah Bruette",
-      "opponent_points": 60.12,
-      "margin": 51.78
     }
   ]
 }

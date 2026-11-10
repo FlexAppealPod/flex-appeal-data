@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T08:01:48-07:00",
+    "generated_at": "2026-11-10T08:01:35-07:00",
     "seasons_covered": [
       "2022",
       "2023",
@@ -10,7 +10,7 @@
     ],
     "through": {
       "season": "2026",
-      "week": 8
+      "week": 9
     },
     "labels": {
       "current": "Current Managers",
@@ -97,7 +97,7 @@
         "teams": 12,
         "regular_weeks": "1-11",
         "status": "in_season",
-        "completed_through_week": 8
+        "completed_through_week": 9
       }
     ],
     "checks": {
@@ -107,19 +107,19 @@
         "2025 roster 11 (Brett): computed 9-13, PF 1138.5, PA 1141.9 | Sleeper standings 9-13, PF 1148.2, PA 1141.9"
       ],
       "history_json": [
-        "ok Juan Rodriguez: history.json 27-18 vs Sleeper H2H 27-18",
-        "ok Douglas Sullivan: history.json 24-21 vs Sleeper H2H 24-21",
-        "ok Elijah Bruette: history.json 27-18 vs Sleeper H2H 27-18",
-        "ok Vlad Barber: history.json 21-24 vs Sleeper H2H 21-24",
-        "ok Marc Caballero: history.json 20-25 vs Sleeper H2H 20-25",
-        "ok Jake Prosser: history.json 15-30 vs Sleeper H2H 15-30",
-        "ok Matt Zacharias: history.json 22-17 vs Sleeper H2H 22-17",
-        "ok Paul Bacon: history.json 14-18 vs Sleeper H2H 14-18",
-        "ok Derek Bock: history.json 17-15 vs Sleeper H2H 17-15",
-        "ok Andrew Reed: history.json 14-18 vs Sleeper H2H 14-18",
+        "ok Juan Rodriguez: history.json 27-19 vs Sleeper H2H 27-19",
+        "ok Douglas Sullivan: history.json 25-21 vs Sleeper H2H 25-21",
+        "ok Vlad Barber: history.json 22-24 vs Sleeper H2H 22-24",
+        "ok Elijah Bruette: history.json 27-19 vs Sleeper H2H 27-19",
+        "ok Marc Caballero: history.json 21-25 vs Sleeper H2H 21-25",
+        "ok Jake Prosser: history.json 15-31 vs Sleeper H2H 15-31",
+        "ok Matt Zacharias: history.json 22-18 vs Sleeper H2H 22-18",
+        "ok Paul Bacon: history.json 15-18 vs Sleeper H2H 15-18",
+        "ok Derek Bock: history.json 17-16 vs Sleeper H2H 17-16",
+        "ok Andrew Reed: history.json 14-19 vs Sleeper H2H 14-19",
         "ok Mike: history.json 12-7 vs Sleeper H2H 12-7",
-        "ok Matt Atkinson: history.json 15-4 vs Sleeper H2H 15-4",
-        "ok Brett Trana: history.json 9-10 vs Sleeper H2H 9-10",
+        "ok Matt Atkinson: history.json 16-4 vs Sleeper H2H 16-4",
+        "ok Brett Trana: history.json 10-10 vs Sleeper H2H 10-10",
         "ok Deion: history.json 8-5 vs Sleeper H2H 8-5",
         "ok Jake F: history.json 7-6 vs Sleeper H2H 7-6",
         "ok Jared: history.json 5-8 vs Sleeper H2H 5-8",
@@ -167,27 +167,27 @@
         "2025",
         "2026"
       ],
-      "games": 58,
+      "games": 59,
       "h2h": {
-        "w": 32,
+        "w": 33,
         "l": 26,
         "t": 0
       },
       "median": {
-        "w": 21,
+        "w": 22,
         "l": 11,
         "t": 0
       },
       "record": {
-        "w": 53,
+        "w": 55,
         "l": 37,
         "t": 0
       },
-      "pf": 6837.76,
-      "pa": 6340.0,
+      "pf": 6967.42,
+      "pa": 6447.38,
       "all_play": {
-        "w": 332,
-        "l": 254,
+        "w": 342,
+        "l": 255,
         "t": 0
       },
       "playoff_record": {
@@ -202,21 +202,21 @@
         "2023",
         "2024"
       ],
-      "starter_tds": 319,
-      "starter_yards": 44059,
-      "games_played": 58,
+      "starter_tds": 325,
+      "starter_yards": 44900,
+      "games_played": 59,
       "playoff_games": 8,
-      "ppg": 117.89,
-      "pa_pg": 109.31,
-      "record_str": "53-37",
-      "record_pct": 0.589,
-      "h2h_str": "32-26",
-      "h2h_pct": 0.552,
-      "median_str": "21-11",
-      "all_play_str": "332-254",
-      "all_play_pct": 0.567,
+      "ppg": 118.09,
+      "pa_pg": 109.28,
+      "record_str": "55-37",
+      "record_pct": 0.598,
+      "h2h_str": "33-26",
+      "h2h_pct": 0.559,
+      "median_str": "22-11",
+      "all_play_str": "342-255",
+      "all_play_pct": 0.573,
       "playoff_record_str": "6-2",
-      "tds_per_game": 5.5,
+      "tds_per_game": 5.51,
       "career_high": {
         "season": "2024",
         "week": 11,
@@ -243,39 +243,39 @@
           "2025",
           "2026"
         ],
-        "games": 58,
+        "games": 59,
         "record": {
-          "w": 53,
+          "w": 55,
           "l": 37,
           "t": 0
         },
-        "record_str": "53-37",
-        "record_pct": 0.589,
+        "record_str": "55-37",
+        "record_pct": 0.598,
         "h2h": {
-          "w": 32,
+          "w": 33,
           "l": 26,
           "t": 0
         },
-        "h2h_str": "32-26",
-        "h2h_pct": 0.552,
+        "h2h_str": "33-26",
+        "h2h_pct": 0.559,
         "median": {
-          "w": 21,
+          "w": 22,
           "l": 11,
           "t": 0
         },
-        "median_str": "21-11",
-        "median_pct": 0.656,
-        "pf": 6837.76,
-        "pa": 6340.0,
-        "ppg": 117.89,
-        "pa_pg": 109.31,
+        "median_str": "22-11",
+        "median_pct": 0.667,
+        "pf": 6967.42,
+        "pa": 6447.38,
+        "ppg": 118.09,
+        "pa_pg": 109.28,
         "all_play": {
-          "w": 332,
-          "l": 254,
+          "w": 342,
+          "l": 255,
           "t": 0
         },
-        "all_play_str": "332-254",
-        "all_play_pct": 0.567,
+        "all_play_str": "342-255",
+        "all_play_pct": 0.573,
         "high_week": {
           "season": "2024",
           "week": 11,
@@ -290,9 +290,9 @@
           "opponent": "Jared",
           "opponent_points": 101.66
         },
-        "starter_tds": 319,
-        "starter_yards": 44059,
-        "tds_per_game": 5.5
+        "starter_tds": 325,
+        "starter_yards": 44900,
+        "tds_per_game": 5.51
       },
       "playoffs": {
         "appearances": 3,
@@ -488,27 +488,27 @@
         "2025",
         "2026"
       ],
-      "games": 58,
+      "games": 59,
       "h2h": {
         "w": 32,
-        "l": 26,
+        "l": 27,
         "t": 0
       },
       "median": {
         "w": 17,
-        "l": 15,
+        "l": 16,
         "t": 0
       },
       "record": {
         "w": 49,
-        "l": 41,
+        "l": 43,
         "t": 0
       },
-      "pf": 6642.54,
-      "pa": 6535.54,
+      "pf": 6720.34,
+      "pa": 6645.32,
       "all_play": {
-        "w": 312,
-        "l": 274,
+        "w": 314,
+        "l": 283,
         "t": 0
       },
       "playoff_record": {
@@ -520,21 +520,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 303,
-      "starter_yards": 42457,
-      "games_played": 58,
+      "starter_tds": 306,
+      "starter_yards": 43062,
+      "games_played": 59,
       "playoff_games": 5,
-      "ppg": 114.53,
-      "pa_pg": 112.68,
-      "record_str": "49-41",
-      "record_pct": 0.544,
-      "h2h_str": "32-26",
-      "h2h_pct": 0.552,
-      "median_str": "17-15",
-      "all_play_str": "312-274",
-      "all_play_pct": 0.532,
+      "ppg": 113.9,
+      "pa_pg": 112.63,
+      "record_str": "49-43",
+      "record_pct": 0.533,
+      "h2h_str": "32-27",
+      "h2h_pct": 0.542,
+      "median_str": "17-16",
+      "all_play_str": "314-283",
+      "all_play_pct": 0.526,
       "playoff_record_str": "2-3",
-      "tds_per_game": 5.22,
+      "tds_per_game": 5.19,
       "career_high": {
         "season": "2022",
         "week": 2,
@@ -561,39 +561,39 @@
           "2025",
           "2026"
         ],
-        "games": 58,
+        "games": 59,
         "record": {
           "w": 49,
-          "l": 41,
+          "l": 43,
           "t": 0
         },
-        "record_str": "49-41",
-        "record_pct": 0.544,
+        "record_str": "49-43",
+        "record_pct": 0.533,
         "h2h": {
           "w": 32,
-          "l": 26,
+          "l": 27,
           "t": 0
         },
-        "h2h_str": "32-26",
-        "h2h_pct": 0.552,
+        "h2h_str": "32-27",
+        "h2h_pct": 0.542,
         "median": {
           "w": 17,
-          "l": 15,
+          "l": 16,
           "t": 0
         },
-        "median_str": "17-15",
-        "median_pct": 0.531,
-        "pf": 6642.54,
-        "pa": 6535.54,
-        "ppg": 114.53,
-        "pa_pg": 112.68,
+        "median_str": "17-16",
+        "median_pct": 0.515,
+        "pf": 6720.34,
+        "pa": 6645.32,
+        "ppg": 113.9,
+        "pa_pg": 112.63,
         "all_play": {
-          "w": 312,
-          "l": 274,
+          "w": 314,
+          "l": 283,
           "t": 0
         },
-        "all_play_str": "312-274",
-        "all_play_pct": 0.532,
+        "all_play_str": "314-283",
+        "all_play_pct": 0.526,
         "high_week": {
           "season": "2022",
           "week": 2,
@@ -608,9 +608,9 @@
           "opponent": "Marc",
           "opponent_points": 111.9
         },
-        "starter_tds": 303,
-        "starter_yards": 42457,
-        "tds_per_game": 5.22
+        "starter_tds": 306,
+        "starter_yards": 43062,
+        "tds_per_game": 5.19
       },
       "playoffs": {
         "appearances": 2,
@@ -769,27 +769,27 @@
         "2025",
         "2026"
       ],
-      "games": 58,
+      "games": 59,
       "h2h": {
-        "w": 29,
+        "w": 30,
         "l": 29,
         "t": 0
       },
       "median": {
-        "w": 21,
+        "w": 22,
         "l": 11,
         "t": 0
       },
       "record": {
-        "w": 50,
+        "w": 52,
         "l": 40,
         "t": 0
       },
-      "pf": 6452.3,
-      "pa": 6437.14,
+      "pf": 6562.08,
+      "pa": 6514.94,
       "all_play": {
-        "w": 302,
-        "l": 284,
+        "w": 311,
+        "l": 286,
         "t": 0
       },
       "playoff_record": {
@@ -803,21 +803,21 @@
       "title_seasons": [
         "2025"
       ],
-      "starter_tds": 285,
-      "starter_yards": 42552,
-      "games_played": 58,
+      "starter_tds": 289,
+      "starter_yards": 43425,
+      "games_played": 59,
       "playoff_games": 7,
-      "ppg": 111.25,
-      "pa_pg": 110.99,
-      "record_str": "50-40",
-      "record_pct": 0.556,
-      "h2h_str": "29-29",
-      "h2h_pct": 0.5,
-      "median_str": "21-11",
-      "all_play_str": "302-284",
-      "all_play_pct": 0.515,
+      "ppg": 111.22,
+      "pa_pg": 110.42,
+      "record_str": "52-40",
+      "record_pct": 0.565,
+      "h2h_str": "30-29",
+      "h2h_pct": 0.508,
+      "median_str": "22-11",
+      "all_play_str": "311-286",
+      "all_play_pct": 0.521,
       "playoff_record_str": "4-3",
-      "tds_per_game": 4.91,
+      "tds_per_game": 4.9,
       "career_high": {
         "season": "2025",
         "week": 15,
@@ -844,39 +844,39 @@
           "2025",
           "2026"
         ],
-        "games": 58,
+        "games": 59,
         "record": {
-          "w": 50,
+          "w": 52,
           "l": 40,
           "t": 0
         },
-        "record_str": "50-40",
-        "record_pct": 0.556,
+        "record_str": "52-40",
+        "record_pct": 0.565,
         "h2h": {
-          "w": 29,
+          "w": 30,
           "l": 29,
           "t": 0
         },
-        "h2h_str": "29-29",
-        "h2h_pct": 0.5,
+        "h2h_str": "30-29",
+        "h2h_pct": 0.508,
         "median": {
-          "w": 21,
+          "w": 22,
           "l": 11,
           "t": 0
         },
-        "median_str": "21-11",
-        "median_pct": 0.656,
-        "pf": 6452.3,
-        "pa": 6437.14,
-        "ppg": 111.25,
-        "pa_pg": 110.99,
+        "median_str": "22-11",
+        "median_pct": 0.667,
+        "pf": 6562.08,
+        "pa": 6514.94,
+        "ppg": 111.22,
+        "pa_pg": 110.42,
         "all_play": {
-          "w": 302,
-          "l": 284,
+          "w": 311,
+          "l": 286,
           "t": 0
         },
-        "all_play_str": "302-284",
-        "all_play_pct": 0.515,
+        "all_play_str": "311-286",
+        "all_play_pct": 0.521,
         "high_week": {
           "season": "2024",
           "week": 9,
@@ -891,9 +891,9 @@
           "opponent": "Jake",
           "opponent_points": 80.32
         },
-        "starter_tds": 285,
-        "starter_yards": 42552,
-        "tds_per_game": 4.91
+        "starter_tds": 289,
+        "starter_yards": 43425,
+        "tds_per_game": 4.9
       },
       "playoffs": {
         "appearances": 3,
@@ -1077,27 +1077,27 @@
         "2025",
         "2026"
       ],
-      "games": 58,
+      "games": 59,
       "h2h": {
         "w": 20,
-        "l": 38,
+        "l": 39,
         "t": 0
       },
       "median": {
         "w": 11,
-        "l": 21,
+        "l": 22,
         "t": 0
       },
       "record": {
         "w": 31,
-        "l": 59,
+        "l": 61,
         "t": 0
       },
-      "pf": 5981.8,
-      "pa": 6642.9,
+      "pf": 6045.02,
+      "pa": 6747.36,
       "all_play": {
         "w": 248,
-        "l": 338,
+        "l": 349,
         "t": 0
       },
       "playoff_record": {
@@ -1109,21 +1109,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 278,
-      "starter_yards": 40389,
-      "games_played": 58,
+      "starter_tds": 280,
+      "starter_yards": 40873,
+      "games_played": 59,
       "playoff_games": 0,
-      "ppg": 103.13,
-      "pa_pg": 114.53,
-      "record_str": "31-59",
-      "record_pct": 0.344,
-      "h2h_str": "20-38",
-      "h2h_pct": 0.345,
-      "median_str": "11-21",
-      "all_play_str": "248-338",
-      "all_play_pct": 0.423,
+      "ppg": 102.46,
+      "pa_pg": 114.36,
+      "record_str": "31-61",
+      "record_pct": 0.337,
+      "h2h_str": "20-39",
+      "h2h_pct": 0.339,
+      "median_str": "11-22",
+      "all_play_str": "248-349",
+      "all_play_pct": 0.415,
       "playoff_record_str": null,
-      "tds_per_game": 4.79,
+      "tds_per_game": 4.75,
       "career_high": {
         "season": "2023",
         "week": 4,
@@ -1150,39 +1150,39 @@
           "2025",
           "2026"
         ],
-        "games": 58,
+        "games": 59,
         "record": {
           "w": 31,
-          "l": 59,
+          "l": 61,
           "t": 0
         },
-        "record_str": "31-59",
-        "record_pct": 0.344,
+        "record_str": "31-61",
+        "record_pct": 0.337,
         "h2h": {
           "w": 20,
-          "l": 38,
+          "l": 39,
           "t": 0
         },
-        "h2h_str": "20-38",
-        "h2h_pct": 0.345,
+        "h2h_str": "20-39",
+        "h2h_pct": 0.339,
         "median": {
           "w": 11,
-          "l": 21,
+          "l": 22,
           "t": 0
         },
-        "median_str": "11-21",
-        "median_pct": 0.344,
-        "pf": 5981.8,
-        "pa": 6642.9,
-        "ppg": 103.13,
-        "pa_pg": 114.53,
+        "median_str": "11-22",
+        "median_pct": 0.333,
+        "pf": 6045.02,
+        "pa": 6747.36,
+        "ppg": 102.46,
+        "pa_pg": 114.36,
         "all_play": {
           "w": 248,
-          "l": 338,
+          "l": 349,
           "t": 0
         },
-        "all_play_str": "248-338",
-        "all_play_pct": 0.423,
+        "all_play_str": "248-349",
+        "all_play_pct": 0.415,
         "high_week": {
           "season": "2023",
           "week": 4,
@@ -1197,9 +1197,9 @@
           "opponent": "Matt Z",
           "opponent_points": 108.62
         },
-        "starter_tds": 278,
-        "starter_yards": 40389,
-        "tds_per_game": 4.79
+        "starter_tds": 280,
+        "starter_yards": 40873,
+        "tds_per_game": 4.75
       },
       "playoffs": {
         "appearances": 0,
@@ -1270,27 +1270,27 @@
         "2025",
         "2026"
       ],
-      "games": 45,
+      "games": 46,
       "h2h": {
         "w": 27,
-        "l": 18,
+        "l": 19,
         "t": 0
       },
       "median": {
         "w": 21,
-        "l": 11,
+        "l": 12,
         "t": 0
       },
       "record": {
         "w": 48,
-        "l": 29,
+        "l": 31,
         "t": 0
       },
-      "pf": 5425.56,
-      "pa": 4987.72,
+      "pf": 5495.04,
+      "pa": 5074.28,
       "all_play": {
-        "w": 323,
-        "l": 172,
+        "w": 324,
+        "l": 182,
         "t": 0
       },
       "playoff_record": {
@@ -1302,21 +1302,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 233,
-      "starter_yards": 35260,
-      "games_played": 45,
+      "starter_tds": 236,
+      "starter_yards": 35736,
+      "games_played": 46,
       "playoff_games": 6,
-      "ppg": 120.57,
-      "pa_pg": 110.84,
-      "record_str": "48-29",
-      "record_pct": 0.623,
-      "h2h_str": "27-18",
-      "h2h_pct": 0.6,
-      "median_str": "21-11",
-      "all_play_str": "323-172",
-      "all_play_pct": 0.653,
+      "ppg": 119.46,
+      "pa_pg": 110.31,
+      "record_str": "48-31",
+      "record_pct": 0.608,
+      "h2h_str": "27-19",
+      "h2h_pct": 0.587,
+      "median_str": "21-12",
+      "all_play_str": "324-182",
+      "all_play_pct": 0.64,
       "playoff_record_str": "3-3",
-      "tds_per_game": 5.18,
+      "tds_per_game": 5.13,
       "career_high": {
         "season": "2024",
         "week": 17,
@@ -1342,39 +1342,39 @@
           "2025",
           "2026"
         ],
-        "games": 45,
+        "games": 46,
         "record": {
           "w": 48,
-          "l": 29,
+          "l": 31,
           "t": 0
         },
-        "record_str": "48-29",
-        "record_pct": 0.623,
+        "record_str": "48-31",
+        "record_pct": 0.608,
         "h2h": {
           "w": 27,
-          "l": 18,
+          "l": 19,
           "t": 0
         },
-        "h2h_str": "27-18",
-        "h2h_pct": 0.6,
+        "h2h_str": "27-19",
+        "h2h_pct": 0.587,
         "median": {
           "w": 21,
-          "l": 11,
+          "l": 12,
           "t": 0
         },
-        "median_str": "21-11",
-        "median_pct": 0.656,
-        "pf": 5425.56,
-        "pa": 4987.72,
-        "ppg": 120.57,
-        "pa_pg": 110.84,
+        "median_str": "21-12",
+        "median_pct": 0.636,
+        "pf": 5495.04,
+        "pa": 5074.28,
+        "ppg": 119.46,
+        "pa_pg": 110.31,
         "all_play": {
-          "w": 323,
-          "l": 172,
+          "w": 324,
+          "l": 182,
           "t": 0
         },
-        "all_play_str": "323-172",
-        "all_play_pct": 0.653,
+        "all_play_str": "324-182",
+        "all_play_pct": 0.64,
         "high_week": {
           "season": "2024",
           "week": 12,
@@ -1389,9 +1389,9 @@
           "opponent": "Marc",
           "opponent_points": 124.94
         },
-        "starter_tds": 233,
-        "starter_yards": 35260,
-        "tds_per_game": 5.18
+        "starter_tds": 236,
+        "starter_yards": 35736,
+        "tds_per_game": 5.13
       },
       "playoffs": {
         "appearances": 3,
@@ -1555,27 +1555,27 @@
         "2025",
         "2026"
       ],
-      "games": 45,
+      "games": 46,
       "h2h": {
-        "w": 20,
+        "w": 21,
         "l": 25,
         "t": 0
       },
       "median": {
-        "w": 14,
+        "w": 15,
         "l": 18,
         "t": 0
       },
       "record": {
-        "w": 34,
+        "w": 36,
         "l": 43,
         "t": 0
       },
-      "pf": 4975.14,
-      "pa": 4976.13,
+      "pf": 5081.1,
+      "pa": 5057.23,
       "all_play": {
-        "w": 247,
-        "l": 248,
+        "w": 254,
+        "l": 252,
         "t": 0
       },
       "playoff_record": {
@@ -1587,19 +1587,19 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 224,
-      "starter_yards": 32470,
-      "games_played": 45,
+      "starter_tds": 229,
+      "starter_yards": 33252,
+      "games_played": 46,
       "playoff_games": 2,
-      "ppg": 110.56,
-      "pa_pg": 110.58,
-      "record_str": "34-43",
-      "record_pct": 0.442,
-      "h2h_str": "20-25",
-      "h2h_pct": 0.444,
-      "median_str": "14-18",
-      "all_play_str": "247-248",
-      "all_play_pct": 0.499,
+      "ppg": 110.46,
+      "pa_pg": 109.94,
+      "record_str": "36-43",
+      "record_pct": 0.456,
+      "h2h_str": "21-25",
+      "h2h_pct": 0.457,
+      "median_str": "15-18",
+      "all_play_str": "254-252",
+      "all_play_pct": 0.502,
       "playoff_record_str": "0-2",
       "tds_per_game": 4.98,
       "career_high": {
@@ -1627,39 +1627,39 @@
           "2025",
           "2026"
         ],
-        "games": 45,
+        "games": 46,
         "record": {
-          "w": 34,
+          "w": 36,
           "l": 43,
           "t": 0
         },
-        "record_str": "34-43",
-        "record_pct": 0.442,
+        "record_str": "36-43",
+        "record_pct": 0.456,
         "h2h": {
-          "w": 20,
+          "w": 21,
           "l": 25,
           "t": 0
         },
-        "h2h_str": "20-25",
-        "h2h_pct": 0.444,
+        "h2h_str": "21-25",
+        "h2h_pct": 0.457,
         "median": {
-          "w": 14,
+          "w": 15,
           "l": 18,
           "t": 0
         },
-        "median_str": "14-18",
-        "median_pct": 0.438,
-        "pf": 4975.14,
-        "pa": 4976.13,
-        "ppg": 110.56,
-        "pa_pg": 110.58,
+        "median_str": "15-18",
+        "median_pct": 0.455,
+        "pf": 5081.1,
+        "pa": 5057.23,
+        "ppg": 110.46,
+        "pa_pg": 109.94,
         "all_play": {
-          "w": 247,
-          "l": 248,
+          "w": 254,
+          "l": 252,
           "t": 0
         },
-        "all_play_str": "247-248",
-        "all_play_pct": 0.499,
+        "all_play_str": "254-252",
+        "all_play_pct": 0.502,
         "high_week": {
           "season": "2023",
           "week": 10,
@@ -1674,8 +1674,8 @@
           "opponent": "Lij",
           "opponent_points": 100.82
         },
-        "starter_tds": 224,
-        "starter_yards": 32470,
+        "starter_tds": 229,
+        "starter_yards": 33252,
         "tds_per_game": 4.98
       },
       "playoffs": {
@@ -1786,27 +1786,27 @@
         "2025",
         "2026"
       ],
-      "games": 39,
+      "games": 40,
       "h2h": {
         "w": 22,
-        "l": 17,
+        "l": 18,
         "t": 0
       },
       "median": {
-        "w": 16,
+        "w": 17,
         "l": 10,
         "t": 0
       },
       "record": {
-        "w": 38,
-        "l": 27,
+        "w": 39,
+        "l": 28,
         "t": 0
       },
-      "pf": 4410.18,
-      "pa": 4081.96,
+      "pf": 4517.56,
+      "pa": 4211.62,
       "all_play": {
-        "w": 222,
-        "l": 207,
+        "w": 230,
+        "l": 210,
         "t": 0
       },
       "playoff_record": {
@@ -1818,21 +1818,21 @@
       "finals": 1,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 210,
-      "starter_yards": 28866,
-      "games_played": 39,
+      "starter_tds": 216,
+      "starter_yards": 29555,
+      "games_played": 40,
       "playoff_games": 5,
-      "ppg": 113.08,
-      "pa_pg": 104.67,
-      "record_str": "38-27",
-      "record_pct": 0.585,
-      "h2h_str": "22-17",
-      "h2h_pct": 0.564,
-      "median_str": "16-10",
-      "all_play_str": "222-207",
-      "all_play_pct": 0.517,
+      "ppg": 112.94,
+      "pa_pg": 105.29,
+      "record_str": "39-28",
+      "record_pct": 0.582,
+      "h2h_str": "22-18",
+      "h2h_pct": 0.55,
+      "median_str": "17-10",
+      "all_play_str": "230-210",
+      "all_play_pct": 0.523,
       "playoff_record_str": "3-2",
-      "tds_per_game": 5.38,
+      "tds_per_game": 5.4,
       "career_high": {
         "season": "2024",
         "week": 12,
@@ -1859,39 +1859,39 @@
           "2025",
           "2026"
         ],
-        "games": 39,
+        "games": 40,
         "record": {
-          "w": 38,
-          "l": 27,
+          "w": 39,
+          "l": 28,
           "t": 0
         },
-        "record_str": "38-27",
-        "record_pct": 0.585,
+        "record_str": "39-28",
+        "record_pct": 0.582,
         "h2h": {
           "w": 22,
-          "l": 17,
+          "l": 18,
           "t": 0
         },
-        "h2h_str": "22-17",
-        "h2h_pct": 0.564,
+        "h2h_str": "22-18",
+        "h2h_pct": 0.55,
         "median": {
-          "w": 16,
+          "w": 17,
           "l": 10,
           "t": 0
         },
-        "median_str": "16-10",
-        "median_pct": 0.615,
-        "pf": 4410.18,
-        "pa": 4081.96,
-        "ppg": 113.08,
-        "pa_pg": 104.67,
+        "median_str": "17-10",
+        "median_pct": 0.63,
+        "pf": 4517.56,
+        "pa": 4211.62,
+        "ppg": 112.94,
+        "pa_pg": 105.29,
         "all_play": {
-          "w": 222,
-          "l": 207,
+          "w": 230,
+          "l": 210,
           "t": 0
         },
-        "all_play_str": "222-207",
-        "all_play_pct": 0.517,
+        "all_play_str": "230-210",
+        "all_play_pct": 0.523,
         "high_week": {
           "season": "2024",
           "week": 12,
@@ -1906,9 +1906,9 @@
           "opponent": "Jared",
           "opponent_points": 121.82
         },
-        "starter_tds": 210,
-        "starter_yards": 28866,
-        "tds_per_game": 5.38
+        "starter_tds": 216,
+        "starter_yards": 29555,
+        "tds_per_game": 5.4
       },
       "playoffs": {
         "appearances": 2,
@@ -2059,27 +2059,27 @@
         "2025",
         "2026"
       ],
-      "games": 32,
+      "games": 33,
       "h2h": {
-        "w": 14,
+        "w": 15,
         "l": 18,
         "t": 0
       },
       "median": {
         "w": 18,
-        "l": 14,
+        "l": 15,
         "t": 0
       },
       "record": {
-        "w": 32,
-        "l": 32,
+        "w": 33,
+        "l": 33,
         "t": 0
       },
-      "pf": 3535.68,
-      "pa": 3749.63,
+      "pf": 3622.24,
+      "pa": 3819.11,
       "all_play": {
-        "w": 176,
-        "l": 176,
+        "w": 180,
+        "l": 183,
         "t": 0
       },
       "playoff_record": {
@@ -2091,21 +2091,21 @@
       "finals": 1,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 177,
-      "starter_yards": 23509,
-      "games_played": 32,
+      "starter_tds": 180,
+      "starter_yards": 24150,
+      "games_played": 33,
       "playoff_games": 3,
-      "ppg": 110.49,
-      "pa_pg": 117.18,
-      "record_str": "32-32",
+      "ppg": 109.76,
+      "pa_pg": 115.73,
+      "record_str": "33-33",
       "record_pct": 0.5,
-      "h2h_str": "14-18",
-      "h2h_pct": 0.438,
-      "median_str": "18-14",
-      "all_play_str": "176-176",
-      "all_play_pct": 0.5,
+      "h2h_str": "15-18",
+      "h2h_pct": 0.455,
+      "median_str": "18-15",
+      "all_play_str": "180-183",
+      "all_play_pct": 0.496,
       "playoff_record_str": "2-1",
-      "tds_per_game": 5.53,
+      "tds_per_game": 5.45,
       "career_high": {
         "season": "2024",
         "week": 15,
@@ -2130,39 +2130,39 @@
           "2025",
           "2026"
         ],
-        "games": 32,
+        "games": 33,
         "record": {
-          "w": 32,
-          "l": 32,
+          "w": 33,
+          "l": 33,
           "t": 0
         },
-        "record_str": "32-32",
+        "record_str": "33-33",
         "record_pct": 0.5,
         "h2h": {
-          "w": 14,
+          "w": 15,
           "l": 18,
           "t": 0
         },
-        "h2h_str": "14-18",
-        "h2h_pct": 0.438,
+        "h2h_str": "15-18",
+        "h2h_pct": 0.455,
         "median": {
           "w": 18,
-          "l": 14,
+          "l": 15,
           "t": 0
         },
-        "median_str": "18-14",
-        "median_pct": 0.562,
-        "pf": 3535.68,
-        "pa": 3749.63,
-        "ppg": 110.49,
-        "pa_pg": 117.18,
+        "median_str": "18-15",
+        "median_pct": 0.545,
+        "pf": 3622.24,
+        "pa": 3819.11,
+        "ppg": 109.76,
+        "pa_pg": 115.73,
         "all_play": {
-          "w": 176,
-          "l": 176,
+          "w": 180,
+          "l": 183,
           "t": 0
         },
-        "all_play_str": "176-176",
-        "all_play_pct": 0.5,
+        "all_play_str": "180-183",
+        "all_play_pct": 0.496,
         "high_week": {
           "season": "2024",
           "week": 13,
@@ -2177,9 +2177,9 @@
           "opponent": "Marc",
           "opponent_points": 91.9
         },
-        "starter_tds": 177,
-        "starter_yards": 23509,
-        "tds_per_game": 5.53
+        "starter_tds": 180,
+        "starter_yards": 24150,
+        "tds_per_game": 5.45
       },
       "playoffs": {
         "appearances": 1,
@@ -2301,27 +2301,27 @@
         "2025",
         "2026"
       ],
-      "games": 32,
+      "games": 33,
       "h2h": {
         "w": 17,
-        "l": 15,
+        "l": 16,
         "t": 0
       },
       "median": {
         "w": 16,
-        "l": 16,
+        "l": 17,
         "t": 0
       },
       "record": {
         "w": 33,
-        "l": 31,
+        "l": 33,
         "t": 0
       },
-      "pf": 3529.12,
-      "pa": 3459.56,
+      "pf": 3610.22,
+      "pa": 3565.52,
       "all_play": {
-        "w": 180,
-        "l": 172,
+        "w": 183,
+        "l": 180,
         "t": 0
       },
       "playoff_record": {
@@ -2333,21 +2333,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 158,
-      "starter_yards": 22148,
-      "games_played": 32,
+      "starter_tds": 160,
+      "starter_yards": 22768,
+      "games_played": 33,
       "playoff_games": 4,
-      "ppg": 110.28,
-      "pa_pg": 108.11,
-      "record_str": "33-31",
-      "record_pct": 0.516,
-      "h2h_str": "17-15",
-      "h2h_pct": 0.531,
-      "median_str": "16-16",
-      "all_play_str": "180-172",
-      "all_play_pct": 0.511,
+      "ppg": 109.4,
+      "pa_pg": 108.05,
+      "record_str": "33-33",
+      "record_pct": 0.5,
+      "h2h_str": "17-16",
+      "h2h_pct": 0.515,
+      "median_str": "16-17",
+      "all_play_str": "183-180",
+      "all_play_pct": 0.504,
       "playoff_record_str": "1-3",
-      "tds_per_game": 4.94,
+      "tds_per_game": 4.85,
       "career_high": {
         "season": "2024",
         "week": 7,
@@ -2372,39 +2372,39 @@
           "2025",
           "2026"
         ],
-        "games": 32,
+        "games": 33,
         "record": {
           "w": 33,
-          "l": 31,
+          "l": 33,
           "t": 0
         },
-        "record_str": "33-31",
-        "record_pct": 0.516,
+        "record_str": "33-33",
+        "record_pct": 0.5,
         "h2h": {
           "w": 17,
-          "l": 15,
-          "t": 0
-        },
-        "h2h_str": "17-15",
-        "h2h_pct": 0.531,
-        "median": {
-          "w": 16,
           "l": 16,
           "t": 0
         },
-        "median_str": "16-16",
-        "median_pct": 0.5,
-        "pf": 3529.12,
-        "pa": 3459.56,
-        "ppg": 110.28,
-        "pa_pg": 108.11,
-        "all_play": {
-          "w": 180,
-          "l": 172,
+        "h2h_str": "17-16",
+        "h2h_pct": 0.515,
+        "median": {
+          "w": 16,
+          "l": 17,
           "t": 0
         },
-        "all_play_str": "180-172",
-        "all_play_pct": 0.511,
+        "median_str": "16-17",
+        "median_pct": 0.485,
+        "pf": 3610.22,
+        "pa": 3565.52,
+        "ppg": 109.4,
+        "pa_pg": 108.05,
+        "all_play": {
+          "w": 183,
+          "l": 180,
+          "t": 0
+        },
+        "all_play_str": "183-180",
+        "all_play_pct": 0.504,
         "high_week": {
           "season": "2024",
           "week": 7,
@@ -2419,9 +2419,9 @@
           "opponent": "Matt Z",
           "opponent_points": 101.04
         },
-        "starter_tds": 158,
-        "starter_yards": 22148,
-        "tds_per_game": 4.94
+        "starter_tds": 160,
+        "starter_yards": 22768,
+        "tds_per_game": 4.85
       },
       "playoffs": {
         "appearances": 2,
@@ -2555,27 +2555,27 @@
         "2025",
         "2026"
       ],
-      "games": 32,
+      "games": 33,
       "h2h": {
         "w": 14,
-        "l": 18,
+        "l": 19,
         "t": 0
       },
       "median": {
         "w": 10,
-        "l": 22,
+        "l": 23,
         "t": 0
       },
       "record": {
         "w": 24,
-        "l": 40,
+        "l": 42,
         "t": 0
       },
-      "pf": 3243.0,
-      "pa": 3506.62,
+      "pf": 3338.14,
+      "pa": 3664.1,
       "all_play": {
-        "w": 140,
-        "l": 212,
+        "w": 145,
+        "l": 218,
         "t": 0
       },
       "playoff_record": {
@@ -2587,19 +2587,19 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 158,
-      "starter_yards": 22192,
-      "games_played": 32,
+      "starter_tds": 163,
+      "starter_yards": 22821,
+      "games_played": 33,
       "playoff_games": 3,
-      "ppg": 101.34,
-      "pa_pg": 109.58,
-      "record_str": "24-40",
-      "record_pct": 0.375,
-      "h2h_str": "14-18",
-      "h2h_pct": 0.438,
-      "median_str": "10-22",
-      "all_play_str": "140-212",
-      "all_play_pct": 0.398,
+      "ppg": 101.16,
+      "pa_pg": 111.03,
+      "record_str": "24-42",
+      "record_pct": 0.364,
+      "h2h_str": "14-19",
+      "h2h_pct": 0.424,
+      "median_str": "10-23",
+      "all_play_str": "145-218",
+      "all_play_pct": 0.399,
       "playoff_record_str": "1-2",
       "tds_per_game": 4.94,
       "career_high": {
@@ -2626,39 +2626,39 @@
           "2025",
           "2026"
         ],
-        "games": 32,
+        "games": 33,
         "record": {
           "w": 24,
-          "l": 40,
+          "l": 42,
           "t": 0
         },
-        "record_str": "24-40",
-        "record_pct": 0.375,
+        "record_str": "24-42",
+        "record_pct": 0.364,
         "h2h": {
           "w": 14,
-          "l": 18,
+          "l": 19,
           "t": 0
         },
-        "h2h_str": "14-18",
-        "h2h_pct": 0.438,
+        "h2h_str": "14-19",
+        "h2h_pct": 0.424,
         "median": {
           "w": 10,
-          "l": 22,
+          "l": 23,
           "t": 0
         },
-        "median_str": "10-22",
-        "median_pct": 0.312,
-        "pf": 3243.0,
-        "pa": 3506.62,
-        "ppg": 101.34,
-        "pa_pg": 109.58,
+        "median_str": "10-23",
+        "median_pct": 0.303,
+        "pf": 3338.14,
+        "pa": 3664.1,
+        "ppg": 101.16,
+        "pa_pg": 111.03,
         "all_play": {
-          "w": 140,
-          "l": 212,
+          "w": 145,
+          "l": 218,
           "t": 0
         },
-        "all_play_str": "140-212",
-        "all_play_pct": 0.398,
+        "all_play_str": "145-218",
+        "all_play_pct": 0.399,
         "high_week": {
           "season": "2024",
           "week": 6,
@@ -2673,8 +2673,8 @@
           "opponent": "Jake",
           "opponent_points": 78.74
         },
-        "starter_tds": 158,
-        "starter_yards": 22192,
+        "starter_tds": 163,
+        "starter_yards": 22821,
         "tds_per_game": 4.94
       },
       "playoffs": {
@@ -2796,26 +2796,26 @@
         "2025",
         "2026"
       ],
-      "games": 19,
+      "games": 20,
       "h2h": {
-        "w": 15,
+        "w": 16,
         "l": 4,
         "t": 0
       },
       "median": {
-        "w": 10,
+        "w": 11,
         "l": 9,
         "t": 0
       },
       "record": {
-        "w": 25,
+        "w": 27,
         "l": 13,
         "t": 0
       },
-      "pf": 2118.8,
-      "pa": 1904.38,
+      "pf": 2276.28,
+      "pa": 1999.52,
       "all_play": {
-        "w": 118,
+        "w": 129,
         "l": 91,
         "t": 0
       },
@@ -2828,21 +2828,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 108,
-      "starter_yards": 14176,
-      "games_played": 19,
+      "starter_tds": 119,
+      "starter_yards": 15124,
+      "games_played": 20,
       "playoff_games": 2,
-      "ppg": 111.52,
-      "pa_pg": 100.23,
-      "record_str": "25-13",
-      "record_pct": 0.658,
-      "h2h_str": "15-4",
-      "h2h_pct": 0.789,
-      "median_str": "10-9",
-      "all_play_str": "118-91",
-      "all_play_pct": 0.565,
+      "ppg": 113.81,
+      "pa_pg": 99.98,
+      "record_str": "27-13",
+      "record_pct": 0.675,
+      "h2h_str": "16-4",
+      "h2h_pct": 0.8,
+      "median_str": "11-9",
+      "all_play_str": "129-91",
+      "all_play_pct": 0.586,
       "playoff_record_str": "0-2",
-      "tds_per_game": 5.68,
+      "tds_per_game": 5.95,
       "career_high": {
         "season": "2026",
         "week": 8,
@@ -2866,39 +2866,39 @@
           "2025",
           "2026"
         ],
-        "games": 19,
+        "games": 20,
         "record": {
-          "w": 25,
+          "w": 27,
           "l": 13,
           "t": 0
         },
-        "record_str": "25-13",
-        "record_pct": 0.658,
+        "record_str": "27-13",
+        "record_pct": 0.675,
         "h2h": {
-          "w": 15,
+          "w": 16,
           "l": 4,
           "t": 0
         },
-        "h2h_str": "15-4",
-        "h2h_pct": 0.789,
+        "h2h_str": "16-4",
+        "h2h_pct": 0.8,
         "median": {
-          "w": 10,
+          "w": 11,
           "l": 9,
           "t": 0
         },
-        "median_str": "10-9",
-        "median_pct": 0.526,
-        "pf": 2118.8,
-        "pa": 1904.38,
-        "ppg": 111.52,
-        "pa_pg": 100.23,
+        "median_str": "11-9",
+        "median_pct": 0.55,
+        "pf": 2276.28,
+        "pa": 1999.52,
+        "ppg": 113.81,
+        "pa_pg": 99.98,
         "all_play": {
-          "w": 118,
+          "w": 129,
           "l": 91,
           "t": 0
         },
-        "all_play_str": "118-91",
-        "all_play_pct": 0.565,
+        "all_play_str": "129-91",
+        "all_play_pct": 0.586,
         "high_week": {
           "season": "2026",
           "week": 8,
@@ -2913,9 +2913,9 @@
           "opponent": "Doug",
           "opponent_points": 81.32
         },
-        "starter_tds": 108,
-        "starter_yards": 14176,
-        "tds_per_game": 5.68
+        "starter_tds": 119,
+        "starter_yards": 15124,
+        "tds_per_game": 5.95
       },
       "playoffs": {
         "appearances": 1,
@@ -3011,27 +3011,27 @@
         "2025",
         "2026"
       ],
-      "games": 19,
+      "games": 20,
       "h2h": {
-        "w": 9,
+        "w": 10,
         "l": 10,
         "t": 0
       },
       "median": {
-        "w": 8,
+        "w": 9,
         "l": 11,
         "t": 0
       },
       "record": {
-        "w": 17,
+        "w": 19,
         "l": 21,
         "t": 0
       },
-      "pf": 2056.68,
-      "pa": 1997.4,
+      "pf": 2161.14,
+      "pa": 2060.62,
       "all_play": {
-        "w": 97,
-        "l": 112,
+        "w": 103,
+        "l": 117,
         "t": 0
       },
       "playoff_record": {
@@ -3043,21 +3043,21 @@
       "finals": 0,
       "titles": 0,
       "title_seasons": [],
-      "starter_tds": 97,
-      "starter_yards": 14593,
-      "games_played": 19,
+      "starter_tds": 102,
+      "starter_yards": 15325,
+      "games_played": 20,
       "playoff_games": 0,
-      "ppg": 108.25,
-      "pa_pg": 105.13,
-      "record_str": "17-21",
-      "record_pct": 0.447,
-      "h2h_str": "9-10",
-      "h2h_pct": 0.474,
-      "median_str": "8-11",
-      "all_play_str": "97-112",
-      "all_play_pct": 0.464,
+      "ppg": 108.06,
+      "pa_pg": 103.03,
+      "record_str": "19-21",
+      "record_pct": 0.475,
+      "h2h_str": "10-10",
+      "h2h_pct": 0.5,
+      "median_str": "9-11",
+      "all_play_str": "103-117",
+      "all_play_pct": 0.468,
       "playoff_record_str": null,
-      "tds_per_game": 5.11,
+      "tds_per_game": 5.1,
       "career_high": {
         "season": "2026",
         "week": 1,
@@ -3081,39 +3081,39 @@
           "2025",
           "2026"
         ],
-        "games": 19,
+        "games": 20,
         "record": {
-          "w": 17,
+          "w": 19,
           "l": 21,
           "t": 0
         },
-        "record_str": "17-21",
-        "record_pct": 0.447,
+        "record_str": "19-21",
+        "record_pct": 0.475,
         "h2h": {
-          "w": 9,
+          "w": 10,
           "l": 10,
           "t": 0
         },
-        "h2h_str": "9-10",
-        "h2h_pct": 0.474,
+        "h2h_str": "10-10",
+        "h2h_pct": 0.5,
         "median": {
-          "w": 8,
+          "w": 9,
           "l": 11,
           "t": 0
         },
-        "median_str": "8-11",
-        "median_pct": 0.421,
-        "pf": 2056.68,
-        "pa": 1997.4,
-        "ppg": 108.25,
-        "pa_pg": 105.13,
+        "median_str": "9-11",
+        "median_pct": 0.45,
+        "pf": 2161.14,
+        "pa": 2060.62,
+        "ppg": 108.06,
+        "pa_pg": 103.03,
         "all_play": {
-          "w": 97,
-          "l": 112,
+          "w": 103,
+          "l": 117,
           "t": 0
         },
-        "all_play_str": "97-112",
-        "all_play_pct": 0.464,
+        "all_play_str": "103-117",
+        "all_play_pct": 0.468,
         "high_week": {
           "season": "2026",
           "week": 1,
@@ -3128,9 +3128,9 @@
           "opponent": "Matt Z",
           "opponent_points": 78.08
         },
-        "starter_tds": 97,
-        "starter_yards": 14593,
-        "tds_per_game": 5.11
+        "starter_tds": 102,
+        "starter_yards": 15325,
+        "tds_per_game": 5.1
       },
       "playoffs": {
         "appearances": 0,
@@ -5312,6 +5312,17 @@
         "phase": "regular"
       },
       {
+        "season": "2026",
+        "week": 9,
+        "manager": "jake",
+        "name": "Jake",
+        "points": 63.22,
+        "opponent": "brett",
+        "opponent_name": "Brett",
+        "opponent_points": 104.46,
+        "phase": "regular"
+      },
+      {
         "season": "2023",
         "week": 9,
         "manager": "jakefitzy",
@@ -5353,17 +5364,6 @@
         "opponent": "marc",
         "opponent_name": "Marc",
         "opponent_points": 124.94,
-        "phase": "regular"
-      },
-      {
-        "season": "2022",
-        "week": 2,
-        "manager": "michaeldewey99",
-        "name": "Mike",
-        "points": 66.3,
-        "opponent": "jake",
-        "opponent_name": "Jake",
-        "opponent_points": 109.9,
         "phase": "regular"
       }
     ],
@@ -5810,9 +5810,9 @@
       {
         "manager": "jake",
         "name": "Jake",
-        "length": 8,
+        "length": 9,
         "from": "2026 Wk 1",
-        "to": "2026 Wk 8",
+        "to": "2026 Wk 9",
         "active": true
       },
       {
@@ -9345,27 +9345,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 3,
-        "l": 5,
+        "l": 6,
         "t": 0
       },
       "median": {
         "w": 2,
-        "l": 6,
+        "l": 7,
         "t": 0
       },
       "record": {
         "w": 5,
-        "l": 11,
+        "l": 13,
         "t": 0
       },
-      "pf": 768.36,
-      "pa": 853.86,
+      "pf": 863.5,
+      "pa": 1011.34,
       "all_play": {
-        "w": 30,
-        "l": 58,
+        "w": 35,
+        "l": 64,
         "t": 0
       },
       "high_week": {
@@ -9380,11 +9380,11 @@
         "opponent": "Marc",
         "phase": "regular"
       },
-      "starter_tds": 46,
-      "starter_yards": 5352,
+      "starter_tds": 51,
+      "starter_yards": 5981,
       "td_breakdown": {
-        "pass": 21,
-        "rush": 7,
+        "pass": 24,
+        "rush": 9,
         "rec": 18,
         "idp": 0,
         "return": 0
@@ -9397,22 +9397,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "5-11",
-        "pf": 768.36,
-        "pa": 853.86
+        "record": "5-13",
+        "pf": 863.5,
+        "pa": 1011.34
       },
       "record_note": null,
-      "ppg": 96.05,
-      "pa_pg": 106.73,
-      "record_str": "5-11",
-      "h2h_str": "3-5",
-      "median_str": "2-6",
-      "record_pct": 0.312,
-      "h2h_pct": 0.375,
-      "all_play_pct": 0.341,
-      "all_play_str": "30-58",
+      "ppg": 95.94,
+      "pa_pg": 112.37,
+      "record_str": "5-13",
+      "h2h_str": "3-6",
+      "median_str": "2-7",
+      "record_pct": 0.278,
+      "h2h_pct": 0.333,
+      "all_play_pct": 0.354,
+      "all_play_str": "35-64",
       "playoff_record_str": null,
-      "tds_per_game": 5.75,
+      "tds_per_game": 5.67,
       "eligible_for_records": false,
       "current": true
     },
@@ -9424,27 +9424,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 4,
+        "w": 5,
         "l": 4,
         "t": 0
       },
       "median": {
-        "w": 4,
+        "w": 5,
         "l": 4,
         "t": 0
       },
       "record": {
-        "w": 8,
+        "w": 10,
         "l": 8,
         "t": 0
       },
-      "pf": 918.18,
-      "pa": 855.5,
+      "pf": 1022.64,
+      "pa": 918.72,
       "all_play": {
-        "w": 44,
-        "l": 44,
+        "w": 50,
+        "l": 49,
         "t": 0
       },
       "high_week": {
@@ -9459,12 +9459,12 @@
         "opponent": "Matt Z",
         "phase": "regular"
       },
-      "starter_tds": 44,
-      "starter_yards": 6463,
+      "starter_tds": 49,
+      "starter_yards": 7195,
       "td_breakdown": {
-        "pass": 16,
-        "rush": 15,
-        "rec": 13,
+        "pass": 18,
+        "rush": 17,
+        "rec": 14,
         "idp": 0,
         "return": 0
       },
@@ -9476,22 +9476,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "8-8",
-        "pf": 918.18,
-        "pa": 855.5
+        "record": "10-8",
+        "pf": 1022.64,
+        "pa": 918.72
       },
       "record_note": null,
-      "ppg": 114.77,
-      "pa_pg": 106.94,
-      "record_str": "8-8",
-      "h2h_str": "4-4",
-      "median_str": "4-4",
-      "record_pct": 0.5,
-      "h2h_pct": 0.5,
-      "all_play_pct": 0.5,
-      "all_play_str": "44-44",
+      "ppg": 113.63,
+      "pa_pg": 102.08,
+      "record_str": "10-8",
+      "h2h_str": "5-4",
+      "median_str": "5-4",
+      "record_pct": 0.556,
+      "h2h_pct": 0.556,
+      "all_play_pct": 0.505,
+      "all_play_str": "50-49",
       "playoff_record_str": null,
-      "tds_per_game": 5.5,
+      "tds_per_game": 5.44,
       "eligible_for_records": false,
       "current": true
     },
@@ -9503,27 +9503,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 4,
-        "l": 4,
+        "l": 5,
         "t": 0
       },
       "median": {
         "w": 3,
-        "l": 5,
+        "l": 6,
         "t": 0
       },
       "record": {
         "w": 7,
-        "l": 9,
+        "l": 11,
         "t": 0
       },
-      "pf": 850.28,
-      "pa": 831.24,
+      "pf": 931.38,
+      "pa": 937.2,
       "all_play": {
-        "w": 43,
-        "l": 45,
+        "w": 46,
+        "l": 53,
         "t": 0
       },
       "high_week": {
@@ -9533,17 +9533,17 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 8,
-        "points": 88.9,
-        "opponent": "Lij",
+        "week": 9,
+        "points": 81.1,
+        "opponent": "Marc",
         "phase": "regular"
       },
-      "starter_tds": 40,
-      "starter_yards": 5313,
+      "starter_tds": 42,
+      "starter_yards": 5933,
       "td_breakdown": {
-        "pass": 9,
+        "pass": 10,
         "rush": 8,
-        "rec": 23,
+        "rec": 24,
         "idp": 0,
         "return": 0
       },
@@ -9555,22 +9555,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "7-9",
-        "pf": 850.28,
-        "pa": 831.24
+        "record": "7-11",
+        "pf": 931.38,
+        "pa": 937.2
       },
       "record_note": null,
-      "ppg": 106.28,
-      "pa_pg": 103.91,
-      "record_str": "7-9",
-      "h2h_str": "4-4",
-      "median_str": "3-5",
-      "record_pct": 0.438,
-      "h2h_pct": 0.5,
-      "all_play_pct": 0.489,
-      "all_play_str": "43-45",
+      "ppg": 103.49,
+      "pa_pg": 104.13,
+      "record_str": "7-11",
+      "h2h_str": "4-5",
+      "median_str": "3-6",
+      "record_pct": 0.389,
+      "h2h_pct": 0.444,
+      "all_play_pct": 0.465,
+      "all_play_str": "46-53",
       "playoff_record_str": null,
-      "tds_per_game": 5.0,
+      "tds_per_game": 4.67,
       "eligible_for_records": false,
       "current": true
     },
@@ -9582,27 +9582,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 6,
+        "w": 7,
         "l": 2,
         "t": 0
       },
       "median": {
-        "w": 7,
+        "w": 8,
         "l": 1,
         "t": 0
       },
       "record": {
-        "w": 13,
+        "w": 15,
         "l": 3,
         "t": 0
       },
-      "pf": 953.06,
-      "pa": 879.46,
+      "pf": 1082.72,
+      "pa": 986.84,
       "all_play": {
-        "w": 61,
-        "l": 27,
+        "w": 71,
+        "l": 28,
         "t": 0
       },
       "high_week": {
@@ -9617,12 +9617,12 @@
         "opponent": "Andrew",
         "phase": "regular"
       },
-      "starter_tds": 51,
-      "starter_yards": 6053,
+      "starter_tds": 57,
+      "starter_yards": 6894,
       "td_breakdown": {
-        "pass": 14,
-        "rush": 14,
-        "rec": 22,
+        "pass": 17,
+        "rush": 15,
+        "rec": 24,
         "idp": 1,
         "return": 0
       },
@@ -9634,22 +9634,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "13-3",
-        "pf": 953.06,
-        "pa": 879.46
+        "record": "15-3",
+        "pf": 1082.72,
+        "pa": 986.84
       },
       "record_note": null,
-      "ppg": 119.13,
-      "pa_pg": 109.93,
-      "record_str": "13-3",
-      "h2h_str": "6-2",
-      "median_str": "7-1",
-      "record_pct": 0.812,
-      "h2h_pct": 0.75,
-      "all_play_pct": 0.693,
-      "all_play_str": "61-27",
+      "ppg": 120.3,
+      "pa_pg": 109.65,
+      "record_str": "15-3",
+      "h2h_str": "7-2",
+      "median_str": "8-1",
+      "record_pct": 0.833,
+      "h2h_pct": 0.778,
+      "all_play_pct": 0.717,
+      "all_play_str": "71-28",
       "playoff_record_str": null,
-      "tds_per_game": 6.38,
+      "tds_per_game": 6.33,
       "eligible_for_records": false,
       "current": true
     },
@@ -9661,27 +9661,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 0,
-        "l": 8,
+        "l": 9,
         "t": 0
       },
       "median": {
         "w": 0,
-        "l": 8,
+        "l": 9,
         "t": 0
       },
       "record": {
         "w": 0,
-        "l": 16,
+        "l": 18,
         "t": 0
       },
-      "pf": 647.36,
-      "pa": 892.84,
+      "pf": 710.58,
+      "pa": 997.3,
       "all_play": {
         "w": 11,
-        "l": 77,
+        "l": 88,
         "t": 0
       },
       "high_week": {
@@ -9696,12 +9696,12 @@
         "opponent": "Matt Z",
         "phase": "regular"
       },
-      "starter_tds": 28,
-      "starter_yards": 4948,
+      "starter_tds": 30,
+      "starter_yards": 5432,
       "td_breakdown": {
         "pass": 15,
         "rush": 8,
-        "rec": 5,
+        "rec": 7,
         "idp": 0,
         "return": 0
       },
@@ -9713,22 +9713,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "0-16",
-        "pf": 647.36,
-        "pa": 892.84
+        "record": "0-18",
+        "pf": 710.58,
+        "pa": 997.3
       },
       "record_note": null,
-      "ppg": 80.92,
-      "pa_pg": 111.61,
-      "record_str": "0-16",
-      "h2h_str": "0-8",
-      "median_str": "0-8",
+      "ppg": 78.95,
+      "pa_pg": 110.81,
+      "record_str": "0-18",
+      "h2h_str": "0-9",
+      "median_str": "0-9",
       "record_pct": 0.0,
       "h2h_pct": 0.0,
-      "all_play_pct": 0.125,
-      "all_play_str": "11-77",
+      "all_play_pct": 0.111,
+      "all_play_str": "11-88",
       "playoff_record_str": null,
-      "tds_per_game": 3.5,
+      "tds_per_game": 3.33,
       "eligible_for_records": false,
       "current": true
     },
@@ -9740,27 +9740,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 1,
-        "l": 7,
+        "l": 8,
         "t": 0
       },
       "median": {
         "w": 1,
-        "l": 7,
+        "l": 8,
         "t": 0
       },
       "record": {
         "w": 2,
-        "l": 14,
+        "l": 16,
         "t": 0
       },
-      "pf": 674.98,
-      "pa": 906.94,
+      "pf": 744.46,
+      "pa": 993.5,
       "all_play": {
-        "w": 19,
-        "l": 69,
+        "w": 20,
+        "l": 79,
         "t": 0
       },
       "high_week": {
@@ -9775,12 +9775,12 @@
         "opponent": "Marc",
         "phase": "regular"
       },
-      "starter_tds": 27,
-      "starter_yards": 4815,
+      "starter_tds": 30,
+      "starter_yards": 5291,
       "td_breakdown": {
         "pass": 7,
-        "rush": 11,
-        "rec": 9,
+        "rush": 13,
+        "rec": 10,
         "idp": 0,
         "return": 0
       },
@@ -9792,22 +9792,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "2-14",
-        "pf": 674.98,
-        "pa": 906.94
+        "record": "2-16",
+        "pf": 744.46,
+        "pa": 993.5
       },
       "record_note": null,
-      "ppg": 84.37,
-      "pa_pg": 113.37,
-      "record_str": "2-14",
-      "h2h_str": "1-7",
-      "median_str": "1-7",
-      "record_pct": 0.125,
-      "h2h_pct": 0.125,
-      "all_play_pct": 0.216,
-      "all_play_str": "19-69",
+      "ppg": 82.72,
+      "pa_pg": 110.39,
+      "record_str": "2-16",
+      "h2h_str": "1-8",
+      "median_str": "1-8",
+      "record_pct": 0.111,
+      "h2h_pct": 0.111,
+      "all_play_pct": 0.202,
+      "all_play_str": "20-79",
       "playoff_record_str": null,
-      "tds_per_game": 3.38,
+      "tds_per_game": 3.33,
       "eligible_for_records": false,
       "current": true
     },
@@ -9819,27 +9819,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 6,
-        "l": 2,
+        "l": 3,
         "t": 0
       },
       "median": {
         "w": 6,
-        "l": 2,
+        "l": 3,
         "t": 0
       },
       "record": {
         "w": 12,
-        "l": 4,
+        "l": 6,
         "t": 0
       },
-      "pf": 925.92,
-      "pa": 803.38,
+      "pf": 1003.72,
+      "pa": 913.16,
       "all_play": {
-        "w": 56,
-        "l": 32,
+        "w": 58,
+        "l": 41,
         "t": 0
       },
       "high_week": {
@@ -9854,12 +9854,12 @@
         "opponent": "Marc",
         "phase": "regular"
       },
-      "starter_tds": 58,
-      "starter_yards": 5672,
+      "starter_tds": 61,
+      "starter_yards": 6277,
       "td_breakdown": {
         "pass": 16,
-        "rush": 26,
-        "rec": 15,
+        "rush": 28,
+        "rec": 16,
         "idp": 1,
         "return": 0
       },
@@ -9871,22 +9871,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "12-4",
-        "pf": 925.92,
-        "pa": 803.38
+        "record": "12-6",
+        "pf": 1003.72,
+        "pa": 913.16
       },
       "record_note": null,
-      "ppg": 115.74,
-      "pa_pg": 100.42,
-      "record_str": "12-4",
-      "h2h_str": "6-2",
-      "median_str": "6-2",
-      "record_pct": 0.75,
-      "h2h_pct": 0.75,
-      "all_play_pct": 0.636,
-      "all_play_str": "56-32",
+      "ppg": 111.52,
+      "pa_pg": 101.46,
+      "record_str": "12-6",
+      "h2h_str": "6-3",
+      "median_str": "6-3",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.586,
+      "all_play_str": "58-41",
       "playoff_record_str": null,
-      "tds_per_game": 7.25,
+      "tds_per_game": 6.78,
       "eligible_for_records": false,
       "current": true
     },
@@ -9898,27 +9898,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 5,
+        "w": 6,
         "l": 3,
         "t": 0
       },
       "median": {
-        "w": 5,
+        "w": 6,
         "l": 3,
         "t": 0
       },
       "record": {
-        "w": 10,
+        "w": 12,
         "l": 6,
         "t": 0
       },
-      "pf": 889.76,
-      "pa": 784.74,
+      "pf": 995.72,
+      "pa": 865.84,
       "all_play": {
-        "w": 53,
-        "l": 35,
+        "w": 60,
+        "l": 39,
         "t": 0
       },
       "high_week": {
@@ -9933,12 +9933,12 @@
         "opponent": "Matt Z",
         "phase": "regular"
       },
-      "starter_tds": 35,
-      "starter_yards": 6126,
+      "starter_tds": 40,
+      "starter_yards": 6908,
       "td_breakdown": {
-        "pass": 11,
-        "rush": 12,
-        "rec": 12,
+        "pass": 13,
+        "rush": 13,
+        "rec": 14,
         "idp": 0,
         "return": 0
       },
@@ -9950,22 +9950,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "10-6",
-        "pf": 889.76,
-        "pa": 784.74
+        "record": "12-6",
+        "pf": 995.72,
+        "pa": 865.84
       },
       "record_note": null,
-      "ppg": 111.22,
-      "pa_pg": 98.09,
-      "record_str": "10-6",
-      "h2h_str": "5-3",
-      "median_str": "5-3",
-      "record_pct": 0.625,
-      "h2h_pct": 0.625,
-      "all_play_pct": 0.602,
-      "all_play_str": "53-35",
+      "ppg": 110.64,
+      "pa_pg": 96.2,
+      "record_str": "12-6",
+      "h2h_str": "6-3",
+      "median_str": "6-3",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.606,
+      "all_play_str": "60-39",
       "playoff_record_str": null,
-      "tds_per_game": 4.38,
+      "tds_per_game": 4.44,
       "eligible_for_records": false,
       "current": true
     },
@@ -9977,26 +9977,26 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 6,
+        "w": 7,
         "l": 2,
         "t": 0
       },
       "median": {
-        "w": 5,
+        "w": 6,
         "l": 3,
         "t": 0
       },
       "record": {
-        "w": 11,
+        "w": 13,
         "l": 5,
         "t": 0
       },
-      "pf": 967.36,
-      "pa": 808.5,
+      "pf": 1124.84,
+      "pa": 903.64,
       "all_play": {
-        "w": 56,
+        "w": 67,
         "l": 32,
         "t": 0
       },
@@ -10012,12 +10012,12 @@
         "opponent": "Vlad",
         "phase": "regular"
       },
-      "starter_tds": 46,
-      "starter_yards": 6551,
+      "starter_tds": 57,
+      "starter_yards": 7499,
       "td_breakdown": {
-        "pass": 13,
-        "rush": 17,
-        "rec": 16,
+        "pass": 16,
+        "rush": 21,
+        "rec": 20,
         "idp": 0,
         "return": 0
       },
@@ -10029,22 +10029,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "11-5",
-        "pf": 967.36,
-        "pa": 808.5
+        "record": "13-5",
+        "pf": 1124.84,
+        "pa": 903.64
       },
       "record_note": null,
-      "ppg": 120.92,
-      "pa_pg": 101.06,
-      "record_str": "11-5",
-      "h2h_str": "6-2",
-      "median_str": "5-3",
-      "record_pct": 0.688,
-      "h2h_pct": 0.75,
-      "all_play_pct": 0.636,
-      "all_play_str": "56-32",
+      "ppg": 124.98,
+      "pa_pg": 100.4,
+      "record_str": "13-5",
+      "h2h_str": "7-2",
+      "median_str": "6-3",
+      "record_pct": 0.722,
+      "h2h_pct": 0.778,
+      "all_play_pct": 0.677,
+      "all_play_str": "67-32",
       "playoff_record_str": null,
-      "tds_per_game": 5.75,
+      "tds_per_game": 6.33,
       "eligible_for_records": false,
       "current": true
     },
@@ -10056,27 +10056,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
         "w": 6,
-        "l": 2,
+        "l": 3,
         "t": 0
       },
       "median": {
-        "w": 5,
+        "w": 6,
         "l": 3,
         "t": 0
       },
       "record": {
-        "w": 11,
-        "l": 5,
+        "w": 12,
+        "l": 6,
         "t": 0
       },
-      "pf": 897.3,
-      "pa": 821.92,
+      "pf": 1004.68,
+      "pa": 951.58,
       "all_play": {
-        "w": 52,
-        "l": 36,
+        "w": 60,
+        "l": 39,
         "t": 0
       },
       "high_week": {
@@ -10091,12 +10091,12 @@
         "opponent": "Brett",
         "phase": "regular"
       },
-      "starter_tds": 46,
-      "starter_yards": 5800,
+      "starter_tds": 52,
+      "starter_yards": 6489,
       "td_breakdown": {
-        "pass": 10,
-        "rush": 19,
-        "rec": 17,
+        "pass": 12,
+        "rush": 21,
+        "rec": 19,
         "idp": 0,
         "return": 0
       },
@@ -10108,22 +10108,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "11-5",
-        "pf": 897.3,
-        "pa": 821.92
+        "record": "12-6",
+        "pf": 1004.68,
+        "pa": 951.58
       },
       "record_note": null,
-      "ppg": 112.16,
-      "pa_pg": 102.74,
-      "record_str": "11-5",
-      "h2h_str": "6-2",
-      "median_str": "5-3",
-      "record_pct": 0.688,
-      "h2h_pct": 0.75,
-      "all_play_pct": 0.591,
-      "all_play_str": "52-36",
+      "ppg": 111.63,
+      "pa_pg": 105.73,
+      "record_str": "12-6",
+      "h2h_str": "6-3",
+      "median_str": "6-3",
+      "record_pct": 0.667,
+      "h2h_pct": 0.667,
+      "all_play_pct": 0.606,
+      "all_play_str": "60-39",
       "playoff_record_str": null,
-      "tds_per_game": 5.75,
+      "tds_per_game": 5.78,
       "eligible_for_records": false,
       "current": true
     },
@@ -10135,27 +10135,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 4,
+        "w": 5,
         "l": 4,
         "t": 0
       },
       "median": {
         "w": 6,
-        "l": 2,
+        "l": 3,
         "t": 0
       },
       "record": {
-        "w": 10,
-        "l": 6,
+        "w": 11,
+        "l": 7,
         "t": 0
       },
-      "pf": 940.7,
-      "pa": 1000.44,
+      "pf": 1027.26,
+      "pa": 1069.92,
       "all_play": {
-        "w": 59,
-        "l": 29,
+        "w": 63,
+        "l": 36,
         "t": 0
       },
       "high_week": {
@@ -10165,17 +10165,17 @@
         "phase": "regular"
       },
       "low_week": {
-        "week": 3,
-        "points": 99.36,
-        "opponent": "Jake",
+        "week": 9,
+        "points": 86.56,
+        "opponent": "Juan",
         "phase": "regular"
       },
-      "starter_tds": 47,
-      "starter_yards": 6296,
+      "starter_tds": 50,
+      "starter_yards": 6937,
       "td_breakdown": {
-        "pass": 12,
-        "rush": 17,
-        "rec": 18,
+        "pass": 13,
+        "rush": 18,
+        "rec": 19,
         "idp": 0,
         "return": 0
       },
@@ -10187,22 +10187,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "10-6",
-        "pf": 940.7,
-        "pa": 1000.44
+        "record": "11-7",
+        "pf": 1027.26,
+        "pa": 1069.92
       },
       "record_note": null,
-      "ppg": 117.59,
-      "pa_pg": 125.06,
-      "record_str": "10-6",
-      "h2h_str": "4-4",
-      "median_str": "6-2",
-      "record_pct": 0.625,
-      "h2h_pct": 0.5,
-      "all_play_pct": 0.67,
-      "all_play_str": "59-29",
+      "ppg": 114.14,
+      "pa_pg": 118.88,
+      "record_str": "11-7",
+      "h2h_str": "5-4",
+      "median_str": "6-3",
+      "record_pct": 0.611,
+      "h2h_pct": 0.556,
+      "all_play_pct": 0.636,
+      "all_play_str": "63-36",
       "playoff_record_str": null,
-      "tds_per_game": 5.88,
+      "tds_per_game": 5.56,
       "eligible_for_records": false,
       "current": true
     },
@@ -10214,27 +10214,27 @@
       "weeks_managed": null,
       "partial": false,
       "in_progress": true,
-      "games": 8,
+      "games": 9,
       "h2h": {
-        "w": 3,
+        "w": 4,
         "l": 5,
         "t": 0
       },
       "median": {
-        "w": 4,
+        "w": 5,
         "l": 4,
         "t": 0
       },
       "record": {
-        "w": 7,
+        "w": 9,
         "l": 9,
         "t": 0
       },
-      "pf": 905.02,
-      "pa": 899.46,
+      "pf": 1014.8,
+      "pa": 977.26,
       "all_play": {
-        "w": 44,
-        "l": 44,
+        "w": 53,
+        "l": 46,
         "t": 0
       },
       "high_week": {
@@ -10249,12 +10249,12 @@
         "opponent": "Andrew",
         "phase": "regular"
       },
-      "starter_tds": 45,
-      "starter_yards": 6182,
+      "starter_tds": 49,
+      "starter_yards": 7055,
       "td_breakdown": {
-        "pass": 18,
-        "rush": 14,
-        "rec": 13,
+        "pass": 19,
+        "rush": 15,
+        "rec": 15,
         "idp": 0,
         "return": 0
       },
@@ -10266,22 +10266,22 @@
         "t": 0
       },
       "sleeper_standings": {
-        "record": "7-9",
-        "pf": 905.02,
-        "pa": 899.46
+        "record": "9-9",
+        "pf": 1014.8,
+        "pa": 977.26
       },
       "record_note": null,
-      "ppg": 113.13,
-      "pa_pg": 112.43,
-      "record_str": "7-9",
-      "h2h_str": "3-5",
-      "median_str": "4-4",
-      "record_pct": 0.438,
-      "h2h_pct": 0.375,
-      "all_play_pct": 0.5,
-      "all_play_str": "44-44",
+      "ppg": 112.76,
+      "pa_pg": 108.58,
+      "record_str": "9-9",
+      "h2h_str": "4-5",
+      "median_str": "5-4",
+      "record_pct": 0.5,
+      "h2h_pct": 0.444,
+      "all_play_pct": 0.535,
+      "all_play_str": "53-46",
       "playoff_record_str": null,
-      "tds_per_game": 5.62,
+      "tds_per_game": 5.44,
       "eligible_for_records": false,
       "current": true
     }
@@ -10783,8 +10783,8 @@
     }
   },
   "notable": [
-    "All-time points leader: Doug, 6,837.76 regular-season PF over 58 games (117.89 per game).",
-    "Best career points per game (20+ games): Juan, 120.57.",
+    "All-time points leader: Doug, 6,967.42 regular-season PF over 59 games (118.09 per game).",
+    "Best career points per game (20+ games): Juan, 119.46.",
     "Best career regular-season record (20+ games): Deion, 18-8 (0.692).",
     "Most titles: Doug 2.",
     "Best season record: Juan 2024, 20-6 (0.769) (tied on win pct with Deion 2022 10-3, Juan 2023 10-3; PF breaks the tie). Worst: Paul 2025, 3-19 (0.136).",
