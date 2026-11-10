@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T06:53:31-07:00",
+    "generated_at": "2026-11-10T06:51:46-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 9,
+    "current_week": 10,
     "counts": {
-      "transactions": 324
+      "transactions": 325
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,109 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1425736192824987648",
+      "type": "trade",
+      "week": 9,
+      "sleeper_leg": 9,
+      "phase": "regular",
+      "created": "2026-11-09T21:21:46-07:00",
+      "processed": "2026-11-09T21:24:04-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        },
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Jake gets Davante Adams, 2027 Rd 3 pick (Marc); Matt Z gets Luther Burden III, 2027 Rd 5 pick (Lij)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "2133",
+              "name": "Davante Adams",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12519",
+              "name": "Luther Burden III",
+              "position": "WR",
+              "nfl_team": "CHI"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Marc",
+              "from": "Matt Z"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Lij",
+              "to": "Matt Z"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        },
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "12519",
+              "name": "Luther Burden III",
+              "position": "WR",
+              "nfl_team": "CHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "2133",
+              "name": "Davante Adams",
+              "position": "WR",
+              "nfl_team": "LAR"
+            }
+          ],
+          "picks_received": [
+            {
+              "season": 2027,
+              "round": 5,
+              "original_owner": "Lij",
+              "from": "Jake"
+            }
+          ],
+          "picks_sent": [
+            {
+              "season": 2027,
+              "round": 3,
+              "original_owner": "Marc",
+              "to": "Jake"
+            }
+          ],
+          "faab_received": 0,
+          "faab_sent": 0
+        }
+      ]
+    },
     {
       "id": "1425308536082014208",
       "type": "free_agent",
@@ -13642,21 +13745,21 @@
   ],
   "summary": {
     "totals_by_type": {
-      "trade": 23,
+      "trade": 24,
       "waiver": 77,
       "free_agent": 222,
       "commissioner": 2,
-      "total": 324
+      "total": 325
     },
     "regular_season_totals_by_type": {
-      "trade": 15,
+      "trade": 16,
       "waiver": 76,
       "free_agent": 150,
       "commissioner": 2,
-      "total": 243
+      "total": 244
     },
     "totals_by_phase": {
-      "regular": 243,
+      "regular": 244,
       "preseason": 31,
       "offseason": 50
     },
@@ -13670,19 +13773,19 @@
       "6": 38,
       "7": 26,
       "8": 25,
-      "9": 13
+      "9": 14
     },
     "most_active_manager": {
       "managers": [
         "Matt Z"
       ],
-      "count": 46
+      "count": 47
     },
     "most_active_manager_regular_season": {
       "managers": [
         "Matt Z"
       ],
-      "count": 41
+      "count": 42
     },
     "most_trades": {
       "managers": [
@@ -13899,25 +14002,25 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 46,
-        "regular_season_transactions": 41,
-        "trades": 4,
+        "transactions": 47,
+        "regular_season_transactions": 42,
+        "trades": 5,
         "waiver_claims": 7,
         "free_agent_moves": 35,
-        "players_added": 30,
-        "players_dropped": 31
+        "players_added": 31,
+        "players_dropped": 32
       },
       {
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 44,
-        "regular_season_transactions": 32,
-        "trades": 5,
+        "transactions": 45,
+        "regular_season_transactions": 33,
+        "trades": 6,
         "waiver_claims": 8,
         "free_agent_moves": 31,
-        "players_added": 34,
-        "players_dropped": 41
+        "players_added": 35,
+        "players_dropped": 42
       },
       {
         "roster_id": 6,
@@ -14318,8 +14421,8 @@
       "season": 2027,
       "round": 3,
       "original_owner": "Marc",
-      "current_owner": "Matt Z",
-      "current_team": "Rolling With Mahomies",
+      "current_owner": "Jake",
+      "current_team": "Top Play",
       "draft_complete": false
     },
     {
@@ -14342,8 +14445,8 @@
       "season": 2027,
       "round": 5,
       "original_owner": "Lij",
-      "current_owner": "Jake",
-      "current_team": "Top Play",
+      "current_owner": "Matt Z",
+      "current_team": "Rolling With Mahomies",
       "draft_complete": false
     },
     {
