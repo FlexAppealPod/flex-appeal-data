@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T06:49:35-07:00",
+    "generated_at": "2026-11-13T06:48:10-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 10,
     "counts": {
-      "transactions": 342
+      "transactions": 346
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,149 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1426802559439360000",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-12T19:59:08-07:00",
+      "processed": "2026-11-12T19:59:08-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew adds Nick Bolton",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [
+            {
+              "player_id": "7648",
+              "name": "Nick Bolton",
+              "position": "LB",
+              "nfl_team": "KC"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1426802054818463744",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-12T19:57:07-07:00",
+      "processed": "2026-11-12T19:57:07-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA"
+        }
+      ],
+      "headline": "Andrew drops Makai Lemon",
+      "sides": [
+        {
+          "roster_id": 12,
+          "manager": "Andrew",
+          "team_name": "Carried by RA",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13294",
+              "name": "Makai Lemon",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1426754945360621568",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-12T16:49:56-07:00",
+      "processed": "2026-11-12T16:49:56-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Reggie Virgil",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "13297",
+              "name": "Reggie Virgil",
+              "position": "WR",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1426754764942614528",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-12T16:49:13-07:00",
+      "processed": "2026-11-12T16:49:13-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Terrance Ferguson / drops Mike Gesicki",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "12487",
+              "name": "Terrance Ferguson",
+              "position": "TE",
+              "nfl_team": "LAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4993",
+              "name": "Mike Gesicki",
+              "position": "TE",
+              "nfl_team": "CIN"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1426502545341186048",
       "type": "free_agent",
@@ -14383,19 +14526,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 85,
-      "free_agent": 231,
+      "free_agent": 235,
       "commissioner": 2,
-      "total": 342
+      "total": 346
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 84,
-      "free_agent": 159,
+      "free_agent": 163,
       "commissioner": 2,
-      "total": 261
+      "total": 265
     },
     "totals_by_phase": {
-      "regular": 261,
+      "regular": 265,
       "preseason": 31,
       "offseason": 50
     },
@@ -14410,7 +14553,7 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 7
+      "10": 11
     },
     "most_active_manager": {
       "managers": [
@@ -14690,13 +14833,13 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 37,
-        "regular_season_transactions": 32,
+        "transactions": 39,
+        "regular_season_transactions": 34,
         "trades": 0,
         "waiver_claims": 14,
-        "free_agent_moves": 23,
-        "players_added": 31,
-        "players_dropped": 33
+        "free_agent_moves": 25,
+        "players_added": 33,
+        "players_dropped": 34
       },
       {
         "roster_id": 11,
@@ -14711,6 +14854,18 @@
         "players_dropped": 28
       },
       {
+        "roster_id": 12,
+        "manager": "Andrew",
+        "team_name": "Carried by RA",
+        "transactions": 26,
+        "regular_season_transactions": 22,
+        "trades": 7,
+        "waiver_claims": 5,
+        "free_agent_moves": 12,
+        "players_added": 17,
+        "players_dropped": 19
+      },
+      {
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
@@ -14721,18 +14876,6 @@
         "free_agent_moves": 18,
         "players_added": 17,
         "players_dropped": 21
-      },
-      {
-        "roster_id": 12,
-        "manager": "Andrew",
-        "team_name": "Carried by RA",
-        "transactions": 24,
-        "regular_season_transactions": 20,
-        "trades": 7,
-        "waiver_claims": 5,
-        "free_agent_moves": 10,
-        "players_added": 16,
-        "players_dropped": 18
       },
       {
         "roster_id": 8,
