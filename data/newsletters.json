@@ -2,6 +2,16 @@
   "_note": "Weekly Flex Appeal newsletters (PDF). pdf/cover are repo paths; the site builds raw GitHub URLs from them. Newest first.",
   "newsletters": [
     {
+      "id": "2026-w10",
+      "season": 2026,
+      "week": 10,
+      "title": "Flex Appeal Newsletter – Week 10",
+      "date": "2026-11-13",
+      "pdf": "newsletters/2026/Flex_Appeal_Newsletter_Week10.pdf",
+      "cover": "newsletters/2026/Flex_Appeal_Newsletter_Week10_cover.png",
+      "blurb": "Week 9 recap, the deadline trade, Week 10 Flex Rankings and the Playoff Race Tracker."
+    },
+    {
       "id": "2026-w9",
       "season": 2026,
       "week": 9,
