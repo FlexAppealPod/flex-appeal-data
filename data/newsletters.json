@@ -1,0 +1,35 @@
+{
+  "_note": "Weekly Flex Appeal newsletters (PDF). pdf/cover are repo paths; the site builds raw GitHub URLs from them. Newest first.",
+  "newsletters": [
+    {
+      "id": "2026-w9",
+      "season": 2026,
+      "week": 9,
+      "title": "Flex Appeal Newsletter – Week 9",
+      "date": "2026-11-07",
+      "pdf": "newsletters/2026/Flex_Appeal_Newsletter_Week9.pdf",
+      "cover": "newsletters/2026/Flex_Appeal_Newsletter_Week9_cover.png",
+      "blurb": "Three weeks. Seven tickets. One bye. Week 8 recap, the playoff picture and Week 9 preview."
+    },
+    {
+      "id": "2026-w7",
+      "season": 2026,
+      "week": 7,
+      "title": "Flex Appeal Newsletter – Week 7",
+      "date": "2026-10-23",
+      "pdf": "newsletters/2026/Flex_Appeal_Newsletter_Week7.pdf",
+      "cover": "newsletters/2026/Flex_Appeal_Newsletter_Week7_cover.png",
+      "blurb": "Week 6 in review, Week 7 Flex Rankings and Week 7 live."
+    },
+    {
+      "id": "2026-w6",
+      "season": 2026,
+      "week": 6,
+      "title": "Flex Appeal Newsletter – Week 6",
+      "date": "2026-10-16",
+      "pdf": "newsletters/2026/Flex_Appeal_Newsletter_Week6.pdf",
+      "cover": "newsletters/2026/Flex_Appeal_Newsletter_Week6_cover.png",
+      "blurb": "Week 5 in review, the trade frenzy and Week 6 preview."
+    }
+  ]
+}
