@@ -578,6 +578,7 @@ def season_record_lists(teams, weekly, top_n=10, phase_of=None):
                 "owner_b": b["owner"],
                 "points_b": pb,
                 "margin": margin,
+                "playoff": phase_of(week, rid) == "playoff",
             })
     # high scores: each team-game as a row
     highs = []
@@ -594,6 +595,7 @@ def season_record_lists(teams, weekly, top_n=10, phase_of=None):
                 "opponent": opp.get("owner") or "",
                 "opponent_points": info["opp_pts"],
                 "margin": r2(abs(info["points"] - (info["opp_pts"] or 0))),
+                "playoff": phase_of(week, rid) == "playoff",
             }
             highs.append(row)
             lows.append(dict(row))
@@ -608,6 +610,7 @@ def season_record_lists(teams, weekly, top_n=10, phase_of=None):
                 "opponent": g["owner_b"] if g["points_a"] >= g["points_b"] else g["owner_a"],
                 "opponent_points": min(g["points_a"], g["points_b"]),
                 "margin": g["margin"],
+                "playoff": g["playoff"],
             }
             for g in games
         ],
@@ -622,6 +625,7 @@ def season_record_lists(teams, weekly, top_n=10, phase_of=None):
                 "opponent": g["owner_b"] if g["points_a"] >= g["points_b"] else g["owner_a"],
                 "opponent_points": min(g["points_a"], g["points_b"]),
                 "margin": g["margin"],
+                "playoff": g["playoff"],
             }
             for g in games
         ],
@@ -853,38 +857,26 @@ def build_history(season_2026_agg, season_records_2026):
     career.sort(key=lambda r: (-r["total_pf"], -r["wins"], r["owner"]))
 
     def hist_high(row):
-        return {
-            "season": int(row["season"]),
-            "week": int(row["week"]),
-            "owner": row["manager"],
-            "points": float(row["points"]),
-            "opponent": row["opponent"],
-        }
+        return RP.record_score_entry(
+            row["season"], row["week"], row["manager"], float(row["points"]), row["opponent"],
+            row["playoff_week"] != "0",
+        )
 
     def hist_low(row):
         return hist_high(row)
 
     def hist_blowout(row):
-        return {
-            "season": int(row["season"]),
-            "week": int(row["week"]),
-            "owner": row["winner"],
-            "points": float(row["points_a"]) if row["winner"] == row["manager_a"] else float(row["points_b"]),
-            "opponent": row["manager_b"] if row["winner"] == row["manager_a"] else row["manager_a"],
-            "opponent_points": float(row["points_b"]) if row["winner"] == row["manager_a"] else float(row["points_a"]),
-            "margin": float(row["margin"]),
-        }
+        return RP.record_game_entry(
+            row["season"], row["week"], row["winner"],
+            float(row["points_a"]) if row["winner"] == row["manager_a"] else float(row["points_b"]),
+            row["manager_b"] if row["winner"] == row["manager_a"] else row["manager_a"],
+            float(row["points_b"]) if row["winner"] == row["manager_a"] else float(row["points_a"]),
+            float(row["margin"]),
+            row["playoff"],
+        )
 
     def hist_closest(row):
-        return {
-            "season": int(row["season"]),
-            "week": int(row["week"]),
-            "owner": row["winner"],
-            "points": float(row["points_a"]) if row["winner"] == row["manager_a"] else float(row["points_b"]),
-            "opponent": row["manager_b"] if row["winner"] == row["manager_a"] else row["manager_a"],
-            "opponent_points": float(row["points_b"]) if row["winner"] == row["manager_a"] else float(row["points_a"]),
-            "margin": float(row["margin"]),
-        }
+        return hist_blowout(row)
 
     # Past-season extremes: every team-game in team_games.csv except consolation games
     # (records = regular season + winners bracket incl. 3rd/5th-place games; record_phases.py).
@@ -895,48 +887,36 @@ def build_history(season_2026_agg, season_records_2026):
     all_low = [hist_low(r) for r in record_rows]
     pair_rows = [{"season": r["season"], "week": r["week"], "manager_a": r["manager"], "points_a": r["points"],
                   "manager_b": r["opponent"], "points_b": r["opp_points"], "margin": f"{abs(float(r['margin'])):.2f}",
-                  "winner": r["manager"]}
+                  "winner": r["manager"], "playoff": r["playoff_week"] != "0"}
                  for r in record_rows if float(r["points"]) > float(r["opp_points"])]
     all_blow = [hist_blowout(r) for r in pair_rows]
     all_close = [hist_closest(r) for r in pair_rows]
 
     # Merge 2026 season extremes
     for h in season_records_2026["high_scores"]:
-        all_high.append({
-            "season": 2026,
-            "week": h["week"],
-            "owner": h["owner"],
-            "points": h["points"],
-            "opponent": h["opponent"],
-        })
+        all_high.append(RP.record_score_entry(
+            2026, h["week"], h["owner"], h["points"], h["opponent"], h.get("playoff", False),
+        ))
     for h in season_records_2026["low_scores"]:
-        all_low.append({
-            "season": 2026,
-            "week": h["week"],
-            "owner": h["owner"],
-            "points": h["points"],
-            "opponent": h["opponent"],
-        })
+        all_low.append(RP.record_score_entry(
+            2026, h["week"], h["owner"], h["points"], h["opponent"], h.get("playoff", False),
+        ))
     for h in season_records_2026["blowouts"]:
-        all_blow.append({
-            "season": 2026,
-            "week": h["week"],
-            "owner": h["owner"],
-            "points": h["points"],
-            "opponent": h["opponent"],
-            "opponent_points": h["opponent_points"],
-            "margin": h["margin"],
-        })
+        all_blow.append(RP.record_game_entry(
+            2026, h["week"], h["owner"], h["points"], h["opponent"], h["opponent_points"], h["margin"],
+            h.get("playoff", False),
+        ))
     for h in season_records_2026["closest_games"]:
-        all_close.append({
-            "season": 2026,
-            "week": h["week"],
-            "owner": h["owner"],
-            "points": h["points"],
-            "opponent": h["opponent"],
-            "opponent_points": h["opponent_points"],
-            "margin": h["margin"],
-        })
+        all_close.append(RP.record_game_entry(
+            2026, h["week"], h["owner"], h["points"], h["opponent"], h["opponent_points"], h["margin"],
+            h.get("playoff", False),
+        ))
+
+    # 2022 ESPN (regular season + winners bracket incl. 3rd-place; no consolation)
+    all_high.extend(RP.espn_2022_record_scores())
+    all_low.extend(RP.espn_2022_record_scores())
+    all_blow.extend(RP.espn_2022_record_games())
+    all_close.extend(RP.espn_2022_record_games())
 
     all_high.sort(key=lambda r: r["points"], reverse=True)
     all_low.sort(key=lambda r: r["points"])
@@ -950,7 +930,7 @@ def build_history(season_2026_agg, season_records_2026):
         "all_time_low_scores": all_low[:10],
         "biggest_blowouts": all_blow[:15],
         "closest_games": all_close[:15],
-        "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded.",
+        "records_note": RP.RECORDS_NOTE,
     }
 
 

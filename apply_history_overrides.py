@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Merge manual rulings into data/history.json.
 
-build_site_data.py only knows Sleeper seasons (2023+), so run this right after it:
+build_site_data.py writes Sleeper seasons (2023+) and ESPN 2022 record-list games; run this right after it:
 
     python3 build_site_data.py && python3 apply_history_overrides.py
 
@@ -14,12 +14,15 @@ build_site_data.py only knows Sleeper seasons (2023+), so run this right after i
 2. data/sources/score_overrides.json: official standings totals for weeks where Sleeper's
    matchup data under-counts (2024 Week 7). Rebuilds all_time_high_scores,
    all_time_low_scores, biggest_blowouts and closest_games from the Sleeper history
-   team_games.csv with those totals (2026 entries are kept as built), leaving out consolation
+   team_games.csv with those totals, plus ESPN 2022 (data/sources/espn_2022_games.json)
+   and 2026 entries from season_records.json, leaving out consolation
    games (records = regular season + winners bracket incl. 3rd/5th-place games; see
-   record_phases.py), and moves the
+   record_phases.py). Each list entry gets playoff true/false (* = playoff game) and
+   moves the
    career H2H W/L for any game whose winner flips. build_site_data.py rewrites
    history.json from scratch every run; the "score_overrides_applied" key marks a file
-   that is already patched, so this stays idempotent.
+   that is already patched, so this stays idempotent. finalize_record_lists always
+   re-merges 2022 and re-applies playoff flags so a skipped rebuild still keeps them.
 4. data/sources/owner_overrides.json: Sleeper (and so the Sleeper history CSVs) credits a roster
    to its CURRENT owner. "season_owners" (whole season, e.g. 2024 roster 11 = Aaron, not Matt
    Atkinson) moves that season's career line (seasons, H2H W/L, PF, playoffs, titles, from
@@ -42,8 +45,36 @@ MANUAL = ROOT / "data" / "sources" / "champions_manual.json"
 SCORE_OVERRIDES = ROOT / "data" / "sources" / "score_overrides.json"
 DISPLAY_NAMES = ROOT / "data" / "sources" / "display_names.json"
 OWNER_OVERRIDES = ROOT / "data" / "sources" / "owner_overrides.json"
+SEASON_RECORDS = ROOT / "data" / "season_records.json"
 SLEEPER_HISTORY = Path("/workspace/flex-appeal/sleeper/history")  # same source build_site_data.py reads
 LIST_LEN = {"all_time_high_scores": 15, "all_time_low_scores": 10, "biggest_blowouts": 15, "closest_games": 15}
+
+
+def season_2026_record_entries() -> dict[str, list]:
+    """2026 pool for all-time lists, from season_records.json.
+
+    Do not take 2026 rows from the already-trimmed all-time lists: a pre-override
+    Sleeper score (e.g. 2024 Week 7) can crowd a real 2026 entry off the first
+    cut, and it would never come back. Season top-10 lists are enough to fill
+    all-time top 10/15 for 2026.
+    """
+    empty = {k: [] for k in LIST_LEN}
+    if not SEASON_RECORDS.exists():
+        return empty
+    sr = json.loads(SEASON_RECORDS.read_text())
+    score = lambda h: RP.record_score_entry(  # noqa: E731
+        2026, h["week"], h["owner"], h["points"], h["opponent"], h.get("playoff", False),
+    )
+    game = lambda h: RP.record_game_entry(  # noqa: E731
+        2026, h["week"], h["owner"], h["points"], h["opponent"], h["opponent_points"], h["margin"],
+        h.get("playoff", False),
+    )
+    return {
+        "all_time_high_scores": [score(h) for h in sr.get("high_scores", [])],
+        "all_time_low_scores": [score(h) for h in sr.get("low_scores", [])],
+        "biggest_blowouts": [game(h) for h in sr.get("blowouts", [])],
+        "closest_games": [game(h) for h in sr.get("closest_games", [])],
+    }
 
 
 def apply_score_overrides(hist: dict) -> None:
@@ -77,20 +108,24 @@ def apply_score_overrides(hist: dict) -> None:
         return
     for g in games:
         g["margin"] = round(abs(g["points"] - g["opponent_points"]), 2)
-    keep26 = {k: [e for e in hist.get(k, []) if int(e["season"]) > max(g["season"] for g in games)] for k in LIST_LEN}
-    team = lambda g: {"season": g["season"], "week": g["week"], "owner": g["owner"], "points": g["points"], "opponent": g["opponent"]}  # noqa: E731
-    pair = lambda g: {**team(g), "opponent_points": g["opponent_points"], "margin": g["margin"]}  # noqa: E731
+    # 2026 comes from season_records.json (full season lists), not the already-trimmed all-time lists.
+    keep26 = season_2026_record_entries()
+    # After dropping consolation games, playoff_week != 0 is a winners-bracket game (incl. 3rd/5th-place).
+    team = lambda g: RP.record_score_entry(g["season"], g["week"], g["owner"], g["points"], g["opponent"], g["playoff"])  # noqa: E731
+    pair = lambda g: RP.record_game_entry(g["season"], g["week"], g["owner"], g["points"], g["opponent"], g["opponent_points"], g["margin"], g["playoff"])  # noqa: E731
     consolation = RP.history_consolation_games(SLEEPER_HISTORY)
     rec_games = [g for g in games if (g["season"], g["week"], str(g["mid"])) not in consolation]  # no consolation games in records
     winners = [g for g in rec_games if g["points"] > g["opponent_points"]]
+    espn_scores, espn_games = RP.espn_2022_record_scores(), RP.espn_2022_record_games()
     new = {
-        "all_time_high_scores": sorted([team(g) for g in rec_games] + keep26["all_time_high_scores"], key=lambda e: e["points"], reverse=True),
-        "all_time_low_scores": sorted([team(g) for g in rec_games] + keep26["all_time_low_scores"], key=lambda e: e["points"]),
-        "biggest_blowouts": sorted([pair(g) for g in winners] + keep26["biggest_blowouts"], key=lambda e: e["margin"], reverse=True),
-        "closest_games": sorted([pair(g) for g in winners] + keep26["closest_games"], key=lambda e: e["margin"]),
+        "all_time_high_scores": sorted([team(g) for g in rec_games] + keep26["all_time_high_scores"] + espn_scores, key=lambda e: e["points"], reverse=True),
+        "all_time_low_scores": sorted([team(g) for g in rec_games] + keep26["all_time_low_scores"] + espn_scores, key=lambda e: e["points"]),
+        "biggest_blowouts": sorted([pair(g) for g in winners] + keep26["biggest_blowouts"] + espn_games, key=lambda e: e["margin"], reverse=True),
+        "closest_games": sorted([pair(g) for g in winners] + keep26["closest_games"] + espn_games, key=lambda e: e["margin"]),
     }
     for k, n in LIST_LEN.items():
         hist[k] = new[k][:n]
+    hist["records_note"] = RP.RECORDS_NOTE
     # career H2H (regular season) for flipped results
     career = {c["owner"]: c for c in hist.get("career", [])}
     for g in games:
@@ -253,6 +288,30 @@ def apply_display_names(hist: dict) -> None:
             row["championships"] = titles
 
 
+def finalize_record_lists(hist: dict) -> None:
+    """Re-merge ESPN 2022 and ensure playoff flags / records_note. Idempotent.
+
+    apply_score_overrides already does this when it rebuilds the lists; this still
+    runs after a skipped rebuild (score_overrides_applied already set) so Tuesday
+    output stays complete. Existing 2022 rows are replaced from source; other
+    seasons are kept and annotated.
+    """
+    scores, games = RP.espn_2022_record_scores(), RP.espn_2022_record_games()
+    keep26 = season_2026_record_entries()
+    extra = {
+        "all_time_high_scores": (scores, "points", True),
+        "all_time_low_scores": (scores, "points", False),
+        "biggest_blowouts": (games, "margin", True),
+        "closest_games": (games, "margin", False),
+    }
+    for k, n in LIST_LEN.items():
+        added, sort_key, reverse = extra[k]
+        # 2022 and 2026 are replaced from source so a skipped/partial rebuild cannot drop them
+        rest = [RP.annotate_playoff(e) for e in hist.get(k, []) if int(e.get("season", 0)) not in (2022, 2026)]
+        hist[k] = sorted(rest + keep26[k] + added, key=lambda e: e[sort_key], reverse=reverse)[:n]
+    hist["records_note"] = RP.RECORDS_NOTE
+
+
 def main() -> None:
     hist = json.loads(HISTORY.read_text())
     manual = json.loads(MANUAL.read_text())["seasons"]
@@ -267,6 +326,7 @@ def main() -> None:
     apply_score_overrides(hist)
     apply_display_names(hist)
     apply_season_owner_fixes(hist)  # after display names: Legacy Manager rows already use them (e.g. "Mike")
+    finalize_record_lists(hist)  # 2022 + playoff flags survive a skipped score-override rebuild
     HISTORY.write_text(json.dumps(hist, indent=2, ensure_ascii=False) + "\n")
     print("history.json champions:", [(c["season"], c["champion"]) for c in hist["champions"]])
 

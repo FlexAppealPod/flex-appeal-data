@@ -225,105 +225,122 @@
       "week": 11,
       "owner": "Douglas Sullivan",
       "points": 202.08,
-      "opponent": "Elijah Bruette"
+      "opponent": "Elijah Bruette",
+      "playoff": false
     },
     {
       "season": 2024,
       "week": 17,
       "owner": "Juan Rodriguez",
       "points": 199.68,
-      "opponent": "Vlad Barber"
+      "opponent": "Vlad Barber",
+      "playoff": true,
+      "note": "Playoff game"
     },
     {
       "season": 2023,
       "week": 4,
       "owner": "Douglas Sullivan",
       "points": 196.7,
-      "opponent": "Deion"
+      "opponent": "Deion",
+      "playoff": false
     },
     {
       "season": 2025,
       "week": 15,
       "owner": "Vlad Barber",
       "points": 191.9,
-      "opponent": "Juan Rodriguez"
+      "opponent": "Juan Rodriguez",
+      "playoff": true,
+      "note": "Playoff game"
     },
     {
       "season": 2026,
       "week": 1,
       "owner": "Brett Trana",
       "points": 188.1,
-      "opponent": "Paul Bacon"
+      "opponent": "Paul Bacon",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 2,
+      "owner": "Elijah Bruette",
+      "points": 183.82,
+      "opponent": "Jared",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 13,
+      "owner": "Deion",
+      "points": 177.1,
+      "opponent": "Elijah Bruette",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 8,
+      "owner": "Deion",
+      "points": 177.06,
+      "opponent": "Jake Prosser",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 12,
+      "owner": "Douglas Sullivan",
+      "points": 176.66,
+      "opponent": "Jake F",
+      "playoff": false
     },
     {
       "season": 2024,
       "week": 12,
       "owner": "Juan Rodriguez",
       "points": 173.7,
-      "opponent": "Andrew Reed"
+      "opponent": "Andrew Reed",
+      "playoff": false
     },
     {
       "season": 2023,
       "week": 5,
       "owner": "Deion",
       "points": 168.68,
-      "opponent": "Vlad Barber"
+      "opponent": "Vlad Barber",
+      "playoff": false
     },
     {
       "season": 2026,
       "week": 8,
       "owner": "Matt Atkinson",
       "points": 167.92,
-      "opponent": "Douglas Sullivan"
+      "opponent": "Douglas Sullivan",
+      "playoff": false
     },
     {
       "season": 2024,
       "week": 12,
       "owner": "Matt Zacharias",
       "points": 167.72,
-      "opponent": "Matt F"
+      "opponent": "Matt F",
+      "playoff": false
     },
     {
       "season": 2024,
       "week": 13,
       "owner": "Juan Rodriguez",
       "points": 166.84,
-      "opponent": "Marc Caballero"
+      "opponent": "Marc Caballero",
+      "playoff": false
     },
     {
       "season": 2023,
       "week": 3,
       "owner": "Matt Zacharias",
       "points": 165.0,
-      "opponent": "Juan Rodriguez"
-    },
-    {
-      "season": 2025,
-      "week": 8,
-      "owner": "Juan Rodriguez",
-      "points": 163.86,
-      "opponent": "Jake Prosser"
-    },
-    {
-      "season": 2023,
-      "week": 5,
-      "owner": "Douglas Sullivan",
-      "points": 163.44,
-      "opponent": "Jared"
-    },
-    {
-      "season": 2026,
-      "week": 4,
-      "owner": "Matt Atkinson",
-      "points": 163.28,
-      "opponent": "Matt Zacharias"
-    },
-    {
-      "season": 2024,
-      "week": 9,
-      "owner": "Vlad Barber",
-      "points": 163.24,
-      "opponent": "Matt F"
+      "opponent": "Juan Rodriguez",
+      "playoff": false
     }
   ],
   "all_time_low_scores": [
@@ -332,70 +349,80 @@
       "week": 10,
       "owner": "Jake Prosser",
       "points": 51.1,
-      "opponent": "Matt Zacharias"
+      "opponent": "Matt Zacharias",
+      "playoff": false
     },
     {
       "season": 2025,
       "week": 11,
       "owner": "Andrew Reed",
       "points": 53.24,
-      "opponent": "Jake Prosser"
+      "opponent": "Jake Prosser",
+      "playoff": false
     },
     {
       "season": 2023,
       "week": 12,
       "owner": "Vlad Barber",
       "points": 56.8,
-      "opponent": "Jake Prosser"
+      "opponent": "Jake Prosser",
+      "playoff": false
     },
     {
       "season": 2026,
       "week": 3,
       "owner": "Elijah Bruette",
       "points": 60.12,
-      "opponent": "Marc Caballero"
+      "opponent": "Marc Caballero",
+      "playoff": false
     },
     {
       "season": 2026,
       "week": 8,
       "owner": "Jake Prosser",
       "points": 61.64,
-      "opponent": "Matt Zacharias"
+      "opponent": "Matt Zacharias",
+      "playoff": false
     },
     {
       "season": 2026,
       "week": 9,
       "owner": "Jake Prosser",
       "points": 63.22,
-      "opponent": "Brett Trana"
+      "opponent": "Brett Trana",
+      "playoff": false
     },
     {
       "season": 2023,
       "week": 9,
       "owner": "Jake F",
       "points": 64.32,
-      "opponent": "Marc Caballero"
+      "opponent": "Marc Caballero",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 6,
+      "owner": "Douglas Sullivan",
+      "points": 64.62,
+      "opponent": "Jared",
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 13,
+      "owner": "Jake Prosser",
+      "points": 64.82,
+      "opponent": "Vlad Barber",
+      "playoff": false
     },
     {
       "season": 2026,
       "week": 5,
       "owner": "Juan Rodriguez",
       "points": 65.56,
-      "opponent": "Marc Caballero"
-    },
-    {
-      "season": 2023,
-      "week": 9,
-      "owner": "Matt Zacharias",
-      "points": 66.58,
-      "opponent": "Jared"
-    },
-    {
-      "season": 2023,
-      "week": 9,
-      "owner": "Juan Rodriguez",
-      "points": 66.84,
-      "opponent": "Douglas Sullivan"
+      "opponent": "Marc Caballero",
+      "playoff": false
     }
   ],
   "biggest_blowouts": [
@@ -406,7 +433,8 @@
       "points": 196.7,
       "opponent": "Deion",
       "opponent_points": 84.8,
-      "margin": 111.9
+      "margin": 111.9,
+      "playoff": false
     },
     {
       "season": 2024,
@@ -415,7 +443,8 @@
       "points": 202.08,
       "opponent": "Elijah Bruette",
       "opponent_points": 92.38,
-      "margin": 109.7
+      "margin": 109.7,
+      "playoff": false
     },
     {
       "season": 2024,
@@ -424,7 +453,18 @@
       "points": 167.72,
       "opponent": "Matt F",
       "opponent_points": 71.46,
-      "margin": 96.26
+      "margin": 96.26,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 2,
+      "owner": "Elijah Bruette",
+      "points": 183.82,
+      "opponent": "Jared",
+      "opponent_points": 93.18,
+      "margin": 90.64,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -433,7 +473,8 @@
       "points": 188.1,
       "opponent": "Paul Bacon",
       "opponent_points": 100.76,
-      "margin": 87.34
+      "margin": 87.34,
+      "playoff": false
     },
     {
       "season": 2023,
@@ -442,7 +483,8 @@
       "points": 163.44,
       "opponent": "Jared",
       "opponent_points": 79.78,
-      "margin": 83.66
+      "margin": 83.66,
+      "playoff": false
     },
     {
       "season": 2025,
@@ -451,7 +493,18 @@
       "points": 160.16,
       "opponent": "Paul Bacon",
       "opponent_points": 82.36,
-      "margin": 77.8
+      "margin": 77.8,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 12,
+      "owner": "Douglas Sullivan",
+      "points": 176.66,
+      "opponent": "Jake F",
+      "opponent_points": 98.9,
+      "margin": 77.76,
+      "playoff": false
     },
     {
       "season": 2023,
@@ -460,7 +513,8 @@
       "points": 155.26,
       "opponent": "Jared",
       "opponent_points": 84.38,
-      "margin": 70.88
+      "margin": 70.88,
+      "playoff": false
     },
     {
       "season": 2023,
@@ -469,7 +523,8 @@
       "points": 168.68,
       "opponent": "Vlad Barber",
       "opponent_points": 100.54,
-      "margin": 68.14
+      "margin": 68.14,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -478,7 +533,8 @@
       "points": 167.92,
       "opponent": "Douglas Sullivan",
       "opponent_points": 100.06,
-      "margin": 67.86
+      "margin": 67.86,
+      "playoff": false
     },
     {
       "season": 2024,
@@ -487,7 +543,8 @@
       "points": 173.7,
       "opponent": "Andrew Reed",
       "opponent_points": 106.36,
-      "margin": 67.34
+      "margin": 67.34,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -496,7 +553,8 @@
       "points": 142.56,
       "opponent": "Andrew Reed",
       "opponent_points": 75.46,
-      "margin": 67.1
+      "margin": 67.1,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -505,7 +563,8 @@
       "points": 145.64,
       "opponent": "Jake Prosser",
       "opponent_points": 80.92,
-      "margin": 64.72
+      "margin": 64.72,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -514,25 +573,8 @@
       "points": 163.28,
       "opponent": "Matt Zacharias",
       "opponent_points": 99.1,
-      "margin": 64.18
-    },
-    {
-      "season": 2023,
-      "week": 13,
-      "owner": "Vlad Barber",
-      "points": 130.64,
-      "opponent": "Jared",
-      "opponent_points": 66.92,
-      "margin": 63.72
-    },
-    {
-      "season": 2025,
-      "week": 15,
-      "owner": "Vlad Barber",
-      "points": 191.9,
-      "opponent": "Juan Rodriguez",
-      "opponent_points": 130.1,
-      "margin": 61.8
+      "margin": 64.18,
+      "playoff": false
     }
   ],
   "closest_games": [
@@ -543,7 +585,8 @@
       "points": 105.04,
       "opponent": "Marc Caballero",
       "opponent_points": 104.84,
-      "margin": 0.2
+      "margin": 0.2,
+      "playoff": false
     },
     {
       "season": 2023,
@@ -552,7 +595,8 @@
       "points": 113.18,
       "opponent": "Anup",
       "opponent_points": 112.9,
-      "margin": 0.28
+      "margin": 0.28,
+      "playoff": false
     },
     {
       "season": 2023,
@@ -561,7 +605,19 @@
       "points": 144.46,
       "opponent": "Mike",
       "opponent_points": 144.12,
-      "margin": 0.34
+      "margin": 0.34,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 17,
+      "owner": "Douglas Sullivan",
+      "points": 108.8,
+      "opponent": "Vlad Barber",
+      "opponent_points": 108.08,
+      "margin": 0.72,
+      "playoff": true,
+      "note": "Playoff game"
     },
     {
       "season": 2024,
@@ -570,7 +626,9 @@
       "points": 137.68,
       "opponent": "Douglas Sullivan",
       "opponent_points": 136.74,
-      "margin": 0.94
+      "margin": 0.94,
+      "playoff": true,
+      "note": "Playoff game"
     },
     {
       "season": 2024,
@@ -579,7 +637,8 @@
       "points": 111.86,
       "opponent": "Douglas Sullivan",
       "opponent_points": 110.9,
-      "margin": 0.96
+      "margin": 0.96,
+      "playoff": false
     },
     {
       "season": 2025,
@@ -588,7 +647,18 @@
       "points": 94.2,
       "opponent": "Douglas Sullivan",
       "opponent_points": 93.14,
-      "margin": 1.06
+      "margin": 1.06,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 12,
+      "owner": "Jake Prosser",
+      "points": 105.1,
+      "opponent": "Jared",
+      "opponent_points": 104.02,
+      "margin": 1.08,
+      "playoff": false
     },
     {
       "season": 2024,
@@ -597,7 +667,18 @@
       "points": 95.34,
       "opponent": "Derek Bock",
       "opponent_points": 94.18,
-      "margin": 1.16
+      "margin": 1.16,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 9,
+      "owner": "Deion",
+      "points": 102.62,
+      "opponent": "Douglas Sullivan",
+      "opponent_points": 101.3,
+      "margin": 1.32,
+      "playoff": false
     },
     {
       "season": 2024,
@@ -606,7 +687,8 @@
       "points": 103.24,
       "opponent": "Aaron",
       "opponent_points": 101.72,
-      "margin": 1.52
+      "margin": 1.52,
+      "playoff": false
     },
     {
       "season": 2026,
@@ -615,7 +697,18 @@
       "points": 95.66,
       "opponent": "Andrew Reed",
       "opponent_points": 94.04,
-      "margin": 1.62
+      "margin": 1.62,
+      "playoff": false
+    },
+    {
+      "season": 2022,
+      "week": 6,
+      "owner": "Jake F",
+      "points": 100.9,
+      "opponent": "Mike",
+      "opponent_points": 99.2,
+      "margin": 1.7,
+      "playoff": false
     },
     {
       "season": 2025,
@@ -624,7 +717,8 @@
       "points": 109.58,
       "opponent": "Brett Trana",
       "opponent_points": 107.84,
-      "margin": 1.74
+      "margin": 1.74,
+      "playoff": false
     },
     {
       "season": 2025,
@@ -633,46 +727,11 @@
       "points": 80.0,
       "opponent": "Douglas Sullivan",
       "opponent_points": 77.62,
-      "margin": 2.38
-    },
-    {
-      "season": 2023,
-      "week": 13,
-      "owner": "Jake Prosser",
-      "points": 97.6,
-      "opponent": "Douglas Sullivan",
-      "opponent_points": 95.08,
-      "margin": 2.52
-    },
-    {
-      "season": 2023,
-      "week": 2,
-      "owner": "Jared",
-      "points": 121.6,
-      "opponent": "Vlad Barber",
-      "opponent_points": 118.54,
-      "margin": 3.06
-    },
-    {
-      "season": 2026,
-      "week": 3,
-      "owner": "Matt Atkinson",
-      "points": 104.24,
-      "opponent": "Derek Bock",
-      "opponent_points": 100.6,
-      "margin": 3.64
-    },
-    {
-      "season": 2025,
-      "week": 1,
-      "owner": "Brett Trana",
-      "points": 107.94,
-      "opponent": "Paul Bacon",
-      "opponent_points": 104.26,
-      "margin": 3.68
+      "margin": 2.38,
+      "playoff": false
     }
   ],
-  "records_note": "Record lists count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded.",
+  "records_note": "Record lists cover 2022–2026 and count regular-season and playoff-bracket games only (winners bracket incl. 3rd/5th-place games); consolation / toilet-bowl games are excluded. * marks a playoff game.",
   "score_overrides_applied": [
     "2024 wk7 matchup 6: 43.2 -> 118.34",
     "2024 wk7 matchup 2: 78.1 -> 98.94",
