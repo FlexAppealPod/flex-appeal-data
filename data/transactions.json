@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T06:48:10-07:00",
+    "generated_at": "2026-11-14T06:56:43-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 10,
     "counts": {
-      "transactions": 346
+      "transactions": 347
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,49 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1426803954435506176",
+      "type": "waiver",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-12T20:04:40-07:00",
+      "processed": "2026-11-13T19:06:14-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Makai Lemon / drops Reggie Virgil ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "13294",
+              "name": "Makai Lemon",
+              "position": "WR",
+              "nfl_team": "PHI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13297",
+              "name": "Reggie Virgil",
+              "position": "WR",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
     {
       "id": "1426802559439360000",
       "type": "free_agent",
@@ -14513,7 +14556,7 @@
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 14,
+      "claims_won": 15,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 20,
@@ -14525,20 +14568,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 24,
-      "waiver": 85,
+      "waiver": 86,
       "free_agent": 235,
       "commissioner": 2,
-      "total": 346
+      "total": 347
     },
     "regular_season_totals_by_type": {
       "trade": 16,
-      "waiver": 84,
+      "waiver": 85,
       "free_agent": 163,
       "commissioner": 2,
-      "total": 265
+      "total": 266
     },
     "totals_by_phase": {
-      "regular": 265,
+      "regular": 266,
       "preseason": 31,
       "offseason": 50
     },
@@ -14553,7 +14596,7 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 11
+      "10": 12
     },
     "most_active_manager": {
       "managers": [
@@ -14833,13 +14876,13 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 39,
-        "regular_season_transactions": 34,
+        "transactions": 40,
+        "regular_season_transactions": 35,
         "trades": 0,
-        "waiver_claims": 14,
+        "waiver_claims": 15,
         "free_agent_moves": 25,
-        "players_added": 33,
-        "players_dropped": 34
+        "players_added": 34,
+        "players_dropped": 35
       },
       {
         "roster_id": 11,
