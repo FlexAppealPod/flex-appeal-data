@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T06:56:43-07:00",
+    "generated_at": "2026-11-15T06:57:00-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 10,
     "counts": {
-      "transactions": 347
+      "transactions": 353
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,238 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1427505139664588800",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T18:30:56-07:00",
+      "processed": "2026-11-14T18:30:56-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Zonovan Knight",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "8122",
+              "name": "Zonovan Knight",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1427504777092153344",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T18:29:29-07:00",
+      "processed": "2026-11-14T18:29:29-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad drops Tyrone Tracy Jr.",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11655",
+              "name": "Tyrone Tracy Jr.",
+              "position": "RB",
+              "nfl_team": "NYG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1427471296647659520",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T16:16:27-07:00",
+      "processed": "2026-11-14T16:16:27-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds Courtland Sutton / drops Terry McLaurin",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "5045",
+              "name": "Courtland Sutton",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5927",
+              "name": "Terry McLaurin",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1427377605060886528",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T10:04:09-07:00",
+      "processed": "2026-11-14T10:04:09-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Chimere Dike / drops Dameon Pierce",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "12540",
+              "name": "Chimere Dike",
+              "position": "WR",
+              "nfl_team": "TEN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8129",
+              "name": "Dameon Pierce",
+              "position": "RB",
+              "nfl_team": "FA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1427371440298004480",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T09:39:39-07:00",
+      "processed": "2026-11-14T09:39:39-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 8,
+          "manager": "Matt A",
+          "team_name": "CTE"
+        }
+      ],
+      "headline": "Matt A adds Bryce Young / drops Treylon Burks",
+      "sides": [
+        {
+          "roster_id": 8,
+          "manager": "Matt A",
+          "team_name": "CTE",
+          "adds": [
+            {
+              "player_id": "9228",
+              "name": "Bryce Young",
+              "position": "QB",
+              "nfl_team": "CAR"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8135",
+              "name": "Treylon Burks",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1427359944700600320",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T08:53:59-07:00",
+      "processed": "2026-11-14T08:53:59-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5"
+        }
+      ],
+      "headline": "Doug adds Micah Parsons / drops George Karlaftis",
+      "sides": [
+        {
+          "roster_id": 5,
+          "manager": "Doug",
+          "team_name": "9 - 5",
+          "adds": [
+            {
+              "player_id": "7640",
+              "name": "Micah Parsons",
+              "position": "LB",
+              "nfl_team": "GB"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8385",
+              "name": "George Karlaftis",
+              "position": "DL",
+              "nfl_team": "KC"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1426803954435506176",
       "type": "waiver",
@@ -13792,7 +14024,7 @@
               "player_id": "5848",
               "name": "Marquise Brown",
               "position": "WR",
-              "nfl_team": "PHI"
+              "nfl_team": "FA"
             }
           ]
         }
@@ -14569,19 +14801,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 86,
-      "free_agent": 235,
+      "free_agent": 241,
       "commissioner": 2,
-      "total": 347
+      "total": 353
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 85,
-      "free_agent": 163,
+      "free_agent": 169,
       "commissioner": 2,
-      "total": 266
+      "total": 272
     },
     "totals_by_phase": {
-      "regular": 266,
+      "regular": 272,
       "preseason": 31,
       "offseason": 50
     },
@@ -14596,14 +14828,13 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 12
+      "10": 18
     },
     "most_active_manager": {
       "managers": [
-        "Jake",
-        "Matt Z"
+        "Jake"
       ],
-      "count": 48
+      "count": 49
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -14682,6 +14913,18 @@
         ]
       },
       {
+        "player_id": "9228",
+        "name": "Bryce Young",
+        "position": "QB",
+        "nfl_team": "CAR",
+        "adds": 3,
+        "added_by": [
+          "Matt A",
+          "Vlad",
+          "Jake"
+        ]
+      },
+      {
         "player_id": "6130",
         "name": "Devin Singletary",
         "position": "RB",
@@ -14737,17 +14980,6 @@
         "added_by": [
           "Derek",
           "Matt Z"
-        ]
-      },
-      {
-        "player_id": "3321",
-        "name": "Tyreek Hill",
-        "position": "WR",
-        "nfl_team": "FA",
-        "adds": 3,
-        "added_by": [
-          "Juan",
-          "Jake"
         ]
       }
     ],
@@ -14828,13 +15060,13 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 48,
-        "regular_season_transactions": 36,
+        "transactions": 49,
+        "regular_season_transactions": 37,
         "trades": 6,
         "waiver_claims": 8,
-        "free_agent_moves": 34,
-        "players_added": 37,
-        "players_dropped": 43
+        "free_agent_moves": 35,
+        "players_added": 38,
+        "players_dropped": 44
       },
       {
         "roster_id": 2,
@@ -14876,25 +15108,25 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 40,
-        "regular_season_transactions": 35,
+        "transactions": 42,
+        "regular_season_transactions": 37,
         "trades": 0,
         "waiver_claims": 15,
-        "free_agent_moves": 25,
-        "players_added": 34,
-        "players_dropped": 35
+        "free_agent_moves": 27,
+        "players_added": 35,
+        "players_dropped": 36
       },
       {
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 36,
-        "regular_season_transactions": 34,
+        "transactions": 37,
+        "regular_season_transactions": 35,
         "trades": 3,
         "waiver_claims": 14,
-        "free_agent_moves": 17,
-        "players_added": 27,
-        "players_dropped": 28
+        "free_agent_moves": 18,
+        "players_added": 28,
+        "players_dropped": 29
       },
       {
         "roster_id": 12,
@@ -14912,25 +15144,25 @@
         "roster_id": 5,
         "manager": "Doug",
         "team_name": "9 - 5",
-        "transactions": 25,
-        "regular_season_transactions": 14,
+        "transactions": 26,
+        "regular_season_transactions": 15,
         "trades": 3,
         "waiver_claims": 4,
-        "free_agent_moves": 18,
-        "players_added": 17,
-        "players_dropped": 21
+        "free_agent_moves": 19,
+        "players_added": 18,
+        "players_dropped": 22
       },
       {
         "roster_id": 8,
         "manager": "Matt A",
         "team_name": "CTE",
-        "transactions": 17,
-        "regular_season_transactions": 13,
+        "transactions": 18,
+        "regular_season_transactions": 14,
         "trades": 3,
         "waiver_claims": 4,
-        "free_agent_moves": 10,
-        "players_added": 13,
-        "players_dropped": 14
+        "free_agent_moves": 11,
+        "players_added": 14,
+        "players_dropped": 15
       },
       {
         "roster_id": 10,
