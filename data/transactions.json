@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T06:57:00-07:00",
+    "generated_at": "2026-11-16T06:52:03-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 10,
     "counts": {
-      "transactions": 353
+      "transactions": 354
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,49 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1427369860135931904",
+      "type": "waiver",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-14T09:33:23-07:00",
+      "processed": "2026-11-15T07:56:26-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds George Karlaftis / drops Aidan Hutchinson ($0 FAAB)",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "8385",
+              "name": "George Karlaftis",
+              "position": "DL",
+              "nfl_team": "KC"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8289",
+              "name": "Aidan Hutchinson",
+              "position": "DL",
+              "nfl_team": "DET"
+            }
+          ]
+        }
+      ],
+      "faab_bid": 0,
+      "winning_claim": true
+    },
     {
       "id": "1427505139664588800",
       "type": "free_agent",
@@ -14743,7 +14786,7 @@
       "budget": 100,
       "spent": 100,
       "remaining": 0,
-      "claims_won": 8,
+      "claims_won": 9,
       "winning_bids_total": 100,
       "biggest_bid": {
         "bid": 84,
@@ -14800,20 +14843,20 @@
   "summary": {
     "totals_by_type": {
       "trade": 24,
-      "waiver": 86,
+      "waiver": 87,
       "free_agent": 241,
       "commissioner": 2,
-      "total": 353
+      "total": 354
     },
     "regular_season_totals_by_type": {
       "trade": 16,
-      "waiver": 85,
+      "waiver": 86,
       "free_agent": 169,
       "commissioner": 2,
-      "total": 272
+      "total": 273
     },
     "totals_by_phase": {
-      "regular": 272,
+      "regular": 273,
       "preseason": 31,
       "offseason": 50
     },
@@ -14828,13 +14871,13 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 18
+      "10": 19
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 49
+      "count": 50
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -15060,13 +15103,13 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 49,
-        "regular_season_transactions": 37,
+        "transactions": 50,
+        "regular_season_transactions": 38,
         "trades": 6,
-        "waiver_claims": 8,
+        "waiver_claims": 9,
         "free_agent_moves": 35,
-        "players_added": 38,
-        "players_dropped": 44
+        "players_added": 39,
+        "players_dropped": 45
       },
       {
         "roster_id": 2,
