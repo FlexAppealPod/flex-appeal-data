@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T06:52:03-07:00",
+    "generated_at": "2026-11-17T06:54:18-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -8,9 +8,9 @@
       "waiver_type": "FAAB"
     },
     "faab_budget": 100,
-    "current_week": 10,
+    "current_week": 11,
     "counts": {
-      "transactions": 354
+      "transactions": 356
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,81 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1428288252040740864",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-16T22:22:44-07:00",
+      "processed": "2026-11-16T22:22:44-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake drops Elijah Mitchell",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "7561",
+              "name": "Elijah Mitchell",
+              "position": "RB",
+              "nfl_team": "PHI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1428147421417848832",
+      "type": "free_agent",
+      "week": 10,
+      "sleeper_leg": 10,
+      "phase": "regular",
+      "created": "2026-11-16T13:03:08-07:00",
+      "processed": "2026-11-16T13:03:08-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Pat Bryant / drops Zonovan Knight",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "12492",
+              "name": "Pat Bryant",
+              "position": "WR",
+              "nfl_team": "DEN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8122",
+              "name": "Zonovan Knight",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1427369860135931904",
       "type": "waiver",
@@ -13782,7 +13857,7 @@
               "player_id": "7607",
               "name": "Michael Carter",
               "position": "RB",
-              "nfl_team": "TEN"
+              "nfl_team": "FA"
             }
           ]
         }
@@ -14844,19 +14919,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 87,
-      "free_agent": 241,
+      "free_agent": 243,
       "commissioner": 2,
-      "total": 354
+      "total": 356
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 86,
-      "free_agent": 169,
+      "free_agent": 171,
       "commissioner": 2,
-      "total": 273
+      "total": 275
     },
     "totals_by_phase": {
-      "regular": 273,
+      "regular": 275,
       "preseason": 31,
       "offseason": 50
     },
@@ -14871,13 +14946,13 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 19
+      "10": 21
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 50
+      "count": 51
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -15015,14 +15090,15 @@
         ]
       },
       {
-        "player_id": "8676",
-        "name": "Rashid Shaheed",
+        "player_id": "12492",
+        "name": "Pat Bryant",
         "position": "WR",
-        "nfl_team": "SEA",
+        "nfl_team": "DEN",
         "adds": 3,
         "added_by": [
-          "Derek",
-          "Matt Z"
+          "Vlad",
+          "Matt Z",
+          "Brett"
         ]
       }
     ],
@@ -15103,13 +15179,13 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 50,
-        "regular_season_transactions": 38,
+        "transactions": 51,
+        "regular_season_transactions": 39,
         "trades": 6,
         "waiver_claims": 9,
-        "free_agent_moves": 35,
+        "free_agent_moves": 36,
         "players_added": 39,
-        "players_dropped": 45
+        "players_dropped": 46
       },
       {
         "roster_id": 2,
@@ -15151,13 +15227,13 @@
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 42,
-        "regular_season_transactions": 37,
+        "transactions": 43,
+        "regular_season_transactions": 38,
         "trades": 0,
         "waiver_claims": 15,
-        "free_agent_moves": 27,
-        "players_added": 35,
-        "players_dropped": 36
+        "free_agent_moves": 28,
+        "players_added": 36,
+        "players_dropped": 37
       },
       {
         "roster_id": 11,
