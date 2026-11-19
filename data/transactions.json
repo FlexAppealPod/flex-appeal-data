@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T06:56:27-07:00",
+    "generated_at": "2026-11-19T06:52:10-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 11,
     "counts": {
-      "transactions": 365
+      "transactions": 369
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,163 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1428888996645179392",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-18T14:09:53-07:00",
+      "processed": "2026-11-18T14:09:53-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Quinnen Williams / drops Roquan Smith",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "6118",
+              "name": "Quinnen Williams",
+              "position": "DT",
+              "nfl_team": "DAL"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "4960",
+              "name": "Roquan Smith",
+              "position": "LB",
+              "nfl_team": "BAL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1428829338765103104",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-18T10:12:50-07:00",
+      "processed": "2026-11-18T10:12:50-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY"
+        }
+      ],
+      "headline": "Vlad adds Mark Andrews / drops DeMario Douglas",
+      "sides": [
+        {
+          "roster_id": 9,
+          "manager": "Vlad",
+          "team_name": "WHO’s YOUR VLADDY",
+          "adds": [
+            {
+              "player_id": "5012",
+              "name": "Mark Andrews",
+              "position": "TE",
+              "nfl_team": "BAL"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "9501",
+              "name": "DeMario Douglas",
+              "position": "WR",
+              "nfl_team": "NE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1428820378809020416",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-18T09:37:13-07:00",
+      "processed": "2026-11-18T09:37:13-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek adds Austin Ekeler / drops Drew Lock",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [
+            {
+              "player_id": "4663",
+              "name": "Austin Ekeler",
+              "position": "RB",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "5854",
+              "name": "Drew Lock",
+              "position": "QB",
+              "nfl_team": "SEA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1428783425866715136",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-18T07:10:23-07:00",
+      "processed": "2026-11-18T07:10:23-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Jordan Watkins",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "12634",
+              "name": "Jordan Watkins",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1428589888004947968",
       "type": "waiver",
@@ -14237,7 +14394,7 @@
               "player_id": "7607",
               "name": "Michael Carter",
               "position": "RB",
-              "nfl_team": "FA"
+              "nfl_team": "TEN"
             }
           ]
         }
@@ -15299,19 +15456,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 96,
-      "free_agent": 243,
+      "free_agent": 247,
       "commissioner": 2,
-      "total": 365
+      "total": 369
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 95,
-      "free_agent": 171,
+      "free_agent": 175,
       "commissioner": 2,
-      "total": 284
+      "total": 288
     },
     "totals_by_phase": {
-      "regular": 284,
+      "regular": 288,
       "preseason": 31,
       "offseason": 50
     },
@@ -15326,7 +15483,8 @@
       "7": 26,
       "8": 25,
       "9": 24,
-      "10": 30
+      "10": 30,
+      "11": 4
     },
     "most_active_manager": {
       "managers": [
@@ -15338,7 +15496,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 43
+      "count": 44
     },
     "most_trades": {
       "managers": [
@@ -15570,49 +15728,49 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 48,
-        "regular_season_transactions": 43,
+        "transactions": 49,
+        "regular_season_transactions": 44,
         "trades": 5,
         "waiver_claims": 8,
-        "free_agent_moves": 35,
+        "free_agent_moves": 36,
         "players_added": 32,
-        "players_dropped": 32
+        "players_dropped": 33
       },
       {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 46,
-        "regular_season_transactions": 30,
+        "transactions": 47,
+        "regular_season_transactions": 31,
         "trades": 4,
         "waiver_claims": 12,
-        "free_agent_moves": 30,
-        "players_added": 34,
-        "players_dropped": 36
+        "free_agent_moves": 31,
+        "players_added": 35,
+        "players_dropped": 37
       },
       {
         "roster_id": 6,
         "manager": "Juan",
         "team_name": "Red Cross",
-        "transactions": 45,
-        "regular_season_transactions": 36,
+        "transactions": 46,
+        "regular_season_transactions": 37,
         "trades": 10,
         "waiver_claims": 12,
-        "free_agent_moves": 23,
-        "players_added": 33,
-        "players_dropped": 38
+        "free_agent_moves": 24,
+        "players_added": 34,
+        "players_dropped": 39
       },
       {
         "roster_id": 9,
         "manager": "Vlad",
         "team_name": "WHO’s YOUR VLADDY",
-        "transactions": 43,
-        "regular_season_transactions": 38,
+        "transactions": 44,
+        "regular_season_transactions": 39,
         "trades": 0,
         "waiver_claims": 15,
-        "free_agent_moves": 28,
-        "players_added": 36,
-        "players_dropped": 37
+        "free_agent_moves": 29,
+        "players_added": 37,
+        "players_dropped": 38
       },
       {
         "roster_id": 11,
