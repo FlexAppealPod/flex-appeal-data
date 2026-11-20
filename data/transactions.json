@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T06:52:10-07:00",
+    "generated_at": "2026-11-20T06:54:19-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 11,
     "counts": {
-      "transactions": 369
+      "transactions": 370
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,47 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1429151006653952000",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-19T07:31:01-07:00",
+      "processed": "2026-11-19T07:31:01-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z adds Foyesade Oluokun / drops Greg Rousseau",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [
+            {
+              "player_id": "5332",
+              "name": "Foyesade Oluokun",
+              "position": "LB",
+              "nfl_team": "JAX"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "7627",
+              "name": "Greg Rousseau",
+              "position": "DE",
+              "nfl_team": "BUF"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1428888996645179392",
       "type": "free_agent",
@@ -15456,19 +15497,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 96,
-      "free_agent": 247,
+      "free_agent": 248,
       "commissioner": 2,
-      "total": 369
+      "total": 370
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 95,
-      "free_agent": 175,
+      "free_agent": 176,
       "commissioner": 2,
-      "total": 288
+      "total": 289
     },
     "totals_by_phase": {
-      "regular": 288,
+      "regular": 289,
       "preseason": 31,
       "offseason": 50
     },
@@ -15484,7 +15525,7 @@
       "8": 25,
       "9": 24,
       "10": 30,
-      "11": 4
+      "11": 5
     },
     "most_active_manager": {
       "managers": [
@@ -15496,7 +15537,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 44
+      "count": 45
     },
     "most_trades": {
       "managers": [
@@ -15603,6 +15644,18 @@
         ]
       },
       {
+        "player_id": "5332",
+        "name": "Foyesade Oluokun",
+        "position": "LB",
+        "nfl_team": "JAX",
+        "adds": 3,
+        "added_by": [
+          "Matt Z",
+          "Derek",
+          "Vlad"
+        ]
+      },
+      {
         "player_id": "12048",
         "name": "George Holani",
         "position": "RB",
@@ -15624,18 +15677,6 @@
           "Brett",
           "Vlad",
           "Doug"
-        ]
-      },
-      {
-        "player_id": "13285",
-        "name": "Malachi Fields",
-        "position": "WR",
-        "nfl_team": "NYG",
-        "adds": 3,
-        "added_by": [
-          "Matt A",
-          "Vlad",
-          "Jake"
         ]
       }
     ],
@@ -15728,13 +15769,13 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 49,
-        "regular_season_transactions": 44,
+        "transactions": 50,
+        "regular_season_transactions": 45,
         "trades": 5,
         "waiver_claims": 8,
-        "free_agent_moves": 36,
-        "players_added": 32,
-        "players_dropped": 33
+        "free_agent_moves": 37,
+        "players_added": 33,
+        "players_dropped": 34
       },
       {
         "roster_id": 7,

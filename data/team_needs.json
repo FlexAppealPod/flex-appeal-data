@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T06:52:17-07:00",
+  "updated_at": "2026-11-20T06:54:25-07:00",
   "season": 2026,
   "week": 11,
   "completed_weeks": [
@@ -60,10 +60,10 @@
       "RB2": 13.2,
       "WR1": 14.1,
       "WR2": 11.8,
-      "FLEX1": 10.7,
+      "FLEX1": 10.8,
       "FLEX2": 8.1,
       "REC_FLEX": 10.9,
-      "IDP_FLEX": 8.2
+      "IDP_FLEX": 8.6
     },
     "group_actual_ppg": {
       "QB": 18.5,
@@ -195,7 +195,7 @@
             "WR2"
           ],
           "grade": "Need",
-          "z": -1.54,
+          "z": -1.55,
           "rank": 11,
           "percentile": 9,
           "roster_value_ppg": 8.9,
@@ -223,7 +223,7 @@
               "position": "WR",
               "nfl_team": "PIT",
               "injury_status": null,
-              "value_ppg": 8.0,
+              "value_ppg": 8.1,
               "value_source": "projection",
               "season_ppg": 8.5,
               "games": 9,
@@ -245,11 +245,11 @@
             "FLEX2"
           ],
           "grade": "Need",
-          "z": -1.79,
+          "z": -1.8,
           "rank": 12,
           "percentile": 0,
           "roster_value_ppg": 6.7,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 5.4,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -264,7 +264,7 @@
               "value_source": "projection",
               "season_ppg": 7.6,
               "games": 9,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -280,7 +280,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Darren Waller) projects 6.9 PPG vs league median 10.7; FLEX starters have scored 5.4 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Darren Waller) projects 6.9 PPG vs league median 10.8; FLEX starters have scored 5.4 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -329,11 +329,11 @@
             "IDP_FLEX"
           ],
           "grade": "Need",
-          "z": -1.26,
+          "z": -1.3,
           "rank": 12,
           "percentile": 0,
           "roster_value_ppg": 7.3,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 7.5,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -348,10 +348,10 @@
               "value_source": "projection",
               "season_ppg": 11.1,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (George Karlaftis) projects 7.3 PPG vs league median 8.2; IDP_FLEX starters have scored 7.5 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (George Karlaftis) projects 7.3 PPG vs league median 8.6; IDP_FLEX starters have scored 7.5 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -363,9 +363,9 @@
             "WR",
             "TE"
           ],
-          "z": -1.79,
+          "z": -1.8,
           "rank": 12,
-          "reason": "FLEX1 (Darren Waller) projects 6.9 PPG vs league median 10.7; FLEX starters have scored 5.4 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Darren Waller) projects 6.9 PPG vs league median 10.8; FLEX starters have scored 5.4 per slot per week (median 9.7)"
         },
         {
           "group": "WR",
@@ -373,7 +373,7 @@
           "positions": [
             "WR"
           ],
-          "z": -1.54,
+          "z": -1.55,
           "rank": 11,
           "reason": "WR1 (Ladd McConkey) projects 9.8 PPG vs league median 14.1; WR starters have scored 8.6 per slot per week (median 11.2)"
         },
@@ -383,9 +383,9 @@
           "positions": [
             "IDP"
           ],
-          "z": -1.26,
+          "z": -1.3,
           "rank": 12,
-          "reason": "IDP_FLEX (George Karlaftis) projects 7.3 PPG vs league median 8.2; IDP_FLEX starters have scored 7.5 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (George Karlaftis) projects 7.3 PPG vs league median 8.6; IDP_FLEX starters have scored 7.5 per slot per week (median 8.6)"
         },
         {
           "group": "RB",
@@ -546,8 +546,8 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
           "fit": "Would compete with your FLEX2 (6.5 PPG value)",
@@ -562,7 +562,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -570,11 +570,11 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "WR",
           "for_need_label": "WR",
-          "fit": "Would compete with your WR2 (8.0 PPG value)",
+          "fit": "Would compete with your WR2 (8.1 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -720,7 +720,7 @@
         "spent": 100,
         "remaining": 0
       },
-      "summary": "No glaring needs; strongest: FLEX (RB/WR/TE)",
+      "summary": "No glaring needs; strongest: RB",
       "slots": [
         {
           "group": "QB",
@@ -767,7 +767,7 @@
             "RB2"
           ],
           "grade": "Strength",
-          "z": 1.01,
+          "z": 1.02,
           "rank": 2,
           "percentile": 91,
           "roster_value_ppg": 16.3,
@@ -815,7 +815,7 @@
             "WR2"
           ],
           "grade": "OK",
-          "z": -0.49,
+          "z": -0.48,
           "rank": 9,
           "percentile": 27,
           "roster_value_ppg": 12.5,
@@ -843,7 +843,7 @@
               "position": "WR",
               "nfl_team": "KC",
               "injury_status": null,
-              "value_ppg": 11.8,
+              "value_ppg": 11.9,
               "value_source": "projection",
               "season_ppg": 9.2,
               "games": 7,
@@ -865,11 +865,11 @@
             "FLEX2"
           ],
           "grade": "Strength",
-          "z": 1.06,
+          "z": 1.02,
           "rank": 2,
           "percentile": 91,
           "roster_value_ppg": 12.5,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 10.6,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -884,7 +884,7 @@
               "value_source": "projection",
               "season_ppg": 14.6,
               "games": 10,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -913,7 +913,7 @@
             "REC_FLEX"
           ],
           "grade": "Strength",
-          "z": 0.79,
+          "z": 0.87,
           "rank": 3,
           "percentile": 82,
           "roster_value_ppg": 12.3,
@@ -949,51 +949,51 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": -0.65,
-          "rank": 10,
-          "percentile": 18,
-          "roster_value_ppg": 8.0,
-          "league_median_roster_value_ppg": 8.2,
+          "z": 0.2,
+          "rank": 5,
+          "percentile": 64,
+          "roster_value_ppg": 9.1,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 7.3,
           "league_median_actual_ppg": 8.6,
           "players": [
             {
               "slot": "IDP_FLEX",
-              "player_id": "7627",
-              "name": "Greg Rousseau",
-              "position": "DL",
-              "nfl_team": "BUF",
+              "player_id": "5332",
+              "name": "Foyesade Oluokun",
+              "position": "LB",
+              "nfl_team": "JAX",
               "injury_status": null,
-              "value_ppg": 8.0,
+              "value_ppg": 9.1,
               "value_source": "projection",
-              "season_ppg": 12.1,
+              "season_ppg": 9.6,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Greg Rousseau) projects 8.0 PPG vs league median 8.2; IDP_FLEX starters have scored 7.3 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Foyesade Oluokun) projects 9.1 PPG vs league median 8.6; IDP_FLEX starters have scored 7.3 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
       "strengths": [
         {
-          "group": "FLEX",
-          "label": "FLEX (RB/WR/TE)",
-          "z": 1.06,
-          "rank": 2,
-          "reason": "FLEX2 (Rhamondre Stevenson) projects 11.5 PPG vs league median 8.1; FLEX starters have scored 10.6 per slot per week (median 9.7)"
-        },
-        {
           "group": "RB",
           "label": "RB",
-          "z": 1.01,
+          "z": 1.02,
           "rank": 2,
           "reason": "RB1 (Christian McCaffrey) projects 18.5 PPG vs league median 15.1; RB starters have scored 17.5 per slot per week (median 14.1)"
         },
         {
+          "group": "FLEX",
+          "label": "FLEX (RB/WR/TE)",
+          "z": 1.02,
+          "rank": 2,
+          "reason": "FLEX2 (Rhamondre Stevenson) projects 11.5 PPG vs league median 8.1; FLEX starters have scored 10.6 per slot per week (median 9.7)"
+        },
+        {
           "group": "REC_FLEX",
           "label": "REC_FLEX (WR/TE)",
-          "z": 0.79,
+          "z": 0.87,
           "rank": 3,
           "reason": "REC_FLEX (Trey McBride) projects 12.3 PPG vs league median 10.9; REC_FLEX starters have scored 10.6 per slot per week (median 9.1)"
         }
@@ -1109,6 +1109,30 @@
       ],
       "fa_suggestions": [
         {
+          "player_id": "9504",
+          "name": "Kayshon Boutte",
+          "position": "WR",
+          "nfl_team": "HOU",
+          "injury_status": "Questionable",
+          "recent_ppg": 13.2,
+          "recent_games": 2,
+          "recent_weeks": [
+            8,
+            9,
+            10
+          ],
+          "projected_next_week": 5.7,
+          "trending_adds_48h": 0,
+          "for_need": "WR",
+          "for_need_label": "WR",
+          "fit": "Would compete with your WR2 (11.9 PPG value)",
+          "faab_range": {
+            "min": 0,
+            "max": 0,
+            "text": "$0 (no FAAB left; $0 bids are valid)"
+          }
+        },
+        {
           "player_id": "6302",
           "name": "Kaden Elliss",
           "position": "LB",
@@ -1125,55 +1149,7 @@
           "trending_adds_48h": 0,
           "for_need": "IDP",
           "for_need_label": "IDP_FLEX (DL/LB/DB)",
-          "fit": "Would compete with your IDP_FLEX (8.0 PPG value)",
-          "faab_range": {
-            "min": 0,
-            "max": 0,
-            "text": "$0 (no FAAB left; $0 bids are valid)"
-          }
-        },
-        {
-          "player_id": "9504",
-          "name": "Kayshon Boutte",
-          "position": "WR",
-          "nfl_team": "HOU",
-          "injury_status": null,
-          "recent_ppg": 13.2,
-          "recent_games": 2,
-          "recent_weeks": [
-            8,
-            9,
-            10
-          ],
-          "projected_next_week": 5.6,
-          "trending_adds_48h": 0,
-          "for_need": "WR",
-          "for_need_label": "WR",
-          "fit": "Would compete with your WR2 (11.8 PPG value)",
-          "faab_range": {
-            "min": 0,
-            "max": 0,
-            "text": "$0 (no FAAB left; $0 bids are valid)"
-          }
-        },
-        {
-          "player_id": "6807",
-          "name": "Patrick Queen",
-          "position": "LB",
-          "nfl_team": "PIT",
-          "injury_status": "Questionable",
-          "recent_ppg": 17.5,
-          "recent_games": 2,
-          "recent_weeks": [
-            8,
-            9,
-            10
-          ],
-          "projected_next_week": 6.2,
-          "trending_adds_48h": 0,
-          "for_need": "IDP",
-          "for_need_label": "IDP_FLEX (DL/LB/DB)",
-          "fit": "Would compete with your IDP_FLEX (8.0 PPG value)",
+          "fit": "Would compete with your IDP_FLEX (9.1 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -1205,23 +1181,47 @@
           }
         },
         {
-          "player_id": "5378",
-          "name": "Jacob Martin",
-          "position": "DL",
-          "nfl_team": "TEN",
-          "injury_status": null,
-          "recent_ppg": 15.8,
+          "player_id": "6807",
+          "name": "Patrick Queen",
+          "position": "LB",
+          "nfl_team": "PIT",
+          "injury_status": "Questionable",
+          "recent_ppg": 17.5,
           "recent_games": 2,
           "recent_weeks": [
             8,
             9,
             10
           ],
-          "projected_next_week": 2.9,
+          "projected_next_week": 6.2,
           "trending_adds_48h": 0,
           "for_need": "IDP",
           "for_need_label": "IDP_FLEX (DL/LB/DB)",
-          "fit": "Would compete with your IDP_FLEX (8.0 PPG value)",
+          "fit": "Would compete with your IDP_FLEX (9.1 PPG value)",
+          "faab_range": {
+            "min": 0,
+            "max": 0,
+            "text": "$0 (no FAAB left; $0 bids are valid)"
+          }
+        },
+        {
+          "player_id": "9754",
+          "name": "Quentin Johnston",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "injury_status": null,
+          "recent_ppg": 7.5,
+          "recent_games": 3,
+          "recent_weeks": [
+            8,
+            9,
+            10
+          ],
+          "projected_next_week": 6.6,
+          "trending_adds_48h": 42735,
+          "for_need": "WR",
+          "for_need_label": "WR",
+          "fit": "Depth for WR",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -1229,7 +1229,7 @@
           }
         }
       ],
-      "fa_note": "No group grades as a Need; waiver ideas target the lowest-graded spots (IDP_FLEX (DL/LB/DB), WR).",
+      "fa_note": "No group grades as a Need; waiver ideas target the lowest-graded spots (WR, IDP_FLEX (DL/LB/DB)).",
       "trade_fits": [],
       "trade_note": "No Need-graded spot, so no trade fits listed."
     },
@@ -1259,10 +1259,10 @@
             "QB"
           ],
           "grade": "Strength",
-          "z": 1.56,
+          "z": 1.54,
           "rank": 2,
           "percentile": 91,
-          "roster_value_ppg": 24.1,
+          "roster_value_ppg": 23.9,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 25.6,
           "league_median_actual_ppg": 18.5,
@@ -1274,14 +1274,14 @@
               "position": "QB",
               "nfl_team": "BUF",
               "injury_status": null,
-              "value_ppg": 24.1,
+              "value_ppg": 23.9,
               "value_source": "projection",
               "season_ppg": 25.5,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Josh Allen) projects 24.1 PPG vs league median 19.1; QB starters have scored 25.6 per slot per week (median 18.5)"
+          "reason": "QB (Josh Allen) projects 23.9 PPG vs league median 19.1; QB starters have scored 25.6 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -1294,7 +1294,7 @@
             "RB2"
           ],
           "grade": "OK",
-          "z": -0.23,
+          "z": -0.22,
           "rank": 8,
           "percentile": 36,
           "roster_value_ppg": 13.4,
@@ -1342,7 +1342,7 @@
             "WR2"
           ],
           "grade": "Strength",
-          "z": 0.87,
+          "z": 0.88,
           "rank": 3,
           "percentile": 82,
           "roster_value_ppg": 13.7,
@@ -1396,7 +1396,7 @@
           "rank": 9,
           "percentile": 27,
           "roster_value_ppg": 9.2,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 9.2,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -1407,11 +1407,11 @@
               "position": "TE",
               "nfl_team": "DET",
               "injury_status": null,
-              "value_ppg": 10.1,
+              "value_ppg": 10.2,
               "value_source": "projection",
               "season_ppg": 8.6,
               "games": 9,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -1420,14 +1420,14 @@
               "position": "WR",
               "nfl_team": "TB",
               "injury_status": null,
-              "value_ppg": 8.2,
+              "value_ppg": 8.3,
               "value_source": "projection",
               "season_ppg": 8.9,
               "games": 7,
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Sam LaPorta) projects 10.1 PPG vs league median 10.7; FLEX starters have scored 9.2 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Sam LaPorta) projects 10.2 PPG vs league median 10.8; FLEX starters have scored 9.2 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -1440,9 +1440,9 @@
             "REC_FLEX"
           ],
           "grade": "OK",
-          "z": 0.22,
-          "rank": 7,
-          "percentile": 45,
+          "z": 0.26,
+          "rank": 6,
+          "percentile": 55,
           "roster_value_ppg": 10.9,
           "league_median_roster_value_ppg": 10.9,
           "actual_starter_ppg": 9.5,
@@ -1476,11 +1476,11 @@
             "IDP_FLEX"
           ],
           "grade": "Need",
-          "z": -0.89,
+          "z": -0.97,
           "rank": 11,
           "percentile": 9,
           "roster_value_ppg": 7.9,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 7.0,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -1495,10 +1495,10 @@
               "value_source": "projection",
               "season_ppg": 10.2,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Dallas Turner) projects 7.9 PPG vs league median 8.2; IDP_FLEX starters have scored 7.0 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Dallas Turner) projects 7.9 PPG vs league median 8.6; IDP_FLEX starters have scored 7.0 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -1508,23 +1508,23 @@
           "positions": [
             "IDP"
           ],
-          "z": -0.89,
+          "z": -0.97,
           "rank": 11,
-          "reason": "IDP_FLEX (Dallas Turner) projects 7.9 PPG vs league median 8.2; IDP_FLEX starters have scored 7.0 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Dallas Turner) projects 7.9 PPG vs league median 8.6; IDP_FLEX starters have scored 7.0 per slot per week (median 8.6)"
         }
       ],
       "strengths": [
         {
           "group": "QB",
           "label": "QB",
-          "z": 1.56,
+          "z": 1.54,
           "rank": 2,
-          "reason": "QB (Josh Allen) projects 24.1 PPG vs league median 19.1; QB starters have scored 25.6 per slot per week (median 18.5)"
+          "reason": "QB (Josh Allen) projects 23.9 PPG vs league median 19.1; QB starters have scored 25.6 per slot per week (median 18.5)"
         },
         {
           "group": "WR",
           "label": "WR",
-          "z": 0.87,
+          "z": 0.88,
           "rank": 3,
           "reason": "WR1 (CeeDee Lamb) projects 16.2 PPG vs league median 14.1; WR starters have scored 15.6 per slot per week (median 11.2)"
         }
@@ -1570,31 +1570,12 @@
             "position": "TE",
             "nfl_team": "BUF",
             "injury_status": "Questionable",
-            "value_ppg": 8.0,
+            "value_ppg": 7.9,
             "value_source": "projection",
             "season_ppg": 8.5,
             "games": 9
           },
           "text": "TE Dalton Kincaid (BUF) is Questionable (thumb), in current Sleeper lineup"
-        },
-        {
-          "type": "bye",
-          "severity": "medium",
-          "week": 11,
-          "players": [
-            {
-              "player_id": "3973",
-              "name": "Myles Garrett",
-              "position": "DL",
-              "nfl_team": "LAR",
-              "injury_status": null,
-              "value_ppg": 5.6,
-              "value_source": "projection",
-              "season_ppg": 7.2,
-              "games": 3
-            }
-          ],
-          "text": "Week 11 bye: DL Myles Garrett (LAR) - no healthy bench DL"
         }
       ],
       "fa_suggestions": [
@@ -1683,7 +1664,7 @@
             9,
             10
           ],
-          "projected_next_week": 9.2,
+          "projected_next_week": 9.1,
           "trending_adds_48h": 0,
           "for_need": "IDP",
           "for_need_label": "IDP_FLEX (DL/LB/DB)",
@@ -1749,10 +1730,10 @@
             "QB"
           ],
           "grade": "OK",
-          "z": -0.34,
+          "z": -0.31,
           "rank": 9,
           "percentile": 27,
-          "roster_value_ppg": 18.5,
+          "roster_value_ppg": 18.6,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 17.9,
           "league_median_actual_ppg": 18.5,
@@ -1764,14 +1745,14 @@
               "position": "QB",
               "nfl_team": "DET",
               "injury_status": null,
-              "value_ppg": 18.5,
+              "value_ppg": 18.6,
               "value_source": "projection",
               "season_ppg": 19.1,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Jared Goff) projects 18.5 PPG vs league median 19.1; QB starters have scored 17.9 per slot per week (median 18.5)"
+          "reason": "QB (Jared Goff) projects 18.6 PPG vs league median 19.1; QB starters have scored 17.9 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -1882,11 +1863,11 @@
             "FLEX2"
           ],
           "grade": "Strength",
-          "z": 1.04,
+          "z": 0.99,
           "rank": 3,
           "percentile": 82,
           "roster_value_ppg": 11.8,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 12.0,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -1897,11 +1878,11 @@
               "position": "RB",
               "nfl_team": "IND",
               "injury_status": null,
-              "value_ppg": 14.6,
+              "value_ppg": 14.5,
               "value_source": "projection",
               "season_ppg": 15.2,
               "games": 10,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -1917,7 +1898,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Jonathan Taylor) projects 14.6 PPG vs league median 10.7; FLEX starters have scored 12.0 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Jonathan Taylor) projects 14.5 PPG vs league median 10.8; FLEX starters have scored 12.0 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -1930,10 +1911,10 @@
             "REC_FLEX"
           ],
           "grade": "OK",
-          "z": 0.57,
+          "z": 0.61,
           "rank": 5,
           "percentile": 64,
-          "roster_value_ppg": 11.0,
+          "roster_value_ppg": 10.9,
           "league_median_roster_value_ppg": 10.9,
           "actual_starter_ppg": 11.3,
           "league_median_actual_ppg": 9.1,
@@ -1945,14 +1926,14 @@
               "position": "WR",
               "nfl_team": "BUF",
               "injury_status": null,
-              "value_ppg": 11.0,
+              "value_ppg": 10.9,
               "value_source": "projection",
               "season_ppg": 9.8,
               "games": 7,
               "league_median_slot_ppg": 10.9
             }
           ],
-          "reason": "REC_FLEX (DJ Moore) projects 11.0 PPG vs league median 10.9; REC_FLEX starters have scored 11.3 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (DJ Moore) projects 10.9 PPG vs league median 10.9; REC_FLEX starters have scored 11.3 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
@@ -1965,12 +1946,12 @@
           "slots": [
             "IDP_FLEX"
           ],
-          "grade": "Strength",
-          "z": 0.79,
+          "grade": "OK",
+          "z": 0.71,
           "rank": 3,
           "percentile": 82,
           "roster_value_ppg": 9.0,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 9.6,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -1985,10 +1966,10 @@
               "value_source": "projection",
               "season_ppg": 11.6,
               "games": 8,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Devin Lloyd) projects 9.0 PPG vs league median 8.2; IDP_FLEX starters have scored 9.6 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Devin Lloyd) projects 9.0 PPG vs league median 8.6; IDP_FLEX starters have scored 9.6 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
@@ -1996,16 +1977,9 @@
         {
           "group": "FLEX",
           "label": "FLEX (RB/WR/TE)",
-          "z": 1.04,
+          "z": 0.99,
           "rank": 3,
-          "reason": "FLEX1 (Jonathan Taylor) projects 14.6 PPG vs league median 10.7; FLEX starters have scored 12.0 per slot per week (median 9.7)"
-        },
-        {
-          "group": "IDP",
-          "label": "IDP_FLEX (DL/LB/DB)",
-          "z": 0.79,
-          "rank": 3,
-          "reason": "IDP_FLEX (Devin Lloyd) projects 9.0 PPG vs league median 8.2; IDP_FLEX starters have scored 9.6 per slot per week (median 8.6)"
+          "reason": "FLEX1 (Jonathan Taylor) projects 14.5 PPG vs league median 10.8; FLEX starters have scored 12.0 per slot per week (median 9.7)"
         }
       ],
       "surplus": [
@@ -2074,7 +2048,7 @@
           "trending_adds_48h": 0,
           "for_need": "QB",
           "for_need_label": "QB",
-          "fit": "Would compete with your QB (18.5 PPG value)",
+          "fit": "Would compete with your QB (18.6 PPG value)",
           "faab_range": {
             "min": 10,
             "max": 20,
@@ -2086,7 +2060,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -2094,7 +2068,7 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "WR",
           "for_need_label": "WR",
@@ -2118,8 +2092,8 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -2166,8 +2140,8 @@
             9,
             10
           ],
-          "projected_next_week": 15.0,
-          "trending_adds_48h": 85065,
+          "projected_next_week": 14.9,
+          "trending_adds_48h": 50841,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -2208,7 +2182,7 @@
             "QB"
           ],
           "grade": "OK",
-          "z": -0.35,
+          "z": -0.36,
           "rank": 10,
           "percentile": 18,
           "roster_value_ppg": 17.6,
@@ -2271,14 +2245,14 @@
               "position": "RB",
               "nfl_team": "CIN",
               "injury_status": null,
-              "value_ppg": 13.3,
+              "value_ppg": 13.2,
               "value_source": "projection",
               "season_ppg": 12.0,
               "games": 9,
               "league_median_slot_ppg": 13.2
             }
           ],
-          "reason": "RB2 (Chase Brown) projects 13.3 PPG vs league median 13.2; RB starters have scored 14.1 per slot per week (median 14.1)"
+          "reason": "RB2 (Chase Brown) projects 13.2 PPG vs league median 13.2; RB starters have scored 14.1 per slot per week (median 14.1)"
         },
         {
           "group": "WR",
@@ -2294,7 +2268,7 @@
           "z": 1.21,
           "rank": 2,
           "percentile": 91,
-          "roster_value_ppg": 15.4,
+          "roster_value_ppg": 15.3,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 15.2,
           "league_median_actual_ppg": 11.2,
@@ -2341,11 +2315,11 @@
             "FLEX2"
           ],
           "grade": "OK",
-          "z": 0.49,
-          "rank": 4,
-          "percentile": 73,
+          "z": 0.46,
+          "rank": 5,
+          "percentile": 64,
           "roster_value_ppg": 11.2,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 10.0,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -2355,12 +2329,12 @@
               "name": "DeVonta Smith",
               "position": "WR",
               "nfl_team": "PHI",
-              "injury_status": "Questionable",
+              "injury_status": null,
               "value_ppg": 11.5,
               "value_source": "projection",
               "season_ppg": 14.2,
               "games": 4,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -2376,7 +2350,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (DeVonta Smith) projects 11.5 PPG vs league median 10.7; FLEX starters have scored 10.0 per slot per week (median 9.7)"
+          "reason": "FLEX1 (DeVonta Smith) projects 11.5 PPG vs league median 10.8; FLEX starters have scored 10.0 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -2388,8 +2362,8 @@
           "slots": [
             "REC_FLEX"
           ],
-          "grade": "OK",
-          "z": 0.73,
+          "grade": "Strength",
+          "z": 0.8,
           "rank": 4,
           "percentile": 73,
           "roster_value_ppg": 12.3,
@@ -2424,12 +2398,12 @@
           "slots": [
             "IDP_FLEX"
           ],
-          "grade": "Strength",
-          "z": 0.78,
+          "grade": "OK",
+          "z": 0.69,
           "rank": 4,
           "percentile": 73,
           "roster_value_ppg": 8.3,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 11.4,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -2444,10 +2418,10 @@
               "value_source": "projection",
               "season_ppg": 10.2,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Andrew Van Ginkel) projects 8.3 PPG vs league median 8.2; IDP_FLEX starters have scored 11.4 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Andrew Van Ginkel) projects 8.3 PPG vs league median 8.6; IDP_FLEX starters have scored 11.4 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
@@ -2460,11 +2434,11 @@
           "reason": "WR1 (Ja'Marr Chase) projects 17.2 PPG vs league median 14.1; WR starters have scored 15.2 per slot per week (median 11.2)"
         },
         {
-          "group": "IDP",
-          "label": "IDP_FLEX (DL/LB/DB)",
-          "z": 0.78,
+          "group": "REC_FLEX",
+          "label": "REC_FLEX (WR/TE)",
+          "z": 0.8,
           "rank": 4,
-          "reason": "IDP_FLEX (Andrew Van Ginkel) projects 8.3 PPG vs league median 8.2; IDP_FLEX starters have scored 11.4 per slot per week (median 8.6)"
+          "reason": "REC_FLEX (Mike Evans) projects 12.3 PPG vs league median 10.9; REC_FLEX starters have scored 10.2 per slot per week (median 9.1)"
         }
       ],
       "surplus": [
@@ -2475,6 +2449,14 @@
           "examples": [
             "Carnell Tate",
             "Omar Cooper Jr."
+          ]
+        },
+        {
+          "position": "TE",
+          "startable_bench": 1,
+          "league_median": 0.0,
+          "examples": [
+            "Tyler Warren"
           ]
         }
       ],
@@ -2558,22 +2540,6 @@
           "text": "DL Andrew Van Ginkel (MIN) is Questionable (quadriceps), in current Sleeper lineup"
         },
         {
-          "type": "injury",
-          "severity": "low",
-          "player": {
-            "player_id": "7525",
-            "name": "DeVonta Smith",
-            "position": "WR",
-            "nfl_team": "PHI",
-            "injury_status": "Questionable",
-            "value_ppg": 11.5,
-            "value_source": "projection",
-            "season_ppg": 14.2,
-            "games": 4
-          },
-          "text": "WR DeVonta Smith (PHI) is Questionable (hamstring), in best lineup"
-        },
-        {
           "type": "depth",
           "severity": "low",
           "position": "RB",
@@ -2623,11 +2589,11 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "RB",
           "for_need_label": "RB",
-          "fit": "Would compete with your RB2 (13.3 PPG value)",
+          "fit": "Would compete with your RB2 (13.2 PPG value)",
           "faab_range": {
             "min": 3,
             "max": 6,
@@ -2647,8 +2613,8 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Would compete with your QB (17.6 PPG value)",
@@ -2695,8 +2661,8 @@
             9,
             10
           ],
-          "projected_next_week": 15.0,
-          "trending_adds_48h": 85065,
+          "projected_next_week": 14.9,
+          "trending_adds_48h": 50841,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -2737,7 +2703,7 @@
             "QB"
           ],
           "grade": "Need",
-          "z": -1.96,
+          "z": -1.97,
           "rank": 12,
           "percentile": 0,
           "roster_value_ppg": 12.1,
@@ -2751,7 +2717,7 @@
               "name": "Carson Beck",
               "position": "QB",
               "nfl_team": "ARI",
-              "injury_status": null,
+              "injury_status": "Questionable",
               "value_ppg": 12.1,
               "value_source": "projection",
               "season_ppg": 2.4,
@@ -2820,10 +2786,10 @@
             "WR2"
           ],
           "grade": "Need",
-          "z": -1.67,
+          "z": -1.68,
           "rank": 12,
           "percentile": 0,
-          "roster_value_ppg": 9.0,
+          "roster_value_ppg": 8.9,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 7.7,
           "league_median_actual_ppg": 11.2,
@@ -2870,11 +2836,11 @@
             "FLEX2"
           ],
           "grade": "Need",
-          "z": -0.95,
+          "z": -0.98,
           "rank": 10,
           "percentile": 18,
           "roster_value_ppg": 7.9,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 8.0,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -2889,7 +2855,7 @@
               "value_source": "projection",
               "season_ppg": 7.6,
               "games": 4,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -2905,7 +2871,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Travis Etienne Jr.) projects 8.7 PPG vs league median 10.7; FLEX starters have scored 8.0 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Travis Etienne Jr.) projects 8.7 PPG vs league median 10.8; FLEX starters have scored 8.0 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -2918,7 +2884,7 @@
             "REC_FLEX"
           ],
           "grade": "Need",
-          "z": -1.29,
+          "z": -1.28,
           "rank": 11,
           "percentile": 9,
           "roster_value_ppg": 6.8,
@@ -2954,11 +2920,11 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": -0.49,
-          "rank": 9,
-          "percentile": 27,
+          "z": -0.56,
+          "rank": 10,
+          "percentile": 18,
           "roster_value_ppg": 7.7,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 8.9,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -2973,10 +2939,10 @@
               "value_source": "projection",
               "season_ppg": 8.6,
               "games": 10,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Quinnen Williams) projects 7.7 PPG vs league median 8.2; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Quinnen Williams) projects 7.7 PPG vs league median 8.6; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -2986,7 +2952,7 @@
           "positions": [
             "QB"
           ],
-          "z": -1.96,
+          "z": -1.97,
           "rank": 12,
           "reason": "QB (Carson Beck) projects 12.1 PPG vs league median 19.1; QB starters have scored 13.9 per slot per week (median 18.5)"
         },
@@ -2996,7 +2962,7 @@
           "positions": [
             "WR"
           ],
-          "z": -1.67,
+          "z": -1.68,
           "rank": 12,
           "reason": "WR1 (Rome Odunze) projects 9.9 PPG vs league median 14.1; WR starters have scored 7.7 per slot per week (median 11.2)"
         },
@@ -3007,7 +2973,7 @@
             "WR",
             "TE"
           ],
-          "z": -1.29,
+          "z": -1.28,
           "rank": 11,
           "reason": "REC_FLEX (Chris Godwin Jr.) projects 6.8 PPG vs league median 10.9; REC_FLEX starters have scored 7.4 per slot per week (median 9.1)"
         },
@@ -3019,9 +2985,9 @@
             "WR",
             "TE"
           ],
-          "z": -0.95,
+          "z": -0.98,
           "rank": 10,
-          "reason": "FLEX1 (Travis Etienne Jr.) projects 8.7 PPG vs league median 10.7; FLEX starters have scored 8.0 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Travis Etienne Jr.) projects 8.7 PPG vs league median 10.8; FLEX starters have scored 8.0 per slot per week (median 9.7)"
         }
       ],
       "strengths": [],
@@ -3057,6 +3023,38 @@
         }
       },
       "flags": [
+        {
+          "type": "injury",
+          "severity": "low",
+          "player": {
+            "player_id": "13272",
+            "name": "Carson Beck",
+            "position": "QB",
+            "nfl_team": "ARI",
+            "injury_status": "Questionable",
+            "value_ppg": 12.1,
+            "value_source": "projection",
+            "season_ppg": 2.4,
+            "games": 1
+          },
+          "text": "QB Carson Beck (ARI) is Questionable (back), in current Sleeper lineup"
+        },
+        {
+          "type": "injury",
+          "severity": "high",
+          "player": {
+            "player_id": "13424",
+            "name": "Seth McGowan",
+            "position": "RB",
+            "nfl_team": "IND",
+            "injury_status": "Out",
+            "value_ppg": 5.8,
+            "value_source": "projection",
+            "season_ppg": 4.5,
+            "games": 10
+          },
+          "text": "RB Seth McGowan (IND) is Out (hamstring), in current Sleeper lineup"
+        },
         {
           "type": "injury",
           "severity": "low",
@@ -3145,7 +3143,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -3153,7 +3151,7 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "WR",
           "for_need_label": "WR",
@@ -3201,8 +3199,8 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
           "fit": "Would compete with your FLEX2 (7.1 PPG value)",
@@ -3225,8 +3223,8 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Would compete with your QB (12.1 PPG value)",
@@ -3315,10 +3313,10 @@
             "QB"
           ],
           "grade": "Need",
-          "z": -0.99,
+          "z": -1.0,
           "rank": 11,
           "percentile": 9,
-          "roster_value_ppg": 16.3,
+          "roster_value_ppg": 16.2,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 15.7,
           "league_median_actual_ppg": 18.5,
@@ -3330,14 +3328,14 @@
               "position": "QB",
               "nfl_team": "NO",
               "injury_status": null,
-              "value_ppg": 16.3,
+              "value_ppg": 16.2,
               "value_source": "projection",
               "season_ppg": 18.2,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Tyler Shough) projects 16.3 PPG vs league median 19.1; QB starters have scored 15.7 per slot per week (median 18.5)"
+          "reason": "QB (Tyler Shough) projects 16.2 PPG vs league median 19.1; QB starters have scored 15.7 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -3398,10 +3396,10 @@
             "WR2"
           ],
           "grade": "Strength",
-          "z": 1.45,
+          "z": 1.44,
           "rank": 1,
           "percentile": 100,
-          "roster_value_ppg": 17.5,
+          "roster_value_ppg": 17.4,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 13.6,
           "league_median_actual_ppg": 11.2,
@@ -3426,7 +3424,7 @@
               "position": "WR",
               "nfl_team": "NYG",
               "injury_status": null,
-              "value_ppg": 13.2,
+              "value_ppg": 13.1,
               "value_source": "projection",
               "season_ppg": 12.2,
               "games": 9,
@@ -3448,11 +3446,11 @@
             "FLEX2"
           ],
           "grade": "OK",
-          "z": -0.28,
+          "z": -0.3,
           "rank": 8,
           "percentile": 36,
           "roster_value_ppg": 9.3,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 9.3,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -3467,7 +3465,7 @@
               "value_source": "projection",
               "season_ppg": 9.0,
               "games": 8,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -3476,14 +3474,14 @@
               "position": "TE",
               "nfl_team": "JAX",
               "injury_status": null,
-              "value_ppg": 8.0,
+              "value_ppg": 7.9,
               "value_source": "projection",
               "season_ppg": 7.2,
               "games": 9,
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX2 (Brenton Strange) projects 8.0 PPG vs league median 8.1; FLEX starters have scored 9.3 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Jalen Coker) projects 10.6 PPG vs league median 10.8; FLEX starters have scored 9.3 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -3496,7 +3494,7 @@
             "REC_FLEX"
           ],
           "grade": "Strength",
-          "z": 1.26,
+          "z": 1.31,
           "rank": 1,
           "percentile": 100,
           "roster_value_ppg": 11.7,
@@ -3532,11 +3530,11 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": -0.02,
-          "rank": 6,
-          "percentile": 55,
+          "z": -0.09,
+          "rank": 7,
+          "percentile": 45,
           "roster_value_ppg": 8.0,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 9.7,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -3551,10 +3549,10 @@
               "value_source": "projection",
               "season_ppg": 10.3,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Jeffery Simmons) projects 8.0 PPG vs league median 8.2; IDP_FLEX starters have scored 9.7 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Jeffery Simmons) projects 8.0 PPG vs league median 8.6; IDP_FLEX starters have scored 9.7 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -3574,23 +3572,23 @@
           "positions": [
             "QB"
           ],
-          "z": -0.99,
+          "z": -1.0,
           "rank": 11,
-          "reason": "QB (Tyler Shough) projects 16.3 PPG vs league median 19.1; QB starters have scored 15.7 per slot per week (median 18.5)"
+          "reason": "QB (Tyler Shough) projects 16.2 PPG vs league median 19.1; QB starters have scored 15.7 per slot per week (median 18.5)"
         }
       ],
       "strengths": [
         {
           "group": "WR",
           "label": "WR",
-          "z": 1.45,
+          "z": 1.44,
           "rank": 1,
           "reason": "WR1 (Jaxon Smith-Njigba) projects 21.7 PPG vs league median 14.1; WR starters have scored 13.6 per slot per week (median 11.2)"
         },
         {
           "group": "REC_FLEX",
           "label": "REC_FLEX (WR/TE)",
-          "z": 1.26,
+          "z": 1.31,
           "rank": 1,
           "reason": "REC_FLEX (Isaiah Likely) projects 11.7 PPG vs league median 10.9; REC_FLEX starters have scored 13.9 per slot per week (median 9.1)"
         }
@@ -3720,8 +3718,8 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "RB",
           "for_need_label": "RB",
           "fit": "Would compete with your RB2 (7.1 PPG value)",
@@ -3748,7 +3746,7 @@
           "trending_adds_48h": 0,
           "for_need": "QB",
           "for_need_label": "QB",
-          "fit": "Would compete with your QB (16.3 PPG value)",
+          "fit": "Would compete with your QB (16.2 PPG value)",
           "faab_range": {
             "min": 9,
             "max": 19,
@@ -3792,11 +3790,11 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
-          "fit": "Would compete with your QB (16.3 PPG value)",
+          "fit": "Would compete with your QB (16.2 PPG value)",
           "faab_range": {
             "min": 4,
             "max": 10,
@@ -3817,7 +3815,7 @@
             10
           ],
           "projected_next_week": 3.6,
-          "trending_adds_48h": 102599,
+          "trending_adds_48h": 47971,
           "for_need": "RB",
           "for_need_label": "RB",
           "fit": "Depth for RB",
@@ -3937,7 +3935,7 @@
             "RB2"
           ],
           "grade": "Strength",
-          "z": 0.86,
+          "z": 0.85,
           "rank": 3,
           "percentile": 82,
           "roster_value_ppg": 16.3,
@@ -3952,7 +3950,7 @@
               "position": "RB",
               "nfl_team": "BUF",
               "injury_status": null,
-              "value_ppg": 17.4,
+              "value_ppg": 17.2,
               "value_source": "projection",
               "season_ppg": 18.2,
               "games": 9,
@@ -3972,7 +3970,7 @@
               "league_median_slot_ppg": 13.2
             }
           ],
-          "reason": "RB1 (James Cook III) projects 17.4 PPG vs league median 15.1; RB starters have scored 16.2 per slot per week (median 14.1)"
+          "reason": "RB1 (James Cook III) projects 17.2 PPG vs league median 15.1; RB starters have scored 16.2 per slot per week (median 14.1)"
         },
         {
           "group": "WR",
@@ -4000,7 +3998,7 @@
               "position": "WR",
               "nfl_team": "CIN",
               "injury_status": null,
-              "value_ppg": 14.9,
+              "value_ppg": 14.8,
               "value_source": "projection",
               "season_ppg": 16.1,
               "games": 9,
@@ -4035,11 +4033,11 @@
             "FLEX2"
           ],
           "grade": "Strength",
-          "z": 1.33,
+          "z": 1.3,
           "rank": 1,
           "percentile": 100,
-          "roster_value_ppg": 11.0,
-          "league_median_roster_value_ppg": 9.6,
+          "roster_value_ppg": 11.1,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 15.6,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -4054,7 +4052,7 @@
               "value_source": "projection",
               "season_ppg": 18.5,
               "games": 9,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -4070,7 +4068,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Chuba Hubbard) projects 14.1 PPG vs league median 10.7; FLEX starters have scored 15.6 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Chuba Hubbard) projects 14.1 PPG vs league median 10.8; FLEX starters have scored 15.6 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -4083,10 +4081,10 @@
             "REC_FLEX"
           ],
           "grade": "OK",
-          "z": -0.47,
+          "z": -0.41,
           "rank": 8,
           "percentile": 36,
-          "roster_value_ppg": 9.8,
+          "roster_value_ppg": 9.9,
           "league_median_roster_value_ppg": 10.9,
           "actual_starter_ppg": 7.4,
           "league_median_actual_ppg": 9.1,
@@ -4098,14 +4096,14 @@
               "position": "TE",
               "nfl_team": "KC",
               "injury_status": null,
-              "value_ppg": 9.8,
+              "value_ppg": 9.9,
               "value_source": "projection",
               "season_ppg": 9.6,
               "games": 9,
               "league_median_slot_ppg": 10.9
             }
           ],
-          "reason": "REC_FLEX (Travis Kelce) projects 9.8 PPG vs league median 10.9; REC_FLEX starters have scored 7.4 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Travis Kelce) projects 9.9 PPG vs league median 10.9; REC_FLEX starters have scored 7.4 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
@@ -4119,11 +4117,11 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": -0.13,
-          "rank": 7,
-          "percentile": 45,
+          "z": -0.17,
+          "rank": 8,
+          "percentile": 36,
           "roster_value_ppg": 7.9,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 9.7,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -4138,10 +4136,10 @@
               "value_source": "projection",
               "season_ppg": 9.9,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Fred Warner) projects 7.9 PPG vs league median 8.2; IDP_FLEX starters have scored 9.7 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Fred Warner) projects 7.9 PPG vs league median 8.6; IDP_FLEX starters have scored 9.7 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
@@ -4149,16 +4147,16 @@
         {
           "group": "FLEX",
           "label": "FLEX (RB/WR/TE)",
-          "z": 1.33,
+          "z": 1.3,
           "rank": 1,
-          "reason": "FLEX1 (Chuba Hubbard) projects 14.1 PPG vs league median 10.7; FLEX starters have scored 15.6 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Chuba Hubbard) projects 14.1 PPG vs league median 10.8; FLEX starters have scored 15.6 per slot per week (median 9.7)"
         },
         {
           "group": "RB",
           "label": "RB",
-          "z": 0.86,
+          "z": 0.85,
           "rank": 3,
-          "reason": "RB1 (James Cook III) projects 17.4 PPG vs league median 15.1; RB starters have scored 16.2 per slot per week (median 14.1)"
+          "reason": "RB1 (James Cook III) projects 17.2 PPG vs league median 15.1; RB starters have scored 16.2 per slot per week (median 14.1)"
         }
       ],
       "surplus": [],
@@ -4246,7 +4244,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -4254,11 +4252,11 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
-          "fit": "Would compete with your REC_FLEX (9.8 PPG value)",
+          "fit": "Would compete with your REC_FLEX (9.9 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -4306,7 +4304,7 @@
           "trending_adds_48h": 0,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
-          "fit": "Would compete with your REC_FLEX (9.8 PPG value)",
+          "fit": "Would compete with your REC_FLEX (9.9 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -4326,8 +4324,8 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -4350,11 +4348,11 @@
             9,
             10
           ],
-          "projected_next_week": 6.2,
+          "projected_next_week": 6.3,
           "trending_adds_48h": 0,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
-          "fit": "Would compete with your REC_FLEX (9.8 PPG value)",
+          "fit": "Would compete with your REC_FLEX (9.9 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -4395,7 +4393,7 @@
           "z": 0.52,
           "rank": 3,
           "percentile": 82,
-          "roster_value_ppg": 22.7,
+          "roster_value_ppg": 22.6,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 18.6,
           "league_median_actual_ppg": 18.5,
@@ -4407,14 +4405,14 @@
               "position": "QB",
               "nfl_team": "JAX",
               "injury_status": null,
-              "value_ppg": 22.7,
+              "value_ppg": 22.6,
               "value_source": "projection",
               "season_ppg": 19.9,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Trevor Lawrence) projects 22.7 PPG vs league median 19.1; QB starters have scored 18.6 per slot per week (median 18.5)"
+          "reason": "QB (Trevor Lawrence) projects 22.6 PPG vs league median 19.1; QB starters have scored 18.6 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -4427,10 +4425,10 @@
             "RB2"
           ],
           "grade": "Strength",
-          "z": 1.61,
+          "z": 1.62,
           "rank": 1,
           "percentile": 100,
-          "roster_value_ppg": 18.8,
+          "roster_value_ppg": 18.9,
           "league_median_roster_value_ppg": 14.1,
           "actual_starter_ppg": 19.0,
           "league_median_actual_ppg": 14.1,
@@ -4442,7 +4440,7 @@
               "position": "RB",
               "nfl_team": "DET",
               "injury_status": null,
-              "value_ppg": 22.5,
+              "value_ppg": 22.6,
               "value_source": "projection",
               "season_ppg": 25.9,
               "games": 9,
@@ -4455,14 +4453,14 @@
               "position": "RB",
               "nfl_team": "NYG",
               "injury_status": null,
-              "value_ppg": 15.1,
+              "value_ppg": 15.2,
               "value_source": "projection",
               "season_ppg": 11.3,
               "games": 8,
               "league_median_slot_ppg": 13.2
             }
           ],
-          "reason": "RB1 (Jahmyr Gibbs) projects 22.5 PPG vs league median 15.1; RB starters have scored 19.0 per slot per week (median 14.1)"
+          "reason": "RB1 (Jahmyr Gibbs) projects 22.6 PPG vs league median 15.1; RB starters have scored 19.0 per slot per week (median 14.1)"
         },
         {
           "group": "WR",
@@ -4490,7 +4488,7 @@
               "position": "WR",
               "nfl_team": "GB",
               "injury_status": null,
-              "value_ppg": 13.7,
+              "value_ppg": 13.8,
               "value_source": "projection",
               "season_ppg": 14.8,
               "games": 10,
@@ -4525,11 +4523,11 @@
             "FLEX2"
           ],
           "grade": "OK",
-          "z": 0.11,
+          "z": 0.07,
           "rank": 7,
           "percentile": 45,
           "roster_value_ppg": 10.5,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 9.0,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -4544,7 +4542,7 @@
               "value_source": "projection",
               "season_ppg": 12.2,
               "games": 5,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -4560,7 +4558,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Breece Hall) projects 11.1 PPG vs league median 10.7; FLEX starters have scored 9.0 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Breece Hall) projects 11.1 PPG vs league median 10.8; FLEX starters have scored 9.0 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -4573,10 +4571,10 @@
             "REC_FLEX"
           ],
           "grade": "Strength",
-          "z": 1.01,
+          "z": 1.08,
           "rank": 2,
           "percentile": 91,
-          "roster_value_ppg": 13.2,
+          "roster_value_ppg": 13.1,
           "league_median_roster_value_ppg": 10.9,
           "actual_starter_ppg": 10.5,
           "league_median_actual_ppg": 9.1,
@@ -4588,14 +4586,14 @@
               "position": "TE",
               "nfl_team": "LV",
               "injury_status": "Questionable",
-              "value_ppg": 13.2,
+              "value_ppg": 13.1,
               "value_source": "projection",
               "season_ppg": 15.6,
               "games": 8,
               "league_median_slot_ppg": 10.9
             }
           ],
-          "reason": "REC_FLEX (Brock Bowers) projects 13.2 PPG vs league median 10.9; REC_FLEX starters have scored 10.5 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Brock Bowers) projects 13.1 PPG vs league median 10.9; REC_FLEX starters have scored 10.5 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
@@ -4609,11 +4607,11 @@
             "IDP_FLEX"
           ],
           "grade": "Strength",
-          "z": 0.96,
+          "z": 0.85,
           "rank": 2,
           "percentile": 91,
           "roster_value_ppg": 9.6,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 8.2,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -4628,10 +4626,10 @@
               "value_source": "projection",
               "season_ppg": 12.0,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Arvell Reese) projects 9.6 PPG vs league median 8.2; IDP_FLEX starters have scored 8.2 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Arvell Reese) projects 9.6 PPG vs league median 8.6; IDP_FLEX starters have scored 8.2 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
@@ -4639,23 +4637,23 @@
         {
           "group": "RB",
           "label": "RB",
-          "z": 1.61,
+          "z": 1.62,
           "rank": 1,
-          "reason": "RB1 (Jahmyr Gibbs) projects 22.5 PPG vs league median 15.1; RB starters have scored 19.0 per slot per week (median 14.1)"
+          "reason": "RB1 (Jahmyr Gibbs) projects 22.6 PPG vs league median 15.1; RB starters have scored 19.0 per slot per week (median 14.1)"
         },
         {
           "group": "REC_FLEX",
           "label": "REC_FLEX (WR/TE)",
-          "z": 1.01,
+          "z": 1.08,
           "rank": 2,
-          "reason": "REC_FLEX (Brock Bowers) projects 13.2 PPG vs league median 10.9; REC_FLEX starters have scored 10.5 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Brock Bowers) projects 13.1 PPG vs league median 10.9; REC_FLEX starters have scored 10.5 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
           "label": "IDP_FLEX (DL/LB/DB)",
-          "z": 0.96,
+          "z": 0.85,
           "rank": 2,
-          "reason": "IDP_FLEX (Arvell Reese) projects 9.6 PPG vs league median 8.2; IDP_FLEX starters have scored 8.2 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Arvell Reese) projects 9.6 PPG vs league median 8.6; IDP_FLEX starters have scored 8.2 per slot per week (median 8.6)"
         }
       ],
       "surplus": [
@@ -4708,7 +4706,7 @@
             "position": "WR",
             "nfl_team": "NO",
             "injury_status": "Questionable",
-            "value_ppg": 9.1,
+            "value_ppg": 9.0,
             "value_source": "projection",
             "season_ppg": 8.2,
             "games": 2
@@ -4724,7 +4722,7 @@
             "position": "TE",
             "nfl_team": "LV",
             "injury_status": "Questionable",
-            "value_ppg": 13.2,
+            "value_ppg": 13.1,
             "value_source": "projection",
             "season_ppg": 15.6,
             "games": 8
@@ -4742,7 +4740,7 @@
               "position": "WR",
               "nfl_team": "GB",
               "injury_status": null,
-              "value_ppg": 13.7,
+              "value_ppg": 13.8,
               "value_source": "projection",
               "season_ppg": 14.8,
               "games": 10
@@ -4773,7 +4771,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -4781,7 +4779,7 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "WR",
           "for_need_label": "WR",
@@ -4805,8 +4803,8 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
           "fit": "Would compete with your FLEX2 (10.0 PPG value)",
@@ -4853,7 +4851,7 @@
             9,
             10
           ],
-          "projected_next_week": 6.2,
+          "projected_next_week": 6.3,
           "trending_adds_48h": 0,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
@@ -4865,20 +4863,20 @@
           }
         },
         {
-          "player_id": "13264",
-          "name": "Dohnte Meyers",
+          "player_id": "9754",
+          "name": "Quentin Johnston",
           "position": "WR",
-          "nfl_team": "CIN",
+          "nfl_team": "LAC",
           "injury_status": null,
-          "recent_ppg": 7.1,
+          "recent_ppg": 7.5,
           "recent_games": 3,
           "recent_weeks": [
             8,
             9,
             10
           ],
-          "projected_next_week": 2.2,
-          "trending_adds_48h": 55008,
+          "projected_next_week": 6.6,
+          "trending_adds_48h": 42735,
           "for_need": "WR",
           "for_need_label": "WR",
           "fit": "Depth for WR",
@@ -4919,7 +4917,7 @@
             "QB"
           ],
           "grade": "OK",
-          "z": -0.19,
+          "z": -0.18,
           "rank": 7,
           "percentile": 45,
           "roster_value_ppg": 19.7,
@@ -4954,7 +4952,7 @@
             "RB2"
           ],
           "grade": "OK",
-          "z": -0.04,
+          "z": -0.05,
           "rank": 7,
           "percentile": 45,
           "roster_value_ppg": 11.6,
@@ -4982,7 +4980,7 @@
               "position": "RB",
               "nfl_team": "MIA",
               "injury_status": null,
-              "value_ppg": 11.6,
+              "value_ppg": 11.5,
               "value_source": "projection",
               "season_ppg": 10.0,
               "games": 9,
@@ -5003,8 +5001,8 @@
           ],
           "grade": "OK",
           "z": 0.05,
-          "rank": 7,
-          "percentile": 45,
+          "rank": 6,
+          "percentile": 55,
           "roster_value_ppg": 13.3,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 11.5,
@@ -5030,7 +5028,7 @@
               "position": "WR",
               "nfl_team": "NO",
               "injury_status": null,
-              "value_ppg": 13.0,
+              "value_ppg": 12.9,
               "value_source": "projection",
               "season_ppg": 13.2,
               "games": 9,
@@ -5052,26 +5050,26 @@
             "FLEX2"
           ],
           "grade": "OK",
-          "z": 0.22,
-          "rank": 5,
-          "percentile": 64,
-          "roster_value_ppg": 10.0,
-          "league_median_roster_value_ppg": 9.6,
+          "z": 0.5,
+          "rank": 4,
+          "percentile": 73,
+          "roster_value_ppg": 10.9,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 10.8,
           "league_median_actual_ppg": 9.7,
           "players": [
             {
               "slot": "FLEX1",
-              "player_id": "8148",
-              "name": "Jameson Williams",
+              "player_id": "8146",
+              "name": "Garrett Wilson",
               "position": "WR",
-              "nfl_team": "DET",
+              "nfl_team": "NYJ",
               "injury_status": null,
-              "value_ppg": 10.8,
+              "value_ppg": 12.6,
               "value_source": "projection",
-              "season_ppg": 11.1,
+              "season_ppg": 11.6,
               "games": 9,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -5087,7 +5085,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Jameson Williams) projects 10.8 PPG vs league median 10.7; FLEX starters have scored 10.8 per slot per week (median 9.7)"
+          "reason": "FLEX2 (Tucker Kraft) projects 9.2 PPG vs league median 8.1; FLEX starters have scored 10.8 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -5100,29 +5098,29 @@
             "REC_FLEX"
           ],
           "grade": "OK",
-          "z": 0.53,
-          "rank": 6,
-          "percentile": 55,
-          "roster_value_ppg": 12.6,
+          "z": 0.11,
+          "rank": 7,
+          "percentile": 45,
+          "roster_value_ppg": 10.8,
           "league_median_roster_value_ppg": 10.9,
           "actual_starter_ppg": 8.7,
           "league_median_actual_ppg": 9.1,
           "players": [
             {
               "slot": "REC_FLEX",
-              "player_id": "8146",
-              "name": "Garrett Wilson",
+              "player_id": "8148",
+              "name": "Jameson Williams",
               "position": "WR",
-              "nfl_team": "NYJ",
+              "nfl_team": "DET",
               "injury_status": null,
-              "value_ppg": 12.6,
+              "value_ppg": 10.8,
               "value_source": "projection",
-              "season_ppg": 11.6,
+              "season_ppg": 11.1,
               "games": 9,
               "league_median_slot_ppg": 10.9
             }
           ],
-          "reason": "REC_FLEX (Garrett Wilson) projects 12.6 PPG vs league median 10.9; REC_FLEX starters have scored 8.7 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Jameson Williams) projects 10.8 PPG vs league median 10.9; REC_FLEX starters have scored 8.7 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
@@ -5136,11 +5134,11 @@
             "IDP_FLEX"
           ],
           "grade": "Strength",
-          "z": 0.96,
+          "z": 0.86,
           "rank": 1,
           "percentile": 100,
           "roster_value_ppg": 9.4,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 8.9,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -5155,10 +5153,10 @@
               "value_source": "projection",
               "season_ppg": 11.7,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Will Anderson Jr.) projects 9.4 PPG vs league median 8.2; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Will Anderson Jr.) projects 9.4 PPG vs league median 8.6; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
         }
       ],
       "needs": [],
@@ -5166,9 +5164,9 @@
         {
           "group": "IDP",
           "label": "IDP_FLEX (DL/LB/DB)",
-          "z": 0.96,
+          "z": 0.86,
           "rank": 1,
-          "reason": "IDP_FLEX (Will Anderson Jr.) projects 9.4 PPG vs league median 8.2; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Will Anderson Jr.) projects 9.4 PPG vs league median 8.6; IDP_FLEX starters have scored 8.9 per slot per week (median 8.6)"
         }
       ],
       "surplus": [],
@@ -5293,11 +5291,11 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "RB",
           "for_need_label": "RB",
-          "fit": "Would compete with your RB2 (11.6 PPG value)",
+          "fit": "Would compete with your RB2 (11.5 PPG value)",
           "faab_range": {
             "min": 3,
             "max": 7,
@@ -5317,8 +5315,8 @@
             9,
             10
           ],
-          "projected_next_week": 17.9,
-          "trending_adds_48h": 630408,
+          "projected_next_week": 18.0,
+          "trending_adds_48h": 327534,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -5365,8 +5363,8 @@
             9,
             10
           ],
-          "projected_next_week": 15.0,
-          "trending_adds_48h": 85065,
+          "projected_next_week": 14.9,
+          "trending_adds_48h": 50841,
           "for_need": "QB",
           "for_need_label": "QB",
           "fit": "Depth for QB",
@@ -5407,10 +5405,10 @@
             "QB"
           ],
           "grade": "OK",
-          "z": 0.29,
+          "z": 0.3,
           "rank": 5,
           "percentile": 64,
-          "roster_value_ppg": 19.1,
+          "roster_value_ppg": 19.0,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 22.6,
           "league_median_actual_ppg": 18.5,
@@ -5422,14 +5420,14 @@
               "position": "QB",
               "nfl_team": "SF",
               "injury_status": null,
-              "value_ppg": 19.1,
+              "value_ppg": 19.0,
               "value_source": "projection",
               "season_ppg": 23.1,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Brock Purdy) projects 19.1 PPG vs league median 19.1; QB starters have scored 22.6 per slot per week (median 18.5)"
+          "reason": "QB (Brock Purdy) projects 19.0 PPG vs league median 19.1; QB starters have scored 22.6 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -5442,10 +5440,10 @@
             "RB2"
           ],
           "grade": "OK",
-          "z": 0.53,
+          "z": 0.52,
           "rank": 5,
           "percentile": 64,
-          "roster_value_ppg": 16.0,
+          "roster_value_ppg": 15.9,
           "league_median_roster_value_ppg": 14.1,
           "actual_starter_ppg": 14.1,
           "league_median_actual_ppg": 14.1,
@@ -5470,14 +5468,14 @@
               "position": "RB",
               "nfl_team": "BAL",
               "injury_status": null,
-              "value_ppg": 13.7,
+              "value_ppg": 13.5,
               "value_source": "projection",
               "season_ppg": 15.3,
               "games": 10,
               "league_median_slot_ppg": 13.2
             }
           ],
-          "reason": "RB2 (Derrick Henry) projects 13.7 PPG vs league median 13.2; RB starters have scored 14.1 per slot per week (median 14.1)"
+          "reason": "RB2 (Derrick Henry) projects 13.5 PPG vs league median 13.2; RB starters have scored 14.1 per slot per week (median 14.1)"
         },
         {
           "group": "WR",
@@ -5490,10 +5488,10 @@
             "WR2"
           ],
           "grade": "OK",
-          "z": 0.05,
-          "rank": 6,
-          "percentile": 55,
-          "roster_value_ppg": 13.7,
+          "z": 0.04,
+          "rank": 7,
+          "percentile": 45,
+          "roster_value_ppg": 13.6,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 10.9,
           "league_median_actual_ppg": 11.2,
@@ -5518,7 +5516,7 @@
               "position": "WR",
               "nfl_team": "BAL",
               "injury_status": null,
-              "value_ppg": 12.9,
+              "value_ppg": 12.8,
               "value_source": "projection",
               "season_ppg": 12.8,
               "games": 9,
@@ -5540,11 +5538,11 @@
             "FLEX2"
           ],
           "grade": "OK",
-          "z": 0.12,
+          "z": 0.11,
           "rank": 6,
           "percentile": 55,
-          "roster_value_ppg": 8.6,
-          "league_median_roster_value_ppg": 9.6,
+          "roster_value_ppg": 8.7,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 13.2,
           "league_median_actual_ppg": 9.7,
           "players": [
@@ -5559,7 +5557,7 @@
               "value_source": "projection",
               "season_ppg": 8.4,
               "games": 5,
-              "league_median_slot_ppg": 10.7
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -5624,11 +5622,11 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": 0.23,
-          "rank": 5,
-          "percentile": 64,
+          "z": 0.15,
+          "rank": 6,
+          "percentile": 55,
           "roster_value_ppg": 8.9,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 7.8,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -5643,10 +5641,10 @@
               "value_source": "projection",
               "season_ppg": 11.1,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Alex Singleton) projects 8.9 PPG vs league median 8.2; IDP_FLEX starters have scored 7.8 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Alex Singleton) projects 8.9 PPG vs league median 8.6; IDP_FLEX starters have scored 7.8 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -5667,8 +5665,8 @@
       "depth": {
         "bench_counts": {
           "QB": 0,
-          "RB": 2,
-          "WR": 4,
+          "RB": 3,
+          "WR": 3,
           "TE": 0,
           "IDP": 0
         },
@@ -5734,7 +5732,7 @@
         {
           "type": "ir",
           "severity": "info",
-          "text": "On IR: WR Michael Wilson, RB Jonathon Brooks"
+          "text": "On IR: WR Michael Wilson, WR A.J. Brown"
         }
       ],
       "fa_suggestions": [
@@ -5743,7 +5741,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -5751,7 +5749,7 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
@@ -5799,7 +5797,7 @@
             9,
             10
           ],
-          "projected_next_week": 6.2,
+          "projected_next_week": 6.3,
           "trending_adds_48h": 0,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
@@ -5824,7 +5822,7 @@
             10
           ],
           "projected_next_week": 5.6,
-          "trending_adds_48h": 60305,
+          "trending_adds_48h": 84077,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
           "fit": "Would compete with your REC_FLEX (7.3 PPG value)",
@@ -5835,23 +5833,23 @@
           }
         },
         {
-          "player_id": "13264",
-          "name": "Dohnte Meyers",
+          "player_id": "9754",
+          "name": "Quentin Johnston",
           "position": "WR",
-          "nfl_team": "CIN",
+          "nfl_team": "LAC",
           "injury_status": null,
-          "recent_ppg": 7.1,
+          "recent_ppg": 7.5,
           "recent_games": 3,
           "recent_weeks": [
             8,
             9,
             10
           ],
-          "projected_next_week": 2.2,
-          "trending_adds_48h": 55008,
+          "projected_next_week": 6.6,
+          "trending_adds_48h": 42735,
           "for_need": "REC_FLEX",
           "for_need_label": "REC_FLEX (WR/TE)",
-          "fit": "Depth for REC_FLEX",
+          "fit": "Would compete with your REC_FLEX (7.3 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 0,
@@ -5937,10 +5935,10 @@
             "QB"
           ],
           "grade": "Strength",
-          "z": 1.63,
+          "z": 1.62,
           "rank": 1,
           "percentile": 100,
-          "roster_value_ppg": 24.1,
+          "roster_value_ppg": 24.0,
           "league_median_roster_value_ppg": 19.1,
           "actual_starter_ppg": 26.1,
           "league_median_actual_ppg": 18.5,
@@ -5952,14 +5950,14 @@
               "position": "QB",
               "nfl_team": "CIN",
               "injury_status": null,
-              "value_ppg": 24.1,
+              "value_ppg": 24.0,
               "value_source": "projection",
               "season_ppg": 26.5,
               "games": 9,
               "league_median_slot_ppg": 19.1
             }
           ],
-          "reason": "QB (Joe Burrow) projects 24.1 PPG vs league median 19.1; QB starters have scored 26.1 per slot per week (median 18.5)"
+          "reason": "QB (Joe Burrow) projects 24.0 PPG vs league median 19.1; QB starters have scored 26.1 per slot per week (median 18.5)"
         },
         {
           "group": "RB",
@@ -6000,7 +5998,7 @@
               "position": "RB",
               "nfl_team": "CIN",
               "injury_status": null,
-              "value_ppg": 6.9,
+              "value_ppg": 6.8,
               "value_source": "projection",
               "season_ppg": 5.9,
               "games": 9,
@@ -6020,10 +6018,10 @@
             "WR2"
           ],
           "grade": "OK",
-          "z": 0.72,
+          "z": 0.73,
           "rank": 4,
           "percentile": 73,
-          "roster_value_ppg": 15.8,
+          "roster_value_ppg": 15.9,
           "league_median_roster_value_ppg": 13.3,
           "actual_starter_ppg": 11.7,
           "league_median_actual_ppg": 11.2,
@@ -6035,7 +6033,7 @@
               "position": "WR",
               "nfl_team": "DET",
               "injury_status": null,
-              "value_ppg": 16.2,
+              "value_ppg": 16.3,
               "value_source": "projection",
               "season_ppg": 16.9,
               "games": 9,
@@ -6055,7 +6053,7 @@
               "league_median_slot_ppg": 11.8
             }
           ],
-          "reason": "WR1 (Amon-Ra St. Brown) projects 16.2 PPG vs league median 14.1; WR starters have scored 11.7 per slot per week (median 11.2)"
+          "reason": "WR1 (Amon-Ra St. Brown) projects 16.3 PPG vs league median 14.1; WR starters have scored 11.7 per slot per week (median 11.2)"
         },
         {
           "group": "FLEX",
@@ -6070,26 +6068,26 @@
             "FLEX2"
           ],
           "grade": "Need",
-          "z": -1.02,
+          "z": -1.04,
           "rank": 11,
           "percentile": 9,
           "roster_value_ppg": 7.5,
-          "league_median_roster_value_ppg": 9.6,
+          "league_median_roster_value_ppg": 9.9,
           "actual_starter_ppg": 8.5,
           "league_median_actual_ppg": 9.7,
           "players": [
             {
               "slot": "FLEX1",
-              "player_id": "11610",
-              "name": "Malik Washington",
+              "player_id": "5872",
+              "name": "Deebo Samuel Sr.",
               "position": "WR",
-              "nfl_team": "MIA",
+              "nfl_team": "SF",
               "injury_status": null,
               "value_ppg": 7.6,
               "value_source": "projection",
-              "season_ppg": 8.0,
-              "games": 9,
-              "league_median_slot_ppg": 10.7
+              "season_ppg": 12.8,
+              "games": 6,
+              "league_median_slot_ppg": 10.8
             },
             {
               "slot": "FLEX2",
@@ -6105,7 +6103,7 @@
               "league_median_slot_ppg": 8.1
             }
           ],
-          "reason": "FLEX1 (Malik Washington) projects 7.6 PPG vs league median 10.7; FLEX starters have scored 8.5 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Deebo Samuel Sr.) projects 7.6 PPG vs league median 10.8; FLEX starters have scored 8.5 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -6128,19 +6126,19 @@
           "players": [
             {
               "slot": "REC_FLEX",
-              "player_id": "5872",
-              "name": "Deebo Samuel Sr.",
+              "player_id": "11610",
+              "name": "Malik Washington",
               "position": "WR",
-              "nfl_team": "SF",
+              "nfl_team": "MIA",
               "injury_status": null,
               "value_ppg": 7.6,
               "value_source": "projection",
-              "season_ppg": 12.8,
-              "games": 6,
+              "season_ppg": 8.0,
+              "games": 9,
               "league_median_slot_ppg": 10.9
             }
           ],
-          "reason": "REC_FLEX (Deebo Samuel Sr.) projects 7.6 PPG vs league median 10.9; REC_FLEX starters have scored 8.2 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Malik Washington) projects 7.6 PPG vs league median 10.9; REC_FLEX starters have scored 8.2 per slot per week (median 9.1)"
         },
         {
           "group": "IDP",
@@ -6154,11 +6152,11 @@
             "IDP_FLEX"
           ],
           "grade": "OK",
-          "z": -0.28,
-          "rank": 8,
-          "percentile": 36,
+          "z": -0.36,
+          "rank": 9,
+          "percentile": 27,
           "roster_value_ppg": 8.8,
-          "league_median_roster_value_ppg": 8.2,
+          "league_median_roster_value_ppg": 8.6,
           "actual_starter_ppg": 6.2,
           "league_median_actual_ppg": 8.6,
           "players": [
@@ -6168,15 +6166,15 @@
               "name": "Nick Bolton",
               "position": "LB",
               "nfl_team": "KC",
-              "injury_status": "Questionable",
+              "injury_status": null,
               "value_ppg": 8.8,
               "value_source": "projection",
               "season_ppg": 8.7,
               "games": 9,
-              "league_median_slot_ppg": 8.2
+              "league_median_slot_ppg": 8.6
             }
           ],
-          "reason": "IDP_FLEX (Nick Bolton) projects 8.8 PPG vs league median 8.2; IDP_FLEX starters have scored 6.2 per slot per week (median 8.6)"
+          "reason": "IDP_FLEX (Nick Bolton) projects 8.8 PPG vs league median 8.6; IDP_FLEX starters have scored 6.2 per slot per week (median 8.6)"
         }
       ],
       "needs": [
@@ -6198,9 +6196,9 @@
             "WR",
             "TE"
           ],
-          "z": -1.02,
+          "z": -1.04,
           "rank": 11,
-          "reason": "FLEX1 (Malik Washington) projects 7.6 PPG vs league median 10.7; FLEX starters have scored 8.5 per slot per week (median 9.7)"
+          "reason": "FLEX1 (Deebo Samuel Sr.) projects 7.6 PPG vs league median 10.8; FLEX starters have scored 8.5 per slot per week (median 9.7)"
         },
         {
           "group": "REC_FLEX",
@@ -6211,16 +6209,16 @@
           ],
           "z": -0.9,
           "rank": 9,
-          "reason": "REC_FLEX (Deebo Samuel Sr.) projects 7.6 PPG vs league median 10.9; REC_FLEX starters have scored 8.2 per slot per week (median 9.1)"
+          "reason": "REC_FLEX (Malik Washington) projects 7.6 PPG vs league median 10.9; REC_FLEX starters have scored 8.2 per slot per week (median 9.1)"
         }
       ],
       "strengths": [
         {
           "group": "QB",
           "label": "QB",
-          "z": 1.63,
+          "z": 1.62,
           "rank": 1,
-          "reason": "QB (Joe Burrow) projects 24.1 PPG vs league median 19.1; QB starters have scored 26.1 per slot per week (median 18.5)"
+          "reason": "QB (Joe Burrow) projects 24.0 PPG vs league median 19.1; QB starters have scored 26.1 per slot per week (median 18.5)"
         }
       ],
       "surplus": [
@@ -6264,22 +6262,6 @@
         }
       },
       "flags": [
-        {
-          "type": "injury",
-          "severity": "low",
-          "player": {
-            "player_id": "7648",
-            "name": "Nick Bolton",
-            "position": "LB",
-            "nfl_team": "KC",
-            "injury_status": "Questionable",
-            "value_ppg": 8.8,
-            "value_source": "projection",
-            "season_ppg": 8.7,
-            "games": 9
-          },
-          "text": "LB Nick Bolton (KC) is Questionable (shin), in best lineup"
-        },
         {
           "type": "bye",
           "severity": "medium",
@@ -6325,11 +6307,11 @@
             9,
             10
           ],
-          "projected_next_week": 6.9,
-          "trending_adds_48h": 0,
+          "projected_next_week": 6.7,
+          "trending_adds_48h": 33740,
           "for_need": "RB",
           "for_need_label": "RB",
-          "fit": "Would compete with your RB2 (6.9 PPG value)",
+          "fit": "Would compete with your RB2 (6.8 PPG value)",
           "faab_range": {
             "min": 3,
             "max": 7,
@@ -6341,7 +6323,7 @@
           "name": "Kayshon Boutte",
           "position": "WR",
           "nfl_team": "HOU",
-          "injury_status": null,
+          "injury_status": "Questionable",
           "recent_ppg": 13.2,
           "recent_games": 2,
           "recent_weeks": [
@@ -6349,7 +6331,7 @@
             9,
             10
           ],
-          "projected_next_week": 5.6,
+          "projected_next_week": 5.7,
           "trending_adds_48h": 0,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
@@ -6401,7 +6383,7 @@
           "trending_adds_48h": 0,
           "for_need": "RB",
           "for_need_label": "RB",
-          "fit": "Would compete with your RB2 (6.9 PPG value)",
+          "fit": "Would compete with your RB2 (6.8 PPG value)",
           "faab_range": {
             "min": 0,
             "max": 1,
@@ -6421,7 +6403,7 @@
             9,
             10
           ],
-          "projected_next_week": 6.2,
+          "projected_next_week": 6.3,
           "trending_adds_48h": 0,
           "for_need": "FLEX",
           "for_need_label": "FLEX (RB/WR/TE)",
