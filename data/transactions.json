@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-21T06:55:58-07:00",
+    "generated_at": "2026-11-22T06:49:53-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 11,
     "counts": {
-      "transactions": 370
+      "transactions": 376
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,245 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1430015958591770624",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T16:48:02-07:00",
+      "processed": "2026-11-21T16:48:02-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Treylon Burks / drops Demarcus Robinson",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "8135",
+              "name": "Treylon Burks",
+              "position": "WR",
+              "nfl_team": "WAS"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "3286",
+              "name": "Demarcus Robinson",
+              "position": "WR",
+              "nfl_team": "SF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1430015177029337088",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T16:44:55-07:00",
+      "processed": "2026-11-21T16:44:55-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Greg Rousseau / drops Donovan Ezeiruaku",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "7627",
+              "name": "Greg Rousseau",
+              "position": "DE",
+              "nfl_team": "BUF"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "12556",
+              "name": "Donovan Ezeiruaku",
+              "position": "DL",
+              "nfl_team": "DAL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1430015136139063296",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T16:44:46-07:00",
+      "processed": "2026-11-21T16:44:46-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Cam Ward / drops Josh Johnson",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "12522",
+              "name": "Cam Ward",
+              "position": "QB",
+              "nfl_team": "TEN"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "260",
+              "name": "Josh Johnson",
+              "position": "QB",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1429958924185919488",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T13:01:24-07:00",
+      "processed": "2026-11-21T13:01:24-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Josh Johnson / drops Carson Beck",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "260",
+              "name": "Josh Johnson",
+              "position": "QB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13272",
+              "name": "Carson Beck",
+              "position": "QB",
+              "nfl_team": "ARI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1429939499416178688",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T11:44:12-07:00",
+      "processed": "2026-11-21T11:44:12-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Tyler Allgeier",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "8132",
+              "name": "Tyler Allgeier",
+              "position": "RB",
+              "nfl_team": "ARI"
+            }
+          ],
+          "drops": []
+        }
+      ]
+    },
+    {
+      "id": "1429891382897549312",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-21T08:33:01-07:00",
+      "processed": "2026-11-21T08:33:01-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross"
+        }
+      ],
+      "headline": "Juan adds Donovan Ezeiruaku / drops Quinnen Williams",
+      "sides": [
+        {
+          "roster_id": 6,
+          "manager": "Juan",
+          "team_name": "Red Cross",
+          "adds": [
+            {
+              "player_id": "12556",
+              "name": "Donovan Ezeiruaku",
+              "position": "DL",
+              "nfl_team": "DAL"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "6118",
+              "name": "Quinnen Williams",
+              "position": "DT",
+              "nfl_team": "DAL"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1429151006653952000",
       "type": "free_agent",
@@ -3768,7 +4007,7 @@
               "player_id": "8116",
               "name": "Pierre Strong Jr.",
               "position": "RB",
-              "nfl_team": "GB"
+              "nfl_team": "FA"
             }
           ]
         }
@@ -4195,7 +4434,7 @@
               "player_id": "8116",
               "name": "Pierre Strong Jr.",
               "position": "RB",
-              "nfl_team": "GB"
+              "nfl_team": "FA"
             }
           ],
           "drops": [
@@ -15497,19 +15736,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 96,
-      "free_agent": 248,
+      "free_agent": 254,
       "commissioner": 2,
-      "total": 370
+      "total": 376
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 95,
-      "free_agent": 176,
+      "free_agent": 182,
       "commissioner": 2,
-      "total": 289
+      "total": 295
     },
     "totals_by_phase": {
-      "regular": 289,
+      "regular": 295,
       "preseason": 31,
       "offseason": 50
     },
@@ -15525,13 +15764,13 @@
       "8": 25,
       "9": 24,
       "10": 30,
-      "11": 5
+      "11": 11
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 51
+      "count": 52
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -15668,15 +15907,15 @@
         ]
       },
       {
-        "player_id": "1479",
-        "name": "Keenan Allen",
-        "position": "WR",
-        "nfl_team": "SF",
+        "player_id": "7627",
+        "name": "Greg Rousseau",
+        "position": "DE",
+        "nfl_team": "BUF",
         "adds": 3,
         "added_by": [
-          "Brett",
-          "Vlad",
-          "Doug"
+          "Juan",
+          "Matt Z",
+          "Derek"
         ]
       }
     ],
@@ -15757,13 +15996,25 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 51,
-        "regular_season_transactions": 39,
+        "transactions": 52,
+        "regular_season_transactions": 40,
         "trades": 6,
         "waiver_claims": 9,
-        "free_agent_moves": 36,
-        "players_added": 39,
+        "free_agent_moves": 37,
+        "players_added": 40,
         "players_dropped": 46
+      },
+      {
+        "roster_id": 6,
+        "manager": "Juan",
+        "team_name": "Red Cross",
+        "transactions": 51,
+        "regular_season_transactions": 42,
+        "trades": 10,
+        "waiver_claims": 12,
+        "free_agent_moves": 29,
+        "players_added": 39,
+        "players_dropped": 44
       },
       {
         "roster_id": 2,
@@ -15788,18 +16039,6 @@
         "free_agent_moves": 31,
         "players_added": 35,
         "players_dropped": 37
-      },
-      {
-        "roster_id": 6,
-        "manager": "Juan",
-        "team_name": "Red Cross",
-        "transactions": 46,
-        "regular_season_transactions": 37,
-        "trades": 10,
-        "waiver_claims": 12,
-        "free_agent_moves": 24,
-        "players_added": 34,
-        "players_dropped": 39
       },
       {
         "roster_id": 9,
