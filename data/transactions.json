@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T06:49:53-07:00",
+    "generated_at": "2026-11-23T06:54:53-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 11,
     "counts": {
-      "transactions": 376
+      "transactions": 377
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,47 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1430306019111620608",
+      "type": "free_agent",
+      "week": 11,
+      "sleeper_leg": 11,
+      "phase": "regular",
+      "created": "2026-11-22T12:00:38-07:00",
+      "processed": "2026-11-22T12:00:38-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play"
+        }
+      ],
+      "headline": "Jake adds Jayden Reed / drops Jahan Dotson",
+      "sides": [
+        {
+          "roster_id": 1,
+          "manager": "Jake",
+          "team_name": "Top Play",
+          "adds": [
+            {
+              "player_id": "10222",
+              "name": "Jayden Reed",
+              "position": "WR",
+              "nfl_team": "GB"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "8119",
+              "name": "Jahan Dotson",
+              "position": "WR",
+              "nfl_team": "ATL"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1430015958591770624",
       "type": "free_agent",
@@ -4007,7 +4048,7 @@
               "player_id": "8116",
               "name": "Pierre Strong Jr.",
               "position": "RB",
-              "nfl_team": "FA"
+              "nfl_team": "GB"
             }
           ]
         }
@@ -4434,7 +4475,7 @@
               "player_id": "8116",
               "name": "Pierre Strong Jr.",
               "position": "RB",
-              "nfl_team": "FA"
+              "nfl_team": "GB"
             }
           ],
           "drops": [
@@ -12482,7 +12523,7 @@
               "player_id": "5870",
               "name": "Daniel Jones",
               "position": "QB",
-              "nfl_team": "IND"
+              "nfl_team": "FA"
             }
           ]
         }
@@ -15736,19 +15777,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 96,
-      "free_agent": 254,
+      "free_agent": 255,
       "commissioner": 2,
-      "total": 376
+      "total": 377
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 95,
-      "free_agent": 182,
+      "free_agent": 183,
       "commissioner": 2,
-      "total": 295
+      "total": 296
     },
     "totals_by_phase": {
-      "regular": 295,
+      "regular": 296,
       "preseason": 31,
       "offseason": 50
     },
@@ -15764,13 +15805,13 @@
       "8": 25,
       "9": 24,
       "10": 30,
-      "11": 11
+      "11": 12
     },
     "most_active_manager": {
       "managers": [
         "Jake"
       ],
-      "count": 52
+      "count": 53
     },
     "most_active_manager_regular_season": {
       "managers": [
@@ -15996,13 +16037,13 @@
         "roster_id": 1,
         "manager": "Jake",
         "team_name": "Top Play",
-        "transactions": 52,
-        "regular_season_transactions": 40,
+        "transactions": 53,
+        "regular_season_transactions": 41,
         "trades": 6,
         "waiver_claims": 9,
-        "free_agent_moves": 37,
-        "players_added": 40,
-        "players_dropped": 46
+        "free_agent_moves": 38,
+        "players_added": 41,
+        "players_dropped": 47
       },
       {
         "roster_id": 6,
