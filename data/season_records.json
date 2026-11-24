@@ -174,12 +174,12 @@
       "playoff": false
     },
     {
-      "week": 1,
-      "owner": "Andrew Reed",
-      "points": 75.46,
-      "opponent": "Marc Caballero",
-      "opponent_points": 142.56,
-      "margin": 67.1,
+      "week": 11,
+      "owner": "Derek Bock",
+      "points": 74.98,
+      "opponent": "Jake Prosser",
+      "opponent_points": 95.16,
+      "margin": 20.18,
       "playoff": false
     }
   ],
@@ -191,6 +191,15 @@
       "opponent": "Andrew Reed",
       "opponent_points": 94.04,
       "margin": 1.62,
+      "playoff": false
+    },
+    {
+      "week": 11,
+      "owner": "Juan Rodriguez",
+      "points": 90.02,
+      "opponent": "Vlad Barber",
+      "opponent_points": 86.84,
+      "margin": 3.18,
       "playoff": false
     },
     {
@@ -230,6 +239,15 @@
       "playoff": false
     },
     {
+      "week": 11,
+      "owner": "Matt Zacharias",
+      "points": 113.06,
+      "opponent": "Paul Bacon",
+      "opponent_points": 106.46,
+      "margin": 6.6,
+      "playoff": false
+    },
+    {
       "week": 2,
       "owner": "Douglas Sullivan",
       "points": 99.22,
@@ -254,24 +272,6 @@
       "opponent": "Jake Prosser",
       "opponent_points": 93.88,
       "margin": 7.68,
-      "playoff": false
-    },
-    {
-      "week": 6,
-      "owner": "Matt Zacharias",
-      "points": 78.08,
-      "opponent": "Brett Trana",
-      "opponent_points": 69.86,
-      "margin": 8.22,
-      "playoff": false
-    },
-    {
-      "week": 10,
-      "owner": "Douglas Sullivan",
-      "points": 110.12,
-      "opponent": "Brett Trana",
-      "opponent_points": 99.86,
-      "margin": 10.26,
       "playoff": false
     }
   ],

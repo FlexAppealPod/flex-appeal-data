@@ -1,56 +1,29 @@
 [
   {
-    "week": 11,
-    "team_a": "Top Play",
-    "owner_a": "Jake Prosser",
-    "record_a": "0-20",
-    "team_b": "my njigba",
-    "owner_b": "Derek Bock",
-    "record_b": "7-13"
+    "week": 12,
+    "team_a": "CTE",
+    "owner_a": "Matt Atkinson",
+    "record_a": "15-7",
+    "team_b": "Paper Kings",
+    "owner_b": "Brett Trana",
+    "record_b": "12-10"
   },
   {
-    "week": 11,
-    "team_a": "Red Cross",
-    "owner_a": "Juan Rodriguez",
-    "record_a": "2-18",
-    "team_b": "WHO’s YOUR VLADDY",
-    "owner_b": "Vlad Barber",
-    "record_b": "11-9"
-  },
-  {
-    "week": 11,
-    "team_a": "9 - 5",
-    "owner_a": "Douglas Sullivan",
-    "record_a": "17-3",
-    "team_b": "Walker? Barely know her",
-    "owner_b": "Marc Caballero",
-    "record_b": "13-7"
-  },
-  {
-    "week": 11,
+    "week": 12,
     "team_a": "Taylor Swift",
     "owner_a": "Elijah Bruette",
-    "record_a": "14-6",
-    "team_b": "CTE",
-    "owner_b": "Matt Atkinson",
-    "record_b": "13-7"
-  },
-  {
-    "week": 11,
-    "team_a": "Paper Kings",
-    "owner_a": "Brett Trana",
-    "record_a": "10-10",
-    "team_b": "Carried by RA",
-    "owner_b": "Andrew Reed",
-    "record_b": "7-13"
-  },
-  {
-    "week": 11,
-    "team_a": "Rolling With Mahomies",
-    "owner_a": "Matt Zacharias",
-    "record_a": "13-7",
+    "record_a": "15-7",
     "team_b": "Rudy",
     "owner_b": "Paul Bacon",
-    "record_b": "13-7"
+    "record_b": "14-8"
+  },
+  {
+    "week": 12,
+    "team_a": "Rolling With Mahomies",
+    "owner_a": "Matt Zacharias",
+    "record_a": "15-7",
+    "team_b": "Walker? Barely know her",
+    "owner_b": "Marc Caballero",
+    "record_b": "15-7"
   }
 ]

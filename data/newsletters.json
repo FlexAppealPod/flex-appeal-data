@@ -2,6 +2,16 @@
   "_note": "Weekly Flex Appeal newsletters (PDF). pdf/cover are repo paths; the site builds raw GitHub URLs from them. Newest first.",
   "newsletters": [
     {
+      "id": "2026-w12",
+      "season": 2026,
+      "week": 12,
+      "title": "Flex Appeal Newsletter – Week 12",
+      "date": "2026-11-23",
+      "pdf": "newsletters/2026/Flex_Appeal_Newsletter_Week12.pdf",
+      "cover": "newsletters/2026/Flex_Appeal_Newsletter_Week12_cover.png",
+      "blurb": "Playoff special: Week 11 recap, the Week 12 Flex Rankings, the playoff bracket, and how the 7 seed was won."
+    },
+    {
       "id": "2026-w11",
       "season": 2026,
       "week": 11,

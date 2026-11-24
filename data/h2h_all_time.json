@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-17T08:09:19-07:00",
+  "generated_at": "2026-11-23T23:19:51-07:00",
   "seasons_covered": [
    "2022",
    "2023",
@@ -10,9 +10,9 @@
   ],
   "through": {
    "season": "2026",
-   "week": 10
+   "week": 11
   },
-  "total_games": 361,
+  "total_games": 367,
   "rules": "Real head-to-head games only (same Sleeper matchup_id); weekly median games are not counted. Regular season plus every winners-bracket game, including 3rd/5th-place games (type 'placement'). A two-week playoff round counts as one meeting decided by combined score. Losers-bracket (toilet bowl) games, Week 18 and unplayed weeks are excluded. Managers are keyed by Sleeper account, so team-name and roster changes don't split records. 2022 was played on ESPN (8 teams); 2023 onward on Sleeper. Mid-season owner changes come from data/sources/owner_overrides.json (2024 roster 2: Mike Weeks 1-6, Matt Z from Week 7). Whole-season owner fixes come from its season_owners list (2024 roster 11: Aaron all season; Sleeper now lists Matt A, who took the roster over after the season). Scores are Sleeper matchup points, except where data/sources/score_overrides.json swaps in the official standings total (2024 Week 7: Juan, roster 2, Matt F and Lij, whose trade-reversal players show 0 in the matchup data). Deion's 2023 Sleeper roster had no linked Sleeper account; it is mapped to him by league records.",
   "labels": {
    "current": "Current Managers",
@@ -342,10 +342,10 @@
  "totals": {
   "jake": {
    "vs_current": {
-    "w": 13,
+    "w": 14,
     "l": 32,
     "t": 0,
-    "pct": 0.289
+    "pct": 0.304
    },
    "vs_former": {
     "w": 7,
@@ -354,22 +354,22 @@
     "pct": 0.467
    },
    "all_games": {
-    "w": 20,
+    "w": 21,
     "l": 40,
     "t": 0,
-    "pct": 0.333
+    "pct": 0.344
    },
-   "regular_games": 60,
+   "regular_games": 61,
    "playoff_games": 0,
    "games_vs_former": 15,
-   "total_games": 60
+   "total_games": 61
   },
   "matt-z": {
    "vs_current": {
-    "w": 22,
+    "w": 23,
     "l": 16,
     "t": 0,
-    "pct": 0.579
+    "pct": 0.59
    },
    "vs_former": {
     "w": 3,
@@ -378,22 +378,22 @@
     "pct": 0.375
    },
    "all_games": {
-    "w": 25,
+    "w": 26,
     "l": 21,
     "t": 0,
-    "pct": 0.543
+    "pct": 0.553
    },
-   "regular_games": 41,
+   "regular_games": 42,
    "playoff_games": 5,
    "games_vs_former": 8,
-   "total_games": 46
+   "total_games": 47
   },
   "paul": {
    "vs_current": {
     "w": 15,
-    "l": 19,
+    "l": 20,
     "t": 0,
-    "pct": 0.441
+    "pct": 0.429
    },
    "vs_former": {
     "w": 3,
@@ -403,21 +403,21 @@
    },
    "all_games": {
     "w": 18,
-    "l": 19,
+    "l": 20,
     "t": 0,
-    "pct": 0.486
+    "pct": 0.474
    },
-   "regular_games": 34,
+   "regular_games": 35,
    "playoff_games": 3,
    "games_vs_former": 3,
-   "total_games": 37
+   "total_games": 38
   },
   "lij": {
    "vs_current": {
     "w": 25,
-    "l": 20,
+    "l": 21,
     "t": 0,
-    "pct": 0.556
+    "pct": 0.543
    },
    "vs_former": {
     "w": 10,
@@ -427,21 +427,21 @@
    },
    "all_games": {
     "w": 35,
-    "l": 30,
+    "l": 31,
     "t": 0,
-    "pct": 0.538
+    "pct": 0.53
    },
-   "regular_games": 60,
+   "regular_games": 61,
    "playoff_games": 5,
    "games_vs_former": 20,
-   "total_games": 65
+   "total_games": 66
   },
   "doug": {
    "vs_current": {
     "w": 30,
-    "l": 19,
+    "l": 20,
     "t": 0,
-    "pct": 0.612
+    "pct": 0.6
    },
    "vs_former": {
     "w": 10,
@@ -451,21 +451,21 @@
    },
    "all_games": {
     "w": 40,
-    "l": 28,
+    "l": 29,
     "t": 0,
-    "pct": 0.588
+    "pct": 0.58
    },
-   "regular_games": 60,
+   "regular_games": 61,
    "playoff_games": 8,
    "games_vs_former": 19,
-   "total_games": 68
+   "total_games": 69
   },
   "juan": {
    "vs_current": {
-    "w": 22,
+    "w": 23,
     "l": 21,
     "t": 0,
-    "pct": 0.512
+    "pct": 0.523
    },
    "vs_former": {
     "w": 8,
@@ -474,22 +474,22 @@
     "pct": 0.8
    },
    "all_games": {
-    "w": 30,
+    "w": 31,
     "l": 23,
     "t": 0,
-    "pct": 0.566
+    "pct": 0.574
    },
-   "regular_games": 47,
+   "regular_games": 48,
    "playoff_games": 6,
    "games_vs_former": 10,
-   "total_games": 53
+   "total_games": 54
   },
   "derek": {
    "vs_current": {
     "w": 17,
-    "l": 19,
+    "l": 20,
     "t": 0,
-    "pct": 0.472
+    "pct": 0.459
    },
    "vs_former": {
     "w": 1,
@@ -499,21 +499,21 @@
    },
    "all_games": {
     "w": 18,
-    "l": 20,
+    "l": 21,
     "t": 0,
-    "pct": 0.474
+    "pct": 0.462
    },
-   "regular_games": 34,
+   "regular_games": 35,
    "playoff_games": 4,
    "games_vs_former": 2,
-   "total_games": 38
+   "total_games": 39
   },
   "matt-a": {
    "vs_current": {
-    "w": 16,
+    "w": 17,
     "l": 7,
     "t": 0,
-    "pct": 0.696
+    "pct": 0.708
    },
    "vs_former": {
     "w": 0,
@@ -522,22 +522,22 @@
     "pct": 0.0
    },
    "all_games": {
-    "w": 16,
+    "w": 17,
     "l": 7,
     "t": 0,
-    "pct": 0.696
+    "pct": 0.708
    },
-   "regular_games": 21,
+   "regular_games": 22,
    "playoff_games": 2,
    "games_vs_former": 0,
-   "total_games": 23
+   "total_games": 24
   },
   "vlad": {
    "vs_current": {
     "w": 27,
-    "l": 22,
+    "l": 23,
     "t": 0,
-    "pct": 0.551
+    "pct": 0.54
    },
    "vs_former": {
     "w": 8,
@@ -547,21 +547,21 @@
    },
    "all_games": {
     "w": 35,
-    "l": 32,
+    "l": 33,
     "t": 0,
-    "pct": 0.522
+    "pct": 0.515
    },
-   "regular_games": 60,
+   "regular_games": 61,
    "playoff_games": 7,
    "games_vs_former": 18,
-   "total_games": 67
+   "total_games": 68
   },
   "marc": {
    "vs_current": {
-    "w": 17,
+    "w": 18,
     "l": 24,
     "t": 0,
-    "pct": 0.415
+    "pct": 0.429
    },
    "vs_former": {
     "w": 5,
@@ -570,22 +570,22 @@
     "pct": 0.625
    },
    "all_games": {
-    "w": 22,
+    "w": 23,
     "l": 27,
     "t": 0,
-    "pct": 0.449
+    "pct": 0.46
    },
-   "regular_games": 47,
+   "regular_games": 48,
    "playoff_games": 2,
    "games_vs_former": 8,
-   "total_games": 49
+   "total_games": 50
   },
   "brett": {
    "vs_current": {
-    "w": 10,
+    "w": 11,
     "l": 11,
     "t": 0,
-    "pct": 0.476
+    "pct": 0.5
    },
    "vs_former": {
     "w": 0,
@@ -594,22 +594,22 @@
     "pct": 0.0
    },
    "all_games": {
-    "w": 10,
+    "w": 11,
     "l": 11,
     "t": 0,
-    "pct": 0.476
+    "pct": 0.5
    },
-   "regular_games": 21,
+   "regular_games": 22,
    "playoff_games": 0,
    "games_vs_former": 0,
-   "total_games": 21
+   "total_games": 22
   },
   "andrew": {
    "vs_current": {
     "w": 15,
-    "l": 19,
+    "l": 20,
     "t": 0,
-    "pct": 0.441
+    "pct": 0.429
    },
    "vs_former": {
     "w": 1,
@@ -619,14 +619,14 @@
    },
    "all_games": {
     "w": 16,
-    "l": 21,
+    "l": 22,
     "t": 0,
-    "pct": 0.432
+    "pct": 0.421
    },
-   "regular_games": 34,
+   "regular_games": 35,
    "playoff_games": 3,
    "games_vs_former": 3,
-   "total_games": 37
+   "total_games": 38
   },
   "deion": {
    "vs_current": {
@@ -830,10 +830,10 @@
     "games": 4
    },
    "derek": {
-    "w": 2,
+    "w": 3,
     "l": 1,
     "t": 0,
-    "games": 3
+    "games": 4
    },
    "matt-a": {
     "w": 0,
@@ -916,10 +916,10 @@
     "games": 4
    },
    "paul": {
-    "w": 1,
+    "w": 2,
     "l": 1,
     "t": 0,
-    "games": 2
+    "games": 3
    },
    "lij": {
     "w": 1,
@@ -1027,9 +1027,9 @@
    },
    "matt-z": {
     "w": 1,
-    "l": 1,
+    "l": 2,
     "t": 0,
-    "games": 2
+    "games": 3
    },
    "lij": {
     "w": 1,
@@ -1137,9 +1137,9 @@
    },
    "matt-a": {
     "w": 1,
-    "l": 1,
+    "l": 2,
     "t": 0,
-    "games": 2
+    "games": 3
    },
    "vlad": {
     "w": 2,
@@ -1259,9 +1259,9 @@
    },
    "marc": {
     "w": 2,
-    "l": 2,
+    "l": 3,
     "t": 0,
-    "games": 4
+    "games": 5
    },
    "brett": {
     "w": 2,
@@ -1362,10 +1362,10 @@
     "games": 2
    },
    "vlad": {
-    "w": 3,
+    "w": 4,
     "l": 2,
     "t": 0,
-    "games": 5
+    "games": 6
    },
    "marc": {
     "w": 5,
@@ -1431,9 +1431,9 @@
   "derek": {
    "jake": {
     "w": 1,
-    "l": 2,
+    "l": 3,
     "t": 0,
-    "games": 3
+    "games": 4
    },
    "matt-z": {
     "w": 1,
@@ -1528,10 +1528,10 @@
     "games": 2
    },
    "lij": {
-    "w": 1,
+    "w": 2,
     "l": 1,
     "t": 0,
-    "games": 2
+    "games": 3
    },
    "doug": {
     "w": 2,
@@ -1609,9 +1609,9 @@
    },
    "juan": {
     "w": 2,
-    "l": 3,
+    "l": 4,
     "t": 0,
-    "games": 5
+    "games": 6
    },
    "derek": {
     "w": 3,
@@ -1712,10 +1712,10 @@
     "games": 6
    },
    "doug": {
-    "w": 2,
+    "w": 3,
     "l": 2,
     "t": 0,
-    "games": 4
+    "games": 5
    },
    "juan": {
     "w": 1,
@@ -1858,10 +1858,10 @@
     "games": 2
    },
    "andrew": {
-    "w": 0,
+    "w": 1,
     "l": 1,
     "t": 0,
-    "games": 1
+    "games": 2
    }
   },
   "andrew": {
@@ -1927,9 +1927,9 @@
    },
    "brett": {
     "w": 1,
-    "l": 0,
+    "l": 1,
     "t": 0,
-    "games": 1
+    "games": 2
    },
    "michaeldewey99": {
     "w": 0,
@@ -2782,9 +2782,9 @@
     ]
    },
    "status": "in_season",
-   "completed_through_week": 10,
+   "completed_through_week": 11,
    "games_counted": {
-    "regular": 60,
+    "regular": 66,
     "playoff": 0,
     "placement": 0
    },
@@ -2830,9 +2830,9 @@
   "Most lopsided rivalry: Doug is 6-1 all-time vs Jake.",
   "Most-played rivalry: Vlad vs Jake, 8 meetings (Vlad leads 6-2).",
   "Unbeaten vs someone (3+ meetings): Juan 4-0 vs Jake; Paul 3-0 vs Jake; Derek 3-0 vs Juan.",
-  "17 of 66 current-manager rivalries are dead even: Matt Z-Doug 2-2, Paul-Derek 2-2, Doug-Derek 2-2, Doug-Vlad 3-3, Doug-Marc 2-2, Juan-Andrew 2-2, Derek-Andrew 2-2.",
-  "Best record vs current managers: Matt A 16-7 (.696).",
-  "Toughest all-time road: Jake 20-40 (.333).",
+  "15 of 66 current-manager rivalries are dead even: Matt Z-Doug 2-2, Paul-Derek 2-2, Doug-Derek 2-2, Doug-Vlad 3-3, Juan-Andrew 2-2, Derek-Andrew 2-2.",
+  "Best record vs current managers: Matt A 17-7 (.708).",
+  "Toughest all-time road: Jake 21-40 (.344).",
   "Best vs Legacy Managers: Juan 8-2."
  ],
  "games": [
@@ -3196,6 +3196,12 @@
   {"season":"2026","weeks":"10","type":"regular","label":"Regular season","a":"lij","b":"juan","a_pts":126.42,"b_pts":105.92,"winner":"lij"},
   {"season":"2026","weeks":"10","type":"regular","label":"Regular season","a":"doug","b":"brett","a_pts":110.12,"b_pts":99.86,"winner":"doug"},
   {"season":"2026","weeks":"10","type":"regular","label":"Regular season","a":"paul","b":"matt-a","a_pts":118.84,"b_pts":106.4,"winner":"paul"},
-  {"season":"2026","weeks":"10","type":"regular","label":"Regular season","a":"matt-z","b":"andrew","a_pts":113.96,"b_pts":130.32,"winner":"andrew"}
+  {"season":"2026","weeks":"10","type":"regular","label":"Regular season","a":"matt-z","b":"andrew","a_pts":113.96,"b_pts":130.32,"winner":"andrew"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"jake","b":"derek","a_pts":95.16,"b_pts":74.98,"winner":"jake"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"juan","b":"vlad","a_pts":90.02,"b_pts":86.84,"winner":"juan"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"doug","b":"marc","a_pts":99.8,"b_pts":108.54,"winner":"marc"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"lij","b":"matt-a","a_pts":105.06,"b_pts":128.46,"winner":"matt-a"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"brett","b":"andrew","a_pts":103.1,"b_pts":79.9,"winner":"brett"},
+  {"season":"2026","weeks":"11","type":"regular","label":"Regular season","a":"matt-z","b":"paul","a_pts":113.06,"b_pts":106.46,"winner":"matt-z"}
  ]
 }

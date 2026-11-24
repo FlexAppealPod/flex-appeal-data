@@ -108,7 +108,7 @@ except ImportError:  # pragma: no cover
     _flex = None
 
 # Rankings ON HOLD: never publish a board week above this (None = no hold).
-FLEX_PUBLISH_MAX_BOARD = 11
+FLEX_PUBLISH_MAX_BOARD = 12
 
 # Week 3 Flex board is LOCKED (posted board). Movement vs last posted board
 # (not necessarily week_2_flex.csv). Record/PF/PD/streak come from results
@@ -165,6 +165,10 @@ POSTED_FLEX = {
     11: ["Matt Atkinson", "Douglas Sullivan", "Elijah Bruette", "Vlad Barber",
          "Paul Bacon", "Matt Zacharias", "Andrew Reed", "Brett Trana",
          "Marc Caballero", "Derek Bock", "Juan Rodriguez", "Jake Prosser"],
+    # Week 12 board (through Week 11); movement vs Week 11
+    12: ["Matt Atkinson", "Douglas Sullivan", "Elijah Bruette", "Matt Zacharias",
+         "Paul Bacon", "Brett Trana", "Marc Caballero", "Vlad Barber",
+         "Andrew Reed", "Derek Bock", "Juan Rodriguez", "Jake Prosser"],
 }
 
 
@@ -536,6 +540,42 @@ def matchup_rows(teams, weekly):
             })
     rows.sort(key=lambda r: (r["week"], r["owner"]))
     return rows
+
+
+
+def upcoming_playoff_pairings(teams, agg, settings, winners_bracket, week):
+    """This Week pairings from the Sleeper winners bracket.
+
+    The matchups/{week} endpoint can still show leftover regular-season
+    pairings after the playoffs start, so the bracket is the source of truth.
+    Only games with both teams set are included (a 1-seed bye is not a pairing).
+    """
+    wb = winners_bracket or []
+    rounds = RP.playoff_rounds(settings or {}, max([g.get("r") or 0 for g in wb] or [0]))
+    rnd = next((r for r, wks in rounds.items() if week in wks), None)
+    if rnd is None:
+        return []
+    ranked = sorted(agg, key=lambda rid: (agg[rid]["wins"], agg[rid]["pf"]), reverse=True)
+    seed = {rid: i for i, rid in enumerate(ranked, 1)}
+    games = [g for g in wb if g.get("r") == rnd and g.get("t1") and g.get("t2")]
+    games.sort(key=lambda g: (seed.get(g["t1"], 99), seed.get(g["t2"], 99)))
+    out = []
+    for g in games:
+        t1, t2 = g["t1"], g["t2"]
+        if seed.get(t2, 99) < seed.get(t1, 99):
+            t1, t2 = t2, t1
+        ta, tb = teams[t1], teams[t2]
+        aa, ab = agg.get(t1, {}), agg.get(t2, {})
+        out.append({
+            "week": week,
+            "team_a": ta["team_name"],
+            "owner_a": ta["owner"],
+            "record_a": aa.get("record", "0-0"),
+            "team_b": tb["team_name"],
+            "owner_b": tb["owner"],
+            "record_b": ab.get("record", "0-0"),
+        })
+    return out
 
 
 def upcoming_pairings(teams, matchup_rows_raw, agg):
@@ -1012,41 +1052,45 @@ def main():
 
     # upcoming: first unscored week with matchup_ids
     agg = cumulative(weekly, through) if through else {}
+    pstart = int((league.get("settings") or {}).get("playoff_week_start") or 15)
+    wb_2026 = None
+    if site_week >= pstart or any(w >= pstart for w in weekly):
+        wb_2026 = fetch_or_cache(f"{BASE}/league/{LEAGUE_ID_2026}/winners_bracket", CACHE_2026 / "winners_bracket.json")
     upcoming = []
-    for w in sorted(matchups_by_week):
-        if w in weekly:
-            continue
-        rows = matchups_by_week[w]
-        by_mid = defaultdict(list)
-        for r in rows:
-            if r.get("matchup_id") is not None:
-                by_mid[r["matchup_id"]].append(r)
-        for mid in sorted(by_mid):
-            pair = by_mid[mid]
-            if len(pair) != 2:
+    if site_week >= pstart and wb_2026:
+        # Playoff This Week: use the winners bracket, not leftover regular-season matchups
+        upcoming = upcoming_playoff_pairings(teams, agg, league.get("settings") or {}, wb_2026, site_week)
+    else:
+        for w in sorted(matchups_by_week):
+            if w in weekly:
                 continue
-            a, b = pair
-            ta, tb = teams[a["roster_id"]], teams[b["roster_id"]]
-            aa = agg.get(a["roster_id"], {})
-            ab = agg.get(b["roster_id"], {})
-            upcoming.append({
-                "week": w,
-                "team_a": ta["team_name"],
-                "owner_a": ta["owner"],
-                "record_a": aa.get("record", "0-0"),
-                "team_b": tb["team_name"],
-                "owner_b": tb["owner"],
-                "record_b": ab.get("record", "0-0"),
-            })
-        if upcoming:
-            break  # only next upcoming week
+            rows = matchups_by_week[w]
+            by_mid = defaultdict(list)
+            for r in rows:
+                if r.get("matchup_id") is not None:
+                    by_mid[r["matchup_id"]].append(r)
+            for mid in sorted(by_mid):
+                pair = by_mid[mid]
+                if len(pair) != 2:
+                    continue
+                a, b = pair
+                ta, tb = teams[a["roster_id"]], teams[b["roster_id"]]
+                aa = agg.get(a["roster_id"], {})
+                ab = agg.get(b["roster_id"], {})
+                upcoming.append({
+                    "week": w,
+                    "team_a": ta["team_name"],
+                    "owner_a": ta["owner"],
+                    "record_a": aa.get("record", "0-0"),
+                    "team_b": tb["team_name"],
+                    "owner_b": tb["owner"],
+                    "record_b": ab.get("record", "0-0"),
+                })
+            if upcoming:
+                break  # only next upcoming week
     write_json("upcoming.json", upcoming)
 
     # season records
-    pstart = int((league.get("settings") or {}).get("playoff_week_start") or 15)
-    wb_2026 = None
-    if any(w >= pstart for w in weekly):  # playoffs underway: need the bracket to drop consolation games
-        wb_2026 = fetch_or_cache(f"{BASE}/league/{LEAGUE_ID_2026}/winners_bracket", CACHE_2026 / "winners_bracket.json")
     season_recs = season_record_lists(teams, weekly, phase_of=record_phase_fn(league, wb_2026)) if weekly else {
         "high_scores": [], "low_scores": [], "closest_games": [], "blowouts": []
     }

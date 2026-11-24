@@ -1318,5 +1318,137 @@
     "h2h_result": "W",
     "weekly_median": 108.26,
     "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "Carried by RA",
+    "owner": "Andrew Reed",
+    "points": 79.9,
+    "opponent": "Paper Kings",
+    "opponent_points": 103.1,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "L"
+  },
+  {
+    "week": 11,
+    "team_name": "Paper Kings",
+    "owner": "Brett Trana",
+    "points": 103.1,
+    "opponent": "Carried by RA",
+    "opponent_points": 79.9,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "my njigba",
+    "owner": "Derek Bock",
+    "points": 74.98,
+    "opponent": "Top Play",
+    "opponent_points": 95.16,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "L"
+  },
+  {
+    "week": 11,
+    "team_name": "9 - 5",
+    "owner": "Douglas Sullivan",
+    "points": 99.8,
+    "opponent": "Walker? Barely know her",
+    "opponent_points": 108.54,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "L"
+  },
+  {
+    "week": 11,
+    "team_name": "Taylor Swift",
+    "owner": "Elijah Bruette",
+    "points": 105.06,
+    "opponent": "CTE",
+    "opponent_points": 128.46,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "Top Play",
+    "owner": "Jake Prosser",
+    "points": 95.16,
+    "opponent": "my njigba",
+    "opponent_points": 74.98,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "L"
+  },
+  {
+    "week": 11,
+    "team_name": "Red Cross",
+    "owner": "Juan Rodriguez",
+    "points": 90.02,
+    "opponent": "WHO’s YOUR VLADDY",
+    "opponent_points": 86.84,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "L"
+  },
+  {
+    "week": 11,
+    "team_name": "Walker? Barely know her",
+    "owner": "Marc Caballero",
+    "points": 108.54,
+    "opponent": "9 - 5",
+    "opponent_points": 99.8,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "CTE",
+    "owner": "Matt Atkinson",
+    "points": 128.46,
+    "opponent": "Taylor Swift",
+    "opponent_points": 105.06,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "Rolling With Mahomies",
+    "owner": "Matt Zacharias",
+    "points": 113.06,
+    "opponent": "Rudy",
+    "opponent_points": 106.46,
+    "h2h_result": "W",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "Rudy",
+    "owner": "Paul Bacon",
+    "points": 106.46,
+    "opponent": "Rolling With Mahomies",
+    "opponent_points": 113.06,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "W"
+  },
+  {
+    "week": 11,
+    "team_name": "WHO’s YOUR VLADDY",
+    "owner": "Vlad Barber",
+    "points": 86.84,
+    "opponent": "Red Cross",
+    "opponent_points": 90.02,
+    "h2h_result": "L",
+    "weekly_median": 101.45,
+    "median_result": "L"
   }
 ]
