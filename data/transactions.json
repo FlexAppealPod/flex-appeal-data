@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-25T06:51:56-07:00",
+    "generated_at": "2026-11-26T06:49:41-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 12,
     "counts": {
-      "transactions": 383
+      "transactions": 386
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,115 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1431502364837150720",
+      "type": "free_agent",
+      "week": 12,
+      "sleeper_leg": 12,
+      "phase": "regular",
+      "created": "2026-11-25T19:14:29-07:00",
+      "processed": "2026-11-25T19:14:29-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings"
+        }
+      ],
+      "headline": "Brett adds J.J. McCarthy / drops Josh Cameron",
+      "sides": [
+        {
+          "roster_id": 11,
+          "manager": "Brett",
+          "team_name": "Paper Kings",
+          "adds": [
+            {
+              "player_id": "11565",
+              "name": "J.J. McCarthy",
+              "position": "QB",
+              "nfl_team": "NYG"
+            }
+          ],
+          "drops": [
+            {
+              "player_id": "13394",
+              "name": "Josh Cameron",
+              "position": "WR",
+              "nfl_team": "JAX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1431373178181001216",
+      "type": "free_agent",
+      "week": 12,
+      "sleeper_leg": 12,
+      "phase": "regular",
+      "created": "2026-11-25T10:41:08-07:00",
+      "processed": "2026-11-25T10:41:08-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies"
+        }
+      ],
+      "headline": "Matt Z drops Caleb Douglas",
+      "sides": [
+        {
+          "roster_id": 2,
+          "manager": "Matt Z",
+          "team_name": "Rolling With Mahomies",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "13296",
+              "name": "Caleb Douglas",
+              "position": "WR",
+              "nfl_team": "MIA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1431363596528418816",
+      "type": "free_agent",
+      "week": 12,
+      "sleeper_leg": 12,
+      "phase": "regular",
+      "created": "2026-11-25T10:03:04-07:00",
+      "processed": "2026-11-25T10:03:04-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba"
+        }
+      ],
+      "headline": "Derek drops Emari Demercado",
+      "sides": [
+        {
+          "roster_id": 7,
+          "manager": "Derek",
+          "team_name": "my njigba",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "11199",
+              "name": "Emari Demercado",
+              "position": "RB",
+              "nfl_team": "HOU"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1431157596542214144",
       "type": "waiver",
@@ -16019,19 +16128,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 101,
-      "free_agent": 256,
+      "free_agent": 259,
       "commissioner": 2,
-      "total": 383
+      "total": 386
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 100,
-      "free_agent": 184,
+      "free_agent": 187,
       "commissioner": 2,
-      "total": 302
+      "total": 305
     },
     "totals_by_phase": {
-      "regular": 302,
+      "regular": 305,
       "preseason": 31,
       "offseason": 50
     },
@@ -16047,7 +16156,8 @@
       "8": 25,
       "9": 24,
       "10": 30,
-      "11": 18
+      "11": 18,
+      "12": 3
     },
     "most_active_manager": {
       "managers": [
@@ -16059,7 +16169,7 @@
       "managers": [
         "Matt Z"
       ],
-      "count": 45
+      "count": 46
     },
     "most_trades": {
       "managers": [
@@ -16303,25 +16413,25 @@
         "roster_id": 2,
         "manager": "Matt Z",
         "team_name": "Rolling With Mahomies",
-        "transactions": 50,
-        "regular_season_transactions": 45,
+        "transactions": 51,
+        "regular_season_transactions": 46,
         "trades": 5,
         "waiver_claims": 8,
-        "free_agent_moves": 37,
+        "free_agent_moves": 38,
         "players_added": 33,
-        "players_dropped": 34
+        "players_dropped": 35
       },
       {
         "roster_id": 7,
         "manager": "Derek",
         "team_name": "my njigba",
-        "transactions": 47,
-        "regular_season_transactions": 31,
+        "transactions": 48,
+        "regular_season_transactions": 32,
         "trades": 4,
         "waiver_claims": 12,
-        "free_agent_moves": 31,
+        "free_agent_moves": 32,
         "players_added": 35,
-        "players_dropped": 37
+        "players_dropped": 38
       },
       {
         "roster_id": 9,
@@ -16339,13 +16449,13 @@
         "roster_id": 11,
         "manager": "Brett",
         "team_name": "Paper Kings",
-        "transactions": 41,
-        "regular_season_transactions": 39,
+        "transactions": 42,
+        "regular_season_transactions": 40,
         "trades": 3,
         "waiver_claims": 17,
-        "free_agent_moves": 19,
-        "players_added": 31,
-        "players_dropped": 32
+        "free_agent_moves": 20,
+        "players_added": 32,
+        "players_dropped": 33
       },
       {
         "roster_id": 5,
