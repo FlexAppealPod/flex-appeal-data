@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T06:49:41-07:00",
+    "generated_at": "2026-11-27T06:56:29-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -10,7 +10,7 @@
     "faab_budget": 100,
     "current_week": 12,
     "counts": {
-      "transactions": 386
+      "transactions": 387
     },
     "checks": {
       "faab_spent_matches_winning_bids": true,
@@ -28,6 +28,40 @@
     ]
   },
   "transactions": [
+    {
+      "id": "1431802890447507456",
+      "type": "free_agent",
+      "week": 12,
+      "sleeper_leg": 12,
+      "phase": "regular",
+      "created": "2026-11-26T15:08:39-07:00",
+      "processed": "2026-11-26T15:08:39-07:00",
+      "status": "complete",
+      "managers": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift"
+        }
+      ],
+      "headline": "Lij drops Michael Pittman Jr.",
+      "sides": [
+        {
+          "roster_id": 4,
+          "manager": "Lij",
+          "team_name": "Taylor Swift",
+          "adds": [],
+          "drops": [
+            {
+              "player_id": "6819",
+              "name": "Michael Pittman Jr.",
+              "position": "WR",
+              "nfl_team": "PIT"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1431502364837150720",
       "type": "free_agent",
@@ -4181,7 +4215,7 @@
               "player_id": "2197",
               "name": "Brandin Cooks",
               "position": "WR",
-              "nfl_team": "FA"
+              "nfl_team": "SF"
             }
           ]
         }
@@ -4364,7 +4398,7 @@
               "player_id": "2197",
               "name": "Brandin Cooks",
               "position": "WR",
-              "nfl_team": "FA"
+              "nfl_team": "SF"
             }
           ],
           "drops": []
@@ -5443,7 +5477,7 @@
               "player_id": "2197",
               "name": "Brandin Cooks",
               "position": "WR",
-              "nfl_team": "FA"
+              "nfl_team": "SF"
             }
           ]
         }
@@ -5476,7 +5510,7 @@
               "player_id": "2197",
               "name": "Brandin Cooks",
               "position": "WR",
-              "nfl_team": "FA"
+              "nfl_team": "SF"
             }
           ],
           "drops": [
@@ -16128,19 +16162,19 @@
     "totals_by_type": {
       "trade": 24,
       "waiver": 101,
-      "free_agent": 259,
+      "free_agent": 260,
       "commissioner": 2,
-      "total": 386
+      "total": 387
     },
     "regular_season_totals_by_type": {
       "trade": 16,
       "waiver": 100,
-      "free_agent": 187,
+      "free_agent": 188,
       "commissioner": 2,
-      "total": 305
+      "total": 306
     },
     "totals_by_phase": {
-      "regular": 305,
+      "regular": 306,
       "preseason": 31,
       "offseason": 50
     },
@@ -16157,7 +16191,7 @@
       "9": 24,
       "10": 30,
       "11": 18,
-      "12": 3
+      "12": 4
     },
     "most_active_manager": {
       "managers": [
@@ -16521,13 +16555,13 @@
         "roster_id": 4,
         "manager": "Lij",
         "team_name": "Taylor Swift",
-        "transactions": 13,
-        "regular_season_transactions": 7,
+        "transactions": 14,
+        "regular_season_transactions": 8,
         "trades": 4,
         "waiver_claims": 0,
-        "free_agent_moves": 9,
+        "free_agent_moves": 10,
         "players_added": 6,
-        "players_dropped": 10
+        "players_dropped": 11
       }
     ]
   },
