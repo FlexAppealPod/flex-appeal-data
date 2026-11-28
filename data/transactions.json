@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T06:56:29-07:00",
+    "generated_at": "2026-11-28T06:54:26-07:00",
     "season": 2026,
     "league": {
       "league_id": "1311998258079371264",
@@ -5817,7 +5817,7 @@
               "player_id": "96",
               "name": "Aaron Rodgers",
               "position": "QB",
-              "nfl_team": "PIT"
+              "nfl_team": "FA"
             }
           ]
         }
@@ -6878,7 +6878,7 @@
               "player_id": "96",
               "name": "Aaron Rodgers",
               "position": "QB",
-              "nfl_team": "PIT"
+              "nfl_team": "FA"
             }
           ],
           "drops": [
